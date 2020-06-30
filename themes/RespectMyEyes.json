@@ -1,0 +1,3428 @@
+{
+  "name": "RespectMyEyes theme",
+  "type": "light",
+  "colors": {
+    // ====================================================
+    // Base colors:
+    //
+    // border color for focused elements: 
+    "focusBorder": "#00800080",
+    //
+    // the search icons and maybe other icons:
+    // "icon.foreground": "#008000",
+    // "icon.foreground": "#004000",
+    "icon.foreground": "#000000",
+    //
+    // text selection in the search and other workbench areas:
+    // "selection.background": "#00B00060",
+    "selection.background": "#00B00040",
+    //
+    // "foreground": "#008000",
+    //
+    //
+    //
+    // ====================================================
+    // Welcome page:
+    //
+    "welcomePage.buttonHoverBackground": "#00B00040",
+    //
+    //
+    //
+    // ====================================================
+    // Input controls: it's the Search box and the Find/Replace box.
+    //
+    // the default placeholder text is too low contrast:
+    // "input.placeholderForeground": "#767676",
+    "input.placeholderForeground": "#A0A0A0",
+    //
+    // "input.foreground": "#006000",
+    // "input.foreground": "#008000",
+    // "input.foreground": "#00A000",
+    "input.foreground": "#00B000",
+    //
+    // "inputOption.activeBackground": "#FFFFFF",
+    "inputOption.activeBackground": "#00B00040",
+    //
+    "input.background": "#FFFFFF",
+    //
+    //
+    //
+    // ====================================================
+    // Button controls:
+    //
+    // "button.background": "#00B000",
+    "button.background": "#FFFFFF",
+    //
+    // "button.hoverBackground": "#00B000A0",
+    "button.hoverBackground": "#00B00040",
+    //
+    "button.foreground": "#00B000",
+    //
+    //
+    //
+    // ====================================================
+    // Dropdown controls:
+    //
+    "dropdown.foreground": "#006000",
+    //
+    // "dropdown.listBackground": "#FFFFFF",
+    //
+    //
+    //
+    // ====================================================
+    // Progress bar:
+    //
+    "progressBar.background": "#00B000",
+    //
+    //
+    //
+    // ====================================================
+    // Title Bar: the VS Code window title bar.
+    //
+    "titleBar.activeBackground": "#f3f3f3",
+    //
+    "titleBar.activeForeground": "#333333",
+    //
+    "titleBar.inactiveBackground": "#f3f3f3",
+    //
+    "titleBar.inactiveForeground": "#33333380",
+    //
+    //
+    //
+    // ====================================================
+    // Status Bar: the bar at the bottom.
+    //
+    // "statusBar.background": "#007acc",
+    "statusBar.background": "#f3f3f3",
+    //
+    // "statusBar.foreground": "#ffffff",
+    "statusBar.foreground": "#008000",
+    //
+    // "statusBar.border": "#dddddd",
+    "statusBar.border": "#00800040",
+    //
+    //
+    //
+    // "statusBar.debuggingBackground": "#cc6633",
+    "statusBar.debuggingBackground": "#f3f3f3",
+    //
+    // "statusBar.debuggingForeground": "#ffffff",
+    "statusBar.debuggingForeground": "#cc6633",
+    //
+    "statusBar.debuggingBorder": "#cc6633",
+    //
+    //
+    //
+    // "statusBar.noFolderBackground": "#68217a",
+    "statusBar.noFolderBackground": "#f3f3f3",
+    //
+    // "statusBar.noFolderForeground": "#ffffff",
+    "statusBar.noFolderForeground": "#68217a",
+    //
+    "statusBar.noFolderBorder": "#68217a",
+    //
+    //
+    //
+    "statusBarItem.activeBackground": "#ffffff2e",
+    //
+    "statusBarItem.hoverBackground": "#ffffff1f",
+    //
+    //
+    //
+    "statusBarItem.prominentBackground": "#00000080",
+    //
+    "statusBarItem.prominentForeground": "#ffffff",
+    //
+    "statusBarItem.prominentHoverBackground": "#0000004d",
+    //
+    //
+    //
+    "statusBarItem.remoteBackground": "#16825d",
+    //
+    "statusBarItem.remoteForeground": "#ffffff",
+    //
+    //
+    //
+    // ====================================================
+    // Activity Bar: the bar with the badges for Explorer, Git, Debug, Extensions... 
+    //
+    // I want it to be light and blend in with other panes:
+    "activityBar.background": "#f3f3f3",
+    //
+    // "activityBar.border": "#dddddd",
+    "activityBar.border": "#00800040",
+    //
+    // the line when moving the badges:
+    "activityBar.dropBorder": "#00B000",
+    //
+    // the colors for badges:
+    // "activityBar.foreground": "#333333",
+    // "activityBar.foreground": "#008000",
+    // "activityBar.foreground": "#80c080",
+    "activityBar.foreground": "#00B000",
+    //
+    // "activityBar.inactiveForeground": "#33333360",
+    // "activityBar.inactiveForeground": "#C0C0C0",
+    "activityBar.inactiveForeground": "#33333340",
+    //
+    // notifications on the badges:
+    // "activityBarBadge.background": "#007acc",
+    // "activityBarBadge.background": "#008000",
+    // "activityBarBadge.background": "#00800080",
+    "activityBarBadge.background": "#80c080",
+    //
+    "activityBarBadge.foreground": "#ffffff",
+    //
+    // the indicator to the side of an active badge:
+    // "activityBar.activeBorder": "#33333360",
+    // "activityBar.activeBorder": "#008000",
+    // #767676
+    "activityBar.activeBorder": "#00B000",
+    //
+    "activityBar.activeBackground": "#FFFFFF",
+    //
+    //
+    //
+    // ====================================================
+    // Side Bar: the pane that opens, when you select the badge for Explorer, Git, Debug...
+    //
+    // the Title on top of the opened Explorer pane for example:
+    "sideBarTitle.foreground": "#6f6f6f",
+    //
+    // the opened pane background:
+    // "sideBar.background": "#ffffff",
+    "sideBar.background": "#f3f3f3",
+    //
+    "sideBar.border": "#dddddd",
+    //
+    // the drop background when moving sub-panes (Sections) 
+    // with mouse in the Explorer pane, for example:
+    "sideBar.dropBackground": "#0000001a",
+    //
+    // the Section headers in the opened side pane:
+    "sideBarSectionHeader.background": "#80808033",
+    //
+    //
+    //
+    // ====================================================
+    // Panel: the bottom panel (Ctrl+J) with the Terminal, Output, Problems, Debug console...
+    //
+    // "panel.background": "#ffffff",
+    "panel.background": "#f3f3f3",
+    //
+    "panelTitle.activeForeground": "#008000",
+    //
+    "panelTitle.inactiveForeground": "#000000",
+    //
+    //
+    //
+    // ====================================================
+    // Lists and Trees: it's the File Explorer list.
+    //
+    // the default hover background is too low contrast:
+    // "list.hoverBackground": "#e8e8e8",
+    // "list.hoverBackground": "#E0F0E0",
+    // "list.hoverBackground": "#00B00020",
+    // "list.hoverBackground": "#def5de",
+    "list.hoverBackground": "#FFFFFF",
+    //
+    // "list.hoverForeground": "#B8B8B8",
+    // "list.hoverForeground": "#00A000",
+    // "list.hoverForeground": "#000000",
+    "list.hoverForeground": "#000000",
+    //
+    //
+    //
+    // "list.focusBackground": "#00B00040",
+    "list.focusBackground": "#bfebbf",
+    //
+    //
+    //
+    // the default background is blue, which is distracting:
+    // "list.activeSelectionBackground": "#cecece",
+    // "list.activeSelectionBackground": "#DDDDDD",
+    // "list.activeSelectionBackground": "#EEEEEE",
+    // "list.activeSelectionBackground": "#f3f3f3",
+    // "list.activeSelectionBackground": "#00B00020",
+    // "list.activeSelectionBackground": "#e8e8e8",
+    "list.activeSelectionBackground": "#FFFFFF",
+    //
+    "list.inactiveSelectionBackground": "#FFFFFF",
+    //
+    //
+    //
+    // the default text is white, which should be a dark color:
+    // "list.activeSelectionForeground": "#000000",
+    "list.activeSelectionForeground": "#00A000",
+    //
+    "list.inactiveSelectionForeground": "#00A000",
+    //
+    //
+    //
+    // search in Command Palette text highlight:
+    "list.highlightForeground": "#00A000",
+    //
+    // "list.filterMatchBackground": "#00A000",
+    //
+    //
+    //
+    //
+    // ====================================================
+    // Menu Bar:
+    //
+    "menubar.selectionBackground": "#FFFFFF",
+    //
+    "menu.selectionBackground": "#00B00020",
+    //
+    "menu.selectionForeground": "#000000",
+    //
+    // "menu.selectionBorder": "#00A000",
+    //
+    "menu.background": "#FFFFFF",
+    //
+    //
+    //
+    //
+    // ====================================================
+    // Editor: the window with the actual text editing.
+    //
+    // the background surface for the whole window:
+    // "editor.background": "#F0FFF0",
+    "editor.background": "#ffffff",
+    //
+    // the default text color, before the TextMate grammar rules:
+    "editor.foreground": "#000000",
+    //
+    // dots for the whitespace color:
+    // "editorWhitespace.foreground": "#90909080",
+    "editorWhitespace.foreground": "#C0C0C080",
+    //
+    //
+    //
+    // the background behind the selection text when in another window or pane,
+    // should be different from the active one:
+    // "editor.inactiveSelectionBackground": "#e5ebf1",
+    // "editor.inactiveSelectionBackground": "#00B00018",
+    // "editor.inactiveSelectionBackground": "#00B00020",
+    // "editor.inactiveSelectionBackground": "#00B00040",
+    "editor.inactiveSelectionBackground": "#00B00020",
+    //
+    // "editor.selectionBackground": "#00B00060",
+    "editor.selectionBackground": "#00B00040",
+    //
+    // region with the same content as the selection,
+    // should be not too attractive to the eye:
+    // "editor.selectionHighlightBackground": "#add6ff60",
+    // "editor.selectionHighlightBackground": "#eeeeee",
+    // "editor.selectionHighlightBackground": "#00F00020",
+    // "editor.selectionHighlightBackground": "#00B00018",
+    "editor.selectionHighlightBackground": "#00B00020",
+    //
+    // "editor.wordHighlightBackground": "#00F00020",
+    "editor.wordHighlightBackground": "#00B00010",
+    //
+    // "editor.wordHighlightStrongBackground": "#00B00060",
+    "editor.wordHighlightStrongBackground": "#00B00040",
+    //
+    "editor.hoverHighlightBackground": "#00B00040",
+    //
+    //
+    //
+    // the indent lines to the left,
+    // should be the same color as the the highlighted bracketsL
+    // "editorIndentGuide.activeBackground": "#0BC5E360",
+    // #33333360 // #0BC5E380
+    // "editorIndentGuide.activeBackground": "#00B00040",
+    "editorIndentGuide.activeBackground": "#00B00060",
+    //
+    // the indent lines not active at the moment, very light grey:
+    // "editorIndentGuide.background": "#e8e8e8",
+    "editorIndentGuide.background": "#C0C0C080",
+    //
+    // the Bracket Matches in the editor window:
+    // "editorBracketMatch.background": "#0BC5E360",
+    // #33333340 // #0BC5E380 // #0BC5E3 // #007acc20
+    // "editorBracketMatch.background": "#00B00060",
+    "editorBracketMatch.background": "#00B00040",
+    //
+    // I want the borders to be white, like the background:
+    // #0BC5E360 
+    "editorBracketMatch.border": "#ffffff00",
+    //
+    //
+    //
+    // the suggestion windows, like the IntelliSense suggestion list,
+    // should be grey:
+    // "editorSuggestWidget.background": "#FFFFFF",
+    "editorSuggestWidget.background": "#f3f3f3",
+    //
+    // in centered layout, the empty background:
+    "editorPane.background": "#f3f3f380",
+    // #ffffff // #e8e8e8
+    //
+    // "editorLineNumber.foreground": "#008000B0",
+    "editorLineNumber.foreground": "#00800080",
+    //
+    // "editorLineNumber.activeForeground": "#008000",
+    //
+    // "editor.lineHighlightBackground": "#00800010",
+    // "editor.lineHighlightBorder": "#00800018",
+    "editor.lineHighlightBorder": "#00B00020",
+    //
+    //
+    //
+    "editorCursor.foreground": "#00B000",
+    //
+    // "editorGutter.background": "#f3f3f3",
+    //
+    //
+    //
+    "editor.findMatchBackground": "#FFA500",
+    //
+    // "editor.findMatchHighlightBackground": "#FFFF00",
+    // "editor.findMatchHighlightBackground": "#E8D20C",
+    // "editor.findMatchHighlightBackground": "#E6E600",
+    // "editor.findMatchHighlightBackground": "#EAEA46",
+    // "editor.findMatchHighlightBackground": "#EEEE8F",
+    // "editor.findMatchHighlightBackground": "#FFFF8F",
+    "editor.findMatchHighlightBackground": "#FFFFB0",
+    //
+    //
+    //
+    // ====================================================
+    // Editor Widget:
+    //
+    // "editorWidget.border": "#00B000",
+    "editorWidget.border": "#00B00080",
+    //
+    //
+    //
+    // ====================================================
+    // (Tabs) Editor Group Header: it's where the tabs are situated.
+    //
+    "editorGroupHeader.tabsBackground": "#f3f3f3",
+    //
+    "editorGroupHeader.noTabsBackground": "#ffffff",
+    //
+    // "tab.activeBorder": "#008000",
+    // "tab.border": "#FFFFFF",
+    // "tab.activeBorderTop": "#008000",
+    //
+    "tab.activeForeground": "#00A000",
+    //
+    // "tab.inactiveForeground": "#000000",
+    // "tab.inactiveForeground": "#808080",
+    // "tab.inactiveForeground": "#A0A0A0",
+    // "tab.inactiveForeground": "#B0B0B0",
+    "tab.inactiveForeground": "#909090",
+    //
+    // "tab.hoverBackground": "#00B00040",
+    // "tab.hoverBackground": "#bfebbf",
+    "tab.hoverBackground": "#ffffff",
+    //
+    //
+    //
+    // ====================================================
+    // Breadcrumbs:
+    //
+    "breadcrumb.background": "#f3f3f3",
+    //
+    "breadcrumb.foreground": "#909090",
+    //
+    "breadcrumbPicker.background": "#f3f3f3",
+    //
+    "breadcrumb.focusForeground": "#00A000",
+    //
+    "breadcrumb.activeSelectionForeground": "#00A000",
+    //
+    //
+    //
+    // ====================================================
+    // Symbol Icons:
+    //
+    "symbolIcon.interfaceForeground": "#00A000",
+    //
+    // "symbolIcon.classForeground": "#00A000",
+    //
+    //
+    //
+    // ====================================================
+    // Terminal colors: the colors for the text inside the terminal.
+    // 
+    // the dafault yellow color was bad for the light terminal:
+    // "terminal.ansiBrightYellow": "#0BC5E3",
+    // #0000CC // #b5ba00
+    //
+    //
+    //
+    // ====================================================
+    // Settings UI: it's the GUI for changing the Settings.
+    //
+    // the default borders were white and they blend-in with the background: 
+    "settings.numberInputBorder": "#cecece",
+    //
+    "settings.textInputBorder": "#cecece",
+    //
+    //
+    //
+  },
+  "tokenColors": [
+    // ====================================================
+    // Color guide:
+    //
+    // main blue: #0000CC
+    // light blue: #0BC5E3
+    //
+    // black: #000000
+    //
+    // new-grey: #A9A9A9
+    // old grey: #C0C0C0
+    //
+    // red: #FF0000
+    //
+    // orange in use: #E8810C
+    //
+    // orange not in use: #FFA500
+    //
+    // yellow: #b5ba00
+    // yellow: #FFFFB0
+    //
+    // comments: #008000B0
+    // strings: #a31515
+    //
+    // pink / purple: #F066FF
+    //
+    //
+    //
+    // ====================================================
+    // In general (the baseline):
+    //
+    // the baseline color, for all the code:
+    {
+      "scope": [
+        "source",
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // string, regex:
+    {
+      "scope": [
+        "string",
+        "entity.name.operator.custom-literal.string",
+        "meta.preprocessor.string",
+        "constant.regexp",
+        "string.regexp",
+        "string.regexp keyword",
+        // "string.regexp keyword.other",
+        // "string.regexp keyword.operator",
+      ],
+      "settings": {
+        "foreground": "#a31515"
+      }
+    },
+    //
+    // numbers:
+    {
+      "scope": [
+        "constant.numeric", // 0, 1, 36.08M... numeric literals
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // booleans:
+    {
+      "scope": [
+        "constant.language.boolean", // true, false
+      ],
+      "settings": {
+        "foreground": "#a31515",
+      }
+    },
+    //
+    // Literals in general:
+    {
+      "scope": [
+        // "keyword.operator.expression", // return "void" 0
+        // "constant.language", // undefined literal
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // comments: 
+    {
+      "scope": [
+        "comment",
+        "punctuation.definition.comment" // fix an edge case in Markdown -> code block -> comment
+      ],
+      "settings": {
+        "foreground": "#008000B0",
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Keywords in general:
+    //
+    {
+      "scope": [
+        "keyword",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // control statements should be distinguishable, so light blue:
+    {
+      "scope": [
+        "keyword.control", // if, else, return, import, from
+        // "keyword.other"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // as:
+    {
+      "scope": [
+        // "keyword.control.as", // as
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // storage types:
+    {
+      "scope": [
+        "storage.type", // const, class in JS; type name in C#
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        // "foreground": "#000000",
+        "foreground": "#a31515",
+      }
+    },
+    //
+    // storage type function:
+    {
+      "scope": [
+        // "storage.type.function", // function in JS
+      ],
+      "settings": {
+        "foreground": "#a31515",
+      }
+    },
+    //
+    // storage modifiers:
+    {
+      "scope": [
+        "storage.modifier",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // 180deg in CSS:
+    {
+      "scope": [
+        // "keyword.other.unit",
+        "support.constant",
+        // "constant.other.color",
+      ],
+      "settings": {
+        "foreground": "#a31515",
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Names in general:
+    //
+    // functions:
+    //
+    // function name in definition:
+    {
+      "scope": [
+        "meta.definition.function entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // function name in call:
+    {
+      "scope": [
+        "meta.function-call entity.name.function",
+        "entity.name.function",
+        "support.function",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // argument names in function call:
+    {
+      "scope": [
+        "variable.parameter", // argument names inside a function call
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // new Expression:
+    {
+      "scope": [
+        "new.expr",
+        "keyword.operator.new",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    //
+    //
+    // types:
+    //
+    // type name in definition:
+    {
+      "scope": [
+        "entity.name.type",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // type parameters:
+    {
+      "scope": [
+        "meta.type.annotation",
+        "meta.type.parameters",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    //
+    //
+    // variables:
+    //
+    // variable name in definition:
+    {
+      "scope": [
+        "meta.definition.variable variable",
+        // "meta.definition.variable variable.other",
+      ],
+      "settings": {
+        // "foreground": "#000000"
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // variable & property names in call:
+    {
+      "scope": [
+        "variable", // variable name
+        // "variable.other", // variable name
+        // "variable.other.readwrite", // variable name, object's properties
+        // "variable.other.object.property", // object's properties
+        // "variable.other.property", // "this" properties
+        // "variable.language",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    //
+    // objects:
+    //
+    // object keys when defining a type (class, interface):
+    {
+      "scope": [
+        "variable.object.property",
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // object keys when instantiating an object:
+    {
+      "scope": [
+        "meta.object-literal.key",
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        // "foreground": "#000000"
+        "foreground": "#0BC5E3"
+        // "foreground": "#E8810C"
+      }
+    },
+    //
+    // variable name when assigning to an object's property (inside object-literal syntax):
+    {
+      "scope": [
+        "variable.parameter",
+        // "meta.parameters variable.parameter",
+        // "meta.parameter.object-binding-pattern variable.parameter",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // enums:
+    //
+    // enum member names:
+    {
+      "scope": [
+        "variable.other.enummember", // enum member names
+        "entity.name.variable.enum-member", // enum member names in C#
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9"
+        "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // CSS kinda:
+    {
+      "scope": [
+        "meta.selector", // class selector and others...
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // property names:
+    {
+      "scope": [
+        "meta.property-name",
+        "support.type.property-name",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // property values:
+    {
+      "scope": [
+        "meta.property-value",
+        "meta.structure.dictionary.value",
+      ],
+      "settings": {
+        "foreground": "#a31515"
+      }
+    },
+    //
+    //
+    //
+    // HTML kinda:
+    // 
+    // tags:
+    {
+      "scope": [
+        "meta.tag",
+        "entity.name.tag",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // attributes:
+    {
+      "scope": [
+        "meta.attribute",
+        "entity.other.attribute-name"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // heading:
+    {
+      "scope": [
+        "heading",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // link:
+    {
+      "scope": [
+        "meta.link",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // embedded block & inline:
+    {
+      "scope": [
+        "meta.embedded",
+        "markup.inline",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Punctuation in general:
+    //
+    {
+      "scope": [
+        "punctuation",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // important operators:
+    {
+      "scope": [
+        "keyword.operator.arithmetic", // +, -, *, /
+        "keyword.operator.increment", // ++
+        "keyword.operator.decrement", // --
+        "keyword.operator.assignment", // =
+        // "keyword.operator.bitwise", // ~~, |
+        "keyword.operator.rest", // ...
+        "keyword.operator.spread", // ...
+        "storage.type.function.arrow", // => in JS, TS
+        "keyword.operator.arrow", // => in C#
+        "keyword.operator.comparison", // ===
+        // "keyword.operator.relational", // >, <
+        // "keyword.operator.ternary", // ?, :
+        "keyword.operator.null-coalescing", // ?? in C#
+        "keyword.operator.null-conditional", // {property_name}? in C#
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // common punctuation:
+    {
+      "scope": [
+        "punctuation.definition.array", // arr[]
+        "punctuation.definition.block", // { }
+        "punctuation.definition.binding-pattern.object", // { }
+        "punctuation.definition.section.case-statement", // :
+        "punctuation.definition.dictionary", // dict[]
+        "punctuation.separator", // ,
+        "punctuation.section",
+        "punctuation.terminator", // ;
+        "punctuation.destructuring", // :
+        "keyword.operator", // :
+        "keyword.operator.logical", // ||, !
+        "keyword.operator.comparison", // ===
+        "string.template punctuation.definition.string.template", // ` `
+        "keyword.operator.ternary", // ?, :
+        "keyword.operator.relational", // >, <
+        "keyword.operator.bitwise", // ~~, |
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // logical operators:
+    {
+      "scope": [
+        // "keyword.operator.logical", // ||, !
+        // "keyword.operator.ternary", // ?, :
+        "storage.type.function.arrow", // =>
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        // "foreground": "#0000CC",
+        // "foreground": "#000000",
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // . dot as property accessor:
+    {
+      "scope": [
+        "punctuation.accessor", // . dot
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        "foreground": "#000000",
+      }
+    },
+    //
+    // ? questionmark - for optional property or parameter: // (may be specific to TS, JS)
+    {
+      "scope": [
+        "keyword.operator.optional" // ? questionmark
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // < > angle brackets for generic type parameters:
+    {
+      "scope": [
+        "punctuation.definition.typeparameters", // < >
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ( ) round braces:
+    {
+      "scope": [
+        "meta.brace.round", // ( )
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ( ) round braces in a function/method definition:
+    {
+      "scope": [
+        "punctuation.definition.parameters",
+        "meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
+      ],
+      "settings": {
+        // "foreground": "#000000"
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // [ ] square brackets:
+    {
+      "scope": [
+        "meta.brace.square", // [ ]
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // [ ] square brackets in array definition:
+    {
+      "scope": [
+        "meta.type.tuple meta.brace.square", // [ ] brackets for array definition
+        "meta.array.literal meta.brace.square" // [ ] 
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // TypeScript, JavaScript, React (.ts, .js, .tsx, .jsx):
+    //
+    // Import code in TypeScript:
+    //
+    // variable names in the import syntax:
+    {
+      "scope": [
+        "source.ts meta.import variable.other.readwrite",
+        "source.js meta.import variable.other.readwrite",
+        "source.tsx meta.import variable.other.readwrite",
+        "source.jsx meta.import variable.other.readwrite",
+        "meta.embedded.block.javascript meta.import variable.other.readwrite",
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0"
+        "foreground": "#000000"
+      }
+    },
+    //
+    // import, from, as, { } in the import syntax:
+    {
+      "scope": [
+        // "source.ts keyword.control.import", // import
+        // "source.js keyword.control.import", // import
+        // "source.tsx keyword.control.import", // import
+        // "source.jsx keyword.control.import", // import
+        "source.ts keyword.control.from", // from
+        "source.js keyword.control.from", // from
+        "source.tsx keyword.control.from", // from
+        "source.jsx keyword.control.from", // from
+        "meta.embedded.block.javascript keyword.control.from", // from
+        "source.ts meta.import keyword.control.as", // as
+        "source.js meta.import keyword.control.as", // as
+        "source.tsx meta.import keyword.control.as", // as
+        "source.jsx meta.import keyword.control.as", // as
+        "meta.embedded.block.javascript meta.import keyword.control.as", // as
+        "source.ts meta.import punctuation.definition.block", // { }
+        "source.js meta.import punctuation.definition.block", // { }
+        "source.tsx meta.import punctuation.definition.block", // { }
+        "source.jsx meta.import punctuation.definition.block", // { }
+        "meta.embedded.block.javascript meta.import punctuation.definition.block", // { }
+      ],
+      "settings": {
+        // "foreground": "#C0C0C080"
+        // "foreground": "#C0C0C0"
+        "foreground": "#A9A9A9"
+        // "foreground": "#A9A9A980"
+      }
+    },
+    //
+    // import, from, as, { } in the import syntax:
+    {
+      "scope": [
+        "source.ts keyword.control.import", // import
+        "source.js keyword.control.import", // import
+        "source.tsx keyword.control.import", // import
+        "source.jsx keyword.control.import", // import
+        "meta.embedded.block.javascript keyword.control.import", // import
+        // "source.ts keyword.control.from", // from
+        // "source.js keyword.control.from", // from
+        // "source.tsx keyword.control.from", // from
+        // "source.jsx keyword.control.from", // from
+        // "source.ts meta.import keyword.control.as", // as
+        // "source.js meta.import keyword.control.as", // as
+        // "source.tsx meta.import keyword.control.as", // as
+        // "source.jsx meta.import keyword.control.as", // as
+        // "source.ts meta.import punctuation.definition.block", // { }
+        // "source.js meta.import punctuation.definition.block", // { }
+        // "source.tsx meta.import punctuation.definition.block", // { }
+        // "source.jsx meta.import punctuation.definition.block", // { }
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+        // "foreground": "#A9A9A980"
+        // "foreground": "#C0C0C080"
+        // "foreground": "#C0C0C0"
+        // "foreground": "#a31515"
+        // "foreground": "#a3151580"
+      }
+    },
+    //
+    // string for a module path in the import syntax:
+    {
+      "scope": [
+        "source.ts meta.import string",
+        "source.js meta.import string",
+        "source.tsx meta.import string",
+        "source.jsx meta.import string",
+        "meta.embedded.block.javascript meta.import string",
+      ],
+      "settings": {
+        // "foreground": "#a3151580"
+        "foreground": "#a31515"
+      }
+    },
+    //
+    //
+    // 
+    // Normal code (non-import - see above) in TypeScript:
+    //
+    // Names:
+    //
+    //
+    //
+    // types:
+    //
+    // type/function name:
+    {
+      "scope": [
+        "source.ts entity.name.type", // class, interface names when creating a class, class instance
+        "source.js entity.name.type", // class, interface names when creating a class, class instance
+        "source.tsx entity.name.type", // class, interface names when creating a class, class instance
+        "source.jsx entity.name.type", // class, interface names when creating a class, class instance
+        "meta.embedded.block.javascript entity.name.type", // class, interface names when creating a class, class instance
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // module name:
+    // "React".Component
+    {
+      "scope": [
+        "source.ts entity.name.type.module",
+        "source.js entity.name.type.module",
+        "source.tsx entity.name.type.module",
+        "source.jsx entity.name.type.module",
+        "meta.embedded.block.javascript entity.name.type.module",
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        // "foreground": "#a31515",
+        "foreground": "#000000",
+        // "foreground": "#0000CC",
+      }
+    },
+    //
+    // inherited type name:
+    {
+      "scope": [
+        "source.ts entity.other.inherited-class", // inherited type names
+        "source.js entity.other.inherited-class", // inherited type names
+        "source.tsx entity.other.inherited-class", // inherited type names
+        "source.jsx entity.other.inherited-class", // inherited type names
+        "meta.embedded.block.javascript entity.other.inherited-class", // inherited type names
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        // "foreground": "#a31515",
+        "foreground": "#000000",
+        // "foreground": "#0000CC",
+      }
+    },
+    //
+    //
+    //
+    // functions:
+    //
+    // function name in the declaration:
+    {
+      "scope": [
+        "source.ts meta.definition.function entity.name.function", // function name in the declaration
+        "source.js meta.definition.function entity.name.function", // function name in the declaration
+        "source.tsx meta.definition.function entity.name.function", // function name in the declaration
+        "source.jsx meta.definition.function entity.name.function", // function name in the declaration
+        "meta.embedded.block.javascript meta.definition.function entity.name.function", // function name in the declaration
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // function arguments in declaration:
+    {
+      "scope": [
+        "source.ts variable.parameter",
+        "source.js variable.parameter",
+        "source.tsx variable.parameter",
+        "source.jsx variable.parameter",
+        "meta.embedded.block.javascript variable.parameter",
+        "source.ts meta.parameters variable.parameter",
+        "source.js meta.parameters variable.parameter",
+        "source.tsx meta.parameters variable.parameter",
+        "source.jsx meta.parameters variable.parameter",
+        "meta.embedded.block.javascript meta.parameters variable.parameter",
+      ],
+      "settings": {
+        // "foreground": "#0000CC",
+        // "foreground": "#A9A9A9",
+        "foreground": "#000000",
+      }
+    },
+    //
+    // function name in function call:
+    {
+      "scope": [
+        "source.ts entity.name.function", // function calls
+        "source.js entity.name.function", // function calls
+        "source.tsx entity.name.function", // function calls
+        "source.jsx entity.name.function", // function calls
+        "meta.embedded.block.javascript entity.name.function", // function calls
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // function name in function call:
+    {
+      "scope": [
+        "source.ts meta.function-call entity.name.function", // function call
+        "source.js meta.function-call entity.name.function", // function call
+        "source.tsx meta.function-call entity.name.function", // function call
+        "source.jsx meta.function-call entity.name.function", // function call
+        "meta.embedded.block.javascript meta.function-call entity.name.function", // function call
+        "source.ts meta.function-call support", // function call
+        "source.js meta.function-call support", // function call
+        "source.tsx meta.function-call support", // function call
+        "source.jsx meta.function-call support", // function call
+        "meta.embedded.block.javascript meta.function-call support", // function call
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // function parameters in function call:
+    {
+      "scope": [
+        "source.ts variable.other.readwrite", // function parameters
+        "source.js variable.other.readwrite", // function parameters
+        "source.tsx variable.other.readwrite", // function parameters
+        "source.jsx variable.other.readwrite", // function parameters
+        "meta.embedded.block.javascript variable.other.readwrite", // function parameters
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    //
+    //
+    // decorators:
+    {
+      "scope": [
+        "source.ts meta.decorator punctuation.decorator", // @ in decorator
+        "source.js meta.decorator punctuation.decorator", // @ in decorator
+        "source.tsx meta.decorator punctuation.decorator", // @ in decorator
+        "source.jsx meta.decorator punctuation.decorator", // @ in decorator
+        "meta.embedded.block.javascript meta.decorator punctuation.decorator", // @ in decorator
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        // "foreground": "#0BC5E3",
+      }
+    },
+    //
+    {
+      "scope": [
+        "source.ts meta.decorator meta.function-call entity.name.function", // function call in decorator
+        "source.js meta.decorator meta.function-call entity.name.function", // function call in decorator
+        "source.tsx meta.decorator meta.function-call entity.name.function", // function call in decorator
+        "source.jsx meta.decorator meta.function-call entity.name.function", // function call in decorator
+        "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function", // function call in decorator
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        // "foreground": "#0BC5E3",
+      }
+    },
+    //
+    //
+    //
+    // variable/property name in use:
+    {
+      "scope": [
+        "source.ts meta.embedded.expression variable.other.readwrite",
+        "source.js meta.embedded.expression variable.other.readwrite",
+        "source.tsx meta.embedded.expression variable.other.readwrite",
+        "source.jsx meta.embedded.expression variable.other.readwrite",
+        "meta.embedded.block.javascript meta.embedded.expression variable.other.readwrite",
+        "source.ts support.variable.object",
+        "source.js support.variable.object",
+        "source.tsx support.variable.object",
+        "source.jsx support.variable.object",
+        "meta.embedded.block.javascript support.variable.object",
+        "source.ts support.class",
+        "source.js support.class",
+        "source.tsx support.class",
+        "source.jsx support.class",
+        "meta.embedded.block.javascript support.class",
+        "source.ts support.variable.property",
+        "source.js support.variable.property",
+        "source.tsx support.variable.property",
+        "source.jsx support.variable.property",
+        "meta.embedded.block.javascript.jsx support.variable.property",
+        "source.ts variable.other.property",
+        "source.js variable.other.property",
+        "source.tsx variable.other.property",
+        "source.jsx variable.other.property",
+        "meta.embedded.block.javascript variable.other.property",
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // variable name in declaration:
+    {
+      "scope": [
+        "source.ts meta.definition entity.name.function",
+        "source.js meta.definition entity.name.function",
+        "source.tsx meta.definition entity.name.function",
+        "source.jsx meta.definition entity.name.function",
+        "meta.embedded.block.javascript meta.definition entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // variable name in declaration after "var, let, const":
+    {
+      "scope": [
+        "source.ts meta.definition variable.other", // variable name after "var, let, const"
+        "source.js meta.definition variable.other", // variable name after "var, let, const"
+        "source.tsx meta.definition variable.other", // variable name after "var, let, const"
+        "source.jsx meta.definition variable.other", // variable name after "var, let, const"
+        "meta.embedded.block.javascript meta.definition variable.other", // variable name after "var, let, const"
+        "source.ts meta.definition variable.other.readwrite", // variable name after "var, let, const"
+        "source.js meta.definition variable.other.readwrite", // variable name after "var, let, const"
+        "source.tsx meta.definition variable.other.readwrite", // variable name after "var, let, const"
+        "source.jsx meta.definition variable.other.readwrite", // variable name after "var, let, const"
+        "meta.embedded.block.javascript meta.definition variable.other.readwrite", // variable name after "var, let, const"
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // variable's type parameter:
+    {
+      "scope": [
+        "source.ts meta.type.parameters entity.name.type",
+        "source.js meta.type.parameters entity.name.type",
+        "source.tsx meta.type.parameters entity.name.type",
+        "source.jsx meta.type.parameters entity.name.type",
+        "meta.embedded.block.javascript meta.type.parameters entity.name.type",
+        "source.ts meta.return.type entity.name.type",
+        "source.js meta.return.type entity.name.type",
+        "source.tsx meta.return.type entity.name.type",
+        "source.jsx meta.return.type entity.name.type",
+        "meta.embedded.block.javascript meta.return.type entity.name.type",
+        "source.ts meta.type.annotation entity.name.type",
+        "source.js meta.type.annotation entity.name.type",
+        "source.tsx meta.type.annotation entity.name.type",
+        "source.jsx meta.type.annotation entity.name.type",
+        "meta.embedded.block.javascript meta.type.annotation entity.name.type",
+        "source.ts meta.return.type support.type.primitive",
+        "source.js meta.return.type support.type.primitive",
+        "source.tsx meta.return.type support.type.primitive",
+        "source.jsx meta.return.type support.type.primitive",
+        "meta.embedded.block.javascript meta.return.type support.type.primitive",
+        "source.ts meta.return.type support.type.builtin",
+        "source.js meta.return.type support.type.builtin",
+        "source.tsx meta.return.type support.type.builtin",
+        "source.jsx meta.return.type support.type.builtin",
+        "meta.embedded.block.javascript meta.return.type support.type.builtin",
+        "source.ts meta.type.annotation support.type.primitive",
+        "source.js meta.type.annotation support.type.primitive",
+        "source.tsx meta.type.annotation support.type.primitive",
+        "source.jsx meta.type.annotation support.type.primitive",
+        "meta.embedded.block.javascript meta.type.annotation support.type.primitive",
+        "source.ts meta.type.annotation support.type.builtin",
+        "source.js meta.type.annotation support.type.builtin",
+        "source.tsx meta.type.annotation support.type.builtin",
+        "source.jsx meta.type.annotation support.type.builtin",
+        "meta.embedded.block.javascript meta.type.annotation support.type.builtin",
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        // "foreground": "#a31515",
+        "foreground": "#E8810C",
+      }
+    },
+    //
+    // "module.exports" :
+    {
+      "scope": [
+        "source.ts support.type.object.module", // "module.exports"
+        "source.js support.type.object.module", // "module.exports"
+        "source.tsx support.type.object.module", // "module.exports"
+        "source.jsx support.type.object.module", // "module.exports"
+        "meta.embedded.block.javascript support.type.object.module", // "module.exports"
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    {
+      "scope": [
+        "source.ts constant.language.import-export-all", // export *
+        "source.js constant.language.import-export-all", // export *
+        "source.tsx constant.language.import-export-all", // export *
+        "source.jsx constant.language.import-export-all", // export *
+        "meta.embedded.block.javascript constant.language.import-export-all", // export *
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    //
+    //
+    // Keywords in TypeScript:
+    //
+    // control flow keywords:
+    {
+      "scope": [
+        "source.ts keyword.control", // const, function, inteface, class
+        "source.js keyword.control", // const, function, inteface, class
+        "source.tsx keyword.control", // const, function, inteface, class
+        "source.jsx keyword.control", // const, function, inteface, class
+        "meta.embedded.block.javascript keyword.control", // const, function, inteface, class
+      ],
+      "settings": {
+        // "foreground": "#a31515",
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // type keywords:
+    {
+      "scope": [
+        "source.ts storage.type", // const, function, inteface, class
+        "source.js storage.type", // const, function, inteface, class
+        "source.tsx storage.type", // const, function, inteface, class
+        "source.jsx storage.type", // const, function, inteface, class
+        "meta.embedded.block.javascript storage.type", // const, function, inteface, class
+        // "source.ts storage.type.property", // get; need this to not override "get" with other rules
+        // "source.js storage.type.property", // get; need this to not override "get" with other rules
+        // "source.tsx storage.type.property", // get; need this to not override "get" with other rules
+        // "source.jsx storage.type.property", // get; need this to not override "get" with other rules
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        "foreground": "#a31515",
+      }
+    },
+    //
+    // override "get" (inside of a class) keyword:
+    {
+      "scope": [
+        // "source.ts storage.type", // const, function, inteface, class
+        // "source.js storage.type", // const, function, inteface, class
+        // "source.tsx storage.type", // const, function, inteface, class
+        // "source.jsx storage.type", // const, function, inteface, class
+        "source.ts storage.type.property", // get; need this to not override "get" with other rules
+        "source.js storage.type.property", // get; need this to not override "get" with other rules
+        "source.tsx storage.type.property", // get; need this to not override "get" with other rules
+        "source.jsx storage.type.property", // get; need this to not override "get" with other rules
+        "meta.embedded.block.javascript storage.type.property", // get; need this to not override "get" with other rules
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        // "foreground": "#000000",
+        // "foreground": "#a31515",
+        // "foreground": "#0000CC",
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "function" keyword:
+    {
+      "scope": [
+        "source.ts meta.var.expr storage.type.function",
+        "source.js meta.var.expr storage.type.function",
+        "source.tsx meta.var.expr storage.type.function",
+        "source.jsx meta.var.expr storage.type.function",
+        "meta.embedded.block.javascript meta.var.expr storage.type.function",
+        "source.ts meta.function.expression storage.type.function",
+        "source.js meta.function.expression storage.type.function",
+        "source.tsx meta.function.expression storage.type.function",
+        "source.jsx meta.function.expression storage.type.function",
+        "meta.embedded.block.javascript meta.function.expression storage.type.function",
+        "source.ts meta.function storage.type.function",
+        "source.js meta.function storage.type.function",
+        "source.tsx meta.function storage.type.function",
+        "source.jsx meta.function storage.type.function",
+        "meta.embedded.block.javascript meta.function storage.type.function",
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        "foreground": "#a31515",
+      }
+    },
+    //
+    // 1. "constructor" in a class, 
+    // 2. sometimes it can also select "let, const, var" - this needs to be fixed below this rule.
+    {
+      "scope": [
+        "source.ts meta.method.declaration storage.type", // constructor
+        "source.js meta.method.declaration storage.type", // constructor
+        "source.tsx meta.method.declaration storage.type", // constructor
+        "source.jsx meta.method.declaration storage.type", // constructor
+        "meta.embedded.block.javascript meta.method.declaration storage.type", // constructor
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    // 1. fix to the above rule for the constructor:
+    // 2. "var, let, const" in general:
+    {
+      "scope": [
+        "source.ts meta.method.declaration meta.block storage.type",
+        "source.js meta.method.declaration meta.block storage.type",
+        "source.tsx meta.method.declaration meta.block storage.type",
+        "source.jsx meta.method.declaration meta.block storage.type",
+        "meta.embedded.block.javascript meta.method.declaration meta.block storage.type",
+        "source.ts meta.var.expr storage.type", // let, const
+        "source.js meta.var.expr storage.type", // let, const
+        "source.tsx meta.var.expr storage.type", // let, const
+        "source.jsx meta.var.expr storage.type", // let, const
+        "meta.embedded.block.javascript meta.var.expr storage.type", // let, const
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        // "foreground": "#C0C0C0",
+        // "foreground": "#a31515",
+        // "foreground": "#0000CC",
+      }
+    },
+    //
+    // the most usual keywords at the line start:
+    {
+      "scope": [
+        // "source.ts keyword.control.export", // export
+        // "source.js keyword.control.export", // export
+        // "source.tsx keyword.control.export", // export
+        // "source.jsx keyword.control.export", // export
+        // "source.ts keyword.control.default", // default
+        // "source.js keyword.control.default", // default
+        // "source.tsx keyword.control.default", // default
+        // "source.jsx keyword.control.default", // default
+        "source.ts storage.modifier", // static, extends
+        "source.js storage.modifier", // static, extends
+        "source.tsx storage.modifier", // static, extends
+        "source.jsx storage.modifier", // static, extends
+        "meta.embedded.block.javascript storage.modifier", // static, extends
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        // "foreground": "#a31515",
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // the most usual keywords at the line start:
+    {
+      "scope": [
+        "source.ts keyword.control.export", // export
+        "source.js keyword.control.export", // export
+        "source.tsx keyword.control.export", // export
+        "source.jsx keyword.control.export", // export
+        "meta.embedded.block.javascript keyword.control.export", // export
+        "source.ts keyword.control.default", // default
+        "source.js keyword.control.default", // default
+        "source.tsx keyword.control.default", // default
+        "source.jsx keyword.control.default", // default
+        "meta.embedded.block.javascript keyword.control.default", // default
+        // "source.ts storage.modifier", // static, extends
+        // "source.js storage.modifier", // static, extends
+        // "source.tsx storage.modifier", // static, extends
+        // "source.jsx storage.modifier", // static, extends
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        // "foreground": "#0000CC",
+        // "foreground": "#C0C0C0",
+        "foreground": "#a31515",
+      }
+    },
+    //
+    // async:
+    {
+      "scope": [
+        "source.ts storage.modifier.async", // async
+        "source.js storage.modifier.async", // async
+        "source.tsx storage.modifier.async", // async
+        "source.jsx storage.modifier.async", // async
+        "meta.embedded.block.javascript storage.modifier.async" // async
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        // "foreground": "#0000CC",
+        // "foreground": "#C0C0C0",
+        // "foreground": "#a31515",
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // variable.language:
+    {
+      "scope": [
+        "source.ts variable.language",
+        "source.js variable.language",
+        "source.tsx variable.language",
+        "source.jsx variable.language",
+        "meta.embedded.block.javascript variable.language",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // this:
+    {
+      "scope": [
+        "source.ts variable.language.this", // this
+        "source.js variable.language.this", // this
+        "source.tsx variable.language.this", // this
+        "source.jsx variable.language.this", // this
+        "meta.embedded.block.javascript variable.language.this", // this
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // super:
+    {
+      "scope": [
+        "source.ts variable.language.super", // super
+        "source.js variable.language.super", // super
+        "source.tsx variable.language.super", // super
+        "source.jsx variable.language.super", // super
+        "meta.embedded.block.javascript variable.language.super", // super
+      ],
+      "settings": {
+        // "foreground": "#000000"
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // typeof:
+    {
+      "scope": [
+        "source.ts keyword.operator.expression.typeof", // typeof
+        "source.js keyword.operator.expression.typeof", // typeof
+        "source.tsx keyword.operator.expression.typeof", // typeof
+        "source.jsx keyword.operator.expression.typeof", // typeof
+        "meta.embedded.block.javascript keyword.operator.expression.typeof", // typeof
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        // "foreground": "#a31515",
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // undefined, any, false:
+    {
+      "scope": [
+        "source.ts constant.language", // undefined, any, false
+        "source.js constant.language", // undefined, any, false
+        "source.tsx constant.language", // undefined, any, false
+        "source.jsx constant.language", // undefined, any, false
+        "meta.embedded.block.javascript constant.language", // undefined, any, false
+        "source.ts support.type",
+        "source.js support.type",
+        "source.tsx support.type",
+        "source.jsx support.type",
+        "meta.embedded.block.javascript support.type",
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0",
+        "foreground": "#a31515",
+      }
+    },
+    //
+    // new MyClass() :
+    {
+      "scope": [
+        "source.ts keyword.operator.new", // new
+        "source.js keyword.operator.new", // new
+        "source.tsx keyword.operator.new", // new
+        "source.jsx keyword.operator.new", // new
+        "meta.embedded.block.javascript keyword.operator.new", // new
+        // "source.ts new.expr entity.name.type", // MyClass
+        // "source.js new.expr entity.name.type", // MyClass
+        // "source.tsx new.expr entity.name.type", // MyClass
+        // "source.jsx new.expr entity.name.type", // MyClass
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0",
+        // "foreground": "#a31515",
+        // "foreground": "#0BC5E3",
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // new MyClass() :
+    {
+      "scope": [
+        // "source.ts keyword.operator.new", // new
+        // "source.js keyword.operator.new", // new
+        // "source.tsx keyword.operator.new", // new
+        // "source.jsx keyword.operator.new", // new
+        "source.ts new.expr entity.name.type", // MyClass
+        "source.js new.expr entity.name.type", // MyClass
+        "source.tsx new.expr entity.name.type", // MyClass
+        "source.jsx new.expr entity.name.type", // MyClass
+        "meta.embedded.block.javascript new.expr entity.name.type", // MyClass
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0",
+        // "foreground": "#a31515",
+        // "foreground": "#000000",
+        // "foreground": "#0BC5E3",
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    //
+    //
+    // Punctuation in TypeScript:
+    //
+    // ( ) round braces:
+    {
+      "scope": [
+        "source.ts meta.brace.round", // ( )
+        "source.js meta.brace.round", // ( )
+        "source.tsx meta.brace.round", // ( )
+        "source.jsx meta.brace.round", // ( )
+        "meta.embedded.block.javascript meta.brace.round", // ( )
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+        // "foreground": "#C0C0C0"
+        // "foreground": "#000000"
+        // "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // ( ) round braces in a function/method definition:
+    {
+      "scope": [
+        // "punctuation.definition.parameters",
+        "source.ts meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
+        "source.js meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
+        "source.tsx meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
+        "source.jsx meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
+        "meta.embedded.block.javascript meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
+      ],
+      "settings": {
+        // "foreground": "#000000"
+        // "foreground": "#A9A9A9"
+        // "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // . dot:
+    {
+      "scope": [
+        "source.ts punctuation.accessor", // . dot
+        "source.js punctuation.accessor", // . dot
+        "source.tsx punctuation.accessor", // . dot
+        "source.jsx punctuation.accessor", // . dot
+        "meta.embedded.block.javascript punctuation.accessor", // . dot
+      ],
+      "settings": {
+        "foreground": "#000000",
+        // "foreground": "#C0C0C0",
+        // "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // . dot in a type annotation:
+    {
+      "scope": [
+        "source.ts meta.type.annotation punctuation.accessor", // . dot in a type annotation
+        "source.js meta.type.annotation punctuation.accessor", // . dot in a type annotation
+        "source.tsx meta.type.annotation punctuation.accessor", // . dot in a type annotation
+        "source.jsx meta.type.annotation punctuation.accessor", // . dot in a type annotation
+        "meta.embedded.block.javascript meta.type.annotation punctuation.accessor", // . dot in a type annotation
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        // "foreground": "#C0C0C0",
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // . dot in ".then, .catch" (it doesn't work exactly, other dots also colored) :
+    {
+      "scope": [
+        "source.ts meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
+        "source.js meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
+        "source.tsx meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
+        "source.jsx meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
+        "meta.embedded.block.javascript meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
+      ],
+      "settings": {
+        "foreground": "#000000",
+        // "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // [ ] square braces:
+    {
+      "scope": [
+        "source.ts meta.array.literal meta.brace.square", // [ ]
+        "source.js meta.array.literal meta.brace.square", // [ ]
+        "source.tsx meta.array.literal meta.brace.square", // [ ]
+        "source.jsx meta.array.literal meta.brace.square", // [ ]
+        "meta.embedded.block.javascript meta.array.literal meta.brace.square", // [ ]
+        "source.ts punctuation.definition.binding-pattern.array", // [ ]
+        "source.js punctuation.definition.binding-pattern.array", // [ ]
+        "source.tsx punctuation.definition.binding-pattern.array", // [ ]
+        "source.jsx punctuation.definition.binding-pattern.array", // [ ]
+        "meta.embedded.block.javascript punctuation.definition.binding-pattern.array", // [ ]
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        // "foreground": "#a31515",
+      }
+    },
+    //
+    // ` ` backticks in template string:
+    {
+      "scope": [
+        "source.ts punctuation.definition.string.template string.template", // ` `
+        "source.js punctuation.definition.string.template string.template", // ` `
+        "source.tsx punctuation.definition.string.template string.template", // ` `
+        "source.jsx punctuation.definition.string.template string.template", // ` `
+        "meta.embedded.block.javascript punctuation.definition.string.template string.template", // ` `
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0",
+        "foreground": "#A9A9A9",
+        // "foreground": "#000000",
+        // "foreground": "#a31515",
+      }
+    },
+    //
+    // comparison operators:
+    {
+      "scope": [
+        "source.ts keyword.operator.comparison",
+        "source.js keyword.operator.comparison",
+        "source.tsx keyword.operator.comparison",
+        "source.jsx keyword.operator.comparison",
+        "meta.embedded.block.javascript keyword.operator.comparison",
+        "source.ts keyword.operator.relational",
+        "source.js keyword.operator.relational",
+        "source.tsx keyword.operator.relational",
+        "source.jsx keyword.operator.relational",
+        "meta.embedded.block.javascript keyword.operator.comparison",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        // "foreground": "#C0C0C0",
+        // "foreground": "#a31515",
+        // "foreground": "#000000",
+      }
+    },
+    //
+    // logical operators:
+    {
+      "scope": [
+        "source.ts keyword.operator.logical",
+        "source.js keyword.operator.logical",
+        "source.tsx keyword.operator.logical",
+        "source.jsx keyword.operator.logical",
+        "meta.embedded.block.javascript keyword.operator.logical",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        // "foreground": "#C0C0C0",
+        // "foreground": "#a31515",
+        // "foreground": "#000000",
+        // "foreground": "#0000CC",
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Vue (.vue):
+    //
+    // fix the HTML tag end:
+    {
+      "scope": [
+        "text.html.vue meta.tag.other" // />
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // fix the assignment sign:
+    {
+      "scope": [
+        "text.html.vue meta.tag.block.any" //
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // fix the generic template {{ }}:
+    {
+      "scope": [
+        "text.html.vue punctuation.definition.generic.begin", // {{
+        "text.html.vue punctuation.definition.generic.end" // }}
+      ],
+      "settings": {
+        // "foreground": "#0BC5E3",
+        "foreground": "#F066FF",
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // C# (.cs):
+    //
+    // Names in C#:
+    //
+    // namespace names:
+    {
+      "scope": [
+        "source.cs entity.name.type.namespace",
+        "text.aspnetcorerazor entity.name.type.namespace",
+      ],
+      "settings": {
+        "foreground": "#000000",
+        // "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // namespace alias names:
+    {
+      "scope": [
+        "source.cs entity.name.type.alias",
+        "text.aspnetcorerazor entity.name.type.alias",
+      ],
+      "settings": {
+        "foreground": "#0000CC80"
+      }
+    },
+    //
+    // type, function names:
+    {
+      "scope": [
+        "source.cs entity.name.type", // class, interface names when creating a class; class instance
+        "text.aspnetcorerazor entity.name.type", // class, interface names when creating a class; class instance
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // type parameters:
+    {
+      "scope": [
+        "source.cs storage.type", // type parameters
+        "text.aspnetcorerazor storage.type", // type parameters
+        "source.cs keyword.type", // "void, int, string" keywords
+        "text.aspnetcorerazor keyword.type", // "void, int, string" keywords
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        // "foreground": "#0BC5E3",
+        // "foreground": "#a31515",
+        // "foreground": "#F0CE7F",
+        // "foreground": "#008000B0",
+        // "foreground": "#a3151580",
+        "foreground": "#E8810C",
+      }
+    },
+    //
+    // function name in definition:
+    {
+      "scope": [
+        "source.cs meta.definition.method entity.name.function",
+        "text.aspnetcorerazor meta.definition.method entity.name.function",
+        "source.cs entity.name.function",
+        "text.aspnetcorerazor entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // function name in function call:
+    {
+      "scope": [
+        "source.cs meta.function-call entity.name.function",
+        "text.aspnetcorerazor meta.function-call entity.name.function",
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // function named parameter in function call in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor entity.name.label",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        // "foreground": "#000000",
+        // "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // enum type name:
+    {
+      "scope": [
+        "source.cs entity.name.type.enum", // enum type name
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // enum member name:
+    {
+      "scope": [
+        // "source.cs entity.name.variable.enum-member", // enum member name
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        // "foreground": "#C0C0C0",
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // local variable name definition:
+    {
+      "scope": [
+        "source.cs entity.name.variable.local", // local variable name definition
+        "text.aspnetcorerazor entity.name.variable.local", // local variable name definition
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // key names to object's properties:
+    {
+      "scope": [
+        "source.cs entity.name.variable.property", // property names in class definition
+        "text.aspnetcorerazor entity.name.variable.property", // property names in class definition
+        "source.cs entity.name.variable.field", // field names in class definition
+        "text.aspnetcorerazor entity.name.variable.field", // field names in class definition
+        // "source.cs entity.name.variable.parameter", // method definition - parameter or argument variable names
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // key names to object's properties:
+    {
+      "scope": [
+        // "source.cs entity.name.variable.property", // property names in class definition
+        // "source.cs entity.name.variable.field", // field names in class definition
+        "source.cs entity.name.variable.parameter", // method definition : parameter variable names
+        "text.aspnetcorerazor entity.name.variable.parameter", // method definition : parameter variable names
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        "foreground": "#000000"
+      }
+    },
+    //
+    // null - literal values :
+    {
+      "scope": [
+        "source.cs constant.language", // null
+        "text.aspnetcorerazor constant.language", // null
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        "foreground": "#a31515",
+      }
+    },
+    //
+    //
+    //
+    // Keywords:
+    //
+    // class, interface, enum:
+    {
+      "scope": [
+        "source.cs keyword.other.class", // class
+        "source.cs keyword.other.interface", // interface
+        "source.cs keyword.other.struct", // struct
+        "source.cs keyword.other.enum", // enum
+      ],
+      "settings": {
+        // "foreground": "#000000",
+        "foreground": "#a31515",
+      }
+    },
+    //
+    // base:
+    {
+      "scope": [
+        "source.cs keyword.other.base", // base
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        // "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // namespace:
+    {
+      "scope": [
+        "source.cs keyword.other.namespace", // namespace
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        // "foreground": "#a31515",
+        // "foreground": "#000000",
+        // "foreground": "#008000B0",
+        // "foreground": "#a3151580",
+      }
+    },
+    //
+    // using:
+    {
+      "scope": [
+        "source.cs keyword.other.using", // using
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        // "foreground": "#008000B0",
+        // "foreground": "#a3151580",
+      }
+    },
+    //
+    // private, public, static, readonly, override, async, ...:
+    {
+      "scope": [
+        "source.cs storage.modifier", // private, public, static, readonly, override, async, ...
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+        // "foreground": "#C0C0C0",
+        // "foreground": "#008000B0"
+        // "foreground": "#000000"
+        // "foreground": "#a3151580"
+      }
+    },
+    //
+    // get, set:
+    {
+      "scope": [
+        "source.cs keyword.other.get", // get
+        "source.cs keyword.other.set", // set
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // var:
+    {
+      "scope": [
+        "source.cs keyword.other.var", // var
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        // "foreground": "#008000B0",
+        // "foreground": "#E8810C",
+      }
+    },
+    //
+    // new:
+    {
+      "scope": [
+        "source.cs keyword.other.new", // new
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0"
+        // "foreground": "#a31515"
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // typeof:
+    {
+      "scope": [
+        "source.cs keyword.other.typeof", // new
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // this:
+    {
+      "scope": [
+        "source.cs keyword.other.this", // this
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // await:
+    {
+      "scope": [
+        "source.cs keyword.other.await", // await
+      ],
+      "settings": {
+        // "foreground": "#0000CC",
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // other keywords ... :
+    {
+      "scope": [
+        "source.cs keyword.other", // other keywords ...
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0",
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    //
+    //
+    // Punctuation in C#:
+    //
+    // { } curly braces for methods:
+    {
+      "scope": [
+        "source.cs punctuation.curlybrace", // { }
+        "text.aspnetcorerazor punctuation.curlybrace", // { }
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ( ) round braces:
+    {
+      "scope": [
+        "source.cs punctuation.parenthesis", // ( )
+        "text.aspnetcorerazor punctuation.parenthesis", // ( )
+      ],
+      "settings": {
+        // "foreground": "#000000"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // [ ] square brackets:
+    {
+      "scope": [
+        "source.cs punctuation.squarebracket", // [ ]
+        "text.aspnetcorerazor punctuation.squarebracket", // [ ]
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // . dot:
+    {
+      "scope": [
+        "source.cs punctuation.accessor" // . dot
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // PowerShell (.ps1):
+    //
+    // type keyword declaration:
+    {
+      "scope": [
+        "source.powershell storage.type", // function
+      ],
+      "settings": {
+        // "foreground": "#a31515"
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // function keyword in declaration:
+    {
+      "scope": [
+        "source.powershell meta.function storage.type", // function
+      ],
+      "settings": {
+        "foreground": "#a31515"
+        // "foreground": "#E8810C"
+      }
+    },
+    //
+    // function names in declaration and function call:
+    {
+      "scope": [
+        "source.powershell support.function", // function names
+        "source.powershell entity.name.function",
+      ],
+      "settings": {
+        // "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // function names in attribute:
+    {
+      "scope": [
+        "source.powershell support.function.attribute",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+        // "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // variable parameter name in attribute:
+    {
+      "scope": [
+        "source.powershell variable.parameter.attribute", // variable parameter name in attribute
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9"
+        // "foreground": "#0000CC"
+        "foreground": "#000000"
+      }
+    },
+    //
+    // variable names:
+    {
+      "scope": [
+        "source.powershell variable.language",
+        "source.powershell variable.other",
+        "source.powershell variable.other.readwrite",
+        "source.powershell support.variable.automatic", // $_
+        "source.powershell interpolated.complex.source",
+        "source.powershell punctuation.definition.variable",
+        "source.powershell entity.name",
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        "foreground": "#000000"
+      }
+    },
+    //
+    // property/method names:
+    {
+      "scope": [
+        "source.powershell variable.other.member", // property/method names
+      ],
+      "settings": {
+        "foreground": "#000000"
+        // "foreground": "#0000CC"
+      }
+    },
+    //
+    // operators:
+    {
+      "scope": [
+        "source.powershell keyword.operator.comparison", // -replace
+        "source.powershell keyword.operator.logical", // -Not
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ( ) round braces in a template string, like "Created a $(tempFolderName) folder." :
+    {
+      "scope": [
+        "source.powershell string.quoted punctuation.section.group", // ( ) round braces in a template string
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // meta.scriptblock (???):
+    {
+      "scope": [
+        "source.powershell meta.scriptblock", // ( ) round braces in a template string
+        // text with no syntax tokens...
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+        // "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // CSS, SASS, LESS, CSS-in-JS:
+    //
+    // Names in CSS:
+    //
+    // tag names, selectors:
+    {
+      "scope": [
+        "source.css entity.name.tag",
+        "source.css entity.name.tag.reference",
+        "source.css meta.selector entity.name.tag",
+        "source.css entity.other.attribute-name.class", // class selector
+        "source.css entity.other.attribute-name.id", // id selector
+        "source.css entity.other.attribute-name.parent-selector",
+        "source.css entity.other.attribute-name.pseudo-class",
+        "source.css entity.other.attribute-name.pseudo-element",
+        "source.css punctuation.definition.entity", // "#, ."
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+        // "foreground": "#E8810C"
+      }
+    },
+    //
+    // tag names also:
+    {
+      "scope": [
+        "source.css meta.property-list entity.name.tag",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // attribute names:
+    {
+      "scope": [
+        "source.css meta.attribute-selector entity.other.attribute-name",
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9"
+        "foreground": "#000000"
+      }
+    },
+    //
+    // variable name in declaration:
+    {
+      "scope": [
+        "source.css meta.definition.variable variable",
+      ],
+      "settings": {
+        "foreground": "#000000"
+        // "foreground": "#0000CC"
+        // "foreground": "#F066FF" // this is interesting #1
+      }
+    },
+    //
+    // variable name:
+    {
+      "scope": [
+        "source.css variable",
+        "source.css meta.property-name.media-query",
+        "source.css variable.other", // for LESS
+      ],
+      "settings": {
+        "foreground": "#000000",
+        // "foreground": "#A9A9A9"
+        // "foreground": "#0000CC",
+        // "foreground": "#9719FF", // maybe #3
+        // "foreground": "#7B0BD9",
+        // "foreground": "#0BC5E3",
+        // "foreground": "#E8810C",
+        // "foreground": "#E8810C80",
+        // "foreground": "#FFA500",
+        // "fontStyle": "bold"
+        // "foreground": "#8549AD"
+        // "foreground": "#AD4994"
+        // "foreground": "#D200E8"
+        // "foreground": "#D200E880"
+        // "foreground": "#BA00CF" // maybe also #2
+        // "foreground": "#DB47EC"
+        // "foreground": "#E790F0"
+        // "foreground": "#A134AD"
+        // "foreground": "#C53FD4"
+        // "foreground": "#F066FF" // this is interesting #1
+      }
+    },
+    //
+    // function name in definition:
+    {
+      "scope": [
+        "source.css entity.name.function"
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        // "foreground": "#000000"
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // function name in function call:
+    {
+      "scope": [
+        "source.css support.function", // function call in CSS
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        // "foreground": "#0BC5E3"
+        // "foreground": "#000000"
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // property names:
+    {
+      "scope": [
+        "source.css support.type.property-name", // property names in CSS
+        "source.css support.type.vendored.property-name", // property names in CSS
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+        // "foreground": "#A9A9A9"
+        // "foreground": "#000000"
+      }
+    },
+    //
+    // property literals:
+    {
+      "scope": [
+        "source.css constant.numeric",
+        "source.css constant.other.color.rgb-value.hex",
+        "source.css constant.other.rgb-value",
+        "source.css keyword.other.unit",
+        "source.css support.constant.property-value",
+        "source.css meta.property-value",
+        "source.css meta.property-value support.type.property-name",
+        "source.css support.constant.font-name",
+      ],
+      "settings": {
+        "foreground": "#a31515"
+      }
+    },
+    //
+    // URLs:
+    {
+      "scope": [
+        "source.css variable.parameter.url",
+      ],
+      "settings": {
+        "foreground": "#a31515"
+      }
+    },
+    //
+    // property names in @media queries:
+    {
+      "scope": [
+        "source.css support.type.property-name.media", // property names in @media queries
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+        // "foreground": "#000000"
+      }
+    },
+    //
+    // @media syntax:
+    {
+      "scope": [
+        // constants in CSS @media rules: like "screen",
+        // it's blue to separate them from media-rules and css-keywords:
+        // "source.css support.constant.media", // "screen" keyword
+        "source.css meta.at-rule.import",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // @media syntax:
+    {
+      "scope": [
+        // constants in CSS @media rules: like "screen",
+        // it's blue to separate them from media-rules and css-keywords:
+        "source.css support.constant.media", // "screen" keyword
+        // "source.css meta.at-rule.import",
+      ],
+      "settings": {
+        // "foreground": "#000000"
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    //
+    //
+    // Keywords in CSS:
+    //
+    //
+    {
+      "scope": [
+        "source.css keyword.control",
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0"
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    //
+    {
+      "scope": [
+        "source.css keyword.control.at-rule.function",
+        "source.css keyword.control.at-rule.mixin",
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0"
+        "foreground": "#0BC5E3"
+        // "foreground": "#a31515"
+      }
+    },
+    //
+    //
+    {
+      "scope": [
+        "source.css keyword.control.for", // @for
+        // "source.css keyword.control.operator", // from, through
+        // "source.css keyword.control.at-rule.include",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+        // "foreground": "#0000CC"
+      }
+    },
+    {
+      "scope": [
+        // "source.css keyword.control.for", // @for
+        "source.css keyword.control.operator", // from, through, in
+        // "source.css keyword.control.at-rule.include",
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        "foreground": "#A9A9A9" // previous
+        // "foreground": "#0BC5E3" // proposed
+      }
+    },
+    //
+    //
+    {
+      "scope": [
+        "source.css keyword.operator.logical", // and
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+        // "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // !default, !important:
+    {
+      "scope": [
+        "source.css keyword.other.default", // !default
+        "source.css keyword.other.important", // !important
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // Punctuation:
+    //
+    // ( ) braces in a function call:
+    {
+      "scope": [
+        "source.css punctuation.section.function", // ( )
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+        // "foreground": "#0BC5E3"
+        // "foreground": "#000000"
+        // "foreground": "#E8810C"
+        // "foreground": "#0000CC"
+      }
+    },
+    //
+    // ( ) braces in a selector:
+    {
+      "scope": [
+        "source.css meta.selector punctuation.section.function", // ( )
+      ],
+      "settings": {
+        // "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
+        // "foreground": "#0000CC"
+        // "foreground": "#000000"
+      }
+    },
+    //
+    // ( ) braces in a calculation:
+    {
+      "scope": [
+        "source.css punctuation.definition.begin.bracket.round", // ( )
+        "source.css punctuation.definition.end.bracket.round", // ( )
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ( ) braces in @media rule:
+    {
+      "scope": [
+        "source.css punctuation.definition.parameters.begin.bracket.round", // ( )
+        "source.css punctuation.definition.parameters.end.bracket.round", // ( )
+        "source.css punctuation.definition.media-query.begin.bracket.round", // ( )
+        "source.css punctuation.definition.media-query.end.bracket.round", // ( )
+        "source.css punctuation.definition.pseudo-class.begin.bracket.round", // ( )
+        "source.css punctuation.definition.pseudo-class.end.bracket.round", // ( )
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // [ ] braces :
+    {
+      "scope": [
+        "source.css punctuation.definition.begin", // [
+        "source.css punctuation.definition.end", // ]
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // + - / * =:
+    {
+      "scope": [
+        "source.css keyword.operator",
+        "source.css punctuation.separator.operator", // = in LESS
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // comparison:
+    {
+      "scope": [
+        "source.css keyword.operator.comparison",
+      ],
+      "settings": {
+        // "foreground": "#000000"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // # interpolation:
+    {
+      "scope": [
+        "source.css punctuation.definition.interpolation.begin.bracket.curly",
+        "source.css punctuation.definition.interpolation.end.bracket.curly",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // @:
+    {
+      "scope": [
+        "source.css punctuation.definition.keyword", // @each, @include in SCSS
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // HTML, XML, HTML-in-JS:
+    //
+    // Names in HTML:
+    //
+    // tag names:
+    {
+      "scope": [
+        "text.html entity.name.tag", // tag names
+        "text.xml entity.name.tag", // tag names
+        "text.aspnetcorerazor entity.name.tag", // tag names
+        "source.ts entity.name.tag", // tag names
+        "source.js entity.name.tag", // tag names
+        "source.tsx entity.name.tag", // tag names
+        "source.jsx entity.name.tag", // tag names
+        "source.ts entity.name.tag support.class", // tag names
+        "source.js entity.name.tag support.class", // tag names
+        "source.tsx entity.name.tag support.class", // tag names
+        "source.jsx entity.name.tag support.class", // tag names
+        "text.html punctuation.definition.tag", // <, >
+        "text.html punctuation.definition.tag source.css-ignored-vscode", // <, > // "source.css-ignored-vscode" - for some weird thing I saw once in a php file.
+        "text.xml punctuation.definition.tag", // <, >
+        "text.aspnetcorerazor punctuation.definition.tag", // <, >
+        "source.ts punctuation.definition.tag", // <, >
+        "source.js punctuation.definition.tag", // <, >
+        "source.tsx punctuation.definition.tag", // <, >
+        "source.jsx punctuation.definition.tag", // <, >
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // attribute names:
+    {
+      "scope": [
+        "text.html entity.other.attribute-name",
+        "text.html meta.attribute", // fixes "align" attribute in HTML inside Markdown.
+        "text.xml entity.other.attribute-name",
+        "text.aspnetcorerazor entity.other.attribute-name",
+        "source.ts entity.other.attribute-name",
+        "source.js entity.other.attribute-name",
+        "source.tsx entity.other.attribute-name",
+        "source.jsx entity.other.attribute-name",
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9"
+        // "foreground": "#a31515"
+        "foreground": "#0BC5E3"
+        // "foreground": "#0000CC",
+        // "foreground": "#0000CC80",
+        // "foreground": "#008000",
+        // "foreground": "#000000",
+        // "foreground": "#0BC5E3B0"
+        // "fontStyle": "italic underline"
+        // "fontStyle": "italic"
+        // "fontStyle": "underline"
+      }
+    },
+    //
+    //
+    //
+    // Others in HTML:
+    //
+    // just normal text:
+    {
+      "scope": [
+        "text.html",
+        "text.xml",
+        "text.aspnetcorerazor",
+        "source.ts",
+        "source.js",
+        "source.tsx",
+        "source.jsx",
+        "source.ts meta.jsx.children",
+        "source.js meta.jsx.children",
+        "source.tsx meta.jsx.children",
+        "source.jsx meta.jsx.children",
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        // "foreground": "#0BC5E3",
+        // "foreground": "#000000",
+        "foreground": "#E8810C",
+      }
+    },
+    //
+    // strings:
+    {
+      "scope": [
+        "text.html string",
+        "text.xml string",
+        "text.aspnetcorerazor string",
+        "source.ts meta.tag.attributes string",
+        "source.js meta.tag.attributes string",
+        "source.tsx meta.tag.attributes string",
+        "source.jsx meta.tag.attributes string",
+      ],
+      "settings": {
+        "foreground": "#a31515",
+        // "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // Punctuation in HTML:
+    //
+    // = assignment sign:
+    {
+      "scope": [
+        "text.xml meta.tag", // = // it's actually a selector for almost all XML, but combined with the other theme rules, it's needed to just select the =
+        "text.html punctuation.separator", // =
+        "text.aspnetcorerazor punctuation.separator", // =
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // : in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor punctuation.separator.colon", // :
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // JSON:
+    //
+    // property names:
+    {
+      "scope": [
+        "source.json support.type.property-name",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+        // "foreground": "#A9A9A9"
+        // "foreground": "#000000"
+      }
+    },
+    //
+    // property literals:
+    {
+      "scope": [
+        "source.json constant.language", // true, false - boolean literals
+        "source.json constant.numeric", // 1, 2 - numeric literals
+      ],
+      "settings": {
+        "foreground": "#a31515"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // YAML (.yml, .yaml):
+    //
+    // Names in YAML:
+    //
+    // property names:
+    {
+      "scope": [
+        "source.yaml entity.name.tag",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // property literals:
+    {
+      "scope": [
+        "source.yaml constant.language", // true, false - boolean literals
+        "source.yaml constant.numeric", // 1, 2 - numeric literals
+      ],
+      "settings": {
+        "foreground": "#a31515"
+      }
+    },
+    //
+    //
+    //
+    // Punctuation in YAML:
+    // | :
+    {
+      "scope": [
+        "source.yaml keyword.control", // |
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // [ ] square brackets:
+    {
+      "scope": [
+        "source.yaml punctuation.definition.sequence", // [ ]
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // - sequence item:
+    {
+      "scope": [
+        "source.yaml punctuation.definition.block.sequence.item", // -
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9"
+        "foreground": "#000000",
+        // "fontStyle": "bold"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Markdown (.md):
+    //
+    // just normal text:
+    {
+      "scope": [
+        "text.html.markdown meta.paragraph",
+        "text.html.markdown",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    {
+      "scope": "text.html.markdown markup.underline",
+      "settings": {
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "scope": "text.html.markdown markup.bold",
+      "settings": {
+        "fontStyle": "bold",
+      }
+    },
+    {
+      "scope": "text.html.markdown markup.heading",
+      "settings": {
+        // "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
+      }
+    },
+    {
+      "scope": "text.html.markdown markup.italic",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "text.html.markdown markup.inserted",
+      "settings": {
+        "foreground": "#09885a"
+      }
+    },
+    {
+      "scope": "text.html.markdown markup.deleted",
+      "settings": {
+        "foreground": "#a31515"
+      }
+    },
+    {
+      "scope": "text.html.markdown markup.changed",
+      "settings": {
+        "foreground": "#0451a5"
+      }
+    },
+    {
+      "scope": "text.html.markdown markup.inline.raw",
+      "settings": {
+        // "foreground": "#a31515"
+        // "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    {
+      "scope": [
+        "text.html.markdown punctuation.definition.quote.begin",
+        "text.html.markdown punctuation.definition.list.begin",
+        "text.html.markdown keyword.operator.redirect"
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+        // "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // headings:
+    //
+    // ## heading punctuation:
+    {
+      "scope": [
+        "text.html.markdown punctuation.definition.heading", // ##
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    //
+    //
+    // links:
+    //
+    // link URL:
+    {
+      "scope": [
+        "text.html.markdown markup.underline.link", // [](https://example.com/)
+        "text.html.markdown constant.other.reference.link", // [][homepage]
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+        // "foreground": "#a31515"
+      }
+    },
+    //
+    // link title:
+    {
+      "scope": [
+        "text.html.markdown string.other.link.title", // [title]()
+        "text.html.markdown meta.link.reference.def constant.other.reference.link", // [homepage]()
+      ],
+      "settings": {
+        // "foreground": "#0BC5E3"
+        "foreground": "#a31515"
+        // "foreground": "#E8810C"
+      }
+    },
+    //
+    // hidden link's square braces:
+    {
+      "scope": [
+        "text.html.markdown meta.link.reference.def punctuation.definition.constant", // []
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // Separators in Markdown:
+    {
+      "scope": [
+        "text.html.markdown meta.separator", // ---
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    //
+    //
+    // Code blocks in Markdown:
+    //
+    // code block definition:
+    {
+      "scope": [
+        "text.html.markdown markup.fenced_code.block punctuation.definition", // ```
+        "text.html.markdown markup.fenced_code.block fenced_code.block.language", // bat, powershell
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+        // "foreground": "#a31515"
+      }
+    },
+    //
+    // code inside a code block:
+    {
+      "scope": [
+        "text.html.markdown markup.fenced_code.block",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Dockerfile (.dockerfile):
+    //
+    {
+      "scope": [
+        "source.dockerfile keyword.other",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // dotEnv (.env), Environment Variables files:
+    //
+    // variable/property name:
+    {
+      "scope": [
+        "source.env variable.other",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // numeric literal
+    {
+      "scope": [
+        "source.env constant.numeric",
+      ],
+      "settings": {
+        // "foreground": "#a31515"
+        "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Properties (.ini, .editorconfig):
+    //
+    {
+      "scope": [
+        "source.ini keyword.other.definition",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    {
+      "scope": [
+        "source.ini",
+      ],
+      "settings": {
+        "foreground": "#a31515"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Ignore (.gitignore, .*ignore):
+    //
+    {
+      "scope": [
+        "source.ignore",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // AutoHotKey (AHK):
+    //
+    // Names in AutoHotKey:
+    //
+    // preprocessor directives:
+    {
+      "scope": "source.ahk keyword.control.directives",
+      "settings": {
+        // "foreground": "#C0C0C0"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // function name:
+    {
+      "scope": "source.ahk support.function",
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // hotkey literals:
+    {
+      "scope": [
+        "source.ahk hotkeyline",
+        "source.ahk keyword.keys"
+      ],
+      "settings": {
+        // "foreground": "#a31515"
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    //
+    //
+    // Keywords in AutoHotKey:
+    //
+    // On, Off, others ... keywords:
+    {
+      "scope": [
+        "source.ahk keyword.other" // On, Off, others ...
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0"
+        "foreground": "#A9A9A9"
+        // "foreground": "#a31515"
+      }
+    },
+    //
+    //
+    //
+    // Punctuation in AutoHotKey:
+    //
+    // ; comment sign:
+    {
+      "scope": "source.ahk punctuation.definition.comment", // ;
+      "settings": {
+        "foreground": "#008000B0"
+      }
+    },
+    //
+    // " " string quotes:
+    {
+      "scope": [
+        "source.ahk punctuation.definition.string.begin",
+        "source.ahk punctuation.definition.string.end"
+      ],
+      "settings": {
+        "foreground": "#a31515"
+      }
+    },
+    //
+    // { }, ::, , punctuation:
+    {
+      "scope": [
+        "source.ahk punctuation.bracket", // { }
+        "source.ahk punctuation.definition.equals.colon", // ::
+        "source.ahk punctuation" // ,
+      ],
+      "settings": {
+        // "foreground": "#C0C0C0"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Text style:
+    //
+    {
+      "scope": "emphasis",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "strong",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+  ]
+}

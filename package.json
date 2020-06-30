@@ -1,0 +1,39 @@
+{
+    "name": "respect-my-eyes",
+    "version": "1.0.0",
+    "displayName": "RespectMyEyes light theme",
+    "description": "Probably the better light theme for Frontend!",
+    "publisher": "dima-iholkin",
+    "author": "Dima Iholkin",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dima-iholkin/RespectMyEyes-VSCode"
+    },
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "scripts": {
+        "build": "vsce package",
+        "build-and-install": "vsce package --out ./latest.vsix && code --install-extension latest.vsix && del /f latest.vsix"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "VSCode",
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "RespectMyEyes",
+                "uiTheme": "vs",
+                "path": "./themes/RespectMyEyes.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vsce": "^1.76.1"
+    },
+    "license": "MIT"
+}

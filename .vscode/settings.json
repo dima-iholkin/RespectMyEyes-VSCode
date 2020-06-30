@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.git-old": true,
+    "*ignore": true,
+    "LICENSE": true,
+    "readme": true,
+    ".vscode": true
+  }
+}

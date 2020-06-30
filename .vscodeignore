@@ -1,0 +1,5 @@
+# These files to be excluded from the package:
+.git/**
+.vscode/**
+testing/**
+.gitignore

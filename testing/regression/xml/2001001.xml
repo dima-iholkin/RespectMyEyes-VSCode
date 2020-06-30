@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Source>
+   <language xml:lang="en-us">
+      <Devices>
+         <Device DisplayName="Wireless Keyboard K360" Class="KeyboardDevice" Model="33558529" NumberOfButtons="18">
+            <Param FnKeyInverted="0" FnKeyInvertedDef="0"/>
+            <Bitmap>
+               <Page/>
+               <Page>
+                  <Button Bmp="\Devices\Keyboard\2001001\F1.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F2.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F3.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F4.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F5.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F6.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F7.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F8.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F9.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F10.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F11.png"/>
+                  <Button Bmp="\Devices\Keyboard\2001001\F12.png"/>
+               </Page>
+            </Bitmap>
+            <Buttons>
+               <Button Number="786979" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\Home"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786979" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="HomePage" HandlerSetGroup="SmrkndHomePageKb" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="786826" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\Email"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786826" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="Email" HandlerSetGroup="SmrkndEmailKb" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="786977" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\Search"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786977" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="AdvSmartSearch" HandlerSetGroup="SmrkndAdvSmartSearchKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="786819" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\media"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786819" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="MediaPlayer" HandlerSetGroup="SmrkndMediaPlayerKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="15728648" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\QuickSwitch"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="15728648" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="ApplicationSwitch" HandlerSetGroup="SmrkndAppSwitchKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="15728750" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\Desktop"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="15728750" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="ShowDesktop" HandlerSetGroup="SmrkndShowDesktopdKb" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="15728679" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\Minimize_Window"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="15728679" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="WindowsMinimize" HandlerSetGroup="SmrkndWindowsMinimizeKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="15728677" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\Maximize"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="15728677" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="WindowsRestore" HandlerSetGroup="SmrkndWindowsRestoreKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="15728691" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\MyComputer"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="15728691" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="My Computer" HandlerSetGroup="SmrkndMyComputerKb" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="15728751" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\Lock_PC"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="15728751" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="WindowsLock" HandlerSetGroup="SmrkndWindowsLockKb" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="65666" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\Sleep"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="65666" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="StandBySet" HandlerSetGroup="SmrkndStandBySetKb" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <Button Number="786834" Name="Button">
+                  <Param Type="Fkey" IconLoc="Devices\Keyboard\CommonIcons\Calc"/>
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786834" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="Calculator" HandlerSetGroup="SmrkndCalculatorKb" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button>
+               <!-- <Button Number="786614" Name="Button">
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786614" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="MM PREVIOUS_REWIND" HandlerSetGroup="SmrkndPreviousRewindTrackKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button> -->
+               <!-- <Button Number="786637" Name="Button">
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786637" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="MM PLAY" HandlerSetGroup="SmrkndPlayTrackKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button> -->
+               <!-- <Button Number="786613" Name="Button">
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786613" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="MM NEXT_FF" HandlerSetGroup="SmrkndNextFFTrackKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button> -->
+               <!-- <Button Number="786658" Name="Button">
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786658" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="VOLUMEMUTE" HandlerSetGroup="SmrkndVolumeMuteKb" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button> -->
+               <!-- <Button Number="786666" Name="Button">
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786666" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="VOLUMEDOWNRepeat" HandlerSetGroup="SmrkndVolumeDownKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button> -->
+               <!-- <Button Number="786665" Name="Button">
+                  <Trigger Class="ButtonPress">
+                     <Param Button="786665" EventType="33554432"/>
+                     <TriggerState Name="ButtonDownUp" HandlerSet="VOLUMEUPRepeat" HandlerSetGroup="SmrkndVolumeUpKbMs" HandlerSetGroupAddOn="SmrkndOtherKeyboard"/>
+                  </Trigger>
+               </Button> -->
+            </Buttons>
+         </Device>
+      </Devices>
+   </language>
+</Source>

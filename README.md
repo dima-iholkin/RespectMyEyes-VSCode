@@ -1,4 +1,4 @@
-# RespectMyEyes theme for VS Code
+# RespectMyEyes light theme for VS Code
 
 Probably the better light theme **for Frontend (React + JS/TS + CSS + HTML)** for VS Code!  
 

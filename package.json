@@ -28,7 +28,7 @@
             {
                 "label": "RespectMyEyes",
                 "uiTheme": "vs",
-                "path": "./themes/RespectMyEyes.json"
+                "path": "./themes/RespectMyEyes-color-theme.json"
             }
         ]
     },

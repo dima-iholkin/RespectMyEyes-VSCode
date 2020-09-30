@@ -45,8 +45,8 @@ It's still WIP (work in progress).
   - [Supported languages](#supported-languages)
   - [What's next?](#whats-next)
   - [Instructions for dev](#instructions-for-dev)
-  - [License](#license)
   - [My settings](#my-settings)
+  - [License](#license)
 
 
 

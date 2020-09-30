@@ -57,7 +57,7 @@ Other ecosystems can be added if people want them.  ...And if you contribute the
 
 
 
-### FrontEnd ecosystem:
+FrontEnd ecosystem:
 <!-- |            Files            | support level |                with Extentions                |
 | :-------------------------: | :-----------: | :-------------------------------------------: |
 |   JavaScript, TypeScript    |  looks good   |                       -                       |
@@ -136,9 +136,7 @@ Other ecosystems can be added if people want them.  ...And if you contribute the
 
 
 
-<br />
-
-### Config files:
+Config files:
 <!-- |   Files    | support level | with Extentions  |
 | :--------: | :-----------: | :--------------: |
 |    XML     |  looks good   |        -         |
@@ -202,9 +200,7 @@ Other ecosystems can be added if people want them.  ...And if you contribute the
 
 
 
-<br />
-
-### .NET ecosystem:
+.NET ecosystem:
 <!-- |   Files    | support level |        with Extentions        |
 | :--------: | :-----------: | :---------------------------: |
 |     C#     |  really poor  | [C# Grammar Extended](csharp) |
@@ -241,9 +237,7 @@ Other ecosystems can be added if people want them.  ...And if you contribute the
 
 
 
-<br />
-
-### Others:
+Others:
 <!-- |   Files    | support level |         with Extentions         |
 | :--------: | :-----------: | :-----------------------------: |
 |  Markdown  |     fine      | [Markdown All in One](markdown) |
@@ -279,8 +273,6 @@ Other ecosystems can be added if people want them.  ...And if you contribute the
 [autohotkey]: https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-autohotkey
 
 
-
-<br />
 
 To use multiple themes for specific file types - look at [Theme by language](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language).
 

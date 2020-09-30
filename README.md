@@ -307,7 +307,7 @@ Changes to the theme file are applied live in the Extension Development Host win
 ## My settings
 
 This is just the relevant parts of `settings.json`:
-```json
+```json5
 {
     // UI Layout:
     "workbench.sideBar.location": "right",

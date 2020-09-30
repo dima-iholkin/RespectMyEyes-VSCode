@@ -46,6 +46,7 @@ It's still WIP (work in progress).
   - [What's next?](#whats-next)
   - [Instructions for dev](#instructions-for-dev)
   - [License](#license)
+  - [My settings](#my-settings)
 
 
 
@@ -56,55 +57,185 @@ Other ecosystems can be added if people want them.  ...And if you contribute the
 
 
 
-FrontEnd ecosystem:
-|            Files            | support level |                with Extentions                |
-| :-------------------------: | :-----------: | :-------------------------------------------: |
-|   JavaScript, TypeScript    |  looks good   |                       -                       |
-|            React            |  looks good   |                       -                       |
-|             Vue             |     poor      |                  [Vue](vue)                   |
-|           Angular           |     poor      |                       -                       |
-|             CSS             |  looks good   |                       -                       |
-| styled-components CSS-in-JS |     fine      | [vscode-styled-components](styled-components) |
-|            SASS             |     fine      |                       -                       |
-|            LESS             |     poor      |                       -                       |
-|            HTML             |  looks good   |                       -                       |
+**FrontEnd ecosystem:**
+<table>
+  <thead>
+    <tr>
+      <th align="center">Files</th>
+      <th align="center">support level</th>
+      <th align="center">with Extentions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">JavaScript, TypeScript</td>
+      <td align="center">looks good</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">React</td>
+      <td align="center">looks good</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">Vue</td>
+      <td align="center">poor</td>
+      <td align="center">
+        <a href="vue">Vue</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Angular</td>
+      <td align="center">poor</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">CSS</td>
+      <td align="center">looks good</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">styled-components CSS-in-JS</td>
+      <td align="center">fine</td>
+      <td align="center">
+        <a href="styled-components">vscode-styled-components</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">SASS</td>
+      <td align="center">fine</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">LESS</td>
+      <td align="center">poor</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">HTML</td>
+      <td align="center">looks good</td>
+      <td align="center">-</td>
+    </tr>
+  </tbody>
+</table>
 
 [vue]: https://marketplace.visualstudio.com/items?itemName=jcbuisson.vue
 [styled-components]: https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
 
 
 
-Config files:
-|   Files    | support level | with Extentions  |
-| :--------: | :-----------: | :--------------: |
-|    XML     |  looks good   |        -         |
-|    JSON    |  looks good   |        -         |
-|    YAML    |     fine      |        -         |
-|   DotEnv   |     fine      | [DotEnv](dotenv) |
-| Properties |   looks bad   |        -         |
-|   Ignore   |     fine      |        -         |
-| Dockerfile |     fine      |        -         |
+**Config files:**
+<table>
+  <thead>
+    <tr>
+      <th align="center">Files</th>
+      <th align="center">support level</th>
+      <th align="center">with Extentions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">XML</td>
+      <td align="center">looks good</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">JSON</td>
+      <td align="center">looks good</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">YAML</td>
+      <td align="center">fine</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">DotEnv</td>
+      <td align="center">fine</td>
+      <td align="center">
+        <a href="dotenv">DotEnv</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Properties</td>
+      <td align="center">looks bad</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">Ignore</td>
+      <td align="center">fine</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td align="center">Dockerfile</td>
+      <td align="center">fine</td>
+      <td align="center">-</td>
+    </tr>
+  </tbody>
+</table>
 
 [dotenv]: https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv
 
 
 
-.NET ecosystem:
-|   Files    | support level |        with Extentions        |
-| :--------: | :-----------: | :---------------------------: |
-|     C#     |  really poor  | [C# Grammar Extended](csharp) |
-| PowerShell |     fine      |   [PowerShell](powershell)    |
+**.NET ecosystem:**
+<table>
+  <thead>
+    <tr>
+      <th align="center">Files</th>
+      <th align="center">support level</th>
+      <th align="center">with Extentions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">C#</td>
+      <td align="center">really poor</td>
+      <td align="center">
+        <a href="csharp">C# Grammar Extended</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">PowerShell</td>
+      <td align="center">fine</td>
+      <td align="center">
+        <a href="powershell">PowerShell</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 [csharp]: https://marketplace.visualstudio.com/items?itemName=dannymcgee.csharp-grammar-extended
 [powershell]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
 
 
 
-Others:
-|   Files    | support level |         with Extentions         |
-| :--------: | :-----------: | :-----------------------------: |
-|  Markdown  |     fine      | [Markdown All in One](markdown) |
-| AutoHotKey |     fine      |    [AutoHotKey](autohotkey)     |
+**Others:**
+<table>
+  <thead>
+    <tr>
+      <th align="center">Files</th>
+      <th align="center">support level</th>
+      <th align="center">with Extentions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">Markdown</td>
+      <td align="center">fine</td>
+      <td align="center">
+        <a href="markdown">Markdown All in One</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">AutoHotKey</td>
+      <td align="center">fine</td>
+      <td align="center">
+        <a href="autohotkey">AutoHotKey</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 [markdown]: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 [autohotkey]: https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-autohotkey
@@ -129,6 +260,67 @@ Press F5 to launch an Extension Development Host window.
 Changes to the theme file are applied live in the Extension Development Host window.  
 
 "npm run build-and-install" to package the theme from source, and to install into VS Code. Requires VS Code reload.
+
+
+
+## My settings
+
+This is just the relevant parts of `settings.json`:
+```json5
+{
+    // UI Layout:
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.visible": true,
+    "explorer.sortOrder": "default",
+    "explorer.compactFolders": false,
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": true,
+    //
+    //
+    //
+    // Editor UI:
+    "editor.minimap.enabled": false,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": false,
+    "editor.renderIndentGuides": true,
+    //
+    //
+    //
+    // Font:
+    "editor.fontFamily": "Fantasque Sans Mono",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "workbench.iconTheme": "vscode-icons",
+    //
+    //
+    //
+    // Show color for a code:   (Color-Highlight extension)
+    "color-highlight.enable": true,
+    "color-highlight.markerType": "dot-before",
+    "color-highlight.markRuler": false,
+    "editor.colorDecorators": false,
+    //
+    //
+    //
+    // Terminal window:
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorBlinking": true,
+    //
+    //
+    //
+    "files.associations": {
+        ".stylelintrc": "json",
+        ".stylelintignore": "ignore",
+        ".eslintignore": "ignore",
+        ".browserslistrc": "properties",
+        ".prettierrc": "json"
+    },
+    //
+    "workbench.colorTheme": "RespectMyEyes"
+}
+```
 
 
 

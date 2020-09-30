@@ -57,19 +57,7 @@ Other ecosystems can be added if people want them.  ...And if you contribute the
 
 
 
-FrontEnd ecosystem:
-<!-- |            Files            | support level |                with Extentions                |
-| :-------------------------: | :-----------: | :-------------------------------------------: |
-|   JavaScript, TypeScript    |  looks good   |                       -                       |
-|            React            |  looks good   |                       -                       |
-|             Vue             |     poor      |                  [Vue](vue)                   |
-|           Angular           |     poor      |                       -                       |
-|             CSS             |  looks good   |                       -                       |
-| styled-components CSS-in-JS |     fine      | [vscode-styled-components](styled-components) |
-|            SASS             |     fine      |                       -                       |
-|            LESS             |     poor      |                       -                       |
-|            HTML             |  looks good   |                       -                       | -->
-
+**FrontEnd ecosystem:**
 <table>
   <thead>
     <tr>
@@ -136,17 +124,7 @@ FrontEnd ecosystem:
 
 
 
-Config files:
-<!-- |   Files    | support level | with Extentions  |
-| :--------: | :-----------: | :--------------: |
-|    XML     |  looks good   |        -         |
-|    JSON    |  looks good   |        -         |
-|    YAML    |     fine      |        -         |
-|   DotEnv   |     fine      | [DotEnv](dotenv) |
-| Properties |   looks bad   |        -         |
-|   Ignore   |     fine      |        -         |
-| Dockerfile |     fine      |        -         | -->
-
+**Config files:**
 <table>
   <thead>
     <tr>
@@ -200,12 +178,7 @@ Config files:
 
 
 
-.NET ecosystem:
-<!-- |   Files    | support level |        with Extentions        |
-| :--------: | :-----------: | :---------------------------: |
-|     C#     |  really poor  | [C# Grammar Extended](csharp) |
-| PowerShell |     fine      |   [PowerShell](powershell)    | -->
-
+**.NET ecosystem:**
 <table>
   <thead>
     <tr>
@@ -237,12 +210,7 @@ Config files:
 
 
 
-Others:
-<!-- |   Files    | support level |         with Extentions         |
-| :--------: | :-----------: | :-----------------------------: |
-|  Markdown  |     fine      | [Markdown All in One](markdown) |
-| AutoHotKey |     fine      |    [AutoHotKey](autohotkey)     | -->
-
+**Others:**
 <table>
   <thead>
     <tr>
@@ -301,8 +269,6 @@ Changes to the theme file are applied live in the Extension Development Host win
 * Copyright 2019-2020 © <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.
 
 
-
-<br />
 
 ## My settings
 

@@ -263,13 +263,6 @@ Changes to the theme file are applied live in the Extension Development Host win
 
 
 
-## License
-
-* **[MIT License](http://opensource.org/licenses/mit-license.php)**
-* Copyright 2019-2020 © <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.
-
-
-
 ## My settings
 
 This is just the relevant parts of `settings.json`:
@@ -328,3 +321,10 @@ This is just the relevant parts of `settings.json`:
     "workbench.colorTheme": "RespectMyEyes"
 }
 ```
+
+
+
+## License
+
+* **[MIT License](http://opensource.org/licenses/mit-license.php)**
+* Copyright 2019-2020 © <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.

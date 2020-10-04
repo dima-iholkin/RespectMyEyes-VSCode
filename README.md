@@ -45,8 +45,8 @@ It's still WIP (work in progress).
   - [Supported languages](#supported-languages)
   - [What's next?](#whats-next)
   - [Instructions for dev](#instructions-for-dev)
-  - [License](#license)
   - [My settings](#my-settings)
+  - [License](#license)
 
 
 
@@ -265,62 +265,67 @@ Changes to the theme file are applied live in the Extension Development Host win
 
 ## My settings
 
-This is just the relevant parts of `settings.json`:
-```json5
-{
-    // UI Layout:
-    "workbench.sideBar.location": "right",
-    "workbench.activityBar.visible": true,
-    "explorer.sortOrder": "default",
-    "explorer.compactFolders": false,
-    "window.zoomLevel": 0,
-    "breadcrumbs.enabled": true,
-    //
-    //
-    //
-    // Editor UI:
-    "editor.minimap.enabled": false,
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.renderWhitespace": "boundary",
-    "editor.renderControlCharacters": false,
-    "editor.renderIndentGuides": true,
-    //
-    //
-    //
-    // Font:
-    "editor.fontFamily": "Fantasque Sans Mono",
-    "editor.fontSize": 16,
-    "editor.fontLigatures": true,
-    "workbench.iconTheme": "vscode-icons",
-    //
-    //
-    //
-    // Show color for a code:   (Color-Highlight extension)
-    "color-highlight.enable": true,
-    "color-highlight.markerType": "dot-before",
-    "color-highlight.markRuler": false,
-    "editor.colorDecorators": false,
-    //
-    //
-    //
-    // Terminal window:
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.cursorBlinking": true,
-    //
-    //
-    //
-    "files.associations": {
-        ".stylelintrc": "json",
-        ".stylelintignore": "ignore",
-        ".eslintignore": "ignore",
-        ".browserslistrc": "properties",
-        ".prettierrc": "json"
-    },
-    //
-    "workbench.colorTheme": "RespectMyEyes"
-}
-```
+<details>
+  <summary>This is the relevant parts of `settings.json`:</summary>
+
+  <br />
+
+  ```json5
+  {
+      // UI Layout:
+      "workbench.sideBar.location": "right",
+      "workbench.activityBar.visible": true,
+      "explorer.sortOrder": "default",
+      "explorer.compactFolders": false,
+      "window.zoomLevel": 0,
+      "breadcrumbs.enabled": true,
+      //
+      //
+      //
+      // Editor UI:
+      "editor.minimap.enabled": false,
+      "editor.cursorSmoothCaretAnimation": true,
+      "editor.renderWhitespace": "boundary",
+      "editor.renderControlCharacters": false,
+      "editor.renderIndentGuides": true,
+      //
+      //
+      //
+      // Font:
+      "editor.fontFamily": "Fantasque Sans Mono",
+      "editor.fontSize": 16,
+      "editor.fontLigatures": true,
+      "workbench.iconTheme": "vscode-icons",
+      //
+      //
+      //
+      // Show color for a code:   (Color-Highlight extension)
+      "color-highlight.enable": true,
+      "color-highlight.markerType": "dot-before",
+      "color-highlight.markRuler": false,
+      "editor.colorDecorators": false,
+      //
+      //
+      //
+      // Terminal window:
+      "terminal.integrated.fontSize": 16,
+      "terminal.integrated.cursorStyle": "underline",
+      "terminal.integrated.cursorBlinking": true,
+      //
+      //
+      //
+      "files.associations": {
+          ".stylelintrc": "json",
+          ".stylelintignore": "ignore",
+          ".eslintignore": "ignore",
+          ".browserslistrc": "properties",
+          ".prettierrc": "json"
+      },
+      //
+      "workbench.colorTheme": "RespectMyEyes"
+  }
+  ```
+</details>
 
 
 

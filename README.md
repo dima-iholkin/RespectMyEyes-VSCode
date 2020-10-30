@@ -1,10 +1,13 @@
 # RespectMyEyes light theme for VS Code
 
-Probably the better light theme **for Frontend (React + JS/TS + CSS + HTML)** for VS Code!  
+Ask your questions on Gitter:  
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/RespectMyEyes-VSCode/community)
 
-The author was annoyed by the available ones.  
+Another light theme for VS Code.  
+Focused on **JS + CSS + HTML** support. And some other languages.
 
-It's still WIP (work in progress).
+*The author was annoyed by the available ones.*  
+*It's still WIP (work in progress).*
 
 
 
@@ -322,7 +325,27 @@ Changes to the theme file are applied live in the Extension Development Host win
           ".prettierrc": "json"
       },
       //
+      //
+      //
       "workbench.colorTheme": "RespectMyEyes"
+      //
+      //
+      //
+      // customize the theme:
+      "workbench.colorCustomizations": {
+          "terminal.ansiBlack": "#000000",
+          "terminal.ansiBlue": "#3465A4",
+          "terminal.ansiBrightBlack": "#555753",
+          "terminal.ansiBrightBlue": "#729FCF",
+          "terminal.ansiBrightCyan": "#34E2E2",
+          "terminal.ansiBrightGreen": "#00D000",
+          "terminal.ansiBrightMagenta": "#F066FF",
+          "terminal.ansiBrightRed": "#EF2929",
+          "terminal.ansiCyan": "#06989A",
+          "terminal.ansiGreen": "#00B000",
+          "terminal.ansiMagenta": "#AD7FA8",
+          "terminal.ansiRed": "#CC0000",
+      }
   }
   ```
 </details>

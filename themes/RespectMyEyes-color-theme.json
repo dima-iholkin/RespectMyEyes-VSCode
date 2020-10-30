@@ -451,24 +451,28 @@
     // 
     // #0000CC // #b5ba00
     //
-    "terminal.ansiBlack": "#000000",
-    "terminal.ansiBlue": "#3465A4",
-    "terminal.ansiBrightBlack": "#555753",
-    "terminal.ansiBrightBlue": "#729FCF",
-    "terminal.ansiBrightCyan": "#34E2E2",
-    "terminal.ansiBrightGreen": "#00D000",
-    "terminal.ansiBrightMagenta": "#F066FF",
-    "terminal.ansiBrightRed": "#EF2929",
-    // "terminal.ansiBrightWhite": "#C0C0C0",
-    "terminal.ansiBrightWhite": "#A9A9A9",
+    // This is rejected.
     // "terminal.ansiBrightYellow": "#0BC5E3",
-    "terminal.ansiCyan": "#06989A",
-    "terminal.ansiGreen": "#00B000",
-    "terminal.ansiMagenta": "#AD7FA8",
-    "terminal.ansiRed": "#CC0000",
-    "terminal.ansiWhite": "#A9A9A9",
+    // "terminal.ansiBrightWhite": "#C0C0C0",
     // "terminal.ansiYellow": "#0000CC",
     //
+    // This is disabled to make it opt-in for people in their settings.json.
+    // "terminal.ansiBlack": "#000000",
+    // "terminal.ansiBlue": "#3465A4",
+    // "terminal.ansiBrightBlack": "#555753",
+    // "terminal.ansiBrightBlue": "#729FCF",
+    // "terminal.ansiBrightCyan": "#34E2E2",
+    // "terminal.ansiBrightGreen": "#00D000",
+    // "terminal.ansiBrightMagenta": "#F066FF",
+    // "terminal.ansiBrightRed": "#EF2929",
+    // "terminal.ansiCyan": "#06989A",
+    // "terminal.ansiGreen": "#00B000",
+    // "terminal.ansiMagenta": "#AD7FA8",
+    // "terminal.ansiRed": "#CC0000",
+    //
+    // White color should be overriden because of the white background.
+    "terminal.ansiBrightWhite": "#A9A9A9",
+    "terminal.ansiWhite": "#A9A9A9",
     //
     //
     // ====================================================

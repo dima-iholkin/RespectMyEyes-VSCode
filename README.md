@@ -1,12 +1,11 @@
-# RespectMyEyes light theme for VS Code
+# RespectMyEyes theme
 
 Ask your questions on Gitter:  
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/RespectMyEyes-VSCode/community)
 
 Another light theme for VS Code.  
-Focused on **JS + CSS + HTML** support. And some other languages.
+Focused on **TypeScript/JS + CSS + HTML** support. And some other languages.
 
-*The author was annoyed by the available ones.*  
 *It's still WIP (work in progress).*
 
 

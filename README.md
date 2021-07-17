@@ -39,32 +39,18 @@ To use multiple themes for the chosen file types, look at the extension [Theme b
   TypeScript:  
   <img src="/readme/ts_01.png" title="typescript example code screenshot" alt="typescript example code screenshot">
   <br />
-  Credit for the code:   
-  <a href="https://github.com/dima-iholkin">me</a>
-  <br />
 
   <br />
-  TypeScript:  
   <img src="/readme/ts_02.png" title="typescript example code screenshot" alt="typescript example code screenshot">
   <br />
-  Credit for the code:   
-  <a href="https://github.com/dima-iholkin">me</a>
-  <br />
 
   <br />
-  TypeScript:  
   <img src="/readme/ts_03.png" title="typescript example code screenshot" alt="typescript example code screenshot">
-  <br />
-  Credit for the code:   
-  <a href="https://github.com/dima-iholkin">me</a>
   <br />
 
   <br />
   Git:  
   <img src="/readme/git.png" title="typescript example code screenshot" alt="typescript example code screenshot">
-  <br />
-  Credit for the code:   
-  <a href="https://github.com/dima-iholkin">me</a>
   <br />
 
   <br />

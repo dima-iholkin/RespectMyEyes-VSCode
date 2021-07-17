@@ -1900,6 +1900,23 @@
     //
     //
     // ====================================================
+    // Configuration in JS file, like in JSON:
+    //
+    //
+    // object keys when instantiating an object:
+    {
+      "scope": [
+        "source.js meta.object-literal.key string.quoted",
+        "source.ts meta.object-literal.key string.quoted"
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
     // C# (.cs):
     //
     // Names in C#:

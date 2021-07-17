@@ -4,9 +4,10 @@ Connect on Gitter:
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/RespectMyEyes-VSCode/community)
 
 A light theme focused on the **frontend-react-stack** : **TS/JS + React + HTML + CSS** support. 
-Plus Some other languages like PowerShell, YAML, Markdown, AutoHotKey.
+Plus some other languages like **PowerShell, YAML, Markdown, AutoHotKey**.
 
 *It can always be improved and some oddities can be fixed.*
+
 *The frontend-react-stack and some other languages are ready.*
 
 *Other languages need much work. Most of the not mentioned languages have no support at all.*
@@ -14,7 +15,7 @@ Plus Some other languages like PowerShell, YAML, Markdown, AutoHotKey.
 
 Please report any problems.
 
-To use multiple themes for different file types, look at the extension [Theme by language](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language).
+To use multiple themes for the chosen file types, look at the extension [Theme by language](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language).
 
 
 
@@ -331,7 +332,7 @@ Press F5 to test the theme in a new debug window. Changes to the theme file are 
 
 ## VS Code looks
 
-Interested in how my VS Code looks? Here are the relevant parts of the `settings.json`.
+Interested how my VS Code looks? Here are the relevant parts of the `settings.json`.
 
 <details>
   <summary>settings.json</summary>

@@ -9,15 +9,10 @@
     "focusBorder": "#00800080",
     //
     // the search icons and maybe other icons:
-    // "icon.foreground": "#008000",
-    // "icon.foreground": "#004000",
     "icon.foreground": "#000000",
     //
     // text selection in the search and other workbench areas:
-    // "selection.background": "#00B00060",
     "selection.background": "#00B00040",
-    //
-    // "foreground": "#008000",
     //
     //
     //
@@ -32,15 +27,10 @@
     // Input controls: it's the Search box and the Find/Replace box.
     //
     // the default placeholder text is too low contrast:
-    // "input.placeholderForeground": "#767676",
     "input.placeholderForeground": "#A0A0A0",
     //
-    // "input.foreground": "#006000",
-    // "input.foreground": "#008000",
-    // "input.foreground": "#00A000",
     "input.foreground": "#00B000",
     //
-    // "inputOption.activeBackground": "#FFFFFF",
     "inputOption.activeBackground": "#00B00040",
     //
     "input.background": "#FFFFFF",
@@ -50,10 +40,8 @@
     // ====================================================
     // Button controls:
     //
-    // "button.background": "#00B000",
     "button.background": "#FFFFFF",
     //
-    // "button.hoverBackground": "#00B000A0",
     "button.hoverBackground": "#00B00040",
     //
     "button.foreground": "#00B000",
@@ -64,8 +52,6 @@
     // Dropdown controls:
     //
     "dropdown.foreground": "#006000",
-    //
-    // "dropdown.listBackground": "#FFFFFF",
     //
     //
     //
@@ -92,31 +78,24 @@
     // ====================================================
     // Status Bar: the bar at the bottom.
     //
-    // "statusBar.background": "#007acc",
     "statusBar.background": "#f3f3f3",
     //
-    // "statusBar.foreground": "#ffffff",
     "statusBar.foreground": "#008000",
     //
-    // "statusBar.border": "#dddddd",
     "statusBar.border": "#00800040",
     //
     //
     //
-    // "statusBar.debuggingBackground": "#cc6633",
     "statusBar.debuggingBackground": "#f3f3f3",
     //
-    // "statusBar.debuggingForeground": "#ffffff",
     "statusBar.debuggingForeground": "#cc6633",
     //
     "statusBar.debuggingBorder": "#cc6633",
     //
     //
     //
-    // "statusBar.noFolderBackground": "#68217a",
     "statusBar.noFolderBackground": "#f3f3f3",
     //
-    // "statusBar.noFolderForeground": "#ffffff",
     "statusBar.noFolderForeground": "#68217a",
     //
     "statusBar.noFolderBorder": "#68217a",
@@ -149,34 +128,22 @@
     // I want it to be light and blend in with other panes:
     "activityBar.background": "#f3f3f3",
     //
-    // "activityBar.border": "#dddddd",
     "activityBar.border": "#00800040",
     //
     // the line when moving the badges:
     "activityBar.dropBorder": "#00B000",
     //
     // the colors for badges:
-    // "activityBar.foreground": "#333333",
-    // "activityBar.foreground": "#008000",
-    // "activityBar.foreground": "#80c080",
     "activityBar.foreground": "#00B000",
     //
-    // "activityBar.inactiveForeground": "#33333360",
-    // "activityBar.inactiveForeground": "#C0C0C0",
     "activityBar.inactiveForeground": "#33333340",
     //
     // notifications on the badges:
-    // "activityBarBadge.background": "#007acc",
-    // "activityBarBadge.background": "#008000",
-    // "activityBarBadge.background": "#00800080",
     "activityBarBadge.background": "#80c080",
     //
     "activityBarBadge.foreground": "#ffffff",
     //
     // the indicator to the side of an active badge:
-    // "activityBar.activeBorder": "#33333360",
-    // "activityBar.activeBorder": "#008000",
-    // #767676
     "activityBar.activeBorder": "#00B000",
     //
     "activityBar.activeBackground": "#FFFFFF",
@@ -190,7 +157,6 @@
     "sideBarTitle.foreground": "#6f6f6f",
     //
     // the opened pane background:
-    // "sideBar.background": "#ffffff",
     "sideBar.background": "#f3f3f3",
     //
     "sideBar.border": "#dddddd",
@@ -207,9 +173,6 @@
     // ====================================================
     // Panel: the bottom panel (Ctrl+J) with the Terminal, Output, Problems, Debug console...
     //
-    // "panel.background": "#ffffff",
-    "panel.background": "#f3f3f3",
-    //
     "panelTitle.activeForeground": "#008000",
     //
     "panelTitle.inactiveForeground": "#000000",
@@ -220,31 +183,17 @@
     // Lists and Trees: it's the File Explorer list.
     //
     // the default hover background is too low contrast:
-    // "list.hoverBackground": "#e8e8e8",
-    // "list.hoverBackground": "#E0F0E0",
-    // "list.hoverBackground": "#00B00020",
-    // "list.hoverBackground": "#def5de",
     "list.hoverBackground": "#FFFFFF",
     //
-    // "list.hoverForeground": "#B8B8B8",
-    // "list.hoverForeground": "#00A000",
-    // "list.hoverForeground": "#000000",
     "list.hoverForeground": "#000000",
     //
     //
     //
-    // "list.focusBackground": "#00B00040",
     "list.focusBackground": "#bfebbf",
     //
     //
     //
     // the default background is blue, which is distracting:
-    // "list.activeSelectionBackground": "#cecece",
-    // "list.activeSelectionBackground": "#DDDDDD",
-    // "list.activeSelectionBackground": "#EEEEEE",
-    // "list.activeSelectionBackground": "#f3f3f3",
-    // "list.activeSelectionBackground": "#00B00020",
-    // "list.activeSelectionBackground": "#e8e8e8",
     "list.activeSelectionBackground": "#FFFFFF",
     //
     "list.inactiveSelectionBackground": "#FFFFFF",
@@ -252,7 +201,6 @@
     //
     //
     // the default text is white, which should be a dark color:
-    // "list.activeSelectionForeground": "#000000",
     "list.activeSelectionForeground": "#00A000",
     //
     "list.inactiveSelectionForeground": "#00A000",
@@ -261,8 +209,6 @@
     //
     // search in Command Palette text highlight:
     "list.highlightForeground": "#00A000",
-    //
-    // "list.filterMatchBackground": "#00A000",
     //
     //
     //
@@ -276,8 +222,6 @@
     //
     "menu.selectionForeground": "#000000",
     //
-    // "menu.selectionBorder": "#00A000",
-    //
     "menu.background": "#FFFFFF",
     //
     //
@@ -287,41 +231,28 @@
     // Editor: the window with the actual text editing.
     //
     // the background surface for the whole window:
-    // "editor.background": "#F0FFF0",
     "editor.background": "#ffffff",
     //
     // the default text color, before the TextMate grammar rules:
     "editor.foreground": "#000000",
     //
     // dots for the whitespace color:
-    // "editorWhitespace.foreground": "#90909080",
     "editorWhitespace.foreground": "#C0C0C080",
     //
     //
     //
     // the background behind the selection text when in another window or pane,
     // should be different from the active one:
-    // "editor.inactiveSelectionBackground": "#e5ebf1",
-    // "editor.inactiveSelectionBackground": "#00B00018",
-    // "editor.inactiveSelectionBackground": "#00B00020",
-    // "editor.inactiveSelectionBackground": "#00B00040",
     "editor.inactiveSelectionBackground": "#00B00020",
     //
-    // "editor.selectionBackground": "#00B00060",
     "editor.selectionBackground": "#00B00040",
     //
     // region with the same content as the selection,
     // should be not too attractive to the eye:
-    // "editor.selectionHighlightBackground": "#add6ff60",
-    // "editor.selectionHighlightBackground": "#eeeeee",
-    // "editor.selectionHighlightBackground": "#00F00020",
-    // "editor.selectionHighlightBackground": "#00B00018",
     "editor.selectionHighlightBackground": "#00B00020",
     //
-    // "editor.wordHighlightBackground": "#00F00020",
     "editor.wordHighlightBackground": "#00B00010",
     //
-    // "editor.wordHighlightStrongBackground": "#00B00060",
     "editor.wordHighlightStrongBackground": "#00B00040",
     //
     "editor.hoverHighlightBackground": "#00B00040",
@@ -329,62 +260,39 @@
     //
     //
     // the indent lines to the left,
-    // should be the same color as the the highlighted bracketsL
-    // "editorIndentGuide.activeBackground": "#0BC5E360",
-    // #33333360 // #0BC5E380
-    // "editorIndentGuide.activeBackground": "#00B00040",
+    // should be the same color as the the highlighted brackets:
     "editorIndentGuide.activeBackground": "#00B00060",
     //
     // the indent lines not active at the moment, very light grey:
-    // "editorIndentGuide.background": "#e8e8e8",
     "editorIndentGuide.background": "#C0C0C080",
     //
     // the Bracket Matches in the editor window:
-    // "editorBracketMatch.background": "#0BC5E360",
-    // #33333340 // #0BC5E380 // #0BC5E3 // #007acc20
-    // "editorBracketMatch.background": "#00B00060",
     "editorBracketMatch.background": "#00B00040",
     //
     // I want the borders to be white, like the background:
-    // #0BC5E360 
     "editorBracketMatch.border": "#ffffff00",
     //
     //
     //
     // the suggestion windows, like the IntelliSense suggestion list,
     // should be grey:
-    // "editorSuggestWidget.background": "#FFFFFF",
     "editorSuggestWidget.background": "#f3f3f3",
     //
     // in centered layout, the empty background:
     "editorPane.background": "#f3f3f380",
-    // #ffffff // #e8e8e8
     //
-    // "editorLineNumber.foreground": "#008000B0",
     "editorLineNumber.foreground": "#00800080",
     //
-    // "editorLineNumber.activeForeground": "#008000",
-    //
-    // "editor.lineHighlightBackground": "#00800010",
-    // "editor.lineHighlightBorder": "#00800018",
     "editor.lineHighlightBorder": "#00B00020",
     //
     //
     //
     "editorCursor.foreground": "#00B000",
     //
-    // "editorGutter.background": "#f3f3f3",
-    //
     //
     //
     "editor.findMatchBackground": "#FFA500",
     //
-    // "editor.findMatchHighlightBackground": "#FFFF00",
-    // "editor.findMatchHighlightBackground": "#E8D20C",
-    // "editor.findMatchHighlightBackground": "#E6E600",
-    // "editor.findMatchHighlightBackground": "#EAEA46",
-    // "editor.findMatchHighlightBackground": "#EEEE8F",
-    // "editor.findMatchHighlightBackground": "#FFFF8F",
     "editor.findMatchHighlightBackground": "#FFFFB0",
     //
     //
@@ -392,7 +300,6 @@
     // ====================================================
     // Editor Widget:
     //
-    // "editorWidget.border": "#00B000",
     "editorWidget.border": "#00B00080",
     //
     //
@@ -404,20 +311,10 @@
     //
     "editorGroupHeader.noTabsBackground": "#ffffff",
     //
-    // "tab.activeBorder": "#008000",
-    // "tab.border": "#FFFFFF",
-    // "tab.activeBorderTop": "#008000",
-    //
     "tab.activeForeground": "#00A000",
     //
-    // "tab.inactiveForeground": "#000000",
-    // "tab.inactiveForeground": "#808080",
-    // "tab.inactiveForeground": "#A0A0A0",
-    // "tab.inactiveForeground": "#B0B0B0",
     "tab.inactiveForeground": "#909090",
     //
-    // "tab.hoverBackground": "#00B00040",
-    // "tab.hoverBackground": "#bfebbf",
     "tab.hoverBackground": "#ffffff",
     //
     //
@@ -441,33 +338,6 @@
     // Symbol Icons:
     //
     "symbolIcon.interfaceForeground": "#00A000",
-    //
-    // "symbolIcon.classForeground": "#00A000",
-    //
-    //
-    //
-    // ====================================================
-    // Terminal colors: the colors for the text inside the terminal.
-    // 
-    // #0000CC // #b5ba00
-    //
-    "terminal.ansiBlack": "#000000",
-    "terminal.ansiBlue": "#3465A4",
-    "terminal.ansiBrightBlack": "#555753",
-    "terminal.ansiBrightBlue": "#729FCF",
-    "terminal.ansiBrightCyan": "#34E2E2",
-    "terminal.ansiBrightGreen": "#00D000",
-    "terminal.ansiBrightMagenta": "#F066FF",
-    "terminal.ansiBrightRed": "#EF2929",
-    // "terminal.ansiBrightWhite": "#C0C0C0",
-    "terminal.ansiBrightWhite": "#A9A9A9",
-    // "terminal.ansiBrightYellow": "#0BC5E3",
-    "terminal.ansiCyan": "#06989A",
-    "terminal.ansiGreen": "#00B000",
-    "terminal.ansiMagenta": "#AD7FA8",
-    "terminal.ansiRed": "#CC0000",
-    "terminal.ansiWhite": "#A9A9A9",
-    // "terminal.ansiYellow": "#0000CC",
     //
     //
     //
@@ -532,8 +402,6 @@
         "constant.regexp",
         "string.regexp",
         "string.regexp keyword",
-        // "string.regexp keyword.other",
-        // "string.regexp keyword.operator",
       ],
       "settings": {
         "foreground": "#a31515"
@@ -561,15 +429,6 @@
     },
     //
     // Literals in general:
-    {
-      "scope": [
-        // "keyword.operator.expression", // return "void" 0
-        // "constant.language", // undefined literal
-      ],
-      "settings": {
-        "foreground": "#000000",
-      }
-    },
     //
     // comments: 
     {
@@ -600,20 +459,9 @@
     {
       "scope": [
         "keyword.control", // if, else, return, import, from
-        // "keyword.other"
       ],
       "settings": {
         "foreground": "#0BC5E3",
-      }
-    },
-    //
-    // as:
-    {
-      "scope": [
-        // "keyword.control.as", // as
-      ],
-      "settings": {
-        "foreground": "#A9A9A9",
       }
     },
     //
@@ -621,18 +469,6 @@
     {
       "scope": [
         "storage.type", // const, class in JS; type name in C#
-      ],
-      "settings": {
-        // "foreground": "#A9A9A9",
-        // "foreground": "#000000",
-        "foreground": "#a31515",
-      }
-    },
-    //
-    // storage type function:
-    {
-      "scope": [
-        // "storage.type.function", // function in JS
       ],
       "settings": {
         "foreground": "#a31515",
@@ -652,9 +488,7 @@
     // 180deg in CSS:
     {
       "scope": [
-        // "keyword.other.unit",
         "support.constant",
-        // "constant.other.color",
       ],
       "settings": {
         "foreground": "#a31515",
@@ -744,7 +578,6 @@
     {
       "scope": [
         "meta.definition.variable variable",
-        // "meta.definition.variable variable.other",
       ],
       "settings": {
         // "foreground": "#000000"
@@ -756,11 +589,6 @@
     {
       "scope": [
         "variable", // variable name
-        // "variable.other", // variable name
-        // "variable.other.readwrite", // variable name, object's properties
-        // "variable.other.object.property", // object's properties
-        // "variable.other.property", // "this" properties
-        // "variable.language",
       ],
       "settings": {
         "foreground": "#000000"
@@ -776,7 +604,6 @@
         "variable.object.property",
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#0BC5E3"
       }
     },
@@ -785,12 +612,10 @@
     {
       "scope": [
         "meta.object-literal.key",
+        "meta.object-literal.key entity.name.function",
       ],
       "settings": {
-        // "foreground": "#0000CC"
-        // "foreground": "#000000"
         "foreground": "#0BC5E3"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -798,8 +623,6 @@
     {
       "scope": [
         "variable.parameter",
-        // "meta.parameters variable.parameter",
-        // "meta.parameter.object-binding-pattern variable.parameter",
       ],
       "settings": {
         "foreground": "#000000"
@@ -934,14 +757,11 @@
         "keyword.operator.increment", // ++
         "keyword.operator.decrement", // --
         "keyword.operator.assignment", // =
-        // "keyword.operator.bitwise", // ~~, |
         "keyword.operator.rest", // ...
         "keyword.operator.spread", // ...
         "storage.type.function.arrow", // => in JS, TS
         "keyword.operator.arrow", // => in C#
         "keyword.operator.comparison", // ===
-        // "keyword.operator.relational", // >, <
-        // "keyword.operator.ternary", // ?, :
         "keyword.operator.null-coalescing", // ?? in C#
         "keyword.operator.null-conditional", // {property_name}? in C#
       ],
@@ -978,14 +798,9 @@
     // logical operators:
     {
       "scope": [
-        // "keyword.operator.logical", // ||, !
-        // "keyword.operator.ternary", // ?, :
         "storage.type.function.arrow", // =>
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
-        // "foreground": "#0000CC",
-        // "foreground": "#000000",
         "foreground": "#0BC5E3"
       }
     },
@@ -996,7 +811,6 @@
         "punctuation.accessor", // . dot
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
         "foreground": "#000000",
       }
     },
@@ -1081,7 +895,20 @@
         "meta.embedded.block.javascript meta.import variable.other.readwrite",
       ],
       "settings": {
-        // "foreground": "#C0C0C0"
+        "foreground": "#C0C0C0"
+      }
+    },
+    //
+    // variable names alias in the import syntax:
+    {
+      "scope": [
+        "source.ts meta.import variable.other.readwrite.alias",
+        "source.js meta.import variable.other.readwrite.alias",
+        "source.tsx meta.import variable.other.readwrite.alias",
+        "source.jsx meta.import variable.other.readwrite.alias",
+        "meta.embedded.block.javascript meta.import variable.other.readwrite.alias",
+      ],
+      "settings": {
         "foreground": "#000000"
       }
     },
@@ -1089,10 +916,6 @@
     // import, from, as, { } in the import syntax:
     {
       "scope": [
-        // "source.ts keyword.control.import", // import
-        // "source.js keyword.control.import", // import
-        // "source.tsx keyword.control.import", // import
-        // "source.jsx keyword.control.import", // import
         "source.ts keyword.control.from", // from
         "source.js keyword.control.from", // from
         "source.tsx keyword.control.from", // from
@@ -1110,10 +933,7 @@
         "meta.embedded.block.javascript meta.import punctuation.definition.block", // { }
       ],
       "settings": {
-        // "foreground": "#C0C0C080"
-        // "foreground": "#C0C0C0"
         "foreground": "#A9A9A9"
-        // "foreground": "#A9A9A980"
       }
     },
     //
@@ -1125,26 +945,9 @@
         "source.tsx keyword.control.import", // import
         "source.jsx keyword.control.import", // import
         "meta.embedded.block.javascript keyword.control.import", // import
-        // "source.ts keyword.control.from", // from
-        // "source.js keyword.control.from", // from
-        // "source.tsx keyword.control.from", // from
-        // "source.jsx keyword.control.from", // from
-        // "source.ts meta.import keyword.control.as", // as
-        // "source.js meta.import keyword.control.as", // as
-        // "source.tsx meta.import keyword.control.as", // as
-        // "source.jsx meta.import keyword.control.as", // as
-        // "source.ts meta.import punctuation.definition.block", // { }
-        // "source.js meta.import punctuation.definition.block", // { }
-        // "source.tsx meta.import punctuation.definition.block", // { }
-        // "source.jsx meta.import punctuation.definition.block", // { }
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#A9A9A980"
-        // "foreground": "#C0C0C080"
-        // "foreground": "#C0C0C0"
-        // "foreground": "#a31515"
-        // "foreground": "#a3151580"
       }
     },
     //
@@ -1158,7 +961,6 @@
         "meta.embedded.block.javascript meta.import string",
       ],
       "settings": {
-        // "foreground": "#a3151580"
         "foreground": "#a31515"
       }
     },
@@ -1198,11 +1000,6 @@
         "meta.embedded.block.javascript entity.name.type.module",
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
-        // "foreground": "#a31515",
-        // "foreground": "#0000CC",
-        //
-        // "foreground": "#000000",
         "foreground": "#E8810C",
       }
     },
@@ -1217,11 +1014,6 @@
         "meta.embedded.block.javascript entity.other.inherited-class", // inherited type names
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
-        // "foreground": "#a31515",
-        // "foreground": "#0000CC",
-        //
-        // "foreground": "#000000",
         "foreground": "#E8810C",
       }
     },
@@ -1240,7 +1032,7 @@
         "meta.embedded.block.javascript meta.definition.function entity.name.function", // function name in the declaration
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1259,9 +1051,7 @@
         "meta.embedded.block.javascript meta.parameters variable.parameter",
       ],
       "settings": {
-        // "foreground": "#0000CC",
-        // "foreground": "#A9A9A9",
-        "foreground": "#000000",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1275,8 +1065,7 @@
         "meta.embedded.block.javascript entity.name.function", // function calls
       ],
       "settings": {
-        // "foreground": "#000000",
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1293,10 +1082,40 @@
         "source.tsx meta.function-call support", // function call
         "source.jsx meta.function-call support", // function call
         "meta.embedded.block.javascript meta.function-call support", // function call
+        "source.ts meta.function-call support.function", // function call
+        "source.js meta.function-call support.function", // function call
+        "source.tsx meta.function-call support.function", // function call
+        "source.jsx meta.function-call support.function", // function call
+        "meta.embedded.block.javascript meta.function-call support.function", // function call
       ],
       "settings": {
-        // "foreground": "#000000",
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    {
+      "scope": [
+        "source.ts new.expr meta.function-call support.class", // function call
+        "source.js new.expr meta.function-call support.class", // function call
+        "source.tsx new.expr meta.function-call support.class", // function call
+        "source.jsx new.expr meta.function-call support.class", // function call
+        "meta.embedded.block.javascript new.expr meta.function-call support.class", // function call
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    {
+      "scope": [
+        "source.ts meta.function-call support.class", // function call
+        "source.js meta.function-call support.class", // function call
+        "source.tsx meta.function-call support.class", // function call
+        "source.jsx meta.function-call support.class", // function call
+        "meta.embedded.block.javascript meta.function-call support.class", // function call
+      ],
+      "settings": {
+        "foreground": "#E8810C"
       }
     },
     //
@@ -1310,7 +1129,7 @@
         "meta.embedded.block.javascript variable.other.readwrite", // function parameters
       ],
       "settings": {
-        "foreground": "#000000",
+        "foreground": "#000000"
       }
     },
     //
@@ -1326,8 +1145,7 @@
         "meta.embedded.block.javascript meta.decorator punctuation.decorator", // @ in decorator
       ],
       "settings": {
-        "foreground": "#0000CC",
-        // "foreground": "#0BC5E3",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1340,8 +1158,7 @@
         "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function", // function call in decorator
       ],
       "settings": {
-        "foreground": "#0000CC",
-        // "foreground": "#0BC5E3",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1381,6 +1198,20 @@
       }
     },
     //
+    // property name in declaration:
+    {
+      "scope": [
+        "source.ts meta.definition.property variable.object.property",
+        "source.js meta.definition.property variable.object.property",
+        "source.tsx meta.definition.property variable.object.property",
+        "source.jsx meta.definition.property variable.object.property",
+        "meta.embedded.block.javascript meta.definition.property variable.object.property",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
     // variable name in declaration:
     {
       "scope": [
@@ -1391,7 +1222,7 @@
         "meta.embedded.block.javascript meta.definition entity.name.function",
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1403,6 +1234,11 @@
         "source.tsx meta.definition variable.other", // variable name after "var, let, const"
         "source.jsx meta.definition variable.other", // variable name after "var, let, const"
         "meta.embedded.block.javascript meta.definition variable.other", // variable name after "var, let, const"
+        "source.ts meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.js meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.tsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.jsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "meta.embedded.block.javascript meta.definition variable.other entity.name.function", // variable name after "var, let, const"
         "source.ts meta.definition variable.other.readwrite", // variable name after "var, let, const"
         "source.js meta.definition variable.other.readwrite", // variable name after "var, let, const"
         "source.tsx meta.definition variable.other.readwrite", // variable name after "var, let, const"
@@ -1410,7 +1246,22 @@
         "meta.embedded.block.javascript meta.definition variable.other.readwrite", // variable name after "var, let, const"
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // variable name in declaration like here:
+    //  for (let [key, value] of Object.entries(localStorage)) {
+    {
+      "scope": [
+        "source.ts meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
+        "source.js meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
+        "source.tsx meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
+        "source.jsx meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
+        "meta.embedded.block.javascript meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -1454,9 +1305,7 @@
         "meta.embedded.block.javascript meta.type.annotation support.type.builtin",
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
-        // "foreground": "#a31515",
-        "foreground": "#E8810C",
+        "foreground": "#E8810C"
       }
     },
     //
@@ -1470,7 +1319,7 @@
         "meta.embedded.block.javascript support.type.object.module", // "module.exports"
       ],
       "settings": {
-        "foreground": "#000000",
+        "foreground": "#000000"
       }
     },
     //
@@ -1483,7 +1332,7 @@
         "meta.embedded.block.javascript constant.language.import-export-all", // export *
       ],
       "settings": {
-        "foreground": "#000000",
+        "foreground": "#000000"
       }
     },
     //
@@ -1501,8 +1350,7 @@
         "meta.embedded.block.javascript keyword.control", // const, function, inteface, class
       ],
       "settings": {
-        // "foreground": "#a31515",
-        "foreground": "#0BC5E3",
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1514,24 +1362,15 @@
         "source.tsx storage.type", // const, function, inteface, class
         "source.jsx storage.type", // const, function, inteface, class
         "meta.embedded.block.javascript storage.type", // const, function, inteface, class
-        // "source.ts storage.type.property", // get; need this to not override "get" with other rules
-        // "source.js storage.type.property", // get; need this to not override "get" with other rules
-        // "source.tsx storage.type.property", // get; need this to not override "get" with other rules
-        // "source.jsx storage.type.property", // get; need this to not override "get" with other rules
       ],
       "settings": {
-        // "foreground": "#000000",
-        "foreground": "#a31515",
+        "foreground": "#a31515"
       }
     },
     //
     // override "get" (inside of a class) keyword:
     {
       "scope": [
-        // "source.ts storage.type", // const, function, inteface, class
-        // "source.js storage.type", // const, function, inteface, class
-        // "source.tsx storage.type", // const, function, inteface, class
-        // "source.jsx storage.type", // const, function, inteface, class
         "source.ts storage.type.property", // get; need this to not override "get" with other rules
         "source.js storage.type.property", // get; need this to not override "get" with other rules
         "source.tsx storage.type.property", // get; need this to not override "get" with other rules
@@ -1539,11 +1378,7 @@
         "meta.embedded.block.javascript storage.type.property", // get; need this to not override "get" with other rules
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
-        // "foreground": "#000000",
-        // "foreground": "#a31515",
-        // "foreground": "#0000CC",
-        "foreground": "#0BC5E3",
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1567,8 +1402,7 @@
         "meta.embedded.block.javascript meta.function storage.type.function",
       ],
       "settings": {
-        // "foreground": "#000000",
-        "foreground": "#a31515",
+        "foreground": "#a31515"
       }
     },
     //
@@ -1583,7 +1417,7 @@
         "meta.embedded.block.javascript meta.method.declaration storage.type", // constructor
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0BC5E3"
       }
     },
     // 1. fix to the above rule for the constructor:
@@ -1602,24 +1436,13 @@
         "meta.embedded.block.javascript meta.var.expr storage.type", // let, const
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        // "foreground": "#C0C0C0",
-        // "foreground": "#a31515",
-        // "foreground": "#0000CC",
+        "foreground": "#A9A9A9"
       }
     },
     //
     // the most usual keywords at the line start:
     {
       "scope": [
-        // "source.ts keyword.control.export", // export
-        // "source.js keyword.control.export", // export
-        // "source.tsx keyword.control.export", // export
-        // "source.jsx keyword.control.export", // export
-        // "source.ts keyword.control.default", // default
-        // "source.js keyword.control.default", // default
-        // "source.tsx keyword.control.default", // default
-        // "source.jsx keyword.control.default", // default
         "source.ts storage.modifier", // static, extends
         "source.js storage.modifier", // static, extends
         "source.tsx storage.modifier", // static, extends
@@ -1627,9 +1450,7 @@
         "meta.embedded.block.javascript storage.modifier", // static, extends
       ],
       "settings": {
-        // "foreground": "#000000",
-        // "foreground": "#a31515",
-        "foreground": "#A9A9A9",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1646,16 +1467,9 @@
         "source.tsx keyword.control.default", // default
         "source.jsx keyword.control.default", // default
         "meta.embedded.block.javascript keyword.control.default", // default
-        // "source.ts storage.modifier", // static, extends
-        // "source.js storage.modifier", // static, extends
-        // "source.tsx storage.modifier", // static, extends
-        // "source.jsx storage.modifier", // static, extends
       ],
       "settings": {
-        // "foreground": "#000000",
-        // "foreground": "#0000CC",
-        // "foreground": "#C0C0C0",
-        "foreground": "#a31515",
+        "foreground": "#a31515"
       }
     },
     //
@@ -1669,11 +1483,7 @@
         "meta.embedded.block.javascript storage.modifier.async" // async
       ],
       "settings": {
-        // "foreground": "#000000",
-        // "foreground": "#0000CC",
-        // "foreground": "#C0C0C0",
-        // "foreground": "#a31515",
-        "foreground": "#0BC5E3",
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1715,7 +1525,6 @@
         "meta.embedded.block.javascript variable.language.super", // super
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#0000CC"
       }
     },
@@ -1730,9 +1539,7 @@
         "meta.embedded.block.javascript keyword.operator.expression.typeof", // typeof
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
-        // "foreground": "#a31515",
-        "foreground": "#0000CC",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1751,8 +1558,7 @@
         "meta.embedded.block.javascript support.type",
       ],
       "settings": {
-        // "foreground": "#C0C0C0",
-        "foreground": "#a31515",
+        "foreground": "#a31515"
       }
     },
     //
@@ -1764,26 +1570,15 @@
         "source.tsx keyword.operator.new", // new
         "source.jsx keyword.operator.new", // new
         "meta.embedded.block.javascript keyword.operator.new", // new
-        // "source.ts new.expr entity.name.type", // MyClass
-        // "source.js new.expr entity.name.type", // MyClass
-        // "source.tsx new.expr entity.name.type", // MyClass
-        // "source.jsx new.expr entity.name.type", // MyClass
       ],
       "settings": {
-        // "foreground": "#C0C0C0",
-        // "foreground": "#a31515",
-        // "foreground": "#0BC5E3",
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
     // new MyClass() :
     {
       "scope": [
-        // "source.ts keyword.operator.new", // new
-        // "source.js keyword.operator.new", // new
-        // "source.tsx keyword.operator.new", // new
-        // "source.jsx keyword.operator.new", // new
         "source.ts new.expr entity.name.type", // MyClass
         "source.js new.expr entity.name.type", // MyClass
         "source.tsx new.expr entity.name.type", // MyClass
@@ -1791,11 +1586,7 @@
         "meta.embedded.block.javascript new.expr entity.name.type", // MyClass
       ],
       "settings": {
-        // "foreground": "#C0C0C0",
-        // "foreground": "#a31515",
-        // "foreground": "#000000",
-        // "foreground": "#0BC5E3",
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1814,16 +1605,12 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#C0C0C0"
-        // "foreground": "#000000"
-        // "foreground": "#0BC5E3"
       }
     },
     //
     // ( ) round braces in a function/method definition:
     {
       "scope": [
-        // "punctuation.definition.parameters",
         "source.ts meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
         "source.js meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
         "source.tsx meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
@@ -1831,10 +1618,138 @@
         "meta.embedded.block.javascript meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
       ],
       "settings": {
-        // "foreground": "#000000"
-        // "foreground": "#A9A9A9"
-        // "foreground": "#0000CC"
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // { } mustache braces of an arrow function definition:
+    // { } mustache braces of a normal function definition:
+    {
+      "scope": [
+        "source.ts meta.arrow meta.block punctuation.definition.block",
+        "source.tsx meta.arrow meta.block punctuation.definition.block",
+        "source.js meta.arrow meta.block punctuation.definition.block",
+        "source.jsx meta.arrow meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block"
+        // check up to 4 times the "meta.arrow meta.block" wrap.
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // fix the prev rule's function's { } braces for the inner blocks.
+    {
+      "scope": [
+        "source.ts meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
+        // check up to 3 times the "meta.arrow meta.block" wrap.
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // fix the prev rule's function's { } braces for the inner blocks.
+    {
+      "scope": [
+        "source.ts meta.arrow meta.block switch-statement punctuation.definition.block",
+        "source.tsx meta.arrow meta.block switch-statement punctuation.definition.block",
+        "source.js meta.arrow meta.block switch-statement punctuation.definition.block",
+        "source.jsx meta.arrow meta.block switch-statement punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow switch-statement meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.arrow meta.block switch-statement meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.arrow meta.block meta.arrow meta.block switch-statement meta.block punctuation.definition.block",
+        // check up to 3 times the "meta.arrow meta.block" wrap.
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // fix the prev rule's function's { } braces for the inner object.
+    {
+      "scope": [
+        "source.ts meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.objectliteral meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block"
+        // check up to 3 times the "meta.arrow meta.block" wrap.
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // fix the prev rule's function's { } braces for the inner type annotation.
+    {
+      "scope": [
+        "source.ts meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.type.annotation meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.type.annotation meta.block punctuation.definition.block",
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.type.annotation meta.block punctuation.definition.block"
+        // check up to 3 times the "meta.arrow meta.block" wrap.
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1845,12 +1760,10 @@
         "source.js punctuation.accessor", // . dot
         "source.tsx punctuation.accessor", // . dot
         "source.jsx punctuation.accessor", // . dot
-        "meta.embedded.block.javascript punctuation.accessor", // . dot
+        "meta.embedded.block.javascript punctuation.accessor" // . dot
       ],
       "settings": {
-        "foreground": "#000000",
-        // "foreground": "#C0C0C0",
-        // "foreground": "#A9A9A9",
+        "foreground": "#000000"
       }
     },
     //
@@ -1864,9 +1777,7 @@
         "meta.embedded.block.javascript meta.type.annotation punctuation.accessor", // . dot in a type annotation
       ],
       "settings": {
-        // "foreground": "#000000",
-        // "foreground": "#C0C0C0",
-        "foreground": "#A9A9A9",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1880,8 +1791,7 @@
         "meta.embedded.block.javascript meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
       ],
       "settings": {
-        "foreground": "#000000",
-        // "foreground": "#A9A9A9",
+        "foreground": "#000000"
       }
     },
     //
@@ -1900,8 +1810,7 @@
         "meta.embedded.block.javascript punctuation.definition.binding-pattern.array", // [ ]
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        // "foreground": "#a31515",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1915,10 +1824,7 @@
         "meta.embedded.block.javascript punctuation.definition.string.template string.template", // ` `
       ],
       "settings": {
-        // "foreground": "#C0C0C0",
-        "foreground": "#A9A9A9",
-        // "foreground": "#000000",
-        // "foreground": "#a31515",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1937,10 +1843,7 @@
         "meta.embedded.block.javascript keyword.operator.comparison",
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        // "foreground": "#C0C0C0",
-        // "foreground": "#a31515",
-        // "foreground": "#000000",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1954,11 +1857,7 @@
         "meta.embedded.block.javascript keyword.operator.logical",
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        // "foreground": "#C0C0C0",
-        // "foreground": "#a31515",
-        // "foreground": "#000000",
-        // "foreground": "#0000CC",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1973,7 +1872,7 @@
         "text.html.vue meta.tag.other" // />
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1983,7 +1882,7 @@
         "text.html.vue meta.tag.block.any" //
       ],
       "settings": {
-        "foreground": "#000000",
+        "foreground": "#000000"
       }
     },
     //
@@ -1994,8 +1893,24 @@
         "text.html.vue punctuation.definition.generic.end" // }}
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
-        "foreground": "#F066FF",
+        "foreground": "#F066FF"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Configuration in JS file, like in JSON:
+    //
+    //
+    // object keys when instantiating an object:
+    {
+      "scope": [
+        "source.js meta.object-literal.key string.quoted",
+        "source.ts meta.object-literal.key string.quoted"
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2013,8 +1928,7 @@
         "text.aspnetcorerazor entity.name.type.namespace",
       ],
       "settings": {
-        "foreground": "#000000",
-        // "foreground": "#A9A9A9",
+        "foreground": "#000000"
       }
     },
     //
@@ -2036,7 +1950,7 @@
         "text.aspnetcorerazor entity.name.type", // class, interface names when creating a class; class instance
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2049,13 +1963,7 @@
         "text.aspnetcorerazor keyword.type", // "void, int, string" keywords
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
-        // "foreground": "#0BC5E3",
-        // "foreground": "#a31515",
-        // "foreground": "#F0CE7F",
-        // "foreground": "#008000B0",
-        // "foreground": "#a3151580",
-        "foreground": "#E8810C",
+        "foreground": "#E8810C"
       }
     },
     //
@@ -2068,7 +1976,7 @@
         "text.aspnetcorerazor entity.name.function",
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2079,20 +1987,17 @@
         "text.aspnetcorerazor meta.function-call entity.name.function",
       ],
       "settings": {
-        // "foreground": "#000000",
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
     // function named parameter in function call in Razor Pages:
     {
       "scope": [
-        "text.aspnetcorerazor entity.name.label",
+        "text.aspnetcorerazor entity.name.label"
       ],
       "settings": {
-        "foreground": "#0000CC",
-        // "foreground": "#000000",
-        // "foreground": "#0BC5E3",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2102,7 +2007,7 @@
         "source.cs entity.name.type.enum", // enum type name
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2112,9 +2017,7 @@
         // "source.cs entity.name.variable.enum-member", // enum member name
       ],
       "settings": {
-        // "foreground": "#000000",
-        // "foreground": "#C0C0C0",
-        "foreground": "#A9A9A9",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2125,7 +2028,7 @@
         "text.aspnetcorerazor entity.name.variable.local", // local variable name definition
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2136,7 +2039,6 @@
         "text.aspnetcorerazor entity.name.variable.property", // property names in class definition
         "source.cs entity.name.variable.field", // field names in class definition
         "text.aspnetcorerazor entity.name.variable.field", // field names in class definition
-        // "source.cs entity.name.variable.parameter", // method definition - parameter or argument variable names
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2146,13 +2048,10 @@
     // key names to object's properties:
     {
       "scope": [
-        // "source.cs entity.name.variable.property", // property names in class definition
-        // "source.cs entity.name.variable.field", // field names in class definition
         "source.cs entity.name.variable.parameter", // method definition : parameter variable names
         "text.aspnetcorerazor entity.name.variable.parameter", // method definition : parameter variable names
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#000000"
       }
     },
@@ -2164,8 +2063,7 @@
         "text.aspnetcorerazor constant.language", // null
       ],
       "settings": {
-        // "foreground": "#000000",
-        "foreground": "#a31515",
+        "foreground": "#a31515"
       }
     },
     //
@@ -2182,8 +2080,7 @@
         "source.cs keyword.other.enum", // enum
       ],
       "settings": {
-        // "foreground": "#000000",
-        "foreground": "#a31515",
+        "foreground": "#a31515"
       }
     },
     //
@@ -2193,8 +2090,7 @@
         "source.cs keyword.other.base", // base
       ],
       "settings": {
-        "foreground": "#0000CC",
-        // "foreground": "#0BC5E3",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2204,11 +2100,7 @@
         "source.cs keyword.other.namespace", // namespace
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        // "foreground": "#a31515",
-        // "foreground": "#000000",
-        // "foreground": "#008000B0",
-        // "foreground": "#a3151580",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2218,9 +2110,7 @@
         "source.cs keyword.other.using", // using
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        // "foreground": "#008000B0",
-        // "foreground": "#a3151580",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2231,10 +2121,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#C0C0C0",
-        // "foreground": "#008000B0"
-        // "foreground": "#000000"
-        // "foreground": "#a3151580"
       }
     },
     //
@@ -2255,9 +2141,7 @@
         "source.cs keyword.other.var", // var
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        // "foreground": "#008000B0",
-        // "foreground": "#E8810C",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2267,8 +2151,6 @@
         "source.cs keyword.other.new", // new
       ],
       "settings": {
-        // "foreground": "#C0C0C0"
-        // "foreground": "#a31515"
         "foreground": "#0000CC"
       }
     },
@@ -2289,7 +2171,7 @@
         "source.cs keyword.other.this", // this
       ],
       "settings": {
-        "foreground": "#000000",
+        "foreground": "#000000"
       }
     },
     //
@@ -2299,8 +2181,7 @@
         "source.cs keyword.other.await", // await
       ],
       "settings": {
-        // "foreground": "#0000CC",
-        "foreground": "#0BC5E3",
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2310,8 +2191,7 @@
         "source.cs keyword.other", // other keywords ...
       ],
       "settings": {
-        // "foreground": "#C0C0C0",
-        "foreground": "#A9A9A9",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2337,7 +2217,6 @@
         "text.aspnetcorerazor punctuation.parenthesis", // ( )
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#A9A9A9"
       }
     },
@@ -2374,7 +2253,6 @@
         "source.powershell storage.type", // function
       ],
       "settings": {
-        // "foreground": "#a31515"
         "foreground": "#E8810C"
       }
     },
@@ -2386,7 +2264,6 @@
       ],
       "settings": {
         "foreground": "#a31515"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -2397,7 +2274,6 @@
         "source.powershell entity.name.function",
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#0000CC"
       }
     },
@@ -2409,7 +2285,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#A9A9A9"
       }
     },
     //
@@ -2419,8 +2294,6 @@
         "source.powershell variable.parameter.attribute", // variable parameter name in attribute
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
-        // "foreground": "#0000CC"
         "foreground": "#000000"
       }
     },
@@ -2437,7 +2310,6 @@
         "source.powershell entity.name",
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#000000"
       }
     },
@@ -2449,7 +2321,6 @@
       ],
       "settings": {
         "foreground": "#000000"
-        // "foreground": "#0000CC"
       }
     },
     //
@@ -2460,7 +2331,6 @@
         "source.powershell keyword.operator.logical", // -Not
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#A9A9A9"
       }
     },
@@ -2483,7 +2353,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#000000"
       }
     },
     //
@@ -2509,7 +2378,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -2529,7 +2397,6 @@
         "source.css meta.attribute-selector entity.other.attribute-name",
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#000000"
       }
     },
@@ -2541,8 +2408,6 @@
       ],
       "settings": {
         "foreground": "#000000"
-        // "foreground": "#0000CC"
-        // "foreground": "#F066FF" // this is interesting #1
       }
     },
     //
@@ -2554,26 +2419,7 @@
         "source.css variable.other", // for LESS
       ],
       "settings": {
-        "foreground": "#000000",
-        // "foreground": "#A9A9A9"
-        // "foreground": "#0000CC",
-        // "foreground": "#9719FF", // maybe #3
-        // "foreground": "#7B0BD9",
-        // "foreground": "#0BC5E3",
-        // "foreground": "#E8810C",
-        // "foreground": "#E8810C80",
-        // "foreground": "#FFA500",
-        // "fontStyle": "bold"
-        // "foreground": "#8549AD"
-        // "foreground": "#AD4994"
-        // "foreground": "#D200E8"
-        // "foreground": "#D200E880"
-        // "foreground": "#BA00CF" // maybe also #2
-        // "foreground": "#DB47EC"
-        // "foreground": "#E790F0"
-        // "foreground": "#A134AD"
-        // "foreground": "#C53FD4"
-        // "foreground": "#F066FF" // this is interesting #1
+        "foreground": "#000000"
       }
     },
     //
@@ -2583,8 +2429,6 @@
         "source.css entity.name.function"
       ],
       "settings": {
-        // "foreground": "#0000CC"
-        // "foreground": "#000000"
         "foreground": "#E8810C"
       }
     },
@@ -2595,9 +2439,6 @@
         "source.css support.function", // function call in CSS
       ],
       "settings": {
-        // "foreground": "#0000CC"
-        // "foreground": "#0BC5E3"
-        // "foreground": "#000000"
         "foreground": "#E8810C"
       }
     },
@@ -2610,8 +2451,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#A9A9A9"
-        // "foreground": "#000000"
       }
     },
     //
@@ -2650,7 +2489,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#000000"
       }
     },
     //
@@ -2673,10 +2511,8 @@
         // constants in CSS @media rules: like "screen",
         // it's blue to separate them from media-rules and css-keywords:
         "source.css support.constant.media", // "screen" keyword
-        // "source.css meta.at-rule.import",
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#0000CC"
       }
     },
@@ -2691,7 +2527,6 @@
         "source.css keyword.control",
       ],
       "settings": {
-        // "foreground": "#C0C0C0"
         "foreground": "#0BC5E3"
       }
     },
@@ -2703,9 +2538,7 @@
         "source.css keyword.control.at-rule.mixin",
       ],
       "settings": {
-        // "foreground": "#C0C0C0"
         "foreground": "#0BC5E3"
-        // "foreground": "#a31515"
       }
     },
     //
@@ -2713,24 +2546,17 @@
     {
       "scope": [
         "source.css keyword.control.for", // @for
-        // "source.css keyword.control.operator", // from, through
-        // "source.css keyword.control.at-rule.include",
       ],
       "settings": {
         "foreground": "#0BC5E3"
-        // "foreground": "#0000CC"
       }
     },
     {
       "scope": [
-        // "source.css keyword.control.for", // @for
         "source.css keyword.control.operator", // from, through, in
-        // "source.css keyword.control.at-rule.include",
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#A9A9A9" // previous
-        // "foreground": "#0BC5E3" // proposed
       }
     },
     //
@@ -2741,7 +2567,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -2752,7 +2577,6 @@
         "source.css keyword.other.important", // !important
       ],
       "settings": {
-        // "foreground": "#C0C0C0"
         "foreground": "#A9A9A9"
       }
     },
@@ -2768,10 +2592,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#0BC5E3"
-        // "foreground": "#000000"
-        // "foreground": "#E8810C"
-        // "foreground": "#0000CC"
       }
     },
     //
@@ -2781,10 +2601,7 @@
         "source.css meta.selector punctuation.section.function", // ( )
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#A9A9A9"
-        // "foreground": "#0000CC"
-        // "foreground": "#000000"
       }
     },
     //
@@ -2810,7 +2627,6 @@
         "source.css punctuation.definition.pseudo-class.end.bracket.round", // ( )
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#0BC5E3"
       }
     },
@@ -2843,7 +2659,6 @@
         "source.css keyword.operator.comparison",
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#A9A9A9"
       }
     },
@@ -2900,7 +2715,7 @@
         "source.jsx punctuation.definition.tag", // <, >
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2917,17 +2732,7 @@
         "source.jsx entity.other.attribute-name",
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
-        // "foreground": "#a31515"
         "foreground": "#0BC5E3"
-        // "foreground": "#0000CC",
-        // "foreground": "#0000CC80",
-        // "foreground": "#008000",
-        // "foreground": "#000000",
-        // "foreground": "#0BC5E3B0"
-        // "fontStyle": "italic underline"
-        // "fontStyle": "italic"
-        // "fontStyle": "underline"
       }
     },
     //
@@ -2951,10 +2756,7 @@
         "source.jsx meta.jsx.children",
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
-        // "foreground": "#0BC5E3",
-        // "foreground": "#000000",
-        "foreground": "#E8810C",
+        "foreground": "#E8810C"
       }
     },
     //
@@ -2970,8 +2772,7 @@
         "source.jsx meta.tag.attributes string",
       ],
       "settings": {
-        "foreground": "#a31515",
-        // "foreground": "#000000"
+        "foreground": "#a31515"
       }
     },
     //
@@ -3013,8 +2814,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#A9A9A9"
-        // "foreground": "#000000"
       }
     },
     //
@@ -3086,9 +2885,7 @@
         "source.yaml punctuation.definition.block.sequence.item", // -
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
-        "foreground": "#000000",
-        // "fontStyle": "bold"
+        "foreground": "#000000"
       }
     },
     //
@@ -3123,7 +2920,6 @@
     {
       "scope": "text.html.markdown markup.heading",
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#0BC5E3"
       }
     },
@@ -3154,8 +2950,6 @@
     {
       "scope": "text.html.markdown markup.inline.raw",
       "settings": {
-        // "foreground": "#a31515"
-        // "foreground": "#0BC5E3"
         "foreground": "#A9A9A9"
       }
     },
@@ -3168,7 +2962,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#A9A9A9"
       }
     },
     //
@@ -3198,7 +2991,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#a31515"
       }
     },
     //
@@ -3209,9 +3001,7 @@
         "text.html.markdown meta.link.reference.def constant.other.reference.link", // [homepage]()
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#a31515"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -3249,7 +3039,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#a31515"
       }
     },
     //
@@ -3298,7 +3087,6 @@
         "source.env constant.numeric",
       ],
       "settings": {
-        // "foreground": "#a31515"
         "foreground": "#000000"
       }
     },
@@ -3349,16 +3137,19 @@
     //
     // preprocessor directives:
     {
-      "scope": "source.ahk keyword.control.directives",
+      "scope": [
+        "source.ahk keyword.control.directives",
+      ],
       "settings": {
-        // "foreground": "#C0C0C0"
         "foreground": "#A9A9A9"
       }
     },
     //
     // function name:
     {
-      "scope": "source.ahk support.function",
+      "scope": [
+        "source.ahk support.function",
+      ],
       "settings": {
         "foreground": "#0000CC"
       }
@@ -3371,7 +3162,6 @@
         "source.ahk keyword.keys"
       ],
       "settings": {
-        // "foreground": "#a31515"
         "foreground": "#E8810C"
       }
     },
@@ -3386,9 +3176,7 @@
         "source.ahk keyword.other" // On, Off, others ...
       ],
       "settings": {
-        // "foreground": "#C0C0C0"
         "foreground": "#A9A9A9"
-        // "foreground": "#a31515"
       }
     },
     //
@@ -3423,7 +3211,6 @@
         "source.ahk punctuation" // ,
       ],
       "settings": {
-        // "foreground": "#C0C0C0"
         "foreground": "#A9A9A9"
       }
     },
@@ -3444,6 +3231,6 @@
       "settings": {
         "fontStyle": "bold"
       }
-    },
+    }
   ]
 }

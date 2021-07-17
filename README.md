@@ -121,6 +121,8 @@ I would suggest to override the VS Code terminal defaults.
 <details>
   <summary>Supported languages table</summary>
 
+  <br/>
+
 **frontend-stack:**
 <table>
   <thead>

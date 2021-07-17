@@ -33,6 +33,47 @@ To use multiple themes for different file types, look at the extension [Theme by
 
 <details>
   <summary>Big images</summary>
+  
+  <br />
+  TypeScript:  
+  <img src="/readme/ts_01.png" title="typescript example code screenshot" alt="typescript example code screenshot">
+  <br />
+  Credit for the code:   
+  <a href="https://github.com/dima-iholkin">me</a>
+  <br />
+
+  <br />
+  TypeScript:  
+  <img src="/readme/ts_02.png" title="typescript example code screenshot" alt="typescript example code screenshot">
+  <br />
+  Credit for the code:   
+  <a href="https://github.com/dima-iholkin">me</a>
+  <br />
+
+  <br />
+  TypeScript:  
+  <img src="/readme/ts_03.png" title="typescript example code screenshot" alt="typescript example code screenshot">
+  <br />
+  Credit for the code:   
+  <a href="https://github.com/dima-iholkin">me</a>
+  <br />
+
+  <br />
+  Git:  
+  <img src="/readme/git.png" title="typescript example code screenshot" alt="typescript example code screenshot">
+  <br />
+  Credit for the code:   
+  <a href="https://github.com/dima-iholkin">me</a>
+  <br />
+
+  <br />
+  JavaScript:  
+  <img src="/readme/js.png" title="js example code screenshot" alt="js example code screenshot">
+  <br />
+  Credit for the code: 
+  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
+  <br />
+
   <br />
   HTML:  
   <img src="/readme/html.png" title="html example code screenshot" alt="html example code screenshot">
@@ -40,6 +81,7 @@ To use multiple themes for different file types, look at the extension [Theme by
   Credit for the code: 
   <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
   <br />
+
   <br />
   CSS:  
   <img src="/readme/css.png" title="css example code screenshot" alt="css example code screenshot">
@@ -47,18 +89,7 @@ To use multiple themes for different file types, look at the extension [Theme by
   Credit for the code: 
   <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
   <br />
-  <br />
-  JS:  
-  <img src="/readme/js.png" title="js example code screenshot" alt="js example code screenshot">
-  <br />
-  Credit for the code: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
-  <br />
-  <br />
-  TS:  
-  <img src="/readme/ts.png" title="typescript example code screenshot" alt="typescript example code screenshot">
-  Credit for the code:   
-  <a href="https://github.com/dima-iholkin">me</a>
+
 </details>
 
 
@@ -101,7 +132,7 @@ I would suggest to override the VS Code terminal defaults.
 ## Supported languages
 
 <details>
-  <summary>Tables</summary>
+  <summary>Supported languages table</summary>
 
 **frontend-stack:**
 <table>

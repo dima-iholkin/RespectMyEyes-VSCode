@@ -3,19 +3,19 @@
 Connect on Gitter:  
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/RespectMyEyes-VSCode/community)
 
-A light theme focused on the **frontend-react-stack** : **TS/JS + React + HTML + CSS** support. 
+A light theme focused on the frontend stack : **the TS/JS + React + HTML + CSS support**. 
 Plus some other languages like **PowerShell, YAML, Markdown, AutoHotKey**.
 
 *It can always be improved and some oddities can be fixed.*
-
+<br/>
 *The frontend-react-stack and some other languages are ready.*
-
+<br/>
 *Other languages need much work. Most of the not mentioned languages have no support at all.*
 *Would be awesome if somebody worked on them.*
 
 Please report any problems.
 
-To use multiple themes for the chosen file types, look at the extension [Theme by language](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language).
+To use multiple themes for any configured file types, look at the [Theme by language](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language) extension.
 
 
 
@@ -37,25 +37,25 @@ To use multiple themes for the chosen file types, look at the extension [Theme b
   
   <br />
   TypeScript:  
-  <img src="/readme/ts_01.png" title="typescript example code screenshot" alt="typescript example code screenshot">
+  <img src="./screenshots/ts_01.png" title="typescript example code screenshot" alt="typescript example code screenshot">
   <br />
 
   <br />
-  <img src="/readme/ts_02.png" title="typescript example code screenshot" alt="typescript example code screenshot">
+  <img src="./screenshots/ts_02.png" title="typescript example code screenshot" alt="typescript example code screenshot">
   <br />
 
   <br />
-  <img src="/readme/ts_03.png" title="typescript example code screenshot" alt="typescript example code screenshot">
+  <img src="./screenshots/ts_03.png" title="typescript example code screenshot" alt="typescript example code screenshot">
   <br />
 
   <br />
   Git:  
-  <img src="/readme/git.png" title="typescript example code screenshot" alt="typescript example code screenshot">
+  <img src="./screenshots/git.png" title="typescript example code screenshot" alt="typescript example code screenshot">
   <br />
 
   <br />
   JavaScript:  
-  <img src="/readme/js.png" title="js example code screenshot" alt="js example code screenshot">
+  <img src="./screenshots/js.png" title="js example code screenshot" alt="js example code screenshot">
   <br />
   Credit for the code: 
   <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
@@ -63,7 +63,7 @@ To use multiple themes for the chosen file types, look at the extension [Theme b
 
   <br />
   HTML:  
-  <img src="/readme/html.png" title="html example code screenshot" alt="html example code screenshot">
+  <img src="./screenshots/html.png" title="html example code screenshot" alt="html example code screenshot">
   <br />
   Credit for the code: 
   <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
@@ -71,7 +71,7 @@ To use multiple themes for the chosen file types, look at the extension [Theme b
 
   <br />
   CSS:  
-  <img src="/readme/css.png" title="css example code screenshot" alt="css example code screenshot">
+  <img src="./screenshots/css.png" title="css example code screenshot" alt="css example code screenshot">
   <br />
   Credit for the code: 
   <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>

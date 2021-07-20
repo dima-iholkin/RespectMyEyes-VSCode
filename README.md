@@ -27,6 +27,7 @@ Check out the [Theme by language](https://marketplace.visualstudio.com/items?ite
 
 <img src="/screenshots/ts_hit.png" title="typescript code example screenshot">
 <br />
+<br />
 
 <img src="/screenshots/ui.png" title="user interface example screenshot">
 

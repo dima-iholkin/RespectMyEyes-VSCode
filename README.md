@@ -44,7 +44,7 @@ Check out the [Theme by language](https://marketplace.visualstudio.com/items?ite
 
 ## Terminal customization
 
-I would suggest to override the VS Code terminal defaults.
+I would suggest to override the VS Code terminal defaults with these.
 
 <details>
   <summary>settings.json</summary>

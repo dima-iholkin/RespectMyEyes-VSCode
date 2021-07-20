@@ -3,87 +3,48 @@
 Connect on Gitter:  
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/RespectMyEyes-VSCode/community)
 
-A light theme focused on the **frontend-react-stack** : **TS/JS + React + HTML + CSS** support. 
-Plus some other languages like **PowerShell, YAML, Markdown, AutoHotKey**.
-
-*It can always be improved and some oddities can be fixed.*
-
-*The frontend-react-stack and some other languages are ready.*
-
-*Other languages need much work. Most of the not mentioned languages have no support at all.*
-*Would be awesome if somebody worked on them.*
+A light theme for the frontend stack : **TS/JS + React + HTML + CSS**.  
+Also supports **PowerShell, YAML, Markdown, AutoHotKey** and some other languages.
 
 Please report any problems.
 
-To use multiple themes for the chosen file types, look at the extension [Theme by language](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language).
-
-
-
-## Table of Contents
-
-  - [Screenshots](#screenshots)
-  - [Terminal looks](#terminal-looks)
-  - [Supported languages](#supported-languages)
-  - [Development instructions](#development-instructions)
-  - [VS Code looks](#vs-code-looks)
-  - [License](#license)
+Want to use this theme only for the frontend stack?  
+Check out the [Theme by language](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language) extension.
 
 
 
 ## Screenshots
 
-<details>
-  <summary>Big images</summary>
-  
-  <br />
-  TypeScript:  
-  <img src="/readme/ts_01.png" title="typescript example code screenshot" alt="typescript example code screenshot">
-  <br />
+<img src="/screenshots/html_hit.png" title="html code example screenshot">Code attribution: 
+<a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
+<br />
+<br />
 
-  <br />
-  <img src="/readme/ts_02.png" title="typescript example code screenshot" alt="typescript example code screenshot">
-  <br />
+<img src="/screenshots/css_hit.png" title="css code example screenshot">Code attribution: 
+<a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
+<br />
+<br />
 
-  <br />
-  <img src="/readme/ts_03.png" title="typescript example code screenshot" alt="typescript example code screenshot">
-  <br />
+<img src="/screenshots/ts_hit.png" title="typescript code example screenshot">
+<br />
 
-  <br />
-  Git:  
-  <img src="/readme/git.png" title="typescript example code screenshot" alt="typescript example code screenshot">
-  <br />
-
-  <br />
-  JavaScript:  
-  <img src="/readme/js.png" title="js example code screenshot" alt="js example code screenshot">
-  <br />
-  Credit for the code: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
-  <br />
-
-  <br />
-  HTML:  
-  <img src="/readme/html.png" title="html example code screenshot" alt="html example code screenshot">
-  <br />
-  Credit for the code: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
-  <br />
-
-  <br />
-  CSS:  
-  <img src="/readme/css.png" title="css example code screenshot" alt="css example code screenshot">
-  <br />
-  Credit for the code: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
-  <br />
-
-</details>
+<img src="/screenshots/ui.png" title="user interface example screenshot">
 
 
 
-## Terminal looks
+## Table of Contents
 
-I would suggest to override the VS Code terminal defaults.
+  - [Terminal customization](#terminal-customization)
+  - [Supported languages](#supported-languages)
+  - [Development instructions](#development-instructions)
+  - [UI customization](#ui-customization)
+  - [License](#license)
+
+
+
+## Terminal customization
+
+I would suggest to override the VS Code terminal defaults with these.
 
 <details>
   <summary>settings.json</summary>
@@ -119,11 +80,11 @@ I would suggest to override the VS Code terminal defaults.
 ## Supported languages
 
 <details>
-  <summary>Supported languages table</summary>
+  <summary>Supported languages tables</summary>
 
   <br/>
 
-**frontend-stack:**
+**frontend stack:**
 <table>
   <thead>
     <tr>
@@ -312,15 +273,21 @@ I would suggest to override the VS Code terminal defaults.
 
 ## Development instructions
 
+<details>
+  <summary>Development instructions</summary>
+
 Press F5 to test the theme in a new debug window. Changes to the theme file are applied on save.  
 
 `npm run build-and-install` packages the theme from your source code, and installs the local build into your VS Code. Requires the VS Code restart.
 
+</details>
 
 
-## VS Code looks
 
-Interested how my VS Code looks? Here are the relevant parts of the `settings.json`.
+## UI customization
+
+Found something interesting in the screenshots?  
+These are the relevant parts from my `settings.json`.
 
 <details>
   <summary>settings.json</summary>
@@ -378,10 +345,6 @@ Interested how my VS Code looks? Here are the relevant parts of the `settings.js
         ".browserslistrc": "properties",
         ".prettierrc": "json"
     },
-    //
-    //
-    //
-    "workbench.colorTheme": "RespectMyEyes"
     //
     //
     //

@@ -15,14 +15,12 @@ Check out the [Theme by language](https://marketplace.visualstudio.com/items?ite
 
 ## Screenshots
 
-<img src="/screenshots/html_hit.png" title="html code example screenshot">
-Code attribution: 
+<img src="/screenshots/html_hit.png" title="html code example screenshot">Code attribution: 
 <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
 <br />
 <br />
 
-<img src="/screenshots/css_hit.png" title="css code example screenshot">
-Code attribution: 
+<img src="/screenshots/css_hit.png" title="css code example screenshot">Code attribution: 
 <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
 <br />
 <br />

@@ -1,7 +1,7 @@
 {
-    "name": "respectmyeyes-dev",
-    "version": "1.0.3",
-    "displayName": "RespectMyEyes theme DEV",
+    "name": "respectmyeyes",
+    "version": "1.0.4",
+    "displayName": "RespectMyEyes theme",
     "description": "A light theme focused on the frontend-react-stack : TS/JS + React + HTML + CSS support.",
     "publisher": "dima-iholkin",
     "author": "Dima Iholkin",

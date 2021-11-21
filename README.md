@@ -78,6 +78,52 @@ I would suggest to override the VS Code terminal defaults with these.
 
 
 
+## Azure Data Studio fixes / customization:
+
+Add this to your Azure Data Studio `setting.json`, to fix the Connection and Notebook panels:
+
+<details>
+  <summary>settings.json</summary>
+
+  <br />
+
+  ```json5 
+    // settings.json
+    "workbench.colorCustomizations": {
+      "[RespectMyEyes]": {
+        // Fix the Connections and Notebook items in the Activity Bar:
+        //
+        // The whole Activity Bar background:
+        "activityBar.background": "#0000004d",
+        //
+        // The line when moving the items:
+        "activityBar.dropBorder": "#FFFFFF",
+        //
+        // The colors for items:
+        "activityBar.foreground": "#FFFFFF",
+        "activityBar.inactiveForeground": "#f3f3f380",
+        //
+        // The notification badges:
+        "activityBarBadge.background": "#80c080",
+        "activityBarBadge.foreground": "#ffffff",
+        //
+        // The open item's side indicator:
+        "activityBar.activeBorder": "#FFFFFF",
+        // The open item's background:
+        "activityBar.activeBackground": "#00B00080",
+        //
+        //
+        //
+        // Fix the Connections form input fields:
+        //
+        "input.border": "#D3D3D3"
+      }
+    },
+  ```
+</details>
+
+
+
 ## Supported languages
 
 <details>

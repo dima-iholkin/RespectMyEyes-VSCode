@@ -295,7 +295,7 @@
     //
     "editor.findMatchBackground": "#FFA500",
     //
-    "editor.findMatchHighlightBackground": "#FFFFB0",
+    "editor.findMatchHighlightBackground": "#fefe3360", // #FFFFB0
     "editor.findMatchHighlightBorder": "#E8810C",
     //
     //

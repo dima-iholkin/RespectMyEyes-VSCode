@@ -35,6 +35,8 @@
     //
     "input.background": "#FFFFFF",
     //
+    // I would've implemented it, if not for the Debug Console panel.
+    // "input.border": "#E8E8E800",
     //
     //
     // ====================================================
@@ -125,27 +127,25 @@
     // ====================================================
     // Activity Bar: the bar with the badges for Explorer, Git, Debug, Extensions... 
     //
-    // I want it to be light and blend in with other panes:
+    // The whole Activity Bar background:
     "activityBar.background": "#f3f3f3",
     //
     "activityBar.border": "#00800040",
     //
-    // the line when moving the badges:
+    // The line when moving the items:
     "activityBar.dropBorder": "#00B000",
     //
-    // the colors for badges:
+    // The colors for items:
     "activityBar.foreground": "#00B000",
-    //
     "activityBar.inactiveForeground": "#33333340",
     //
-    // notifications on the badges:
+    // The notification badges:
     "activityBarBadge.background": "#80c080",
-    //
     "activityBarBadge.foreground": "#ffffff",
     //
-    // the indicator to the side of an active badge:
+    // The open item's side indicator:
     "activityBar.activeBorder": "#00B000",
-    //
+    // The open item's background:
     "activityBar.activeBackground": "#FFFFFF",
     //
     //
@@ -171,7 +171,9 @@
     //
     //
     // ====================================================
-    // Panel: the bottom panel (Ctrl+J) with the Terminal, Output, Problems, Debug console...
+    // Panel: the bottom panel with the Terminal, Output, Problems, Debug Console...
+    //
+    "panel.background": "#f3f3f3",
     //
     "panelTitle.activeForeground": "#008000",
     //

@@ -80,7 +80,7 @@ I would suggest to override the VS Code terminal defaults with these.
 
 ## Azure Data Studio fixes / customization:
 
-Add this to your Azure Data Studio `setting.json`, to fix the Connection and Notebook panels:
+Add this to your Azure Data Studio `settings.json`, to fix the Connection and Notebook panels:
 
 <details>
   <summary>settings.json</summary>

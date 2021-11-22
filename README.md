@@ -16,18 +16,16 @@ With support for C#, PowerShell, AutoHotKey, Markdown, XML, JSON, YAML, CSS-in-J
 
 
 
-<img src="/screenshots/html_hit.png" title="html code example screenshot">Code attribution: 
+<img src="/screenshots/html_hit.png" title="html code example screenshot">Code source: 
 <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
 <br />
 <br />
 
-<img src="/screenshots/css_hit.png" title="css code example screenshot">Code attribution: 
+<img src="/screenshots/css_hit.png" title="css code example screenshot">Code source: 
 <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
-<br />
 <br />
 
 <img src="/screenshots/ts_hit.png" title="typescript code example screenshot">
-<br />
 <br />
 
 <img src="/screenshots/ui.png" title="user interface example screenshot">
@@ -36,7 +34,7 @@ With support for C#, PowerShell, AutoHotKey, Markdown, XML, JSON, YAML, CSS-in-J
 
 ## Customize the terminal colors
 
-The suggested small VS Code terminal colors override.
+The suggested small override to the terminal colors.
 
 <details>
   <summary>settings.json</summary>
@@ -70,7 +68,7 @@ The suggested small VS Code terminal colors override.
 
 ## Fix / customize the theme in Azure Data Studio
 
-If you install this theme to the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels.
+If you install this theme onto the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels.
 
 <details>
   <summary>settings.json</summary>
@@ -310,7 +308,7 @@ If you install this theme to the Azure Data Studio, here are the suggested fixes
 
 ## Customize your UI
 
-If you've found something interesting in my screenshots above, something that's not part of the theme, like the font or some UI settings, here are the relevant parts of my `settings.json`.
+If you've found something interesting in the screenshots above, something that's not part of the theme, like a font or some UI settings, here are the relevant parts of my `settings.json`.
 
 <details>
   <summary>settings.json</summary>

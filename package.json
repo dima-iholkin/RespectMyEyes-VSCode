@@ -1,6 +1,6 @@
 {
     "name": "respectmyeyes-dev",
-    "version": "1.1.0-beta2",
+    "version": "1.1.0-beta3",
     "displayName": "RespectMyEyes light theme",
     "description": "A light theme focused on the frontend stack : TS/JS + React + HTML + CSS support.",
     "publisher": "dima-iholkin",
@@ -27,7 +27,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "RespectMyEyes light theme",
+                "label": "RespectMyEyes",
                 "uiTheme": "vs",
                 "path": "./themes/RespectMyEyes-color-theme.json"
             }

@@ -28,6 +28,7 @@ With support for C#, PowerShell, AutoHotKey, Markdown, XML, JSON, YAML, CSS-in-J
 
 <img src="/screenshots/ts_hit.png" title="typescript code example screenshot">
 <br />
+<br />
 
 <img src="/screenshots/ui.png" title="user interface example screenshot">
 

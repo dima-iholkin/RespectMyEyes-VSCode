@@ -10,7 +10,7 @@
   <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
 </a>
 
-A light theme focused on **the web front-end stack** : TypeScript/JavaScript + React + HTML + CSS.  
+A light theme focused on **the front-end web stack** : TypeScript/JavaScript + React + HTML + CSS.  
 
 With support for C#, PowerShell, AutoHotKey, Markdown, XML, JSON, YAML, CSS-in-JS, SASS and some other languages.
 
@@ -121,7 +121,7 @@ If you install this theme to the Azure Data Studio, here are the suggested fixes
 
   <br/>
 
-**The web front-end stack:**
+**The front-end web stack:**
 <table>
   <thead>
     <tr>

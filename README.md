@@ -10,11 +10,11 @@
   <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
 </a>
 
+<br />
+
 A light theme focused on **the front-end web stack** : TypeScript/JavaScript + React + HTML + CSS.  
 
 With support for C#, PowerShell, AutoHotKey, Markdown, XML, JSON, YAML, CSS-in-JS, SASS and some other languages.
-
-<br />
 
 <img src="/screenshots/html_hit.png" title="html code example screenshot">Code source: 
 <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>

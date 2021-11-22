@@ -11,6 +11,7 @@
 </a>
 
 <br />
+<br />
 
 A light theme focused on **the front-end web stack** : TypeScript/JavaScript + React + HTML + CSS.  
 

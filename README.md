@@ -10,9 +10,6 @@
   <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
 </a>
 
-<br />
-<br />
-
 A light theme focused on **the front-end web stack** : TypeScript/JavaScript + React + HTML + CSS.  
 
 With support for C#, PowerShell, AutoHotKey, Markdown, XML, JSON, YAML, CSS-in-JS, SASS and some other languages.
@@ -69,7 +66,7 @@ The suggested small override to the terminal colors.
 
 
 
-## Fix / customize the theme in Azure Data Studio
+## Fix / customize in Azure Data Studio
 
 If you install this theme onto the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels.
 

@@ -24,9 +24,9 @@ With support for C#, PowerShell, AutoHotKey, Markdown, XML, JSON, YAML, CSS-in-J
 <img src="/screenshots/css_hit.png" title="css code example screenshot">Code source: 
 <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
 <br />
+<br />
 
 <img src="/screenshots/ts_hit.png" title="typescript code example screenshot">
-<br />
 
 <img src="/screenshots/ui.png" title="user interface example screenshot">
 

@@ -1,19 +1,20 @@
-# RespectMyEyes-VSCode theme
+# RespectMyEyes theme for VS Code 
 
-Connect on Gitter:  
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/RespectMyEyes-VSCode/community)
+<a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
+  <img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/dima-iholkin.respectmyeyes">
+</a> 
+<a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
+  <img alt="Visual Studio Marketplace Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/dima-iholkin.respectmyeyes?label=updated">
+</a> 
+<a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
+  <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
+</a>
 
-A light theme for the frontend stack : **TS/JS + React + HTML + CSS**.  
-Also supports **PowerShell, YAML, Markdown, AutoHotKey** and some other languages.
+A light theme focused on **the web front-end stack** : TypeScript/JavaScript + React + HTML + CSS.  
 
-Please report any problems.
-
-Want to use this theme only for the frontend stack?  
-Check out the [Theme by language](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language) extension.
+With support for C#, PowerShell, AutoHotKey, Markdown, XML, JSON, YAML, CSS-in-JS, SASS and some other languages.
 
 
-
-## Screenshots
 
 <img src="/screenshots/html_hit.png" title="html code example screenshot">Code attribution: 
 <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
@@ -33,19 +34,9 @@ Check out the [Theme by language](https://marketplace.visualstudio.com/items?ite
 
 
 
-## Table of Contents
+## Customize the terminal colors
 
-  - [Terminal customization](#terminal-customization)
-  - [Supported languages](#supported-languages)
-  - [Development instructions](#development-instructions)
-  - [UI customization](#ui-customization)
-  - [License](#license)
-
-
-
-## Terminal customization
-
-I would suggest to override the VS Code terminal defaults with these.
+The suggested small VS Code terminal colors override.
 
 <details>
   <summary>settings.json</summary>
@@ -53,34 +44,33 @@ I would suggest to override the VS Code terminal defaults with these.
   <br />
 
   ```json5 
-    // settings.json
-    "workbench.colorCustomizations": {
-        "[RespectMyEyes]": {
-            "panel.background": "#f3f3f3",
-            "terminal.ansiBlack": "#000000",
-            "terminal.ansiBlue": "#3465A4",
-            "terminal.ansiBrightBlack": "#555753",
-            "terminal.ansiBrightBlue": "#729FCF",
-            "terminal.ansiBrightCyan": "#34E2E2",
-            "terminal.ansiBrightGreen": "#00D000",
-            "terminal.ansiBrightMagenta": "#F066FF",
-            "terminal.ansiBrightRed": "#EF2929",
-            "terminal.ansiCyan": "#06989A",
-            "terminal.ansiGreen": "#00B000",
-            "terminal.ansiMagenta": "#AD7FA8",
-            "terminal.ansiRed": "#CC0000",
-            "terminal.ansiBrightWhite": "#A9A9A9",
-            "terminal.ansiWhite": "#A9A9A9",
-        }
+  // settings.json
+  "workbench.colorCustomizations": {
+    "[RespectMyEyes]": {
+      "terminal.ansiBlack": "#000000",
+      "terminal.ansiBlue": "#3465A4",
+      "terminal.ansiBrightBlack": "#555753",
+      "terminal.ansiBrightBlue": "#729FCF",
+      "terminal.ansiBrightCyan": "#34E2E2",
+      "terminal.ansiBrightGreen": "#00D000",
+      "terminal.ansiBrightMagenta": "#F066FF",
+      "terminal.ansiBrightRed": "#EF2929",
+      "terminal.ansiCyan": "#06989A",
+      "terminal.ansiGreen": "#00B000",
+      "terminal.ansiMagenta": "#AD7FA8",
+      "terminal.ansiRed": "#CC0000",
+      "terminal.ansiBrightWhite": "#A9A9A9",
+      "terminal.ansiWhite": "#A9A9A9",
     }
+  }
   ```
 </details>
 
 
 
-## Azure Data Studio fixes / customization:
+## Fix / customize the theme in Azure Data Studio
 
-Add this to your Azure Data Studio `settings.json`, to fix the Connection and Notebook panels:
+If you install this theme to the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels.
 
 <details>
   <summary>settings.json</summary>
@@ -88,56 +78,56 @@ Add this to your Azure Data Studio `settings.json`, to fix the Connection and No
   <br />
 
   ```json5 
-    // settings.json
-    "workbench.colorCustomizations": {
-      "[RespectMyEyes]": {
-        // Fix the Connections and Notebook items in the Activity Bar:
-        //
-        // The whole Activity Bar background:
-        "activityBar.background": "#0000004d",
-        //
-        // The line when moving the items:
-        "activityBar.dropBorder": "#FFFFFF",
-        //
-        // The colors for items:
-        "activityBar.foreground": "#FFFFFF",
-        "activityBar.inactiveForeground": "#f3f3f380",
-        //
-        // The notification badges:
-        "activityBarBadge.background": "#80c080",
-        "activityBarBadge.foreground": "#ffffff",
-        //
-        // The open item's side indicator:
-        "activityBar.activeBorder": "#FFFFFF",
-        // The open item's background:
-        "activityBar.activeBackground": "#00B00080",
-        //
-        //
-        //
-        // Fix the Connections form input fields:
-        //
-        "input.border": "#D3D3D3"
-      }
-    },
+  // settings.json
+  "workbench.colorCustomizations": {
+    "[RespectMyEyes]": {
+      // Fix the Connections and Notebook items in the Activity Bar:
+      //
+      // The whole Activity Bar background:
+      "activityBar.background": "#0000004d",
+      //
+      // The line when moving the items:
+      "activityBar.dropBorder": "#FFFFFF",
+      //
+      // The colors for items:
+      "activityBar.foreground": "#FFFFFF",
+      "activityBar.inactiveForeground": "#f3f3f380",
+      //
+      // The notification badges:
+      "activityBarBadge.background": "#80c080",
+      "activityBarBadge.foreground": "#ffffff",
+      //
+      // The open item's side indicator:
+      "activityBar.activeBorder": "#FFFFFF",
+      // The open item's background:
+      "activityBar.activeBackground": "#00B00080",
+      //
+      //
+      //
+      // Fix the Connections form input fields:
+      //
+      "input.border": "#D3D3D3"
+    }
+  }
   ```
 </details>
 
 
 
-## Supported languages
+## Language support info
 
 <details>
-  <summary>Supported languages tables</summary>
+  <summary>Language support info</summary>
 
   <br/>
 
-**frontend stack:**
+**The web front-end stack:**
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Support</th>
-      <th align="center">Grammar extention expected</th>
+      <th align="center">Support level</th>
+      <th align="center">Recommended grammar extention</th>
     </tr>
   </thead>
   <tbody>
@@ -198,13 +188,13 @@ Add this to your Azure Data Studio `settings.json`, to fix the Connection and No
 
 
 
-**declarative files:**
+**Declarative files:**
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Support</th>
-      <th align="center">Grammar extention expected</th>
+      <th align="center">Support level</th>
+      <th align="center">Recommended grammar extention</th>
     </tr>
   </thead>
   <tbody>
@@ -252,13 +242,13 @@ Add this to your Azure Data Studio `settings.json`, to fix the Connection and No
 
 
 
-**other languages:**
+**Other languages:**
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Support</th>
-      <th align="center">Grammar extention expected</th>
+      <th align="center">Support level</th>
+      <th align="center">Recommended grammar extention</th>
     </tr>
   </thead>
   <tbody>
@@ -289,8 +279,8 @@ Add this to your Azure Data Studio `settings.json`, to fix the Connection and No
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Support</th>
-      <th align="center">Grammar extention expected</th>
+      <th align="center">Support level</th>
+      <th align="center">Recommended grammar extention</th>
     </tr>
   </thead>
   <tbody>
@@ -318,23 +308,9 @@ Add this to your Azure Data Studio `settings.json`, to fix the Connection and No
 
 
 
-## Development instructions
+## Customize your UI
 
-<details>
-  <summary>Development instructions</summary>
-
-Press F5 to test the theme in a new debug window. Changes to the theme file are applied on save.  
-
-`npm run build-and-install` packages the theme from your source code, and installs the local build into your VS Code. Requires the VS Code restart.
-
-</details>
-
-
-
-## UI customization
-
-Found something interesting in the screenshots?  
-These are the relevant parts from my `settings.json`.
+If you've found something interesting in my screenshots above, something that's not part of the theme, like the font or some UI settings, here are the relevant parts of my `settings.json`.
 
 <details>
   <summary>settings.json</summary>
@@ -342,79 +318,57 @@ These are the relevant parts from my `settings.json`.
   <br />
 
   ```json5
-    // settings.json
-    // UI Layout:
-    "workbench.sideBar.location": "right",
-    "workbench.activityBar.visible": true,
-    "explorer.sortOrder": "default",
-    "explorer.compactFolders": false,
-    "window.zoomLevel": 0,
-    "breadcrumbs.enabled": true,
-    //
-    //
-    //
-    // Editor UI:
-    "editor.minimap.enabled": false,
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.renderWhitespace": "boundary",
-    "editor.renderControlCharacters": false,
-    "editor.renderIndentGuides": true,
-    //
-    //
-    //
-    // Font:
-    "editor.fontFamily": "Fantasque Sans Mono",
-    "editor.fontSize": 16,
-    "editor.fontLigatures": true,
-    "workbench.iconTheme": "vscode-icons",
-    //
-    //
-    //
-    // Show color for a code:   (Color-Highlight extension)
-    "color-highlight.enable": true,
-    "color-highlight.markerType": "dot-before",
-    "color-highlight.markRuler": false,
-    "editor.colorDecorators": false,
-    //
-    //
-    //
-    // Terminal window:
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.cursorBlinking": true,
-    //
-    //
-    //
-    "files.associations": {
-        ".stylelintrc": "json",
-        ".stylelintignore": "ignore",
-        ".eslintignore": "ignore",
-        ".browserslistrc": "properties",
-        ".prettierrc": "json"
-    },
-    //
-    //
-    //
-    // customize the theme:
-    "workbench.colorCustomizations": {
-        "[RespectMyEyes]": {
-            "panel.background": "#f3f3f3",
-            "terminal.ansiBlack": "#000000",
-            "terminal.ansiBlue": "#3465A4",
-            "terminal.ansiBrightBlack": "#555753",
-            "terminal.ansiBrightBlue": "#729FCF",
-            "terminal.ansiBrightCyan": "#34E2E2",
-            "terminal.ansiBrightGreen": "#00D000",
-            "terminal.ansiBrightMagenta": "#F066FF",
-            "terminal.ansiBrightRed": "#EF2929",
-            "terminal.ansiCyan": "#06989A",
-            "terminal.ansiGreen": "#00B000",
-            "terminal.ansiMagenta": "#AD7FA8",
-            "terminal.ansiRed": "#CC0000",
-            "terminal.ansiBrightWhite": "#A9A9A9",
-            "terminal.ansiWhite": "#A9A9A9",
-        }
-    }
+  // settings.json
+  // UI Layout:
+  "workbench.sideBar.location": "right",
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": true,
+  "workbench.iconTheme": "vscode-icons",
+  //
+  //
+  //
+  // Editor UI:
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.snippetSuggestions": "inline",
+  "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.renderIndentGuides": true, // it seems the VS Code shows the indent guides anyway. 
+  "editor.codeLens": false,
+  //
+  //
+  //
+  // Font:
+  "editor.fontFamily": "Fantasque Sans Mono",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  //
+  //
+  //
+  // Show the color for a color code (Color-Highlight extension) :
+  "color-highlight.enable": true,
+  "color-highlight.markerType": "dot-before",
+  "color-highlight.markRuler": false,
+  "editor.colorDecorators": false,
+  // Like this: #00BF00
+  //
+  //
+  //
+  // Terminal window:
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontFamily": "CaskaydiaCove NF",
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorBlinking": true,
+  //
+  //
+  //
+  "files.associations": {
+    ".stylelintrc": "json",
+    ".stylelintignore": "ignore",
+    ".eslintignore": "ignore",
+    ".browserslistrc": "properties",
+    ".prettierrc": "json"
+  }
   ```
 </details>
 

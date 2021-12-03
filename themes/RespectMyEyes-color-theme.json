@@ -308,6 +308,16 @@
     //
     //
     // ====================================================
+    // Diff Editor:    
+    //
+    "diffEditor.insertedTextBackground": "#00B00020",
+    "diffEditor.insertedTextBorder": "#00000000",
+    "diffEditor.removedTextBackground": "#FF000020",
+    "diffEditor.removedTextBorder": "#00000000",
+    //
+    //
+    //
+    // ====================================================
     // (Tabs) Editor Group Header: it's where the tabs are situated.
     //
     "editorGroupHeader.tabsBackground": "#f3f3f3",

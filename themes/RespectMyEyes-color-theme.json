@@ -238,7 +238,7 @@
     // the default text color, before the TextMate grammar rules:
     "editor.foreground": "#000000",
     //
-    // dots for the whitespace color:
+    // the whitespace dots:
     "editorWhitespace.foreground": "#C0C0C080",
     //
     //
@@ -1342,11 +1342,16 @@
         "source.tsx meta.type.annotation meta.brace.square", // []
         "source.jsx meta.type.annotation meta.brace.square", // []
         "meta.embedded.block.javascript meta.type.annotation meta.brace.square", // []
-        "source.ts meta.type.annotation keyword.operator.type", // |
-        "source.js meta.type.annotation keyword.operator.type", // |
-        "source.tsx meta.type.annotation keyword.operator.type", // |
-        "source.jsx meta.type.annotation keyword.operator.type", // |
-        "meta.embedded.block.javascript meta.type.annotation keyword.operator.type", // |
+        "source.ts meta.type.parameters meta.brace.square", // []
+        "source.js meta.type.parameters meta.brace.square", // []
+        "source.tsx meta.type.parameters meta.brace.square", // []
+        "source.jsx meta.type.parameters meta.brace.square", // []
+        "meta.embedded.block.javascript meta.type.parameters meta.brace.square", // []
+        "source.ts keyword.operator.type", // |
+        "source.js keyword.operator.type", // |
+        "source.tsx keyword.operator.type", // |
+        "source.jsx keyword.operator.type", // |
+        "meta.embedded.block.javascript keyword.operator.type", // |
       ],
       "settings": {
         "foreground": "#E8810C"

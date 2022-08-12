@@ -629,7 +629,9 @@
         "meta.object-literal.key entity.name.function",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        // "foreground": "#0BC5E3"
+        // "foreground": "#000000"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -797,9 +799,10 @@
         "punctuation.terminator", // ;
         "punctuation.destructuring", // :
         "keyword.operator", // :
+        "keyword.operator.type.annotation", // :
         "keyword.operator.logical", // ||, !
         "keyword.operator.comparison", // ===
-        "string.template punctuation.definition.string.template", // ` `
+        // "string.template punctuation.definition.string.template", // ` `
         "keyword.operator.ternary", // ?, :
         "keyword.operator.relational", // >, <
         "keyword.operator.bitwise", // ~~, |
@@ -812,7 +815,9 @@
     // logical operators:
     {
       "scope": [
-        "storage.type.function.arrow", // =>
+        "storage.type.function.arrow", // "=>"
+        "string.template punctuation.definition.string.template", // "` `" 
+        "punctuation.definition.template-expression", // "${ }" 
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -1065,7 +1070,8 @@
         "meta.embedded.block.javascript meta.parameters variable.parameter",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#0000CC"
+        "foreground": "#000000"
       }
     },
     //
@@ -1222,7 +1228,9 @@
         "meta.embedded.block.javascript meta.definition.property variable.object.property",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        // "foreground": "#0BC5E3"
+        "foreground": "#000000"
+        // "foreground": "#0000CC"
       }
     },
     //
@@ -1240,6 +1248,21 @@
       }
     },
     //
+    // function name in declaration after "var, let, const":
+    {
+      "scope": [
+        "source.ts meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.js meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.tsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.jsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "meta.embedded.block.javascript meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        "foreground": "#000000"
+      }
+    },
+    //
     // variable name in declaration after "var, let, const":
     {
       "scope": [
@@ -1248,11 +1271,6 @@
         "source.tsx meta.definition variable.other", // variable name after "var, let, const"
         "source.jsx meta.definition variable.other", // variable name after "var, let, const"
         "meta.embedded.block.javascript meta.definition variable.other", // variable name after "var, let, const"
-        "source.ts meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.js meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.tsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.jsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "meta.embedded.block.javascript meta.definition variable.other entity.name.function", // variable name after "var, let, const"
         "source.ts meta.definition variable.other.readwrite", // variable name after "var, let, const"
         "source.js meta.definition variable.other.readwrite", // variable name after "var, let, const"
         "source.tsx meta.definition variable.other.readwrite", // variable name after "var, let, const"
@@ -1260,7 +1278,8 @@
         "meta.embedded.block.javascript meta.definition variable.other.readwrite", // variable name after "var, let, const"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#0000CC"
+        "foreground": "#000000"
       }
     },
     //
@@ -1275,7 +1294,8 @@
         "meta.embedded.block.javascript meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
       ],
       "settings": {
-        "foreground": "#0BC5E3",
+        // "foreground": "#0BC5E3"
+        "foreground": "#000000"
       }
     },
     //
@@ -1317,6 +1337,16 @@
         "source.tsx meta.type.annotation support.type.builtin",
         "source.jsx meta.type.annotation support.type.builtin",
         "meta.embedded.block.javascript meta.type.annotation support.type.builtin",
+        "source.ts meta.type.annotation meta.brace.square", // []
+        "source.js meta.type.annotation meta.brace.square", // []
+        "source.tsx meta.type.annotation meta.brace.square", // []
+        "source.jsx meta.type.annotation meta.brace.square", // []
+        "meta.embedded.block.javascript meta.type.annotation meta.brace.square", // []
+        "source.ts meta.type.annotation keyword.operator.type", // |
+        "source.js meta.type.annotation keyword.operator.type", // |
+        "source.tsx meta.type.annotation keyword.operator.type", // |
+        "source.jsx meta.type.annotation keyword.operator.type", // |
+        "meta.embedded.block.javascript meta.type.annotation keyword.operator.type", // |
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -1451,6 +1481,8 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+        // "foreground": "#0000CC"
+        // "foreground": "#A31515"
       }
     },
     //
@@ -1925,6 +1957,7 @@
       ],
       "settings": {
         "foreground": "#0000CC"
+        // "foreground": "#000000"
       }
     },
     //

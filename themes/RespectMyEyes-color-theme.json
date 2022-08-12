@@ -19,7 +19,7 @@
     // ====================================================
     // Welcome page:
     //
-    "welcomePage.buttonHoverBackground": "#00B00040",
+    // "welcomePage.buttonHoverBackground": "#00B00040",
     //
     //
     //
@@ -67,11 +67,11 @@
     // ====================================================
     // Title Bar: the VS Code window title bar.
     //
-    "titleBar.activeBackground": "#f3f3f3",
+    "titleBar.activeBackground": "#F3F3F3",
     //
     "titleBar.activeForeground": "#333333",
     //
-    "titleBar.inactiveBackground": "#f3f3f3",
+    "titleBar.inactiveBackground": "#F3F3F3",
     //
     "titleBar.inactiveForeground": "#33333380",
     //
@@ -80,7 +80,7 @@
     // ====================================================
     // Status Bar: the bar at the bottom.
     //
-    "statusBar.background": "#f3f3f3",
+    "statusBar.background": "#F3F3F3",
     //
     "statusBar.foreground": "#008000",
     //
@@ -88,39 +88,39 @@
     //
     //
     //
-    "statusBar.debuggingBackground": "#f3f3f3",
+    "statusBar.debuggingBackground": "#F3F3F3",
     //
-    "statusBar.debuggingForeground": "#cc6633",
+    "statusBar.debuggingForeground": "#CC6633",
     //
-    "statusBar.debuggingBorder": "#cc6633",
-    //
-    //
-    //
-    "statusBar.noFolderBackground": "#f3f3f3",
-    //
-    "statusBar.noFolderForeground": "#68217a",
-    //
-    "statusBar.noFolderBorder": "#68217a",
+    "statusBar.debuggingBorder": "#CC6633",
     //
     //
     //
-    "statusBarItem.activeBackground": "#ffffff2e",
+    "statusBar.noFolderBackground": "#F3F3F3",
     //
-    "statusBarItem.hoverBackground": "#ffffff1f",
+    "statusBar.noFolderForeground": "#68217A",
+    //
+    "statusBar.noFolderBorder": "#68217A",
+    //
+    //
+    //
+    "statusBarItem.activeBackground": "#FFFFFF2E",
+    //
+    "statusBarItem.hoverBackground": "#FFFFFF1F",
     //
     //
     //
     "statusBarItem.prominentBackground": "#00000080",
     //
-    "statusBarItem.prominentForeground": "#ffffff",
+    "statusBarItem.prominentForeground": "#FFFFFF",
     //
-    "statusBarItem.prominentHoverBackground": "#0000004d",
+    "statusBarItem.prominentHoverBackground": "#0000004D",
     //
     //
     //
-    "statusBarItem.remoteBackground": "#16825d",
+    "statusBarItem.remoteBackground": "#16825D",
     //
-    "statusBarItem.remoteForeground": "#ffffff",
+    "statusBarItem.remoteForeground": "#FFFFFF",
     //
     //
     //
@@ -128,7 +128,7 @@
     // Activity Bar: the bar with the badges for Explorer, Git, Debug, Extensions... 
     //
     // The whole Activity Bar background:
-    "activityBar.background": "#f3f3f3",
+    "activityBar.background": "#F3F3F3",
     //
     "activityBar.border": "#00800040",
     //
@@ -140,8 +140,8 @@
     "activityBar.inactiveForeground": "#33333340",
     //
     // The notification badges:
-    "activityBarBadge.background": "#80c080",
-    "activityBarBadge.foreground": "#ffffff",
+    "activityBarBadge.background": "#80C080",
+    "activityBarBadge.foreground": "#FFFFFF",
     //
     // The open item's side indicator:
     "activityBar.activeBorder": "#00B000",
@@ -154,16 +154,16 @@
     // Side Bar: the pane that opens, when you select the badge for Explorer, Git, Debug...
     //
     // the Title on top of the opened Explorer pane for example:
-    "sideBarTitle.foreground": "#6f6f6f",
+    "sideBarTitle.foreground": "#6F6F6F",
     //
     // the opened pane background:
-    "sideBar.background": "#f3f3f3",
+    "sideBar.background": "#F3F3F3",
     //
-    "sideBar.border": "#dddddd",
+    "sideBar.border": "#DDDDDD",
     //
     // the drop background when moving sub-panes (Sections) 
     // with mouse in the Explorer pane, for example:
-    "sideBar.dropBackground": "#0000001a",
+    "sideBar.dropBackground": "#0000001A",
     //
     // the Section headers in the opened side pane:
     "sideBarSectionHeader.background": "#80808033",
@@ -173,7 +173,7 @@
     // ====================================================
     // Panel: the bottom panel with the Terminal, Output, Problems, Debug Console...
     //
-    "panel.background": "#f3f3f3",
+    "panel.background": "#F3F3F3",
     //
     "panelTitle.activeForeground": "#008000",
     //
@@ -233,7 +233,7 @@
     // Editor: the window with the actual text editing.
     //
     // the background surface for the whole window:
-    "editor.background": "#ffffff",
+    "editor.background": "#FFFFFF",
     //
     // the default text color, before the TextMate grammar rules:
     "editor.foreground": "#000000",
@@ -277,16 +277,16 @@
     "editorBracketMatch.background": "#00B00040",
     //
     // I want the borders to be white, like the background:
-    "editorBracketMatch.border": "#ffffff00",
+    "editorBracketMatch.border": "#FFFFFF00",
     //
     //
     //
     // the suggestion windows, like the IntelliSense suggestion list,
     // should be grey:
-    "editorSuggestWidget.background": "#f3f3f3",
+    "editorSuggestWidget.background": "#F3F3F3",
     //
     // in centered layout, the empty background:
-    "editorPane.background": "#f3f3f380",
+    "editorPane.background": "#F3F3F380",
     //
     "editor.lineHighlightBorder": "#00B00020",
     //
@@ -298,7 +298,7 @@
     //
     "editor.findMatchBackground": "#FFA500",
     //
-    "editor.findMatchHighlightBackground": "#fefe3360", // #FFFFB0
+    "editor.findMatchHighlightBackground": "#FEFE3360", // #FFFFB0
     "editor.findMatchHighlightBorder": "#E8810C",
     //
     //
@@ -321,26 +321,26 @@
     // ====================================================
     // (Tabs) Editor Group Header: it's where the tabs are situated.
     //
-    "editorGroupHeader.tabsBackground": "#f3f3f3",
+    "editorGroupHeader.tabsBackground": "#F3F3F3",
     //
-    "editorGroupHeader.noTabsBackground": "#ffffff",
+    "editorGroupHeader.noTabsBackground": "#FFFFFF",
     //
     "tab.activeForeground": "#00A000",
     //
     "tab.inactiveForeground": "#909090",
     //
-    "tab.hoverBackground": "#ffffff",
+    "tab.hoverBackground": "#FFFFFF",
     //
     //
     //
     // ====================================================
     // Breadcrumbs:
     //
-    "breadcrumb.background": "#f3f3f3",
+    "breadcrumb.background": "#F3F3F3",
     //
     "breadcrumb.foreground": "#909090",
     //
-    "breadcrumbPicker.background": "#f3f3f3",
+    "breadcrumbPicker.background": "#F3F3F3",
     //
     "breadcrumb.focusForeground": "#00A000",
     //
@@ -359,9 +359,9 @@
     // Settings UI: it's the GUI for changing the Settings.
     //
     // the default borders were white and they blend-in with the background: 
-    "settings.numberInputBorder": "#cecece",
+    "settings.numberInputBorder": "#CECECE",
     //
-    "settings.textInputBorder": "#cecece",
+    "settings.textInputBorder": "#CECECE",
     //
     //
     //
@@ -384,11 +384,11 @@
     //
     // orange not in use: #FFA500
     //
-    // yellow: #b5ba00
+    // yellow: #B5BA00
     // yellow: #FFFFB0
     //
     // comments: #008000B0
-    // strings: #a31515
+    // strings: #A31515
     //
     // pink / purple: #F066FF
     //
@@ -418,7 +418,7 @@
         "string.regexp keyword",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -438,7 +438,7 @@
         "constant.language.boolean", // true, false
       ],
       "settings": {
-        "foreground": "#a31515",
+        "foreground": "#A31515",
       }
     },
     //
@@ -485,7 +485,7 @@
         "storage.type", // const, class in JS; type name in C#
       ],
       "settings": {
-        "foreground": "#a31515",
+        "foreground": "#A31515",
       }
     },
     //
@@ -505,7 +505,7 @@
         "support.constant",
       ],
       "settings": {
-        "foreground": "#a31515",
+        "foreground": "#A31515",
       }
     },
     //
@@ -689,7 +689,7 @@
         "meta.structure.dictionary.value",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -975,7 +975,7 @@
         "meta.embedded.block.javascript meta.import string",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1378,7 +1378,7 @@
         "meta.embedded.block.javascript storage.type", // const, function, inteface, class
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1416,7 +1416,7 @@
         "meta.embedded.block.javascript meta.function storage.type.function",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1483,7 +1483,7 @@
         "meta.embedded.block.javascript keyword.control.default", // default
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1572,7 +1572,7 @@
         "meta.embedded.block.javascript support.type",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2077,7 +2077,7 @@
         "text.aspnetcorerazor constant.language", // null
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2094,7 +2094,7 @@
         "source.cs keyword.other.enum", // enum
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2277,7 +2277,7 @@
         "source.powershell meta.function storage.type", // function
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2482,7 +2482,7 @@
         "source.css support.constant.font-name",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2492,7 +2492,7 @@
         "source.css variable.parameter.url",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2786,7 +2786,7 @@
         "source.jsx meta.tag.attributes string",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2838,7 +2838,7 @@
         "source.json constant.numeric", // 1, 2 - numeric literals
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2866,7 +2866,7 @@
         "source.yaml constant.numeric", // 1, 2 - numeric literals
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2952,7 +2952,7 @@
     {
       "scope": "text.html.markdown markup.deleted",
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     {
@@ -3015,7 +3015,7 @@
         "text.html.markdown meta.link.reference.def constant.other.reference.link", // [homepage]()
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3124,7 +3124,7 @@
         "source.ini",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3213,7 +3213,7 @@
         "source.ahk punctuation.definition.string.end"
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //

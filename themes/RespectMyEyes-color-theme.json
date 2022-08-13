@@ -17,22 +17,12 @@
     //
     //
     // ====================================================
-    // Welcome page:
-    //
-    // "welcomePage.buttonHoverBackground": "#00B00040",
-    //
-    //
-    //
-    // ====================================================
     // Input controls: it's the Search box and the Find/Replace box.
     //
     // the default placeholder text is too low contrast:
     "input.placeholderForeground": "#A0A0A0",
-    //
     "input.foreground": "#00B000",
-    //
     "inputOption.activeBackground": "#00B00040",
-    //
     "input.background": "#FFFFFF",
     //
     // I would've implemented it, if not for the Debug Console panel.
@@ -43,9 +33,7 @@
     // Button controls:
     //
     "button.background": "#FFFFFF",
-    //
     "button.hoverBackground": "#00B00040",
-    //
     "button.foreground": "#00B000",
     //
     //
@@ -68,11 +56,8 @@
     // Title Bar: the VS Code window title bar.
     //
     "titleBar.activeBackground": "#F3F3F3",
-    //
     "titleBar.activeForeground": "#333333",
-    //
     "titleBar.inactiveBackground": "#F3F3F3",
-    //
     "titleBar.inactiveForeground": "#33333380",
     //
     //
@@ -81,45 +66,25 @@
     // Status Bar: the bar at the bottom.
     //
     "statusBar.background": "#F3F3F3",
-    //
     "statusBar.foreground": "#008000",
-    //
     "statusBar.border": "#00800040",
     //
-    //
-    //
     "statusBar.debuggingBackground": "#F3F3F3",
-    //
     "statusBar.debuggingForeground": "#CC6633",
-    //
     "statusBar.debuggingBorder": "#CC6633",
     //
-    //
-    //
     "statusBar.noFolderBackground": "#F3F3F3",
-    //
     "statusBar.noFolderForeground": "#68217A",
-    //
     "statusBar.noFolderBorder": "#68217A",
     //
-    //
-    //
     "statusBarItem.activeBackground": "#FFFFFF2E",
-    //
     "statusBarItem.hoverBackground": "#FFFFFF1F",
     //
-    //
-    //
     "statusBarItem.prominentBackground": "#00000080",
-    //
     "statusBarItem.prominentForeground": "#FFFFFF",
-    //
     "statusBarItem.prominentHoverBackground": "#0000004D",
     //
-    //
-    //
     "statusBarItem.remoteBackground": "#16825D",
-    //
     "statusBarItem.remoteForeground": "#FFFFFF",
     //
     //
@@ -129,7 +94,6 @@
     //
     // The whole Activity Bar background:
     "activityBar.background": "#F3F3F3",
-    //
     "activityBar.border": "#00800040",
     //
     // The line when moving the items:
@@ -158,7 +122,6 @@
     //
     // the opened pane background:
     "sideBar.background": "#F3F3F3",
-    //
     "sideBar.border": "#DDDDDD",
     //
     // the drop background when moving sub-panes (Sections) 
@@ -174,9 +137,7 @@
     // Panel: the bottom panel with the Terminal, Output, Problems, Debug Console...
     //
     "panel.background": "#F3F3F3",
-    //
     "panelTitle.activeForeground": "#008000",
-    //
     "panelTitle.inactiveForeground": "#000000",
     //
     //
@@ -186,25 +147,19 @@
     //
     // the default hover background is too low contrast:
     "list.hoverBackground": "#FFFFFF",
-    //
     "list.hoverForeground": "#000000",
-    //
-    //
-    //
-    "list.focusBackground": "#BFEBBF", // #00B00040
+    "list.focusBackground": "#BFEBBF",
     //
     //
     //
     // the default background is blue, which is distracting:
     "list.activeSelectionBackground": "#FFFFFF",
-    //
     "list.inactiveSelectionBackground": "#FFFFFF",
     //
     //
     //
     // the default text is white, which should be a dark color:
     "list.activeSelectionForeground": "#00A000",
-    //
     "list.inactiveSelectionForeground": "#00A000",
     //
     //
@@ -219,11 +174,8 @@
     // Menu Bar:
     //
     "menubar.selectionBackground": "#FFFFFF",
-    //
     "menu.selectionBackground": "#00B00020",
-    //
     "menu.selectionForeground": "#000000",
-    //
     "menu.background": "#FFFFFF",
     //
     //
@@ -257,11 +209,8 @@
     // region with the same content as the selection,
     // should be not too attractive to the eye:
     "editor.selectionHighlightBackground": "#00B00020",
-    //
     "editor.wordHighlightBackground": "#00B00010",
-    //
     "editor.wordHighlightStrongBackground": "#00B00040",
-    //
     "editor.hoverHighlightBackground": "#00B00040",
     //
     //
@@ -298,7 +247,7 @@
     //
     "editor.findMatchBackground": "#FFA500",
     //
-    "editor.findMatchHighlightBackground": "#FEFE3360", // #FFFFB0
+    "editor.findMatchHighlightBackground": "#FEFE3360",
     "editor.findMatchHighlightBorder": "#E8810C",
     //
     //
@@ -322,13 +271,9 @@
     // (Tabs) Editor Group Header: it's where the tabs are situated.
     //
     "editorGroupHeader.tabsBackground": "#F3F3F3",
-    //
     "editorGroupHeader.noTabsBackground": "#FFFFFF",
-    //
     "tab.activeForeground": "#00A000",
-    //
     "tab.inactiveForeground": "#909090",
-    //
     "tab.hoverBackground": "#FFFFFF",
     //
     //
@@ -337,13 +282,9 @@
     // Breadcrumbs:
     //
     "breadcrumb.background": "#F3F3F3",
-    //
     "breadcrumb.foreground": "#909090",
-    //
     "breadcrumbPicker.background": "#F3F3F3",
-    //
     "breadcrumb.focusForeground": "#00A000",
-    //
     "breadcrumb.activeSelectionForeground": "#00A000",
     //
     //
@@ -360,7 +301,6 @@
     //
     // the default borders were white and they blend-in with the background: 
     "settings.numberInputBorder": "#CECECE",
-    //
     "settings.textInputBorder": "#CECECE",
     //
     //
@@ -594,7 +534,6 @@
         "meta.definition.variable variable",
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#0000CC"
       }
     },
@@ -629,8 +568,6 @@
         "meta.object-literal.key entity.name.function",
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
-        // "foreground": "#000000"
         "foreground": "#0000CC"
       }
     },
@@ -656,7 +593,6 @@
         "entity.name.variable.enum-member", // enum member names in C#
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#000000"
       }
     },
@@ -802,7 +738,6 @@
         "keyword.operator.type.annotation", // :
         "keyword.operator.logical", // ||, !
         "keyword.operator.comparison", // ===
-        // "string.template punctuation.definition.string.template", // ` `
         "keyword.operator.ternary", // ?, :
         "keyword.operator.relational", // >, <
         "keyword.operator.bitwise", // ~~, |
@@ -871,7 +806,6 @@
         "meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#0BC5E3"
       }
     },
@@ -1070,12 +1004,11 @@
         "meta.embedded.block.javascript meta.parameters variable.parameter",
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#000000"
       }
     },
     //
-    // function name in function call:
+    // function variable name:
     {
       "scope": [
         "source.ts entity.name.function", // function calls
@@ -1085,11 +1018,11 @@
         "meta.embedded.block.javascript entity.name.function", // function calls
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#000000"
       }
     },
     //
-    // function name in function call:
+    // function variable name during its call:
     {
       "scope": [
         "source.ts meta.function-call entity.name.function", // function call
@@ -1228,9 +1161,7 @@
         "meta.embedded.block.javascript meta.definition.property variable.object.property",
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#000000"
-        // "foreground": "#0000CC"
       }
     },
     //
@@ -1256,9 +1187,13 @@
         "source.tsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
         "source.jsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
         "meta.embedded.block.javascript meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.ts meta.definition.variable entity.name.function", // variable name after "var, let, const"
+        "source.js meta.definition.variable entity.name.function", // variable name after "var, let, const"
+        "source.tsx meta.definition.variable entity.name.function", // variable name after "var, let, const"
+        "source.jsx meta.definition.variable entity.name.function", // variable name after "var, let, const"
+        "meta.embedded.block.javascript meta.definition.variable entity.name.function", // variable name after "var, let, const"
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#000000"
       }
     },
@@ -1278,7 +1213,6 @@
         "meta.embedded.block.javascript meta.definition variable.other.readwrite", // variable name after "var, let, const"
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#000000"
       }
     },
@@ -1294,7 +1228,6 @@
         "meta.embedded.block.javascript meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#000000"
       }
     },
@@ -1307,6 +1240,11 @@
         "source.tsx meta.type.parameters entity.name.type",
         "source.jsx meta.type.parameters entity.name.type",
         "meta.embedded.block.javascript meta.type.parameters entity.name.type",
+        "source.ts meta.type.parameters support.type.builtin",
+        "source.js meta.type.parameters support.type.builtin",
+        "source.tsx meta.type.parameters support.type.builtin",
+        "source.jsx meta.type.parameters support.type.builtin",
+        "meta.embedded.block.javascript meta.type.parameters support.type.builtin",
         "source.ts meta.return.type entity.name.type",
         "source.js meta.return.type entity.name.type",
         "source.tsx meta.return.type entity.name.type",
@@ -1347,6 +1285,11 @@
         "source.tsx meta.type.parameters meta.brace.square", // []
         "source.jsx meta.type.parameters meta.brace.square", // []
         "meta.embedded.block.javascript meta.type.parameters meta.brace.square", // []
+        "source.ts meta.return.type meta.brace.square", // []
+        "source.js meta.return.type meta.brace.square", // []
+        "source.tsx meta.return.type meta.brace.square", // []
+        "source.jsx meta.return.type meta.brace.square", // []
+        "meta.embedded.block.javascript meta.return.type meta.brace.square", // []
         "source.ts keyword.operator.type", // |
         "source.js keyword.operator.type", // |
         "source.tsx keyword.operator.type", // |
@@ -1486,8 +1429,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#0000CC"
-        // "foreground": "#A31515"
       }
     },
     //
@@ -1826,9 +1767,14 @@
         "source.tsx meta.type.annotation punctuation.accessor", // . dot in a type annotation
         "source.jsx meta.type.annotation punctuation.accessor", // . dot in a type annotation
         "meta.embedded.block.javascript meta.type.annotation punctuation.accessor", // . dot in a type annotation
+        "source.ts meta.return.type punctuation.accessor", // . dot in a type annotation
+        "source.js meta.return.type punctuation.accessor", // . dot in a type annotation
+        "source.tsx meta.return.type punctuation.accessor", // . dot in a type annotation
+        "source.jsx meta.return.type punctuation.accessor", // . dot in a type annotation
+        "meta.embedded.block.javascript meta.return.type punctuation.accessor", // . dot in a type annotation
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -1962,7 +1908,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#000000"
       }
     },
     //
@@ -2784,7 +2729,7 @@
         "source.jsx entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -2808,7 +2753,7 @@
         "source.jsx meta.jsx.children",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3176,7 +3121,7 @@
         "source.ignore",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#000000"
       }
     },
     //

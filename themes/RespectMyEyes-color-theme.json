@@ -2375,8 +2375,6 @@
         "source.css punctuation.definition.entity", // "#, ."
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
-        // "foreground": "#0000CC"
         "foreground": "#E8810C"
       }
     },
@@ -2387,8 +2385,6 @@
         "source.css meta.property-list entity.name.tag" // I know this breaks "content" property.
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
-        // "foreground": "#0000CC"
         "foreground": "#E8810C"
       }
     },
@@ -2432,7 +2428,6 @@
         "source.css entity.name.function"
       ],
       "settings": {
-        // "foreground": "#E8810C"
         "foreground": "#0000CC"
       }
     },
@@ -2443,9 +2438,7 @@
         "source.css entity.other.attribute-name.class.mixin"
       ],
       "settings": {
-        // "foreground": "#E8810C"
         "foreground": "#0000CC"
-        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -2455,7 +2448,6 @@
         "source.css support.function", // function call in CSS
       ],
       "settings": {
-        // "foreground": "#E8810C"
         "foreground": "#0000CC"
       }
     },
@@ -2468,7 +2460,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#000000"
       }
     },
     //
@@ -2517,7 +2508,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#000000"
       }
     },
     //
@@ -2543,7 +2533,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#000000"
       }
     },
     //
@@ -2558,9 +2547,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
-        // "foreground": "#A9A9A9"
       }
     },
     //
@@ -2577,8 +2563,6 @@
         "source.css keyword.control.at-rule.import punctuation.definition.keyword",
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
-        // "foreground": "#0000CC"
         "foreground": "#A9A9A9"
       }
     },
@@ -2599,7 +2583,6 @@
         "source.css keyword.control.operator"
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#0BC5E3"
       }
     },
@@ -2612,8 +2595,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#E8810C"
-        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -2624,7 +2605,6 @@
         "source.css keyword.other.important", // !important
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#0000CC"
       }
     },
@@ -2675,7 +2655,6 @@
         "source.css punctuation.definition.pseudo-class.end.bracket.round", // ( )
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#A9A9A9"
       }
     },
@@ -2719,7 +2698,6 @@
         "source.css punctuation.definition.interpolation.end.bracket.curly",
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#0BC5E3"
       }
     },
@@ -2731,8 +2709,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -2809,8 +2785,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
-        // "foreground": "#000000"
-        // "foreground": "#A31515"
       }
     },
     //

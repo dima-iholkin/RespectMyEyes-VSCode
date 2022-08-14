@@ -2907,6 +2907,9 @@
     {
       "scope": [
         "text.html",
+        "text.html.markdown meta.embedded.block.html", // HTML embedded into Markdown
+        "text.html.markdown meta.embedded.block meta.jsx.children", // JSX embedded into Markdown
+        "text.html.markdown meta.embedded.block meta.tsx.children", // JSX embedded into Markdown
         "text.xml",
         "text.aspnetcorerazor",
         "source.ts",
@@ -3081,9 +3084,14 @@
       }
     },
     {
-      "scope": "text.html.markdown markup.heading",
+      "scope": [
+        "text.html.markdown markup.heading heading",
+        "text.html.markdown markup.heading heading punctuation.definition.heading",
+      ],
       "settings": {
-        "foreground": "#0BC5E3"
+        // "foreground": "#0BC5E3",
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     {
@@ -3113,7 +3121,8 @@
     {
       "scope": "text.html.markdown markup.inline.raw",
       "settings": {
-        "foreground": "#A9A9A9"
+        // "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3153,7 +3162,11 @@
         "text.html.markdown constant.other.reference.link", // [][homepage]
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        // "foreground": "#A9A9A9"
+        // "foreground": "#000000"
+        // "foreground": "#E8810C"
+        // "foreground": "#0000CC"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3198,10 +3211,11 @@
     {
       "scope": [
         "text.html.markdown markup.fenced_code.block punctuation.definition", // ```
-        "text.html.markdown markup.fenced_code.block fenced_code.block.language", // bat, powershell
+        "text.html.markdown markup.fenced_code.block fenced_code.block.language", // ``` "bat", "powershell", "js"
       ],
       "settings": {
         "foreground": "#0000CC"
+        // "foreground": "#A9A9A9"
       }
     },
     //
@@ -3209,9 +3223,12 @@
     {
       "scope": [
         "text.html.markdown markup.fenced_code.block",
+        "text.html.markdown markup.fenced_code.block meta.embedded.block"
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        // "foreground": "#A9A9A9"
+        "foreground": "#000000"
+        // "foreground": "#A31515"
       }
     },
     //

@@ -696,6 +696,7 @@
     {
       "scope": [
         "punctuation",
+        "punctuation.definition.string" // fix for Markdown
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -1620,21 +1621,25 @@
     // Below are some fixes for this rule.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        // 4 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
@@ -1649,21 +1654,24 @@
     // For arrow function. Fix the prev rule's function's { } braces for the inner blocks.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.block punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
-        "source.ts meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
-        "source.tsx meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
-        "source.js meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
-        "source.jsx meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
+        // 3 wrap:
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         // check up to 3 times the "meta.arrow meta.block" wrap.
       ],
       "settings": {
@@ -1674,21 +1682,24 @@
     // For arrow function. Fix the prev rule's function's { } braces for the inner blocks.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.tsx meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.js meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.jsx meta.arrow meta.block switch-statement punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow switch-statement meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block switch-statement punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.arrow meta.block switch-statement meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.arrow meta.block meta.arrow meta.block switch-statement meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         // check up to 3 times the "meta.arrow meta.block" wrap.
       ],
       "settings": {
@@ -1699,16 +1710,19 @@
     // For arrow function. Fix the prev rule's function's { } braces for the inner object.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.js meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.objectliteral punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.objectliteral meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
@@ -1728,17 +1742,17 @@
         "source.tsx meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.type.annotation punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.type.annotation meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.type.annotation meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.type.annotation meta.block punctuation.definition.block"
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block"
         // check up to 3 times the "meta.arrow meta.block" wrap.
       ],
       "settings": {
@@ -2500,14 +2514,23 @@
     {
       "scope": [
         "source.css entity.name.tag",
+        "meta.embedded.block.css entity.name.tag",
         "source.css entity.name.tag.reference",
+        "meta.embedded.block.css entity.name.tag.reference",
         "source.css meta.selector entity.name.tag",
+        "meta.embedded.block.css meta.selector entity.name.tag",
         "source.css entity.other.attribute-name.class", // class selector
+        "meta.embedded.block.css entity.other.attribute-name.class", // class selector
         "source.css entity.other.attribute-name.id", // id selector
+        "meta.embedded.block.css entity.other.attribute-name.id", // id selector
         "source.css entity.other.attribute-name.parent-selector",
+        "meta.embedded.block.css entity.other.attribute-name.parent-selector",
         "source.css entity.other.attribute-name.pseudo-class",
+        "meta.embedded.block.css entity.other.attribute-name.pseudo-class",
         "source.css entity.other.attribute-name.pseudo-element",
+        "meta.embedded.block.css entity.other.attribute-name.pseudo-element",
         "source.css punctuation.definition.entity", // "#, ."
+        "meta.embedded.block.css punctuation.definition.entity", // "#, ."
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -2619,7 +2642,8 @@
     {
       "scope": [
         "source.css constant.numeric",
-        "source.css keyword.other.unit"
+        "source.css keyword.other.unit",
+        "meta.embedded.block.css keyword.other.unit" // fix fir Markdown CSS
       ],
       "settings": {
         "foreground": "#000000"
@@ -2907,6 +2931,7 @@
     {
       "scope": [
         "text.html",
+        "text.html.markdown",
         "text.html.markdown meta.embedded.block.html", // HTML embedded into Markdown
         "text.html.markdown meta.embedded.block meta.jsx.children", // JSX embedded into Markdown
         "text.html.markdown meta.embedded.block meta.tsx.children", // JSX embedded into Markdown
@@ -3064,7 +3089,7 @@
     {
       "scope": [
         "text.html.markdown meta.paragraph",
-        "text.html.markdown",
+        // "text.html.markdown",
       ],
       "settings": {
         "foreground": "#000000"

@@ -132,22 +132,22 @@ If you install this theme onto the Azure Data Studio, here are the suggested fix
     <tr>
       <td align="center">TypeScript / JavaScript</td>
       <td align="center">good</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">React</td>
       <td align="center">good</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">HTML</td>
       <td align="center">good</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">CSS</td>
       <td align="center">good</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">styled-components / CSS-in-JS</td>
@@ -159,7 +159,7 @@ If you install this theme onto the Azure Data Studio, here are the suggested fix
     <tr>
       <td align="center">SASS</td>
       <td align="center">ok</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">Vue</td>
@@ -171,12 +171,12 @@ If you install this theme onto the Azure Data Studio, here are the suggested fix
     <tr>
       <td align="center">Angular</td>
       <td align="center">weak</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">LESS</td>
       <td align="center">weak</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
   </tbody>
 </table>
@@ -199,17 +199,17 @@ If you install this theme onto the Azure Data Studio, here are the suggested fix
     <tr>
       <td align="center">XML</td>
       <td align="center">good</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">JSON</td>
       <td align="center">good</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">YAML</td>
       <td align="center">ok</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">DotEnv</td>
@@ -221,17 +221,17 @@ If you install this theme onto the Azure Data Studio, here are the suggested fix
     <tr>
       <td align="center">Ignore</td>
       <td align="center">ok</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">Dockerfile</td>
       <td align="center">ok</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">Properties</td>
       <td align="center">weak</td>
-      <td align="center">-</td>
+      <td align="center"> - </td>
     </tr>
   </tbody>
 </table>

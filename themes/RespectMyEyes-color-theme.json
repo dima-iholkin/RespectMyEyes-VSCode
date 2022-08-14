@@ -3259,6 +3259,19 @@
     // ====================================================
     // Properties (.ini, .editorconfig):
     //
+    //
+    //
+    // general text color:
+    {
+      "scope": [
+        "source.ini",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // property name:
     {
       "scope": [
         "source.ini keyword.other.definition",
@@ -3268,9 +3281,10 @@
       }
     },
     //
+    // "="
     {
       "scope": [
-        "source.ini",
+        "source.ini punctuation.separator.key-value",
       ],
       "settings": {
         "foreground": "#000000"
@@ -3281,6 +3295,8 @@
     //
     // ====================================================
     // Ignore (.gitignore, .*ignore):
+    //
+    //
     //
     {
       "scope": [

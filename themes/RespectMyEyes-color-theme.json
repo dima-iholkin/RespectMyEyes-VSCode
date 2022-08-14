@@ -1738,16 +1738,19 @@
     // For arrow function. Fix the prev rule's function's { } braces for the inner type annotation.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
@@ -1766,21 +1769,25 @@
     // "{ }" block for anonymous function.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.function.expression meta.block punctuation.definition.block",
         "source.tsx meta.function.expression meta.block punctuation.definition.block",
         "source.js meta.function.expression meta.block punctuation.definition.block",
         "source.jsx meta.function.expression meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.function.expression meta.block punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
-        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        // 4 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
@@ -1795,16 +1802,19 @@
     // For anonymous function. Fix the prev rule's function's { } braces for the inner blocks.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.function.expression meta.block meta.block punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.block punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.block punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.function.expression meta.block meta.block punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.blockmeta.function.expression meta.block meta.block punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.blockmeta.function.expression meta.block meta.block punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.blockmeta.function.expression meta.block meta.block punctuation.definition.block",
@@ -1820,21 +1830,24 @@
     // For anonymous function. Fix the prev rule's function's { } braces for the inner blocks.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.function.expression meta.block switch-statement punctuation.definition.block",
         "source.tsx meta.function.expression meta.block switch-statement punctuation.definition.block",
         "source.js meta.function.expression meta.block switch-statement punctuation.definition.block",
         "source.jsx meta.function.expression meta.block switch-statement punctuation.definition.block",
-        "meta.embedded.block.javascript meta.function.expression switch-statement meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block switch-statement punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
-        "meta.embedded.block.javascript meta.function.expression meta.function.expression meta.block switch-statement meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
-        "meta.embedded.block.javascript meta.function.expression meta.function.expression meta.block meta.function.expression meta.block switch-statement meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
         // check up to 3 times the "meta.function.expression meta.block" wrap.
       ],
       "settings": {
@@ -1845,16 +1858,19 @@
     // For anonymous function. Fix the prev rule's function's { } braces for the inner object.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
-        "meta.embedded.block.javascript meta.function.expression meta.objectliteral meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
         "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
@@ -1870,21 +1886,24 @@
     // For anonymous function. Fix the prev rule's function's { } braces for the inner type annotation.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
-        "meta.embedded.block.javascript meta.function.expression meta.type.annotation meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
-        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.type.annotation meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
-        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.type.annotation meta.block punctuation.definition.block"
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block"
         // check up to 3 times the "meta.function.expression meta.block" wrap.
       ],
       "settings": {
@@ -2713,13 +2732,29 @@
     {
       "scope": [
         "source.css keyword.control.at-rule.function",
+        "meta.embedded.block.css keyword.control.at-rule.function",
+        "meta.embedded.block.scss keyword.control.at-rule.function",
         "source.css keyword.control.at-rule.function punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.function punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.function punctuation.definition.keyword",
         "source.css keyword.control.at-rule.mixin",
+        "meta.embedded.block.css keyword.control.at-rule.mixin",
+        "meta.embedded.block.scss keyword.control.at-rule.mixin",
         "source.css keyword.control.at-rule.mixin punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.mixin punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.mixin punctuation.definition.keyword",
         "source.css keyword.control.at-rule.media",
+        "meta.embedded.block.css keyword.control.at-rule.media",
+        "meta.embedded.block.scss keyword.control.at-rule.media",
         "source.css keyword.control.at-rule.media punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.media punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.media punctuation.definition.keyword",
         "source.css keyword.control.at-rule.import",
+        "meta.embedded.block.css keyword.control.at-rule.import",
+        "meta.embedded.block.scss keyword.control.at-rule.import",
         "source.css keyword.control.at-rule.import punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.import punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.import punctuation.definition.keyword",
       ],
       "settings": {
         "foreground": "#A9A9A9"

@@ -15,6 +15,9 @@
 
 Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Markdown, AutoHotKey, PowerShell**.  
 
+<br />
+<br />
+
 <img src="/screenshots/ui.png" title="user interface screenshot with javascript">
   Source repo: 
   <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>

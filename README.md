@@ -10,16 +10,14 @@
   <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
 </a>
 
+<br />
 
-
-Hi! This is a light theme focused on **JS/TS, React, HTML, CSS, JSON, YAML, Markdown, AutoHotKey, PowerShell**.  
+Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Markdown, AutoHotKey, PowerShell**.  
 
 <img src="/screenshots/ui.png" title="user interface screenshot with javascript">
   Source repo: 
   <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
-<br />
-<br />
 
 
 
@@ -40,12 +38,10 @@ Hi! This is a light theme focused on **JS/TS, React, HTML, CSS, JSON, YAML, Mark
 <br />
 
 <img src="/screenshots/json.png" title="json screenshot" />
-<br />
-<br />
 
 
 
-## Language support
+## Guaranteed language support
 
 <table>
   <thead>
@@ -56,7 +52,7 @@ Hi! This is a light theme focused on **JS/TS, React, HTML, CSS, JSON, YAML, Mark
   </thead>
   <tbody>
     <tr>
-      <td align="center">JS/TS</td>
+      <td align="center">JS, TS</td>
       <td align="center"> - </td>
     </tr>
     <tr>

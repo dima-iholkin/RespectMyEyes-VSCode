@@ -202,7 +202,7 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 
   If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my <code>settings.json</code>.
 
-  ```json
+  ```jsonc
   {
     // settings.json
     // UI Layout:

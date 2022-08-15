@@ -12,7 +12,6 @@
 
 <br />
 <br />
-<br />
 
 Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Markdown, AutoHotKey, PowerShell**.  
 

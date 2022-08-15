@@ -3149,7 +3149,6 @@
         "text.html.markdown markup.heading heading punctuation.definition.heading",
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
         "foreground": "#0000CC",
         "fontStyle": "bold"
       }
@@ -3181,7 +3180,6 @@
     {
       "scope": "text.html.markdown markup.inline.raw",
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#A31515"
       }
     },
@@ -3222,10 +3220,6 @@
         "text.html.markdown constant.other.reference.link", // [][homepage]
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
-        // "foreground": "#000000"
-        // "foreground": "#E8810C"
-        // "foreground": "#0000CC"
         "foreground": "#A31515"
       }
     },
@@ -3275,7 +3269,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-        // "foreground": "#A9A9A9"
       }
     },
     //
@@ -3286,9 +3279,7 @@
         "text.html.markdown markup.fenced_code.block meta.embedded.block"
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#000000"
-        // "foreground": "#A31515"
       }
     },
     //
@@ -3389,9 +3380,11 @@
     // ====================================================
     // AutoHotKey (AHK):
     //
+    //
+    //
     // Names in AutoHotKey:
     //
-    // preprocessor directives:
+    // Preprocessor directives:
     {
       "scope": [
         "source.ahk keyword.control.directives",
@@ -3401,7 +3394,7 @@
       }
     },
     //
-    // function name:
+    // Function names:
     {
       "scope": [
         "source.ahk support.function",
@@ -3411,7 +3404,7 @@
       }
     },
     //
-    // hotkey literals:
+    // Hotkey literals:
     {
       "scope": [
         "source.ahk hotkeyline",
@@ -3422,17 +3415,27 @@
       }
     },
     //
+    // Labels:
+    {
+      "scope": [
+        "source.ahk hotkeyline entity.name.function.label",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
     //
     //
     // Keywords in AutoHotKey:
     //
-    // On, Off, others ... keywords:
+    // "On", "Off" keywords:
     {
       "scope": [
-        "source.ahk keyword.other" // On, Off, others ...
+        "source.ahk keyword.other"
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3440,7 +3443,7 @@
     //
     // Punctuation in AutoHotKey:
     //
-    // ; comment sign:
+    // ";" comment sign:
     {
       "scope": "source.ahk punctuation.definition.comment", // ;
       "settings": {
@@ -3459,12 +3462,12 @@
       }
     },
     //
-    // { }, ::, , punctuation:
+    // "{ }", "::", "," punctuation:
     {
       "scope": [
-        "source.ahk punctuation.bracket", // { }
-        "source.ahk punctuation.definition.equals.colon", // ::
-        "source.ahk punctuation" // ,
+        "source.ahk punctuation.bracket", // "{ }"
+        "source.ahk punctuation.definition.equals.colon", // "::"
+        "source.ahk punctuation" // ","
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3475,6 +3478,8 @@
     //
     // ====================================================
     // Text style:
+    //
+    //
     //
     {
       "scope": "emphasis",

@@ -71,7 +71,7 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
     <tr>
       <td align="center">styled-components</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components">vscode-styled-components</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components">vscode-styled-components</a>
       </td>
     </tr>
     <tr>
@@ -123,7 +123,6 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
   The suggested small override to the terminal colors, put them into your <code>settings.json</code>.
 
   <br />
-  <br />
 
   ```json5 
   // settings.json
@@ -157,7 +156,6 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 
   If you install this theme into the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your <code>settings.json</code>.
 
-  <br />
   <br />
 
   ```json5 
@@ -204,7 +202,6 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 
   If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my <code>settings.json</code>.
 
-  <br />
   <br />
 
   ```json5

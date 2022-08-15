@@ -10,31 +10,122 @@
   <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
 </a>
 
-A light theme focused on **the front-end web stack** : TypeScript/JavaScript + React + HTML + CSS.  
 
-With support for C#, PowerShell, AutoHotKey, Markdown, XML, JSON, YAML, CSS-in-JS, SASS and some other languages.
 
-<img src="/screenshots/html_hit.png" title="html code example screenshot">Code source: 
-<a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
+Hi! This is a light theme focused on **JS/TS, React, HTML, CSS, JSON, YAML, Markdown, AutoHotKey, PowerShell**.  
+
+<img src="/screenshots/ui.png" title="user interface screenshot with javascript">
+  Source repo: 
+  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
 <br />
 <br />
 
-<img src="/screenshots/css_hit.png" title="css code example screenshot">Code source: 
-<a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy</a>
+
+
+## Screenshots
+
+<img src="/screenshots/html.png" title="html screenshot">
+  Source repo: 
+  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
 <br />
 <br />
 
-<img src="/screenshots/ts_hit.png" title="typescript code example screenshot">
+<img src="/screenshots/css.png" title="css screenshot">
+  Source repo: 
+  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
 <br />
 <br />
 
-<img src="/screenshots/ui.png" title="user interface example screenshot">
+<img src="/screenshots/json.png" title="json screenshot" />
+<br />
+<br />
 
 
 
-## Customize the terminal colors
+## Language support
 
-The suggested small override to the terminal colors.
+<table>
+  <thead>
+    <tr>
+      <th align="center">Language</th>
+      <th align="center">with syntax highlight extention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">JS/TS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">React</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">HTML, XML</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">CSS, SASS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">styled-components</td>
+      <td align="center">
+        <a href="styled-components">vscode-styled-components</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">JSON</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">YAML</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">.env</td>
+      <td align="center">
+        <a href="dotenv">DotEnv</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">.ignore</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Dockerfile</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Markdown</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">AutoHotKey</td>
+      <td align="center">
+        <a href="autohotkey">AutoHotKey Plus Plus</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">PowerShell</td>
+      <td align="center"> - </td>
+    </tr>
+  </tbody>
+</table>
+
+[styled-components]: https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
+[dotenv]: https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv
+[markdown]: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+[autohotkey]: https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus
+
+
+
+## Terminal
+
+The suggested small override to the terminal colors, put them into your `settings.json`.
 
 <details>
   <summary>settings.json</summary>
@@ -66,9 +157,9 @@ The suggested small override to the terminal colors.
 
 
 
-## Fix / customize in Azure Data Studio
+## Azure Data Studio
 
-If you install this theme onto the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels.
+If you install this theme into the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your `settings.json`.
 
 <details>
   <summary>settings.json</summary>
@@ -112,203 +203,9 @@ If you install this theme onto the Azure Data Studio, here are the suggested fix
 
 
 
-## Language support info
+## Customize
 
-<details>
-  <summary>Language support info</summary>
-
-  <br/>
-
-**The front-end web stack:**
-<table>
-  <thead>
-    <tr>
-      <th align="center">Language</th>
-      <th align="center">Support level</th>
-      <th align="center">Recommended grammar extention</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">TypeScript / JavaScript</td>
-      <td align="center">good</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">React</td>
-      <td align="center">good</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">HTML</td>
-      <td align="center">good</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">CSS</td>
-      <td align="center">good</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">styled-components / CSS-in-JS</td>
-      <td align="center">ok</td>
-      <td align="center">
-        <a href="styled-components">vscode-styled-components</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">SASS</td>
-      <td align="center">ok</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">Vue</td>
-      <td align="center">weak</td>
-      <td align="center">
-        <a href="vue">Vue</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">Angular</td>
-      <td align="center">weak</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">LESS</td>
-      <td align="center">weak</td>
-      <td align="center"> - </td>
-    </tr>
-  </tbody>
-</table>
-
-[vue]: https://marketplace.visualstudio.com/items?itemName=jcbuisson.vue
-[styled-components]: https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
-
-
-
-**Declarative files:**
-<table>
-  <thead>
-    <tr>
-      <th align="center">Language</th>
-      <th align="center">Support level</th>
-      <th align="center">Recommended grammar extention</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">XML</td>
-      <td align="center">good</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">JSON</td>
-      <td align="center">good</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">YAML</td>
-      <td align="center">ok</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">DotEnv</td>
-      <td align="center">ok</td>
-      <td align="center">
-        <a href="dotenv">DotEnv</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">Ignore</td>
-      <td align="center">ok</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">Dockerfile</td>
-      <td align="center">ok</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">Properties</td>
-      <td align="center">weak</td>
-      <td align="center"> - </td>
-    </tr>
-  </tbody>
-</table>
-
-[dotenv]: https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv
-
-
-
-**Other languages:**
-<table>
-  <thead>
-    <tr>
-      <th align="center">Language</th>
-      <th align="center">Support level</th>
-      <th align="center">Recommended grammar extention</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">Markdown</td>
-      <td align="center">good</td>
-      <td align="center">
-        <a href="markdown">Markdown All in One</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">AutoHotKey</td>
-      <td align="center">good</td>
-      <td align="center">
-        <a href="autohotkey">AutoHotKey</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-[markdown]: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
-[autohotkey]: https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-autohotkey
-
-
-
-**.NET stack:**
-<table>
-  <thead>
-    <tr>
-      <th align="center">Language</th>
-      <th align="center">Support level</th>
-      <th align="center">Recommended grammar extention</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">PowerShell</td>
-      <td align="center">ok</td>
-      <td align="center">
-        <a href="powershell">PowerShell</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">C#</td>
-      <td align="center">weak</td>
-      <td align="center">
-        <a href="csharp">C# Grammar Extended</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-[csharp]: https://marketplace.visualstudio.com/items?itemName=dannymcgee.csharp-grammar-extended
-[powershell]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
-
-</details>
-
-
-
-## Customize your UI
-
-If you've found something interesting in the screenshots above, something that's not part of the theme, like a font or some UI settings, here are the relevant parts of my `settings.json`.
+If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my `settings.json`.
 
 <details>
   <summary>settings.json</summary>
@@ -372,7 +269,7 @@ If you've found something interesting in the screenshots above, something that's
 
 
 
-## License
+## License information
 
 * **[MIT License](http://opensource.org/licenses/mit-license.php)**
 * Copyright © 2021 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.

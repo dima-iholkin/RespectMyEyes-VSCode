@@ -118,6 +118,8 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 ## Terminal
 
 <details>
+  <br />
+
   The suggested small override to the terminal colors, put them into your <code>settings.json</code>.
 
   <br />
@@ -151,6 +153,8 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 ## Azure Data Studio
 
 <details>
+  <br />
+
   If you install this theme into the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your <code>settings.json</code>.
 
   <br />
@@ -196,6 +200,8 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 ## Customize
 
 <details>
+  <br />
+
   If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my <code>settings.json</code>.
 
   <br />

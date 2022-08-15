@@ -203,59 +203,59 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
   If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my <code>settings.json</code>.
 
   ```json5
-  // settings.json
-{
-  // UI Layout:
-  "workbench.sideBar.location": "right",
-  "explorer.compactFolders": false,
-  "breadcrumbs.enabled": true,
-  "workbench.iconTheme": "vscode-icons",
-  //
-  //
-  //
-  // Editor UI:
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.renderWhitespace": "boundary",
-  "editor.snippetSuggestions": "inline",
-  "editor.minimap.enabled": false,
-  "editor.renderControlCharacters": false,
-  "editor.renderIndentGuides": true, // it seems the VS Code shows the indent guides anyway. 
-  "editor.codeLens": false,
-  //
-  //
-  //
-  // Font:
-  "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 16,
-  "editor.fontLigatures": true,
-  //
-  //
-  //
-  // Show the color for a color code (Color-Highlight extension) :
-  "color-highlight.enable": true,
-  "color-highlight.markerType": "dot-before",
-  "color-highlight.markRuler": false,
-  "editor.colorDecorators": false,
-  // Like this: #00BF00
-  //
-  //
-  //
-  // Terminal window:
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.fontFamily": "CaskaydiaCove NF",
-  "terminal.integrated.cursorStyle": "underline",
-  "terminal.integrated.cursorBlinking": true,
-  //
-  //
-  //
-  "files.associations": {
-    ".stylelintrc": "json",
-    ".stylelintignore": "ignore",
-    ".eslintignore": "ignore",
-    ".browserslistrc": "properties",
-    ".prettierrc": "json"
+  {
+    // settings.json
+    // UI Layout:
+    "workbench.sideBar.location": "right",
+    "explorer.compactFolders": false,
+    "breadcrumbs.enabled": true,
+    "workbench.iconTheme": "vscode-icons",
+    //
+    //
+    //
+    // Editor UI:
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.snippetSuggestions": "inline",
+    "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.renderIndentGuides": true, // it seems the VS Code shows the indent guides anyway. 
+    "editor.codeLens": false,
+    //
+    //
+    //
+    // Font:
+    "editor.fontFamily": "Fantasque Sans Mono",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    //
+    //
+    //
+    // Show the color for a color code (Color-Highlight extension) :
+    "color-highlight.enable": true,
+    "color-highlight.markerType": "dot-before",
+    "color-highlight.markRuler": false,
+    "editor.colorDecorators": false,
+    // Like this: #00BF00
+    //
+    //
+    //
+    // Terminal window:
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "CaskaydiaCove NF",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorBlinking": true,
+    //
+    //
+    //
+    "files.associations": {
+      ".stylelintrc": "json",
+      ".stylelintignore": "ignore",
+      ".eslintignore": "ignore",
+      ".browserslistrc": "properties",
+      ".prettierrc": "json"
+    }
   }
-}
   ```
 </details>
 

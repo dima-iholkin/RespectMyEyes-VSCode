@@ -122,26 +122,26 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 
   The suggested small override to the terminal colors, put them into your <code>settings.json</code>.
 
-  <br />
-
-  ```json5 
+  ```jsonc
   // settings.json
-  "workbench.colorCustomizations": {
-    "[RespectMyEyes]": {
-      "terminal.ansiBlack": "#000000",
-      "terminal.ansiBlue": "#3465A4",
-      "terminal.ansiBrightBlack": "#555753",
-      "terminal.ansiBrightBlue": "#729FCF",
-      "terminal.ansiBrightCyan": "#34E2E2",
-      "terminal.ansiBrightGreen": "#00D000",
-      "terminal.ansiBrightMagenta": "#F066FF",
-      "terminal.ansiBrightRed": "#EF2929",
-      "terminal.ansiCyan": "#06989A",
-      "terminal.ansiGreen": "#00B000",
-      "terminal.ansiMagenta": "#AD7FA8",
-      "terminal.ansiRed": "#CC0000",
-      "terminal.ansiBrightWhite": "#A9A9A9",
-      "terminal.ansiWhite": "#A9A9A9",
+  {
+    "workbench.colorCustomizations": {
+      "[RespectMyEyes]": {
+        "terminal.ansiBlack": "#000000",
+        "terminal.ansiBlue": "#3465A4",
+        "terminal.ansiBrightBlack": "#555753",
+        "terminal.ansiBrightBlue": "#729FCF",
+        "terminal.ansiBrightCyan": "#34E2E2",
+        "terminal.ansiBrightGreen": "#00D000",
+        "terminal.ansiBrightMagenta": "#F066FF",
+        "terminal.ansiBrightRed": "#EF2929",
+        "terminal.ansiCyan": "#06989A",
+        "terminal.ansiGreen": "#00B000",
+        "terminal.ansiMagenta": "#AD7FA8",
+        "terminal.ansiRed": "#CC0000",
+        "terminal.ansiBrightWhite": "#A9A9A9",
+        "terminal.ansiWhite": "#A9A9A9",
+      }
     }
   }
   ```
@@ -156,38 +156,38 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 
   If you install this theme into the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your <code>settings.json</code>.
 
-  <br />
-
-  ```json5 
+  ```jsonc
   // settings.json
-  "workbench.colorCustomizations": {
-    "[RespectMyEyes]": {
-      // Fix the Connections and Notebook items in the Activity Bar:
-      //
-      // The whole Activity Bar background:
-      "activityBar.background": "#0000004d",
-      //
-      // The line when moving the items:
-      "activityBar.dropBorder": "#FFFFFF",
-      //
-      // The colors for items:
-      "activityBar.foreground": "#FFFFFF",
-      "activityBar.inactiveForeground": "#f3f3f380",
-      //
-      // The notification badges:
-      "activityBarBadge.background": "#80c080",
-      "activityBarBadge.foreground": "#ffffff",
-      //
-      // The open item's side indicator:
-      "activityBar.activeBorder": "#FFFFFF",
-      // The open item's background:
-      "activityBar.activeBackground": "#00B00080",
-      //
-      //
-      //
-      // Fix the Connections form input fields:
-      //
-      "input.border": "#D3D3D3"
+  { 
+    "workbench.colorCustomizations": {
+      "[RespectMyEyes]": {
+        // Fix the Connections and Notebook items in the Activity Bar:
+        //
+        // The whole Activity Bar background:
+        "activityBar.background": "#0000004d",
+        //
+        // The line when moving the items:
+        "activityBar.dropBorder": "#FFFFFF",
+        //
+        // The colors for items:
+        "activityBar.foreground": "#FFFFFF",
+        "activityBar.inactiveForeground": "#f3f3f380",
+        //
+        // The notification badges:
+        "activityBarBadge.background": "#80c080",
+        "activityBarBadge.foreground": "#ffffff",
+        //
+        // The open item's side indicator:
+        "activityBar.activeBorder": "#FFFFFF",
+        // The open item's background:
+        "activityBar.activeBackground": "#00B00080",
+        //
+        //
+        //
+        // Fix the Connections form input fields:
+        //
+        "input.border": "#D3D3D3"
+      }
     }
   }
   ```
@@ -203,8 +203,8 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
   If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my <code>settings.json</code>.
 
   ```jsonc
+  // settings.json
   {
-    // settings.json
     // UI Layout:
     "workbench.sideBar.location": "right",
     "explorer.compactFolders": false,

@@ -70,7 +70,7 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
     <tr>
       <td align="center">styled-components</td>
       <td align="center">
-        <a href="styled-components">vscode-styled-components</a>
+        <a href="[styled-components][styled-components]">vscode-styled-components</a>
       </td>
     </tr>
     <tr>
@@ -121,10 +121,8 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 
 ## Terminal
 
-The suggested small override to the terminal colors, put them into your `settings.json`.
-
 <details>
-  <summary>settings.json</summary>
+  The suggested small override to the terminal colors, put them into your `settings.json`.
 
   <br />
 
@@ -155,10 +153,8 @@ The suggested small override to the terminal colors, put them into your `setting
 
 ## Azure Data Studio
 
-If you install this theme into the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your `settings.json`.
-
 <details>
-  <summary>settings.json</summary>
+  If you install this theme into the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your `settings.json`.
 
   <br />
 
@@ -201,10 +197,8 @@ If you install this theme into the Azure Data Studio, here are the suggested fix
 
 ## Customize
 
-If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my `settings.json`.
-
 <details>
-  <summary>settings.json</summary>
+  If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my `settings.json`.
 
   <br />
 
@@ -268,4 +262,4 @@ If you've found something interesting in the screenshots above, something that's
 ## License information
 
 * **[MIT License](http://opensource.org/licenses/mit-license.php)**
-* Copyright © 2021 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.
+* Copyright © 2022 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.

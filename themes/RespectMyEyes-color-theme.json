@@ -17,22 +17,12 @@
     //
     //
     // ====================================================
-    // Welcome page:
-    //
-    "welcomePage.buttonHoverBackground": "#00B00040",
-    //
-    //
-    //
-    // ====================================================
     // Input controls: it's the Search box and the Find/Replace box.
     //
     // the default placeholder text is too low contrast:
     "input.placeholderForeground": "#A0A0A0",
-    //
     "input.foreground": "#00B000",
-    //
     "inputOption.activeBackground": "#00B00040",
-    //
     "input.background": "#FFFFFF",
     //
     // I would've implemented it, if not for the Debug Console panel.
@@ -43,9 +33,7 @@
     // Button controls:
     //
     "button.background": "#FFFFFF",
-    //
     "button.hoverBackground": "#00B00040",
-    //
     "button.foreground": "#00B000",
     //
     //
@@ -67,12 +55,9 @@
     // ====================================================
     // Title Bar: the VS Code window title bar.
     //
-    "titleBar.activeBackground": "#f3f3f3",
-    //
+    "titleBar.activeBackground": "#F3F3F3",
     "titleBar.activeForeground": "#333333",
-    //
-    "titleBar.inactiveBackground": "#f3f3f3",
-    //
+    "titleBar.inactiveBackground": "#F3F3F3",
     "titleBar.inactiveForeground": "#33333380",
     //
     //
@@ -80,47 +65,27 @@
     // ====================================================
     // Status Bar: the bar at the bottom.
     //
-    "statusBar.background": "#f3f3f3",
-    //
+    "statusBar.background": "#F3F3F3",
     "statusBar.foreground": "#008000",
-    //
     "statusBar.border": "#00800040",
     //
+    "statusBar.debuggingBackground": "#F3F3F3",
+    "statusBar.debuggingForeground": "#CC6633",
+    "statusBar.debuggingBorder": "#CC6633",
     //
+    "statusBar.noFolderBackground": "#F3F3F3",
+    "statusBar.noFolderForeground": "#68217A",
+    "statusBar.noFolderBorder": "#68217A",
     //
-    "statusBar.debuggingBackground": "#f3f3f3",
-    //
-    "statusBar.debuggingForeground": "#cc6633",
-    //
-    "statusBar.debuggingBorder": "#cc6633",
-    //
-    //
-    //
-    "statusBar.noFolderBackground": "#f3f3f3",
-    //
-    "statusBar.noFolderForeground": "#68217a",
-    //
-    "statusBar.noFolderBorder": "#68217a",
-    //
-    //
-    //
-    "statusBarItem.activeBackground": "#ffffff2e",
-    //
-    "statusBarItem.hoverBackground": "#ffffff1f",
-    //
-    //
+    "statusBarItem.activeBackground": "#FFFFFF2E",
+    "statusBarItem.hoverBackground": "#FFFFFF1F",
     //
     "statusBarItem.prominentBackground": "#00000080",
+    "statusBarItem.prominentForeground": "#FFFFFF",
+    "statusBarItem.prominentHoverBackground": "#0000004D",
     //
-    "statusBarItem.prominentForeground": "#ffffff",
-    //
-    "statusBarItem.prominentHoverBackground": "#0000004d",
-    //
-    //
-    //
-    "statusBarItem.remoteBackground": "#16825d",
-    //
-    "statusBarItem.remoteForeground": "#ffffff",
+    "statusBarItem.remoteBackground": "#16825D",
+    "statusBarItem.remoteForeground": "#FFFFFF",
     //
     //
     //
@@ -128,8 +93,7 @@
     // Activity Bar: the bar with the badges for Explorer, Git, Debug, Extensions... 
     //
     // The whole Activity Bar background:
-    "activityBar.background": "#f3f3f3",
-    //
+    "activityBar.background": "#F3F3F3",
     "activityBar.border": "#00800040",
     //
     // The line when moving the items:
@@ -140,8 +104,8 @@
     "activityBar.inactiveForeground": "#33333340",
     //
     // The notification badges:
-    "activityBarBadge.background": "#80c080",
-    "activityBarBadge.foreground": "#ffffff",
+    "activityBarBadge.background": "#80C080",
+    "activityBarBadge.foreground": "#FFFFFF",
     //
     // The open item's side indicator:
     "activityBar.activeBorder": "#00B000",
@@ -154,16 +118,15 @@
     // Side Bar: the pane that opens, when you select the badge for Explorer, Git, Debug...
     //
     // the Title on top of the opened Explorer pane for example:
-    "sideBarTitle.foreground": "#6f6f6f",
+    "sideBarTitle.foreground": "#6F6F6F",
     //
     // the opened pane background:
-    "sideBar.background": "#f3f3f3",
-    //
-    "sideBar.border": "#dddddd",
+    "sideBar.background": "#F3F3F3",
+    "sideBar.border": "#DDDDDD",
     //
     // the drop background when moving sub-panes (Sections) 
     // with mouse in the Explorer pane, for example:
-    "sideBar.dropBackground": "#0000001a",
+    "sideBar.dropBackground": "#0000001A",
     //
     // the Section headers in the opened side pane:
     "sideBarSectionHeader.background": "#80808033",
@@ -173,10 +136,8 @@
     // ====================================================
     // Panel: the bottom panel with the Terminal, Output, Problems, Debug Console...
     //
-    "panel.background": "#f3f3f3",
-    //
+    "panel.background": "#F3F3F3",
     "panelTitle.activeForeground": "#008000",
-    //
     "panelTitle.inactiveForeground": "#000000",
     //
     //
@@ -186,25 +147,19 @@
     //
     // the default hover background is too low contrast:
     "list.hoverBackground": "#FFFFFF",
-    //
     "list.hoverForeground": "#000000",
-    //
-    //
-    //
-    "list.focusBackground": "#BFEBBF", // #00B00040
+    "list.focusBackground": "#BFEBBF",
     //
     //
     //
     // the default background is blue, which is distracting:
     "list.activeSelectionBackground": "#FFFFFF",
-    //
     "list.inactiveSelectionBackground": "#FFFFFF",
     //
     //
     //
     // the default text is white, which should be a dark color:
     "list.activeSelectionForeground": "#00A000",
-    //
     "list.inactiveSelectionForeground": "#00A000",
     //
     //
@@ -219,11 +174,8 @@
     // Menu Bar:
     //
     "menubar.selectionBackground": "#FFFFFF",
-    //
     "menu.selectionBackground": "#00B00020",
-    //
     "menu.selectionForeground": "#000000",
-    //
     "menu.background": "#FFFFFF",
     //
     //
@@ -233,30 +185,32 @@
     // Editor: the window with the actual text editing.
     //
     // the background surface for the whole window:
-    "editor.background": "#ffffff",
+    "editor.background": "#FFFFFF",
     //
     // the default text color, before the TextMate grammar rules:
     "editor.foreground": "#000000",
     //
-    // dots for the whitespace color:
+    // the whitespace dots:
     "editorWhitespace.foreground": "#C0C0C080",
+    //
+    //
+    //
+    // line number:
+    "editorLineNumber.foreground": "#00800080",
+    "editorLineNumber.activeForeground": "#0000CC",
     //
     //
     //
     // the background behind the selection text when in another window or pane,
     // should be different from the active one:
     "editor.inactiveSelectionBackground": "#DFF5DF", // #00B00020
-    //
     "editor.selectionBackground": "#BFEBBF", // #00B00040
     //
     // region with the same content as the selection,
     // should be not too attractive to the eye:
     "editor.selectionHighlightBackground": "#00B00020",
-    //
     "editor.wordHighlightBackground": "#00B00010",
-    //
     "editor.wordHighlightStrongBackground": "#00B00040",
-    //
     "editor.hoverHighlightBackground": "#00B00040",
     //
     //
@@ -272,18 +226,16 @@
     "editorBracketMatch.background": "#00B00040",
     //
     // I want the borders to be white, like the background:
-    "editorBracketMatch.border": "#ffffff00",
+    "editorBracketMatch.border": "#FFFFFF00",
     //
     //
     //
     // the suggestion windows, like the IntelliSense suggestion list,
     // should be grey:
-    "editorSuggestWidget.background": "#f3f3f3",
+    "editorSuggestWidget.background": "#F3F3F3",
     //
     // in centered layout, the empty background:
-    "editorPane.background": "#f3f3f380",
-    //
-    "editorLineNumber.foreground": "#00800080",
+    "editorPane.background": "#F3F3F380",
     //
     "editor.lineHighlightBorder": "#00B00020",
     //
@@ -295,7 +247,7 @@
     //
     "editor.findMatchBackground": "#FFA500",
     //
-    "editor.findMatchHighlightBackground": "#fefe3360", // #FFFFB0
+    "editor.findMatchHighlightBackground": "#FEFE3360",
     "editor.findMatchHighlightBorder": "#E8810C",
     //
     //
@@ -318,29 +270,21 @@
     // ====================================================
     // (Tabs) Editor Group Header: it's where the tabs are situated.
     //
-    "editorGroupHeader.tabsBackground": "#f3f3f3",
-    //
-    "editorGroupHeader.noTabsBackground": "#ffffff",
-    //
+    "editorGroupHeader.tabsBackground": "#F3F3F3",
+    "editorGroupHeader.noTabsBackground": "#FFFFFF",
     "tab.activeForeground": "#00A000",
-    //
     "tab.inactiveForeground": "#909090",
-    //
-    "tab.hoverBackground": "#ffffff",
+    "tab.hoverBackground": "#FFFFFF",
     //
     //
     //
     // ====================================================
     // Breadcrumbs:
     //
-    "breadcrumb.background": "#f3f3f3",
-    //
+    "breadcrumb.background": "#F3F3F3",
     "breadcrumb.foreground": "#909090",
-    //
-    "breadcrumbPicker.background": "#f3f3f3",
-    //
+    "breadcrumbPicker.background": "#F3F3F3",
     "breadcrumb.focusForeground": "#00A000",
-    //
     "breadcrumb.activeSelectionForeground": "#00A000",
     //
     //
@@ -356,9 +300,8 @@
     // Settings UI: it's the GUI for changing the Settings.
     //
     // the default borders were white and they blend-in with the background: 
-    "settings.numberInputBorder": "#cecece",
-    //
-    "settings.textInputBorder": "#cecece",
+    "settings.numberInputBorder": "#CECECE",
+    "settings.textInputBorder": "#CECECE",
     //
     //
     //
@@ -381,11 +324,11 @@
     //
     // orange not in use: #FFA500
     //
-    // yellow: #b5ba00
+    // yellow: #B5BA00
     // yellow: #FFFFB0
     //
     // comments: #008000B0
-    // strings: #a31515
+    // strings: #A31515
     //
     // pink / purple: #F066FF
     //
@@ -415,7 +358,7 @@
         "string.regexp keyword",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -435,7 +378,7 @@
         "constant.language.boolean", // true, false
       ],
       "settings": {
-        "foreground": "#a31515",
+        "foreground": "#A31515",
       }
     },
     //
@@ -482,7 +425,7 @@
         "storage.type", // const, class in JS; type name in C#
       ],
       "settings": {
-        "foreground": "#a31515",
+        "foreground": "#A31515",
       }
     },
     //
@@ -502,7 +445,7 @@
         "support.constant",
       ],
       "settings": {
-        "foreground": "#a31515",
+        "foreground": "#A31515",
       }
     },
     //
@@ -591,7 +534,6 @@
         "meta.definition.variable variable",
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#0000CC"
       }
     },
@@ -626,7 +568,7 @@
         "meta.object-literal.key entity.name.function",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -651,7 +593,6 @@
         "entity.name.variable.enum-member", // enum member names in C#
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#000000"
       }
     },
@@ -686,7 +627,7 @@
         "meta.structure.dictionary.value",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -755,6 +696,7 @@
     {
       "scope": [
         "punctuation",
+        "punctuation.definition.string" // fix for Markdown
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -794,9 +736,9 @@
         "punctuation.terminator", // ;
         "punctuation.destructuring", // :
         "keyword.operator", // :
+        "keyword.operator.type.annotation", // :
         "keyword.operator.logical", // ||, !
         "keyword.operator.comparison", // ===
-        "string.template punctuation.definition.string.template", // ` `
         "keyword.operator.ternary", // ?, :
         "keyword.operator.relational", // >, <
         "keyword.operator.bitwise", // ~~, |
@@ -809,7 +751,9 @@
     // logical operators:
     {
       "scope": [
-        "storage.type.function.arrow", // =>
+        "storage.type.function.arrow", // "=>"
+        "string.template punctuation.definition.string.template", // "` `" 
+        "punctuation.definition.template-expression", // "${ }" 
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -863,7 +807,6 @@
         "meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#0BC5E3"
       }
     },
@@ -894,9 +837,11 @@
     // ====================================================
     // TypeScript, JavaScript, React (.ts, .js, .tsx, .jsx):
     //
-    // Import code in TypeScript:
     //
-    // variable names in the import syntax:
+    //
+    // Import syntax in TypeScript, JavaScript:
+    //
+    // Variable names in the import syntax:
     {
       "scope": [
         "source.ts meta.import variable.other.readwrite",
@@ -910,7 +855,7 @@
       }
     },
     //
-    // variable names alias in the import syntax:
+    // Variable names alias in the import syntax:
     {
       "scope": [
         "source.ts meta.import variable.other.readwrite.alias",
@@ -924,9 +869,14 @@
       }
     },
     //
-    // import, from, as, { } in the import syntax:
+    // "import", "from", "as", "{ }" in the import syntax:
     {
       "scope": [
+        "source.ts keyword.control.import", // import
+        "source.js keyword.control.import", // import
+        "source.tsx keyword.control.import", // import
+        "source.jsx keyword.control.import", // import
+        "meta.embedded.block.javascript keyword.control.import", // import
         "source.ts keyword.control.from", // from
         "source.js keyword.control.from", // from
         "source.tsx keyword.control.from", // from
@@ -948,20 +898,6 @@
       }
     },
     //
-    // import, from, as, { } in the import syntax:
-    {
-      "scope": [
-        "source.ts keyword.control.import", // import
-        "source.js keyword.control.import", // import
-        "source.tsx keyword.control.import", // import
-        "source.jsx keyword.control.import", // import
-        "meta.embedded.block.javascript keyword.control.import", // import
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
     // string for a module path in the import syntax:
     {
       "scope": [
@@ -972,7 +908,7 @@
         "meta.embedded.block.javascript meta.import string",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1062,11 +998,11 @@
         "meta.embedded.block.javascript meta.parameters variable.parameter",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#000000"
       }
     },
     //
-    // function name in function call:
+    // function variable name:
     {
       "scope": [
         "source.ts entity.name.function", // function calls
@@ -1076,11 +1012,11 @@
         "meta.embedded.block.javascript entity.name.function", // function calls
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#000000"
       }
     },
     //
-    // function name in function call:
+    // function variable name during its call:
     {
       "scope": [
         "source.ts meta.function-call entity.name.function", // function call
@@ -1219,7 +1155,7 @@
         "meta.embedded.block.javascript meta.definition.property variable.object.property",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#000000"
       }
     },
     //
@@ -1237,6 +1173,25 @@
       }
     },
     //
+    // function name in declaration after "var, let, const":
+    {
+      "scope": [
+        "source.ts meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.js meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.tsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.jsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "meta.embedded.block.javascript meta.definition variable.other entity.name.function", // variable name after "var, let, const"
+        "source.ts meta.definition.variable entity.name.function", // variable name after "var, let, const"
+        "source.js meta.definition.variable entity.name.function", // variable name after "var, let, const"
+        "source.tsx meta.definition.variable entity.name.function", // variable name after "var, let, const"
+        "source.jsx meta.definition.variable entity.name.function", // variable name after "var, let, const"
+        "meta.embedded.block.javascript meta.definition.variable entity.name.function", // variable name after "var, let, const"
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
     // variable name in declaration after "var, let, const":
     {
       "scope": [
@@ -1245,11 +1200,6 @@
         "source.tsx meta.definition variable.other", // variable name after "var, let, const"
         "source.jsx meta.definition variable.other", // variable name after "var, let, const"
         "meta.embedded.block.javascript meta.definition variable.other", // variable name after "var, let, const"
-        "source.ts meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.js meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.tsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.jsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "meta.embedded.block.javascript meta.definition variable.other entity.name.function", // variable name after "var, let, const"
         "source.ts meta.definition variable.other.readwrite", // variable name after "var, let, const"
         "source.js meta.definition variable.other.readwrite", // variable name after "var, let, const"
         "source.tsx meta.definition variable.other.readwrite", // variable name after "var, let, const"
@@ -1257,7 +1207,7 @@
         "meta.embedded.block.javascript meta.definition variable.other.readwrite", // variable name after "var, let, const"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#000000"
       }
     },
     //
@@ -1272,7 +1222,7 @@
         "meta.embedded.block.javascript meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
       ],
       "settings": {
-        "foreground": "#0BC5E3",
+        "foreground": "#000000"
       }
     },
     //
@@ -1284,6 +1234,11 @@
         "source.tsx meta.type.parameters entity.name.type",
         "source.jsx meta.type.parameters entity.name.type",
         "meta.embedded.block.javascript meta.type.parameters entity.name.type",
+        "source.ts meta.type.parameters support.type.builtin",
+        "source.js meta.type.parameters support.type.builtin",
+        "source.tsx meta.type.parameters support.type.builtin",
+        "source.jsx meta.type.parameters support.type.builtin",
+        "meta.embedded.block.javascript meta.type.parameters support.type.builtin",
         "source.ts meta.return.type entity.name.type",
         "source.js meta.return.type entity.name.type",
         "source.tsx meta.return.type entity.name.type",
@@ -1314,6 +1269,26 @@
         "source.tsx meta.type.annotation support.type.builtin",
         "source.jsx meta.type.annotation support.type.builtin",
         "meta.embedded.block.javascript meta.type.annotation support.type.builtin",
+        "source.ts meta.type.annotation meta.brace.square", // []
+        "source.js meta.type.annotation meta.brace.square", // []
+        "source.tsx meta.type.annotation meta.brace.square", // []
+        "source.jsx meta.type.annotation meta.brace.square", // []
+        "meta.embedded.block.javascript meta.type.annotation meta.brace.square", // []
+        "source.ts meta.type.parameters meta.brace.square", // []
+        "source.js meta.type.parameters meta.brace.square", // []
+        "source.tsx meta.type.parameters meta.brace.square", // []
+        "source.jsx meta.type.parameters meta.brace.square", // []
+        "meta.embedded.block.javascript meta.type.parameters meta.brace.square", // []
+        "source.ts meta.return.type meta.brace.square", // []
+        "source.js meta.return.type meta.brace.square", // []
+        "source.tsx meta.return.type meta.brace.square", // []
+        "source.jsx meta.return.type meta.brace.square", // []
+        "meta.embedded.block.javascript meta.return.type meta.brace.square", // []
+        "source.ts keyword.operator.type", // |
+        "source.js keyword.operator.type", // |
+        "source.tsx keyword.operator.type", // |
+        "source.jsx keyword.operator.type", // |
+        "meta.embedded.block.javascript keyword.operator.type", // |
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -1375,7 +1350,7 @@
         "meta.embedded.block.javascript storage.type", // const, function, inteface, class
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1413,7 +1388,7 @@
         "meta.embedded.block.javascript meta.function storage.type.function",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1431,20 +1406,26 @@
         "foreground": "#0BC5E3"
       }
     },
-    // 1. fix to the above rule for the constructor:
-    // 2. "var, let, const" in general:
+    //
+    // 1. Fix to the above constructor rule.
+    // 2. "var", "let", "const", "as".
     {
       "scope": [
-        "source.ts meta.method.declaration meta.block storage.type",
-        "source.js meta.method.declaration meta.block storage.type",
-        "source.tsx meta.method.declaration meta.block storage.type",
-        "source.jsx meta.method.declaration meta.block storage.type",
-        "meta.embedded.block.javascript meta.method.declaration meta.block storage.type",
-        "source.ts meta.var.expr storage.type", // let, const
-        "source.js meta.var.expr storage.type", // let, const
-        "source.tsx meta.var.expr storage.type", // let, const
-        "source.jsx meta.var.expr storage.type", // let, const
-        "meta.embedded.block.javascript meta.var.expr storage.type", // let, const
+        "source.ts meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
+        "source.js meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
+        "source.tsx meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
+        "source.jsx meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
+        "meta.embedded.block.javascript meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
+        "source.ts meta.var.expr storage.type", // "var", "let", "const"
+        "source.js meta.var.expr storage.type", // "var", "let", "const"
+        "source.tsx meta.var.expr storage.type", // "var", "let", "const"
+        "source.jsx meta.var.expr storage.type", // "var", "let", "const"
+        "meta.embedded.block.javascript meta.var.expr storage.type", // "var", "let", "const"
+        "source.ts keyword.control.as", // "as"
+        "source.js keyword.control.as", // "as"
+        "source.tsx keyword.control.as", // "as"
+        "source.jsx keyword.control.as", // "as"
+        "meta.embedded.block.javascript keyword.control.as", // "as"
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -1480,7 +1461,7 @@
         "meta.embedded.block.javascript keyword.control.default", // default
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1569,7 +1550,7 @@
         "meta.embedded.block.javascript support.type",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1633,55 +1614,64 @@
       }
     },
     //
-    // { } mustache braces of an arrow function definition:
-    // { } mustache braces of a normal function definition:
+    //
+    //
+    // "{ }" for an arrow function definition.
+    // Check up to 4 wrap levels for "meta.arrow meta.block".
+    // Below are some fixes for this rule.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
+        // 4 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block"
-        // check up to 4 times the "meta.arrow meta.block" wrap.
       ],
       "settings": {
         "foreground": "#0BC5E3"
       }
     },
     //
-    // fix the prev rule's function's { } braces for the inner blocks.
+    // For arrow function. Fix the prev rule's function's { } braces for the inner blocks.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.block punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
-        "source.ts meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
-        "source.tsx meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
-        "source.js meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
-        "source.jsx meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.blockmeta.arrow meta.block meta.block punctuation.definition.block",
+        // 3 wrap:
+        "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.block punctuation.definition.block",
         // check up to 3 times the "meta.arrow meta.block" wrap.
       ],
       "settings": {
@@ -1689,24 +1679,27 @@
       }
     },
     //
-    // fix the prev rule's function's { } braces for the inner blocks.
+    // For arrow function. Fix the prev rule's function's { } braces for the inner blocks.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.tsx meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.js meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.jsx meta.arrow meta.block switch-statement punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow switch-statement meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block switch-statement punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.arrow meta.block switch-statement meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.arrow meta.block meta.arrow meta.block switch-statement meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block switch-statement punctuation.definition.block",
         // check up to 3 times the "meta.arrow meta.block" wrap.
       ],
       "settings": {
@@ -1714,19 +1707,22 @@
       }
     },
     //
-    // fix the prev rule's function's { } braces for the inner object.
+    // For arrow function. Fix the prev rule's function's { } braces for the inner object.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.js meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.objectliteral punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.objectliteral meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.objectliteral punctuation.definition.block",
@@ -1739,30 +1735,183 @@
       }
     },
     //
-    // fix the prev rule's function's { } braces for the inner type annotation.
+    // For arrow function. Fix the prev rule's function's { } braces for the inner type annotation.
     {
       "scope": [
+        // 1 wrap:
         "source.ts meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.type.annotation punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.type.annotation meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        // 2 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.type.annotation meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
+        // 3 wrap:
         "source.ts meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.tsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.js meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
         "source.jsx meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block",
-        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.type.annotation meta.block punctuation.definition.block"
+        "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.type.annotation punctuation.definition.block"
         // check up to 3 times the "meta.arrow meta.block" wrap.
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
+    //
+    //
+    //
+    //
+    // "{ }" block for anonymous function.
+    {
+      "scope": [
+        // 1 wrap:
+        "source.ts meta.function.expression meta.block punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block punctuation.definition.block",
+        "source.js meta.function.expression meta.block punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block punctuation.definition.block",
+        // 2 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        // 3 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        // 4 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // For anonymous function. Fix the prev rule's function's { } braces for the inner blocks.
+    {
+      "scope": [
+        // 1 wrap:
+        "source.ts meta.function.expression meta.block meta.block punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.block punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.block punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.block punctuation.definition.block",
+        // 2 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.block punctuation.definition.block",
+        // 3 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.blockmeta.function.expression meta.block meta.block punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.blockmeta.function.expression meta.block meta.block punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.blockmeta.function.expression meta.block meta.block punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.blockmeta.function.expression meta.block meta.block punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.blockmeta.function.expression meta.block meta.block punctuation.definition.block",
+        // check up to 3 times the "meta.function.expression meta.block" wrap.
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // For anonymous function. Fix the prev rule's function's { } braces for the inner blocks.
+    {
+      "scope": [
+        // 1 wrap:
+        "source.ts meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "source.js meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block switch-statement punctuation.definition.block",
+        // 2 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        // 3 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block switch-statement punctuation.definition.block",
+        // check up to 3 times the "meta.function.expression meta.block" wrap.
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // For anonymous function. Fix the prev rule's function's { } braces for the inner object.
+    {
+      "scope": [
+        // 1 wrap:
+        "source.ts meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        // 2 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        // 3 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.objectliteral punctuation.definition.block"
+        // check up to 3 times the "meta.function.expression meta.block" wrap.
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // For anonymous function. Fix the prev rule's function's { } braces for the inner type annotation.
+    {
+      "scope": [
+        // 1 wrap:
+        "source.ts meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        // 2 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        // 3 wrap:
+        "source.ts meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "source.tsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "source.js meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "source.jsx meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block",
+        "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.type.annotation punctuation.definition.block"
+        // check up to 3 times the "meta.function.expression meta.block" wrap.
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
     //
     // . dot:
     {
@@ -1786,9 +1935,14 @@
         "source.tsx meta.type.annotation punctuation.accessor", // . dot in a type annotation
         "source.jsx meta.type.annotation punctuation.accessor", // . dot in a type annotation
         "meta.embedded.block.javascript meta.type.annotation punctuation.accessor", // . dot in a type annotation
+        "source.ts meta.return.type punctuation.accessor", // . dot in a type annotation
+        "source.js meta.return.type punctuation.accessor", // . dot in a type annotation
+        "source.tsx meta.return.type punctuation.accessor", // . dot in a type annotation
+        "source.jsx meta.return.type punctuation.accessor", // . dot in a type annotation
+        "meta.embedded.block.javascript meta.return.type punctuation.accessor", // . dot in a type annotation
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -1835,7 +1989,8 @@
         "meta.embedded.block.javascript punctuation.definition.string.template string.template", // ` `
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        // "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2074,7 +2229,7 @@
         "text.aspnetcorerazor constant.language", // null
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2091,7 +2246,7 @@
         "source.cs keyword.other.enum", // enum
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2274,7 +2429,7 @@
         "source.powershell meta.function storage.type", // function
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2378,27 +2533,36 @@
     {
       "scope": [
         "source.css entity.name.tag",
+        "meta.embedded.block.css entity.name.tag",
         "source.css entity.name.tag.reference",
+        "meta.embedded.block.css entity.name.tag.reference",
         "source.css meta.selector entity.name.tag",
+        "meta.embedded.block.css meta.selector entity.name.tag",
         "source.css entity.other.attribute-name.class", // class selector
+        "meta.embedded.block.css entity.other.attribute-name.class", // class selector
         "source.css entity.other.attribute-name.id", // id selector
+        "meta.embedded.block.css entity.other.attribute-name.id", // id selector
         "source.css entity.other.attribute-name.parent-selector",
+        "meta.embedded.block.css entity.other.attribute-name.parent-selector",
         "source.css entity.other.attribute-name.pseudo-class",
+        "meta.embedded.block.css entity.other.attribute-name.pseudo-class",
         "source.css entity.other.attribute-name.pseudo-element",
+        "meta.embedded.block.css entity.other.attribute-name.pseudo-element",
         "source.css punctuation.definition.entity", // "#, ."
+        "meta.embedded.block.css punctuation.definition.entity", // "#, ."
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#E8810C"
       }
     },
     //
     // tag names also:
     {
       "scope": [
-        "source.css meta.property-list entity.name.tag",
+        "source.css meta.property-list entity.name.tag" // I know this breaks "content" property.
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -2428,6 +2592,7 @@
         "source.css variable",
         "source.css meta.property-name.media-query",
         "source.css variable.other", // for LESS
+        "source.css variable.other punctuation.definition.variable", // for LESS
       ],
       "settings": {
         "foreground": "#000000"
@@ -2440,7 +2605,17 @@
         "source.css entity.name.function"
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // Mixin name in LESS:
+    {
+      "scope": [
+        "source.css entity.other.attribute-name.class.mixin"
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2450,7 +2625,7 @@
         "source.css support.function", // function call in CSS
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2468,18 +2643,29 @@
     // property literals:
     {
       "scope": [
-        "source.css constant.numeric",
         "source.css constant.other.color.rgb-value.hex",
         "source.css constant.other.color.rgb-value.hex punctuation.definition.constant",
         "source.css constant.other.rgb-value",
-        "source.css keyword.other.unit",
         "source.css support.constant.property-value",
+        "source.css meta.attribute-selector",
         "source.css meta.property-value",
         "source.css meta.property-value support.type.property-name",
         "source.css support.constant.font-name",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // property literals:
+    {
+      "scope": [
+        "source.css constant.numeric",
+        "source.css keyword.other.unit",
+        "meta.embedded.block.css keyword.other.unit" // fix fir Markdown CSS
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     //
@@ -2489,7 +2675,7 @@
         "source.css variable.parameter.url",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2542,14 +2728,36 @@
       }
     },
     //
-    //
+    // "@function", "@mixin", "@media", "@import"
     {
       "scope": [
         "source.css keyword.control.at-rule.function",
+        "meta.embedded.block.css keyword.control.at-rule.function",
+        "meta.embedded.block.scss keyword.control.at-rule.function",
+        "source.css keyword.control.at-rule.function punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.function punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.function punctuation.definition.keyword",
         "source.css keyword.control.at-rule.mixin",
+        "meta.embedded.block.css keyword.control.at-rule.mixin",
+        "meta.embedded.block.scss keyword.control.at-rule.mixin",
+        "source.css keyword.control.at-rule.mixin punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.mixin punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.mixin punctuation.definition.keyword",
+        "source.css keyword.control.at-rule.media",
+        "meta.embedded.block.css keyword.control.at-rule.media",
+        "meta.embedded.block.scss keyword.control.at-rule.media",
+        "source.css keyword.control.at-rule.media punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.media punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.media punctuation.definition.keyword",
+        "source.css keyword.control.at-rule.import",
+        "meta.embedded.block.css keyword.control.at-rule.import",
+        "meta.embedded.block.scss keyword.control.at-rule.import",
+        "source.css keyword.control.at-rule.import punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.import punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.import punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2562,19 +2770,22 @@
         "foreground": "#0BC5E3"
       }
     },
+    //
+    // "from", "through", "in"
     {
       "scope": [
-        "source.css keyword.control.operator", // from, through, in
+        "source.css keyword.control.operator"
       ],
       "settings": {
-        "foreground": "#A9A9A9" // previous
+        "foreground": "#0BC5E3"
       }
     },
     //
     //
     {
       "scope": [
-        "source.css keyword.operator.logical", // and
+        "source.css keyword.operator.logical", // "and"
+        "source.css keyword.control.logical.operator", // "and" in LESS
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -2588,7 +2799,7 @@
         "source.css keyword.other.important", // !important
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2638,7 +2849,7 @@
         "source.css punctuation.definition.pseudo-class.end.bracket.round", // ( )
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2681,7 +2892,7 @@
         "source.css punctuation.definition.interpolation.end.bracket.curly",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2743,7 +2954,7 @@
         "source.jsx entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -2755,6 +2966,10 @@
     {
       "scope": [
         "text.html",
+        "text.html.markdown",
+        "text.html.markdown meta.embedded.block.html", // HTML embedded into Markdown
+        "text.html.markdown meta.embedded.block meta.jsx.children", // JSX embedded into Markdown
+        "text.html.markdown meta.embedded.block meta.tsx.children", // JSX embedded into Markdown
         "text.xml",
         "text.aspnetcorerazor",
         "source.ts",
@@ -2767,7 +2982,7 @@
         "source.jsx meta.jsx.children",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2783,7 +2998,7 @@
         "source.jsx meta.tag.attributes string",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2835,7 +3050,7 @@
         "source.json constant.numeric", // 1, 2 - numeric literals
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2863,7 +3078,7 @@
         "source.yaml constant.numeric", // 1, 2 - numeric literals
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2909,7 +3124,7 @@
     {
       "scope": [
         "text.html.markdown meta.paragraph",
-        "text.html.markdown",
+        // "text.html.markdown",
       ],
       "settings": {
         "foreground": "#000000"
@@ -2929,9 +3144,13 @@
       }
     },
     {
-      "scope": "text.html.markdown markup.heading",
+      "scope": [
+        "text.html.markdown markup.heading heading",
+        "text.html.markdown markup.heading heading punctuation.definition.heading",
+      ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     {
@@ -2949,7 +3168,7 @@
     {
       "scope": "text.html.markdown markup.deleted",
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     {
@@ -2961,7 +3180,7 @@
     {
       "scope": "text.html.markdown markup.inline.raw",
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3001,7 +3220,7 @@
         "text.html.markdown constant.other.reference.link", // [][homepage]
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3012,7 +3231,7 @@
         "text.html.markdown meta.link.reference.def constant.other.reference.link", // [homepage]()
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3046,7 +3265,7 @@
     {
       "scope": [
         "text.html.markdown markup.fenced_code.block punctuation.definition", // ```
-        "text.html.markdown markup.fenced_code.block fenced_code.block.language", // bat, powershell
+        "text.html.markdown markup.fenced_code.block fenced_code.block.language", // ``` "bat", "powershell", "js"
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -3057,9 +3276,10 @@
     {
       "scope": [
         "text.html.markdown markup.fenced_code.block",
+        "text.html.markdown markup.fenced_code.block meta.embedded.block"
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#000000"
       }
     },
     //
@@ -3107,6 +3327,19 @@
     // ====================================================
     // Properties (.ini, .editorconfig):
     //
+    //
+    //
+    // general text color:
+    {
+      "scope": [
+        "source.ini",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // property name:
     {
       "scope": [
         "source.ini keyword.other.definition",
@@ -3116,12 +3349,13 @@
       }
     },
     //
+    // "="
     {
       "scope": [
-        "source.ini",
+        "source.ini punctuation.separator.key-value",
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#000000"
       }
     },
     //
@@ -3130,12 +3364,14 @@
     // ====================================================
     // Ignore (.gitignore, .*ignore):
     //
+    //
+    //
     {
       "scope": [
         "source.ignore",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#000000"
       }
     },
     //
@@ -3144,9 +3380,11 @@
     // ====================================================
     // AutoHotKey (AHK):
     //
+    //
+    //
     // Names in AutoHotKey:
     //
-    // preprocessor directives:
+    // Preprocessor directives:
     {
       "scope": [
         "source.ahk keyword.control.directives",
@@ -3156,7 +3394,7 @@
       }
     },
     //
-    // function name:
+    // Function names:
     {
       "scope": [
         "source.ahk support.function",
@@ -3166,7 +3404,7 @@
       }
     },
     //
-    // hotkey literals:
+    // Hotkey literals:
     {
       "scope": [
         "source.ahk hotkeyline",
@@ -3177,17 +3415,27 @@
       }
     },
     //
+    // Labels:
+    {
+      "scope": [
+        "source.ahk hotkeyline entity.name.function.label",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
     //
     //
     // Keywords in AutoHotKey:
     //
-    // On, Off, others ... keywords:
+    // "On", "Off" keywords:
     {
       "scope": [
-        "source.ahk keyword.other" // On, Off, others ...
+        "source.ahk keyword.other"
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3195,7 +3443,7 @@
     //
     // Punctuation in AutoHotKey:
     //
-    // ; comment sign:
+    // ";" comment sign:
     {
       "scope": "source.ahk punctuation.definition.comment", // ;
       "settings": {
@@ -3210,16 +3458,16 @@
         "source.ahk punctuation.definition.string.end"
       ],
       "settings": {
-        "foreground": "#a31515"
+        "foreground": "#A31515"
       }
     },
     //
-    // { }, ::, , punctuation:
+    // "{ }", "::", "," punctuation:
     {
       "scope": [
-        "source.ahk punctuation.bracket", // { }
-        "source.ahk punctuation.definition.equals.colon", // ::
-        "source.ahk punctuation" // ,
+        "source.ahk punctuation.bracket", // "{ }"
+        "source.ahk punctuation.definition.equals.colon", // "::"
+        "source.ahk punctuation" // ","
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3230,6 +3478,8 @@
     //
     // ====================================================
     // Text style:
+    //
+    //
     //
     {
       "scope": "emphasis",

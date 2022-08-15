@@ -15,8 +15,6 @@
 
 Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Markdown, AutoHotKey, PowerShell**.  
 
-<br />
-
 <img src="/screenshots/ui.png" title="user interface screenshot with javascript">
   Source repo: 
   <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
@@ -87,7 +85,7 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
     <tr>
       <td align="center">.env</td>
       <td align="center">
-        <a href="dotenv">DotEnv</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotEnv</a>
       </td>
     </tr>
     <tr>
@@ -105,7 +103,7 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
     <tr>
       <td align="center">AutoHotKey</td>
       <td align="center">
-        <a href="autohotkey">AutoHotKey Plus Plus</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
       </td>
     </tr>
     <tr>
@@ -115,11 +113,6 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
   </tbody>
 </table>
 
-[styled-components]: https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
-[dotenv]: https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv
-[markdown]: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
-[autohotkey]: https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus
-
 
 
 ## Terminal
@@ -127,6 +120,7 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 <details>
   The suggested small override to the terminal colors, put them into your <code>settings.json</code>.
 
+  <br />
   <br />
 
   ```json5 
@@ -159,6 +153,7 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 <details>
   If you install this theme into the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your <code>settings.json</code>.
 
+  <br />
   <br />
 
   ```json5 
@@ -203,6 +198,7 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 <details>
   If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my <code>settings.json</code>.
 
+  <br />
   <br />
 
   ```json5

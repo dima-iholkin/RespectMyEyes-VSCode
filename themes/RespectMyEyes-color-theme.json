@@ -568,7 +568,7 @@
         "meta.object-literal.key entity.name.function",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -707,13 +707,7 @@
     {
       "scope": [
         "keyword.operator.arithmetic", // +, -, *, /
-        "keyword.operator.increment", // ++
-        "keyword.operator.decrement", // --
         "keyword.operator.assignment", // =
-        "keyword.operator.rest", // ...
-        "keyword.operator.spread", // ...
-        "storage.type.function.arrow", // => in JS, TS
-        "keyword.operator.arrow", // => in C#
         "keyword.operator.comparison", // ===
         "keyword.operator.null-coalescing", // ?? in C#
         "keyword.operator.null-conditional", // {property_name}? in C#
@@ -742,6 +736,10 @@
         "keyword.operator.ternary", // ?, :
         "keyword.operator.relational", // >, <
         "keyword.operator.bitwise", // ~~, |
+        "keyword.operator.rest", // ...
+        "keyword.operator.spread", // ...
+        "keyword.operator.increment", // ++
+        "keyword.operator.decrement", // --
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -751,12 +749,32 @@
     // logical operators:
     {
       "scope": [
-        "storage.type.function.arrow", // "=>"
+        "storage.type.function.arrow", // "=>" in JS/TS
+        "keyword.operator.arrow", // => in C#
         "string.template punctuation.definition.string.template", // "` `" 
-        "punctuation.definition.template-expression", // "${ }" 
       ],
       "settings": {
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // arrow function operator in type annotation of arrow function:
+    {
+      "scope": [
+        "meta.type.annotation storage.type.function.arrow", // "=>"
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // logical operators:
+    {
+      "scope": [
+        "punctuation.definition.template-expression", // "${ }" 
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //
@@ -869,7 +887,7 @@
       }
     },
     //
-    // "import", "from", "as", "{ }" in the import syntax:
+    // "import", "from", "{}" in the import syntax:
     {
       "scope": [
         "source.ts keyword.control.import", // import
@@ -882,11 +900,6 @@
         "source.tsx keyword.control.from", // from
         "source.jsx keyword.control.from", // from
         "meta.embedded.block.javascript keyword.control.from", // from
-        "source.ts meta.import keyword.control.as", // as
-        "source.js meta.import keyword.control.as", // as
-        "source.tsx meta.import keyword.control.as", // as
-        "source.jsx meta.import keyword.control.as", // as
-        "meta.embedded.block.javascript meta.import keyword.control.as", // as
         "source.ts meta.import punctuation.definition.block", // { }
         "source.js meta.import punctuation.definition.block", // { }
         "source.tsx meta.import punctuation.definition.block", // { }
@@ -895,6 +908,20 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "as" in the import syntax:
+    {
+      "scope": [
+        "source.ts meta.import keyword.control.as", // "as"
+        "source.js meta.import keyword.control.as", // "as"
+        "source.tsx meta.import keyword.control.as", // "as"
+        "source.jsx meta.import keyword.control.as", // "as"
+        "meta.embedded.block.javascript meta.import keyword.control.as", // "as"
+      ],
+      "settings": {
+        "foreground": "#A31515"
       }
     },
     //
@@ -932,7 +959,7 @@
         "meta.embedded.block.javascript entity.name.type", // class, interface names when creating a class, class instance
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0000CC"
       }
     },
     //
@@ -979,7 +1006,7 @@
         "meta.embedded.block.javascript meta.definition.function entity.name.function", // function name in the declaration
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1155,7 +1182,7 @@
         "meta.embedded.block.javascript meta.definition.property variable.object.property",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1269,6 +1296,15 @@
         "source.tsx meta.type.annotation support.type.builtin",
         "source.jsx meta.type.annotation support.type.builtin",
         "meta.embedded.block.javascript meta.type.annotation support.type.builtin",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // variable's type parameter signs:
+    {
+      "scope": [
         "source.ts meta.type.annotation meta.brace.square", // []
         "source.js meta.type.annotation meta.brace.square", // []
         "source.tsx meta.type.annotation meta.brace.square", // []
@@ -1288,10 +1324,10 @@
         "source.js keyword.operator.type", // |
         "source.tsx keyword.operator.type", // |
         "source.jsx keyword.operator.type", // |
-        "meta.embedded.block.javascript keyword.operator.type", // |
+        "meta.embedded.block.javascript keyword.operator.type" // |
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1334,6 +1370,11 @@
         "source.tsx keyword.control", // const, function, inteface, class
         "source.jsx keyword.control", // const, function, inteface, class
         "meta.embedded.block.javascript keyword.control", // const, function, inteface, class
+        "source.ts keyword.operator.expression.of", // for (const a "of" b)
+        "source.js keyword.operator.expression.of", // for (const a "of" b)
+        "source.tsx keyword.operator.expression.of", // for (const a "of" b)
+        "source.jsx keyword.operator.expression.of", // for (const a "of" b)
+        "meta.embedded.block.javascript keyword.operator.expression.of", // for (const a "of" b)
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -1364,7 +1405,7 @@
         "meta.embedded.block.javascript storage.type.property", // get; need this to not override "get" with other rules
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1421,11 +1462,6 @@
         "source.tsx meta.var.expr storage.type", // "var", "let", "const"
         "source.jsx meta.var.expr storage.type", // "var", "let", "const"
         "meta.embedded.block.javascript meta.var.expr storage.type", // "var", "let", "const"
-        "source.ts keyword.control.as", // "as"
-        "source.js keyword.control.as", // "as"
-        "source.tsx keyword.control.as", // "as"
-        "source.jsx keyword.control.as", // "as"
-        "meta.embedded.block.javascript keyword.control.as", // "as"
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -1435,14 +1471,19 @@
     // the most usual keywords at the line start:
     {
       "scope": [
-        "source.ts storage.modifier", // static, extends
-        "source.js storage.modifier", // static, extends
-        "source.tsx storage.modifier", // static, extends
-        "source.jsx storage.modifier", // static, extends
-        "meta.embedded.block.javascript storage.modifier", // static, extends
+        "source.ts storage.modifier", // "static", "extends"
+        "source.js storage.modifier", // "static", "extends"
+        "source.tsx storage.modifier", // "static", "extends"
+        "source.jsx storage.modifier", // "static", "extends"
+        "meta.embedded.block.javascript storage.modifier", // "static", "extends"
+        "source.ts keyword.control.as", // "as"
+        "source.js keyword.control.as", // "as"
+        "source.tsx keyword.control.as", // "as"
+        "source.jsx keyword.control.as", // "as"
+        "meta.embedded.block.javascript keyword.control.as", // "as"
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1475,7 +1516,7 @@
         "meta.embedded.block.javascript storage.modifier.async" // async
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1503,7 +1544,7 @@
         "meta.embedded.block.javascript variable.language.this", // this
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1521,17 +1562,22 @@
       }
     },
     //
-    // typeof:
+    // "typeof", "instanceof":
     {
       "scope": [
-        "source.ts keyword.operator.expression.typeof", // typeof
-        "source.js keyword.operator.expression.typeof", // typeof
-        "source.tsx keyword.operator.expression.typeof", // typeof
-        "source.jsx keyword.operator.expression.typeof", // typeof
-        "meta.embedded.block.javascript keyword.operator.expression.typeof", // typeof
+        "source.ts keyword.operator.expression.typeof", // "typeof"
+        "source.js keyword.operator.expression.typeof", // "typeof"
+        "source.tsx keyword.operator.expression.typeof", // "typeof"
+        "source.jsx keyword.operator.expression.typeof", // "typeof"
+        "meta.embedded.block.javascript keyword.operator.expression.typeof", // "typeof"
+        "source.ts keyword.operator.expression.instanceof", // "instanceof"
+        "source.js keyword.operator.expression.instanceof", // "instanceof"
+        "source.tsx keyword.operator.expression.instanceof", // "instanceof"
+        "source.jsx keyword.operator.expression.instanceof", // "instanceof"
+        "meta.embedded.block.javascript keyword.operator.expression.instanceof", // "instanceof"
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -1608,6 +1654,34 @@
         "source.tsx meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
         "source.jsx meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
         "meta.embedded.block.javascript meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ( ) round braces in a type annotation of arrow function:
+    {
+      "scope": [
+        "source.ts meta.type.annotation meta.parameters punctuation.definition.parameters",
+        "source.js meta.type.annotation meta.parameters punctuation.definition.parameters",
+        "source.tsx meta.type.annotation meta.parameters punctuation.definition.parameters",
+        "source.jsx meta.type.annotation meta.parameters punctuation.definition.parameters",
+        "meta.embedded.block.javascript meta.type.annotation meta.parameters punctuation.definition.parameters",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // ( ) round braces in an arrow function definition:
+    {
+      "scope": [
+        "source.ts meta.arrow meta.parameters punctuation.definition.parameters",
+        "source.js meta.arrow meta.parameters punctuation.definition.parameters",
+        "source.tsx meta.arrow meta.parameters punctuation.definition.parameters",
+        "source.jsx meta.arrow meta.parameters punctuation.definition.parameters",
+        "meta.embedded.block.javascript meta.arrow meta.parameters punctuation.definition.parameters",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2173,7 +2247,7 @@
         "source.cs entity.name.type.enum", // enum type name
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -2286,7 +2360,7 @@
         "source.cs storage.modifier", // private, public, static, readonly, override, async, ...
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2357,7 +2431,7 @@
         "source.cs keyword.other", // other keywords ...
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2636,7 +2710,7 @@
         "source.css support.type.vendored.property-name", // property names in CSS
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2708,6 +2782,7 @@
         // constants in CSS @media rules: like "screen",
         // it's blue to separate them from media-rules and css-keywords:
         "source.css support.constant.media", // "screen" keyword
+        "source.css.less support.constant.media-type.media" // "screen" keyword in LESS
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2755,9 +2830,22 @@
         "source.css keyword.control.at-rule.import punctuation.definition.keyword",
         "meta.embedded.block.css keyword.control.at-rule.import punctuation.definition.keyword",
         "meta.embedded.block.scss keyword.control.at-rule.import punctuation.definition.keyword",
+        "source.css keyword.control.at-rule.include",
+        "meta.embedded.block.css keyword.control.at-rule.include",
+        "meta.embedded.block.scss keyword.control.at-rule.include",
+        "source.css keyword.control.at-rule.include punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.include punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.include punctuation.definition.keyword",
+        "source.css keyword.control.content",
+        "meta.embedded.block.css keyword.control.content",
+        "meta.embedded.block.scss keyword.control.content",
+        "source.css keyword.control.content punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.content punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.content punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515",
+        "fontStyle": "underline"
       }
     },
     //
@@ -2765,9 +2853,11 @@
     {
       "scope": [
         "source.css keyword.control.for", // @for
+        "source.css keyword.control.for punctuation.definition.keyword", // @for
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A31515",
+        "fontStyle": "underline"
       }
     },
     //
@@ -2777,7 +2867,7 @@
         "source.css keyword.control.operator"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2788,7 +2878,7 @@
         "source.css keyword.control.logical.operator", // "and" in LESS
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2799,7 +2889,7 @@
         "source.css keyword.other.important", // !important
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2892,7 +2982,7 @@
         "source.css punctuation.definition.interpolation.end.bracket.curly",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
       }
     },
     //

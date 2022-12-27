@@ -1,1 +1,0 @@
-https://github.com/komljen/dockerfile-examples

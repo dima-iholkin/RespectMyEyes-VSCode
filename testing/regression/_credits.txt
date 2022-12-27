@@ -1,5 +1,0 @@
-
-https://github.com/gothinkster/vue-realworld-example-app
-https://github.com/gothinkster/angular-realworld-example-app
-https://github.com/twbs/bootstrap
-https://github.com/distros/bootstrap-less

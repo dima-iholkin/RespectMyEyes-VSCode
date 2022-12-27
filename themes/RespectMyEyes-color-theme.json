@@ -542,6 +542,7 @@
     {
       "scope": [
         "variable", // variable name
+        "punctuation.definition.variable", // "$" in shell variable names
       ],
       "settings": {
         "foreground": "#000000"
@@ -1062,6 +1063,11 @@
         "source.tsx meta.function-call support.function", // function call
         "source.jsx meta.function-call support.function", // function call
         "meta.embedded.block.javascript meta.function-call support.function", // function call
+        "source.ts meta.function-call keyword.operator.expression.import", // "import" as function call
+        "source.js meta.function-call keyword.operator.expression.import", // "import" as function call
+        "source.tsx meta.function-call keyword.operator.expression.import", // "import" as function call
+        "source.jsx meta.function-call keyword.operator.expression.import", // "import" as function call
+        "meta.embedded.block.javascript meta.function-call keyword.operator.expression.import", // "import" as function call
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2591,6 +2597,21 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Shell:
+    //
+    // string interpolation "${}":
+    {
+      "scope": [
+        "source.shell variable.other.bracket punctuation.definition.variable",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //

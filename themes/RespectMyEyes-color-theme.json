@@ -327,7 +327,7 @@
     // yellow: #B5BA00
     // yellow: #FFFFB0
     //
-    // comments: #008000B0
+    // comments: #50A750
     // strings: #A31515
     //
     // pink / purple: #F066FF
@@ -391,7 +391,7 @@
         "punctuation.definition.comment" // fix an edge case in Markdown -> code block -> comment
       ],
       "settings": {
-        "foreground": "#008000B0",
+        "foreground": "#50A750",
       }
     },
     //
@@ -726,6 +726,7 @@
         "punctuation.definition.section.case-statement", // :
         "punctuation.definition.dictionary", // dict[]
         "punctuation.separator", // ,
+        "meta.embedded.block.css punctuation.separator", // ,
         "punctuation.section",
         "punctuation.terminator", // ;
         "punctuation.destructuring", // :
@@ -2063,7 +2064,6 @@
         "meta.embedded.block.javascript punctuation.definition.string.template string.template", // ` `
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#0BC5E3"
       }
     },
@@ -2376,7 +2376,6 @@
         "source.cs keyword.other.typeof", // "new"
         "source.cs keyword.other.is", // "is"
         "source.cs keyword.other.default" // "default"
-
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2707,6 +2706,8 @@
       "scope": [
         "source.css support.type.property-name", // property names in CSS
         "source.css support.type.vendored.property-name", // property names in CSS
+        "meta.embedded.block.css support.type.property-name", // for CSS embedded in Markdown
+        "meta.embedded.block.css support.type.vendored.property-name" // for CSS embedded in Markdown
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2746,6 +2747,7 @@
     {
       "scope": [
         "source.css variable.parameter.url",
+        "meta.embedded.block.css variable.parameter.url",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -3255,19 +3257,19 @@
     {
       "scope": "text.html.markdown markup.inserted",
       "settings": {
-        "foreground": "#09885a"
+        "foreground": "#00D000"
       }
     },
     {
       "scope": "text.html.markdown markup.deleted",
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#FF0000"
       }
     },
     {
       "scope": "text.html.markdown markup.changed",
       "settings": {
-        "foreground": "#0451a5"
+        "foreground": "#0451A5"
       }
     },
     {
@@ -3313,7 +3315,7 @@
         "text.html.markdown constant.other.reference.link", // [][homepage]
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#D18A8A"
       }
     },
     //
@@ -3324,7 +3326,7 @@
         "text.html.markdown meta.link.reference.def constant.other.reference.link", // [homepage]()
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3556,11 +3558,11 @@
     //
     // Punctuation in AutoHotKey:
     //
-    // ";" comment sign:
+    // comment sign ";":
     {
-      "scope": "source.ahk punctuation.definition.comment", // ;
+      "scope": "source.ahk punctuation.definition.comment", // ";"
       "settings": {
-        "foreground": "#008000B0"
+        "foreground": "#50A750",
       }
     },
     //

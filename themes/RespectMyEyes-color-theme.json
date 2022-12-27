@@ -869,7 +869,7 @@
         "meta.embedded.block.javascript meta.import variable.other.readwrite",
       ],
       "settings": {
-        "foreground": "#C0C0C0"
+        "foreground": "#000000"
       }
     },
     //
@@ -2183,11 +2183,21 @@
       }
     },
     //
-    // type, function names:
+    // type names in definition:
     {
       "scope": [
-        "source.cs entity.name.type", // class, interface names when creating a class; class instance
-        "text.aspnetcorerazor entity.name.type", // class, interface names when creating a class; class instance
+        "source.cs entity.name.type.class", // class
+        "text.aspnetcorerazor entity.name.type.class", // class
+        "source.cs entity.name.type.struct", // struct
+        "text.aspnetcorerazor entity.name.type.struct", // struct
+        "source.cs entity.name.type.record", // record
+        "text.aspnetcorerazor entity.name.type.record", // record
+        "source.cs entity.name.type.interface", // interface
+        "text.aspnetcorerazor entity.name.type.interface", // interface
+        "source.cs entity.name.type.enum", // enum
+        "text.aspnetcorerazor entity.name.type.enum", // enum
+        "source.cs entity.name.type.delegate", // delegate
+        "text.aspnetcorerazor entity.name.type.delegate", // delegate
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2197,6 +2207,8 @@
     // type parameters:
     {
       "scope": [
+        "source.cs entity.name.type", // class, interface names when creating a class; class instance
+        "text.aspnetcorerazor entity.name.type", // type parameters
         "source.cs storage.type", // type parameters
         "text.aspnetcorerazor storage.type", // type parameters
         "source.cs keyword.type", // "void, int, string" keywords
@@ -2241,26 +2253,6 @@
       }
     },
     //
-    // enum type name:
-    {
-      "scope": [
-        "source.cs entity.name.type.enum", // enum type name
-      ],
-      "settings": {
-        "foreground": "#E8810C"
-      }
-    },
-    //
-    // enum member name:
-    {
-      "scope": [
-        // "source.cs entity.name.variable.enum-member", // enum member name
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
     // local variable name definition:
     {
       "scope": [
@@ -2268,7 +2260,7 @@
         "text.aspnetcorerazor entity.name.variable.local", // local variable name definition
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#000000"
       }
     },
     //
@@ -2281,7 +2273,7 @@
         "text.aspnetcorerazor entity.name.variable.field", // field names in class definition
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2311,9 +2303,10 @@
     //
     // Keywords:
     //
-    // class, interface, enum:
+    // class, interface, enum, namespace:
     {
       "scope": [
+        "source.cs keyword.other.namespace", // namespace
         "source.cs keyword.other.class", // class
         "source.cs keyword.other.interface", // interface
         "source.cs keyword.other.struct", // struct
@@ -2324,23 +2317,14 @@
       }
     },
     //
-    // base:
+    // "base", "this":
     {
       "scope": [
-        "source.cs keyword.other.base", // base
+        "source.cs keyword.other.base", // "base"
+        "source.cs keyword.other.this", // "this"
       ],
       "settings": {
         "foreground": "#0000CC"
-      }
-    },
-    //
-    // namespace:
-    {
-      "scope": [
-        "source.cs keyword.other.namespace", // namespace
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2385,33 +2369,17 @@
       }
     },
     //
-    // new:
+    // "new", "typeof", "is", "default":
     {
       "scope": [
-        "source.cs keyword.other.new", // new
+        "source.cs keyword.other.new", // "new"
+        "source.cs keyword.other.typeof", // "new"
+        "source.cs keyword.other.is", // "is"
+        "source.cs keyword.other.default" // "default"
+
       ],
       "settings": {
         "foreground": "#0000CC"
-      }
-    },
-    //
-    // typeof:
-    {
-      "scope": [
-        "source.cs keyword.other.typeof", // new
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // this:
-    {
-      "scope": [
-        "source.cs keyword.other.this", // this
-      ],
-      "settings": {
-        "foreground": "#000000"
       }
     },
     //
@@ -2472,13 +2440,44 @@
       }
     },
     //
-    // . dot:
+    // dot ".":
     {
       "scope": [
-        "source.cs punctuation.accessor" // . dot
+        "source.cs punctuation.accessor" // "."
       ],
       "settings": {
         "foreground": "#000000"
+      }
+    },
+    //
+    // question mark "?" in type:
+    {
+      "scope": [
+        "source.cs punctuation.separator.question-mark" // "?" in type
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // question mark "?" as elvis operator:
+    {
+      "scope": [
+        "source.cs keyword.operator.null-conditional" // "?" as elvis operator
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // string interpolation "{}":
+    {
+      "scope": [
+        "source.cs punctuation.definition.interpolation.begin", // "{"
+        "source.cs punctuation.definition.interpolation.end" // "}"
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2599,7 +2598,7 @@
     //
     //
     // ====================================================
-    // CSS, SASS, LESS, CSS-in-JS:
+    // CSS, SCSS, LESS, CSS-in-JS:
     //
     // Names in CSS:
     //
@@ -2849,11 +2848,13 @@
       }
     },
     //
-    //
+    // "@extend", "@supports":
     {
       "scope": [
-        "source.css keyword.control.for", // @for
-        "source.css keyword.control.for punctuation.definition.keyword", // @for
+        "source.css keyword.control.at-rule.extend", // "@extend"
+        "source.css keyword.control.at-rule.extend punctuation.definition.keyword", // "@extend"
+        "source.css keyword.control.at-rule.supports", // "@supports"
+        "source.css keyword.control.at-rule.supports punctuation.definition.keyword", // "@supports"
       ],
       "settings": {
         "foreground": "#A31515",
@@ -2867,7 +2868,7 @@
         "source.css keyword.control.operator"
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2948,6 +2949,8 @@
       "scope": [
         "source.css punctuation.definition.begin", // [
         "source.css punctuation.definition.end", // ]
+        "source.css punctuation.definition.entity.begin.bracket.square",
+        "source.css punctuation.definition.entity.end.bracket.square"
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3412,6 +3415,26 @@
       }
     },
     //
+    // value literal
+    {
+      "scope": [
+        "source.env",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "="
+    {
+      "scope": [
+        "source.env keyword.operator.assignment",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
     //
     //
     // ====================================================
@@ -3445,7 +3468,7 @@
         "source.ini punctuation.separator.key-value",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3511,7 +3534,7 @@
         "source.ahk hotkeyline entity.name.function.label",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#E8810C"
       }
     },
     //

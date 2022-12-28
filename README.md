@@ -14,13 +14,11 @@
       background-color: #ffd700;"
     />
   </div>
+</div>
 
-  <div>
 
 # RespectMyEyes theme for VS Code 
 
-  </div>
-</div>
 
 
 

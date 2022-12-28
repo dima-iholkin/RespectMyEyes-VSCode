@@ -1,5 +1,4 @@
-# <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png" width="300"> RespectMyEyes theme for VS Code 
-
+# <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png" width="32" alt="Ukrainian flag"> RespectMyEyes theme for VS Code 
 
 
 
@@ -7,20 +6,93 @@
   <img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/dima-iholkin.respectmyeyes">
 </a> 
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
-  <img alt="Visual Studio Marketplace Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/dima-iholkin.respectmyeyes?label=updated">
-</a> 
-<a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
   <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
 </a>
+<a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
+  <img alt="Visual Studio Marketplace Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/dima-iholkin.respectmyeyes?label=updated">
+</a> 
+<br />
+<br />
 
 
+Hi! This is a theme for React, front-end and some other developers.
 
-Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Markdown, AutoHotKey, PowerShell**.  
+<img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
-<img src="/screenshots/ui.png" title="user interface screenshot with javascript">
-  Source repo: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
+## Strongly supported
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Language</th>
+      <th align="center">Required syntax highlight extention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">JS, TS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">React JSX, TSX</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">CSS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">SASS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">styled-components</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components">vscode-styled-components</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">HTML, XML</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">JSON</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">YAML</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">.env</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotEnv</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">.ignore</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Dockerfile</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Markdown</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">AutoHotKey</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### UI
+
+<img src="/screenshots/ui2.png" title="user interface screenshot" />
 
 
 

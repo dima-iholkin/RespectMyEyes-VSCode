@@ -134,83 +134,10 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 
 
 
-## Weak support
-
-<table>
-  <thead>
-    <tr>
-      <th align="center">Language</th>
-      <th align="center">Required syntax highlight extention</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">JS, TS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">React</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">HTML, XML</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">CSS, SASS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">styled-components</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components">vscode-styled-components</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">JSON</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">YAML</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">.env</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotEnv</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">.ignore</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">Dockerfile</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">Markdown</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">AutoHotKey</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">PowerShell</td>
-      <td align="center"> - </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-## Terminal
+## Terminal color customization
 
 <details>
-  The suggested small override to the terminal colors, put them into your <code>settings.json</code>.
+  Here are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
 
   ```jsonc
   // settings.json
@@ -239,10 +166,10 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 
 
 
-## Azure Data Studio
+## Azure Data Studio support
 
 <details>
-  If you install this theme into the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your <code>settings.json</code>.
+  If you install this theme into Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your <code>settings.json</code> file.
 
   ```jsonc
   // settings.json
@@ -270,10 +197,7 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
         // The open item's background:
         "activityBar.activeBackground": "#00B00080",
         //
-        //
-        //
         // Fix the Connections form input fields:
-        //
         "input.border": "#D3D3D3"
       }
     }
@@ -283,10 +207,10 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 
 
 
-## Customize
+## VS Code's UI customization
 
 <details>
-  If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my <code>settings.json</code>.
+  If you've found something different from your setup in my screenshots above, here are some important settings from my <code>settings.json</code> file.
 
   ```jsonc
   // settings.json
@@ -297,8 +221,6 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
     "breadcrumbs.enabled": true,
     "workbench.iconTheme": "vscode-icons",
     //
-    //
-    //
     // Editor UI:
     "editor.cursorSmoothCaretAnimation": true,
     "editor.renderWhitespace": "boundary",
@@ -308,14 +230,10 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
     "editor.renderIndentGuides": true, // it seems the VS Code shows the indent guides anyway. 
     "editor.codeLens": false,
     //
-    //
-    //
     // Font:
     "editor.fontFamily": "Fantasque Sans Mono",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
-    //
-    //
     //
     // Show the color for a color code (Color-Highlight extension) :
     "color-highlight.enable": true,
@@ -324,15 +242,11 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
     "editor.colorDecorators": false,
     // Like this: #00BF00
     //
-    //
-    //
     // Terminal window:
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontFamily": "CaskaydiaCove NF",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
-    //
-    //
     //
     "files.associations": {
       ".stylelintrc": "json",

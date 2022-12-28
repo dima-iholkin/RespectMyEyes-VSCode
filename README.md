@@ -134,38 +134,6 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 
 
 
-## Terminal color customization
-
-<details>
-  Here are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
-
-  ```jsonc
-  // settings.json
-  {
-    "workbench.colorCustomizations": {
-      "[RespectMyEyes]": {
-        "terminal.ansiBlack": "#000000",
-        "terminal.ansiBlue": "#3465A4",
-        "terminal.ansiBrightBlack": "#555753",
-        "terminal.ansiBrightBlue": "#729FCF",
-        "terminal.ansiBrightCyan": "#34E2E2",
-        "terminal.ansiBrightGreen": "#00D000",
-        "terminal.ansiBrightMagenta": "#F066FF",
-        "terminal.ansiBrightRed": "#EF2929",
-        "terminal.ansiCyan": "#06989A",
-        "terminal.ansiGreen": "#00B000",
-        "terminal.ansiMagenta": "#AD7FA8",
-        "terminal.ansiRed": "#CC0000",
-        "terminal.ansiBrightWhite": "#A9A9A9",
-        "terminal.ansiWhite": "#A9A9A9",
-      }
-    }
-  }
-  ```
-</details>
-
-
-
 ## Azure Data Studio support
 
 <details>
@@ -199,6 +167,38 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
         //
         // Fix the Connections form input fields:
         "input.border": "#D3D3D3"
+      }
+    }
+  }
+  ```
+</details>
+
+
+
+## Terminal color customization
+
+<details>
+  Here are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
+
+  ```jsonc
+  // settings.json
+  {
+    "workbench.colorCustomizations": {
+      "[RespectMyEyes]": {
+        "terminal.ansiBlack": "#000000",
+        "terminal.ansiBlue": "#3465A4",
+        "terminal.ansiBrightBlack": "#555753",
+        "terminal.ansiBrightBlue": "#729FCF",
+        "terminal.ansiBrightCyan": "#34E2E2",
+        "terminal.ansiBrightGreen": "#00D000",
+        "terminal.ansiBrightMagenta": "#F066FF",
+        "terminal.ansiBrightRed": "#EF2929",
+        "terminal.ansiCyan": "#06989A",
+        "terminal.ansiGreen": "#00B000",
+        "terminal.ansiMagenta": "#AD7FA8",
+        "terminal.ansiRed": "#CC0000",
+        "terminal.ansiBrightWhite": "#A9A9A9",
+        "terminal.ansiWhite": "#A9A9A9",
       }
     }
   }

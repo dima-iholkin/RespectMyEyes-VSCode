@@ -16,6 +16,7 @@
   </div>
 </div>
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png" alt="Ukrainian flag" width="32" height="32">
 
 # RespectMyEyes theme for VS Code 
 

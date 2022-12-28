@@ -1,24 +1,4 @@
-<div style="display: flex;">
-  <div style="
-    padding-right: 0.1em;
-    width: 3.5ch;
-    display: flex;
-    flex-direction: column"
-  >
-    <div style="
-      flex-grow: 1;
-      background-color: #0057b7;"
-    />
-    <div style="
-      flex-grow: 1;
-      background-color: #ffd700;"
-    />
-  </div>
-</div>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png" alt="Ukrainian flag" width="32" height="32">
-
-# ![This is an image](https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png) RespectMyEyes theme for VS Code 
+# RespectMyEyes theme for VS Code ![This is an image](https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png)
 
 
 

@@ -1,4 +1,4 @@
-# ![This is an image](https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png =32x32) RespectMyEyes theme for VS Code 
+# <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png" width="300"> RespectMyEyes theme for VS Code 
 
 
 

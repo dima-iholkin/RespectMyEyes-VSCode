@@ -134,7 +134,9 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 
 ### Markdown
 
-<img src="/screenshots/markdown.png" title="markdown code example screenshot" />
+<img src="/screenshots/markdown.png" title="markdown code example screenshot">
+  Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
+</img>
 
 
 

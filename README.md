@@ -132,6 +132,10 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 
 <img src="/screenshots/json.png" title="json code example screenshot" />
 
+### Markdown
+
+<img src="/screenshots/markdown.png" title="markdown code example screenshot" />
+
 
 
 ## Azure Data Studio support

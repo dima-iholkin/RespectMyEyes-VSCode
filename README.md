@@ -15,7 +15,7 @@
 <br />
 
 
-Hi! This is a theme for React, front-end and some other developers.
+Hi! This is a theme for **React**, **front-end** and some other developers.
 
 <img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
@@ -92,15 +92,42 @@ Hi! This is a theme for React, front-end and some other developers.
 
 ### UI
 
-<img src="/screenshots/ui2.png" title="user interface screenshot" />
+<img src="/screenshots/ui2.png" title="user interface example screenshot">
+  Source: <a href="https://github.com/dima-iholkin/SwitchApps">SwitchApps</a>
+</img>
+
+### JS
+
+<img src="/screenshots/js.png" title="javascript code example screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### JS imports
+
+<img src="/screenshots/js_import.png" title="javascript import code example screenshot" />
+
+### React TSX
+
+<img src="/screenshots/tsx.png" title="react typescript tsx code example screenshot" />
+
+### CSS
+
+<img src="/screenshots/css.png" title="javascript code example screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### SCSS
+
+<img src="/screenshots/scss.png" title="javascript code example screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
 
 
 
 ## Screenshots
 
 <img src="/screenshots/html.png" title="html screenshot">
-  Source repo: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+  Source repo: <a href="https://github.com/bradtraversy/modern_portfolio"></a>
 </img>
 <br />
 <br />

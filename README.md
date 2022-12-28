@@ -112,44 +112,35 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 
 ### CSS
 
-<img src="/screenshots/css.png" title="javascript code example screenshot">
+<img src="/screenshots/css.png" title="css code example screenshot">
   Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
 
 ### SCSS
 
-<img src="/screenshots/scss.png" title="javascript code example screenshot">
+<img src="/screenshots/scss.png" title="scss code example screenshot">
   Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
 
+### HTML
 
-
-## Screenshots
-
-<img src="/screenshots/html.png" title="html screenshot">
-  Source repo: <a href="https://github.com/bradtraversy/modern_portfolio"></a>
+<img src="/screenshots/html.png" title="html code example screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
-<br />
-<br />
 
-<img src="/screenshots/css.png" title="css screenshot">
-  Source repo: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-<br />
-<br />
+### JSON
 
-<img src="/screenshots/json.png" title="json screenshot" />
+<img src="/screenshots/json.png" title="json code example screenshot" />
 
 
 
-## Guaranteed language support
+## Weak support
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">with syntax highlight extention</th>
+      <th align="center">Required syntax highlight extention</th>
     </tr>
   </thead>
   <tbody>

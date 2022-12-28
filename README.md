@@ -1,4 +1,28 @@
+<div style="display: flex;">
+  <div style="
+    padding-right: 0.1em;
+    width: 3.5ch;
+    display: flex;
+    flex-direction: column"
+  >
+    <div style="
+      flex-grow: 1;
+      background-color: #0057b7;"
+    />
+    <div style="
+      flex-grow: 1;
+      background-color: #ffd700;"
+    />
+  </div>
+
+  <div>
+
 # RespectMyEyes theme for VS Code 
+
+  </div>
+</div>
+
+
 
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
   <img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/dima-iholkin.respectmyeyes">

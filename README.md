@@ -156,9 +156,13 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
     <tr>
       <td align="center">PowerShell</td>
     </tr>
-
   </tbody>
 </table>
+
+* LESS
+* C#
+* Razor Pages
+* RowerShell
 
 
 

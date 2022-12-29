@@ -1,53 +1,31 @@
-# RespectMyEyes theme for VS Code 
+# <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png" width="32" alt="Ukrainian flag"> RespectMyEyes theme for VS Code 
+
+
 
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
   <img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/dima-iholkin.respectmyeyes">
 </a> 
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
-  <img alt="Visual Studio Marketplace Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/dima-iholkin.respectmyeyes?label=updated">
-</a> 
-<a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
   <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
 </a>
-
-
-
-Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Markdown, AutoHotKey, PowerShell**.  
-
-<img src="/screenshots/ui.png" title="user interface screenshot with javascript">
-  Source repo: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-
-
-## Screenshots
-
-<img src="/screenshots/html.png" title="html screenshot">
-  Source repo: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
+<a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
+  <img alt="Visual Studio Marketplace Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/dima-iholkin.respectmyeyes?label=updated">
+</a> 
 <br />
 <br />
 
-<img src="/screenshots/css.png" title="css screenshot">
-  Source repo: 
-  <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-<br />
-<br />
 
-<img src="/screenshots/json.png" title="json screenshot" />
+Hi! This is a theme for **React**, **front-end** and some other developers.
 
+<img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
-
-## Guaranteed language support
+## Strongly supported languages
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">with syntax highlight extention</th>
+      <th align="center">Required syntax highlight extention</th>
     </tr>
   </thead>
   <tbody>
@@ -56,15 +34,15 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">React</td>
+      <td align="center">React JSX, TSX</td>
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">HTML, XML</td>
+      <td align="center">CSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">CSS, SASS</td>
+      <td align="center">SCSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -72,6 +50,10 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components">vscode-styled-components</a>
       </td>
+    </tr>
+    <tr>
+      <td align="center">HTML, XML</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">JSON</td>
@@ -105,19 +87,130 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
         <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
       </td>
     </tr>
+  </tbody>
+</table>
+
+### UI
+
+<img src="/screenshots/ui2.png" title="user interface example screenshot">
+  Source: <a href="https://github.com/dima-iholkin/SwitchApps">SwitchApps</a>
+</img>
+
+### JS
+
+<img src="/screenshots/js.png" title="javascript code example screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### JS imports
+
+<img src="/screenshots/js_import.png" title="javascript import code example screenshot" />
+
+### React TSX
+
+<img src="/screenshots/tsx.png" title="react typescript tsx code example screenshot" />
+
+### CSS
+
+<img src="/screenshots/css.png" title="css code example screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### SCSS
+
+<img src="/screenshots/scss.png" title="scss code example screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### HTML
+
+<img src="/screenshots/html.png" title="html code example screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### JSON
+
+<img src="/screenshots/json.png" title="json code example screenshot" />
+
+### Markdown
+
+<img src="/screenshots/markdown.png" title="markdown code example screenshot">
+  Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
+</img>
+
+
+
+## Weakly supported languages
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Language</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">LESS</td>
+    </tr>
+    <tr>
+      <td align="center">C#</td>
+    </tr>
+    <tr>
+      <td align="center">Razor Pages</td>
+    </tr>
     <tr>
       <td align="center">PowerShell</td>
-      <td align="center"> - </td>
     </tr>
   </tbody>
 </table>
 
 
 
-## Terminal
+## Azure Data Studio support
 
 <details>
-  The suggested small override to the terminal colors, put them into your <code>settings.json</code>.
+  If you install this theme into Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your <code>settings.json</code> file.
+
+  ```jsonc
+  // settings.json
+  { 
+    "workbench.colorCustomizations": {
+      "[RespectMyEyes]": {
+        // Fix the Connections and Notebook items in the Activity Bar:
+        //
+        // The whole Activity Bar background:
+        "activityBar.background": "#0000004d",
+        //
+        // The line when moving the items:
+        "activityBar.dropBorder": "#FFFFFF",
+        //
+        // The colors for items:
+        "activityBar.foreground": "#FFFFFF",
+        "activityBar.inactiveForeground": "#f3f3f380",
+        //
+        // The notification badges:
+        "activityBarBadge.background": "#80c080",
+        "activityBarBadge.foreground": "#ffffff",
+        //
+        // The open item's side indicator:
+        "activityBar.activeBorder": "#FFFFFF",
+        // The open item's background:
+        "activityBar.activeBackground": "#00B00080",
+        //
+        // Fix the Connections form input fields:
+        "input.border": "#D3D3D3"
+      }
+    }
+  }
+  ```
+</details>
+
+
+
+## Terminal color customization
+
+<details>
+  Here are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
 
   ```jsonc
   // settings.json
@@ -146,54 +239,10 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
 
 
 
-## Azure Data Studio
+## VS Code's UI customization
 
 <details>
-  If you install this theme into the Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your <code>settings.json</code>.
-
-  ```jsonc
-  // settings.json
-  { 
-    "workbench.colorCustomizations": {
-      "[RespectMyEyes]": {
-        // Fix the Connections and Notebook items in the Activity Bar:
-        //
-        // The whole Activity Bar background:
-        "activityBar.background": "#0000004d",
-        //
-        // The line when moving the items:
-        "activityBar.dropBorder": "#FFFFFF",
-        //
-        // The colors for items:
-        "activityBar.foreground": "#FFFFFF",
-        "activityBar.inactiveForeground": "#f3f3f380",
-        //
-        // The notification badges:
-        "activityBarBadge.background": "#80c080",
-        "activityBarBadge.foreground": "#ffffff",
-        //
-        // The open item's side indicator:
-        "activityBar.activeBorder": "#FFFFFF",
-        // The open item's background:
-        "activityBar.activeBackground": "#00B00080",
-        //
-        //
-        //
-        // Fix the Connections form input fields:
-        //
-        "input.border": "#D3D3D3"
-      }
-    }
-  }
-  ```
-</details>
-
-
-
-## Customize
-
-<details>
-  If you've found something interesting in the screenshots above, something that's not a part of the theme, these are the important settings from my <code>settings.json</code>.
+  If you've found something different from your setup in my screenshots above, here are some important settings from my <code>settings.json</code> file.
 
   ```jsonc
   // settings.json
@@ -204,8 +253,6 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
     "breadcrumbs.enabled": true,
     "workbench.iconTheme": "vscode-icons",
     //
-    //
-    //
     // Editor UI:
     "editor.cursorSmoothCaretAnimation": true,
     "editor.renderWhitespace": "boundary",
@@ -215,14 +262,10 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
     "editor.renderIndentGuides": true, // it seems the VS Code shows the indent guides anyway. 
     "editor.codeLens": false,
     //
-    //
-    //
     // Font:
     "editor.fontFamily": "Fantasque Sans Mono",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
-    //
-    //
     //
     // Show the color for a color code (Color-Highlight extension) :
     "color-highlight.enable": true,
@@ -231,15 +274,11 @@ Hi! This is a light theme focused on **JS, TS, React, HTML, CSS, JSON, YAML, Mar
     "editor.colorDecorators": false,
     // Like this: #00BF00
     //
-    //
-    //
     // Terminal window:
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontFamily": "CaskaydiaCove NF",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
-    //
-    //
     //
     "files.associations": {
       ".stylelintrc": "json",

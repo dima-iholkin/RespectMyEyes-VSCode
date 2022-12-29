@@ -1,8 +1,8 @@
 {
     "name": "respectmyeyes",
-    "version": "1.3.0",
+    "version": "2.0.0",
     "displayName": "RespectMyEyes light theme",
-    "description": "This is a light theme focused on JS, TS, React, HTML, CSS, JSON, YAML, Markdown, AutoHotKey, PowerShell.",
+    "description": "A light theme for JS, TS, React, JSX, TSX, HTML, XML, CSS, SCSS, JSON, YAML, Markdown, AutoHotKey developers.",
     "publisher": "dima-iholkin",
     "author": "Dima Iholkin",
     "icon": "icon.png",

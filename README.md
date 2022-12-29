@@ -143,11 +143,6 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 ## Weakly supported languages
 
 <table>
-  <thead>
-    <tr>
-      <th align="center">Language</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
       <td align="center">LESS</td>

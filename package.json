@@ -1,6 +1,6 @@
 {
     "name": "respectmyeyes",
-    "version": "2.0.0-beta.2",
+    "version": "2.0.0",
     "displayName": "RespectMyEyes light theme",
     "description": "A light theme for JS, TS, React, JSX, TSX, HTML, XML, CSS, SCSS, JSON, YAML, Markdown, AutoHotKey developers.",
     "publisher": "dima-iholkin",

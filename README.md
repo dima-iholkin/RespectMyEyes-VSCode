@@ -19,7 +19,7 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 
 <img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
-## Strongly supported
+## Strongly supported languages
 
 <table>
   <thead>
@@ -140,31 +140,26 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 
 
 
-## Weakly supported
+## Weakly supported languages
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required syntax highlight extention</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td align="center">LESS</td>
-      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">C#</td>
-      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">Razor Pages</td>
-      <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">Power Shell</td>
-      <td align="center"> - </td>
+      <td align="center">PowerShell</td>
     </tr>
 
   </tbody>

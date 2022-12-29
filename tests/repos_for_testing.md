@@ -13,4 +13,5 @@
 * Angular: https://github.com/gothinkster/angular-realworld-example-app  
 * Vue: https://github.com/gothinkster/vue-realworld-example-app  
 * Svelte: https://github.com/sveltejs/realworld
-* LESS: https://github.com/distros/bootstrap-less  
+* LESS: https://github.com/distros/bootstrap-less
+* PowerShell: https://github.com/last-byte/PersistenceSniper

@@ -2269,7 +2269,7 @@
       }
     },
     //
-    // key names to object's properties:
+    // property and field names during their definition in class:
     {
       "scope": [
         "source.cs entity.name.variable.property", // property names in class definition
@@ -2370,7 +2370,7 @@
         "source.cs keyword.other.var", // var
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2460,7 +2460,7 @@
         "source.cs punctuation.separator.question-mark" // "?" in type
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#000000"
       }
     },
     //
@@ -2482,6 +2482,32 @@
       ],
       "settings": {
         "foreground": "#0000CC"
+      }
+    },
+    //
+    //
+    //
+    // Razor Pages:
+    //
+    // directives like "@using", "@page", "@model":
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.directive keyword.other.using", // "using"
+        "text.aspnetcorerazor meta.directive keyword.control.razor.directive", // "page", "model"
+        "text.aspnetcorerazor meta.directive keyword.control.cshtml.transition", // "@"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "@" in transitions to C# code:
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.expression.implicit keyword.control.cshtml.transition", // "@"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2510,11 +2536,20 @@
       }
     },
     //
-    // function names in declaration and function call:
+    // function names in declaration:
     {
       "scope": [
-        "source.powershell support.function", // function names
         "source.powershell entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // function names in function call:
+    {
+      "scope": [
+        "source.powershell support.function",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2574,7 +2609,7 @@
         "source.powershell keyword.operator.logical", // -Not
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2596,6 +2631,16 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // constant values, "$false", "$null":
+    {
+      "scope": [
+        "source.powershell meta.scriptblock constant.language", // "false", "null"
+      ],
+      "settings": {
+        "foreground": "#A31515"
       }
     },
     //

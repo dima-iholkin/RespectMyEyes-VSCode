@@ -42,7 +42,7 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">SASS</td>
+      <td align="center">SCSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -137,6 +137,38 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 <img src="/screenshots/markdown.png" title="markdown code example screenshot">
   Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
 </img>
+
+
+
+## Weakly supported
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Language</th>
+      <th align="center">Required syntax highlight extention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">LESS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">C#</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Razor Pages</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Power Shell</td>
+      <td align="center"> - </td>
+    </tr>
+
+  </tbody>
+</table>
 
 
 

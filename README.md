@@ -172,8 +172,9 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
 ## Azure Data Studio compatibility
 
 <details>
-  You can install this theme or any other theme by downloading it's <code>.vsix</code> file and going to <code>Extensions</code> > <code>Install from VSIX...</code> in Azure Data Studio. Download the latest VSIX file from <a href="https://github.com/dima-iholkin/RespectMyEyes-VSCode/releases/latest">the Releases page</a>
+  You can install this theme or any other theme by downloading it's <code>.vsix</code> file and going to <code>Extensions</code> > <code>Install from VSIX...</code> in Azure Data Studio. Download the latest VSIX file from <a href="https://github.com/dima-iholkin/RespectMyEyes-VSCode/releases/latest">the Releases page</a>.
 
+  <br />
   <br />
 
   Here are the suggested fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.

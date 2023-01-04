@@ -161,6 +161,9 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
     <tr>
       <td align="center">PowerShell</td>
     </tr>
+    <tr>
+      <td align="center">SQL</td>
+    </tr>
   </tbody>
 </table>
 

@@ -3201,6 +3201,85 @@
     //
     //
     // ====================================================
+    // SQL:
+    //
+    // keywords:
+    {
+      "scope": [
+        "source.sql keyword",
+        "source.sql storage.modifier",
+        "source.sql keyword.other.DDL.create.II",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // "NULL", "NOT NULL":
+    {
+      "scope": [
+        // "source.sql keyword.other.DDL.create.II",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // types "INT", "VARCHAR", "DATE":
+    {
+      "scope": [
+        "source.sql storage.type",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // schema name:
+    {
+      "scope": [
+        "source.sql entity.name.function",
+        "source.sql constant.other.database-name",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // function name:
+    {
+      "scope": [
+        "source.sql support.function",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // math operations "+", "=":
+    {
+      "scope": [
+        "source.sql keyword.operator",
+        "source.sql keyword.operator.comparison",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // star in SELECT "*" FROM:
+    {
+      "scope": [
+        "source.sql keyword.operator.star",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
     // JSON:
     //
     // property names:

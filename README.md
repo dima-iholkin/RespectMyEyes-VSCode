@@ -161,44 +161,34 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
     <tr>
       <td align="center">PowerShell</td>
     </tr>
+    <tr>
+      <td align="center">SQL</td>
+    </tr>
   </tbody>
 </table>
 
 
 
-## Azure Data Studio support
+## Azure Data Studio compatibility
 
 <details>
-  If you install this theme into Azure Data Studio, here are the suggested fixes for the Connection and Notebook panels, put them into your <code>settings.json</code> file.
+  You can install this theme or any other theme by downloading it's <code>.vsix</code> file and going to <code>Extensions</code> > <code>Install from VSIX...</code> in Azure Data Studio. Download the latest VSIX file from <a href="https://github.com/dima-iholkin/RespectMyEyes-VSCode/releases/latest">the Releases page</a>.
+
+  <br />
+  <br />
+
+  Here are the suggested fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.
 
   ```jsonc
   // settings.json
   { 
     "workbench.colorCustomizations": {
       "[RespectMyEyes]": {
-        // Fix the Connections and Notebook items in the Activity Bar:
+        // Fix the invisible form input fields:
+        "input.border": "#D3D3D3",
         //
-        // The whole Activity Bar background:
-        "activityBar.background": "#0000004d",
-        //
-        // The line when moving the items:
-        "activityBar.dropBorder": "#FFFFFF",
-        //
-        // The colors for items:
-        "activityBar.foreground": "#FFFFFF",
-        "activityBar.inactiveForeground": "#f3f3f380",
-        //
-        // The notification badges:
-        "activityBarBadge.background": "#80c080",
-        "activityBarBadge.foreground": "#ffffff",
-        //
-        // The open item's side indicator:
-        "activityBar.activeBorder": "#FFFFFF",
-        // The open item's background:
-        "activityBar.activeBackground": "#00B00080",
-        //
-        // Fix the Connections form input fields:
-        "input.border": "#D3D3D3"
+        // Fix the invisible secondary button text:
+        "button.secondaryForeground": "#0E639C",
       }
     }
   }

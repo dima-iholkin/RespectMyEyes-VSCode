@@ -1606,17 +1606,17 @@
       }
     },
     //
-    // new MyClass() :
+    // "new" keyword:
     {
       "scope": [
-        "source.ts keyword.operator.new", // new
-        "source.js keyword.operator.new", // new
-        "source.tsx keyword.operator.new", // new
-        "source.jsx keyword.operator.new", // new
-        "meta.embedded.block.javascript keyword.operator.new", // new
+        "source.ts keyword.operator.new", // "new"
+        "source.js keyword.operator.new", // "new"
+        "source.tsx keyword.operator.new", // "new"
+        "source.jsx keyword.operator.new", // "new"
+        "meta.embedded.block.javascript keyword.operator.new", // "new"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2353,32 +2353,32 @@
       }
     },
     //
-    // get, set:
+    // "get", "set" keywords:
     {
       "scope": [
-        "source.cs keyword.other.get", // get
-        "source.cs keyword.other.set", // set
+        "source.cs keyword.other.get", // "get"
+        "source.cs keyword.other.set", // "set"
       ],
       "settings": {
         "foreground": "#0000CC"
       }
     },
     //
-    // var:
+    // "var", "new" keywords:
     {
       "scope": [
-        "source.cs keyword.other.var", // var
+        "source.cs keyword.other.var", // "var"
+        "source.cs keyword.other.new", // "new"
       ],
       "settings": {
         "foreground": "#0BC5E3"
       }
     },
     //
-    // "new", "typeof", "is", "default":
+    // "typeof", "is", "default" keywords:
     {
       "scope": [
-        "source.cs keyword.other.new", // "new"
-        "source.cs keyword.other.typeof", // "new"
+        "source.cs keyword.other.typeof", // "typeof"
         "source.cs keyword.other.is", // "is"
         "source.cs keyword.other.default" // "default"
       ],
@@ -2508,6 +2508,152 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Java (.java):
+    //
+    // "import", "export" keywords:
+    {
+      "scope": [
+        "source.java keyword.other.import",
+        "source.java meta.import storage.modifier",
+        "source.java keyword.module",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // namespace name:
+    {
+      "scope": [
+        "source.java storage.modifier.import",
+        "source.java storage.modifier.package",
+        "source.java storage.modifier.import variable.language.wildcard",
+        "source.java entity.name.type.module",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // type name:
+    {
+      "scope": [
+        "source.java storage.type",
+        "source.java entity.other.inherited-class",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // function name in declaration:
+    {
+      "scope": [
+        "source.java meta.method.identifier entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // annotation call:
+    {
+      "scope": [
+        "source.java storage.type.annotation",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // "@" in an annotation call:
+    {
+      "scope": [
+        "source.java punctuation.definition.annotation",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // variable name:
+    {
+      "scope": [
+        "source.java variable.other.definition",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // constants:
+    {
+      "scope": [
+        "source.java constant.language",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "this", "super" keywords:
+    {
+      "scope": [
+        "source.java variable.language",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // keywords like "public", "class", "package":
+    {
+      "scope": [
+        "source.java storage.modifier",
+        "source.java keyword.other.package",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // JavaDoc highlighting keywords:
+    {
+      "scope": [
+        "source.java comment.block.javadoc keyword",
+        "source.java comment.block.javadoc variable.parameter",
+        "source.java comment.block.javadoc entity.name.type",
+      ],
+      "settings": {
+        "foreground": "#50A750"
+      }
+    },
+    //
+    // some common punctuation "()", ":":
+    {
+      "scope": [
+        "source.java punctuation.definition.parameters",
+        "source.java keyword.control.ternary",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // dot ".":
+    {
+      "scope": [
+        "source.java punctuation.separator.period",
+        "source.java storage.modifier.import punctuation.separator",
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     //

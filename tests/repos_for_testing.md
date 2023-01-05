@@ -15,3 +15,4 @@
 * Svelte: https://github.com/sveltejs/realworld
 * LESS: https://github.com/distros/bootstrap-less
 * PowerShell: https://github.com/last-byte/PersistenceSniper
+* Java: https://github.com/testcontainers/testcontainers-java

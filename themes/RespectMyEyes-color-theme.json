@@ -2612,11 +2612,12 @@
       }
     },
     //
-    // keywords like "public", "class", "package":
+    // keywords like "public", "class", "package", "instanceof":
     {
       "scope": [
         "source.java storage.modifier",
         "source.java keyword.other.package",
+        "source.java keyword.operator.instanceof", // "instanceof"
       ],
       "settings": {
         "foreground": "#A31515"

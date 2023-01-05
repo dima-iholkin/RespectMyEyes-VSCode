@@ -15,4 +15,5 @@
 * Svelte: https://github.com/sveltejs/realworld
 * LESS: https://github.com/distros/bootstrap-less
 * PowerShell: https://github.com/last-byte/PersistenceSniper
+* SQL: https://github.com/Apress/pro-sql-server-internals-2ed
 * Java: https://github.com/testcontainers/testcontainers-java

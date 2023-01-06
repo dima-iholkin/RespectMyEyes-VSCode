@@ -15,7 +15,7 @@
 <br />
 
 
-Hi! This is a theme for **React**, **front-end** and some other developers.
+Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YAML, AutoHotKey, C#, SQL, Java developers.
 
 <img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
@@ -163,6 +163,9 @@ Hi! This is a theme for **React**, **front-end** and some other developers.
     </tr>
     <tr>
       <td align="center">SQL</td>
+    </tr>
+    <tr>
+      <td align="center">Java</td>
     </tr>
   </tbody>
 </table>

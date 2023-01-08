@@ -30,7 +30,7 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
   </thead>
   <tbody>
     <tr>
-      <td align="center">JS, TS</td>
+      <td align="center">JavaScript, TypeScript</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -61,6 +61,22 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
     </tr>
     <tr>
       <td align="center">YAML</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">C#, Razor Pages</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp">C#</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Java</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack">Java</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">SQL</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -146,26 +162,19 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
   <thead>
     <tr>
       <th align="center">Language</th>
+      <th align="center">Required syntax highlight extention</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td align="center">LESS</td>
-    </tr>
-    <tr>
-      <td align="center">C#</td>
-    </tr>
-    <tr>
-      <td align="center">Razor Pages</td>
+      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">PowerShell</td>
-    </tr>
-    <tr>
-      <td align="center">SQL</td>
-    </tr>
-    <tr>
-      <td align="center">Java</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
+      </td>
     </tr>
   </tbody>
 </table>

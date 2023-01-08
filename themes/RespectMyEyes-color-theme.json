@@ -3411,6 +3411,16 @@
       }
     },
     //
+    // table name:
+    {
+      "scope": [
+        "source.sql constant.other.table-name",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
     // function name:
     {
       "scope": [

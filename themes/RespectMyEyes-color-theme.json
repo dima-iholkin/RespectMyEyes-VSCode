@@ -2273,12 +2273,21 @@
     {
       "scope": [
         "source.cs entity.name.variable.property", // property names in class definition
-        "text.aspnetcorerazor entity.name.variable.property", // property names in class definition
         "source.cs entity.name.variable.field", // field names in class definition
-        "text.aspnetcorerazor entity.name.variable.field", // field names in class definition
       ],
       "settings": {
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // object name during injection in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor entity.name.variable.property", // property names
+        "text.aspnetcorerazor entity.name.variable.field", // field names
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     //

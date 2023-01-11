@@ -3385,16 +3385,6 @@
       }
     },
     //
-    // "NULL", "NOT NULL":
-    {
-      "scope": [
-        // "source.sql keyword.other.DDL.create.II",
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
     // types "INT", "VARCHAR", "DATE":
     {
       "scope": [
@@ -3412,7 +3402,8 @@
         "source.sql constant.other.database-name",
       ],
       "settings": {
-        "foreground": "#A31515"
+        // "foreground": "#A31515"
+        "foreground": "#000000"
       }
     },
     //
@@ -3422,7 +3413,8 @@
         "source.sql constant.other.table-name",
       ],
       "settings": {
-        "foreground": "#A31515"
+        // "foreground": "#A31515"
+        "foreground": "#000000"
       }
     },
     //

@@ -32,9 +32,14 @@
     // ====================================================
     // Button controls:
     //
+    "button.foreground": "#00B000",
     "button.background": "#FFFFFF",
     "button.hoverBackground": "#00B00040",
-    "button.foreground": "#00B000",
+    //
+    // Secondary buttons:
+    "button.secondaryForeground": "#606060",
+    "button.secondaryBackground": "#FFFFFF",
+    "button.secondaryHoverBackground": "#00B00040",
     //
     //
     //

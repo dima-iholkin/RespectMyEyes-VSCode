@@ -2663,10 +2663,29 @@
     {
       "scope": [
         "source.java punctuation.definition.parameters",
-        "source.java keyword.control.ternary",
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ternary operator "?", ":":
+    {
+      "scope": [
+        "source.java keyword.control.ternary",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "new" keyword:
+    {
+      "scope": [
+        "source.java keyword.control.new",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //

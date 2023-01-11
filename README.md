@@ -196,16 +196,11 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
   { 
     "workbench.colorCustomizations": {
       "[RespectMyEyes]": {
-      // Fix the invisible input borders:
-      "input.border": "#D3D3D3",
-      //
-      // Fix the invisible button borders:
-      "button.border": "#A9A9A9",
-      //
-      // Secondary buttons:
-      "button.secondaryForeground": "#606060",
-      "button.secondaryBackground": "#FFFFFF",
-      "button.secondaryHoverBackground": "#00B00040",
+        // Fix the invisible input borders:
+        "input.border": "#D3D3D3",
+        //
+        // Fix the invisible button borders:
+        "button.border": "#A9A9A9"
       }
     }
   }

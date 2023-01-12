@@ -695,6 +695,16 @@
       }
     },
     //
+    // label name, for example in a goto statement:
+    {
+      "scope": [
+        "entity.name.label",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
     //
     //
     // ====================================================
@@ -741,7 +751,6 @@
         "keyword.operator.type.annotation", // :
         "keyword.operator.logical", // ||, !
         "keyword.operator.comparison", // ===
-        "keyword.operator.ternary", // ?, :
         "keyword.operator.relational", // >, <
         "keyword.operator.bitwise", // ~~, |
         "keyword.operator.rest", // ...
@@ -760,6 +769,16 @@
         "storage.type.function.arrow", // "=>" in JS/TS
         "keyword.operator.arrow", // => in C#
         "string.template punctuation.definition.string.template", // "` `" 
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // ternary operator "?", ":":
+    {
+      "scope": [
+        "keyword.operator.ternary",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -1394,6 +1413,21 @@
       }
     },
     //
+    // "break", "continue", "for" keywords:
+    {
+      "scope": [
+        "source.ts keyword.control.loop", // "break", "continue", "for"
+        "source.js keyword.control.loop", // "break", "continue", "for"
+        "source.tsx keyword.control.loop", // "break", "continue", "for"
+        "source.jsx keyword.control.loop", // "break", "continue", "for"
+        "meta.embedded.block.javascript keyword.control.loop", // "break", "continue", "for"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    // Cannot change it to purple, because it also changes the "for" keyword.
+    //
     // type keywords:
     {
       "scope": [
@@ -1575,7 +1609,7 @@
       }
     },
     //
-    // "typeof", "instanceof":
+    // "typeof", "instanceof" keywords:
     {
       "scope": [
         "source.ts keyword.operator.expression.typeof", // "typeof"
@@ -1590,7 +1624,7 @@
         "meta.embedded.block.javascript keyword.operator.expression.instanceof", // "instanceof"
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1623,7 +1657,7 @@
         "meta.embedded.block.javascript keyword.operator.new", // "new"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2321,17 +2355,6 @@
     },
     //
     //
-    // label name:
-    {
-      "scope": [
-        "entity.name.label.cs"
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    //
     //
     // Keywords:
     //
@@ -2446,7 +2469,6 @@
       ],
       "settings": {
         "foreground": "#C344AB"
-        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -2524,6 +2546,17 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ternary operator "?", ":":
+    {
+      "scope": [
+        "keyword.operator.conditional.question-mark.cs", // "?"
+        "keyword.operator.conditional.colon.cs" // ":"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2714,9 +2747,10 @@
         "source.java keyword.control.ternary",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
+    // Cannot make the ternary operator light-blue, because it also changes the punctuation "::".
     //
     // "new" keyword:
     {

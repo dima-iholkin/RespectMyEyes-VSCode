@@ -19,6 +19,8 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
 
 <img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
+I'm open to adding support for more popular languages.
+
 ## Strongly supported languages
 
 <table>
@@ -220,19 +222,22 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
     "workbench.colorCustomizations": {
       "[RespectMyEyes]": {
         "terminal.ansiBlack": "#000000",
-        "terminal.ansiBlue": "#3465A4",
-        "terminal.ansiBrightBlack": "#555753",
+        "terminal.ansiBrightBlack": "#000000",
+        "terminal.ansiBlue": "#FFFF40",
         "terminal.ansiBrightBlue": "#729FCF",
-        "terminal.ansiBrightCyan": "#34E2E2",
-        "terminal.ansiBrightGreen": "#00D000",
-        "terminal.ansiBrightMagenta": "#F066FF",
-        "terminal.ansiBrightRed": "#EF2929",
         "terminal.ansiCyan": "#06989A",
+        "terminal.ansiBrightCyan": "#34E2E2",
         "terminal.ansiGreen": "#00B000",
+        "terminal.ansiBrightGreen": "#00D000",
         "terminal.ansiMagenta": "#AD7FA8",
+        "terminal.ansiBrightMagenta": "#F066FF",
         "terminal.ansiRed": "#CC0000",
-        "terminal.ansiBrightWhite": "#A9A9A9",
-        "terminal.ansiWhite": "#A9A9A9",
+        "terminal.ansiBrightRed": "#EF2929",
+        "terminal.ansiWhite": "#000000",
+        "terminal.ansiBrightWhite": "#000000",
+        "terminal.ansiYellow": "#0000CC",
+        "terminal.ansiBrightYellow": "#0BC5E3",
+        "terminalCursor.foreground": "#00A000",
       }
     }
   }
@@ -250,10 +255,10 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
   // settings.json
   {
     // UI Layout:
-    "workbench.sideBar.location": "right",
     "explorer.compactFolders": false,
-    "breadcrumbs.enabled": true,
+    "workbench.sideBar.location": "right",
     "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "RespectMyEyes",
     //
     // Editor UI:
     "editor.cursorSmoothCaretAnimation": true,
@@ -261,15 +266,21 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
     "editor.snippetSuggestions": "inline",
     "editor.minimap.enabled": false,
     "editor.renderControlCharacters": false,
-    "editor.renderIndentGuides": true, // it seems the VS Code shows the indent guides anyway. 
+    "editor.guides.indentation": false,
+    "editor.bracketPairColorization.enabled": false,
     "editor.codeLens": false,
+    "editor.rulers": [
+      100
+    ],
+    "editor.suggestSelection": "first",
+    "editor.linkedEditing": true,
     //
     // Font:
     "editor.fontFamily": "Fantasque Sans Mono",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     //
-    // Show the color for a color code (Color-Highlight extension) :
+    // Show the color for a color code, Color-Highlight extension:
     "color-highlight.enable": true,
     "color-highlight.markerType": "dot-before",
     "color-highlight.markRuler": false,

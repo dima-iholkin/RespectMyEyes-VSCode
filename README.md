@@ -19,8 +19,6 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
 
 <img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
-I'm open to adding support for more popular languages.
-
 ## Strongly supported languages
 
 <table>
@@ -107,6 +105,8 @@ I'm open to adding support for more popular languages.
     </tr>
   </tbody>
 </table>
+
+I'm open to adding support for more popular languages.
 
 ### UI
 
@@ -309,4 +309,4 @@ I'm open to adding support for more popular languages.
 ## License information
 
 * **[MIT License](http://opensource.org/licenses/mit-license.php)**
-* Copyright © 2022 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.
+* Copyright © 2020 - 2023 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.

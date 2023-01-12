@@ -106,7 +106,7 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
   </tbody>
 </table>
 
-I'm open to adding support for more popular languages.
+I'm open to adding support for other popular languages.
 
 ### UI
 

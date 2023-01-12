@@ -316,26 +316,28 @@
     // Color guide:
     //
     // main blue: #0000CC
+    //
     // light blue: #0BC5E3
     //
     // black: #000000
     //
-    // new-grey: #A9A9A9
+    // new grey: #A9A9A9
     // old grey: #C0C0C0
     //
     // red: #FF0000
     //
-    // orange in use: #E8810C
+    // new orange: #E8810C
+    // old orange: #FFA500
     //
-    // orange not in use: #FFA500
-    //
-    // yellow: #B5BA00
-    // yellow: #FFFFB0
+    // old yellow #1: #B5BA00
+    // old yellow #2: #FFFFB0
     //
     // comments: #50A750
+    //
     // strings: #A31515
     //
-    // pink / purple: #F066FF
+    // new purple: #C344AB
+    // old purple: #F066FF
     //
     //
     //
@@ -693,6 +695,16 @@
       }
     },
     //
+    // label name, for example in a goto statement:
+    {
+      "scope": [
+        "entity.name.label",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
     //
     //
     // ====================================================
@@ -739,7 +751,6 @@
         "keyword.operator.type.annotation", // :
         "keyword.operator.logical", // ||, !
         "keyword.operator.comparison", // ===
-        "keyword.operator.ternary", // ?, :
         "keyword.operator.relational", // >, <
         "keyword.operator.bitwise", // ~~, |
         "keyword.operator.rest", // ...
@@ -758,6 +769,16 @@
         "storage.type.function.arrow", // "=>" in JS/TS
         "keyword.operator.arrow", // => in C#
         "string.template punctuation.definition.string.template", // "` `" 
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // ternary operator "?", ":":
+    {
+      "scope": [
+        "keyword.operator.ternary",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -1392,6 +1413,21 @@
       }
     },
     //
+    // "break", "continue", "for" keywords:
+    {
+      "scope": [
+        "source.ts keyword.control.loop", // "break", "continue", "for"
+        "source.js keyword.control.loop", // "break", "continue", "for"
+        "source.tsx keyword.control.loop", // "break", "continue", "for"
+        "source.jsx keyword.control.loop", // "break", "continue", "for"
+        "meta.embedded.block.javascript keyword.control.loop", // "break", "continue", "for"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    // Cannot change it to purple, because it also changes the "for" keyword.
+    //
     // type keywords:
     {
       "scope": [
@@ -1573,7 +1609,7 @@
       }
     },
     //
-    // "typeof", "instanceof":
+    // "typeof", "instanceof" keywords:
     {
       "scope": [
         "source.ts keyword.operator.expression.typeof", // "typeof"
@@ -1588,7 +1624,7 @@
         "meta.embedded.block.javascript keyword.operator.expression.instanceof", // "instanceof"
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1621,7 +1657,7 @@
         "meta.embedded.block.javascript keyword.operator.new", // "new"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2347,7 +2383,7 @@
       }
     },
     //
-    // using:
+    // "using":
     {
       "scope": [
         "source.cs keyword.other.using", // using
@@ -2357,7 +2393,7 @@
       }
     },
     //
-    // private, public, static, readonly, override, async, ...:
+    // "private", "public", "static", "readonly", "override", "async", ...:
     {
       "scope": [
         "source.cs storage.modifier", // private, public, static, readonly, override, async, ...
@@ -2381,11 +2417,24 @@
     // "var", "new" keywords:
     {
       "scope": [
-        "source.cs keyword.other.var", // "var"
-        "source.cs keyword.other.new", // "new"
+        "keyword.other.var.cs", // "var"
+        // "keyword.other.new.cs", // "new"
       ],
       "settings": {
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "var", "new" keywords:
+    {
+      "scope": [
+        // "keyword.other.var.cs", // "var"
+        "keyword.other.new.cs", // "new"
+      ],
+      "settings": {
+        // "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
+        // "foreground": "#E8810C"
       }
     },
     //
@@ -2401,13 +2450,25 @@
       }
     },
     //
-    // await:
+    // "await":
     {
       "scope": [
         "source.cs keyword.other.await", // await
       ],
       "settings": {
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "continue", "break", "goto" keywords:
+    {
+      "scope": [
+        "keyword.control.flow.continue.cs", // "continue"
+        "keyword.control.flow.break.cs", // "break"
+        "keyword.control.goto.cs", // "goto"
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2485,6 +2546,17 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ternary operator "?", ":":
+    {
+      "scope": [
+        "keyword.operator.conditional.question-mark.cs", // "?"
+        "keyword.operator.conditional.colon.cs" // ":"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2663,10 +2735,30 @@
     {
       "scope": [
         "source.java punctuation.definition.parameters",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // ternary operator "?", ":":
+    {
+      "scope": [
         "source.java keyword.control.ternary",
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    // Cannot make the ternary operator light-blue, because it also changes the punctuation "::".
+    //
+    // "new" keyword:
+    {
+      "scope": [
+        "source.java keyword.control.new",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3385,16 +3477,6 @@
       }
     },
     //
-    // "NULL", "NOT NULL":
-    {
-      "scope": [
-        // "source.sql keyword.other.DDL.create.II",
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
     // types "INT", "VARCHAR", "DATE":
     {
       "scope": [
@@ -3412,7 +3494,8 @@
         "source.sql constant.other.database-name",
       ],
       "settings": {
-        "foreground": "#A31515"
+        // "foreground": "#A31515"
+        "foreground": "#000000"
       }
     },
     //
@@ -3422,7 +3505,8 @@
         "source.sql constant.other.table-name",
       ],
       "settings": {
-        "foreground": "#A31515"
+        // "foreground": "#A31515"
+        "foreground": "#000000"
       }
     },
     //

@@ -2741,16 +2741,15 @@
       }
     },
     //
-    // ternary operator "?", ":":
+    // ternary operator "?", ":" and double colon operator "::":
     {
       "scope": [
         "source.java keyword.control.ternary",
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
       }
     },
-    // Cannot make the ternary operator light-blue, because it also changes the punctuation "::".
     //
     // "new" keyword:
     {

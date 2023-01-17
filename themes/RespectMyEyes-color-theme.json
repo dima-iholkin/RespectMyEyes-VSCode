@@ -2760,6 +2760,8 @@
         "foreground": "#0BC5E3"
       }
     },
+    // The side-effect is that brackets in the "new" calls with generics are painted light-blue too,
+    // like here: new MyClass<MyGenericType>(myArg);
     //
     // "new" keyword:
     {

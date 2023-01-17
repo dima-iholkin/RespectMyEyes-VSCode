@@ -2751,6 +2751,16 @@
       }
     },
     //
+    // brackets in an arrow function "()" ->:
+    {
+      "scope": [
+        "source.java meta.method-call punctuation.bracket.round",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
     // "new" keyword:
     {
       "scope": [

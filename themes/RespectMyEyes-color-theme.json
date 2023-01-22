@@ -1581,14 +1581,14 @@
       }
     },
     //
-    // this:
+    // "this" keyword:
     {
       "scope": [
-        "source.ts variable.language.this", // this
-        "source.js variable.language.this", // this
-        "source.tsx variable.language.this", // this
-        "source.jsx variable.language.this", // this
-        "meta.embedded.block.javascript variable.language.this", // this
+        "source.ts variable.language.this", // "this"
+        "source.js variable.language.this", // "this"
+        "source.tsx variable.language.this", // "this"
+        "source.jsx variable.language.this", // "this"
+        "meta.embedded.block.javascript variable.language.this", // "this"
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -1628,14 +1628,14 @@
       }
     },
     //
-    // undefined, any, false:
+    // "undefined", "any", "true", "false" constants:
     {
       "scope": [
-        "source.ts constant.language", // undefined, any, false
-        "source.js constant.language", // undefined, any, false
-        "source.tsx constant.language", // undefined, any, false
-        "source.jsx constant.language", // undefined, any, false
-        "meta.embedded.block.javascript constant.language", // undefined, any, false
+        "source.ts constant.language", // "undefined", "any", "true", "false"
+        "source.js constant.language", // "undefined", "any", "true", "false"
+        "source.tsx constant.language", // "undefined", "any", "true", "false"
+        "source.jsx constant.language", // "undefined", "any", "true", "false"
+        "meta.embedded.block.javascript constant.language", // "undefined", "any", "true", "false"
         "source.ts support.type",
         "source.js support.type",
         "source.tsx support.type",
@@ -1661,14 +1661,14 @@
       }
     },
     //
-    // new MyClass() :
+    // new "MyClass"() :
     {
       "scope": [
-        "source.ts new.expr entity.name.type", // MyClass
-        "source.js new.expr entity.name.type", // MyClass
-        "source.tsx new.expr entity.name.type", // MyClass
-        "source.jsx new.expr entity.name.type", // MyClass
-        "meta.embedded.block.javascript new.expr entity.name.type", // MyClass
+        "source.ts new.expr entity.name.type",
+        "source.js new.expr entity.name.type",
+        "source.tsx new.expr entity.name.type",
+        "source.jsx new.expr entity.name.type",
+        "meta.embedded.block.javascript new.expr entity.name.type",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -1679,28 +1679,28 @@
     //
     // Punctuation in TypeScript:
     //
-    // ( ) round braces:
+    // "()" round braces:
     {
       "scope": [
-        "source.ts meta.brace.round", // ( )
-        "source.js meta.brace.round", // ( )
-        "source.tsx meta.brace.round", // ( )
-        "source.jsx meta.brace.round", // ( )
-        "meta.embedded.block.javascript meta.brace.round", // ( )
+        "source.ts meta.brace.round", // "()"
+        "source.js meta.brace.round", // "()"
+        "source.tsx meta.brace.round", // "()"
+        "source.jsx meta.brace.round", // "()"
+        "meta.embedded.block.javascript meta.brace.round", // "()"
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // ( ) round braces in a function/method definition:
+    // "()" round braces in a function/method definition:
     {
       "scope": [
-        "source.ts meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
-        "source.js meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
-        "source.tsx meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
-        "source.jsx meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
-        "meta.embedded.block.javascript meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
+        "source.ts meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
+        "source.js meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
+        "source.tsx meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
+        "source.jsx meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
+        "meta.embedded.block.javascript meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -2414,27 +2414,23 @@
       }
     },
     //
-    // "var", "new" keywords:
+    // "var" keyword:
     {
       "scope": [
         "keyword.other.var.cs", // "var"
-        // "keyword.other.new.cs", // "new"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
-    // "var", "new" keywords:
+    // "new" keyword:
     {
       "scope": [
-        // "keyword.other.var.cs", // "var"
         "keyword.other.new.cs", // "new"
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#0000CC"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -2741,16 +2737,27 @@
       }
     },
     //
-    // ternary operator "?", ":":
+    // ternary operator "?", ":" and double colon operator "::":
     {
       "scope": [
         "source.java keyword.control.ternary",
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
       }
     },
-    // Cannot make the ternary operator light-blue, because it also changes the punctuation "::".
+    //
+    // brackets in an arrow function "()" ->:
+    {
+      "scope": [
+        "source.java meta.method-call punctuation.bracket.round",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    // The side-effect is that brackets in the "new" calls with generics are painted light-blue too,
+    // like here: new MyClass<MyGenericType>(myArg);
     //
     // "new" keyword:
     {

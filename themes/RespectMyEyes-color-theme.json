@@ -2318,7 +2318,7 @@
         "source.cs entity.name.variable.field",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#0000CC"
       }
     },
     //

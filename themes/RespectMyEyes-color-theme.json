@@ -2567,7 +2567,8 @@
         "source.cs punctuation.definition.interpolation.end" // "}"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //

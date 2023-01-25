@@ -1,6 +1,7 @@
 {
   "name": "RespectMyEyes theme",
   "type": "light",
+  "semanticHighlighting": false,
   "colors": {
     // ====================================================
     // Base colors:
@@ -2363,6 +2364,7 @@
       "scope": [
         "source.cs keyword.other.namespace", // namespace
         "source.cs keyword.other.class", // class
+        "keyword.other.class.cs", // class
         "source.cs keyword.other.interface", // interface
         "source.cs keyword.other.struct", // struct
         "source.cs keyword.other.enum", // enum
@@ -2403,11 +2405,12 @@
       }
     },
     //
-    // "get", "set" keywords:
+    // "get", "set", "init" keywords:
     {
       "scope": [
         "source.cs keyword.other.get", // "get"
         "source.cs keyword.other.set", // "set"
+        "source.cs keyword.other.init", // "init"
       ],
       "settings": {
         "foreground": "#0000CC"

@@ -2311,14 +2311,14 @@
       }
     },
     //
-    // property and field names during their definition in class:
+    // property and field names definitions in a class:
     {
       "scope": [
-        "source.cs entity.name.variable.property", // property names in class definition
-        "source.cs entity.name.variable.field", // field names in class definition
+        "source.cs entity.name.variable.property",
+        "source.cs entity.name.variable.field",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#000000"
       }
     },
     //

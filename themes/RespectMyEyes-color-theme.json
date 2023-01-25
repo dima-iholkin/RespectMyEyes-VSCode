@@ -2356,6 +2356,16 @@
       }
     },
     //
+    // object key names:
+    {
+      "scope": [
+        "variable.other.readwrite.cs",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
     //
     //
     // Keywords:
@@ -2438,10 +2448,11 @@
       }
     },
     //
-    // "typeof", "is", "default" keywords:
+    // "typeof", "nameof", "is", "default" keywords:
     {
       "scope": [
         "source.cs keyword.other.typeof", // "typeof"
+        "source.cs keyword.other.nameof", // "nameof"
         "source.cs keyword.other.is", // "is"
         "source.cs keyword.other.default" // "default"
       ],

@@ -336,6 +336,7 @@
     // comments: #50A750
     //
     // strings: #A31515
+    // light strings: #D18A8A
     //
     // new purple: #C344AB
     // old purple: #F066FF
@@ -2385,13 +2386,13 @@
       }
     },
     //
-    // "using":
+    // "using" keyword:
     {
       "scope": [
-        "source.cs keyword.other.using", // using
+        "source.cs keyword.other.using",
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2408,9 +2409,9 @@
     // "get", "set", "init" keywords:
     {
       "scope": [
-        "source.cs keyword.other.get", // "get"
-        "source.cs keyword.other.set", // "set"
-        "source.cs keyword.other.init", // "init"
+        "source.cs keyword.other.get",
+        "source.cs keyword.other.set",
+        "source.cs keyword.other.init",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2420,7 +2421,7 @@
     // "var" keyword:
     {
       "scope": [
-        "keyword.other.var.cs", // "var"
+        "keyword.other.var.cs",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -2430,7 +2431,7 @@
     // "new" keyword:
     {
       "scope": [
-        "keyword.other.new.cs", // "new"
+        "keyword.other.new.cs",
       ],
       "settings": {
         "foreground": "#0000CC"

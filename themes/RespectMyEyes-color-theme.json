@@ -2424,7 +2424,7 @@
         "source.cs keyword.other.init",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2474,9 +2474,20 @@
     // "continue", "break", "goto" keywords:
     {
       "scope": [
-        "keyword.control.flow.continue.cs", // "continue"
-        "keyword.control.flow.break.cs", // "break"
-        "keyword.control.goto.cs", // "goto"
+        "keyword.control.flow.continue.cs",
+        "keyword.control.flow.break.cs",
+        "keyword.control.goto.cs",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "return", "throw" keywords:
+    {
+      "scope": [
+        "keyword.control.flow.return.cs",
+        "keyword.control.flow.throw.cs",
       ],
       "settings": {
         "foreground": "#C344AB"

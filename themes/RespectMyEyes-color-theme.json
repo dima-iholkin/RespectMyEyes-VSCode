@@ -2370,15 +2370,14 @@
     //
     // Keywords:
     //
-    // class, interface, enum, namespace:
+    // "class", "interface", "enum", "namespace" keywords:
     {
       "scope": [
-        "source.cs keyword.other.namespace", // namespace
-        "source.cs keyword.other.class", // class
-        "keyword.other.class.cs", // class
-        "source.cs keyword.other.interface", // interface
-        "source.cs keyword.other.struct", // struct
-        "source.cs keyword.other.enum", // enum
+        "source.cs keyword.other.namespace",
+        "keyword.other.class.cs",
+        "source.cs keyword.other.interface",
+        "source.cs keyword.other.struct",
+        "source.cs keyword.other.enum",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -2406,10 +2405,10 @@
       }
     },
     //
-    // "private", "public", "static", "readonly", "override", "async", ...:
+    // "private", "public", "static", "readonly", "override", "async" keywords:
     {
       "scope": [
-        "source.cs storage.modifier", // private, public, static, readonly, override, async, ...
+        "source.cs storage.modifier",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -2589,8 +2588,25 @@
         "source.cs punctuation.definition.interpolation.end" // "}"
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    //
+    //
+    // Documentation in C#:
+    //
+    // Documentation:
+    {
+      "scope": [
+        "comment.block.documentation.cs entity.name.tag",
+        "comment.block.documentation.cs punctuation",
+        "comment.block.documentation.cs punctuation.separator",
+        "comment.block.documentation.cs entity.other.attribute-name",
+        "comment.block.documentation.cs string",
+      ],
+      "settings": {
+        "foreground": "#50A750"
       }
     },
     //

@@ -1,6 +1,7 @@
 {
   "name": "RespectMyEyes theme",
   "type": "light",
+  "semanticHighlighting": false,
   "colors": {
     // ====================================================
     // Base colors:
@@ -335,6 +336,7 @@
     // comments: #50A750
     //
     // strings: #A31515
+    // light strings: #D18A8A
     //
     // new purple: #C344AB
     // old purple: #F066FF
@@ -2310,14 +2312,14 @@
       }
     },
     //
-    // property and field names during their definition in class:
+    // property and field names definitions in a class:
     {
       "scope": [
-        "source.cs entity.name.variable.property", // property names in class definition
-        "source.cs entity.name.variable.field", // field names in class definition
+        "source.cs entity.name.variable.property",
+        "source.cs entity.name.variable.field",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2354,18 +2356,28 @@
       }
     },
     //
+    // object key names:
+    {
+      "scope": [
+        "variable.other.readwrite.cs",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
     //
     //
     // Keywords:
     //
-    // class, interface, enum, namespace:
+    // "class", "interface", "enum", "namespace" keywords:
     {
       "scope": [
-        "source.cs keyword.other.namespace", // namespace
-        "source.cs keyword.other.class", // class
-        "source.cs keyword.other.interface", // interface
-        "source.cs keyword.other.struct", // struct
-        "source.cs keyword.other.enum", // enum
+        "source.cs keyword.other.namespace",
+        "keyword.other.class.cs",
+        "source.cs keyword.other.interface",
+        "source.cs keyword.other.struct",
+        "source.cs keyword.other.enum",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -2383,41 +2395,42 @@
       }
     },
     //
-    // "using":
+    // "using" keyword:
     {
       "scope": [
-        "source.cs keyword.other.using", // using
+        "source.cs keyword.other.using",
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
       }
     },
     //
-    // "private", "public", "static", "readonly", "override", "async", ...:
+    // "private", "public", "static", "readonly", "override", "async" keywords:
     {
       "scope": [
-        "source.cs storage.modifier", // private, public, static, readonly, override, async, ...
+        "source.cs storage.modifier",
       ],
       "settings": {
         "foreground": "#A31515"
       }
     },
     //
-    // "get", "set" keywords:
+    // "get", "set", "init" keywords:
     {
       "scope": [
-        "source.cs keyword.other.get", // "get"
-        "source.cs keyword.other.set", // "set"
+        "source.cs keyword.other.get",
+        "source.cs keyword.other.set",
+        "source.cs keyword.other.init",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
     // "var" keyword:
     {
       "scope": [
-        "keyword.other.var.cs", // "var"
+        "keyword.other.var.cs",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -2427,17 +2440,18 @@
     // "new" keyword:
     {
       "scope": [
-        "keyword.other.new.cs", // "new"
+        "keyword.other.new.cs",
       ],
       "settings": {
         "foreground": "#0000CC"
       }
     },
     //
-    // "typeof", "is", "default" keywords:
+    // "typeof", "nameof", "is", "default" keywords:
     {
       "scope": [
         "source.cs keyword.other.typeof", // "typeof"
+        "source.cs keyword.other.nameof", // "nameof"
         "source.cs keyword.other.is", // "is"
         "source.cs keyword.other.default" // "default"
       ],
@@ -2459,9 +2473,20 @@
     // "continue", "break", "goto" keywords:
     {
       "scope": [
-        "keyword.control.flow.continue.cs", // "continue"
-        "keyword.control.flow.break.cs", // "break"
-        "keyword.control.goto.cs", // "goto"
+        "keyword.control.flow.continue.cs",
+        "keyword.control.flow.break.cs",
+        "keyword.control.goto.cs",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "return", "throw" keywords:
+    {
+      "scope": [
+        "keyword.control.flow.return.cs",
+        "keyword.control.flow.throw.cs",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -2563,7 +2588,25 @@
         "source.cs punctuation.definition.interpolation.end" // "}"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    //
+    //
+    // Documentation in C#:
+    //
+    // Documentation:
+    {
+      "scope": [
+        "comment.block.documentation.cs entity.name.tag",
+        "comment.block.documentation.cs punctuation",
+        "comment.block.documentation.cs punctuation.separator",
+        "comment.block.documentation.cs entity.other.attribute-name",
+        "comment.block.documentation.cs string",
+      ],
+      "settings": {
+        "foreground": "#50A750"
       }
     },
     //

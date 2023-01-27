@@ -381,10 +381,20 @@
       }
     },
     //
+    // number prefix for binary, hex and so on:
+    {
+      "scope": [
+        "constant.numeric.other.preffix", // "0x", "0b"
+      ],
+      "settings": {
+        "foreground": "#A31515",
+      }
+    },
+    //
     // booleans:
     {
       "scope": [
-        "constant.language.boolean", // true, false
+        "constant.language.boolean", // "true", "false"
       ],
       "settings": {
         "foreground": "#A31515",
@@ -463,7 +473,7 @@
     // ====================================================
     // Names in general:
     //
-    // functions:
+    // Functions:
     //
     // function name in definition:
     {
@@ -487,10 +497,10 @@
       }
     },
     //
-    // argument names in function call:
+    // argument names inside a function call:
     {
       "scope": [
-        "variable.parameter", // argument names inside a function call
+        "variable.parameter",
       ],
       "settings": {
         "foreground": "#000000",
@@ -510,7 +520,7 @@
     //
     //
     //
-    // types:
+    // Types:
     //
     // type name in definition:
     {
@@ -535,7 +545,7 @@
     //
     //
     //
-    // variables:
+    // Variables:
     //
     // variable name in definition:
     {
@@ -558,7 +568,7 @@
     },
     //
     //
-    // objects:
+    // Objects:
     //
     // object keys when defining a type (class, interface):
     {
@@ -593,7 +603,7 @@
     //
     //
     //
-    // enums:
+    // Enums:
     //
     // enum member names:
     {

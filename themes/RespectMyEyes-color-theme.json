@@ -371,10 +371,10 @@
       }
     },
     //
-    // numbers:
+    // numbers, numeric literals:
     {
       "scope": [
-        "constant.numeric", // 0, 1, 36.08M... numeric literals
+        "constant.numeric", // 0, 1, 36.08M
       ],
       "settings": {
         "foreground": "#000000",
@@ -387,7 +387,7 @@
         "constant.numeric.other.preffix", // "0x", "0b"
       ],
       "settings": {
-        "foreground": "#A31515",
+        "foreground": "#A9A9A9",
       }
     },
     //

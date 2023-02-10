@@ -2384,7 +2384,7 @@
     {
       "scope": [
         "source.cs keyword.other.namespace",
-        "keyword.other.class.cs",
+        "source.cs keyword.other.class",
         "source.cs keyword.other.interface",
         "source.cs keyword.other.struct",
         "source.cs keyword.other.enum",
@@ -2433,7 +2433,7 @@
         "source.cs keyword.other.init",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //

@@ -2611,6 +2611,17 @@
       }
     },
     //
+    // preprocessor directives "pragma warning disable ...":
+    {
+      "scope": [
+        "source.cs meta.preprocessor",
+        "source.cs meta.preprocessor keyword"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
     //
     //
     // Documentation in C#:

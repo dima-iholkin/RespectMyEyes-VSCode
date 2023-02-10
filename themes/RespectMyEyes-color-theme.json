@@ -149,6 +149,15 @@
     //
     //
     // ====================================================
+    // Debug Console:
+    "debugConsole.warningForeground": "#E8810C",
+    "debugConsole.errorForeground": "#FF0000",
+    "debugConsole.sourceForeground": "#000000",
+    "debugConsole.infoForeground": "#0000CC",
+    //
+    //
+    //
+    // ====================================================
     // Lists and Trees: it's the File Explorer list.
     //
     // the default hover background is too low contrast:
@@ -266,7 +275,7 @@
     //
     //
     // ====================================================
-    // Diff Editor:    
+    // Diff Editor:
     //
     "diffEditor.insertedTextBackground": "#00B00020",
     "diffEditor.removedTextBackground": "#FF000020",

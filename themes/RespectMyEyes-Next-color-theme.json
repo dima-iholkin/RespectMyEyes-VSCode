@@ -3099,46 +3099,58 @@
       }
     },
     //
-    // variable name in declaration:
+    // variable name:
     {
       "scope": [
         "source.css meta.definition.variable variable",
+        "source.css variable",
+        "source.css meta.property-list variable.other.less", // for LESS
+        "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // variable name as mixin parameters in LESS:
+    {
+      "scope": [
+        "source.css variable.other.less", // for LESS
+        "source.css variable.other.less punctuation.definition.variable.less", // for LESS
       ],
       "settings": {
         "foreground": "#000000"
       }
     },
     //
-    // variable name:
+    // variable name, not sure where:
     {
       "scope": [
-        "source.css variable",
         "source.css meta.property-name.media-query",
-        "source.css variable.other", // for LESS
-        "source.css variable.other punctuation.definition.variable", // for LESS
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#000000",
       }
     },
     //
     // function name in definition:
     {
       "scope": [
-        "source.css entity.name.function"
+        "source.css entity.name.function",
+        "source.css meta.at-rule.function support.function"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
     // Mixin name in LESS:
     {
       "scope": [
-        "source.css entity.other.attribute-name.class.mixin"
+        "source.css.less entity.other.attribute-name.class.mixin"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3148,7 +3160,7 @@
         "source.css support.function", // function call in CSS
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3161,7 +3173,7 @@
         "meta.embedded.block.css support.type.vendored.property-name" // for CSS embedded in Markdown
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3211,7 +3223,7 @@
         "source.css support.type.property-name.media", // property names in @media queries
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3237,7 +3249,17 @@
         "source.css.less support.constant.media-type.media" // "screen" keyword in LESS
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // @import syntax:
+    {
+      "scope": [
+        "source.css meta.at-rule.import string.quoted",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //

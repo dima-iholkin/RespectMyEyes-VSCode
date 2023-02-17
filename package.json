@@ -1,6 +1,6 @@
 {
     "name": "respectmyeyes",
-    "version": "2.2.12",
+    "version": "2.2.13",
     "displayName": "RespectMyEyes theme",
     "description": "A light theme that respects your eyes.",
     "publisher": "dima-iholkin",
@@ -30,6 +30,11 @@
                 "label": "RespectMyEyes",
                 "uiTheme": "vs",
                 "path": "./themes/RespectMyEyes-color-theme.json"
+            },
+            {
+                "label": "RespectMyEyes-Next",
+                "uiTheme": "vs",
+                "path": "./themes/RespectMyEyes-Next-color-theme.json"
             }
         ]
     },

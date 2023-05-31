@@ -210,8 +210,8 @@
     //
     //
     //
-    // line number:
-    "editorLineNumber.foreground": "#00800080",
+    // line numbers:
+    "editorLineNumber.foreground": "#A9A9A980",
     "editorLineNumber.activeForeground": "#0000CC",
     //
     //
@@ -1269,7 +1269,8 @@
         "meta.embedded.block.javascript meta.object-literal.key",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1823,7 +1824,8 @@
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        // "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2099,7 +2101,8 @@
         "meta.embedded.block.javascript punctuation.accessor" // . dot
       ],
       "settings": {
-        "foreground": "#000000"
+        // "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2118,7 +2121,8 @@
         "meta.embedded.block.javascript meta.return.type punctuation.accessor", // . dot in a type annotation
       ],
       "settings": {
-        "foreground": "#E8810C"
+        // "foreground": "#E8810C"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2132,7 +2136,8 @@
         "meta.embedded.block.javascript meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
       ],
       "settings": {
-        "foreground": "#000000"
+        // "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2199,6 +2204,37 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // Documentation:
+    {
+      "scope": [
+        "source.ts comment.block.documentation storage.type",
+        "source.js comment.block.documentation storage.type",
+        "source.tsx comment.block.documentation storage.type",
+        "source.jsx comment.block.documentation storage.type",
+        "meta.embedded.block.javascript comment.block.documentation storage.type",
+        "source.ts comment.block.documentation punctuation.definition.block",
+        "source.js comment.block.documentation punctuation.definition.block",
+        "source.tsx comment.block.documentation punctuation.definition.block",
+        "source.jsx comment.block.documentation punctuation.definition.block",
+        "meta.embedded.block.javascript comment.block.documentation punctuation.definition.block",
+        "source.ts comment.block.documentation punctuation",
+        "source.js comment.block.documentation punctuation",
+        "source.tsx comment.block.documentation punctuation",
+        "source.jsx comment.block.documentation punctuation",
+        "meta.embedded.block.javascript comment.block.documentation punctuation",
+        "source.ts comment.block.documentation entity.name.type",
+        "source.js comment.block.documentation entity.name.type",
+        "source.tsx comment.block.documentation entity.name.type",
+        "source.jsx comment.block.documentation entity.name.type",
+        "meta.embedded.block.javascript comment.block.documentation entity.name.type",
+      ],
+      "settings": {
+        "foreground": "#50A750"
       }
     },
     //
@@ -3075,7 +3111,8 @@
         "meta.embedded.block.css punctuation.definition.entity", // "#, ."
       ],
       "settings": {
-        "foreground": "#E8810C"
+        // "foreground": "#E8810C"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3085,7 +3122,8 @@
         "source.css meta.property-list entity.name.tag" // I know this breaks "content" property.
       ],
       "settings": {
-        "foreground": "#E8810C"
+        // "foreground": "#E8810C"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3108,7 +3146,9 @@
         "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#0000CC"
+        // "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3140,7 +3180,8 @@
         "source.css meta.at-rule.function support.function"
       ],
       "settings": {
-        "foreground": "#C344AB"
+        // "foreground": "#C344AB"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3173,7 +3214,9 @@
         "meta.embedded.block.css support.type.vendored.property-name" // for CSS embedded in Markdown
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#0000CC"
+        // "foreground": "#C344AB"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -3223,7 +3266,8 @@
         "source.css support.type.property-name.media", // property names in @media queries
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        // "foreground": "#A9A9A9"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -3249,7 +3293,8 @@
         "source.css.less support.constant.media-type.media" // "screen" keyword in LESS
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        // "foreground": "#A9A9A9"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -3259,7 +3304,9 @@
         "source.css meta.at-rule.import string.quoted",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        // "foreground": "#C344AB"
+        "foreground": "#A31515",
+        // "fontStyle": ""
       }
     },
     //
@@ -3318,7 +3365,8 @@
         "meta.embedded.block.scss keyword.control.content punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#A31515",
+        // "foreground": "#A31515",
+        "foreground": "#0BC5E3",
         "fontStyle": "underline"
       }
     },
@@ -3332,7 +3380,8 @@
         "source.css keyword.control.at-rule.supports punctuation.definition.keyword", // "@supports"
       ],
       "settings": {
-        "foreground": "#A31515",
+        // "foreground": "#A31515",
+        "foreground": "#0BC5E3",
         "fontStyle": "underline"
       }
     },
@@ -3496,6 +3545,7 @@
         "source.tsx entity.name.tag support.class", // tag names
         "source.jsx entity.name.tag support.class", // tag names
         "text.html punctuation.definition.tag", // <, >
+        "text.html punctuation.definition.tag source.js-ignored-vscode", // <, > // "source.css-ignored-vscode" - for some weirdness in one JS file.
         "text.html punctuation.definition.tag source.css-ignored-vscode", // <, > // "source.css-ignored-vscode" - for some weird thing I saw once in a php file.
         "text.xml punctuation.definition.tag", // <, >
         "text.aspnetcorerazor punctuation.definition.tag", // <, >
@@ -3505,7 +3555,8 @@
         "source.jsx punctuation.definition.tag", // <, >
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3523,6 +3574,7 @@
       ],
       "settings": {
         "foreground": "#E8810C"
+        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -3551,6 +3603,11 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
+        // "foreground": "#0000CC",
+        // "foreground": "#E8810C"
+        // "foreground": "#000000",
+        // "foreground": "#A31515",
+        // "fontStyle": "bold"
       }
     },
     //
@@ -3798,8 +3855,9 @@
         "text.html.markdown markup.heading heading punctuation.definition.heading",
       ],
       "settings": {
-        "foreground": "#0000CC",
-        "fontStyle": "bold"
+        // "foreground": "#0000CC",
+        "foreground": "#C344AB",
+        // "fontStyle": "bold"
       }
     },
     {

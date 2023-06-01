@@ -2208,6 +2208,35 @@
     },
     //
     //
+    // "{ }" embedded children in JSX/TSX:
+    {
+      "scope": [
+        "source.ts meta.jsx.children punctuation.section.embedded",
+        "source.js meta.jsx.children punctuation.section.embedded",
+        "source.tsx meta.jsx.children punctuation.section.embedded",
+        "source.jsx meta.jsx.children punctuation.section.embedded",
+        "meta.embedded.block.javascript meta.jsx.children punctuation.section.embedded",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // a hack for the previous rule "meta.jsx.children punctuation.section.embedded":
+    {
+      "scope": [
+        "source.ts meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+        "source.js meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+        "source.tsx meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+        "source.jsx meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+        "meta.embedded.block.javascript meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
     //
     // Documentation:
     {
@@ -3061,13 +3090,35 @@
     // ====================================================
     // Shell:
     //
+    // variable names:
+    {
+      "scope": [
+        "source.shell variable.other",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // variable positional:
+    {
+      "scope": [
+        "source.shell variable.parameter.positional",
+        "source.shell punctuation.definition.variable variable.parameter.positional", // "$" in shell variable names
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+        "fontStyle": "underline"
+      }
+    },
+    //
     // variable names during call:
     {
       "scope": [
         "source.shell punctuation.definition.variable", // "$" in shell variable names
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3075,6 +3126,7 @@
     {
       "scope": [
         "source.shell variable.other.bracket punctuation.definition.variable",
+        "source.shell punctuation.definition.evaluation.arithmetic",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -3176,11 +3228,10 @@
     // function name in definition:
     {
       "scope": [
-        "source.css entity.name.function",
+        "source.css meta.at-rule.mixin entity.name.function",
         "source.css meta.at-rule.function support.function"
       ],
       "settings": {
-        // "foreground": "#C344AB"
         "foreground": "#0000CC"
       }
     },
@@ -3198,6 +3249,7 @@
     // function name in function call:
     {
       "scope": [
+        "source.css entity.name.function",
         "source.css support.function", // function call in CSS
       ],
       "settings": {
@@ -3210,12 +3262,12 @@
       "scope": [
         "source.css support.type.property-name", // property names in CSS
         "source.css support.type.vendored.property-name", // property names in CSS
+        "source.css meta.property-name", // property names in CSS
         "meta.embedded.block.css support.type.property-name", // for CSS embedded in Markdown
-        "meta.embedded.block.css support.type.vendored.property-name" // for CSS embedded in Markdown
+        "meta.embedded.block.css support.type.vendored.property-name", // for CSS embedded in Markdown
+        "meta.embedded.block.css meta.property-name", // for CSS embedded in Markdown
       ],
       "settings": {
-        // "foreground": "#0000CC"
-        // "foreground": "#C344AB"
         "foreground": "#E8810C"
       }
     },
@@ -3365,8 +3417,7 @@
         "meta.embedded.block.scss keyword.control.content punctuation.definition.keyword",
       ],
       "settings": {
-        // "foreground": "#A31515",
-        "foreground": "#0BC5E3",
+        "foreground": "#A31515",
         "fontStyle": "underline"
       }
     },
@@ -3502,7 +3553,7 @@
       }
     },
     //
-    // # interpolation:
+    // "#" interpolation:
     {
       "scope": [
         "source.css punctuation.definition.interpolation.begin.bracket.curly",
@@ -3513,7 +3564,7 @@
       }
     },
     //
-    // @:
+    // "@", at character:
     {
       "scope": [
         "source.css punctuation.definition.keyword", // @each, @include in SCSS
@@ -3855,9 +3906,8 @@
         "text.html.markdown markup.heading heading punctuation.definition.heading",
       ],
       "settings": {
-        // "foreground": "#0000CC",
         "foreground": "#C344AB",
-        // "fontStyle": "bold"
+        "fontStyle": "bold"
       }
     },
     {
@@ -3891,6 +3941,9 @@
       }
     },
     //
+    //
+    //
+    // Punctuation:
     {
       "scope": [
         "text.html.markdown punctuation.definition.quote.begin",
@@ -3899,6 +3952,15 @@
       ],
       "settings": {
         "foreground": "#0000CC"
+      }
+    },
+    //
+    {
+      "scope": [
+        "text.html.markdown punctuation.definition.bold",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3975,7 +4037,7 @@
         "text.html.markdown markup.fenced_code.block fenced_code.block.language", // ``` "bat", "powershell", "js"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3986,7 +4048,17 @@
         "text.html.markdown markup.fenced_code.block meta.embedded.block"
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // weird text block:
+    {
+      "scope": [
+        "text.html.markdown markup.raw.block",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //

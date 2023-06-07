@@ -42,6 +42,46 @@ Please raise an issue if you found a bug, want a better language support or more
 
 
 
+### React TypeScript
+
+<img src="/screenshots/react typescript.png" title="react typescript code screenshot" />
+
+### C#
+
+<img src="/screenshots/cs.png" title="c sharp code screenshot" />
+
+### JavaScript
+
+<img src="/screenshots/js.png" title="javascript code screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### CSS
+
+<img src="/screenshots/css.png" title="css code screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### SCSS
+
+<img src="/screenshots/scss.png" title="scss code screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### HTML
+
+<img src="/screenshots/html.png" title="html code screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### Markdown
+
+<img src="/screenshots/markdown.png" title="markdown code screenshot">
+  Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
+</img>
+
+
+
 ## Required syntax extensions
 
 <table>
@@ -142,56 +182,6 @@ Please raise an issue if you found a bug, want a better language support or more
     </tr>
   </tbody>
 </table>
-
-
-
-### UI
-
-<img src="/screenshots/ui2.png" title="user interface example screenshot">
-  Source: <a href="https://github.com/dima-iholkin/SwitchApps">SwitchApps</a>
-</img>
-
-### JS
-
-<img src="/screenshots/js.png" title="javascript code example screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### JS imports
-
-<img src="/screenshots/js_import.png" title="javascript import code example screenshot" />
-
-### React TSX
-
-<img src="/screenshots/tsx.png" title="react typescript tsx code example screenshot" />
-
-### CSS
-
-<img src="/screenshots/css.png" title="css code example screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### SCSS
-
-<img src="/screenshots/scss.png" title="scss code example screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### HTML
-
-<img src="/screenshots/html.png" title="html code example screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### JSON
-
-<img src="/screenshots/json.png" title="json code example screenshot" />
-
-### Markdown
-
-<img src="/screenshots/markdown.png" title="markdown code example screenshot">
-  Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
-</img>
 
 
 

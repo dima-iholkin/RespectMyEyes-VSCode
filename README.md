@@ -15,34 +15,57 @@
 <br />
 
 
-Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YAML, AutoHotKey, C#, SQL, Java developers.
+
+Hi! This theme is focused on supporting:
+* React
+* TypeScript / JavaScript
+* HTML / XML
+* CSS
+* C# / Razor Pages
+
+The following languages are supported too:
+* SCSS
+* JSON
+* YAML
+* Markdown
+* AutoHotKey
+* Java
+* Dockerfile
+* SQL
+* LESS
+* PowerShell
+* Shell
+
+Please raise an issue if you found a bug, want a better language support or more languages supported.
 
 <img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
-## Strongly supported languages
+
+
+## Required syntax extensions
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required syntax highlight extention</th>
+      <th align="center">Required syntax extentions</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">JavaScript, TypeScript</td>
+      <td align="center">React</td>
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">React JSX, TSX</td>
+      <td align="center">TypeScript / JavaScript</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">HTML / XML</td>
       <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">CSS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">SCSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -52,7 +75,13 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
       </td>
     </tr>
     <tr>
-      <td align="center">HTML, XML</td>
+      <td align="center">C# / Razor Pages</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp">C#</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">SCSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -63,10 +92,14 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
       <td align="center">YAML</td>
       <td align="center"> - </td>
     </tr>
+        <tr>
+      <td align="center">Markdown</td>
+      <td align="center"> - </td>
+    </tr>
     <tr>
-      <td align="center">C#, Razor Pages</td>
+      <td align="center">AutoHotKey</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp">C#</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
       </td>
     </tr>
     <tr>
@@ -76,7 +109,25 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
       </td>
     </tr>
     <tr>
+      <td align="center">Dockerfile</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
       <td align="center">SQL</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">LESS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">PowerShell</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Shell</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -89,24 +140,10 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
       <td align="center">.ignore</td>
       <td align="center"> - </td>
     </tr>
-    <tr>
-      <td align="center">Dockerfile</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">Markdown</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">AutoHotKey</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
-      </td>
-    </tr>
   </tbody>
 </table>
 
-I'm open to adding support for other popular languages.
+
 
 ### UI
 
@@ -158,31 +195,6 @@ I'm open to adding support for other popular languages.
 
 
 
-## Weakly supported languages
-
-<table>
-  <thead>
-    <tr>
-      <th align="center">Language</th>
-      <th align="center">Required syntax highlight extention</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">LESS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">PowerShell</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
 ## Azure Data Studio compatibility
 
 <details>
@@ -191,7 +203,7 @@ I'm open to adding support for other popular languages.
   <br />
   <br />
 
-  Here are the suggested fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.
+  Below are the fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.
 
   ```jsonc
   // settings.json
@@ -214,7 +226,7 @@ I'm open to adding support for other popular languages.
 ## Terminal color customization
 
 <details>
-  Here are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
+  Below are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
 
   ```jsonc
   // settings.json

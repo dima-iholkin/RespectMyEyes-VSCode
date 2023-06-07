@@ -1,6 +1,6 @@
 {
     "name": "respectmyeyes",
-    "version": "2.2.15-beta.2",
+    "version": "3.0.0-beta.1",
     "displayName": "RespectMyEyes theme",
     "description": "A light theme that respects your eyes.",
     "publisher": "dima-iholkin",
@@ -27,14 +27,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "RespectMyEyes",
+                "label": "RespectMyEyes Light",
                 "uiTheme": "vs",
-                "path": "./themes/RespectMyEyes-color-theme.json"
-            },
-            {
-                "label": "RespectMyEyes-Next",
-                "uiTheme": "vs",
-                "path": "./themes/RespectMyEyes-Next-color-theme.json"
+                "path": "./themes/RespectMyEyes-Light-color-theme.json"
             }
         ]
     },

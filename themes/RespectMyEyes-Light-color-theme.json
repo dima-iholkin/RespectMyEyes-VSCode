@@ -323,36 +323,6 @@
   },
   "tokenColors": [
     // ====================================================
-    // Color guide:
-    //
-    // main blue: #0000CC
-    //
-    // light blue: #0BC5E3
-    //
-    // black: #000000
-    //
-    // new grey: #A9A9A9
-    // old grey: #C0C0C0
-    //
-    // red: #FF0000
-    //
-    // new orange: #E8810C
-    // old orange: #FFA500
-    //
-    // old yellow #1: #B5BA00
-    // old yellow #2: #FFFFB0
-    //
-    // comments: #50A750
-    //
-    // strings: #A31515
-    // light strings: #D18A8A
-    //
-    // new purple: #C344AB
-    // old purple: #F066FF
-    //
-    //
-    //
-    // ====================================================
     // In general (the baseline):
     //
     // the baseline color, for all the code:

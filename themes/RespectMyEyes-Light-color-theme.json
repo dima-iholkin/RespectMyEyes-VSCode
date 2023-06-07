@@ -1,12 +1,12 @@
 {
-  "name": "RespectMyEyes theme",
+  "name": "RespectMyEyes-Next theme",
   "type": "light",
   "semanticHighlighting": false,
   "colors": {
     // ====================================================
     // Base colors:
     //
-    // border color for focused elements: 
+    // border color for focused elements:
     "focusBorder": "#00800080",
     //
     // the search icons and maybe other icons:
@@ -96,7 +96,7 @@
     //
     //
     // ====================================================
-    // Activity Bar: the bar with the badges for Explorer, Git, Debug, Extensions... 
+    // Activity Bar: the bar with the badges for Explorer, Git, Debug, Extensions...
     //
     // The whole Activity Bar background:
     "activityBar.background": "#F3F3F3",
@@ -130,7 +130,7 @@
     "sideBar.background": "#F3F3F3",
     "sideBar.border": "#DDDDDD",
     //
-    // the drop background when moving sub-panes (Sections) 
+    // the drop background when moving sub-panes (Sections)
     // with mouse in the Explorer pane, for example:
     "sideBar.dropBackground": "#0000001A",
     //
@@ -210,8 +210,8 @@
     //
     //
     //
-    // line number:
-    "editorLineNumber.foreground": "#00800080",
+    // line numbers:
+    "editorLineNumber.foreground": "#A9A9A980",
     "editorLineNumber.activeForeground": "#0000CC",
     //
     //
@@ -314,7 +314,7 @@
     // ====================================================
     // Settings UI: it's the GUI for changing the Settings.
     //
-    // the default borders were white and they blend-in with the background: 
+    // the default borders were white and they blend-in with the background:
     "settings.numberInputBorder": "#CECECE",
     "settings.textInputBorder": "#CECECE",
     //
@@ -322,36 +322,6 @@
     //
   },
   "tokenColors": [
-    // ====================================================
-    // Color guide:
-    //
-    // main blue: #0000CC
-    //
-    // light blue: #0BC5E3
-    //
-    // black: #000000
-    //
-    // new grey: #A9A9A9
-    // old grey: #C0C0C0
-    //
-    // red: #FF0000
-    //
-    // new orange: #E8810C
-    // old orange: #FFA500
-    //
-    // old yellow #1: #B5BA00
-    // old yellow #2: #FFFFB0
-    //
-    // comments: #50A750
-    //
-    // strings: #A31515
-    // light strings: #D18A8A
-    //
-    // new purple: #C344AB
-    // old purple: #F066FF
-    //
-    //
-    //
     // ====================================================
     // In general (the baseline):
     //
@@ -394,6 +364,7 @@
     {
       "scope": [
         "constant.numeric.other.preffix", // "0x", "0b"
+        "constant.numeric.other.suffix" // "f"
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -412,7 +383,7 @@
     //
     // Literals in general:
     //
-    // comments: 
+    // comments:
     {
       "scope": [
         "comment",
@@ -619,9 +590,10 @@
       "scope": [
         "variable.other.enummember", // enum member names
         "entity.name.variable.enum-member", // enum member names in C#
+        // "constant.other.enum" // enum member names in Java
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -662,7 +634,7 @@
     //
     //
     // HTML kinda:
-    // 
+    //
     // tags:
     {
       "scope": [
@@ -747,8 +719,6 @@
         "keyword.operator.arithmetic", // +, -, *, /
         "keyword.operator.assignment", // =
         "keyword.operator.comparison", // ===
-        "keyword.operator.null-coalescing", // ?? in C#
-        "keyword.operator.null-conditional", // {property_name}? in C#
       ],
       "settings": {
         "foreground": "#000000",
@@ -789,7 +759,16 @@
       "scope": [
         "storage.type.function.arrow", // "=>" in JS/TS
         "keyword.operator.arrow", // => in C#
-        "string.template punctuation.definition.string.template", // "` `" 
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // template string, "` `":
+    {
+      "scope": [
+        "string.template punctuation.definition.string.template", // "` `"
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -819,7 +798,7 @@
     // logical operators:
     {
       "scope": [
-        "punctuation.definition.template-expression", // "${ }" 
+        "punctuation.definition.template-expression", // "${ }"
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -891,7 +870,7 @@
     {
       "scope": [
         "meta.type.tuple meta.brace.square", // [ ] brackets for array definition
-        "meta.array.literal meta.brace.square" // [ ] 
+        "meta.array.literal meta.brace.square" // [ ]
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -988,14 +967,12 @@
     },
     //
     //
-    // 
-    // Normal code (non-import - see above) in TypeScript:
+    //
+    // Normal code, not import, in TypeScript:
     //
     // Names:
     //
-    //
-    //
-    // types:
+    // Types:
     //
     // type/function name:
     {
@@ -1011,8 +988,7 @@
       }
     },
     //
-    // module name:
-    // "React".Component
+    // module name, "React".Component:
     {
       "scope": [
         "source.ts entity.name.type.module",
@@ -1042,7 +1018,7 @@
     //
     //
     //
-    // functions:
+    // Functions:
     //
     // function name in the declaration:
     {
@@ -1235,7 +1211,7 @@
         "meta.embedded.block.javascript meta.definition.property variable.object.property",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1249,7 +1225,36 @@
         "meta.embedded.block.javascript meta.definition entity.name.function",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // key name in an object:
+    {
+      "scope": [
+        "source.ts meta.object-literal.key",
+        "source.js meta.object-literal.key",
+        "source.tsx meta.object-literal.key",
+        "source.jsx meta.object-literal.key",
+        "meta.embedded.block.javascript meta.object-literal.key",
+      ],
+      "settings": {
+        // "foreground": "#0000CC"
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // key name in an object, if it's a function:
+    {
+      "scope": [
+        "source.ts meta.object-literal.key entity.name.function",
+        "source.js meta.object-literal.key entity.name.function",
+        "source.tsx meta.object-literal.key entity.name.function",
+        "source.jsx meta.object-literal.key entity.name.function",
+        "meta.embedded.block.javascript meta.object-literal.key entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1501,7 +1506,7 @@
       }
     },
     //
-    // 1. "constructor" in a class, 
+    // 1. "constructor" in a class,
     // 2. sometimes it can also select "let, const, var" - this needs to be fixed below this rule.
     {
       "scope": [
@@ -1512,7 +1517,7 @@
         "meta.embedded.block.javascript meta.method.declaration storage.type", // constructor
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1612,7 +1617,7 @@
         "meta.embedded.block.javascript variable.language.this", // "this"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1789,7 +1794,8 @@
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        // "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2065,7 +2071,8 @@
         "meta.embedded.block.javascript punctuation.accessor" // . dot
       ],
       "settings": {
-        "foreground": "#000000"
+        // "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2084,7 +2091,8 @@
         "meta.embedded.block.javascript meta.return.type punctuation.accessor", // . dot in a type annotation
       ],
       "settings": {
-        "foreground": "#E8810C"
+        // "foreground": "#E8810C"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2098,7 +2106,8 @@
         "meta.embedded.block.javascript meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
       ],
       "settings": {
-        "foreground": "#000000"
+        // "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2165,6 +2174,66 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    // "{ }" embedded children in JSX/TSX:
+    {
+      "scope": [
+        "source.ts meta.jsx.children punctuation.section.embedded",
+        "source.js meta.jsx.children punctuation.section.embedded",
+        "source.tsx meta.jsx.children punctuation.section.embedded",
+        "source.jsx meta.jsx.children punctuation.section.embedded",
+        "meta.embedded.block.javascript meta.jsx.children punctuation.section.embedded",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // a hack for the previous rule "meta.jsx.children punctuation.section.embedded":
+    {
+      "scope": [
+        "source.ts meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+        "source.js meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+        "source.tsx meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+        "source.jsx meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+        "meta.embedded.block.javascript meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // Documentation:
+    {
+      "scope": [
+        "source.ts comment.block.documentation storage.type",
+        "source.js comment.block.documentation storage.type",
+        "source.tsx comment.block.documentation storage.type",
+        "source.jsx comment.block.documentation storage.type",
+        "meta.embedded.block.javascript comment.block.documentation storage.type",
+        "source.ts comment.block.documentation punctuation.definition.block",
+        "source.js comment.block.documentation punctuation.definition.block",
+        "source.tsx comment.block.documentation punctuation.definition.block",
+        "source.jsx comment.block.documentation punctuation.definition.block",
+        "meta.embedded.block.javascript comment.block.documentation punctuation.definition.block",
+        "source.ts comment.block.documentation punctuation",
+        "source.js comment.block.documentation punctuation",
+        "source.tsx comment.block.documentation punctuation",
+        "source.jsx comment.block.documentation punctuation",
+        "meta.embedded.block.javascript comment.block.documentation punctuation",
+        "source.ts comment.block.documentation entity.name.type",
+        "source.js comment.block.documentation entity.name.type",
+        "source.tsx comment.block.documentation entity.name.type",
+        "source.jsx comment.block.documentation entity.name.type",
+        "meta.embedded.block.javascript comment.block.documentation entity.name.type",
+      ],
+      "settings": {
+        "foreground": "#50A750"
       }
     },
     //
@@ -2410,14 +2479,14 @@
         "source.cs keyword.other.this", // "this"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
     // "using" keyword:
     {
       "scope": [
-        "source.cs keyword.other.using",
+        "keyword.other.using.cs",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2442,7 +2511,7 @@
         "source.cs keyword.other.init",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2497,7 +2566,7 @@
         "keyword.control.goto.cs",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2508,7 +2577,7 @@
         "keyword.control.flow.throw.cs",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2565,35 +2634,27 @@
         "source.cs punctuation.accessor" // "."
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
-    // question mark "?" in type:
+    // nullable type "?":
     {
       "scope": [
-        "source.cs punctuation.separator.question-mark" // "?" in type
-      ],
-      "settings": {
-        "foreground": "#000000"
-      }
-    },
-    //
-    // question mark "?" as elvis operator:
-    {
-      "scope": [
-        "source.cs keyword.operator.null-conditional" // "?" as elvis operator
+        "source.cs punctuation.separator.question-mark" // "?"
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // ternary operator "?", ":":
+    // ternary operator "?", ":" and null-operators "??", "?":
     {
       "scope": [
         "keyword.operator.conditional.question-mark.cs", // "?"
-        "keyword.operator.conditional.colon.cs" // ":"
+        "keyword.operator.conditional.colon.cs", // ":"
+        "keyword.operator.null-coalescing.cs", // "??"
+        "keyword.operator.null-conditional.cs" // {property_name}"?" elvis operator
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2607,7 +2668,7 @@
         "source.cs punctuation.definition.interpolation.end" // "}"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2679,7 +2740,7 @@
         "source.java keyword.module",
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2711,9 +2772,10 @@
     {
       "scope": [
         "source.java meta.method.identifier entity.name.function",
+        "source.java variable.other.definition",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2723,7 +2785,7 @@
         "source.java storage.type.annotation",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2733,14 +2795,14 @@
         "source.java punctuation.definition.annotation",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
     // variable name:
     {
       "scope": [
-        "source.java variable.other.definition",
+        "source.java meta.method.body variable.other.definition",
       ],
       "settings": {
         "foreground": "#000000"
@@ -2763,7 +2825,7 @@
         "source.java variable.language",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2849,7 +2911,7 @@
         "source.java storage.modifier.import punctuation.separator",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2991,13 +3053,35 @@
     // ====================================================
     // Shell:
     //
+    // variable names:
+    {
+      "scope": [
+        "source.shell variable.other",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // variable positional:
+    {
+      "scope": [
+        "source.shell variable.parameter.positional",
+        "source.shell punctuation.definition.variable variable.parameter.positional", // "$" in shell variable names
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+        "fontStyle": "underline"
+      }
+    },
+    //
     // variable names during call:
     {
       "scope": [
         "source.shell punctuation.definition.variable", // "$" in shell variable names
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3005,6 +3089,7 @@
     {
       "scope": [
         "source.shell variable.other.bracket punctuation.definition.variable",
+        "source.shell punctuation.definition.evaluation.arithmetic",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -3041,7 +3126,7 @@
         "meta.embedded.block.css punctuation.definition.entity", // "#, ."
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3051,7 +3136,7 @@
         "source.css meta.property-list entity.name.tag" // I know this breaks "content" property.
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3065,33 +3150,45 @@
       }
     },
     //
-    // variable name in declaration:
+    // variable name:
     {
       "scope": [
         "source.css meta.definition.variable variable",
+        "source.css variable",
+        "source.css meta.property-list variable.other.less", // for LESS
+        "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // variable name as mixin parameters in LESS:
+    {
+      "scope": [
+        "source.css variable.other.less", // for LESS
+        "source.css variable.other.less punctuation.definition.variable.less", // for LESS
       ],
       "settings": {
         "foreground": "#000000"
       }
     },
     //
-    // variable name:
+    // variable name, not sure where:
     {
       "scope": [
-        "source.css variable",
         "source.css meta.property-name.media-query",
-        "source.css variable.other", // for LESS
-        "source.css variable.other punctuation.definition.variable", // for LESS
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#000000",
       }
     },
     //
     // function name in definition:
     {
       "scope": [
-        "source.css entity.name.function"
+        "source.css meta.at-rule.mixin entity.name.function",
+        "source.css meta.at-rule.function support.function"
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -3101,20 +3198,21 @@
     // Mixin name in LESS:
     {
       "scope": [
-        "source.css entity.other.attribute-name.class.mixin"
+        "source.css.less entity.other.attribute-name.class.mixin"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
     // function name in function call:
     {
       "scope": [
+        "source.css entity.name.function",
         "source.css support.function", // function call in CSS
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3123,11 +3221,13 @@
       "scope": [
         "source.css support.type.property-name", // property names in CSS
         "source.css support.type.vendored.property-name", // property names in CSS
+        "source.css meta.property-name", // property names in CSS
         "meta.embedded.block.css support.type.property-name", // for CSS embedded in Markdown
-        "meta.embedded.block.css support.type.vendored.property-name" // for CSS embedded in Markdown
+        "meta.embedded.block.css support.type.vendored.property-name", // for CSS embedded in Markdown
+        "meta.embedded.block.css meta.property-name", // for CSS embedded in Markdown
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -3177,7 +3277,8 @@
         "source.css support.type.property-name.media", // property names in @media queries
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#A9A9A9"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -3203,7 +3304,20 @@
         "source.css.less support.constant.media-type.media" // "screen" keyword in LESS
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#A9A9A9"
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // @import syntax:
+    {
+      "scope": [
+        "source.css meta.at-rule.import string.quoted",
+      ],
+      "settings": {
+        // "foreground": "#C344AB"
+        "foreground": "#A31515",
+        // "fontStyle": ""
       }
     },
     //
@@ -3276,7 +3390,8 @@
         "source.css keyword.control.at-rule.supports punctuation.definition.keyword", // "@supports"
       ],
       "settings": {
-        "foreground": "#A31515",
+        // "foreground": "#A31515",
+        "foreground": "#0BC5E3",
         "fontStyle": "underline"
       }
     },
@@ -3397,7 +3512,7 @@
       }
     },
     //
-    // # interpolation:
+    // "#" interpolation:
     {
       "scope": [
         "source.css punctuation.definition.interpolation.begin.bracket.curly",
@@ -3408,7 +3523,7 @@
       }
     },
     //
-    // @:
+    // "@", at character:
     {
       "scope": [
         "source.css punctuation.definition.keyword", // @each, @include in SCSS
@@ -3440,6 +3555,7 @@
         "source.tsx entity.name.tag support.class", // tag names
         "source.jsx entity.name.tag support.class", // tag names
         "text.html punctuation.definition.tag", // <, >
+        "text.html punctuation.definition.tag source.js-ignored-vscode", // <, > // "source.css-ignored-vscode" - for some weirdness in one JS file.
         "text.html punctuation.definition.tag source.css-ignored-vscode", // <, > // "source.css-ignored-vscode" - for some weird thing I saw once in a php file.
         "text.xml punctuation.definition.tag", // <, >
         "text.aspnetcorerazor punctuation.definition.tag", // <, >
@@ -3742,7 +3858,7 @@
         "text.html.markdown markup.heading heading punctuation.definition.heading",
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#C344AB",
         "fontStyle": "bold"
       }
     },
@@ -3777,6 +3893,9 @@
       }
     },
     //
+    //
+    //
+    // Punctuation:
     {
       "scope": [
         "text.html.markdown punctuation.definition.quote.begin",
@@ -3785,6 +3904,15 @@
       ],
       "settings": {
         "foreground": "#0000CC"
+      }
+    },
+    //
+    {
+      "scope": [
+        "text.html.markdown punctuation.definition.bold",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3861,7 +3989,7 @@
         "text.html.markdown markup.fenced_code.block fenced_code.block.language", // ``` "bat", "powershell", "js"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3872,7 +4000,17 @@
         "text.html.markdown markup.fenced_code.block meta.embedded.block"
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // weird text block:
+    {
+      "scope": [
+        "text.html.markdown markup.raw.block",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //

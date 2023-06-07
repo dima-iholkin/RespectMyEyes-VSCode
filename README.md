@@ -15,34 +15,99 @@
 <br />
 
 
-Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YAML, AutoHotKey, C#, SQL, Java developers.
+
+Hi! This theme is focused on supporting:
+* React
+* TypeScript / JavaScript
+* HTML / XML
+* CSS
+* C# / Razor Pages
+
+The following languages are supported too:
+* SCSS
+* JSON
+* YAML
+* Markdown
+* AutoHotKey
+* Java
+* Dockerfile
+* SQL
+* LESS
+* PowerShell
+* Shell
+
+Please raise an issue if you found a bug, want a better language support or more languages supported.
+
+
+
+### UI
 
 <img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
-## Strongly supported languages
+### React TypeScript
+
+<img src="/screenshots/react typescript.png" title="react typescript code screenshot" />
+
+### C#
+
+<img src="/screenshots/cs.png" title="c sharp code screenshot" />
+
+### JavaScript
+
+<img src="/screenshots/js.png" title="javascript code screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### CSS
+
+<img src="/screenshots/css.png" title="css code screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### SCSS
+
+<img src="/screenshots/scss.png" title="scss code screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### HTML
+
+<img src="/screenshots/html.png" title="html code screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### Markdown
+
+<img src="/screenshots/markdown.png" title="markdown code screenshot">
+  Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
+</img>
+
+
+
+## Required syntax extensions
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required syntax highlight extention</th>
+      <th align="center">Required syntax extentions</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">JavaScript, TypeScript</td>
+      <td align="center">React</td>
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">React JSX, TSX</td>
+      <td align="center">TypeScript / JavaScript</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">HTML / XML</td>
       <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">CSS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">SCSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -52,7 +117,13 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
       </td>
     </tr>
     <tr>
-      <td align="center">HTML, XML</td>
+      <td align="center">C# / Razor Pages</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp">C#</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">SCSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -63,10 +134,14 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
       <td align="center">YAML</td>
       <td align="center"> - </td>
     </tr>
+        <tr>
+      <td align="center">Markdown</td>
+      <td align="center"> - </td>
+    </tr>
     <tr>
-      <td align="center">C#, Razor Pages</td>
+      <td align="center">AutoHotKey</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp">C#</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
       </td>
     </tr>
     <tr>
@@ -76,7 +151,25 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
       </td>
     </tr>
     <tr>
+      <td align="center">Dockerfile</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
       <td align="center">SQL</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">LESS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">PowerShell</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Shell</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -88,95 +181,6 @@ Hi! This is a theme for JavaScript, TypeScript, React, HTML, CSS, SCSS, JSON, YA
     <tr>
       <td align="center">.ignore</td>
       <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">Dockerfile</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">Markdown</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">AutoHotKey</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-I'm open to adding support for other popular languages.
-
-### UI
-
-<img src="/screenshots/ui2.png" title="user interface example screenshot">
-  Source: <a href="https://github.com/dima-iholkin/SwitchApps">SwitchApps</a>
-</img>
-
-### JS
-
-<img src="/screenshots/js.png" title="javascript code example screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### JS imports
-
-<img src="/screenshots/js_import.png" title="javascript import code example screenshot" />
-
-### React TSX
-
-<img src="/screenshots/tsx.png" title="react typescript tsx code example screenshot" />
-
-### CSS
-
-<img src="/screenshots/css.png" title="css code example screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### SCSS
-
-<img src="/screenshots/scss.png" title="scss code example screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### HTML
-
-<img src="/screenshots/html.png" title="html code example screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### JSON
-
-<img src="/screenshots/json.png" title="json code example screenshot" />
-
-### Markdown
-
-<img src="/screenshots/markdown.png" title="markdown code example screenshot">
-  Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
-</img>
-
-
-
-## Weakly supported languages
-
-<table>
-  <thead>
-    <tr>
-      <th align="center">Language</th>
-      <th align="center">Required syntax highlight extention</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">LESS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">PowerShell</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
-      </td>
     </tr>
   </tbody>
 </table>
@@ -191,7 +195,7 @@ I'm open to adding support for other popular languages.
   <br />
   <br />
 
-  Here are the suggested fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.
+  Below are the fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.
 
   ```jsonc
   // settings.json
@@ -214,7 +218,7 @@ I'm open to adding support for other popular languages.
 ## Terminal color customization
 
 <details>
-  Here are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
+  Below are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
 
   ```jsonc
   // settings.json

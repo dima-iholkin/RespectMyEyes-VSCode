@@ -394,6 +394,7 @@
     {
       "scope": [
         "constant.numeric.other.preffix", // "0x", "0b"
+        "constant.numeric.other.suffix" // "f"
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -619,9 +620,10 @@
       "scope": [
         "variable.other.enummember", // enum member names
         "entity.name.variable.enum-member", // enum member names in C#
+        // "constant.other.enum" // enum member names in Java
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -747,8 +749,6 @@
         "keyword.operator.arithmetic", // +, -, *, /
         "keyword.operator.assignment", // =
         "keyword.operator.comparison", // ===
-        "keyword.operator.null-coalescing", // ?? in C#
-        "keyword.operator.null-conditional", // {property_name}? in C#
       ],
       "settings": {
         "foreground": "#000000",
@@ -1647,7 +1647,7 @@
         "meta.embedded.block.javascript variable.language.this", // "this"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2509,14 +2509,14 @@
         "source.cs keyword.other.this", // "this"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
     // "using" keyword:
     {
       "scope": [
-        "source.cs keyword.other.using",
+        "keyword.other.using.cs",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2541,7 +2541,7 @@
         "source.cs keyword.other.init",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2596,7 +2596,7 @@
         "keyword.control.goto.cs",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2607,7 +2607,7 @@
         "keyword.control.flow.throw.cs",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2664,35 +2664,27 @@
         "source.cs punctuation.accessor" // "."
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
-    // question mark "?" in type:
+    // nullable type "?":
     {
       "scope": [
-        "source.cs punctuation.separator.question-mark" // "?" in type
-      ],
-      "settings": {
-        "foreground": "#000000"
-      }
-    },
-    //
-    // question mark "?" as elvis operator:
-    {
-      "scope": [
-        "source.cs keyword.operator.null-conditional" // "?" as elvis operator
+        "source.cs punctuation.separator.question-mark" // "?"
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // ternary operator "?", ":":
+    // ternary operator "?", ":" and null-operators "??", "?":
     {
       "scope": [
         "keyword.operator.conditional.question-mark.cs", // "?"
-        "keyword.operator.conditional.colon.cs" // ":"
+        "keyword.operator.conditional.colon.cs", // ":"
+        "keyword.operator.null-coalescing.cs", // "??"
+        "keyword.operator.null-conditional.cs" // {property_name}"?" elvis operator
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2706,7 +2698,7 @@
         "source.cs punctuation.definition.interpolation.end" // "}"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2778,7 +2770,7 @@
         "source.java keyword.module",
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2810,9 +2802,10 @@
     {
       "scope": [
         "source.java meta.method.identifier entity.name.function",
+        "source.java variable.other.definition",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2822,7 +2815,7 @@
         "source.java storage.type.annotation",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2832,14 +2825,14 @@
         "source.java punctuation.definition.annotation",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
     // variable name:
     {
       "scope": [
-        "source.java variable.other.definition",
+        "source.java meta.method.body variable.other.definition",
       ],
       "settings": {
         "foreground": "#000000"
@@ -2862,7 +2855,7 @@
         "source.java variable.language",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2948,7 +2941,7 @@
         "source.java storage.modifier.import punctuation.separator",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3163,7 +3156,6 @@
         "meta.embedded.block.css punctuation.definition.entity", // "#, ."
       ],
       "settings": {
-        // "foreground": "#E8810C"
         "foreground": "#0000CC"
       }
     },
@@ -3174,7 +3166,6 @@
         "source.css meta.property-list entity.name.tag" // I know this breaks "content" property.
       ],
       "settings": {
-        // "foreground": "#E8810C"
         "foreground": "#0000CC"
       }
     },
@@ -3198,8 +3189,6 @@
         "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
       ],
       "settings": {
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
         "foreground": "#C344AB"
       }
     },
@@ -3606,8 +3595,7 @@
         "source.jsx punctuation.definition.tag", // <, >
       ],
       "settings": {
-        // "foreground": "#0000CC"
-        "foreground": "#C344AB"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3625,7 +3613,6 @@
       ],
       "settings": {
         "foreground": "#E8810C"
-        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -3654,11 +3641,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
-        // "foreground": "#0000CC",
-        // "foreground": "#E8810C"
-        // "foreground": "#000000",
-        // "foreground": "#A31515",
-        // "fontStyle": "bold"
       }
     },
     //

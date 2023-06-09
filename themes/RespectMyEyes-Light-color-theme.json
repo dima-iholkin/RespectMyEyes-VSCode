@@ -2648,11 +2648,20 @@
       }
     },
     //
-    // ternary operator "?", ":" and null-operators "??", "?":
+    // ternary operator "?", ":":
     {
       "scope": [
         "keyword.operator.conditional.question-mark.cs", // "?"
         "keyword.operator.conditional.colon.cs", // ":"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // null-operators "??", "?":
+    {
+      "scope": [
         "keyword.operator.null-coalescing.cs", // "??"
         "keyword.operator.null-conditional.cs" // {property_name}"?" elvis operator
       ],

@@ -1239,7 +1239,6 @@
         "meta.embedded.block.javascript meta.object-literal.key",
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#C344AB"
       }
     },

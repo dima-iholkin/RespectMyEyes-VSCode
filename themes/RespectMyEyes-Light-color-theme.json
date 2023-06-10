@@ -1258,6 +1258,21 @@
       }
     },
     //
+    // Configuration in JS file, like in JSON,
+    // object keys when instantiating an object:
+    {
+      "scope": [
+        "source.ts meta.object-literal.key string.quoted",
+        "source.js meta.object-literal.key string.quoted",
+        "source.tsx meta.object-literal.key string.quoted",
+        "source.jsx meta.object-literal.key string.quoted",
+        "meta.embedded.block.javascript meta.object-literal.key string.quoted",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
     // function name in declaration after "var, let, const":
     {
       "scope": [
@@ -2270,23 +2285,6 @@
       ],
       "settings": {
         "foreground": "#F066FF"
-      }
-    },
-    //
-    //
-    //
-    // ====================================================
-    // Configuration in JS file, like in JSON:
-    //
-    //
-    // object keys when instantiating an object:
-    {
-      "scope": [
-        "source.js meta.object-literal.key string.quoted",
-        "source.ts meta.object-literal.key string.quoted"
-      ],
-      "settings": {
-        "foreground": "#0000CC"
       }
     },
     //

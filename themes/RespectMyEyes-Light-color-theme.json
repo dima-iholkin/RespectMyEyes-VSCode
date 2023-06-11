@@ -3293,7 +3293,7 @@
         "meta.embedded.block.css meta.at-rule.extend entity.other.attribute-name.class",
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#A9A9A9",
         "fontStyle": "underline"
       }
     },
@@ -3446,7 +3446,6 @@
         "source.css support.type.property-name.media", // property names in @media queries
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#E8810C"
       }
     },
@@ -3473,7 +3472,6 @@
         "source.css.less support.constant.media-type.media" // "screen" keyword in LESS
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#E8810C"
       }
     },
@@ -3485,6 +3483,7 @@
       ],
       "settings": {
         "foreground": "#A9A9A9",
+        "fontStyle": "underline"
       }
     },
     //
@@ -3564,8 +3563,7 @@
         "source.css keyword.control.at-rule.supports punctuation.definition.keyword", // "@supports"
       ],
       "settings": {
-        "foreground": "#0BC5E3",
-        "fontStyle": "underline"
+        "foreground": "#A9A9A9",
       }
     },
     //

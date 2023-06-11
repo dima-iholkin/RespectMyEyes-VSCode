@@ -3284,6 +3284,20 @@
       }
     },
     //
+    // type names in @include:
+    {
+      "scope": [
+        "source.css meta.at-rule.include entity.name.function",
+        "meta.embedded.block.css meta.at-rule.include entity.name.function",
+        "source.css meta.at-rule.extend entity.other.attribute-name.class",
+        "meta.embedded.block.css meta.at-rule.extend entity.other.attribute-name.class",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        "fontStyle": "underline"
+      }
+    },
+    //
     // tag names also:
     {
       "scope": [
@@ -3345,7 +3359,8 @@
         "source.css meta.at-rule.function support.function"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //
@@ -3469,9 +3484,7 @@
         "source.css meta.at-rule.import string.quoted",
       ],
       "settings": {
-        // "foreground": "#C344AB"
-        "foreground": "#A31515",
-        // "fontStyle": ""
+        "foreground": "#A9A9A9",
       }
     },
     //
@@ -3504,47 +3517,53 @@
         "source.css keyword.control.at-rule.mixin punctuation.definition.keyword",
         "meta.embedded.block.css keyword.control.at-rule.mixin punctuation.definition.keyword",
         "meta.embedded.block.scss keyword.control.at-rule.mixin punctuation.definition.keyword",
-        "source.css keyword.control.at-rule.media",
-        "meta.embedded.block.css keyword.control.at-rule.media",
-        "meta.embedded.block.scss keyword.control.at-rule.media",
-        "source.css keyword.control.at-rule.media punctuation.definition.keyword",
-        "meta.embedded.block.css keyword.control.at-rule.media punctuation.definition.keyword",
-        "meta.embedded.block.scss keyword.control.at-rule.media punctuation.definition.keyword",
+      ],
+      "settings": {
+        "foreground": "#A31515",
+      }
+    },
+    //
+    // "@import":
+    {
+      "scope": [
         "source.css keyword.control.at-rule.import",
         "meta.embedded.block.css keyword.control.at-rule.import",
         "meta.embedded.block.scss keyword.control.at-rule.import",
         "source.css keyword.control.at-rule.import punctuation.definition.keyword",
         "meta.embedded.block.css keyword.control.at-rule.import punctuation.definition.keyword",
         "meta.embedded.block.scss keyword.control.at-rule.import punctuation.definition.keyword",
-        "source.css keyword.control.at-rule.include",
-        "meta.embedded.block.css keyword.control.at-rule.include",
-        "meta.embedded.block.scss keyword.control.at-rule.include",
-        "source.css keyword.control.at-rule.include punctuation.definition.keyword",
-        "meta.embedded.block.css keyword.control.at-rule.include punctuation.definition.keyword",
-        "meta.embedded.block.scss keyword.control.at-rule.include punctuation.definition.keyword",
-        "source.css keyword.control.content",
-        "meta.embedded.block.css keyword.control.content",
-        "meta.embedded.block.scss keyword.control.content",
-        "source.css keyword.control.content punctuation.definition.keyword",
-        "meta.embedded.block.css keyword.control.content punctuation.definition.keyword",
-        "meta.embedded.block.scss keyword.control.content punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#A31515",
-        "fontStyle": "underline"
+        "foreground": "#A9A9A9",
       }
     },
     //
-    // "@extend", "@supports":
+    // "@media":
     {
       "scope": [
+        "source.css keyword.control.at-rule.media",
+        "meta.embedded.block.css keyword.control.at-rule.media",
+        "meta.embedded.block.scss keyword.control.at-rule.media",
+        "source.css keyword.control.at-rule.media punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.media punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.media punctuation.definition.keyword",
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "@include", "@extend", "@supports":
+    {
+      "scope": [
+        "source.css keyword.control.at-rule.include", // "@include"
+        "source.css keyword.control.at-rule.include punctuation.definition.keyword", // "@include"
         "source.css keyword.control.at-rule.extend", // "@extend"
         "source.css keyword.control.at-rule.extend punctuation.definition.keyword", // "@extend"
         "source.css keyword.control.at-rule.supports", // "@supports"
         "source.css keyword.control.at-rule.supports punctuation.definition.keyword", // "@supports"
       ],
       "settings": {
-        // "foreground": "#A31515",
         "foreground": "#0BC5E3",
         "fontStyle": "underline"
       }
@@ -3567,7 +3586,7 @@
         "source.css keyword.control.logical.operator", // "and" in LESS
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#A9A9A9"
       }
     },
     //

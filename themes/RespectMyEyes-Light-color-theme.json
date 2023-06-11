@@ -761,17 +761,19 @@
         "keyword.operator.arrow", // => in C#
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //
     // template string, "` `":
     {
       "scope": [
-        "string.template punctuation.definition.string.template", // "` `"
+        "string.template punctuation.definition.string.template", // "` `" in TypeScript. // This for sure works in TypeScript.
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //
@@ -984,7 +986,8 @@
         "meta.embedded.block.javascript entity.name.type", // class, interface names when creating a class, class instance
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //
@@ -1030,7 +1033,8 @@
         "meta.embedded.block.javascript meta.definition.function entity.name.function", // function name in the declaration
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //
@@ -1574,19 +1578,28 @@
       }
     },
     //
-    // the most usual keywords at the line start:
+    // "export" keyword:
     {
       "scope": [
-        "source.ts keyword.control.export", // export
-        "source.js keyword.control.export", // export
-        "source.tsx keyword.control.export", // export
-        "source.jsx keyword.control.export", // export
-        "meta.embedded.block.javascript keyword.control.export", // export
-        "source.ts keyword.control.default", // default
-        "source.js keyword.control.default", // default
-        "source.tsx keyword.control.default", // default
-        "source.jsx keyword.control.default", // default
-        "meta.embedded.block.javascript keyword.control.default", // default
+        "source.ts keyword.control.export",
+        "source.js keyword.control.export",
+        "source.tsx keyword.control.export",
+        "source.jsx keyword.control.export",
+        "meta.embedded.block.javascript keyword.control.export",
+      ],
+      "settings": {
+        "foreground": "#A31515",
+      }
+    },
+    //
+    // "default" keyword:
+    {
+      "scope": [
+        "source.ts keyword.control.default",
+        "source.js keyword.control.default",
+        "source.tsx keyword.control.default",
+        "source.jsx keyword.control.default",
+        "meta.embedded.block.javascript keyword.control.default",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -1771,7 +1784,8 @@
         "meta.embedded.block.javascript meta.arrow meta.parameters punctuation.definition.parameters",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //

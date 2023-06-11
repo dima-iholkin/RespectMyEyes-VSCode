@@ -976,14 +976,33 @@
     //
     // Types:
     //
-    // type/function name:
+    // type name during declaration:
     {
       "scope": [
-        "source.ts entity.name.type", // class, interface names when creating a class, class instance
-        "source.js entity.name.type", // class, interface names when creating a class, class instance
-        "source.tsx entity.name.type", // class, interface names when creating a class, class instance
-        "source.jsx entity.name.type", // class, interface names when creating a class, class instance
-        "meta.embedded.block.javascript entity.name.type", // class, interface names when creating a class, class instance
+        // class:
+        "source.ts entity.name.type.class", // class name during declaration
+        "source.js entity.name.type.class", // class name during declaration
+        "source.tsx entity.name.type.class", // class name during declaration
+        "source.jsx entity.name.type.class", // class name during declaration
+        "meta.embedded.block.javascript entity.name.type.class", // class name during declaration
+        // interface
+        "source.ts entity.name.type.interface", // interface name during declaration
+        "source.js entity.name.type.interface", // interface name during declaration
+        "source.tsx entity.name.type.interface", // interface name during declaration
+        "source.jsx entity.name.type.interface", // interface name during declaration
+        "meta.embedded.block.javascript entity.name.type.interface", // interface name during declaration
+        // enum
+        "source.ts entity.name.type.enum", // enum name during declaration
+        "source.js entity.name.type.enum", // enum name during declaration
+        "source.tsx entity.name.type.enum", // enum name during declaration
+        "source.jsx entity.name.type.enum", // enum name during declaration
+        "meta.embedded.block.javascript entity.name.type.enum", // enum name during declaration
+        // alias
+        "source.ts entity.name.type.alias", // alias name during declaration
+        "source.js entity.name.type.alias", // alias name during declaration
+        "source.tsx entity.name.type.alias", // alias name during declaration
+        "source.jsx entity.name.type.alias", // alias name during declaration
+        "meta.embedded.block.javascript entity.name.type.alias", // alias name during declaration
       ],
       "settings": {
         "foreground": "#0000CC",
@@ -991,7 +1010,21 @@
       }
     },
     //
-    // module name, "React".Component:
+    // type name during use:
+    {
+      "scope": [
+        "source.ts entity.name.type",
+        "source.js entity.name.type",
+        "source.tsx entity.name.type",
+        "source.jsx entity.name.type",
+        "meta.embedded.block.javascript entity.name.type",
+      ],
+      "settings": {
+        "foreground": "#E8810C",
+      }
+    },
+    //
+    // module name, "React".Component, "JSX".whatever:
     {
       "scope": [
         "source.ts entity.name.type.module",
@@ -1770,7 +1803,8 @@
         "meta.embedded.block.javascript meta.type.annotation meta.parameters punctuation.definition.parameters",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C",
+        "fontStyle": "bold"
       }
     },
     //

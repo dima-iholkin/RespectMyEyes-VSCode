@@ -3293,8 +3293,7 @@
         "meta.embedded.block.css meta.at-rule.extend entity.other.attribute-name.class",
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        "fontStyle": "underline"
+        "foreground": "#0000CC",
       }
     },
     //
@@ -3356,7 +3355,8 @@
     {
       "scope": [
         "source.css meta.at-rule.mixin entity.name.function",
-        "source.css meta.at-rule.function support.function"
+        "source.css meta.at-rule.function support.function",
+        "source.css meta.at-rule.keyframes entity.name.function",
       ],
       "settings": {
         "foreground": "#0000CC",
@@ -3389,11 +3389,13 @@
     {
       "scope": [
         "source.css support.type.property-name", // property names in CSS
-        "source.css support.type.vendored.property-name", // property names in CSS
-        "source.css meta.property-name", // property names in CSS
         "meta.embedded.block.css support.type.property-name", // for CSS embedded in Markdown
+        "source.css support.type.vendored.property-name", // property names in CSS
         "meta.embedded.block.css support.type.vendored.property-name", // for CSS embedded in Markdown
+        "source.css meta.property-name", // property names in CSS
         "meta.embedded.block.css meta.property-name", // for CSS embedded in Markdown
+        "source.css entity.other.attribute-name", // property names in CSS
+        "meta.embedded.block.css entity.other.attribute-name", // for CSS embedded in Markdown
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -3495,34 +3497,45 @@
     {
       "scope": [
         "source.css keyword.control",
+        "meta.embedded.block.css keyword.control",
+        "meta.embedded.block.scss keyword.control",
       ],
       "settings": {
         "foreground": "#0BC5E3"
       }
     },
     //
-    // "@function", "@mixin", "@media", "@import"
+    // "@function", "@mixin", "@keyframes" keywords:
     {
       "scope": [
+        // "@function":
         "source.css keyword.control.at-rule.function",
         "meta.embedded.block.css keyword.control.at-rule.function",
         "meta.embedded.block.scss keyword.control.at-rule.function",
         "source.css keyword.control.at-rule.function punctuation.definition.keyword",
         "meta.embedded.block.css keyword.control.at-rule.function punctuation.definition.keyword",
         "meta.embedded.block.scss keyword.control.at-rule.function punctuation.definition.keyword",
+        // "@mixin":
         "source.css keyword.control.at-rule.mixin",
         "meta.embedded.block.css keyword.control.at-rule.mixin",
         "meta.embedded.block.scss keyword.control.at-rule.mixin",
         "source.css keyword.control.at-rule.mixin punctuation.definition.keyword",
         "meta.embedded.block.css keyword.control.at-rule.mixin punctuation.definition.keyword",
         "meta.embedded.block.scss keyword.control.at-rule.mixin punctuation.definition.keyword",
+        // "@keyframes":
+        "source.css keyword.control.at-rule.keyframes",
+        "meta.embedded.block.css keyword.control.at-rule.keyframes",
+        "meta.embedded.block.scss keyword.control.at-rule.keyframes",
+        "source.css keyword.control.at-rule.keyframes punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.keyframes punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.keyframes punctuation.definition.keyword",
       ],
       "settings": {
         "foreground": "#A31515",
       }
     },
     //
-    // "@import":
+    // "@import" keyword:
     {
       "scope": [
         "source.css keyword.control.at-rule.import",
@@ -3537,7 +3550,7 @@
       }
     },
     //
-    // "@media":
+    // "@media" keyword:
     {
       "scope": [
         "source.css keyword.control.at-rule.media",
@@ -3552,22 +3565,25 @@
       }
     },
     //
-    // "@include", "@extend", "@supports":
+    // "@include", "@extend", "@supports" keywords:
     {
       "scope": [
-        "source.css keyword.control.at-rule.include", // "@include"
-        "source.css keyword.control.at-rule.include punctuation.definition.keyword", // "@include"
-        "source.css keyword.control.at-rule.extend", // "@extend"
-        "source.css keyword.control.at-rule.extend punctuation.definition.keyword", // "@extend"
-        "source.css keyword.control.at-rule.supports", // "@supports"
-        "source.css keyword.control.at-rule.supports punctuation.definition.keyword", // "@supports"
+        // "@include":
+        "source.css keyword.control.at-rule.include",
+        "source.css keyword.control.at-rule.include punctuation.definition.keyword",
+        // "@extend":
+        "source.css keyword.control.at-rule.extend",
+        "source.css keyword.control.at-rule.extend punctuation.definition.keyword",
+        // "@supports":
+        "source.css keyword.control.at-rule.supports",
+        "source.css keyword.control.at-rule.supports punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#A9A9A9",
+        "foreground": "#A31515",
       }
     },
     //
-    // "from", "through", "in"
+    // "from", "through", "in" keywords:
     {
       "scope": [
         "source.css keyword.control.operator"
@@ -3588,14 +3604,23 @@
       }
     },
     //
-    // !default, !important:
+    // "!important" keyword:
     {
       "scope": [
-        "source.css keyword.other.default", // !default
-        "source.css keyword.other.important", // !important
+        "source.css keyword.other.important",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "!default" keyword:
+    {
+      "scope": [
+        "source.css keyword.other.default",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //

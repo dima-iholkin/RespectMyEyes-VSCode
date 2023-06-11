@@ -1079,7 +1079,6 @@
         "source.tsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
         "source.jsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
         "meta.embedded.block.javascript meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-
       ],
       "settings": {
         "foreground": "#E8810C",
@@ -2329,26 +2328,36 @@
     // Documentation:
     {
       "scope": [
+        // "storage.type"
         "source.ts comment.block.documentation storage.type",
         "source.js comment.block.documentation storage.type",
         "source.tsx comment.block.documentation storage.type",
         "source.jsx comment.block.documentation storage.type",
         "meta.embedded.block.javascript comment.block.documentation storage.type",
-        "source.ts comment.block.documentation punctuation.definition.block",
-        "source.js comment.block.documentation punctuation.definition.block",
-        "source.tsx comment.block.documentation punctuation.definition.block",
-        "source.jsx comment.block.documentation punctuation.definition.block",
-        "meta.embedded.block.javascript comment.block.documentation punctuation.definition.block",
+        // "punctuation"
         "source.ts comment.block.documentation punctuation",
         "source.js comment.block.documentation punctuation",
         "source.tsx comment.block.documentation punctuation",
         "source.jsx comment.block.documentation punctuation",
         "meta.embedded.block.javascript comment.block.documentation punctuation",
+        // "punctuation.definition.block"
+        "source.ts comment.block.documentation punctuation.definition.block",
+        "source.js comment.block.documentation punctuation.definition.block",
+        "source.tsx comment.block.documentation punctuation.definition.block",
+        "source.jsx comment.block.documentation punctuation.definition.block",
+        "meta.embedded.block.javascript comment.block.documentation punctuation.definition.block",
+        // "entity.name.type"
         "source.ts comment.block.documentation entity.name.type",
         "source.js comment.block.documentation entity.name.type",
         "source.tsx comment.block.documentation entity.name.type",
         "source.jsx comment.block.documentation entity.name.type",
         "meta.embedded.block.javascript comment.block.documentation entity.name.type",
+        // "variable"
+        "source.ts comment.block.documentation variable",
+        "source.js comment.block.documentation variable",
+        "source.tsx comment.block.documentation variable",
+        "source.jsx comment.block.documentation variable",
+        "meta.embedded.block.javascript comment.block.documentation variable",
       ],
       "settings": {
         "foreground": "#50A750"

@@ -3889,13 +3889,19 @@
       }
     },
     {
-      "scope": "text.html.markdown markup.inserted",
+      "scope": [
+        "text.html.markdown markup.inserted",
+        "text.html.markdown markup.fenced_code.block punctuation.definition.inserted.diff"
+      ],
       "settings": {
         "foreground": "#00D000"
       }
     },
     {
-      "scope": "text.html.markdown markup.deleted",
+      "scope": [
+        "text.html.markdown markup.deleted",
+        "text.html.markdown markup.fenced_code.block punctuation.definition.deleted.diff"
+      ],
       "settings": {
         "foreground": "#FF0000"
       }
@@ -3906,24 +3912,27 @@
         "foreground": "#0451A5"
       }
     },
-    {
-      "scope": "text.html.markdown markup.inline.raw",
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
     //
     //
     //
     // Punctuation:
     {
       "scope": [
-        "text.html.markdown punctuation.definition.quote.begin",
         "text.html.markdown punctuation.definition.list.begin",
         "text.html.markdown keyword.operator.redirect"
       ],
       "settings": {
         "foreground": "#0000CC"
+      }
+    },
+    // quote ">":
+    {
+      "scope": [
+        "text.html.markdown punctuation.definition.quote.begin", // ">"
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //
@@ -4009,16 +4018,36 @@
         "text.html.markdown markup.fenced_code.block fenced_code.block.language", // ``` "bat", "powershell", "js"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //
-    // code inside a code block:
+    // code block text:
     {
       "scope": [
         "text.html.markdown markup.fenced_code.block",
         "text.html.markdown markup.fenced_code.block meta.embedded.block"
       ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // single backticks code span definition:
+    {
+      "scope": [
+        "text.html.markdown punctuation.definition.raw", // "` `"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // single backticks code span text:
+    {
+      "scope": "text.html.markdown markup.inline.raw",
       "settings": {
         "foreground": "#A9A9A9"
       }

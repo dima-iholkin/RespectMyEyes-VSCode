@@ -265,6 +265,9 @@
     "editor.findMatchHighlightBackground": "#FEFE3360",
     "editor.findMatchHighlightBorder": "#E8810C",
     //
+    // Highlights the opening and closing HTML, XML tags for editing:
+    "editor.linkedEditingBackground": "#C344AB20",
+    //
     //
     //
     // ====================================================

@@ -791,6 +791,7 @@
     {
       "scope": [
         "meta.type.annotation storage.type.function.arrow", // "=>"
+        "meta.type.declaration storage.type.function.arrow", // "=>"
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -950,7 +951,7 @@
         "meta.embedded.block.javascript meta.import keyword.control.as", // "as"
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1848,18 +1849,52 @@
       }
     },
     //
-    // ( ) round braces in a type annotation of arrow function:
+    // "( )" round braces in a type annotation of arrow function:
     {
       "scope": [
+        // general case:
         "source.ts meta.type.annotation meta.parameters punctuation.definition.parameters",
         "source.js meta.type.annotation meta.parameters punctuation.definition.parameters",
         "source.tsx meta.type.annotation meta.parameters punctuation.definition.parameters",
         "source.jsx meta.type.annotation meta.parameters punctuation.definition.parameters",
         "meta.embedded.block.javascript meta.type.annotation meta.parameters punctuation.definition.parameters",
+        //
+        "source.ts meta.type.declaration meta.parameters punctuation.definition.parameters",
+        "source.js meta.type.declaration meta.parameters punctuation.definition.parameters",
+        "source.tsx meta.type.declaration meta.parameters punctuation.definition.parameters",
+        "source.jsx meta.type.declaration meta.parameters punctuation.definition.parameters",
+        "meta.embedded.block.javascript meta.type.declaration meta.parameters punctuation.definition.parameters",
+        // fix for a nested case:
+        "source.ts meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
+        "source.js meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
+        "source.tsx meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
+        "source.jsx meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
+        "meta.embedded.block.javascript meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
       ],
       "settings": {
         "foreground": "#E8810C",
         "fontStyle": "bold"
+      }
+    },
+    //
+    // fix for the prev rule:
+    {
+      "scope": [
+        // general case:
+        "source.ts meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.js meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.tsx meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.jsx meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "meta.embedded.block.javascript meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
+        //
+        "source.ts meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.js meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.tsx meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.jsx meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "meta.embedded.block.javascript meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //

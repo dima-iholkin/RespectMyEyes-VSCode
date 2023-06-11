@@ -864,7 +864,7 @@
         "meta.brace.square", // [ ]
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1024,14 +1024,62 @@
       }
     },
     //
-    // module name, "React".Component, "JSX".whatever:
+    // namespace name during declaration, namespace "JSX":
     {
       "scope": [
+        // top-level namespace declaration:
+        "source.ts meta.namespace.declaration entity.name.type.module",
+        "source.js meta.namespace.declaration entity.name.type.module",
+        "source.tsx meta.namespace.declaration entity.name.type.module",
+        "source.jsx meta.namespace.declaration entity.name.type.module",
+        "meta.embedded.block.javascript meta.namespace.declaration entity.name.type.module",
+        // nested inside one-level deep namespace declaration:
+        "source.ts meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        "source.js meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        "source.tsx meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        "source.jsx meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        "meta.embedded.block.javascript meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        // nested inside two-levels deep namespace declaration:
+        "source.ts meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        "source.js meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        "source.tsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        "source.jsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        "meta.embedded.block.javascript meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // module name during use, "React".Component, "JSX".whatever:
+    {
+      "scope": [
+        // normal case:
         "source.ts entity.name.type.module",
         "source.js entity.name.type.module",
         "source.tsx entity.name.type.module",
         "source.jsx entity.name.type.module",
         "meta.embedded.block.javascript entity.name.type.module",
+        // nested inside top-level namespace declaration:
+        "source.ts meta.namespace.declaration meta.block entity.name.type.module",
+        "source.js meta.namespace.declaration meta.block entity.name.type.module",
+        "source.tsx meta.namespace.declaration meta.block entity.name.type.module",
+        "source.jsx meta.namespace.declaration meta.block entity.name.type.module",
+        "meta.embedded.block.javascript meta.namespace.declaration meta.block entity.name.type.module",
+        // nested inside one-level deep namespace declaration:
+        "source.ts meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+        "source.js meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+        "source.tsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+        "source.jsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+        "meta.embedded.block.javascript meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+        // nested inside two-levels deep namespace declaration:
+        "source.ts meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+        "source.js meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+        "source.tsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+        "source.jsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+        "meta.embedded.block.javascript meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
+
       ],
       "settings": {
         "foreground": "#E8810C",

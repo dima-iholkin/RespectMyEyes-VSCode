@@ -891,7 +891,7 @@
     //
     //
     //
-    // Import syntax in TypeScript, JavaScript:
+    // Import syntax in TypeScript / JavaScript:
     //
     // Variable names in the import syntax:
     {
@@ -967,6 +967,39 @@
         "source.tsx meta.import string",
         "source.jsx meta.import string",
         "meta.embedded.block.javascript meta.import string",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    //
+    //
+    // Export syntax in TypeScript / JavaScript:
+    //
+    // "as" keyword in the export syntax:
+    {
+      "scope": [
+        "source.ts meta.export keyword.control.as",
+        "source.js meta.export keyword.control.as",
+        "source.tsx meta.export keyword.control.as",
+        "source.jsx meta.export keyword.control.as",
+        "meta.embedded.block.javascript meta.export keyword.control.as",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // type keyword in the export syntax:
+    {
+      "scope": [
+        // "keyword.control.type":
+        "source.ts meta.export keyword.control.type",
+        "source.js meta.export keyword.control.type",
+        "source.tsx meta.export keyword.control.type",
+        "source.jsx meta.export keyword.control.type",
+        "meta.embedded.block.javascript meta.export keyword.control.type",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -1568,11 +1601,12 @@
     // type keywords:
     {
       "scope": [
-        "source.ts storage.type", // const, function, inteface, class
-        "source.js storage.type", // const, function, inteface, class
-        "source.tsx storage.type", // const, function, inteface, class
-        "source.jsx storage.type", // const, function, inteface, class
-        "meta.embedded.block.javascript storage.type", // const, function, inteface, class
+        // "storage.type":
+        "source.ts storage.type", // const, function, inteface, class, type
+        "source.js storage.type", // const, function, inteface, class, type
+        "source.tsx storage.type", // const, function, inteface, class, type
+        "source.jsx storage.type", // const, function, inteface, class, type
+        "meta.embedded.block.javascript storage.type", // const, function, inteface, class, type
       ],
       "settings": {
         "foreground": "#A31515"

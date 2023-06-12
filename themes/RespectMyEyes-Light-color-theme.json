@@ -808,7 +808,8 @@
         "punctuation.definition.template-expression", // "${ }"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //
@@ -974,6 +975,21 @@
       }
     },
     //
+    // "type" keyword in the import syntax:
+    {
+      "scope": [
+        // "keyword.control.type":
+        "source.ts meta.import keyword.control.type",
+        "source.js meta.import keyword.control.type",
+        "source.tsx meta.import keyword.control.type",
+        "source.jsx meta.import keyword.control.type",
+        "meta.embedded.block.javascript meta.import keyword.control.type",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
     //
     //
     // Export syntax in TypeScript / JavaScript:
@@ -992,7 +1008,7 @@
       }
     },
     //
-    // type keyword in the export syntax:
+    // "type" keyword in the export syntax:
     {
       "scope": [
         // "keyword.control.type":
@@ -1442,6 +1458,20 @@
         "source.tsx meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
         "source.jsx meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
         "meta.embedded.block.javascript meta.array-binding-pattern-variable meta.definition variable.other.readwrite", // variable name after "var, let, const"
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // property name inside syntax like: "const { prop: { subProp } }"
+    {
+      "scope": [
+        "source.ts meta.object-binding-pattern-variable variable.object.property",
+        "source.js meta.object-binding-pattern-variable variable.object.property",
+        "source.tsx meta.object-binding-pattern-variable variable.object.property",
+        "source.jsx meta.object-binding-pattern-variable variable.object.property",
+        "meta.embedded.block.javascript meta.object-binding-pattern-variable variable.object.property",
       ],
       "settings": {
         "foreground": "#000000"
@@ -2379,7 +2409,8 @@
         "meta.embedded.block.javascript meta.jsx.children punctuation.section.embedded",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //
@@ -3716,6 +3747,16 @@
       }
     },
     //
+    // gradient keywords, like "to":
+    {
+      "scope": [
+        "source.css keyword.operator.gradient",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
     //
     //
     // Punctuation:
@@ -3779,18 +3820,18 @@
       }
     },
     //
-    // + - / * =:
+    // "+", "-", "/", "*", "=" operators:
     {
       "scope": [
         "source.css keyword.operator",
-        "source.css punctuation.separator.operator", // = in LESS
+        "source.css punctuation.separator.operator", // "=" in LESS
       ],
       "settings": {
         "foreground": "#000000"
       }
     },
     //
-    // comparison:
+    // comparison operators:
     {
       "scope": [
         "source.css keyword.operator.comparison",

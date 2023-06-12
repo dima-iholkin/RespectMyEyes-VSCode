@@ -808,8 +808,7 @@
         "punctuation.definition.template-expression", // "${ }"
       ],
       "settings": {
-        "foreground": "#0000CC",
-        "fontStyle": "bold"
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -1820,19 +1819,33 @@
       }
     },
     //
-    // "typeof", "instanceof" keywords:
+    // "typeof", "instanceof", "keyof", "in" keywords:
     {
       "scope": [
-        "source.ts keyword.operator.expression.typeof", // "typeof"
-        "source.js keyword.operator.expression.typeof", // "typeof"
-        "source.tsx keyword.operator.expression.typeof", // "typeof"
-        "source.jsx keyword.operator.expression.typeof", // "typeof"
-        "meta.embedded.block.javascript keyword.operator.expression.typeof", // "typeof"
-        "source.ts keyword.operator.expression.instanceof", // "instanceof"
-        "source.js keyword.operator.expression.instanceof", // "instanceof"
-        "source.tsx keyword.operator.expression.instanceof", // "instanceof"
-        "source.jsx keyword.operator.expression.instanceof", // "instanceof"
-        "meta.embedded.block.javascript keyword.operator.expression.instanceof", // "instanceof"
+        // "typeof":
+        "source.ts keyword.operator.expression.typeof",
+        "source.js keyword.operator.expression.typeof",
+        "source.tsx keyword.operator.expression.typeof",
+        "source.jsx keyword.operator.expression.typeof",
+        "meta.embedded.block.javascript keyword.operator.expression.typeof",
+        // "instanceof":
+        "source.ts keyword.operator.expression.instanceof",
+        "source.js keyword.operator.expression.instanceof",
+        "source.tsx keyword.operator.expression.instanceof",
+        "source.jsx keyword.operator.expression.instanceof",
+        "meta.embedded.block.javascript keyword.operator.expression.instanceof",
+        // "keyof":
+        "source.ts keyword.operator.expression.keyof",
+        "source.js keyword.operator.expression.keyof",
+        "source.tsx keyword.operator.expression.keyof",
+        "source.jsx keyword.operator.expression.keyof",
+        "meta.embedded.block.javascript keyword.operator.expression.keyof",
+        // "in":
+        "source.ts keyword.operator.expression.in",
+        "source.js keyword.operator.expression.in",
+        "source.tsx keyword.operator.expression.in",
+        "source.jsx keyword.operator.expression.in",
+        "meta.embedded.block.javascript keyword.operator.expression.in",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2410,7 +2423,6 @@
       ],
       "settings": {
         "foreground": "#0000CC",
-        "fontStyle": "bold"
       }
     },
     //

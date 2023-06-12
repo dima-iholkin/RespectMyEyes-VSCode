@@ -812,30 +812,31 @@
       }
     },
     //
-    // . dot as property accessor:
+    // "." property accessor:
     {
       "scope": [
-        "punctuation.accessor", // . dot
+        "punctuation.accessor",
       ],
       "settings": {
         "foreground": "#000000",
       }
     },
     //
-    // ? questionmark - for optional property or parameter: // (may be specific to TS, JS)
+    // "?" optional or "!" definite assignment: // (may be specific to TS / JS)
     {
       "scope": [
-        "keyword.operator.optional" // ? questionmark
+        "keyword.operator.optional", // "?"
+        "keyword.operator.definiteassignment" // "!"
       ],
       "settings": {
         "foreground": "#000000",
       }
     },
     //
-    // < > angle brackets for generic type parameters:
+    // "< >" angle brackets for generic type parameters:
     {
       "scope": [
-        "punctuation.definition.typeparameters", // < >
+        "punctuation.definition.typeparameters",
       ],
       "settings": {
         "foreground": "#A9A9A9"

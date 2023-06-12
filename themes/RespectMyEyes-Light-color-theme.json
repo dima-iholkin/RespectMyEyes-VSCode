@@ -2366,36 +2366,74 @@
     // Documentation:
     {
       "scope": [
-        // "storage.type"
+        // "comment.block.documentation ...":
+        // "... storage.type":
         "source.ts comment.block.documentation storage.type",
         "source.js comment.block.documentation storage.type",
         "source.tsx comment.block.documentation storage.type",
         "source.jsx comment.block.documentation storage.type",
         "meta.embedded.block.javascript comment.block.documentation storage.type",
-        // "punctuation"
+        // "... punctuation":
         "source.ts comment.block.documentation punctuation",
         "source.js comment.block.documentation punctuation",
         "source.tsx comment.block.documentation punctuation",
         "source.jsx comment.block.documentation punctuation",
         "meta.embedded.block.javascript comment.block.documentation punctuation",
-        // "punctuation.definition.block"
+        // "... punctuation.definition.block":
         "source.ts comment.block.documentation punctuation.definition.block",
         "source.js comment.block.documentation punctuation.definition.block",
         "source.tsx comment.block.documentation punctuation.definition.block",
         "source.jsx comment.block.documentation punctuation.definition.block",
         "meta.embedded.block.javascript comment.block.documentation punctuation.definition.block",
-        // "entity.name.type"
+        // "... entity.name.type":
         "source.ts comment.block.documentation entity.name.type",
         "source.js comment.block.documentation entity.name.type",
         "source.tsx comment.block.documentation entity.name.type",
         "source.jsx comment.block.documentation entity.name.type",
         "meta.embedded.block.javascript comment.block.documentation entity.name.type",
-        // "variable"
+        // "... variable":
         "source.ts comment.block.documentation variable",
         "source.js comment.block.documentation variable",
         "source.tsx comment.block.documentation variable",
         "source.jsx comment.block.documentation variable",
         "meta.embedded.block.javascript comment.block.documentation variable",
+        // "comment.line ...":
+        // "... entity.name.tag":
+        "source.ts comment.line entity.name.tag",
+        "source.js comment.line entity.name.tag",
+        "source.tsx comment.line entity.name.tag",
+        "source.jsx comment.line entity.name.tag",
+        "meta.embedded.block.javascript comment.line entity.name.tag",
+        // "... punctuation.definition.tag":
+        "source.ts comment.line punctuation.definition.tag",
+        "source.js comment.line punctuation.definition.tag",
+        "source.tsx comment.line punctuation.definition.tag",
+        "source.jsx comment.line punctuation.definition.tag",
+        "meta.embedded.block.javascript comment.line punctuation.definition.tag",
+        // "... entity.other.attribute-name":
+        "source.ts comment.line entity.other.attribute-name",
+        "source.js comment.line entity.other.attribute-name",
+        "source.tsx comment.line entity.other.attribute-name",
+        "source.jsx comment.line entity.other.attribute-name",
+        "meta.embedded.block.javascript comment.line entity.other.attribute-name",
+        // "... string":
+        "source.ts comment.line string",
+        "source.js comment.line string",
+        "source.tsx comment.line string",
+        "source.jsx comment.line string",
+        "meta.embedded.block.javascript comment.line string",
+        // "... punctuation.definition.string":
+        "source.ts comment.line punctuation.definition.string",
+        "source.js comment.line punctuation.definition.string",
+        "source.tsx comment.line punctuation.definition.string",
+        "source.jsx comment.line punctuation.definition.string",
+        "meta.embedded.block.javascript comment.line punctuation.definition.string",
+        // "... keyword.operator.assignment":
+        "source.ts comment.line keyword.operator.assignment",
+        "source.js comment.line keyword.operator.assignment",
+        "source.tsx comment.line keyword.operator.assignment",
+        "source.jsx comment.line keyword.operator.assignment",
+        "meta.embedded.block.javascript comment.line keyword.operator.assignment",
       ],
       "settings": {
         "foreground": "#50A750"
@@ -3496,7 +3534,7 @@
     //
     // Keywords in CSS:
     //
-    //
+    // general keywords, include the main ones like "@if", "@else", "@return", "@content":
     {
       "scope": [
         "source.css keyword.control",
@@ -3505,6 +3543,21 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // general at-rule keywords, excluding the main ones, so it's about the likes of "@tailwind":
+    {
+      "scope": [
+        "source.css keyword.control.at-rule",
+        "meta.embedded.block.css keyword.control.at-rule",
+        "meta.embedded.block.scss keyword.control.at-rule",
+        "source.css keyword.control.at-rule punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule punctuation.definition.keyword",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3582,7 +3635,7 @@
         "source.css keyword.control.at-rule.supports punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#A31515",
+        "foreground": "#C344AB",
       }
     },
     //
@@ -3807,6 +3860,10 @@
         "source.js meta.jsx.children",
         "source.tsx meta.jsx.children",
         "source.jsx meta.jsx.children",
+        "source.ts meta.jsx.children punctuation",
+        "source.js meta.jsx.children punctuation",
+        "source.tsx meta.jsx.children punctuation",
+        "source.jsx meta.jsx.children punctuation",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -4146,7 +4203,9 @@
     {
       "scope": [
         "text.html.markdown markup.underline.link", // [](https://example.com/)
+        "text.html.markdown heading markup.underline.link", // [](https://example.com/) // Fix for the link URL in a heading.
         "text.html.markdown constant.other.reference.link", // [][homepage]
+        "text.html.markdown heading constant.other.reference.link", // [][homepage] // Fix for the link URL in a heading.
       ],
       "settings": {
         "foreground": "#D18A8A"
@@ -4318,7 +4377,7 @@
       }
     },
     //
-    // property name:
+    // property names:
     {
       "scope": [
         "source.ini keyword.other.definition",
@@ -4328,13 +4387,23 @@
       }
     },
     //
-    // "="
+    // "=" separator:
     {
       "scope": [
         "source.ini punctuation.separator.key-value",
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // section titles:
+    {
+      "scope": [
+        "source.ini entity.name.section.group-title",
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     //

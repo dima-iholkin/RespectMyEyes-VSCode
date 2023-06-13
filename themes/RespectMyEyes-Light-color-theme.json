@@ -3148,7 +3148,18 @@
       }
     },
     //
-    // type name:
+    // type name in declaration:
+    {
+      "scope": [
+        "source.java entity.name.type",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // type name during call:
     {
       "scope": [
         "source.java storage.type",
@@ -3176,7 +3187,7 @@
         "source.java storage.type.annotation",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3186,7 +3197,7 @@
         "source.java punctuation.definition.annotation",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3269,7 +3280,8 @@
         "source.java keyword.control.ternary",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //
@@ -3279,7 +3291,8 @@
         "source.java meta.method-call punctuation.bracket.round",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0BC5E3",
+        // "fontStyle": "bold"
       }
     },
     // The side-effect is that brackets in the "new" calls with generics are painted light-blue too,

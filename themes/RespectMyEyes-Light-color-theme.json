@@ -4165,7 +4165,7 @@
         "source.yaml punctuation.definition.block.sequence.item", // -
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#0000CC"
       }
     },
     //

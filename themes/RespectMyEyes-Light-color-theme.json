@@ -1257,6 +1257,12 @@
         "source.tsx meta.function-call keyword.operator.expression.import", // "import" as function call
         "source.jsx meta.function-call keyword.operator.expression.import", // "import" as function call
         "meta.embedded.block.javascript meta.function-call keyword.operator.expression.import", // "import" as function call
+        // Fix for the TypeScript code embedded in the styled-components syntax:
+        "source.ts source.css meta.embedded.line entity.name.function",
+        "source.js source.css meta.embedded.line entity.name.function",
+        "source.tsx source.css meta.embedded.line entity.name.function",
+        "source.jsx source.css meta.embedded.line entity.name.function",
+        "meta.embedded.block.javascript source.css meta.embedded.line entity.name.function",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -1334,7 +1340,7 @@
     //
     //
     //
-    // variable/property name in use:
+    // Variable and property names in use:
     {
       "scope": [
         "source.ts meta.embedded.expression variable.other.readwrite",
@@ -1362,6 +1368,13 @@
         "source.tsx variable.other.property",
         "source.jsx variable.other.property",
         "meta.embedded.block.javascript variable.other.property",
+        // "source.css variable":
+        // Fix for the variables and properties in styled-components syntax.
+        "source.ts source.css variable",
+        "source.js source.css variable",
+        "source.tsx source.css variable",
+        "source.jsx source.css variable",
+        "meta.embedded.block.javascript source.css variable",
       ],
       "settings": {
         "foreground": "#000000",
@@ -1792,14 +1805,14 @@
       }
     },
     //
-    // async:
+    // "async" keyword:
     {
       "scope": [
-        "source.ts storage.modifier.async", // async
-        "source.js storage.modifier.async", // async
-        "source.tsx storage.modifier.async", // async
-        "source.jsx storage.modifier.async", // async
-        "meta.embedded.block.javascript storage.modifier.async" // async
+        "source.ts storage.modifier.async",
+        "source.js storage.modifier.async",
+        "source.tsx storage.modifier.async",
+        "source.jsx storage.modifier.async",
+        "meta.embedded.block.javascript storage.modifier.async"
       ],
       "settings": {
         "foreground": "#A31515"
@@ -1823,25 +1836,25 @@
     // "this" keyword:
     {
       "scope": [
-        "source.ts variable.language.this", // "this"
-        "source.js variable.language.this", // "this"
-        "source.tsx variable.language.this", // "this"
-        "source.jsx variable.language.this", // "this"
-        "meta.embedded.block.javascript variable.language.this", // "this"
+        "source.ts variable.language.this",
+        "source.js variable.language.this",
+        "source.tsx variable.language.this",
+        "source.jsx variable.language.this",
+        "meta.embedded.block.javascript variable.language.this",
       ],
       "settings": {
         "foreground": "#C344AB"
       }
     },
     //
-    // super:
+    // "super" keyword:
     {
       "scope": [
-        "source.ts variable.language.super", // super
-        "source.js variable.language.super", // super
-        "source.tsx variable.language.super", // super
-        "source.jsx variable.language.super", // super
-        "meta.embedded.block.javascript variable.language.super", // super
+        "source.ts variable.language.super",
+        "source.js variable.language.super",
+        "source.tsx variable.language.super",
+        "source.jsx variable.language.super",
+        "meta.embedded.block.javascript variable.language.super",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -1903,11 +1916,11 @@
     // "new" keyword:
     {
       "scope": [
-        "source.ts keyword.operator.new", // "new"
-        "source.js keyword.operator.new", // "new"
-        "source.tsx keyword.operator.new", // "new"
-        "source.jsx keyword.operator.new", // "new"
-        "meta.embedded.block.javascript keyword.operator.new", // "new"
+        "source.ts keyword.operator.new",
+        "source.js keyword.operator.new",
+        "source.tsx keyword.operator.new",
+        "source.jsx keyword.operator.new",
+        "meta.embedded.block.javascript keyword.operator.new",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2324,37 +2337,37 @@
     //
     //
     //
-    // . dot:
+    // "." accessor:
     {
       "scope": [
-        "source.ts punctuation.accessor", // . dot
-        "source.js punctuation.accessor", // . dot
-        "source.tsx punctuation.accessor", // . dot
-        "source.jsx punctuation.accessor", // . dot
-        "meta.embedded.block.javascript punctuation.accessor" // . dot
+        "source.ts punctuation.accessor",
+        "source.js punctuation.accessor",
+        "source.tsx punctuation.accessor",
+        "source.jsx punctuation.accessor",
+        "meta.embedded.block.javascript punctuation.accessor"
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#A9A9A9"
       }
     },
     //
-    // . dot in a type annotation:
+    // "." accessor in type annotation:
     {
       "scope": [
-        "source.ts meta.type.annotation punctuation.accessor", // . dot in a type annotation
-        "source.js meta.type.annotation punctuation.accessor", // . dot in a type annotation
-        "source.tsx meta.type.annotation punctuation.accessor", // . dot in a type annotation
-        "source.jsx meta.type.annotation punctuation.accessor", // . dot in a type annotation
-        "meta.embedded.block.javascript meta.type.annotation punctuation.accessor", // . dot in a type annotation
-        "source.ts meta.return.type punctuation.accessor", // . dot in a type annotation
-        "source.js meta.return.type punctuation.accessor", // . dot in a type annotation
-        "source.tsx meta.return.type punctuation.accessor", // . dot in a type annotation
-        "source.jsx meta.return.type punctuation.accessor", // . dot in a type annotation
-        "meta.embedded.block.javascript meta.return.type punctuation.accessor", // . dot in a type annotation
+        // "meta.type.annotation":
+        "source.ts meta.type.annotation punctuation.accessor",
+        "source.js meta.type.annotation punctuation.accessor",
+        "source.tsx meta.type.annotation punctuation.accessor",
+        "source.jsx meta.type.annotation punctuation.accessor",
+        "meta.embedded.block.javascript meta.type.annotation punctuation.accessor",
+        // "meta.return.type":
+        "source.ts meta.return.type punctuation.accessor",
+        "source.js meta.return.type punctuation.accessor",
+        "source.tsx meta.return.type punctuation.accessor",
+        "source.jsx meta.return.type punctuation.accessor",
+        "meta.embedded.block.javascript meta.return.type punctuation.accessor",
       ],
       "settings": {
-        // "foreground": "#E8810C"
         "foreground": "#A9A9A9"
       }
     },
@@ -2369,31 +2382,30 @@
         "meta.embedded.block.javascript meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
       ],
       "settings": {
-        // "foreground": "#000000"
         "foreground": "#A9A9A9"
       }
     },
     //
-    // [ ] square braces:
+    // "[ ]" square braces:
     {
       "scope": [
-        "source.ts meta.array.literal meta.brace.square", // [ ]
-        "source.js meta.array.literal meta.brace.square", // [ ]
-        "source.tsx meta.array.literal meta.brace.square", // [ ]
-        "source.jsx meta.array.literal meta.brace.square", // [ ]
-        "meta.embedded.block.javascript meta.array.literal meta.brace.square", // [ ]
-        "source.ts punctuation.definition.binding-pattern.array", // [ ]
-        "source.js punctuation.definition.binding-pattern.array", // [ ]
-        "source.tsx punctuation.definition.binding-pattern.array", // [ ]
-        "source.jsx punctuation.definition.binding-pattern.array", // [ ]
-        "meta.embedded.block.javascript punctuation.definition.binding-pattern.array", // [ ]
+        "source.ts meta.array.literal meta.brace.square",
+        "source.js meta.array.literal meta.brace.square",
+        "source.tsx meta.array.literal meta.brace.square",
+        "source.jsx meta.array.literal meta.brace.square",
+        "meta.embedded.block.javascript meta.array.literal meta.brace.square",
+        "source.ts punctuation.definition.binding-pattern.array",
+        "source.js punctuation.definition.binding-pattern.array",
+        "source.tsx punctuation.definition.binding-pattern.array",
+        "source.jsx punctuation.definition.binding-pattern.array",
+        "meta.embedded.block.javascript punctuation.definition.binding-pattern.array",
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // ` ` backticks in template string:
+    // "` `" backticks in template string:
     {
       "scope": [
         "source.ts punctuation.definition.string.template string.template", // ` `
@@ -2403,7 +2415,8 @@
         "meta.embedded.block.javascript punctuation.definition.string.template string.template", // ` `
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //
@@ -2440,8 +2453,7 @@
       }
     },
     //
-    //
-    // "{ }" embedded children in JSX/TSX:
+    // "{ }" embedded children in TSX:
     {
       "scope": [
         "source.ts meta.jsx.children punctuation.section.embedded",
@@ -2545,6 +2557,25 @@
       ],
       "settings": {
         "foreground": "#50A750"
+      }
+    },
+    //
+    //
+    //
+    // Misc in TypeScript:
+    //
+    // For the syntax like:
+    // const Button = styled.button<{ $primary?: boolean; }>`
+    {
+      "scope": [
+        "source.ts meta.objectliteral",
+        "source.js meta.objectliteral",
+        "source.tsx meta.objectliteral",
+        "source.jsx meta.objectliteral",
+        "meta.embedded.block.javascript meta.objectliteral",
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     //

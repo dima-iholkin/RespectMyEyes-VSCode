@@ -2076,12 +2076,11 @@
         "meta.embedded.block.javascript meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block meta.arrow meta.block punctuation.definition.block"
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#A9A9A9"
       }
     },
     //
-    // For arrow function. Fix the prev rule's function's { } braces for the inner blocks.
+    // For arrow function. Fix the prev rule's function's "{ }" braces for the inner blocks.
     {
       "scope": [
         // 1 wrap:
@@ -2109,7 +2108,7 @@
       }
     },
     //
-    // For arrow function. Fix the prev rule's function's { } braces for the inner blocks.
+    // For arrow function. Fix the prev rule's function's "{ }" braces for the inner blocks.
     {
       "scope": [
         // 1 wrap:
@@ -2137,7 +2136,7 @@
       }
     },
     //
-    // For arrow function. Fix the prev rule's function's { } braces for the inner object.
+    // For arrow function. Fix the prev rule's function's "{ }" braces for the inner object.
     {
       "scope": [
         // 1 wrap:
@@ -2165,7 +2164,7 @@
       }
     },
     //
-    // For arrow function. Fix the prev rule's function's { } braces for the inner type annotation.
+    // For arrow function. Fix the prev rule's function's "{ }" braces for the inner type annotation.
     {
       "scope": [
         // 1 wrap:
@@ -2225,7 +2224,7 @@
         "meta.embedded.block.javascript meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block meta.function.expression meta.block punctuation.definition.block"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -2633,6 +2632,7 @@
       "scope": [
         "source.cs entity.name.type.namespace",
         "text.aspnetcorerazor entity.name.type.namespace",
+        "text.aspnetcorerazor meta.directive", // "." accessors in namespace names in Razor Pages.
       ],
       "settings": {
         "foreground": "#000000"
@@ -2985,7 +2985,7 @@
         "source.cs punctuation.separator.question-mark" // "?"
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#000000"
       }
     },
     //
@@ -3055,7 +3055,7 @@
     //
     // Razor Pages:
     //
-    // directives like "@using", "@page", "@model":
+    // Directives like "@using", "@page", "@model":
     {
       "scope": [
         "text.aspnetcorerazor meta.directive keyword.other.using", // "using"
@@ -3067,10 +3067,43 @@
       }
     },
     //
-    // "@" in transitions to C# code:
+    // "@" in transitions to a C# code:
     {
       "scope": [
         "text.aspnetcorerazor meta.expression.implicit keyword.control.cshtml.transition", // "@"
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // All C# code after "@" implicit transition:
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.expression.implicit source.cs",
+        "text.aspnetcorerazor meta.expression.implicit source.cs variable",
+        "text.aspnetcorerazor meta.expression.implicit source.cs entity.name.function.cs",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // Text like "&copy;":
+    {
+      "scope": [
+        "text.aspnetcorerazor constant.character.entity.named.copy punctuation",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "{ }" curly braces in if syntax:
+    // @if (result.Success) { }
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.structure.razor.csharp.codeblock punctuation.curlybrace",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -4068,10 +4101,10 @@
       }
     },
     //
-    // : in Razor Pages:
+    // ":" in Razor Pages:
     {
       "scope": [
-        "text.aspnetcorerazor punctuation.separator.colon", // :
+        "text.aspnetcorerazor punctuation.separator.colon",
       ],
       "settings": {
         "foreground": "#A9A9A9"

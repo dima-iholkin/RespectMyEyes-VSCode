@@ -4178,7 +4178,7 @@
     {
       "scope": [
         "text.html.markdown meta.paragraph",
-        // "text.html.markdown",
+        "text.html.markdown meta.paragraph punctuation.definition.entity", // Fix for "&nbsp;" in a heading.
       ],
       "settings": {
         "foreground": "#000000"
@@ -4201,6 +4201,7 @@
       "scope": [
         "text.html.markdown markup.heading heading",
         "text.html.markdown markup.heading heading punctuation.definition.heading",
+        "text.html.markdown markup.heading heading punctuation.definition.entity", // Fix for "&nbsp;" in a heading.
       ],
       "settings": {
         "foreground": "#C344AB",

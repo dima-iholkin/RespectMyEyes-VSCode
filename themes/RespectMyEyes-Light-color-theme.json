@@ -2820,6 +2820,16 @@
         "keyword.other.using.cs",
       ],
       "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "using" keyword in Razor Pages directives:
+    {
+      "scope": [
+        "meta.directive keyword.other.using.cs",
+      ],
+      "settings": {
         "foreground": "#0BC5E3"
       }
     },

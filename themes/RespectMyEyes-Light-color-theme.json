@@ -3011,14 +3011,14 @@
       }
     },
     //
-    // string interpolation "{}":
+    // "{ }" string interpolation:
     {
       "scope": [
         "source.cs punctuation.definition.interpolation.begin", // "{"
         "source.cs punctuation.definition.interpolation.end" // "}"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //

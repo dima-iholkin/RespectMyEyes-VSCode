@@ -338,7 +338,7 @@
       }
     },
     //
-    // string, regex:
+    // string, regexp:
     {
       "scope": [
         "string",
@@ -347,9 +347,23 @@
         "constant.regexp",
         "string.regexp",
         "string.regexp keyword",
+        "string.regexp keyword.control",
+        "string.regexp keyword.operator",
+        "string.regexp punctuation",
       ],
       "settings": {
         "foreground": "#A31515"
+      }
+    },
+    //
+    // "/ /" regexp begin and end characters:
+    {
+      "scope": [
+        "string.regexp punctuation.definition.string",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //
@@ -940,6 +954,21 @@
         "source.tsx meta.import punctuation.definition.block", // { }
         "source.jsx meta.import punctuation.definition.block", // { }
         "meta.embedded.block.javascript meta.import punctuation.definition.block", // { }
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "require" in the import syntax, for example:
+    // import mongooseUniqueValidator = require("mongoose-unique-validator");
+    {
+      "scope": [
+        "source.ts meta.import-equals.external keyword.control.require",
+        "source.js meta.import-equals.external keyword.control.require",
+        "source.tsx meta.import-equals.external keyword.control.require",
+        "source.jsx meta.import-equals.external keyword.control.require",
+        "meta.embedded.block.javascript meta.import-equals.external keyword.control.require",
       ],
       "settings": {
         "foreground": "#A9A9A9"

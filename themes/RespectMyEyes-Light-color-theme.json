@@ -3588,7 +3588,7 @@
         "source.css variable.other.less punctuation.definition.variable.less", // for LESS
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3621,7 +3621,7 @@
         "source.css.less entity.other.attribute-name.class.mixin"
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3827,7 +3827,7 @@
         "meta.embedded.block.scss keyword.control.at-rule.media punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#C344AB",
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -3845,7 +3845,7 @@
         "source.css keyword.control.at-rule.supports punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#C344AB",
+        "foreground": "#0BC5E3",
       }
     },
     //

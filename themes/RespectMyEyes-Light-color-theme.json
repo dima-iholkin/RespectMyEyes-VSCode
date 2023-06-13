@@ -3992,6 +3992,16 @@
       }
     },
     //
+    // Code not covered by syntax tokens:
+    {
+      "scope": [
+        "source.css",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
     //
     //
     // ====================================================

@@ -1068,19 +1068,19 @@
         "source.tsx entity.name.type.class", // class name during declaration
         "source.jsx entity.name.type.class", // class name during declaration
         "meta.embedded.block.javascript entity.name.type.class", // class name during declaration
-        // interface
+        // interface:
         "source.ts entity.name.type.interface", // interface name during declaration
         "source.js entity.name.type.interface", // interface name during declaration
         "source.tsx entity.name.type.interface", // interface name during declaration
         "source.jsx entity.name.type.interface", // interface name during declaration
         "meta.embedded.block.javascript entity.name.type.interface", // interface name during declaration
-        // enum
+        // enum:
         "source.ts entity.name.type.enum", // enum name during declaration
         "source.js entity.name.type.enum", // enum name during declaration
         "source.tsx entity.name.type.enum", // enum name during declaration
         "source.jsx entity.name.type.enum", // enum name during declaration
         "meta.embedded.block.javascript entity.name.type.enum", // enum name during declaration
-        // alias
+        // alias:
         "source.ts entity.name.type.alias", // alias name during declaration
         "source.js entity.name.type.alias", // alias name during declaration
         "source.tsx entity.name.type.alias", // alias name during declaration
@@ -2653,21 +2653,28 @@
     // type names in definition:
     {
       "scope": [
-        "source.cs entity.name.type.class", // class
-        "text.aspnetcorerazor entity.name.type.class", // class
-        "source.cs entity.name.type.struct", // struct
-        "text.aspnetcorerazor entity.name.type.struct", // struct
-        "source.cs entity.name.type.record", // record
-        "text.aspnetcorerazor entity.name.type.record", // record
-        "source.cs entity.name.type.interface", // interface
-        "text.aspnetcorerazor entity.name.type.interface", // interface
-        "source.cs entity.name.type.enum", // enum
-        "text.aspnetcorerazor entity.name.type.enum", // enum
-        "source.cs entity.name.type.delegate", // delegate
-        "text.aspnetcorerazor entity.name.type.delegate", // delegate
+        // "class":
+        "source.cs entity.name.type.class",
+        "text.aspnetcorerazor entity.name.type.class",
+        // "struct":
+        "source.cs entity.name.type.struct",
+        "text.aspnetcorerazor entity.name.type.struct",
+        // "record":
+        "source.cs entity.name.type.record",
+        "text.aspnetcorerazor entity.name.type.record",
+        // "interface":
+        "source.cs entity.name.type.interface",
+        "text.aspnetcorerazor entity.name.type.interface",
+        // "enum":
+        "source.cs entity.name.type.enum",
+        "text.aspnetcorerazor entity.name.type.enum",
+        // "delegate":
+        "source.cs entity.name.type.delegate",
+        "text.aspnetcorerazor entity.name.type.delegate",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //

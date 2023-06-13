@@ -1263,6 +1263,12 @@
         "source.tsx source.css meta.embedded.line entity.name.function",
         "source.jsx source.css meta.embedded.line entity.name.function",
         "meta.embedded.block.javascript source.css meta.embedded.line entity.name.function",
+        // Fix for the TypeScript template literal call like in the styled-components syntax:
+        "source.ts entity.name.function.tagged-template variable.other.property",
+        "source.js entity.name.function.tagged-template variable.other.property",
+        "source.tsx entity.name.function.tagged-template variable.other.property",
+        "source.jsx entity.name.function.tagged-template variable.other.property",
+        "meta.embedded.block.javascript entity.name.function.tagged-template variable.other.property",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -1370,11 +1376,11 @@
         "meta.embedded.block.javascript variable.other.property",
         // "source.css variable":
         // Fix for the variables and properties in styled-components syntax.
-        "source.ts source.css variable",
-        "source.js source.css variable",
-        "source.tsx source.css variable",
-        "source.jsx source.css variable",
-        "meta.embedded.block.javascript source.css variable",
+        "source.ts source.css variable.other.object",
+        "source.js source.css variable.other.object",
+        "source.tsx source.css variable.other.object",
+        "source.jsx source.css variable.other.object",
+        "meta.embedded.block.javascript source.css variable.other.object",
       ],
       "settings": {
         "foreground": "#000000",
@@ -3502,6 +3508,7 @@
       "scope": [
         "source.css meta.definition.variable variable",
         "source.css variable",
+        "source.css variable.argument",
         "source.css meta.property-list variable.other.less", // for LESS
         "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
       ],

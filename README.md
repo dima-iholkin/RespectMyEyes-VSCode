@@ -88,13 +88,13 @@ Please raise an issue if you have found a bug, want a better language support or
 
 
 
-## Required syntax token extensions
+## Required syntax highlighting extensions
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required syntax token extention</th>
+      <th align="center">Required syntax highlighting extention</th>
     </tr>
   </thead>
   <tbody>
@@ -111,7 +111,7 @@ Please raise an issue if you have found a bug, want a better language support or
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">CSS</td>
+      <td align="center">CSS / SCSS / LESS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -127,46 +127,16 @@ Please raise an issue if you have found a bug, want a better language support or
       </td>
     </tr>
     <tr>
-      <td align="center">SCSS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">JSON</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">YAML</td>
-      <td align="center"> - </td>
-    </tr>
-        <tr>
       <td align="center">Markdown</td>
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">AutoHotKey</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
-      </td>
-    </tr>
-    <tr>
       <td align="center">Java</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack">Java</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java(TM) by Red Hat</a>
       </td>
     </tr>
-    <tr>
-      <td align="center">Dockerfile</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">SQL</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">LESS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
+        <tr>
       <td align="center">PowerShell</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
@@ -177,18 +147,32 @@ Please raise an issue if you have found a bug, want a better language support or
       <td align="center"> - </td>
     </tr>
     <tr>
+      <td align="center">AutoHotKey</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">T-SQL</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">JSON</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">YAML</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Dockerfile</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
       <td align="center">.env</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotEnv</a>
       </td>
-    </tr>
-    <tr>
-      <td align="center">.ignore</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">.ini</td>
-      <td align="center"> - </td>
     </tr>
   </tbody>
 </table>

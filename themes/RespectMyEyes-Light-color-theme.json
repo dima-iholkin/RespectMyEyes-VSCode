@@ -4174,7 +4174,6 @@
         "source.sql constant.other.database-name",
       ],
       "settings": {
-        // "foreground": "#A31515"
         "foreground": "#000000"
       }
     },
@@ -4185,7 +4184,6 @@
         "source.sql constant.other.table-name",
       ],
       "settings": {
-        // "foreground": "#A31515"
         "foreground": "#000000"
       }
     },
@@ -4217,7 +4215,17 @@
         "source.sql keyword.operator.star",
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#000000"
+      }
+    },
+    //
+    // variable name:
+    {
+      "scope": [
+        "source.sql text.variable",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //

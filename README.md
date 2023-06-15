@@ -22,21 +22,21 @@ Hi! This theme is focused on supporting:
 * HTML / XML
 * CSS
 * C# / Razor Pages
-
-The following languages are supported too:
-* SCSS
 * JSON
 * YAML
 * Markdown
-* AutoHotKey
+
+Additional support for:
+* SCSS
+* LESS
 * Java
 * Dockerfile
+* AutoHotKey
 * SQL
-* LESS
 * PowerShell
 * Shell
 
-Please raise an issue if you found a bug, want a better language support or more languages supported.
+Please raise an issue if you have found a bug, want a better language support or more languages supported.
 
 
 
@@ -182,6 +182,10 @@ Please raise an issue if you found a bug, want a better language support or more
     </tr>
     <tr>
       <td align="center">.ignore</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">.ini</td>
       <td align="center"> - </td>
     </tr>
   </tbody>

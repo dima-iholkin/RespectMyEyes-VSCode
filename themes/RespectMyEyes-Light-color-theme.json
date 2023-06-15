@@ -363,7 +363,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
-        "fontStyle": "bold"
       }
     },
     //
@@ -3348,7 +3347,8 @@
         "source.powershell entity.name.function",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //
@@ -3394,7 +3394,7 @@
         "source.powershell entity.name",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3415,7 +3415,7 @@
         "source.powershell keyword.operator.logical", // -Not
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3444,9 +3444,31 @@
     {
       "scope": [
         "source.powershell meta.scriptblock constant.language", // "false", "null"
+        "source.powershell meta.scriptblock constant.language punctuation.definition.variable", // "$"
       ],
       "settings": {
         "foreground": "#A31515"
+      }
+    },
+    //
+    // comments:
+    {
+      "scope": [
+        "source.powershell comment.block keyword.operator",
+      ],
+      "settings": {
+        "foreground": "#50A750"
+      }
+    },
+    //
+    // "@" in array definition:
+    {
+      "scope": [
+        "source.powershell keyword.other.array.begin",
+        "source.powershell keyword.other.hashtable.begin",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3473,7 +3495,6 @@
       ],
       "settings": {
         "foreground": "#C344AB",
-        "fontStyle": "underline"
       }
     },
     //
@@ -3483,7 +3504,7 @@
         "source.shell punctuation.definition.variable", // "$" in shell variable names
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3492,9 +3513,42 @@
       "scope": [
         "source.shell variable.other.bracket punctuation.definition.variable",
         "source.shell punctuation.definition.evaluation.arithmetic",
+        "source.shell string.interpolated.dollar punctuation.definition.evaluation.parens", // "$( )"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "` `" backticks:
+    {
+      "scope": [
+        "source.shell punctuation.definition.evaluation.backticks",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // ">>" redirect:
+    {
+      "scope": [
+        "source.shell keyword.operator.redirect",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // command arguments:
+    {
+      "scope": [
+        "source.shell string.unquoted.argument",
+        "source.shell constant.other.option",
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     //
@@ -4174,7 +4228,6 @@
         "source.sql constant.other.database-name",
       ],
       "settings": {
-        // "foreground": "#A31515"
         "foreground": "#000000"
       }
     },
@@ -4185,7 +4238,6 @@
         "source.sql constant.other.table-name",
       ],
       "settings": {
-        // "foreground": "#A31515"
         "foreground": "#000000"
       }
     },
@@ -4217,7 +4269,17 @@
         "source.sql keyword.operator.star",
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#000000"
+      }
+    },
+    //
+    // variable name:
+    {
+      "scope": [
+        "source.sql text.variable",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //

@@ -20,23 +20,19 @@ Hi! This theme is focused on supporting:
 * React TSX / JSX
 * TypeScript / JavaScript
 * HTML / XML
-* CSS
+* CSS / SCSS / LESS
 * C# / Razor Pages
-
-The following languages are supported too:
-* SCSS
-* JSON
-* YAML
 * Markdown
-* AutoHotKey
 * Java
-* Dockerfile
-* SQL
-* LESS
 * PowerShell
 * Shell
+* AutoHotKey
+* T-SQL
+* JSON
+* YAML
+* Dockerfile
 
-Please raise an issue if you found a bug, want a better language support or more languages supported.
+Please raise an issue if you have found a bug, want a better language support or more languages supported.
 
 
 
@@ -84,15 +80,21 @@ Please raise an issue if you found a bug, want a better language support or more
   Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
 </img>
 
+### PowerShell
+
+<img src="/screenshots/powershell.png" title="powershell code screenshot">
+  Source: <a href="https://github.com/last-byte/PersistenceSniper">Persistence Sniper</a>
+</img>
 
 
-## Required syntax token extensions
+
+## Required syntax highlighting extensions
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required syntax token extention</th>
+      <th align="center">Required syntax highlighting extention</th>
     </tr>
   </thead>
   <tbody>
@@ -109,7 +111,7 @@ Please raise an issue if you found a bug, want a better language support or more
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">CSS</td>
+      <td align="center">CSS / SCSS / LESS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -125,46 +127,16 @@ Please raise an issue if you found a bug, want a better language support or more
       </td>
     </tr>
     <tr>
-      <td align="center">SCSS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">JSON</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">YAML</td>
-      <td align="center"> - </td>
-    </tr>
-        <tr>
       <td align="center">Markdown</td>
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">AutoHotKey</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
-      </td>
-    </tr>
-    <tr>
       <td align="center">Java</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack">Java</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java(TM) by Red Hat</a>
       </td>
     </tr>
-    <tr>
-      <td align="center">Dockerfile</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">SQL</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">LESS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
+        <tr>
       <td align="center">PowerShell</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
@@ -175,14 +147,32 @@ Please raise an issue if you found a bug, want a better language support or more
       <td align="center"> - </td>
     </tr>
     <tr>
+      <td align="center">AutoHotKey</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">T-SQL</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">JSON</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">YAML</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Dockerfile</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
       <td align="center">.env</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotEnv</a>
       </td>
-    </tr>
-    <tr>
-      <td align="center">.ignore</td>
-      <td align="center"> - </td>
     </tr>
   </tbody>
 </table>

@@ -20,21 +20,17 @@ Hi! This theme is focused on supporting:
 * React TSX / JSX
 * TypeScript / JavaScript
 * HTML / XML
-* CSS
+* CSS / SCSS / LESS
 * C# / Razor Pages
-* JSON
-* YAML
 * Markdown
-
-Additional support for:
-* SCSS
-* LESS
 * Java
-* Dockerfile
-* AutoHotKey
-* SQL
 * PowerShell
 * Shell
+* AutoHotKey
+* T-SQL
+* JSON
+* YAML
+* Dockerfile
 
 Please raise an issue if you have found a bug, want a better language support or more languages supported.
 
@@ -82,6 +78,12 @@ Please raise an issue if you have found a bug, want a better language support or
 
 <img src="/screenshots/markdown.png" title="markdown code screenshot">
   Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
+</img>
+
+### PowerShell
+
+<img src="/screenshots/powershell.png" title="powershell code screenshot">
+  Source: <a href="https://github.com/last-byte/PersistenceSniper">Persistence Sniper</a>
 </img>
 
 

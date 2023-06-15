@@ -17,7 +17,7 @@
 
 
 Hi! This theme is focused on supporting:
-* React
+* React TSX / JSX
 * TypeScript / JavaScript
 * HTML / XML
 * CSS
@@ -44,17 +44,21 @@ Please raise an issue if you found a bug, want a better language support or more
 
 <img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
 
-### React TypeScript
-
-<img src="/screenshots/react typescript.png" title="react typescript code screenshot" />
-
-### C#
-
-<img src="/screenshots/cs.png" title="c sharp code screenshot" />
-
 ### JavaScript
 
 <img src="/screenshots/js.png" title="javascript code screenshot">
+  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
+</img>
+
+### React TSX
+
+<img src="/screenshots/react typescript.png" title="react typescript code screenshot" >
+  Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app">React TypeScript RealWorld Example App</a>
+</img>
+
+### HTML
+
+<img src="/screenshots/html.png" title="html code screenshot">
   Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
 
@@ -70,11 +74,9 @@ Please raise an issue if you found a bug, want a better language support or more
   Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
 
-### HTML
+### C#
 
-<img src="/screenshots/html.png" title="html code screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
+<img src="/screenshots/cs.png" title="c-sharp code screenshot" />
 
 ### Markdown
 
@@ -84,18 +86,18 @@ Please raise an issue if you found a bug, want a better language support or more
 
 
 
-## Required syntax extensions
+## Required syntax token extensions
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required syntax extentions</th>
+      <th align="center">Required syntax token extention</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">React</td>
+      <td align="center">React TSX / JSX</td>
       <td align="center"> - </td>
     </tr>
     <tr>

@@ -2757,14 +2757,14 @@
       }
     },
     //
-    // key names to object's properties:
+    // method's parameter names, named parameters:
     {
       "scope": [
-        "source.cs entity.name.variable.parameter", // method definition : parameter variable names
-        "text.aspnetcorerazor entity.name.variable.parameter", // method definition : parameter variable names
+        "source.cs entity.name.variable.parameter",
+        "text.aspnetcorerazor entity.name.variable.parameter",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9",
       }
     },
     //
@@ -2889,7 +2889,7 @@
         "source.cs keyword.other.default" // "default"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //

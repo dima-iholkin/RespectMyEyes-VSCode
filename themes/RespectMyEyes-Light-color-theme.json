@@ -232,10 +232,20 @@
     //
     // the indent lines to the left,
     // should be the same color as the the highlighted brackets:
-    "editorIndentGuide.activeBackground": "#00B00060",
+    "editorIndentGuide.activeBackground1": "#00B00060",
+    "editorIndentGuide.activeBackground2": "#00B00060",
+    "editorIndentGuide.activeBackground3": "#00B00060",
+    "editorIndentGuide.activeBackground4": "#00B00060",
+    "editorIndentGuide.activeBackground5": "#00B00060",
+    "editorIndentGuide.activeBackground6": "#00B00060",
     //
     // the indent lines not active at the moment, very light grey:
-    "editorIndentGuide.background": "#C0C0C080",
+    "editorIndentGuide.background1": "#C0C0C080",
+    "editorIndentGuide.background2": "#C0C0C080",
+    "editorIndentGuide.background3": "#C0C0C080",
+    "editorIndentGuide.background4": "#C0C0C080",
+    "editorIndentGuide.background5": "#C0C0C080",
+    "editorIndentGuide.background6": "#C0C0C080",
     //
     // the Bracket Matches in the editor window:
     "editorBracketMatch.background": "#00B00040",

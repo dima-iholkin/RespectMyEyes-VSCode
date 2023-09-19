@@ -234,14 +234,6 @@ Please raise an issue if you have found a bug, want a better language support or
         "terminal.ansiYellow": "#0000CC",
         "terminal.ansiBrightYellow": "#0BC5E3",
         "terminalCursor.foreground": "#00A000",
-        //
-        // hide the inactive indent lines:
-        "editorIndentGuide.background1": "#FFFFFF",
-        "editorIndentGuide.background2": "#FFFFFF",
-        "editorIndentGuide.background3": "#FFFFFF",
-        "editorIndentGuide.background4": "#FFFFFF",
-        "editorIndentGuide.background5": "#FFFFFF",
-        "editorIndentGuide.background6": "#FFFFFF",
       }
     }
   }
@@ -303,6 +295,18 @@ Please raise an issue if you have found a bug, want a better language support or
       ".eslintignore": "ignore",
       ".browserslistrc": "properties",
       ".prettierrc": "json"
+    },
+    "workbench.colorCustomizations": {
+      "[RespectMyEyes Light]": {
+        //
+        // hide the inactive indent lines:
+        "editorIndentGuide.background1": "#FFFFFF",
+        "editorIndentGuide.background2": "#FFFFFF",
+        "editorIndentGuide.background3": "#FFFFFF",
+        "editorIndentGuide.background4": "#FFFFFF",
+        "editorIndentGuide.background5": "#FFFFFF",
+        "editorIndentGuide.background6": "#FFFFFF",
+      }
     }
   }
   ```

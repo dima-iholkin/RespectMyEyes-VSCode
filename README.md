@@ -216,7 +216,7 @@ Please raise an issue if you have found a bug, want a better language support or
   // settings.json
   {
     "workbench.colorCustomizations": {
-      "[RespectMyEyes]": {
+      "[RespectMyEyes Light]": {
         "terminal.ansiBlack": "#000000",
         "terminal.ansiBrightBlack": "#000000",
         "terminal.ansiBlue": "#FFFF40",
@@ -234,6 +234,14 @@ Please raise an issue if you have found a bug, want a better language support or
         "terminal.ansiYellow": "#0000CC",
         "terminal.ansiBrightYellow": "#0BC5E3",
         "terminalCursor.foreground": "#00A000",
+        //
+        // hide the inactive indent lines:
+        "editorIndentGuide.background1": "#FFFFFF",
+        "editorIndentGuide.background2": "#FFFFFF",
+        "editorIndentGuide.background3": "#FFFFFF",
+        "editorIndentGuide.background4": "#FFFFFF",
+        "editorIndentGuide.background5": "#FFFFFF",
+        "editorIndentGuide.background6": "#FFFFFF",
       }
     }
   }
@@ -254,7 +262,7 @@ Please raise an issue if you have found a bug, want a better language support or
     "explorer.compactFolders": false,
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "RespectMyEyes",
+    "workbench.colorTheme": "RespectMyEyes Light",
     //
     // Editor UI:
     "editor.cursorSmoothCaretAnimation": true,
@@ -266,7 +274,7 @@ Please raise an issue if you have found a bug, want a better language support or
     "editor.bracketPairColorization.enabled": false,
     "editor.codeLens": false,
     "editor.rulers": [
-      100
+      120
     ],
     "editor.suggestSelection": "first",
     "editor.linkedEditing": true,

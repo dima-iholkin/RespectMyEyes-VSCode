@@ -193,7 +193,7 @@ Please raise an issue if you have found a bug, want a better language support or
   // settings.json
   { 
     "workbench.colorCustomizations": {
-      "[RespectMyEyes]": {
+      "[RespectMyEyes Light]": {
         // Fix the invisible input borders:
         "input.border": "#D3D3D3",
         //

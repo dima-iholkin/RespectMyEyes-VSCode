@@ -619,7 +619,7 @@
         // "constant.other.enum" // enum member names in Java
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#000000"
       }
     },
     //

@@ -2890,16 +2890,25 @@
       }
     },
     //
-    // "typeof", "nameof", "is", "default" keywords:
+    // "typeof", "nameof", "is" keywords:
     {
       "scope": [
         "source.cs keyword.other.typeof", // "typeof"
         "source.cs keyword.other.nameof", // "nameof"
         "source.cs keyword.other.is", // "is"
-        "source.cs keyword.other.default" // "default"
       ],
       "settings": {
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "default" keyword:
+    {
+      "scope": [
+        "source.cs keyword.other.default" // "default"
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //

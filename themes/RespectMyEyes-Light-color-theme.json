@@ -393,7 +393,7 @@
         "constant.numeric.other.suffix" // "f"
       ],
       "settings": {
-        "foreground": "#A9A9A9",
+        "foreground": "#E8810C",
       }
     },
     //
@@ -751,6 +751,16 @@
       }
     },
     //
+    // bitwise operators:
+    {
+      "scope": [
+        "keyword.operator.bitwise", // ~, &, |, ^, <<, >>
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
     // common punctuation:
     {
       "scope": [
@@ -769,7 +779,6 @@
         "keyword.operator.logical", // ||, !
         "keyword.operator.comparison", // ===
         "keyword.operator.relational", // >, <
-        "keyword.operator.bitwise", // ~~, |
         "keyword.operator.rest", // ...
         "keyword.operator.spread", // ...
         "keyword.operator.increment", // ++

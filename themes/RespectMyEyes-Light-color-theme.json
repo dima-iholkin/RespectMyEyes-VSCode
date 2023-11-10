@@ -2826,7 +2826,7 @@
       }
     },
     //
-    // "base", "this":
+    // "base", "this" keywords:
     {
       "scope": [
         "source.cs keyword.other.base", // "base"
@@ -2837,10 +2837,11 @@
       }
     },
     //
-    // "using" keyword:
+    // "using", "global" keywords:
     {
       "scope": [
         "keyword.other.using.cs",
+        "keyword.other.global.cs",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3017,7 +3018,7 @@
         "source.cs punctuation.separator.question-mark" // "?"
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3033,11 +3034,30 @@
       }
     },
     //
-    // null-operators "??", "?":
+    // null-coalescing operator "??":
     {
       "scope": [
-        "keyword.operator.null-coalescing.cs", // "??"
-        "keyword.operator.null-conditional.cs" // {property_name}"?" elvis operator
+        "keyword.operator.null-coalescing.cs", // null-coalescing operator "??"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // null-conditional operator "?":
+    {
+      "scope": [
+        "keyword.operator.null-conditional.cs" // null-conditional operator {variable_name}"?"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // null-forgiving operator "!":
+    {
+      "scope": [
+        "keyword.operator.logical.cs" // null-forgiving operator {variable_name}"!"
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -4358,40 +4378,50 @@
     {
       "scope": [
         "source.yaml constant.language", // true, false - boolean literals
-        "source.yaml constant.numeric", // 1, 2 - numeric literals
       ],
       "settings": {
         "foreground": "#A31515"
       }
     },
     //
+    // numeric literals:
+    {
+      "scope": [
+        "source.yaml constant.numeric", // 1, 2 - numeric literals
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
     //
     //
     // Punctuation in YAML:
-    // | :
+    // "|" :
     {
       "scope": [
-        "source.yaml keyword.control", // |
+        "source.yaml keyword.control", // "|"
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // [ ] square brackets:
+    // "[ ]" square brackets:
     {
       "scope": [
-        "source.yaml punctuation.definition.sequence", // [ ]
+        "source.yaml punctuation.definition.sequence", // "[ ]"
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // - sequence item:
+    // "-" sequence item:
     {
       "scope": [
-        "source.yaml punctuation.definition.block.sequence.item", // -
+        "source.yaml punctuation.definition.block.sequence.item", // "-"
+        "punctuation.definition.block.sequence.item.yaml", // "-"
       ],
       "settings": {
         "foreground": "#000000"
@@ -4722,7 +4752,8 @@
         "source.ini entity.name.section.group-title",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C",
+        "fontStyle": "bold"
       }
     },
     //

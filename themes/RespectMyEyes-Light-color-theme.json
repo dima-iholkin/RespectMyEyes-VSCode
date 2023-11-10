@@ -2783,7 +2783,7 @@
         "text.aspnetcorerazor entity.name.variable.parameter",
       ],
       "settings": {
-        "foreground": "#A9A9A9",
+        "foreground": "#C344AB",
       }
     },
     //
@@ -2876,7 +2876,7 @@
         "source.cs keyword.other.init",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#A31515"
       }
     },
     //
@@ -2918,7 +2918,7 @@
         "source.cs keyword.other.default" // "default"
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#A31515"
       }
     },
     //
@@ -3054,13 +3054,13 @@
       }
     },
     //
-    // null-forgiving operator "!":
+    // logical operators "||", "&&", null-forgiving operator "!":
     {
       "scope": [
-        "keyword.operator.logical.cs" // null-forgiving operator {variable_name}"!"
+        "keyword.operator.logical.cs" // logical operators "||", "&&", null-forgiving operator {variable_name}"!"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //

@@ -2922,10 +2922,21 @@
       }
     },
     //
-    // "await":
+    // "await" keyword:
     {
       "scope": [
         "source.cs keyword.other.await", // await
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "checked", "unchecked" keywords:
+    {
+      "scope": [
+        "source.cs keyword.other.checked",
+        "source.cs keyword.other.unchecked",
       ],
       "settings": {
         "foreground": "#0BC5E3"

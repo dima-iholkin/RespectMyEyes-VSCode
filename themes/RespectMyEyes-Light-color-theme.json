@@ -757,7 +757,7 @@
         "keyword.operator.bitwise", // ~, &, |, ^, <<, >>
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0BC5E3",
       }
     },
     //

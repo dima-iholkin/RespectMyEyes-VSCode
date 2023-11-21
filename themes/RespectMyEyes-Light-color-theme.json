@@ -390,10 +390,18 @@
     {
       "scope": [
         "constant.numeric.other.preffix", // "0x", "0b"
-        "constant.numeric.other.suffix" // "f"
       ],
       "settings": {
         "foreground": "#A9A9A9",
+      }
+    },
+    // number suffix for float, double and so on:
+    {
+      "scope": [
+        "constant.numeric.other.suffix" // "f"
+      ],
+      "settings": {
+        "foreground": "#E8810C",
       }
     },
     //

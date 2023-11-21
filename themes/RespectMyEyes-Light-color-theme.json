@@ -390,6 +390,14 @@
     {
       "scope": [
         "constant.numeric.other.preffix", // "0x", "0b"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    // number suffix for float, double and so on:
+    {
+      "scope": [
         "constant.numeric.other.suffix" // "f"
       ],
       "settings": {
@@ -757,7 +765,7 @@
         "keyword.operator.bitwise", // ~, &, |, ^, <<, >>
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -2922,10 +2930,21 @@
       }
     },
     //
-    // "await":
+    // "await" keyword:
     {
       "scope": [
         "source.cs keyword.other.await", // await
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "checked", "unchecked" keywords:
+    {
+      "scope": [
+        "source.cs keyword.other.checked",
+        "source.cs keyword.other.unchecked",
       ],
       "settings": {
         "foreground": "#0BC5E3"

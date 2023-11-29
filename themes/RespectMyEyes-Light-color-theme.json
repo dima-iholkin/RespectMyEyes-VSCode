@@ -2816,6 +2816,16 @@
       }
     },
     //
+    // label name:
+    {
+      "scope": [
+        "entity.name.label.cs",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
     //
     //
     // Keywords:

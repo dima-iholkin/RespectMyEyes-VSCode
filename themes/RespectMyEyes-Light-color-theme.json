@@ -392,7 +392,7 @@
         "constant.numeric.other.preffix", // "0x", "0b"
       ],
       "settings": {
-        "foreground": "#A9A9A9",
+        "foreground": "#C344AB",
       }
     },
     // number suffix for float, double and so on:
@@ -3041,6 +3041,16 @@
       }
     },
     //
+    // separator for binary and hex numbers "_":
+    {
+      "scope": [
+        "source.cs constant.numeric.other.separator.thousands" // "_" in 0b_1000_0001
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
     // nullable type "?":
     {
       "scope": [
@@ -3077,6 +3087,16 @@
     {
       "scope": [
         "keyword.operator.null-conditional.cs" // null-conditional operator {variable_name}"?"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // compound bitwise operators "<<=", "|=", ">>=":
+    {
+      "scope": [
+        "source.cs keyword.operator.assignment.compound.bitwise"
       ],
       "settings": {
         "foreground": "#0BC5E3"

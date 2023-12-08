@@ -2849,6 +2849,7 @@
       "scope": [
         "source.cs keyword.other.base", // "base"
         "source.cs keyword.other.this", // "this"
+        "source.cs variable.language.this", // "this" in constructor
       ],
       "settings": {
         "foreground": "#C344AB"

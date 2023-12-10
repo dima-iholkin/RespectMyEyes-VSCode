@@ -2913,6 +2913,7 @@
     {
       "scope": [
         "keyword.other.new.cs",
+        "keyword.operator.expression.new.cs",
       ],
       "settings": {
         "foreground": "#0000CC"

@@ -1453,9 +1453,7 @@
         "meta.embedded.block.javascript meta.object-literal.key",
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#C344AB"
-        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -1469,9 +1467,7 @@
         "meta.embedded.block.javascript meta.object-literal.key entity.name.function",
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#C344AB"
-        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -1486,9 +1482,7 @@
         "meta.embedded.block.javascript meta.object-literal.key string.quoted",
       ],
       "settings": {
-        // "foreground": "#A9A9A9"
         "foreground": "#C344AB"
-        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -4999,7 +4993,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
-        // "fontStyle": "bold"
       }
     },
     //

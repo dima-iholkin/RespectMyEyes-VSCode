@@ -815,8 +815,9 @@
         "string.template punctuation.definition.string.template", // "` `" in TypeScript. // This for sure works in TypeScript.
       ],
       "settings": {
-        "foreground": "#0BC5E3",
-        "fontStyle": "bold"
+        // "foreground": "#0BC5E3",
+        "foreground": "#A9A9A9",
+        // "fontStyle": "bold"
       }
     },
     //
@@ -869,7 +870,8 @@
         "keyword.operator.definiteassignment" // "!"
       ],
       "settings": {
-        "foreground": "#000000",
+        // "foreground": "#000000",
+        "foreground": "#A9A9A9",
       }
     },
     //
@@ -1242,7 +1244,7 @@
         "meta.embedded.block.javascript meta.parameters variable.parameter",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1423,7 +1425,7 @@
         "meta.embedded.block.javascript meta.definition.property variable.object.property",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1437,7 +1439,7 @@
         "meta.embedded.block.javascript meta.definition entity.name.function",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1451,7 +1453,9 @@
         "meta.embedded.block.javascript meta.object-literal.key",
       ],
       "settings": {
+        // "foreground": "#A9A9A9"
         "foreground": "#C344AB"
+        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -1465,7 +1469,9 @@
         "meta.embedded.block.javascript meta.object-literal.key entity.name.function",
       ],
       "settings": {
+        // "foreground": "#A9A9A9"
         "foreground": "#C344AB"
+        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -1480,7 +1486,9 @@
         "meta.embedded.block.javascript meta.object-literal.key string.quoted",
       ],
       "settings": {
+        // "foreground": "#A9A9A9"
         "foreground": "#C344AB"
+        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -1766,7 +1774,7 @@
         "meta.embedded.block.javascript meta.method.declaration storage.type", // constructor
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -1798,6 +1806,20 @@
         "source.tsx storage.modifier", // "static", "extends"
         "source.jsx storage.modifier", // "static", "extends"
         "meta.embedded.block.javascript storage.modifier", // "static", "extends"
+        // "source.ts keyword.control.as", // "as"
+        // "source.js keyword.control.as", // "as"
+        // "source.tsx keyword.control.as", // "as"
+        // "source.jsx keyword.control.as", // "as"
+        // "meta.embedded.block.javascript keyword.control.as", // "as"
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // the most usual keywords at the line start:
+    {
+      "scope": [
         "source.ts keyword.control.as", // "as"
         "source.js keyword.control.as", // "as"
         "source.tsx keyword.control.as", // "as"
@@ -1805,7 +1827,7 @@
         "meta.embedded.block.javascript keyword.control.as", // "as"
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2492,7 +2514,7 @@
         "meta.embedded.block.javascript meta.jsx.children punctuation.section.embedded",
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -2509,6 +2531,61 @@
         "foreground": "#A9A9A9"
       }
     },
+    //
+    //
+    //
+    // React:
+    //
+    // tag's attribute names:
+    {
+      "scope": [
+        "source.ts entity.other.attribute-name",
+        "source.js entity.other.attribute-name",
+        "source.tsx entity.other.attribute-name",
+        "source.jsx entity.other.attribute-name",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // Text:
+    {
+      "scope": [
+        "source.ts meta.jsx.children",
+        "source.js meta.jsx.children",
+        "source.tsx meta.jsx.children",
+        "source.jsx meta.jsx.children",
+      ],
+      "settings": {
+        "foreground": "#FFA500"
+      }
+    },
+    //
+    // Not really React...
+    // Text in a template string:
+    {
+      "scope": [
+        "string.template.ts",
+        "string.template.js",
+        "string.template.tsx",
+        "string.template.jsx",
+      ],
+      "settings": {
+        // "foreground": "#FFA500"
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // Strings:
+    // {
+    //   "scope": [
+    //     "string",
+    //   ],
+    //   "settings": {
+    //     "foreground": "#FFA500"
+    //   }
+    // },
     //
     //
     //
@@ -2605,6 +2682,148 @@
       ],
       "settings": {
         "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Svelte (.svelte):
+    //
+    // "on.click" and similar attributes:
+    {
+      "scope": [
+        // "meta.directive.on.svelte keyword.control.svelte", // "on" in "on:click"
+        // "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
+        "support.function.svelte", // "preventDefault", "once"
+      ],
+      "settings": {
+        // "foreground": "#0BC5E3",
+        "foreground": "#C344AB",
+        // "fontStyle": "bold"
+        // "foreground": "#0000CC"
+        // "foreground": "#E8810C"
+      }
+    },
+    //
+    // "on.click" and similar attributes:
+    {
+      "scope": [
+        // "meta.directive.on.svelte keyword.control.svelte", // "on" in "on:click"
+        "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
+        // "support.function.svelte", // "preventDefault", "once"
+      ],
+      "settings": {
+        // "foreground": "#0BC5E3",
+        "foreground": "#C344AB",
+        // "fontStyle": "bold"
+        // "foreground": "#0000CC"
+        // "foreground": "#E8810C"
+      }
+    },
+    //
+    // "svelte" keyword:
+    {
+      "scope": [
+        "keyword.control.svelte", // "svelte" in "svelte:head"
+        "meta.special.each.svelte keyword.control.as.svelte", // "svelte" in "svelte:head"
+      ],
+      "settings": {
+        // "foreground": "#0BC5E3",
+        "foreground": "#C344AB",
+        // "fontStyle": "bold"
+        // "foreground": "#0000CC"
+        // "foreground": "#E8810C"
+      }
+    },
+    //
+    // "#if", ":else" blocks:
+    {
+      "scope": [
+        "keyword.control.conditional.svelte", // "if", "else"
+        // "punctuation.definition.keyword.svelte", // "#", ":"
+      ],
+      "settings": {
+        // "foreground": "#0BC5E3",
+        "foreground": "#C344AB",
+        // "fontStyle": "bold"
+        // "foreground": "#0000CC"
+        // "foreground": "#E8810C"
+      }
+    },
+    //
+    // function name in "use:" syntax:
+    {
+      "scope": [
+        "meta.directive.use.svelte variable.function.svelte",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // "@const":
+    {
+      "scope": [
+        "meta.special.const.svelte storage.type.svelte",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // HTML text:
+    {
+      "scope": [
+        "text.svelte"
+      ],
+      "settings": {
+        // "foreground": "#A31515",
+        "foreground": "#FFA500",
+        // "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "{ }" string interpolation:
+    {
+      "scope": [
+        "source.svelte punctuation.section.embedded.begin.svelte",
+        "source.svelte punctuation.section.embedded.end.svelte"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // fix "{ }" string interpolation for normal brackets:
+    {
+      "scope": [
+        "source.svelte meta punctuation.section.embedded.begin.svelte",
+        "source.svelte meta punctuation.section.embedded.end.svelte"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // reactive declarations "$":
+    {
+      "scope": [
+        "meta.embedded.block.svelte entity.name.label",
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "<", ">" tag brackets:
+    {
+      "scope": [
+        "punctuation.definition.tag.begin.svelte",
+        "punctuation.definition.tag.end.svelte",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
       }
     },
     //
@@ -2830,14 +3049,20 @@
     //
     // Keywords:
     //
-    // "class", "interface", "enum", "namespace" keywords:
+    // "class", "record", "interface", "enum", "namespace" keywords:
     {
       "scope": [
         "source.cs keyword.other.namespace",
+        "storage.type.namespace.cs",
         "source.cs keyword.other.class",
+        "storage.type.class.cs",
+        "storage.type.record.cs",
         "source.cs keyword.other.interface",
+        "storage.type.interface.cs",
         "source.cs keyword.other.struct",
+        "storage.type.struct.cs",
         "source.cs keyword.other.enum",
+        "storage.type.enum.cs",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -2860,7 +3085,9 @@
     {
       "scope": [
         "keyword.other.using.cs",
+        "keyword.other.directive.using.cs",
         "keyword.other.global.cs",
+        "keyword.other.directive.global.cs",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -2873,7 +3100,7 @@
         "meta.directive keyword.other.using.cs",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2887,12 +3114,25 @@
       }
     },
     //
+    // "this" keyword in extension methods:
+    {
+      "scope": [
+        "source.cs storage.modifier.this",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
     // "get", "set", "init" keywords:
     {
       "scope": [
         "source.cs keyword.other.get",
+        "storage.type.accessor.get.cs",
         "source.cs keyword.other.set",
+        "storage.type.accessor.set.cs",
         "source.cs keyword.other.init",
+        "storage.type.accessor.init.cs",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -2903,6 +3143,7 @@
     {
       "scope": [
         "keyword.other.var.cs",
+        "storage.type.var.cs",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -2924,8 +3165,11 @@
     {
       "scope": [
         "source.cs keyword.other.typeof", // "typeof"
+        "keyword.operator.expression.typeof.cs", // "typeof"
         "source.cs keyword.other.nameof", // "nameof"
+        "keyword.operator.expression.nameof.cs", // "nameof"
         "source.cs keyword.other.is", // "is"
+        "keyword.operator.expression.pattern.is.cs", // "is"
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2935,10 +3179,11 @@
     // "default" keyword:
     {
       "scope": [
-        "source.cs keyword.other.default" // "default"
+        "source.cs keyword.other.default", // "default"
+        "keyword.operator.expression.default.cs" // "default"
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2946,6 +3191,7 @@
     {
       "scope": [
         "source.cs keyword.other.await", // await
+        "keyword.operator.expression.await.cs", // await
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2975,11 +3221,12 @@
       }
     },
     //
-    // "return", "throw" keywords:
+    // "return", "throw", "using" keywords:
     {
       "scope": [
         "keyword.control.flow.return.cs",
         "keyword.control.flow.throw.cs",
+        "keyword.control.context.using.cs"
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -3091,7 +3338,7 @@
         "keyword.operator.null-conditional.cs" // null-conditional operator {variable_name}"?"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3167,7 +3414,19 @@
         "text.aspnetcorerazor meta.directive keyword.control.cshtml.transition", // "@"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "@{ }" code block syntax in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.cshtml.transition", // "@"
+        "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.razor.directive.codeblock.open", // "{"
+        "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.razor.directive.codeblock.close", // "}"
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3181,15 +3440,48 @@
       }
     },
     //
+    // "@if { }" blocks in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor keyword.control.cshtml.transition", // "@"
+        "text.aspnetcorerazor keyword.control.conditional", // "if", "else"
+        "text.aspnetcorerazor keyword.control", // "foreach"
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
     // All C# code after "@" implicit transition:
     {
       "scope": [
-        "text.aspnetcorerazor meta.expression.implicit source.cs",
+        // "text.aspnetcorerazor meta.expression.implicit source.cs",
         "text.aspnetcorerazor meta.expression.implicit source.cs variable",
         "text.aspnetcorerazor meta.expression.implicit source.cs entity.name.function.cs",
       ],
       "settings": {
         "foreground": "#C344AB"
+      }
+    },
+    //
+    // "." dot in "@Model.RequestId" in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.expression.implicit source.cs",
+        "text.aspnetcorerazor meta.structure.razor.codeblock meta.expression.implicit source.cs",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // variable's property name in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.expression.implicit source.cs variable.other.object.property",
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     //
@@ -3199,18 +3491,57 @@
         "text.aspnetcorerazor constant.character.entity.named.copy punctuation",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
-    // "{ }" curly braces in if syntax:
-    // @if (result.Success) { }
+    // "{ }" curly braces in if syntax "@if ( ) { }":
     {
       "scope": [
         "text.aspnetcorerazor meta.structure.razor.csharp.codeblock punctuation.curlybrace",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // ":" in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor punctuation.separator.colon",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // text in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.structure.razor.codeblock source.cs",
+      ],
+      "settings": {
+        "foreground": "#FFA500"
+      }
+    },
+    //
+    // ASP.NET Core specific attributes in Razor Pages:
+    // {
+    //   "scope": [
+    //     "text.aspnetcorerazor meta.attribute.unrecognized entity.other.attribute-name",
+    //   ],
+    //   "settings": {
+    //     "foreground": "#C344AB"
+    //   }
+    // },
+    //
+    // inline CSS in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor string.quoted.double source.css",
+      ],
+      "settings": {
+        "foreground": "#A31515"
       }
     },
     //
@@ -4192,6 +4523,8 @@
         "text.html punctuation.definition.tag source.css-ignored-vscode", // <, > // "source.css-ignored-vscode" - for some weird thing I saw once in a php file.
         "text.xml punctuation.definition.tag", // <, >
         "text.aspnetcorerazor punctuation.definition.tag", // <, >
+        "text.aspnetcorerazor punctuation.definition.tag source.js-ignored-vscode", // <, >
+        "text.aspnetcorerazor punctuation.definition.tag source.css-ignored-vscode", // <, >
         "source.ts punctuation.definition.tag", // <, >
         "source.js punctuation.definition.tag", // <, >
         "source.tsx punctuation.definition.tag", // <, >
@@ -4209,13 +4542,13 @@
         "text.html meta.attribute", // fixes "align" attribute in HTML inside Markdown.
         "text.xml entity.other.attribute-name",
         "text.aspnetcorerazor entity.other.attribute-name",
-        "source.ts entity.other.attribute-name",
-        "source.js entity.other.attribute-name",
-        "source.tsx entity.other.attribute-name",
-        "source.jsx entity.other.attribute-name",
+        // "source.ts entity.other.attribute-name",
+        // "source.js entity.other.attribute-name",
+        // "source.tsx entity.other.attribute-name",
+        // "source.jsx entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -4232,22 +4565,19 @@
         "text.html.markdown meta.embedded.block meta.jsx.children", // JSX embedded into Markdown
         "text.html.markdown meta.embedded.block meta.tsx.children", // JSX embedded into Markdown
         "text.xml",
+        // "text.svelte",
         "text.aspnetcorerazor",
         "source.ts",
         "source.js",
         "source.tsx",
         "source.jsx",
-        "source.ts meta.jsx.children",
-        "source.js meta.jsx.children",
-        "source.tsx meta.jsx.children",
-        "source.jsx meta.jsx.children",
         "source.ts meta.jsx.children punctuation",
         "source.js meta.jsx.children punctuation",
         "source.tsx meta.jsx.children punctuation",
         "source.jsx meta.jsx.children punctuation",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -4280,16 +4610,6 @@
       ],
       "settings": {
         "foreground": "#000000"
-      }
-    },
-    //
-    // ":" in Razor Pages:
-    {
-      "scope": [
-        "text.aspnetcorerazor punctuation.separator.colon",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
       }
     },
     //
@@ -4679,7 +4999,7 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
-        "fontStyle": "bold"
+        // "fontStyle": "bold"
       }
     },
     //
@@ -4804,7 +5124,6 @@
       ],
       "settings": {
         "foreground": "#E8810C",
-        "fontStyle": "bold"
       }
     },
     //

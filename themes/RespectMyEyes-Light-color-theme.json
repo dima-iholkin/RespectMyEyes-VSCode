@@ -627,7 +627,7 @@
         // "constant.other.enum" // enum member names in Java
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -824,9 +824,8 @@
         "string.template punctuation.definition.string.template", // "` `" in TypeScript. // This for sure works in TypeScript.
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
         "foreground": "#A9A9A9",
-        // "fontStyle": "bold"
+        "fontStyle": "bold"
       }
     },
     //
@@ -2576,7 +2575,6 @@
         "string.template.jsx",
       ],
       "settings": {
-        // "foreground": "#FFA500"
         "foreground": "#A31515"
       }
     },
@@ -2776,18 +2774,6 @@
       }
     },
     //
-    // HTML text:
-    {
-      "scope": [
-        "text.svelte"
-      ],
-      "settings": {
-        // "foreground": "#A31515",
-        "foreground": "#FFA500",
-        // "foreground": "#0BC5E3",
-      }
-    },
-    //
     // "{ }" string interpolation:
     {
       "scope": [
@@ -2810,10 +2796,11 @@
       }
     },
     //
-    // reactive declarations "$":
+    // reactive declarations "$:":
     {
       "scope": [
-        "meta.embedded.block.svelte entity.name.label",
+        "meta.embedded.block.svelte entity.name.label", // "&"
+        "meta.embedded.block.svelte punctuation.separator.label", // ":"
       ],
       "settings": {
         "foreground": "#C344AB",
@@ -3542,7 +3529,8 @@
     // inline CSS in Razor Pages:
     {
       "scope": [
-        "text.aspnetcorerazor string.quoted.double source.css",
+        "text.aspnetcorerazor string.quoted.double source.css", // Razor Pages
+        "text.html.derivative string.quoted.double source.css", // Svelte
       ],
       "settings": {
         "foreground": "#A31515"
@@ -4063,7 +4051,7 @@
         "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -4074,7 +4062,7 @@
         "source.css variable.other.less punctuation.definition.variable.less", // for LESS
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -4135,7 +4123,7 @@
         "meta.embedded.block.css entity.other.attribute-name", // for CSS embedded in Markdown
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4185,7 +4173,7 @@
         "source.css support.type.property-name.media", // property names in @media queries
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4211,7 +4199,7 @@
         "source.css.less support.constant.media-type.media" // "screen" keyword in LESS
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4569,7 +4557,7 @@
         "text.html.markdown meta.embedded.block meta.jsx.children", // JSX embedded into Markdown
         "text.html.markdown meta.embedded.block meta.tsx.children", // JSX embedded into Markdown
         "text.xml",
-        // "text.svelte",
+        "text.svelte",
         "text.aspnetcorerazor",
         "source.ts",
         "source.js",

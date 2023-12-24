@@ -627,7 +627,7 @@
         // "constant.other.enum" // enum member names in Java
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -787,8 +787,6 @@
         "keyword.operator.logical", // ||, !
         "keyword.operator.comparison", // ===
         "keyword.operator.relational", // >, <
-        "keyword.operator.rest", // ...
-        "keyword.operator.spread", // ...
         "keyword.operator.increment", // ++
         "keyword.operator.decrement", // --
       ],
@@ -797,11 +795,22 @@
       }
     },
     //
-    // logical operators:
+    // spread and rest operators "...":
+    {
+      "scope": [
+        "keyword.operator.rest", // ...
+        "keyword.operator.spread", // ...
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // arrow operator "=>":
     {
       "scope": [
         "storage.type.function.arrow", // "=>" in JS/TS
-        "keyword.operator.arrow", // => in C#
+        "keyword.operator.arrow", // "=>" in C#
       ],
       "settings": {
         "foreground": "#0BC5E3",
@@ -815,9 +824,8 @@
         "string.template punctuation.definition.string.template", // "` `" in TypeScript. // This for sure works in TypeScript.
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
         "foreground": "#A9A9A9",
-        // "fontStyle": "bold"
+        "fontStyle": "bold"
       }
     },
     //
@@ -870,7 +878,6 @@
         "keyword.operator.definiteassignment" // "!"
       ],
       "settings": {
-        // "foreground": "#000000",
         "foreground": "#A9A9A9",
       }
     },
@@ -1789,6 +1796,7 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+        // "foreground": "#A31515"
       }
     },
     //
@@ -1800,18 +1808,13 @@
         "source.tsx storage.modifier", // "static", "extends"
         "source.jsx storage.modifier", // "static", "extends"
         "meta.embedded.block.javascript storage.modifier", // "static", "extends"
-        // "source.ts keyword.control.as", // "as"
-        // "source.js keyword.control.as", // "as"
-        // "source.tsx keyword.control.as", // "as"
-        // "source.jsx keyword.control.as", // "as"
-        // "meta.embedded.block.javascript keyword.control.as", // "as"
       ],
       "settings": {
         "foreground": "#A31515"
       }
     },
     //
-    // the most usual keywords at the line start:
+    // "as" keyword for casting:
     {
       "scope": [
         "source.ts keyword.control.as", // "as"
@@ -2484,7 +2487,7 @@
       }
     },
     //
-    // logical operators:
+    // logical operators "&&", "||", "??":
     {
       "scope": [
         "source.ts keyword.operator.logical",
@@ -2566,20 +2569,9 @@
         "string.template.jsx",
       ],
       "settings": {
-        // "foreground": "#FFA500"
         "foreground": "#A31515"
       }
     },
-    //
-    // Strings:
-    // {
-    //   "scope": [
-    //     "string",
-    //   ],
-    //   "settings": {
-    //     "foreground": "#FFA500"
-    //   }
-    // },
     //
     //
     //
@@ -2687,32 +2679,11 @@
     // "on.click" and similar attributes:
     {
       "scope": [
-        // "meta.directive.on.svelte keyword.control.svelte", // "on" in "on:click"
-        // "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
+        "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
         "support.function.svelte", // "preventDefault", "once"
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
         "foreground": "#C344AB",
-        // "fontStyle": "bold"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
-      }
-    },
-    //
-    // "on.click" and similar attributes:
-    {
-      "scope": [
-        // "meta.directive.on.svelte keyword.control.svelte", // "on" in "on:click"
-        "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
-        // "support.function.svelte", // "preventDefault", "once"
-      ],
-      "settings": {
-        // "foreground": "#0BC5E3",
-        "foreground": "#C344AB",
-        // "fontStyle": "bold"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -2720,14 +2691,10 @@
     {
       "scope": [
         "keyword.control.svelte", // "svelte" in "svelte:head"
-        "meta.special.each.svelte keyword.control.as.svelte", // "svelte" in "svelte:head"
+        "meta.special.each.svelte keyword.control.as.svelte",
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
         "foreground": "#C344AB",
-        // "fontStyle": "bold"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -2735,14 +2702,9 @@
     {
       "scope": [
         "keyword.control.conditional.svelte", // "if", "else"
-        // "punctuation.definition.keyword.svelte", // "#", ":"
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
         "foreground": "#C344AB",
-        // "fontStyle": "bold"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -2763,18 +2725,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // HTML text:
-    {
-      "scope": [
-        "text.svelte"
-      ],
-      "settings": {
-        // "foreground": "#A31515",
-        "foreground": "#FFA500",
-        // "foreground": "#0BC5E3",
       }
     },
     //
@@ -2800,10 +2750,11 @@
       }
     },
     //
-    // reactive declarations "$":
+    // reactive declarations "$:":
     {
       "scope": [
-        "meta.embedded.block.svelte entity.name.label",
+        "meta.embedded.block.svelte entity.name.label", // "&"
+        "meta.embedded.block.svelte punctuation.separator.label", // ":"
       ],
       "settings": {
         "foreground": "#C344AB",
@@ -3532,7 +3483,8 @@
     // inline CSS in Razor Pages:
     {
       "scope": [
-        "text.aspnetcorerazor string.quoted.double source.css",
+        "text.aspnetcorerazor string.quoted.double source.css", // Razor Pages
+        "text.html.derivative string.quoted.double source.css", // Svelte
       ],
       "settings": {
         "foreground": "#A31515"
@@ -4053,7 +4005,7 @@
         "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -4064,7 +4016,7 @@
         "source.css variable.other.less punctuation.definition.variable.less", // for LESS
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -4125,7 +4077,7 @@
         "meta.embedded.block.css entity.other.attribute-name", // for CSS embedded in Markdown
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4175,7 +4127,7 @@
         "source.css support.type.property-name.media", // property names in @media queries
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4201,7 +4153,7 @@
         "source.css.less support.constant.media-type.media" // "screen" keyword in LESS
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4536,10 +4488,6 @@
         "text.html meta.attribute", // fixes "align" attribute in HTML inside Markdown.
         "text.xml entity.other.attribute-name",
         "text.aspnetcorerazor entity.other.attribute-name",
-        // "source.ts entity.other.attribute-name",
-        // "source.js entity.other.attribute-name",
-        // "source.tsx entity.other.attribute-name",
-        // "source.jsx entity.other.attribute-name",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -4559,7 +4507,7 @@
         "text.html.markdown meta.embedded.block meta.jsx.children", // JSX embedded into Markdown
         "text.html.markdown meta.embedded.block meta.tsx.children", // JSX embedded into Markdown
         "text.xml",
-        // "text.svelte",
+        "text.svelte",
         "text.aspnetcorerazor",
         "source.ts",
         "source.js",

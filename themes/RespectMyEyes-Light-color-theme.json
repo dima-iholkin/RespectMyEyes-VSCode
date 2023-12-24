@@ -878,7 +878,6 @@
         "keyword.operator.definiteassignment" // "!"
       ],
       "settings": {
-        // "foreground": "#000000",
         "foreground": "#A9A9A9",
       }
     },
@@ -1809,18 +1808,13 @@
         "source.tsx storage.modifier", // "static", "extends"
         "source.jsx storage.modifier", // "static", "extends"
         "meta.embedded.block.javascript storage.modifier", // "static", "extends"
-        // "source.ts keyword.control.as", // "as"
-        // "source.js keyword.control.as", // "as"
-        // "source.tsx keyword.control.as", // "as"
-        // "source.jsx keyword.control.as", // "as"
-        // "meta.embedded.block.javascript keyword.control.as", // "as"
       ],
       "settings": {
         "foreground": "#A31515"
       }
     },
     //
-    // the most usual keywords at the line start:
+    // "as" keyword for casting:
     {
       "scope": [
         "source.ts keyword.control.as", // "as"
@@ -2579,16 +2573,6 @@
       }
     },
     //
-    // Strings:
-    // {
-    //   "scope": [
-    //     "string",
-    //   ],
-    //   "settings": {
-    //     "foreground": "#FFA500"
-    //   }
-    // },
-    //
     //
     //
     // Documentation:
@@ -2695,32 +2679,11 @@
     // "on.click" and similar attributes:
     {
       "scope": [
-        // "meta.directive.on.svelte keyword.control.svelte", // "on" in "on:click"
-        // "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
+        "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
         "support.function.svelte", // "preventDefault", "once"
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
         "foreground": "#C344AB",
-        // "fontStyle": "bold"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
-      }
-    },
-    //
-    // "on.click" and similar attributes:
-    {
-      "scope": [
-        // "meta.directive.on.svelte keyword.control.svelte", // "on" in "on:click"
-        "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
-        // "support.function.svelte", // "preventDefault", "once"
-      ],
-      "settings": {
-        // "foreground": "#0BC5E3",
-        "foreground": "#C344AB",
-        // "fontStyle": "bold"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -2728,14 +2691,10 @@
     {
       "scope": [
         "keyword.control.svelte", // "svelte" in "svelte:head"
-        "meta.special.each.svelte keyword.control.as.svelte", // "svelte" in "svelte:head"
+        "meta.special.each.svelte keyword.control.as.svelte",
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
         "foreground": "#C344AB",
-        // "fontStyle": "bold"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -2743,14 +2702,9 @@
     {
       "scope": [
         "keyword.control.conditional.svelte", // "if", "else"
-        // "punctuation.definition.keyword.svelte", // "#", ":"
       ],
       "settings": {
-        // "foreground": "#0BC5E3",
         "foreground": "#C344AB",
-        // "fontStyle": "bold"
-        // "foreground": "#0000CC"
-        // "foreground": "#E8810C"
       }
     },
     //
@@ -4534,10 +4488,6 @@
         "text.html meta.attribute", // fixes "align" attribute in HTML inside Markdown.
         "text.xml entity.other.attribute-name",
         "text.aspnetcorerazor entity.other.attribute-name",
-        // "source.ts entity.other.attribute-name",
-        // "source.js entity.other.attribute-name",
-        // "source.tsx entity.other.attribute-name",
-        // "source.jsx entity.other.attribute-name",
       ],
       "settings": {
         "foreground": "#0BC5E3"

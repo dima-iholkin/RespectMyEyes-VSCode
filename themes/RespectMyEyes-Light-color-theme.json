@@ -787,8 +787,6 @@
         "keyword.operator.logical", // ||, !
         "keyword.operator.comparison", // ===
         "keyword.operator.relational", // >, <
-        "keyword.operator.rest", // ...
-        "keyword.operator.spread", // ...
         "keyword.operator.increment", // ++
         "keyword.operator.decrement", // --
       ],
@@ -797,11 +795,22 @@
       }
     },
     //
-    // logical operators:
+    // spread and rest operators "...":
+    {
+      "scope": [
+        "keyword.operator.rest", // ...
+        "keyword.operator.spread", // ...
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // arrow operator "=>":
     {
       "scope": [
         "storage.type.function.arrow", // "=>" in JS/TS
-        "keyword.operator.arrow", // => in C#
+        "keyword.operator.arrow", // "=>" in C#
       ],
       "settings": {
         "foreground": "#0BC5E3",
@@ -1789,6 +1798,7 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+        // "foreground": "#A31515"
       }
     },
     //
@@ -2484,7 +2494,7 @@
       }
     },
     //
-    // logical operators:
+    // logical operators "&&", "||", "??":
     {
       "scope": [
         "source.ts keyword.operator.logical",

@@ -2708,6 +2708,17 @@
       }
     },
     //
+    // "@debug" keyword:
+    {
+      "scope": [
+        "keyword.other.debugger.svelte", // "debug"
+        "meta.special.debug.svelte punctuation.definition.keyword", // "@"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
     // function name in "use:" syntax:
     {
       "scope": [

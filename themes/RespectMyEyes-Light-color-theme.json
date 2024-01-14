@@ -3932,6 +3932,7 @@
     {
       "scope": [
         "source.shell string.unquoted.argument",
+        "string.unquoted.argument.shell",
         "source.shell constant.other.option",
       ],
       "settings": {
@@ -4922,15 +4923,22 @@
     //
     // Code blocks in Markdown:
     //
-    // code block definition:
+    // code block definition "```bash ```":
     {
       "scope": [
-        "text.html.markdown markup.fenced_code.block punctuation.definition", // ```
-        "text.html.markdown markup.fenced_code.block fenced_code.block.language", // ``` "bat", "powershell", "js"
+        "text.html.markdown markup.fenced_code.block punctuation.definition", // "```"
       ],
       "settings": {
         "foreground": "#0BC5E3",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "text.html.markdown markup.fenced_code.block fenced_code.block.language", // "bat", "powershell", "js"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -4952,6 +4960,7 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //

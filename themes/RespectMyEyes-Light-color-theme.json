@@ -2702,10 +2702,13 @@
       }
     },
     //
-    // "svelte" keyword:
+    // control keywords and "slot" tag:
     {
       "scope": [
         "keyword.control.svelte",
+        "meta.scope.tag.slot.svelte keyword.control.svelte", // <slot /> tag
+        // "meta.scope.tag.slot.svelte punctuation.definition.tag.begin.svelte", // <slot /> tag
+        // "meta.scope.tag.slot.svelte punctuation.definition.tag.end.svelte", // <slot /> tag
         "meta.special.each.svelte keyword.control.as.svelte",
       ],
       "settings": {
@@ -2714,7 +2717,7 @@
       }
     },
     //
-    // "svelte" keyword:
+    // "svelte" tag keyword:
     {
       "scope": [
         "meta.tag.start.svelte keyword.control.svelte", // "svelte" in "svelte:head"

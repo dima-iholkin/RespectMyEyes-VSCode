@@ -687,7 +687,8 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        // "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2676,25 +2677,64 @@
     // ====================================================
     // Svelte (.svelte):
     //
-    // "on.click" and similar attributes:
+    // "class:playing" and similar attributes:
     {
       "scope": [
-        "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
+        "meta.directive.class.svelte entity.other.attribute-name.svelte",
+        "meta.directive.class.svelte entity.other.attribute-name.class.svelte",
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+        // "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "on.click", "on:keydown" and similar attributes:
+    {
+      "scope": [
+        "meta.directive.on.svelte keyword.control.svelte", // "on" in "on:keydown"
+        "meta.directive.on.svelte entity.name.type.svelte", // "keydown" in "on:keydown"
         "support.function.svelte", // "preventDefault", "once"
       ],
       "settings": {
         "foreground": "#C344AB",
+        // "foreground": "#0BC5E3",
       }
     },
     //
     // "svelte" keyword:
     {
       "scope": [
-        "keyword.control.svelte", // "svelte" in "svelte:head"
+        "keyword.control.svelte",
         "meta.special.each.svelte keyword.control.as.svelte",
       ],
       "settings": {
+        // "foreground": "#C344AB",
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "svelte" keyword:
+    {
+      "scope": [
+        "meta.tag.start.svelte keyword.control.svelte", // "svelte" in "svelte:head"
+        "meta.tag.end.svelte keyword.control.svelte", // "svelte" in "svelte:head"
+      ],
+      "settings": {
+        // "foreground": "#C344AB",
+        // "foreground": "#0BC5E3",
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // "export" keyword for props:
+    {
+      "scope": [
+        "meta.embedded.block.svelte keyword.control.export"
+      ],
+      "settings": {
         "foreground": "#C344AB",
+        // "foreground": "#0BC5E3",
       }
     },
     //
@@ -2704,7 +2744,8 @@
         "keyword.control.conditional.svelte", // "if", "else"
       ],
       "settings": {
-        "foreground": "#C344AB",
+        // "foreground": "#C344AB",
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -2719,13 +2760,15 @@
       }
     },
     //
-    // function name in "use:" syntax:
+    // "use:enhance" and similar:
     {
       "scope": [
-        "meta.directive.use.svelte variable.function.svelte",
+        "meta.directive.use.svelte keyword.control.svelte", // "enhance" in "use:enhance"
+        "meta.directive.use.svelte variable.function.svelte", // "enhance" in "use:enhance"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        // "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2743,7 +2786,9 @@
     {
       "scope": [
         "source.svelte punctuation.section.embedded.begin.svelte",
-        "source.svelte punctuation.section.embedded.end.svelte"
+        "source.svelte punctuation.section.embedded.end.svelte",
+        "source.svelte string.quoted.svelte punctuation.section.embedded.begin.svelte",
+        "source.svelte string.quoted.svelte punctuation.section.embedded.end.svelte"
       ],
       "settings": {
         "foreground": "#0BC5E3",
@@ -2761,7 +2806,7 @@
       }
     },
     //
-    // reactive declarations "$:":
+    // "$:" reactive declarations:
     {
       "scope": [
         "meta.embedded.block.svelte entity.name.label", // "&"
@@ -2769,6 +2814,7 @@
       ],
       "settings": {
         "foreground": "#C344AB",
+        // "foreground": "#0BC5E3",
       }
     },
     //
@@ -3971,6 +4017,7 @@
       ],
       "settings": {
         "foreground": "#0000CC"
+        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -4018,6 +4065,8 @@
       ],
       "settings": {
         "foreground": "#E8810C"
+        // "foreground": "#C344AB"
+        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -4073,6 +4122,7 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
+        // "foreground": "#0000CC"
       }
     },
     //
@@ -4268,6 +4318,7 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
+        // "foreground": "#C344AB",
       }
     },
     //

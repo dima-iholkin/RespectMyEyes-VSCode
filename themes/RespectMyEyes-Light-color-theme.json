@@ -2543,7 +2543,8 @@
         "source.jsx entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        // "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2677,15 +2678,27 @@
     // ====================================================
     // Svelte (.svelte):
     //
-    // "class:playing" and similar attributes:
+    // control keywords:
+    {
+      "scope": [
+        "keyword.control.svelte",
+        "meta.special.each.svelte keyword.control.as.svelte", // "as" in "{:each items as item}" block
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "class:playing", "bind:value" and similar attributes:
     {
       "scope": [
         "meta.directive.class.svelte entity.other.attribute-name.svelte",
         "meta.directive.class.svelte entity.other.attribute-name.class.svelte",
+        "meta.directive.bind.svelte keyword.control.svelte", // "bind" in "bind:value"
+        "meta.directive.bind.svelte entity.name.type.svelte", // "value" in "bind:value"
       ],
       "settings": {
         "foreground": "#C344AB",
-        // "foreground": "#0BC5E3",
       }
     },
     //
@@ -2699,17 +2712,6 @@
       "settings": {
         "foreground": "#C344AB",
         // "foreground": "#0BC5E3",
-      }
-    },
-    //
-    // control keywords:
-    {
-      "scope": [
-        "keyword.control.svelte",
-        "meta.special.each.svelte keyword.control.as.svelte", // "as" in "{:each items as item}" block
-      ],
-      "settings": {
-        "foreground": "#0BC5E3",
       }
     },
     //
@@ -3072,11 +3074,9 @@
     //
     // Keywords:
     //
-    // "class", "record", "interface", "enum", "namespace" keywords:
+    // "class", "record", "interface", "enum" keywords:
     {
       "scope": [
-        "source.cs keyword.other.namespace",
-        "storage.type.namespace.cs",
         "source.cs keyword.other.class",
         "storage.type.class.cs",
         "storage.type.record.cs",
@@ -3104,9 +3104,11 @@
       }
     },
     //
-    // "using", "global" keywords:
+    // "using", "global", "namespace" keywords:
     {
       "scope": [
+        "storage.type.namespace.cs",
+        "source.cs keyword.other.namespace",
         "keyword.other.using.cs",
         "keyword.other.directive.using.cs",
         "keyword.other.global.cs",
@@ -3114,16 +3116,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "using" keyword in Razor Pages directives:
-    {
-      "scope": [
-        "meta.directive keyword.other.using.cs",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
       }
     },
     //
@@ -3433,11 +3425,13 @@
     {
       "scope": [
         "text.aspnetcorerazor meta.directive keyword.other.using", // "using"
+        "meta.directive keyword.other.using.cs", // "using"
         "text.aspnetcorerazor meta.directive keyword.control.razor.directive", // "page", "model"
         "text.aspnetcorerazor meta.directive keyword.control.cshtml.transition", // "@"
       ],
       "settings": {
-        "foreground": "#C344AB"
+        // "foreground": "#C344AB"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3449,7 +3443,22 @@
         "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.razor.directive.codeblock.close", // "}"
       ],
       "settings": {
-        "foreground": "#C344AB"
+        // "foreground": "#C344AB"
+        // "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "@if { }" blocks in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor keyword.control.conditional", // "if", "else" in "@if { }" block
+        "text.aspnetcorerazor keyword.control.cshtml.transition", // "@" in "@if { }" block
+        "text.aspnetcorerazor keyword.control", // "foreach"
+      ],
+      "settings": {
+        // "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3459,19 +3468,8 @@
         "text.aspnetcorerazor meta.expression.implicit keyword.control.cshtml.transition", // "@"
       ],
       "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // "@if { }" blocks in Razor Pages:
-    {
-      "scope": [
-        "text.aspnetcorerazor keyword.control.cshtml.transition", // "@"
-        "text.aspnetcorerazor keyword.control.conditional", // "if", "else"
-        "text.aspnetcorerazor keyword.control", // "foreach"
-      ],
-      "settings": {
-        "foreground": "#C344AB"
+        // "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3483,7 +3481,10 @@
         "text.aspnetcorerazor meta.expression.implicit source.cs entity.name.function.cs",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        // "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
+        // "foreground": "#0000CC"
+        // "foreground": "#000000"
       }
     },
     //
@@ -3524,14 +3525,17 @@
         "text.aspnetcorerazor meta.structure.razor.csharp.codeblock punctuation.curlybrace",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        // "foreground": "#C344AB"
+        // "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
       }
     },
     //
-    // ":" in Razor Pages:
+    // ":" and ";" in Razor Pages:
     {
       "scope": [
         "text.aspnetcorerazor punctuation.separator.colon",
+        "text.aspnetcorerazor keyword.control.razor.optionalSemicolon",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -4503,7 +4507,7 @@
         "source.css punctuation.definition.interpolation.end.bracket.curly",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -4574,7 +4578,7 @@
         "text.aspnetcorerazor entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //

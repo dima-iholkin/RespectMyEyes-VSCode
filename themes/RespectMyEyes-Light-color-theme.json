@@ -2702,17 +2702,35 @@
       }
     },
     //
-    // control keywords and "slot" tag:
+    // control keywords:
     {
       "scope": [
         "keyword.control.svelte",
+        "meta.special.each.svelte keyword.control.as.svelte", // "as" in "{:each items as item}" block
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "slot" syntax:
+    {
+      "scope": [
         "meta.scope.tag.slot.svelte keyword.control.svelte", // <slot /> tag
         // "meta.scope.tag.slot.svelte punctuation.definition.tag.begin.svelte", // <slot /> tag
         // "meta.scope.tag.slot.svelte punctuation.definition.tag.end.svelte", // <slot /> tag
-        "meta.special.each.svelte keyword.control.as.svelte",
       ],
       "settings": {
-        // "foreground": "#C344AB",
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "slot" syntax:
+    {
+      "scope": [
+        "meta.attribute.slot.svelte entity.other.attribute-name.svelte", // slot attribute
+      ],
+      "settings": {
         "foreground": "#0BC5E3",
       }
     },

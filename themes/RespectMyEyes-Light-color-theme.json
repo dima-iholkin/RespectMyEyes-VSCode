@@ -1698,6 +1698,7 @@
     },
     //
     // "break", "continue", "for" keywords:
+    // Cannot change it to purple, because it also changes the "for" keyword.
     {
       "scope": [
         "source.ts keyword.control.loop", // "break", "continue", "for"
@@ -1710,7 +1711,33 @@
         "foreground": "#0BC5E3"
       }
     },
-    // Cannot change it to purple, because it also changes the "for" keyword.
+    //
+    // "as" keyword for casting:
+    {
+      "scope": [
+        "source.ts keyword.control.as", // "as"
+        "source.js keyword.control.as", // "as"
+        "source.tsx keyword.control.as", // "as"
+        "source.jsx keyword.control.as", // "as"
+        "meta.embedded.block.javascript keyword.control.as", // "as"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "delete" property keyword:
+    {
+      "scope": [
+        "keyword.operator.expression.delete.ts",
+        "keyword.operator.expression.delete.js",
+        "keyword.operator.expression.delete.tsx",
+        "keyword.operator.expression.delete.jsx",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
     //
     // type keywords:
     {
@@ -1812,20 +1839,6 @@
       ],
       "settings": {
         "foreground": "#A31515"
-      }
-    },
-    //
-    // "as" keyword for casting:
-    {
-      "scope": [
-        "source.ts keyword.control.as", // "as"
-        "source.js keyword.control.as", // "as"
-        "source.tsx keyword.control.as", // "as"
-        "source.jsx keyword.control.as", // "as"
-        "meta.embedded.block.javascript keyword.control.as", // "as"
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
       }
     },
     //

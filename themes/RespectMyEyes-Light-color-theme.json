@@ -4308,7 +4308,7 @@
         "meta.embedded.block.scss keyword.control.at-rule punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -4369,7 +4369,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
-        // "foreground": "#C344AB",
       }
     },
     //

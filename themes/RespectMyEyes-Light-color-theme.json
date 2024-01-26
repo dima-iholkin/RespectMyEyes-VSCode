@@ -1739,6 +1739,19 @@
       }
     },
     //
+    // "debugger" keyword:
+    {
+      "scope": [
+        "keyword.other.debugger.ts",
+        "keyword.other.debugger.js",
+        "keyword.other.debugger.tsx",
+        "keyword.other.debugger.jsx",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
     // type keywords:
     {
       "scope": [
@@ -4027,7 +4040,7 @@
     //
     //
     // ====================================================
-    // CSS, SCSS, LESS, CSS-in-JS:
+    // CSS, SASS, SCSS, LESS, CSS-in-JS:
     //
     // Names in CSS:
     //
@@ -4544,6 +4557,20 @@
       }
     },
     //
+    //
+    //
+    // ====================================================
+    // PostCSS:
+    //
+    // A hack to solve poor PostCSS support:
+    {
+      "scope": [
+        "source.css.postcss",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
     //
     //
     // ====================================================

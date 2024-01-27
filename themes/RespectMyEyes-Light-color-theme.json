@@ -4198,13 +4198,22 @@
     {
       "scope": [
         "source.css constant.other.color.rgb-value.hex",
+        "source.css.postcss constant.other.color.rgb-value.hex",
+        "source.css.postcss constant.other.color.rgb-value",
         "source.css constant.other.color.rgb-value.hex punctuation.definition.constant",
+        "source.css.postcss constant.other.color.rgb-value.hex punctuation.definition.constant",
         "source.css constant.other.rgb-value",
+        "source.css.postcss constant.other.rgb-value",
         "source.css support.constant.property-value",
+        "source.css.postcss support.constant.property-value",
         "source.css meta.attribute-selector",
+        "source.css.postcss meta.attribute-selector",
         "source.css meta.property-value",
+        "source.css.postcss meta.property-value",
         "source.css meta.property-value support.type.property-name",
+        "source.css.postcss meta.property-value support.type.property-name",
         "source.css support.constant.font-name",
+        "source.css.postcss support.constant.font-name",
       ],
       "settings": {
         "foreground": "#A31515"

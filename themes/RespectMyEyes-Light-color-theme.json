@@ -2737,7 +2737,6 @@
       ],
       "settings": {
         "foreground": "#C344AB",
-        // "foreground": "#0BC5E3",
       }
     },
     //
@@ -2745,8 +2744,6 @@
     {
       "scope": [
         "meta.scope.tag.slot.svelte keyword.control.svelte", // <slot /> tag
-        // "meta.scope.tag.slot.svelte punctuation.definition.tag.begin.svelte", // <slot /> tag
-        // "meta.scope.tag.slot.svelte punctuation.definition.tag.end.svelte", // <slot /> tag
       ],
       "settings": {
         "foreground": "#0BC5E3",
@@ -2770,9 +2767,22 @@
         "meta.tag.end.svelte keyword.control.svelte", // "svelte" in "svelte:head"
       ],
       "settings": {
-        // "foreground": "#C344AB",
-        // "foreground": "#0BC5E3",
         "foreground": "#0000CC",
+      }
+    },
+    //
+    // <script> and <style> tags in svelte components:
+    {
+      "scope": [
+        "meta.script.svelte entity.name.tag.svelte", // <script> tag
+        "meta.script.svelte punctuation.definition.tag.begin.svelte", // <script> tag
+        "meta.script.svelte punctuation.definition.tag.end.svelte", // <script> tag
+        "meta.style.svelte entity.name.tag.svelte", // <style> tag
+        "meta.style.svelte punctuation.definition.tag.begin.svelte", // <style> tag
+        "meta.style.svelte punctuation.definition.tag.end.svelte", // <style> tag
+      ],
+      "settings": {
+        "foreground": "#0000CC80",
       }
     },
     //
@@ -2783,7 +2793,6 @@
       ],
       "settings": {
         "foreground": "#C344AB",
-        // "foreground": "#0BC5E3",
       }
     },
     //
@@ -2793,7 +2802,6 @@
         "keyword.control.conditional.svelte", // "if", "else"
       ],
       "settings": {
-        // "foreground": "#C344AB",
         "foreground": "#0BC5E3",
       }
     },
@@ -2816,7 +2824,6 @@
         "meta.directive.use.svelte variable.function.svelte", // "enhance" in "use:enhance"
       ],
       "settings": {
-        // "foreground": "#0000CC"
         "foreground": "#C344AB"
       }
     },
@@ -2863,7 +2870,6 @@
       ],
       "settings": {
         "foreground": "#C344AB",
-        // "foreground": "#0BC5E3",
       }
     },
     //

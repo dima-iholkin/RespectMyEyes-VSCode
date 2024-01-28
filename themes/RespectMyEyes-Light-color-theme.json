@@ -2722,6 +2722,7 @@
         "meta.directive.class.svelte entity.other.attribute-name.class.svelte",
         "meta.directive.bind.svelte keyword.control.svelte", // "bind" in "bind:value"
         "meta.directive.bind.svelte entity.name.type.svelte", // "value" in "bind:value"
+        "meta.directive.bind.svelte variable.language.svelte", // "this" in "bind:this"
       ],
       "settings": {
         "foreground": "#C344AB",

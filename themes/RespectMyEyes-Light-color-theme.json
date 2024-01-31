@@ -1417,6 +1417,9 @@
         "source.tsx source.css variable.other.object",
         "source.jsx source.css variable.other.object",
         "meta.embedded.block.javascript source.css variable.other.object",
+        // introduced for embedded blocks in Markdown:
+        "markup.fenced_code.block.markdown support.variable.property.ts",
+        "markup.fenced_code.block.markdown support.variable.property.js"
       ],
       "settings": {
         "foreground": "#000000",
@@ -2704,6 +2707,8 @@
     // ====================================================
     // Svelte (.svelte):
     //
+    // Keywords in Svelte:
+    //
     // control keywords:
     {
       "scope": [
@@ -2715,7 +2720,7 @@
       }
     },
     //
-    // "class:playing", "bind:value" and similar attributes:
+    // "class:playing", "bind:value", "transition:fly" and similar attributes:
     {
       "scope": [
         "meta.directive.class.svelte entity.other.attribute-name.svelte",
@@ -2723,9 +2728,34 @@
         "meta.directive.bind.svelte keyword.control.svelte", // "bind" in "bind:value"
         "meta.directive.bind.svelte entity.name.type.svelte", // "value" in "bind:value"
         "meta.directive.bind.svelte variable.language.svelte", // "this" in "bind:this"
+        "keyword.other.animation.svelte", // "transition" in "transition:fly"
+        "meta.directive.transition.svelte entity.name.type.svelte", // "fly" in "transition:fly"
+        "meta.directive.in.svelte variable.function.svelte", // "fly" in "in:fly"
+        "meta.directive.out.svelte variable.function.svelte", // "fly" in "out:fly"
+        "meta.directive.animate.svelte variable.function.svelte", // "fly" in "animate:fly"
       ],
       "settings": {
         "foreground": "#C344AB",
+      }
+    },
+    //
+    // "style:transform" and similar CSS properties in attributes:
+    {
+      "scope": [
+        "meta.directive.style.svelte support.type.property-name.svelte", // "transform" and similar
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // "--color" and similar custom CSS variables in attributes:
+    {
+      "scope": [
+        "meta.tag.start.svelte meta.attribute support.type.property-name.svelte", // "--color" and similar
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
       }
     },
     //
@@ -2839,13 +2869,33 @@
       }
     },
     //
+    // "@html":
+    {
+      "scope": [
+        "meta.special.html.svelte punctuation.definition.keyword.svelte",
+        "meta.special.html.svelte keyword.other.svelte",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // Punctuation in Svelte:
+    //
     // "{ }" string interpolation:
     {
       "scope": [
         "source.svelte punctuation.section.embedded.begin.svelte",
         "source.svelte punctuation.section.embedded.end.svelte",
         "source.svelte string.quoted.svelte punctuation.section.embedded.begin.svelte",
-        "source.svelte string.quoted.svelte punctuation.section.embedded.end.svelte"
+        "source.svelte string.quoted.svelte punctuation.section.embedded.end.svelte",
+        // For embedded code, like in Markdown:
+        "punctuation.section.embedded.begin.svelte",
+        "punctuation.section.embedded.end.svelte",
+        "string.quoted.svelte punctuation.section.embedded.begin.svelte",
+        "string.quoted.svelte punctuation.section.embedded.end.svelte",
+        "meta.embedded.block.svelte meta string.quoted.svelte punctuation.section.embedded.begin.svelte",
+        "meta.embedded.block.svelte meta string.quoted.svelte punctuation.section.embedded.end.svelte"
       ],
       "settings": {
         "foreground": "#0BC5E3",
@@ -2856,7 +2906,9 @@
     {
       "scope": [
         "source.svelte meta punctuation.section.embedded.begin.svelte",
-        "source.svelte meta punctuation.section.embedded.end.svelte"
+        "source.svelte meta punctuation.section.embedded.end.svelte",
+        "meta.embedded.block.svelte meta punctuation.section.embedded.begin.svelte",
+        "meta.embedded.block.svelte meta punctuation.section.embedded.end.svelte"
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -2868,6 +2920,16 @@
       "scope": [
         "meta.embedded.block.svelte entity.name.label", // "&"
         "meta.embedded.block.svelte punctuation.separator.label", // ":"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "$" in store syntax:
+    {
+      "scope": [
+        "punctuation.definition.variable.svelte", // "$" in "$page"
       ],
       "settings": {
         "foreground": "#C344AB",
@@ -4120,11 +4182,10 @@
         "source.css variable.argument",
         "source.css meta.property-list variable.other.less", // for LESS
         "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
+        "variable.parameter.postcss", // for PostCSS
       ],
       "settings": {
         "foreground": "#E8810C"
-        // "foreground": "#C344AB"
-        // "foreground": "#0BC5E3"
       }
     },
     //
@@ -4180,7 +4241,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
-        // "foreground": "#0000CC"
       }
     },
     //
@@ -4645,7 +4705,6 @@
     {
       "scope": [
         "text.html",
-        "text.html.markdown",
         "text.html.markdown meta.embedded.block.html", // HTML embedded into Markdown
         "text.html.markdown meta.embedded.block meta.jsx.children", // JSX embedded into Markdown
         "text.html.markdown meta.embedded.block meta.tsx.children", // JSX embedded into Markdown
@@ -4888,15 +4947,34 @@
     //
     // ====================================================
     // Markdown (.md):
+    {
+      "scope": [
+        "text.html.markdown", // unstyled Markdown
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
     //
     // just normal text:
     {
       "scope": [
         "text.html.markdown meta.paragraph",
-        "text.html.markdown meta.paragraph punctuation.definition.entity", // Fix for "&nbsp;" in a heading.
       ],
       "settings": {
         "foreground": "#000000"
+      }
+    },
+    //
+    // lext like "&nbsp;" and "&lt;":
+    {
+      "scope": [
+        "text.html.markdown meta.paragraph punctuation.definition.entity", // Fix for "&nbsp;".
+        "text.html.markdown meta.paragraph constant.character.entity.named.lt", // Fix for "&lt;".
+        "text.html.markdown meta.paragraph constant.character.entity.named.gt", // Fix for "&nbsp;".
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -5013,7 +5091,7 @@
         "text.html.markdown heading constant.other.reference.link", // [][homepage] // Fix for the link URL in a heading.
       ],
       "settings": {
-        "foreground": "#D18A8A"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -5099,7 +5177,7 @@
     {
       "scope": "text.html.markdown markup.inline.raw",
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //

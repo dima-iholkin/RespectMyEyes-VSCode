@@ -4995,10 +4995,10 @@
     // Markdown (.md):
     {
       "scope": [
-        "text.html.markdown", // unstyled Markdown
+        "text.html.markdown", // unstyled Markdown, text in embedded HTML too
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#E8810C"
       }
     },
     //

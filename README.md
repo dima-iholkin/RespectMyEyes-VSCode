@@ -16,37 +16,35 @@
 
 
 
-Hi! This theme is focused on supporting:
-* React TSX / JSX
-* TypeScript / JavaScript
-* HTML / XML
-* CSS / SCSS / LESS
-* C# / Razor Pages
-* Markdown
-* Java
-* PowerShell
-* Shell
-* AutoHotKey
-* T-SQL
-* JSON
-* YAML
-* Dockerfile
-
-The focus of this theme is to support developers in these languages: 
+Core languages supported: 
 * Svelte
 * C# / .NET / ASP.NET Core
 * TypeScript / JavaScript
 * React / JSX / TSX 
 * CSS
 * HTML / XML
+* JSON
+* Markdown
 
-Please raise an issue if you have found a bug, want a better language support or more languages supported.
+
+
+## Screenshots
+
+### User Interface
+
+<img src="/screenshots/ts_intro.png" title="screenshot of the user interface using the theme" />
+
+### Svelte
 
 
 
-### UI
+### C#
 
-<img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
+<img src="/screenshots/cs.png" title="c-sharp code screenshot" />
+
+### TypeScript
+
+
 
 ### JavaScript
 
@@ -54,16 +52,10 @@ Please raise an issue if you have found a bug, want a better language support or
   Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
 
-### React TSX
+### React / JSX / TSX
 
 <img src="/screenshots/react typescript.png" title="react typescript code screenshot" >
   Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app">React TypeScript RealWorld Example App</a>
-</img>
-
-### HTML
-
-<img src="/screenshots/html.png" title="html code screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
 
 ### CSS
@@ -72,15 +64,15 @@ Please raise an issue if you have found a bug, want a better language support or
   Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
 
-### SCSS
+### HTML
 
-<img src="/screenshots/scss.png" title="scss code screenshot">
+<img src="/screenshots/html.png" title="html code screenshot">
   Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
 </img>
 
-### C#
+### JSON
 
-<img src="/screenshots/cs.png" title="c-sharp code screenshot" />
+
 
 ### Markdown
 
@@ -88,21 +80,15 @@ Please raise an issue if you have found a bug, want a better language support or
   Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
 </img>
 
-### PowerShell
-
-<img src="/screenshots/powershell.png" title="powershell code screenshot">
-  Source: <a href="https://github.com/last-byte/PersistenceSniper">Persistence Sniper</a>
-</img>
 
 
-
-## Required syntax highlighting extensions
+## Core language support
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required syntax highlighting extention</th>
+      <th align="center">Required extension for syntax highlight</th>
     </tr>
   </thead>
   <tbody>
@@ -187,7 +173,27 @@ Please raise an issue if you have found a bug, want a better language support or
 
 
 
+## Lazy language support
+
+Maintainers for these and new languages are very welcomed!
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Language</th>
+      <th align="center">Required extension for syntax highlight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    </tr>
+  </tbody>
+</table>
+
+
 ## Azure Data Studio compatibility
+
+This is outdated and I'm going to improve it eventually.
 
 <details>
   You can install this theme or any other theme by downloading it's <code>.vsix</code> file and going to <code>Extensions</code> > <code>Install from VSIX...</code> in Azure Data Studio. Download the latest VSIX file from <a href="https://github.com/dima-iholkin/RespectMyEyes-VSCode/releases/latest">the Releases page</a>.
@@ -216,6 +222,8 @@ Please raise an issue if you have found a bug, want a better language support or
 
 
 ## Terminal color customization
+
+This is outdated and I'm going to improve it eventually.
 
 <details>
   Below are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
@@ -251,6 +259,8 @@ Please raise an issue if you have found a bug, want a better language support or
 
 
 ## VS Code's UI customization
+
+This is outdated and I'm going to improve it eventually.
 
 <details>
   If you've found something different from your setup in my screenshots above, here are some important settings from my <code>settings.json</code> file.
@@ -325,4 +335,4 @@ Please raise an issue if you have found a bug, want a better language support or
 ## License information
 
 * **[MIT License](http://opensource.org/licenses/mit-license.php)**
-* Copyright © 2020 - 2023 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.
+* Copyright © 2020 - 2024 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.

@@ -3,13 +3,13 @@
 
 
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
-  <img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/dima-iholkin.respectmyeyes">
+  <img alt="Count of installations from Visual Studio Marketplace badge" src="https://img.shields.io/visual-studio-marketplace/i/dima-iholkin.respectmyeyes">
 </a> 
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
-  <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
+  <img alt="Extension version on Visual Studio Marketplace badge" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
 </a>
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
-  <img alt="Visual Studio Marketplace Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/dima-iholkin.respectmyeyes?label=updated">
+  <img alt="Last updated date on Visual Studio Marketplace badge" src="https://img.shields.io/visual-studio-marketplace/last-updated/dima-iholkin.respectmyeyes?label=updated">
 </a> 
 <br />
 <br />
@@ -31,6 +31,14 @@ Hi! This theme is focused on supporting:
 * JSON
 * YAML
 * Dockerfile
+
+The focus of this theme is to support developers in these languages: 
+* Svelte
+* C# / .NET / ASP.NET Core
+* TypeScript / JavaScript
+* React / JSX / TSX 
+* CSS
+* HTML / XML
 
 Please raise an issue if you have found a bug, want a better language support or more languages supported.
 

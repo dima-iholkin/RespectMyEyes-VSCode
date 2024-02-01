@@ -5008,7 +5008,7 @@
         "text.html.markdown meta.paragraph",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A31515"
       }
     },
     //
@@ -5227,7 +5227,7 @@
     {
       "scope": "text.html.markdown markup.inline.raw",
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#A9A9A9"
       }
     },
     //

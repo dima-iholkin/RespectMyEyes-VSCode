@@ -1,6 +1,7 @@
 // Color guide:
 //
 // main blue: #0000CC
+// main blue half-strength: #0000CC80
 //
 // light blue: #0BC5E3
 //
@@ -17,8 +18,8 @@
 // old yellow #1: #B5BA00
 // old yellow #2: #FFFFB0
 //
-// comments green: #50A750
 // full green: #00B000
+// comments green: #50A750
 //
 // strings: #A31515
 // light strings: #D18A8A

@@ -396,7 +396,7 @@
         "constant.numeric.other.preffix", // "0x", "0b"
       ],
       "settings": {
-        "foreground": "#C344AB",
+        "foreground": "#E8810C",
       }
     },
     // number suffix for float, double and so on:
@@ -1344,30 +1344,33 @@
     //
     //
     //
-    // decorators:
+    // "@Length" decorator syntax:
+    //
+    // "@" in decorator syntax:
     {
       "scope": [
-        "source.ts meta.decorator punctuation.decorator", // @ in decorator
-        "source.js meta.decorator punctuation.decorator", // @ in decorator
-        "source.tsx meta.decorator punctuation.decorator", // @ in decorator
-        "source.jsx meta.decorator punctuation.decorator", // @ in decorator
-        "meta.embedded.block.javascript meta.decorator punctuation.decorator", // @ in decorator
+        "source.ts meta.decorator punctuation.decorator",
+        "source.js meta.decorator punctuation.decorator",
+        "source.tsx meta.decorator punctuation.decorator",
+        "source.jsx meta.decorator punctuation.decorator",
+        "meta.embedded.block.javascript meta.decorator punctuation.decorator",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
+    // Name or identifier in decorator syntax:
     {
       "scope": [
-        "source.ts meta.decorator meta.function-call entity.name.function", // function call in decorator
-        "source.js meta.decorator meta.function-call entity.name.function", // function call in decorator
-        "source.tsx meta.decorator meta.function-call entity.name.function", // function call in decorator
-        "source.jsx meta.decorator meta.function-call entity.name.function", // function call in decorator
-        "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function", // function call in decorator
+        "source.ts meta.decorator meta.function-call entity.name.function",
+        "source.js meta.decorator meta.function-call entity.name.function",
+        "source.tsx meta.decorator meta.function-call entity.name.function",
+        "source.jsx meta.decorator meta.function-call entity.name.function",
+        "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2098,7 +2101,7 @@
         "meta.embedded.block.javascript meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
       ],
       "settings": {
-        "foreground": "#E8810C",
+        "foreground": "#A9A9A9",
       }
     },
     //
@@ -4128,7 +4131,7 @@
         "source.shell constant.other.option",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A31515"
       }
     },
     //
@@ -4144,7 +4147,6 @@
       "scope": [
         "source.css entity.name.tag",
         "meta.embedded.block.css entity.name.tag",
-        "source.css entity.name.tag.reference",
         "meta.embedded.block.css entity.name.tag.reference",
         "source.css meta.selector entity.name.tag",
         "meta.embedded.block.css meta.selector entity.name.tag",
@@ -4154,8 +4156,6 @@
         "meta.embedded.block.css entity.other.attribute-name.id", // id selector
         "source.css entity.other.attribute-name.parent-selector",
         "meta.embedded.block.css entity.other.attribute-name.parent-selector",
-        "source.css entity.other.attribute-name.pseudo-element",
-        "meta.embedded.block.css entity.other.attribute-name.pseudo-element",
         "source.css punctuation.definition.entity", // "#, ."
         "meta.embedded.block.css punctuation.definition.entity", // "#, ."
       ],
@@ -4166,11 +4166,15 @@
     //
     // pseudo-class selector syntax:
     //
-    // "has", "not", "disabled" and so on pseudo-class selectors:
+    // pseudo-class and pseudo-element selectors:
     {
       "scope": [
+        // "has", "not", "disabled" and similar:
         "source.css entity.other.attribute-name.pseudo-class",
         "meta.embedded.block.css entity.other.attribute-name.pseudo-class",
+        // "after" and similar:
+        "source.css entity.other.attribute-name.pseudo-element",
+        "meta.embedded.block.css entity.other.attribute-name.pseudo-element",
       ],
       "settings": {
         "foreground": "#0000CC80"
@@ -4180,18 +4184,19 @@
     // ":" in pseudo-class selector syntax:
     {
       "scope": [
-        "meta.selector.css entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css", // ":"
+        "entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css", // ":"
+        "entity.other.attribute-name.pseudo-element.css punctuation.definition.entity.css", // ":"
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // type names in @include:
+    // type names in @extend:
     {
       "scope": [
-        "source.css meta.at-rule.include entity.name.function",
-        "meta.embedded.block.css meta.at-rule.include entity.name.function",
+        // "source.css meta.at-rule.include entity.name.function",
+        // "meta.embedded.block.css meta.at-rule.include entity.name.function",
         "source.css meta.at-rule.extend entity.other.attribute-name.class",
         "meta.embedded.block.css meta.at-rule.extend entity.other.attribute-name.class",
       ],
@@ -4392,14 +4397,31 @@
       }
     },
     //
-    // @import syntax:
+    // "@import" syntax:
+    //
+    // name in "@import" syntax:
     {
       "scope": [
         "source.css meta.at-rule.import string.quoted",
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        "fontStyle": "underline"
+        "foreground": "#A31515",
+      }
+    },
+    //
+    // "@import" keyword:
+    {
+      "scope": [
+        "source.css keyword.control.at-rule.import",
+        "meta.embedded.block.css keyword.control.at-rule.import",
+        "meta.embedded.block.scss keyword.control.at-rule.import",
+        "source.css keyword.control.at-rule.import punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.import punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.import punctuation.definition.keyword",
+      ],
+      "settings": {
+        // "foreground": "#A9A9A9",
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -4464,21 +4486,6 @@
       }
     },
     //
-    // "@import" keyword:
-    {
-      "scope": [
-        "source.css keyword.control.at-rule.import",
-        "meta.embedded.block.css keyword.control.at-rule.import",
-        "meta.embedded.block.scss keyword.control.at-rule.import",
-        "source.css keyword.control.at-rule.import punctuation.definition.keyword",
-        "meta.embedded.block.css keyword.control.at-rule.import punctuation.definition.keyword",
-        "meta.embedded.block.scss keyword.control.at-rule.import punctuation.definition.keyword",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9",
-      }
-    },
-    //
     // "@media" keyword:
     {
       "scope": [
@@ -4498,8 +4505,8 @@
     {
       "scope": [
         // "@include":
-        "source.css keyword.control.at-rule.include",
-        "source.css keyword.control.at-rule.include punctuation.definition.keyword",
+        // "source.css keyword.control.at-rule.include",
+        // "source.css keyword.control.at-rule.include punctuation.definition.keyword",
         // "@extend":
         "source.css keyword.control.at-rule.extend",
         "source.css keyword.control.at-rule.extend punctuation.definition.keyword",
@@ -4509,6 +4516,33 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "@include" syntax:
+    //
+    // "@include" keyword:
+    {
+      "scope": [
+        // "@include":
+        "source.css keyword.control.at-rule.include",
+        "source.css keyword.control.at-rule.include punctuation.definition.keyword",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // type name in "@include":
+    {
+      "scope": [
+        "source.css meta.at-rule.include entity.name.function",
+        "meta.embedded.block.css meta.at-rule.include entity.name.function",
+      ],
+      "settings": {
+        // "foreground": "#A31515",
+        "foreground": "#0000CC",
+        // "foreground": "#0BC5E3",
       }
     },
     //
@@ -4566,6 +4600,26 @@
     //
     //
     // Punctuation:
+    //
+    // "&" ampersand or parent selector in SASS and LESS:
+    {
+      "scope": [
+        "source.css entity.name.tag.reference",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // ">" in selector syntax:
+    {
+      "scope": [
+        "keyword.operator.combinator.css",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
     //
     // ( ) braces in a function call:
     {
@@ -5313,7 +5367,7 @@
         "source.ini",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A31515"
       }
     },
     //
@@ -5359,7 +5413,7 @@
         "source.ignore",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A31515"
       }
     },
     //

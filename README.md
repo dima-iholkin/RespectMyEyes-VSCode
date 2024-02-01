@@ -16,7 +16,7 @@
 
 
 
-Core languages supported: 
+Core language support: 
 * Svelte
 * C# / .NET / ASP.NET Core
 * TypeScript / JavaScript
@@ -93,11 +93,27 @@ Core languages supported:
   </thead>
   <tbody>
     <tr>
-      <td align="center">React TSX / JSX</td>
-      <td align="center"> - </td>
+      <td align="center">Svelte</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode">Svelte for VS Code</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">C# / .NET / ASP.NET Core</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit</a>
+      </td>
     </tr>
     <tr>
       <td align="center">TypeScript / JavaScript</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">React / JSX / TSX</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">CSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -105,7 +121,36 @@ Core languages supported:
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">CSS / SCSS / LESS</td>
+      <td align="center">JSON</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Markdown</td>
+      <td align="center"> - </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+## Lazy language support
+
+Maintainers for these and new languages are very welcomed!
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Language</th>
+      <th align="center">Required extension for syntax highlight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">SASS / LESS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">PostCSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -115,22 +160,12 @@ Core languages supported:
       </td>
     </tr>
     <tr>
-      <td align="center">C# / Razor Pages</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp">C#</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">Markdown</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
       <td align="center">Java</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java(TM) by Red Hat</a>
       </td>
     </tr>
-        <tr>
+    <tr>
       <td align="center">PowerShell</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
@@ -148,10 +183,6 @@ Core languages supported:
     </tr>
     <tr>
       <td align="center">T-SQL</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">JSON</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -173,35 +204,17 @@ Core languages supported:
 
 
 
-## Lazy language support
-
-Maintainers for these and new languages are very welcomed!
-
-<table>
-  <thead>
-    <tr>
-      <th align="center">Language</th>
-      <th align="center">Required extension for syntax highlight</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-    </tr>
-  </tbody>
-</table>
-
-
 ## Azure Data Studio compatibility
 
-This is outdated and I'm going to improve it eventually.
-
 <details>
-  You can install this theme or any other theme by downloading it's <code>.vsix</code> file and going to <code>Extensions</code> > <code>Install from VSIX...</code> in Azure Data Studio. Download the latest VSIX file from <a href="https://github.com/dima-iholkin/RespectMyEyes-VSCode/releases/latest">the Releases page</a>.
+  <p>This is outdated and I'm going to improve it eventually.</p>
+
+  <p>You can install this theme or any other theme by downloading it's <code>.vsix</code> file and going to <code>Extensions</code> > <code>Install from VSIX...</code> in Azure Data Studio. Download the latest VSIX file from <a href="https://github.com/dima-iholkin/RespectMyEyes-VSCode/releases/latest">the Releases page</a>.</p>
 
   <br />
   <br />
 
-  Below are the fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.
+  <p>Below are the fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.</p>
 
   ```jsonc
   // settings.json
@@ -223,10 +236,11 @@ This is outdated and I'm going to improve it eventually.
 
 ## Terminal color customization
 
-This is outdated and I'm going to improve it eventually.
 
 <details>
-  Below are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
+  <p>This is outdated and I'm going to improve it eventually.</p>
+
+  <p>Below are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.</p>
 
   ```jsonc
   // settings.json
@@ -260,10 +274,11 @@ This is outdated and I'm going to improve it eventually.
 
 ## VS Code's UI customization
 
-This is outdated and I'm going to improve it eventually.
 
 <details>
-  If you've found something different from your setup in my screenshots above, here are some important settings from my <code>settings.json</code> file.
+  <p>This is outdated and I'm going to improve it eventually.</p>
+  
+  <p>If you've found something different from your setup in my screenshots above, here are some important settings from my <code>settings.json</code> file.</p>
 
   ```jsonc
   // settings.json

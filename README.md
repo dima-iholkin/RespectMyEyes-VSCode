@@ -77,7 +77,7 @@ Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/di
 
 ### JSON
 
-<img src="/screenshots/json.png" loading="lazy" width="600" title="screenshot of HTML code styled by RespectMyEyes theme" />
+<img src="/screenshots/json.png" loading="lazy" width="700" title="screenshot of HTML code styled by RespectMyEyes theme" />
 
 Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/package.json">Brad Traversy's Modern Portfolio</a>
 

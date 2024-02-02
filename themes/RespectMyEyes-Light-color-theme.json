@@ -256,7 +256,7 @@
     "editorIndentGuide.background6": "#C0C0C080",
     //
     // the Bracket Matches in the editor window:
-    "editorBracketMatch.background": "#FEFE3380",
+    "editorBracketMatch.background": "#A9A9A960",
     //
     // I want the borders to be white, like the background:
     "editorBracketMatch.border": "#FFFFFF00",

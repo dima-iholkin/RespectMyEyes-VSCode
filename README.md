@@ -105,7 +105,7 @@ Core language support:
       </td>
     </tr>
     <tr>
-      <td align="center">TypeScript / JavaScript</td>
+      <td align="center">JavaScript / TypeScript</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -135,7 +135,7 @@ Core language support:
 
 ## Lazy language support
 
-Maintainers for these and new languages are very welcomed!
+Maintainers for these and new languages are very welcome!
 
 <table>
   <thead>

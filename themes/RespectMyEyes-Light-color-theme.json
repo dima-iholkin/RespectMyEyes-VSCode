@@ -182,6 +182,10 @@
     // search in Command Palette text highlight:
     "list.highlightForeground": "#00A000",
     //
+    // Indent guides in File Explorer:
+    "tree.indentGuidesStroke": "#00B00080",
+    "tree.inactiveIndentGuidesStroke": "#00B00020",
+    //
     //
     //
     //
@@ -218,15 +222,19 @@
     //
     // the background behind the selection text when in another window or pane,
     // should be different from the active one:
-    "editor.inactiveSelectionBackground": "#DFF5DF", // #00B00020
-    "editor.selectionBackground": "#BFEBBF", // #00B00040
+    "editor.inactiveSelectionBackground": "#00B00020", // #DFF5DF
+    //
+    "editor.selectionBackground": "#00B00080",
     //
     // region with the same content as the selection,
     // should be not too attractive to the eye:
     "editor.selectionHighlightBackground": "#00B00020",
-    "editor.wordHighlightBackground": "#00B00010",
-    "editor.wordHighlightStrongBackground": "#00B00040",
-    "editor.hoverHighlightBackground": "#00B00040",
+    //
+    "editor.wordHighlightBackground": "#00B00020",
+    //
+    "editor.wordHighlightStrongBackground": "#00B00020",
+    //
+    "editor.hoverHighlightBackground": "#00B00080",
     //
     //
     //
@@ -248,7 +256,7 @@
     "editorIndentGuide.background6": "#C0C0C080",
     //
     // the Bracket Matches in the editor window:
-    "editorBracketMatch.background": "#00B00040",
+    "editorBracketMatch.background": "#A9A9A960",
     //
     // I want the borders to be white, like the background:
     "editorBracketMatch.border": "#FFFFFF00",
@@ -270,10 +278,16 @@
     //
     //
     //
-    "editor.findMatchBackground": "#FFA500",
+    // Find workflow:
     //
-    "editor.findMatchHighlightBackground": "#FEFE3360",
-    "editor.findMatchHighlightBorder": "#E8810C",
+    "editor.findMatchBackground": "#FEFE3380",
+    "editor.findMatchBorder": "#FFA500",
+    //
+    "editor.findMatchHighlightBackground": "#FEFE3380",
+    //
+    "editor.rangeHighlightBackground": "#FEFE3340",
+    //
+    //
     //
     // Highlights the opening and closing HTML tags for editing:
     "editor.linkedEditingBackground": "#C344AB20",
@@ -392,7 +406,7 @@
         "constant.numeric.other.preffix", // "0x", "0b"
       ],
       "settings": {
-        "foreground": "#C344AB",
+        "foreground": "#E8810C",
       }
     },
     // number suffix for float, double and so on:
@@ -624,7 +638,7 @@
       "scope": [
         "variable.other.enummember", // enum member names
         "entity.name.variable.enum-member", // enum member names in C#
-        // "constant.other.enum" // enum member names in Java
+        "constant.other.enum" // enum member names in Java
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -687,7 +701,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1249,6 +1263,12 @@
         "source.tsx meta.parameters variable.parameter",
         "source.jsx meta.parameters variable.parameter",
         "meta.embedded.block.javascript meta.parameters variable.parameter",
+        // for when the argument is a callback function:
+        "source.ts meta.parameters entity.name.function",
+        "source.js meta.parameters entity.name.function",
+        "source.tsx meta.parameters entity.name.function",
+        "source.jsx meta.parameters entity.name.function",
+        "meta.embedded.block.javascript meta.parameters entity.name.function",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -1312,19 +1332,6 @@
     //
     {
       "scope": [
-        "source.ts new.expr meta.function-call support.class", // function call
-        "source.js new.expr meta.function-call support.class", // function call
-        "source.tsx new.expr meta.function-call support.class", // function call
-        "source.jsx new.expr meta.function-call support.class", // function call
-        "meta.embedded.block.javascript new.expr meta.function-call support.class", // function call
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    {
-      "scope": [
         "source.ts meta.function-call support.class", // function call
         "source.js meta.function-call support.class", // function call
         "source.tsx meta.function-call support.class", // function call
@@ -1352,30 +1359,33 @@
     //
     //
     //
-    // decorators:
+    // "@Length" decorator syntax:
+    //
+    // "@" in decorator syntax:
     {
       "scope": [
-        "source.ts meta.decorator punctuation.decorator", // @ in decorator
-        "source.js meta.decorator punctuation.decorator", // @ in decorator
-        "source.tsx meta.decorator punctuation.decorator", // @ in decorator
-        "source.jsx meta.decorator punctuation.decorator", // @ in decorator
-        "meta.embedded.block.javascript meta.decorator punctuation.decorator", // @ in decorator
+        "source.ts meta.decorator punctuation.decorator",
+        "source.js meta.decorator punctuation.decorator",
+        "source.tsx meta.decorator punctuation.decorator",
+        "source.jsx meta.decorator punctuation.decorator",
+        "meta.embedded.block.javascript meta.decorator punctuation.decorator",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
+    // Name or identifier in decorator syntax:
     {
       "scope": [
-        "source.ts meta.decorator meta.function-call entity.name.function", // function call in decorator
-        "source.js meta.decorator meta.function-call entity.name.function", // function call in decorator
-        "source.tsx meta.decorator meta.function-call entity.name.function", // function call in decorator
-        "source.jsx meta.decorator meta.function-call entity.name.function", // function call in decorator
-        "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function", // function call in decorator
+        "source.ts meta.decorator meta.function-call entity.name.function",
+        "source.js meta.decorator meta.function-call entity.name.function",
+        "source.tsx meta.decorator meta.function-call entity.name.function",
+        "source.jsx meta.decorator meta.function-call entity.name.function",
+        "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1416,6 +1426,9 @@
         "source.tsx source.css variable.other.object",
         "source.jsx source.css variable.other.object",
         "meta.embedded.block.javascript source.css variable.other.object",
+        // introduced for embedded blocks in Markdown:
+        "markup.fenced_code.block.markdown support.variable.property.ts",
+        "markup.fenced_code.block.markdown support.variable.property.js"
       ],
       "settings": {
         "foreground": "#000000",
@@ -1697,6 +1710,7 @@
     },
     //
     // "break", "continue", "for" keywords:
+    // Cannot change it to purple, because it also changes the "for" keyword.
     {
       "scope": [
         "source.ts keyword.control.loop", // "break", "continue", "for"
@@ -1709,7 +1723,46 @@
         "foreground": "#0BC5E3"
       }
     },
-    // Cannot change it to purple, because it also changes the "for" keyword.
+    //
+    // "as" keyword for casting:
+    {
+      "scope": [
+        "source.ts keyword.control.as", // "as"
+        "source.js keyword.control.as", // "as"
+        "source.tsx keyword.control.as", // "as"
+        "source.jsx keyword.control.as", // "as"
+        "meta.embedded.block.javascript keyword.control.as", // "as"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "delete" property keyword:
+    {
+      "scope": [
+        "keyword.operator.expression.delete.ts",
+        "keyword.operator.expression.delete.js",
+        "keyword.operator.expression.delete.tsx",
+        "keyword.operator.expression.delete.jsx",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "debugger" keyword:
+    {
+      "scope": [
+        "keyword.other.debugger.ts",
+        "keyword.other.debugger.js",
+        "keyword.other.debugger.tsx",
+        "keyword.other.debugger.jsx",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
     //
     // type keywords:
     {
@@ -1796,7 +1849,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#A31515"
       }
     },
     //
@@ -1811,20 +1863,6 @@
       ],
       "settings": {
         "foreground": "#A31515"
-      }
-    },
-    //
-    // "as" keyword for casting:
-    {
-      "scope": [
-        "source.ts keyword.control.as", // "as"
-        "source.js keyword.control.as", // "as"
-        "source.tsx keyword.control.as", // "as"
-        "source.jsx keyword.control.as", // "as"
-        "meta.embedded.block.javascript keyword.control.as", // "as"
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1908,7 +1946,7 @@
         "meta.embedded.block.javascript variable.language.super",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1964,6 +2002,8 @@
       }
     },
     //
+    // "new" syntax:
+    //
     // "new" keyword:
     {
       "scope": [
@@ -1972,13 +2012,19 @@
         "source.tsx keyword.operator.new",
         "source.jsx keyword.operator.new",
         "meta.embedded.block.javascript keyword.operator.new",
+        // This rule was useful at least once for React.ClassType in "index.d.ts":
+        "source.ts keyword.control.new",
+        "source.js keyword.control.new",
+        "source.tsx keyword.control.new",
+        "source.jsx keyword.control.new",
+        "meta.embedded.block.javascript keyword.control.new",
       ],
       "settings": {
         "foreground": "#0000CC"
       }
     },
     //
-    // new "MyClass"() :
+    // new "MyClass"():
     {
       "scope": [
         "source.ts new.expr entity.name.type",
@@ -1986,6 +2032,34 @@
         "source.tsx new.expr entity.name.type",
         "source.jsx new.expr entity.name.type",
         "meta.embedded.block.javascript new.expr entity.name.type",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    {
+      "scope": [
+        "source.ts new.expr meta.function-call support.class", // function call
+        "source.js new.expr meta.function-call support.class", // function call
+        "source.tsx new.expr meta.function-call support.class", // function call
+        "source.jsx new.expr meta.function-call support.class", // function call
+        "meta.embedded.block.javascript new.expr meta.function-call support.class", // function call
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // It works right in cases like " new RegExp(); "
+    // It has issues in cases like " await new Promise((obj) => setTimeout(obj, 1000)); "
+    {
+      "scope": [
+        "source.ts new.expr meta.function-call entity.name.function",
+        "source.js new.expr meta.function-call entity.name.function",
+        "source.tsx new.expr meta.function-call entity.name.function",
+        "source.jsx new.expr meta.function-call entity.name.function",
+        "meta.embedded.block.javascript new.expr meta.function-call entity.name.function",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2542,7 +2616,7 @@
         "source.jsx entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2676,10 +2750,69 @@
     // ====================================================
     // Svelte (.svelte):
     //
-    // "on.click" and similar attributes:
+    // Keywords in Svelte:
+    //
+    // control keywords:
     {
       "scope": [
-        "meta.directive.on.svelte entity.name.type.svelte", // "click" in "on:click"
+        "keyword.control.svelte",
+        "meta.special.each.svelte keyword.control.as.svelte", // "as" in "{:each items as item}" block
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "class:playing", "bind:value", "transition:fly" and similar attributes:
+    {
+      "scope": [
+        // "class" directives:
+        "meta.directive.class.svelte entity.other.attribute-name.svelte",
+        "meta.directive.class.svelte entity.other.attribute-name.class.svelte",
+        // "bind" directives
+        "meta.directive.bind.svelte keyword.control.svelte", // "bind" in "bind:value"
+        "meta.directive.bind.svelte entity.name.type.svelte", // "value" in "bind:value"
+        "meta.directive.bind.svelte variable.language.svelte", // "this" in "bind:this"
+        // transition and animation directives:
+        "keyword.other.animation.svelte", // "transition" in "transition:fly"
+        "meta.directive.transition.svelte entity.name.type.svelte", // "fly" in "transition:fly"
+        "meta.directive.in.svelte variable.function.svelte", // "fly" in "in:fly"
+        "meta.directive.out.svelte variable.function.svelte", // "fly" in "out:fly"
+        "meta.directive.animate.svelte variable.function.svelte", // "fly" in "animate:fly",
+        // "let" directive:
+        "meta.directive.let.svelte storage.type.svelte", // "let" in "let:prop",
+        "meta.directive.let.svelte variable.parameter.svelte", // "prop" in "let:prop",
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "style:transform" and similar CSS properties in attributes:
+    {
+      "scope": [
+        "meta.directive.style.svelte support.type.property-name.svelte", // "transform" and similar
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // "--color" and similar custom CSS variables in attributes:
+    {
+      "scope": [
+        "meta.tag.start.svelte meta.attribute support.type.property-name.svelte", // "--color" and similar
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // "on.click", "on:keydown" and similar attributes:
+    {
+      "scope": [
+        "meta.directive.on.svelte keyword.control.svelte", // "on" in "on:keydown"
+        "meta.directive.on.svelte entity.name.type.svelte", // "keydown" in "on:keydown"
         "support.function.svelte", // "preventDefault", "once"
       ],
       "settings": {
@@ -2687,11 +2820,55 @@
       }
     },
     //
-    // "svelte" keyword:
+    // "slot" syntax:
     {
       "scope": [
-        "keyword.control.svelte", // "svelte" in "svelte:head"
-        "meta.special.each.svelte keyword.control.as.svelte",
+        "meta.scope.tag.slot.svelte keyword.control.svelte", // "<slot />" tag
+        "meta.attribute.slot.svelte entity.other.attribute-name.svelte", // "slot" attribute
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "slot" syntax:
+    {
+      "scope": [
+        "meta.scope.tag.slot.svelte meta.attribute.name.svelte entity.other.attribute-name.svelte", // "name" attribute of "<slot />" tag
+      ],
+      "settings": {}
+    },
+    //
+    // "svelte" tag keyword:
+    {
+      "scope": [
+        "meta.tag.start.svelte keyword.control.svelte", // "svelte" in "svelte:head"
+        "meta.tag.end.svelte keyword.control.svelte", // "svelte" in "svelte:head"
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // <script> and <style> tags in svelte components:
+    {
+      "scope": [
+        "meta.script.svelte entity.name.tag.svelte", // <script> tag
+        "meta.script.svelte punctuation.definition.tag.begin.svelte", // <script> tag
+        "meta.script.svelte punctuation.definition.tag.end.svelte", // <script> tag
+        "meta.style.svelte entity.name.tag.svelte", // <style> tag
+        "meta.style.svelte punctuation.definition.tag.begin.svelte", // <style> tag
+        "meta.style.svelte punctuation.definition.tag.end.svelte", // <style> tag
+      ],
+      "settings": {
+        "foreground": "#8080E6" // #0000CC80
+      }
+    },
+    //
+    // "export" keyword for props:
+    {
+      "scope": [
+        "meta.embedded.block.svelte keyword.control.export"
       ],
       "settings": {
         "foreground": "#C344AB",
@@ -2704,17 +2881,29 @@
         "keyword.control.conditional.svelte", // "if", "else"
       ],
       "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "@debug" keyword:
+    {
+      "scope": [
+        "keyword.other.debugger.svelte", // "debug"
+        "meta.special.debug.svelte punctuation.definition.keyword", // "@"
+      ],
+      "settings": {
         "foreground": "#C344AB",
       }
     },
     //
-    // function name in "use:" syntax:
+    // "use:enhance" and similar:
     {
       "scope": [
-        "meta.directive.use.svelte variable.function.svelte",
+        "meta.directive.use.svelte keyword.control.svelte", // "enhance" in "use:enhance"
+        "meta.directive.use.svelte variable.function.svelte", // "enhance" in "use:enhance"
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -2728,11 +2917,33 @@
       }
     },
     //
+    // "@html":
+    {
+      "scope": [
+        "meta.special.html.svelte punctuation.definition.keyword.svelte",
+        "meta.special.html.svelte keyword.other.svelte",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // Punctuation in Svelte:
+    //
     // "{ }" string interpolation:
     {
       "scope": [
         "source.svelte punctuation.section.embedded.begin.svelte",
-        "source.svelte punctuation.section.embedded.end.svelte"
+        "source.svelte punctuation.section.embedded.end.svelte",
+        "source.svelte string.quoted.svelte punctuation.section.embedded.begin.svelte",
+        "source.svelte string.quoted.svelte punctuation.section.embedded.end.svelte",
+        // For embedded code, like in Markdown:
+        "punctuation.section.embedded.begin.svelte",
+        "punctuation.section.embedded.end.svelte",
+        "string.quoted.svelte punctuation.section.embedded.begin.svelte",
+        "string.quoted.svelte punctuation.section.embedded.end.svelte",
+        "meta.embedded.block.svelte meta string.quoted.svelte punctuation.section.embedded.begin.svelte",
+        "meta.embedded.block.svelte meta string.quoted.svelte punctuation.section.embedded.end.svelte"
       ],
       "settings": {
         "foreground": "#0BC5E3",
@@ -2743,18 +2954,30 @@
     {
       "scope": [
         "source.svelte meta punctuation.section.embedded.begin.svelte",
-        "source.svelte meta punctuation.section.embedded.end.svelte"
+        "source.svelte meta punctuation.section.embedded.end.svelte",
+        "meta.embedded.block.svelte meta punctuation.section.embedded.begin.svelte",
+        "meta.embedded.block.svelte meta punctuation.section.embedded.end.svelte"
       ],
       "settings": {
         "foreground": "#A9A9A9",
       }
     },
     //
-    // reactive declarations "$:":
+    // "$:" reactive declarations:
     {
       "scope": [
         "meta.embedded.block.svelte entity.name.label", // "&"
         "meta.embedded.block.svelte punctuation.separator.label", // ":"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "$" in store syntax:
+    {
+      "scope": [
+        "punctuation.definition.variable.svelte", // "$" in "$page"
       ],
       "settings": {
         "foreground": "#C344AB",
@@ -2834,7 +3057,7 @@
         "text.aspnetcorerazor entity.name.type.alias",
       ],
       "settings": {
-        "foreground": "#0000CC80"
+        "foreground": "#8080E6" // #0000CC80
       }
     },
     //
@@ -2994,11 +3217,9 @@
     //
     // Keywords:
     //
-    // "class", "record", "interface", "enum", "namespace" keywords:
+    // "class", "record", "interface", "enum" keywords:
     {
       "scope": [
-        "source.cs keyword.other.namespace",
-        "storage.type.namespace.cs",
         "source.cs keyword.other.class",
         "storage.type.class.cs",
         "storage.type.record.cs",
@@ -3026,9 +3247,11 @@
       }
     },
     //
-    // "using", "global" keywords:
+    // "using", "global", "namespace" keywords:
     {
       "scope": [
+        "storage.type.namespace.cs",
+        "source.cs keyword.other.namespace",
         "keyword.other.using.cs",
         "keyword.other.directive.using.cs",
         "keyword.other.global.cs",
@@ -3036,16 +3259,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "using" keyword in Razor Pages directives:
-    {
-      "scope": [
-        "meta.directive keyword.other.using.cs",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
       }
     },
     //
@@ -3355,11 +3568,12 @@
     {
       "scope": [
         "text.aspnetcorerazor meta.directive keyword.other.using", // "using"
+        "meta.directive keyword.other.using.cs", // "using"
         "text.aspnetcorerazor meta.directive keyword.control.razor.directive", // "page", "model"
         "text.aspnetcorerazor meta.directive keyword.control.cshtml.transition", // "@"
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3371,7 +3585,19 @@
         "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.razor.directive.codeblock.close", // "}"
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "@if { }" blocks in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor keyword.control.conditional", // "if", "else" in "@if { }" block
+        "text.aspnetcorerazor keyword.control.cshtml.transition", // "@" in "@if { }" block
+        "text.aspnetcorerazor keyword.control", // "foreach"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3381,31 +3607,18 @@
         "text.aspnetcorerazor meta.expression.implicit keyword.control.cshtml.transition", // "@"
       ],
       "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // "@if { }" blocks in Razor Pages:
-    {
-      "scope": [
-        "text.aspnetcorerazor keyword.control.cshtml.transition", // "@"
-        "text.aspnetcorerazor keyword.control.conditional", // "if", "else"
-        "text.aspnetcorerazor keyword.control", // "foreach"
-      ],
-      "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
     // All C# code after "@" implicit transition:
     {
       "scope": [
-        // "text.aspnetcorerazor meta.expression.implicit source.cs",
         "text.aspnetcorerazor meta.expression.implicit source.cs variable",
         "text.aspnetcorerazor meta.expression.implicit source.cs entity.name.function.cs",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3446,14 +3659,15 @@
         "text.aspnetcorerazor meta.structure.razor.csharp.codeblock punctuation.curlybrace",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
-    // ":" in Razor Pages:
+    // ":" and ";" in Razor Pages:
     {
       "scope": [
         "text.aspnetcorerazor punctuation.separator.colon",
+        "text.aspnetcorerazor keyword.control.razor.optionalSemicolon",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3496,11 +3710,21 @@
     // ====================================================
     // Java (.java):
     //
-    // "import", "export" keywords:
+    // "import", "package" keywords:
     {
       "scope": [
-        "source.java keyword.other.import",
-        "source.java meta.import storage.modifier",
+        "keyword.other.import.java", // "import"
+        "keyword.other.package.java", // "package"
+        "meta.import.java storage.modifier.java", // "static" in "import static"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "export" keyword:
+    {
+      "scope": [
         "source.java keyword.module",
       ],
       "settings": {
@@ -3546,31 +3770,53 @@
     // function name in declaration:
     {
       "scope": [
-        "source.java meta.method.identifier entity.name.function",
-        "source.java variable.other.definition",
+        "meta.method.identifier entity.name.function.java", // method names
+        "variable.other.definition.java", // field names
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // variable name in declaration:
+    {
+      "scope": [
+        "meta.method.body.java variable.other.definition.java",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // parameter name in function declaration:
+    {
+      "scope": [
+        "variable.parameter.java",
       ],
       "settings": {
         "foreground": "#C344AB"
       }
     },
     //
-    // annotation call:
+    // "@AllArgsConstructor" annotation syntax in Java:
+    //
+    // annotation name in annotation syntax:
     {
       "scope": [
-        "source.java storage.type.annotation",
+        "storage.type.annotation.java",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
-    // "@" in an annotation call:
+    // "@" in annotation syntax:
     {
       "scope": [
-        "source.java punctuation.definition.annotation",
+        "punctuation.definition.annotation.java",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3591,6 +3837,16 @@
       ],
       "settings": {
         "foreground": "#A31515"
+      }
+    },
+    //
+    // enum members:
+    {
+      "scope": [
+        "meta.enum.java constant.other.enum.java",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3665,7 +3921,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
-        // "fontStyle": "bold"
       }
     },
     // The side-effect is that brackets in the "new" calls with generics are painted light-blue too,
@@ -3921,26 +4176,26 @@
     {
       "scope": [
         "source.shell string.unquoted.argument",
+        "string.unquoted.argument.shell",
         "source.shell constant.other.option",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A31515"
       }
     },
     //
     //
     //
     // ====================================================
-    // CSS, SCSS, LESS, CSS-in-JS:
+    // CSS, SASS, SCSS, LESS, CSS-in-JS:
     //
     // Names in CSS:
     //
-    // tag names, selectors:
+    // class, id selector syntax:
     {
       "scope": [
         "source.css entity.name.tag",
         "meta.embedded.block.css entity.name.tag",
-        "source.css entity.name.tag.reference",
         "meta.embedded.block.css entity.name.tag.reference",
         "source.css meta.selector entity.name.tag",
         "meta.embedded.block.css meta.selector entity.name.tag",
@@ -3950,10 +4205,6 @@
         "meta.embedded.block.css entity.other.attribute-name.id", // id selector
         "source.css entity.other.attribute-name.parent-selector",
         "meta.embedded.block.css entity.other.attribute-name.parent-selector",
-        "source.css entity.other.attribute-name.pseudo-class",
-        "meta.embedded.block.css entity.other.attribute-name.pseudo-class",
-        "source.css entity.other.attribute-name.pseudo-element",
-        "meta.embedded.block.css entity.other.attribute-name.pseudo-element",
         "source.css punctuation.definition.entity", // "#, ."
         "meta.embedded.block.css punctuation.definition.entity", // "#, ."
       ],
@@ -3962,11 +4213,39 @@
       }
     },
     //
-    // type names in @include:
+    // pseudo-class selector syntax:
+    //
+    // pseudo-class and pseudo-element selectors:
     {
       "scope": [
-        "source.css meta.at-rule.include entity.name.function",
-        "meta.embedded.block.css meta.at-rule.include entity.name.function",
+        // "has", "not", "disabled" and similar:
+        "source.css entity.other.attribute-name.pseudo-class",
+        "meta.embedded.block.css entity.other.attribute-name.pseudo-class",
+        // "after" and similar:
+        "source.css entity.other.attribute-name.pseudo-element",
+        "meta.embedded.block.css entity.other.attribute-name.pseudo-element",
+      ],
+      "settings": {
+        "foreground": "#8080E6" // #0000CC80
+      }
+    },
+    //
+    // ":" in pseudo-class selector syntax:
+    {
+      "scope": [
+        "entity.other.attribute-name.pseudo-class.css punctuation.definition.entity.css", // ":"
+        "entity.other.attribute-name.pseudo-element.css punctuation.definition.entity.css", // ":"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // type names in @extend:
+    {
+      "scope": [
+        // "source.css meta.at-rule.include entity.name.function",
+        // "meta.embedded.block.css meta.at-rule.include entity.name.function",
         "source.css meta.at-rule.extend entity.other.attribute-name.class",
         "meta.embedded.block.css meta.at-rule.extend entity.other.attribute-name.class",
       ],
@@ -4003,6 +4282,7 @@
         "source.css variable.argument",
         "source.css meta.property-list variable.other.less", // for LESS
         "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
+        "variable.parameter.postcss", // for PostCSS
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -4085,13 +4365,22 @@
     {
       "scope": [
         "source.css constant.other.color.rgb-value.hex",
+        "source.css.postcss constant.other.color.rgb-value.hex",
+        "source.css.postcss constant.other.color.rgb-value",
         "source.css constant.other.color.rgb-value.hex punctuation.definition.constant",
+        "source.css.postcss constant.other.color.rgb-value.hex punctuation.definition.constant",
         "source.css constant.other.rgb-value",
+        "source.css.postcss constant.other.rgb-value",
         "source.css support.constant.property-value",
+        "source.css.postcss support.constant.property-value",
         "source.css meta.attribute-selector",
+        "source.css.postcss meta.attribute-selector",
         "source.css meta.property-value",
+        "source.css.postcss meta.property-value",
         "source.css meta.property-value support.type.property-name",
+        "source.css.postcss meta.property-value support.type.property-name",
         "source.css support.constant.font-name",
+        "source.css.postcss support.constant.font-name",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -4157,14 +4446,30 @@
       }
     },
     //
-    // @import syntax:
+    // "@import" syntax:
+    //
+    // name in "@import" syntax:
     {
       "scope": [
         "source.css meta.at-rule.import string.quoted",
       ],
       "settings": {
-        "foreground": "#A9A9A9",
-        "fontStyle": "underline"
+        "foreground": "#A31515",
+      }
+    },
+    //
+    // "@import" keyword:
+    {
+      "scope": [
+        "source.css keyword.control.at-rule.import",
+        "meta.embedded.block.css keyword.control.at-rule.import",
+        "meta.embedded.block.scss keyword.control.at-rule.import",
+        "source.css keyword.control.at-rule.import punctuation.definition.keyword",
+        "meta.embedded.block.css keyword.control.at-rule.import punctuation.definition.keyword",
+        "meta.embedded.block.scss keyword.control.at-rule.import punctuation.definition.keyword",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -4195,7 +4500,7 @@
         "meta.embedded.block.scss keyword.control.at-rule punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -4229,21 +4534,6 @@
       }
     },
     //
-    // "@import" keyword:
-    {
-      "scope": [
-        "source.css keyword.control.at-rule.import",
-        "meta.embedded.block.css keyword.control.at-rule.import",
-        "meta.embedded.block.scss keyword.control.at-rule.import",
-        "source.css keyword.control.at-rule.import punctuation.definition.keyword",
-        "meta.embedded.block.css keyword.control.at-rule.import punctuation.definition.keyword",
-        "meta.embedded.block.scss keyword.control.at-rule.import punctuation.definition.keyword",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9",
-      }
-    },
-    //
     // "@media" keyword:
     {
       "scope": [
@@ -4263,8 +4553,8 @@
     {
       "scope": [
         // "@include":
-        "source.css keyword.control.at-rule.include",
-        "source.css keyword.control.at-rule.include punctuation.definition.keyword",
+        // "source.css keyword.control.at-rule.include",
+        // "source.css keyword.control.at-rule.include punctuation.definition.keyword",
         // "@extend":
         "source.css keyword.control.at-rule.extend",
         "source.css keyword.control.at-rule.extend punctuation.definition.keyword",
@@ -4274,6 +4564,31 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "@include" syntax:
+    //
+    // "@include" keyword:
+    {
+      "scope": [
+        // "@include":
+        "source.css keyword.control.at-rule.include",
+        "source.css keyword.control.at-rule.include punctuation.definition.keyword",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // type name in "@include":
+    {
+      "scope": [
+        "source.css meta.at-rule.include entity.name.function",
+        "meta.embedded.block.css meta.at-rule.include entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
       }
     },
     //
@@ -4304,7 +4619,7 @@
         "source.css keyword.other.important",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -4331,6 +4646,26 @@
     //
     //
     // Punctuation:
+    //
+    // "&" ampersand or parent selector in SASS and LESS:
+    {
+      "scope": [
+        "source.css entity.name.tag.reference",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // ">" in selector syntax:
+    {
+      "scope": [
+        "keyword.operator.combinator.css",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
     //
     // ( ) braces in a function call:
     {
@@ -4419,7 +4754,7 @@
         "source.css punctuation.definition.interpolation.end.bracket.curly",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -4443,6 +4778,20 @@
       }
     },
     //
+    //
+    //
+    // ====================================================
+    // PostCSS:
+    //
+    // A hack to solve poor PostCSS support:
+    {
+      "scope": [
+        "source.css.postcss",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
     //
     //
     // ====================================================
@@ -4490,7 +4839,7 @@
         "text.aspnetcorerazor entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4502,7 +4851,6 @@
     {
       "scope": [
         "text.html",
-        "text.html.markdown",
         "text.html.markdown meta.embedded.block.html", // HTML embedded into Markdown
         "text.html.markdown meta.embedded.block meta.jsx.children", // JSX embedded into Markdown
         "text.html.markdown meta.embedded.block meta.tsx.children", // JSX embedded into Markdown
@@ -4745,15 +5093,34 @@
     //
     // ====================================================
     // Markdown (.md):
+    {
+      "scope": [
+        "text.html.markdown", // unstyled Markdown, text in embedded HTML too
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
     //
     // just normal text:
     {
       "scope": [
         "text.html.markdown meta.paragraph",
-        "text.html.markdown meta.paragraph punctuation.definition.entity", // Fix for "&nbsp;" in a heading.
       ],
       "settings": {
         "foreground": "#000000"
+      }
+    },
+    //
+    // lext like "&nbsp;" and "&lt;":
+    {
+      "scope": [
+        "text.html.markdown meta.paragraph punctuation.definition.entity", // Fix for "&nbsp;".
+        "text.html.markdown meta.paragraph constant.character.entity.named.lt", // Fix for "&lt;".
+        "text.html.markdown meta.paragraph constant.character.entity.named.gt", // Fix for "&nbsp;".
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -4768,6 +5135,10 @@
       "settings": {
         "fontStyle": "bold",
       }
+    },
+    {
+      "scope": "punctuation.definition.italic.markdown",
+      "settings": {}
     },
     {
       "scope": [
@@ -4870,7 +5241,7 @@
         "text.html.markdown heading constant.other.reference.link", // [][homepage] // Fix for the link URL in a heading.
       ],
       "settings": {
-        "foreground": "#D18A8A"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -4911,15 +5282,22 @@
     //
     // Code blocks in Markdown:
     //
-    // code block definition:
+    // code block definition "```bash ```":
     {
       "scope": [
-        "text.html.markdown markup.fenced_code.block punctuation.definition", // ```
-        "text.html.markdown markup.fenced_code.block fenced_code.block.language", // ``` "bat", "powershell", "js"
+        "text.html.markdown markup.fenced_code.block punctuation.definition", // "```"
       ],
       "settings": {
         "foreground": "#0BC5E3",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "text.html.markdown markup.fenced_code.block fenced_code.block.language", // "bat", "powershell", "js"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -4941,6 +5319,7 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //
@@ -4948,7 +5327,7 @@
     {
       "scope": "text.html.markdown markup.inline.raw",
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#A31515"
       }
     },
     //
@@ -5034,7 +5413,7 @@
         "source.ini",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A31515"
       }
     },
     //
@@ -5080,7 +5459,7 @@
         "source.ignore",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A31515"
       }
     },
     //

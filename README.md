@@ -1,109 +1,126 @@
 # <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png" width="32" alt="Ukrainian flag"> RespectMyEyes theme for VS Code 
 
-
-
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
-  <img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/dima-iholkin.respectmyeyes">
+  <img alt="Count of installations from Visual Studio Marketplace badge" src="https://img.shields.io/visual-studio-marketplace/i/dima-iholkin.respectmyeyes">
 </a> 
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
-  <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
+  <img alt="Extension version on Visual Studio Marketplace badge" src="https://img.shields.io/visual-studio-marketplace/v/dima-iholkin.respectmyeyes">
 </a>
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
-  <img alt="Visual Studio Marketplace Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/dima-iholkin.respectmyeyes?label=updated">
+  <img alt="Last updated date on Visual Studio Marketplace badge" src="https://img.shields.io/visual-studio-marketplace/last-updated/dima-iholkin.respectmyeyes?label=updated">
 </a> 
 <br />
 <br />
 
-
-
-Hi! This theme is focused on supporting:
-* React TSX / JSX
+Core language support: 
+* Svelte
+* C# / .NET / ASP.NET Core
 * TypeScript / JavaScript
+* React / JSX / TSX 
+* CSS
 * HTML / XML
-* CSS / SCSS / LESS
-* C# / Razor Pages
-* Markdown
-* Java
-* PowerShell
-* Shell
-* AutoHotKey
-* T-SQL
 * JSON
-* YAML
-* Dockerfile
-
-Please raise an issue if you have found a bug, want a better language support or more languages supported.
+* Markdown
 
 
 
-### UI
+## Screenshots
 
-<img src="/screenshots/ts_intro.png" title="typescript code example screenshot" />
+### User Interface
 
-### JavaScript
+<img src="/screenshots/UI.png" title="screenshot of the user interface styled by RespectMyEyes theme" />
 
-<img src="/screenshots/js.png" title="javascript code screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/routes/%2Bpage.svelte">PourOverPotato</a>
 
-### React TSX
+### Svelte
 
-<img src="/screenshots/react typescript.png" title="react typescript code screenshot" >
-  Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app">React TypeScript RealWorld Example App</a>
-</img>
+<img src="/screenshots/svelte.png" loading="lazy" title="screenshot of Svelte code styled by RespectMyEyes theme" />
 
-### HTML
-
-<img src="/screenshots/html.png" title="html code screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### CSS
-
-<img src="/screenshots/css.png" title="css code screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
-
-### SCSS
-
-<img src="/screenshots/scss.png" title="scss code screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/UI/layout/components/MySidebar.svelte">PourOverPotato</a>
 
 ### C#
 
-<img src="/screenshots/cs.png" title="c-sharp code screenshot" />
+<img src="/screenshots/csharp.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
+
+Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPotato.WebAPI/StartupTests/StartupTester.cs">TogglPotato</a>
+
+### TypeScript
+
+<img src="/screenshots/typescript.png" loading="lazy" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
+
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/database/v1/indexedDB.ts">PourOverPotato</a>
+
+
+### JavaScript
+
+<img src="/screenshots/javascript.png" loading="lazy" width="700" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
+
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/js/main.js">Brad Traversy's Modern Portfolio</a>
+
+### React / JSX / TSX
+
+<img src="/screenshots/react.png" loading="lazy" title="screenshot of React TSX code styled by RespectMyEyes theme" />
+
+Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app/blob/master/src/components/Navbar.tsx">React TypeScript RealWorld Example App</a>
+
+### CSS
+
+<img src="/screenshots/css.png" loading="lazy" width="500" title="screenshot of CSS code styled by RespectMyEyes theme" />
+
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/css/main.css">Brad Traversy's Modern Portfolio</a>
+
+### HTML
+
+<img src="/screenshots/html.png" loading="lazy" width="600" title="screenshot of HTML code styled by RespectMyEyes theme" />
+
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/index.html">Brad Traversy's Modern Portfolio</a>
+
+### JSON
+
+<img src="/screenshots/json.png" loading="lazy" width="700" title="screenshot of HTML code styled by RespectMyEyes theme" />
+
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/package.json">Brad Traversy's Modern Portfolio</a>
 
 ### Markdown
 
-<img src="/screenshots/markdown.png" title="markdown code screenshot">
-  Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
-</img>
+<img src="/screenshots/markdown.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
 
-### PowerShell
-
-<img src="/screenshots/powershell.png" title="powershell code screenshot">
-  Source: <a href="https://github.com/last-byte/PersistenceSniper">Persistence Sniper</a>
-</img>
+Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md">TogglPotato</a>
 
 
 
-## Required syntax highlighting extensions
+## Core language support
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required syntax highlighting extention</th>
+      <th align="center">Required extension for syntax highlight</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">React TSX / JSX</td>
+      <td align="center">Svelte</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode">Svelte for VS Code</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">C# / .NET / ASP.NET Core</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">JavaScript / TypeScript</td>
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">TypeScript / JavaScript</td>
+      <td align="center">React / JSX / TSX</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">CSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -111,7 +128,42 @@ Please raise an issue if you have found a bug, want a better language support or
       <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center">CSS / SCSS / LESS</td>
+      <td align="center">JSON</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Markdown</td>
+      <td align="center"> - </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+## Lazy language support
+
+Maintainers for these and new languages are very welcome!
+
+Information in this table may be outdated.
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Language</th>
+      <th align="center">Required extension for syntax highlight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">SASS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">LESS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">PostCSS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -121,14 +173,16 @@ Please raise an issue if you have found a bug, want a better language support or
       </td>
     </tr>
     <tr>
-      <td align="center">C# / Razor Pages</td>
+      <td align="center">AutoHotKey</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp">C#</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
       </td>
     </tr>
     <tr>
-      <td align="center">Markdown</td>
-      <td align="center"> - </td>
+      <td align="center">PowerShell</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
+      </td>
     </tr>
     <tr>
       <td align="center">Java</td>
@@ -136,28 +190,8 @@ Please raise an issue if you have found a bug, want a better language support or
         <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java(TM) by Red Hat</a>
       </td>
     </tr>
-        <tr>
-      <td align="center">PowerShell</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">Shell</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">AutoHotKey</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
-      </td>
-    </tr>
     <tr>
       <td align="center">T-SQL</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">JSON</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -174,6 +208,10 @@ Please raise an issue if you have found a bug, want a better language support or
         <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotEnv</a>
       </td>
     </tr>
+    <tr>
+      <td align="center">Shell</td>
+      <td align="center"> - </td>
+    </tr>
   </tbody>
 </table>
 
@@ -182,12 +220,14 @@ Please raise an issue if you have found a bug, want a better language support or
 ## Azure Data Studio compatibility
 
 <details>
-  You can install this theme or any other theme by downloading it's <code>.vsix</code> file and going to <code>Extensions</code> > <code>Install from VSIX...</code> in Azure Data Studio. Download the latest VSIX file from <a href="https://github.com/dima-iholkin/RespectMyEyes-VSCode/releases/latest">the Releases page</a>.
+  <p>This is outdated and I'm going to improve it eventually.</p>
+
+  <p>You can install this theme or any other theme by downloading it's <code>.vsix</code> file and going to <code>Extensions</code> > <code>Install from VSIX...</code> in Azure Data Studio. Download the latest VSIX file from <a href="https://github.com/dima-iholkin/RespectMyEyes-VSCode/releases/latest">the Releases page</a>.</p>
 
   <br />
   <br />
 
-  Below are the fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.
+  <p>Below are the fixes for the Azure Data Studio incompatibilites, put them into your <code>settings.json</code> in Azure Data Studio.</p>
 
   ```jsonc
   // settings.json
@@ -210,7 +250,9 @@ Please raise an issue if you have found a bug, want a better language support or
 ## Terminal color customization
 
 <details>
-  Below are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.
+  <p>This is outdated and I'm going to improve it eventually.</p>
+
+  <p>Below are the suggested overrides for the terminal colors, put them into your <code>settings.json</code> file.</p>
 
   ```jsonc
   // settings.json
@@ -245,7 +287,9 @@ Please raise an issue if you have found a bug, want a better language support or
 ## VS Code's UI customization
 
 <details>
-  If you've found something different from your setup in my screenshots above, here are some important settings from my <code>settings.json</code> file.
+  <p>This is outdated and I'm going to improve it eventually.</p>
+  
+  <p>If you've found something different from your setup in my screenshots above, here are some important settings from my <code>settings.json</code> file.</p>
 
   ```jsonc
   // settings.json
@@ -317,4 +361,4 @@ Please raise an issue if you have found a bug, want a better language support or
 ## License information
 
 * **[MIT License](http://opensource.org/licenses/mit-license.php)**
-* Copyright © 2020 - 2023 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.
+* Copyright © 2020 - 2024 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.

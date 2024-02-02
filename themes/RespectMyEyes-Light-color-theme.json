@@ -222,7 +222,7 @@
     //
     // the background behind the selection text when in another window or pane,
     // should be different from the active one:
-    "editor.inactiveSelectionBackground": "#DFF5DF", // #00B00020
+    "editor.inactiveSelectionBackground": "#00B00020", // #DFF5DF
     //
     "editor.selectionBackground": "#00B00080",
     //
@@ -240,9 +240,7 @@
     //
     // the indent lines to the left,
     // should be the same color as the the highlighted brackets:
-    // "editorIndentGuide.activeBackground1": "#00B00060",
     "editorIndentGuide.activeBackground1": "#00B00060",
-    // "editorIndentGuide.activeBackground2": "#00B00060",
     "editorIndentGuide.activeBackground2": "#00B00060",
     "editorIndentGuide.activeBackground3": "#00B00060",
     "editorIndentGuide.activeBackground4": "#00B00060",
@@ -258,7 +256,7 @@
     "editorIndentGuide.background6": "#C0C0C080",
     //
     // the Bracket Matches in the editor window:
-    "editorBracketMatch.background": "#00B00040",
+    "editorBracketMatch.background": "#FEFE3380",
     //
     // I want the borders to be white, like the background:
     "editorBracketMatch.border": "#FFFFFF00",

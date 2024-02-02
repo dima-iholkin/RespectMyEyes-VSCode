@@ -34,47 +34,56 @@ Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/ro
 ### Svelte
 
 <img src="/screenshots/svelte.png" loading="lazy" title="screenshot of Svelte code styled by RespectMyEyes theme" />
+
 Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/UI/layout/components/MySidebar.svelte">PourOverPotato</a>
 
 ### C#
 
 <img src="/screenshots/csharp.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
+
 Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPotato.WebAPI/StartupTests/StartupTester.cs">TogglPotato</a>
 
 ### TypeScript
 
 <img src="/screenshots/typescript.png" loading="lazy" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
+
 Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/database/v1/indexedDB.ts">PourOverPotato</a>
 
 
 ### JavaScript
 
-<img src="/screenshots/javascript.png" loading="lazy" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
+<img src="/screenshots/javascript.png" loading="lazy" width="600" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
+
 Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/js/main.js">Brad Traversy's Modern Portfolio</a>
 
 ### React / JSX / TSX
 
 <img src="/screenshots/react.png" loading="lazy" title="screenshot of React TSX code styled by RespectMyEyes theme" />
+
 Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app/blob/master/src/components/Navbar.tsx">React TypeScript RealWorld Example App</a>
 
 ### CSS
 
-<img src="/screenshots/css.png" loading="lazy" title="screenshot of CSS code styled by RespectMyEyes theme" />
+<img src="/screenshots/css.png" loading="lazy" width="600" title="screenshot of CSS code styled by RespectMyEyes theme" />
+
 Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/css/main.css">Brad Traversy's Modern Portfolio</a>
 
 ### HTML
 
-<img src="/screenshots/html.png" loading="lazy" title="screenshot of HTML code styled by RespectMyEyes theme" />
+<img src="/screenshots/html.png" loading="lazy" width="600" title="screenshot of HTML code styled by RespectMyEyes theme" />
+
 Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/index.html">Brad Traversy's Modern Portfolio</a>
 
 ### JSON
 
-<img src="/screenshots/json.png" loading="lazy" title="screenshot of HTML code styled by RespectMyEyes theme" />
+<img src="/screenshots/json.png" loading="lazy" width="600" title="screenshot of HTML code styled by RespectMyEyes theme" />
+
 Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/package.json">Brad Traversy's Modern Portfolio</a>
 
 ### Markdown
 
 <img src="/screenshots/markdown.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
+
 Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md">TogglPotato</a>
 
 </details>

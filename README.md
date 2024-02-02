@@ -1,7 +1,5 @@
 # <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1920px-Flag_of_Ukraine.svg.png" width="32" alt="Ukrainian flag"> RespectMyEyes theme for VS Code 
 
-
-
 <a href="https://marketplace.visualstudio.com/items?itemName=dima-iholkin.respectmyeyes">
   <img alt="Count of installations from Visual Studio Marketplace badge" src="https://img.shields.io/visual-studio-marketplace/i/dima-iholkin.respectmyeyes">
 </a> 
@@ -14,8 +12,6 @@
 <br />
 <br />
 
-
-
 Core language support: 
 * Svelte
 * C# / .NET / ASP.NET Core
@@ -26,59 +22,62 @@ Core language support:
 * JSON
 * Markdown
 
+<img src="/screenshots/UI.png" title="screenshot of the user interface styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/routes/%2Bpage.svelte">PourOverPotato repo</a>
+
 
 
 ## Screenshots
 
-### User Interface
-
-<img src="/screenshots/ts_intro.png" title="screenshot of the user interface using the theme" />
+<details>
 
 ### Svelte
 
-
+<img src="/screenshots/svelte.png" loading="lazy" title="screenshot of Svelte code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/UI/layout/components/MySidebar.svelte">PourOverPotato repo</a>
 
 ### C#
 
-<img src="/screenshots/cs.png" title="c-sharp code screenshot" />
+<img src="/screenshots/csharp.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPotato.WebAPI/StartupTests/StartupTester.cs">TogglPotato repo</a>
 
 ### TypeScript
 
+<img src="/screenshots/typescript.png" loading="lazy" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/database/v1/indexedDB.ts">PourOverPotato repo</a>
 
 
 ### JavaScript
 
-<img src="/screenshots/js.png" title="javascript code screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
+<img src="/screenshots/javascript.png" loading="lazy" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/js/main.js">Brad Traversy's Modern Portfolio</a>
 
 ### React / JSX / TSX
 
-<img src="/screenshots/react typescript.png" title="react typescript code screenshot" >
-  Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app">React TypeScript RealWorld Example App</a>
-</img>
+<img src="/screenshots/react.png" loading="lazy" title="screenshot of React TSX code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app/blob/master/src/components/Navbar.tsx">React TypeScript RealWorld Example App</a>
 
 ### CSS
 
-<img src="/screenshots/css.png" title="css code screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
+<img src="/screenshots/css.png" loading="lazy" title="screenshot of CSS code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/css/main.css">Brad Traversy's Modern Portfolio</a>
 
 ### HTML
 
-<img src="/screenshots/html.png" title="html code screenshot">
-  Source: <a href="https://github.com/bradtraversy/modern_portfolio">Brad Traversy's Modern Portfolio</a>
-</img>
+<img src="/screenshots/html.png" loading="lazy" title="screenshot of HTML code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/index.html">Brad Traversy's Modern Portfolio</a>
 
 ### JSON
 
-
+<img src="/screenshots/json.png" loading="lazy" title="screenshot of HTML code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/package.json">Brad Traversy's Modern Portfolio</a>
 
 ### Markdown
 
-<img src="/screenshots/markdown.png" title="markdown code screenshot">
-  Source: <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
-</img>
+<img src="/screenshots/markdown.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md">TogglPotato repo</a>
+
+</details>
 
 
 

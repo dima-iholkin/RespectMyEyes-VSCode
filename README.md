@@ -137,6 +137,8 @@ Core language support:
 
 Maintainers for these and new languages are very welcome!
 
+Information in this table may be outdated.
+
 <table>
   <thead>
     <tr>
@@ -146,7 +148,11 @@ Maintainers for these and new languages are very welcome!
   </thead>
   <tbody>
     <tr>
-      <td align="center">SASS / LESS</td>
+      <td align="center">SASS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">LESS</td>
       <td align="center"> - </td>
     </tr>
     <tr>
@@ -160,9 +166,9 @@ Maintainers for these and new languages are very welcome!
       </td>
     </tr>
     <tr>
-      <td align="center">Java</td>
+      <td align="center">AutoHotKey</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java(TM) by Red Hat</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
       </td>
     </tr>
     <tr>
@@ -172,13 +178,9 @@ Maintainers for these and new languages are very welcome!
       </td>
     </tr>
     <tr>
-      <td align="center">Shell</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">AutoHotKey</td>
+      <td align="center">Java</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java(TM) by Red Hat</a>
       </td>
     </tr>
     <tr>
@@ -198,6 +200,10 @@ Maintainers for these and new languages are very welcome!
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotEnv</a>
       </td>
+    </tr>
+    <tr>
+      <td align="center">Shell</td>
+      <td align="center"> - </td>
     </tr>
   </tbody>
 </table>

@@ -1948,7 +1948,7 @@
         "meta.embedded.block.javascript variable.language.super",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3724,11 +3724,21 @@
     // ====================================================
     // Java (.java):
     //
-    // "import", "export" keywords:
+    // "import", "package" keywords:
     {
       "scope": [
-        "source.java keyword.other.import",
-        "source.java meta.import storage.modifier",
+        "keyword.other.import.java", // "import"
+        "keyword.other.package.java", // "package"
+        "meta.import.java storage.modifier.java", // "static" in "import static"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "export" keyword:
+    {
+      "scope": [
         "source.java keyword.module",
       ],
       "settings": {
@@ -3774,31 +3784,53 @@
     // function name in declaration:
     {
       "scope": [
-        "source.java meta.method.identifier entity.name.function",
-        "source.java variable.other.definition",
+        "meta.method.identifier entity.name.function.java", // method names
+        "variable.other.definition.java", // field names
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // variable name in declaration:
+    {
+      "scope": [
+        "meta.method.body.java variable.other.definition.java",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // parameter name in function declaration:
+    {
+      "scope": [
+        "variable.parameter.java",
       ],
       "settings": {
         "foreground": "#C344AB"
       }
     },
     //
-    // annotation call:
+    // "@AllArgsConstructor" annotation syntax in Java:
+    //
+    // annotation name in annotation syntax:
     {
       "scope": [
-        "source.java storage.type.annotation",
+        "storage.type.annotation.java",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
-    // "@" in an annotation call:
+    // "@" in annotation syntax:
     {
       "scope": [
-        "source.java punctuation.definition.annotation",
+        "punctuation.definition.annotation.java",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3819,6 +3851,16 @@
       ],
       "settings": {
         "foreground": "#A31515"
+      }
+    },
+    //
+    // enum members:
+    {
+      "scope": [
+        "meta.enum.java constant.other.enum.java",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
       }
     },
     //

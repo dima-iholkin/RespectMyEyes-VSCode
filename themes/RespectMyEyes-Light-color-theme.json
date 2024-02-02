@@ -638,7 +638,7 @@
       "scope": [
         "variable.other.enummember", // enum member names
         "entity.name.variable.enum-member", // enum member names in C#
-        // "constant.other.enum" // enum member names in Java
+        "constant.other.enum" // enum member names in Java
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -701,7 +701,6 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#C344AB"
       }
     },
@@ -1850,7 +1849,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-        // "foreground": "#A31515"
       }
     },
     //
@@ -2618,7 +2616,6 @@
         "source.jsx entity.other.attribute-name",
       ],
       "settings": {
-        // "foreground": "#0BC5E3"
         "foreground": "#C344AB"
       }
     },
@@ -2864,7 +2861,7 @@
         "meta.style.svelte punctuation.definition.tag.end.svelte", // <style> tag
       ],
       "settings": {
-        "foreground": "#0000CC80",
+        "foreground": "#8080E6" // #0000CC80
       }
     },
     //
@@ -3060,7 +3057,7 @@
         "text.aspnetcorerazor entity.name.type.alias",
       ],
       "settings": {
-        "foreground": "#0000CC80"
+        "foreground": "#8080E6" // #0000CC80
       }
     },
     //
@@ -3576,7 +3573,6 @@
         "text.aspnetcorerazor meta.directive keyword.control.cshtml.transition", // "@"
       ],
       "settings": {
-        // "foreground": "#C344AB"
         "foreground": "#A9A9A9"
       }
     },
@@ -3589,8 +3585,6 @@
         "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.razor.directive.codeblock.close", // "}"
       ],
       "settings": {
-        // "foreground": "#C344AB"
-        // "foreground": "#A9A9A9"
         "foreground": "#0BC5E3"
       }
     },
@@ -3603,7 +3597,6 @@
         "text.aspnetcorerazor keyword.control", // "foreach"
       ],
       "settings": {
-        // "foreground": "#C344AB"
         "foreground": "#0BC5E3"
       }
     },
@@ -3614,7 +3607,6 @@
         "text.aspnetcorerazor meta.expression.implicit keyword.control.cshtml.transition", // "@"
       ],
       "settings": {
-        // "foreground": "#C344AB"
         "foreground": "#0BC5E3"
       }
     },
@@ -3622,15 +3614,11 @@
     // All C# code after "@" implicit transition:
     {
       "scope": [
-        // "text.aspnetcorerazor meta.expression.implicit source.cs",
         "text.aspnetcorerazor meta.expression.implicit source.cs variable",
         "text.aspnetcorerazor meta.expression.implicit source.cs entity.name.function.cs",
       ],
       "settings": {
-        // "foreground": "#C344AB"
         "foreground": "#0BC5E3"
-        // "foreground": "#0000CC"
-        // "foreground": "#000000"
       }
     },
     //
@@ -3671,8 +3659,6 @@
         "text.aspnetcorerazor meta.structure.razor.csharp.codeblock punctuation.curlybrace",
       ],
       "settings": {
-        // "foreground": "#C344AB"
-        // "foreground": "#A9A9A9"
         "foreground": "#0BC5E3"
       }
     },
@@ -3935,7 +3921,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3",
-        // "fontStyle": "bold"
       }
     },
     // The side-effect is that brackets in the "new" calls with generics are painted light-blue too,
@@ -4241,7 +4226,7 @@
         "meta.embedded.block.css entity.other.attribute-name.pseudo-element",
       ],
       "settings": {
-        "foreground": "#0000CC80"
+        "foreground": "#8080E6" // #0000CC80
       }
     },
     //
@@ -4484,7 +4469,6 @@
         "meta.embedded.block.scss keyword.control.at-rule.import punctuation.definition.keyword",
       ],
       "settings": {
-        // "foreground": "#A9A9A9",
         "foreground": "#0BC5E3",
       }
     },
@@ -4604,9 +4588,7 @@
         "meta.embedded.block.css meta.at-rule.include entity.name.function",
       ],
       "settings": {
-        // "foreground": "#A31515",
         "foreground": "#0000CC",
-        // "foreground": "#0BC5E3",
       }
     },
     //

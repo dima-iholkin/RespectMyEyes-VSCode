@@ -23,7 +23,7 @@ Core language support:
 * Markdown
 
 <img src="/screenshots/UI.png" title="screenshot of the user interface styled by RespectMyEyes theme" />
-Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/routes/%2Bpage.svelte">PourOverPotato repo</a>
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/routes/%2Bpage.svelte">PourOverPotato</a>
 
 
 
@@ -34,17 +34,17 @@ Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/ro
 ### Svelte
 
 <img src="/screenshots/svelte.png" loading="lazy" title="screenshot of Svelte code styled by RespectMyEyes theme" />
-Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/UI/layout/components/MySidebar.svelte">PourOverPotato repo</a>
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/UI/layout/components/MySidebar.svelte">PourOverPotato</a>
 
 ### C#
 
 <img src="/screenshots/csharp.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
-Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPotato.WebAPI/StartupTests/StartupTester.cs">TogglPotato repo</a>
+Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPotato.WebAPI/StartupTests/StartupTester.cs">TogglPotato</a>
 
 ### TypeScript
 
 <img src="/screenshots/typescript.png" loading="lazy" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
-Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/database/v1/indexedDB.ts">PourOverPotato repo</a>
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/database/v1/indexedDB.ts">PourOverPotato</a>
 
 
 ### JavaScript
@@ -75,7 +75,7 @@ Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/pa
 ### Markdown
 
 <img src="/screenshots/markdown.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
-Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md">TogglPotato repo</a>
+Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md">TogglPotato</a>
 
 </details>
 
@@ -241,7 +241,6 @@ Information in this table may be outdated.
 
 ## Terminal color customization
 
-
 <details>
   <p>This is outdated and I'm going to improve it eventually.</p>
 
@@ -278,7 +277,6 @@ Information in this table may be outdated.
 
 
 ## VS Code's UI customization
-
 
 <details>
   <p>This is outdated and I'm going to improve it eventually.</p>

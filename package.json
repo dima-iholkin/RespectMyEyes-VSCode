@@ -1,40 +1,40 @@
 {
-    "name": "respectmyeyes",
-    "version": "4.0.0-rc.5",
-    "displayName": "RespectMyEyes theme",
-    "description": "A light theme that respects your eyes.",
-    "publisher": "dima-iholkin",
-    "author": "Dima Iholkin",
-    "icon": "icon.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dima-iholkin/RespectMyEyes-VSCode"
-    },
-    "engines": {
-        "vscode": "^1.40.0"
-    },
-    "scripts": {
-        "build": "vsce package",
-        "build-and-install": "vsce package --out ./latest.vsix && code --install-extension latest.vsix && del /f latest.vsix"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "keywords": [
-        "VSCode",
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "RespectMyEyes Light",
-                "uiTheme": "vs",
-                "path": "./themes/RespectMyEyes-Light-color-theme.json"
-            }
-        ]
-    },
-    "devDependencies": {
-        "vsce": "^1.76.1"
-    },
-    "license": "MIT"
+  "name": "respectmyeyes",
+  "version": "4.0.0",
+  "displayName": "RespectMyEyes theme",
+  "description": "A light theme that respects your eyes.",
+  "publisher": "dima-iholkin",
+  "author": "Dima Iholkin",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dima-iholkin/RespectMyEyes-VSCode"
+  },
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "scripts": {
+    "build": "vsce package",
+    "build-and-install": "vsce package --out ./latest.vsix && code --install-extension latest.vsix && del /f latest.vsix"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "VSCode",
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "RespectMyEyes Light",
+        "uiTheme": "vs",
+        "path": "./themes/RespectMyEyes-Light-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^1.76.1"
+  },
+  "license": "MIT"
 }

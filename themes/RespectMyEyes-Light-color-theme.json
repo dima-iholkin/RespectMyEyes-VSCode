@@ -223,20 +223,26 @@
     // the background behind the selection text when in another window or pane,
     // should be different from the active one:
     "editor.inactiveSelectionBackground": "#DFF5DF", // #00B00020
-    "editor.selectionBackground": "#BFEBBF", // #00B00040
+    //
+    "editor.selectionBackground": "#00B00080",
     //
     // region with the same content as the selection,
     // should be not too attractive to the eye:
     "editor.selectionHighlightBackground": "#00B00020",
-    "editor.wordHighlightBackground": "#00B00010",
-    "editor.wordHighlightStrongBackground": "#00B00040",
-    "editor.hoverHighlightBackground": "#00B00040",
+    //
+    "editor.wordHighlightBackground": "#00B00020",
+    //
+    "editor.wordHighlightStrongBackground": "#00B00020",
+    //
+    "editor.hoverHighlightBackground": "#00B00080",
     //
     //
     //
     // the indent lines to the left,
     // should be the same color as the the highlighted brackets:
+    // "editorIndentGuide.activeBackground1": "#00B00060",
     "editorIndentGuide.activeBackground1": "#00B00060",
+    // "editorIndentGuide.activeBackground2": "#00B00060",
     "editorIndentGuide.activeBackground2": "#00B00060",
     "editorIndentGuide.activeBackground3": "#00B00060",
     "editorIndentGuide.activeBackground4": "#00B00060",
@@ -1260,6 +1266,12 @@
         "source.tsx meta.parameters variable.parameter",
         "source.jsx meta.parameters variable.parameter",
         "meta.embedded.block.javascript meta.parameters variable.parameter",
+        // for when the argument is a callback function:
+        "source.ts meta.parameters entity.name.function",
+        "source.js meta.parameters entity.name.function",
+        "source.tsx meta.parameters entity.name.function",
+        "source.jsx meta.parameters entity.name.function",
+        "meta.embedded.block.javascript meta.parameters entity.name.function",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -2004,6 +2016,12 @@
         "source.tsx keyword.operator.new",
         "source.jsx keyword.operator.new",
         "meta.embedded.block.javascript keyword.operator.new",
+        // This rule was useful at least once for React.ClassType in "index.d.ts":
+        "source.ts keyword.control.new",
+        "source.js keyword.control.new",
+        "source.tsx keyword.control.new",
+        "source.jsx keyword.control.new",
+        "meta.embedded.block.javascript keyword.control.new",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2107,7 +2125,7 @@
         "meta.embedded.block.javascript meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
       ],
       "settings": {
-        "foreground": "#A9A9A9",
+        "foreground": "#E8810C",
       }
     },
     //

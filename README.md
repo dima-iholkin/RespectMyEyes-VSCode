@@ -22,14 +22,15 @@ Core language support:
 * JSON
 * Markdown
 
-<img src="/screenshots/UI.png" title="screenshot of the user interface styled by RespectMyEyes theme" />
-Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/routes/%2Bpage.svelte">PourOverPotato</a>
-
 
 
 ## Screenshots
 
-<details>
+### User Interface
+
+<img src="/screenshots/UI.png" title="screenshot of the user interface styled by RespectMyEyes theme" />
+
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/routes/%2Bpage.svelte">PourOverPotato</a>
 
 ### Svelte
 
@@ -52,7 +53,7 @@ Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/li
 
 ### JavaScript
 
-<img src="/screenshots/javascript.png" loading="lazy" width="600" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
+<img src="/screenshots/javascript.png" loading="lazy" width="700" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
 
 Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/js/main.js">Brad Traversy's Modern Portfolio</a>
 
@@ -64,7 +65,7 @@ Source: <a href="https://github.com/unlight/react-typescript-realworld-example-a
 
 ### CSS
 
-<img src="/screenshots/css.png" loading="lazy" width="600" title="screenshot of CSS code styled by RespectMyEyes theme" />
+<img src="/screenshots/css.png" loading="lazy" width="500" title="screenshot of CSS code styled by RespectMyEyes theme" />
 
 Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/css/main.css">Brad Traversy's Modern Portfolio</a>
 
@@ -85,8 +86,6 @@ Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/pa
 <img src="/screenshots/markdown.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
 
 Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md">TogglPotato</a>
-
-</details>
 
 
 

@@ -1630,6 +1630,28 @@
       }
     },
     //
+    // "string", "number" types in situations like this:
+    // type TInput = string | number;
+    {
+      "scope": [
+        // "string", "number":
+        "source.ts support.type.primitive",
+        "source.js support.type.primitive",
+        "source.tsx support.type.primitive",
+        "source.jsx support.type.primitive",
+        "meta.embedded.block.javascript support.type.primitive",
+        // "undefined", "null":
+        "source.ts support.type.builtin",
+        "source.js support.type.builtin",
+        "source.tsx support.type.builtin",
+        "source.jsx support.type.builtin",
+        "meta.embedded.block.javascript support.type.builtin",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
     // variable's type parameter signs:
     {
       "scope": [

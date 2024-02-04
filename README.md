@@ -77,13 +77,13 @@ Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/di
 
 ### JSON
 
-<img src="/screenshots/json.png" loading="lazy" width="700" title="screenshot of HTML code styled by RespectMyEyes theme" />
+<img src="/screenshots/json.png" loading="lazy" width="700" title="screenshot of JSON code styled by RespectMyEyes theme" />
 
 Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/package.json">Brad Traversy's Modern Portfolio</a>
 
 ### Markdown
 
-<img src="/screenshots/markdown.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
+<img src="/screenshots/markdown.png" loading="lazy" title="screenshot of Markdown code styled by RespectMyEyes theme" />
 
 Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md">TogglPotato</a>
 

@@ -294,6 +294,12 @@
     //
     //
     //
+    // Warning highlight:
+    "editorWarning.foreground": "#A9A9A9",
+    // "editorInfo.foreground": "#00B000",
+    //
+    //
+    //
     // ====================================================
     // Editor Widget:
     //

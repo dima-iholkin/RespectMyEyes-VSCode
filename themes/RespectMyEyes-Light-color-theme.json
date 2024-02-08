@@ -2555,6 +2555,16 @@
       }
     },
     //
+    // "< >" angle brackets for casting in TypeScript:
+    {
+      "scope": [
+        "cast.expr.ts meta.brace.angle.ts",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
     // "` `" backticks in template string:
     {
       "scope": [

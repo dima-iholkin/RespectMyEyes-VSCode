@@ -2934,6 +2934,17 @@
       }
     },
     //
+    // "@component" documentation keyword:
+    {
+      "scope": [
+        "keyword.declaration.class.component.svelte", // "component"
+        "punctuation.definition.keyword.svelte", // "@"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
     // "use:enhance" and similar:
     {
       "scope": [

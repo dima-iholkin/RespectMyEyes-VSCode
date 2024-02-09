@@ -2923,6 +2923,16 @@
       }
     },
     //
+    // "( )" key notation in #each blocks:
+    {
+      "scope": [
+        "meta.special.each.svelte meta.special.start.svelte meta.brace.round.svelte",
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
     // "@debug" keyword:
     {
       "scope": [
@@ -2938,7 +2948,7 @@
     {
       "scope": [
         "keyword.declaration.class.component.svelte", // "component"
-        "punctuation.definition.keyword.svelte", // "@"
+        "comment.block.svelte punctuation.definition.keyword.svelte", // "@"
       ],
       "settings": {
         "foreground": "#C344AB",

@@ -2903,6 +2903,52 @@
       }
     },
     //
+    // <svelte:head>, <svelte:body>, <svelte:document> and similar tags in svelte components:
+    {
+      "scope": [
+        // <svelte:head>:
+        "meta.scope.tag.svelte:head.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:head.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:head.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+        "meta.scope.tag.svelte:head.svelte meta.tag entity.name.tag.svelte", // "head"
+        // <svelte:body>:
+        "meta.scope.tag.svelte:body.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:body.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:body.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+        "meta.scope.tag.svelte:body.svelte meta.tag entity.name.tag.svelte", // "body"
+        // <svelte:document>:
+        "meta.scope.tag.svelte:document.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:document.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:document.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+        "meta.scope.tag.svelte:document.svelte meta.tag entity.name.tag.svelte", // "document"
+        // <svelte:window>:
+        "meta.scope.tag.svelte:window.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:window.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:window.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+        "meta.scope.tag.svelte:window.svelte meta.tag entity.name.tag.svelte", // "window"
+      ],
+      "settings": {
+        "foreground": "#8080E6" // #0000CC80
+      }
+    },
+    //
+    // fix the directives like "on:" after the previous rule applied:
+    {
+      "scope": [
+        // <svelte:head>:
+        "meta.scope.tag.svelte:head.svelte meta.tag meta.directive keyword.control.svelte",
+        // <svelte:body>:
+        "meta.scope.tag.svelte:body.svelte meta.tag meta.directive keyword.control.svelte",
+        // <svelte:document>:
+        "meta.scope.tag.svelte:document.svelte meta.tag meta.directive keyword.control.svelte",
+        // <svelte:window>:
+        "meta.scope.tag.svelte:window.svelte meta.tag meta.directive keyword.control.svelte",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
     // "export" keyword for props:
     {
       "scope": [

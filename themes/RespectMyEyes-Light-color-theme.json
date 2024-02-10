@@ -2862,10 +2862,21 @@
     {
       "scope": [
         "meta.scope.tag.slot.svelte keyword.control.svelte", // "<slot />" tag
-        "meta.attribute.slot.svelte entity.other.attribute-name.svelte", // "slot" attribute
+        "meta.attribute.slot.svelte entity.other.attribute-name.svelte", // "slot"=name attribute in children tags
       ],
       "settings": {
         "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "slot" syntax:
+    {
+      "scope": [
+        "meta.attribute.slot.svelte string.quoted.svelte", // slot="name" attribute in children tags
+        "meta.scope.tag.slot.svelte meta.attribute.name.svelte string.quoted.svelte", // name="slot_name" attribute in slot tag
+      ],
+      "settings": {
+        "foreground": "#E8810C",
       }
     },
     //

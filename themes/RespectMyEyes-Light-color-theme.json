@@ -2926,6 +2926,11 @@
         "meta.scope.tag.svelte:window.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
         "meta.scope.tag.svelte:window.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
         "meta.scope.tag.svelte:window.svelte meta.tag entity.name.tag.svelte", // "window"
+        // <svelte:options>:
+        "meta.scope.tag.svelte:options.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:options.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:options.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+        "meta.scope.tag.svelte:options.svelte meta.tag entity.name.tag.svelte", // "options"
       ],
       "settings": {
         "foreground": "#8080E6" // #0000CC80
@@ -2943,6 +2948,8 @@
         "meta.scope.tag.svelte:document.svelte meta.tag meta.directive keyword.control.svelte",
         // <svelte:window>:
         "meta.scope.tag.svelte:window.svelte meta.tag meta.directive keyword.control.svelte",
+        // <svelte:options>:
+        "meta.scope.tag.svelte:options.svelte meta.tag meta.directive keyword.control.svelte",
       ],
       "settings": {
         "foreground": "#C344AB"

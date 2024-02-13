@@ -358,7 +358,7 @@ Information in this table may be outdated.
 
 
 
-## License information
+## License
 
 * **[MIT License](http://opensource.org/licenses/mit-license.php)**
 * Copyright © 2020 - 2024 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.

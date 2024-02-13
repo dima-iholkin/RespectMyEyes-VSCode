@@ -5375,7 +5375,7 @@
         "text.html.markdown meta.link.reference.def constant.other.reference.link", // [homepage]()
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#A31515"
       }
     },
     //

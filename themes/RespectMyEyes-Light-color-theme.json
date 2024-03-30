@@ -386,6 +386,16 @@
       }
     },
     //
+    // escape characters:
+    {
+      "scope": [
+        "constant.character.escape",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
     // "/ /" regexp begin and end characters:
     {
       "scope": [
@@ -462,13 +472,24 @@
       }
     },
     //
-    // control statements should be distinguishable, so light blue:
+    // control keywords:
     {
       "scope": [
-        "keyword.control", // if, else, return, import, from
+        "keyword.control", // "if", "else", "return"
       ],
       "settings": {
         "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // import keywords:
+    {
+      "scope": [
+        "keyword.control.import", // "import", "from"
+        // works for JS/TS and Python for sure
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
       }
     },
     //
@@ -537,7 +558,7 @@
         "variable.parameter",
       ],
       "settings": {
-        "foreground": "#000000",
+        "foreground": "#C344AB",
       }
     },
     //
@@ -602,6 +623,7 @@
     },
     //
     //
+    //
     // Objects:
     //
     // object keys when defining a type (class, interface):
@@ -622,16 +644,6 @@
       ],
       "settings": {
         "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // variable name when assigning to an object's property (inside object-literal syntax):
-    {
-      "scope": [
-        "variable.parameter",
-      ],
-      "settings": {
-        "foreground": "#000000"
       }
     },
     //
@@ -891,10 +903,19 @@
       }
     },
     //
-    // "?" optional or "!" definite assignment: // (may be specific to TS / JS)
+    // "?" optional assignment: // (may be specific to TS / JS)
     {
       "scope": [
         "keyword.operator.optional", // "?"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // "!" definite assignment: // (may be specific to TS / JS)
+    {
+      "scope": [
         "keyword.operator.definiteassignment" // "!"
       ],
       "settings": {
@@ -912,24 +933,24 @@
       }
     },
     //
-    // ( ) round braces:
+    // "( )" round braces:
     {
       "scope": [
-        "meta.brace.round", // ( )
+        "meta.brace.round", // "( )"
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // ( ) round braces in a function/method definition:
+    // "( )" round braces in a function/method definition:
     {
       "scope": [
         "punctuation.definition.parameters",
-        "meta.parameters punctuation.definition.parameters", // ( ) in function/method definition
+        "meta.parameters punctuation.definition.parameters", // "( )" in function/method definition
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -991,14 +1012,9 @@
       }
     },
     //
-    // "import", "from", "{}" in the import syntax:
+    // "from", "{ }" in the import syntax:
     {
       "scope": [
-        "source.ts keyword.control.import", // import
-        "source.js keyword.control.import", // import
-        "source.tsx keyword.control.import", // import
-        "source.jsx keyword.control.import", // import
-        "meta.embedded.block.javascript keyword.control.import", // import
         "source.ts keyword.control.from", // from
         "source.js keyword.control.from", // from
         "source.tsx keyword.control.from", // from
@@ -1259,16 +1275,6 @@
     // function arguments in declaration:
     {
       "scope": [
-        "source.ts variable.parameter",
-        "source.js variable.parameter",
-        "source.tsx variable.parameter",
-        "source.jsx variable.parameter",
-        "meta.embedded.block.javascript variable.parameter",
-        "source.ts meta.parameters variable.parameter",
-        "source.js meta.parameters variable.parameter",
-        "source.tsx meta.parameters variable.parameter",
-        "source.jsx meta.parameters variable.parameter",
-        "meta.embedded.block.javascript meta.parameters variable.parameter",
         // for when the argument is a callback function:
         "source.ts meta.parameters entity.name.function",
         "source.js meta.parameters entity.name.function",
@@ -2106,20 +2112,6 @@
         "source.tsx meta.brace.round", // "()"
         "source.jsx meta.brace.round", // "()"
         "meta.embedded.block.javascript meta.brace.round", // "()"
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "()" round braces in a function/method definition:
-    {
-      "scope": [
-        "source.ts meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
-        "source.js meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
-        "source.tsx meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
-        "source.jsx meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
-        "meta.embedded.block.javascript meta.parameters punctuation.definition.parameters", // "()" in a function/method definition
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3352,6 +3344,8 @@
         "storage.type.struct.cs",
         "source.cs keyword.other.enum",
         "storage.type.enum.cs",
+        "storage.type.namespace.cs",
+        "source.cs keyword.other.namespace",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -3370,11 +3364,9 @@
       }
     },
     //
-    // "using", "global", "namespace" keywords:
+    // "using", "global" keywords:
     {
       "scope": [
-        "storage.type.namespace.cs",
-        "source.cs keyword.other.namespace",
         "keyword.other.using.cs",
         "keyword.other.directive.using.cs",
         "keyword.other.global.cs",
@@ -3398,7 +3390,7 @@
     // "this" keyword in extension methods:
     {
       "scope": [
-        "source.cs storage.modifier.this",
+        "storage.modifier.this.cs",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -3442,18 +3434,27 @@
       }
     },
     //
-    // "typeof", "nameof", "is" keywords:
+    // "typeof", "nameof" keywords:
     {
       "scope": [
         "source.cs keyword.other.typeof", // "typeof"
         "keyword.operator.expression.typeof.cs", // "typeof"
         "source.cs keyword.other.nameof", // "nameof"
         "keyword.operator.expression.nameof.cs", // "nameof"
-        "source.cs keyword.other.is", // "is"
-        "keyword.operator.expression.pattern.is.cs", // "is"
       ],
       "settings": {
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "is" keyword:
+    {
+      "scope": [
+        "source.cs keyword.other.is",
+        "keyword.operator.expression.pattern.is.cs",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3911,16 +3912,6 @@
       }
     },
     //
-    // parameter name in function declaration:
-    {
-      "scope": [
-        "variable.parameter.java",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
     // "@AllArgsConstructor" annotation syntax in Java:
     //
     // annotation name in annotation syntax:
@@ -4016,16 +4007,6 @@
       }
     },
     //
-    // some common punctuation "()", ":":
-    {
-      "scope": [
-        "source.java punctuation.definition.parameters",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
     // ternary operator "?", ":" and double colon operator "::":
     {
       "scope": [
@@ -4067,6 +4048,170 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Python (.py):
+    //
+    // type names:
+    {
+      "scope": [
+        "entity.other.inherited-class.python",
+        "meta.class.inheritance.python constant.other.caps.python",
+        "support.type.python",
+        "support.type.exception.python",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // function name in a call:
+    {
+      "scope": [
+        "meta.function-call.generic.python",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // function name in definition:
+    {
+      "scope": [
+        "meta.function.python entity.name.function.python",
+        "meta.class.python entity.name.type.class.python",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // constant names:
+    {
+      "scope": [
+        "constant.other.caps.python",
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // "True", "False" constant values:
+    {
+      "scope": [
+        "constant.language.python",
+      ],
+      "settings": {
+        "foreground": "#A31515",
+      }
+    },
+    //
+    // "self" keyword:
+    {
+      "scope": [
+        "variable.language.special.self.python",
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // property access:
+    {
+      "scope": [
+        "meta.member.access.python meta.attribute.python",
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // "@" decorator:
+    {
+      "scope": [
+        "punctuation.definition.decorator.python", // "@"
+        "meta.function.decorator.python support.type.python", // decorator names
+        "meta.function.decorator.python entity.name.function.decorator.python", // decorator names
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // "{ }" string interpolation:
+    {
+      "scope": [
+        "constant.character.format.placeholder.other.python", // "{ }"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "f" f-strings:
+    {
+      "scope": [
+        "storage.type.string.python",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "0x" hex number prefix:
+    {
+      "scope": [
+        "constant.numeric.hex.python storage.type.number.python",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // docs:
+    {
+      "scope": [
+        "string.quoted.docstring punctuation.definition.string", // "'''"
+        "string.quoted.docstring", // comment text
+      ],
+      "settings": {
+        "foreground": "#50A750"
+      }
+    },
+    //
+    // comments:
+    {
+      "scope": [
+        "comment.line.number-sign.python",
+        "comment.line.number-sign.python keyword",
+      ],
+      "settings": {
+        "foreground": "#50A750"
+      }
+    },
+    //
+    // "requirements.txt" key name:
+    {
+      "scope": [
+        "source.pip-requirements entity.name.class",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // "requirements.txt" value:
+    {
+      "scope": [
+        "source.pip-requirements constant.numeric",
+      ],
+      "settings": {
+        "foreground": "#A31515"
       }
     },
     //
@@ -5215,6 +5360,19 @@
     //
     //
     // ====================================================
+    // GitHub Actions YAML (.yml, .yaml):
+    {
+      "scope": [
+        "source.github-actions-workflow meta.embedded.block.github-actions-expression",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
     // Markdown (.md):
     {
       "scope": [
@@ -5238,6 +5396,8 @@
     // lext like "&nbsp;" and "&lt;":
     {
       "scope": [
+        "text.html.markdown meta.embedded.block.html constant.character.entity.named",
+        "text.html.markdown meta.embedded.block.html constant.character.entity.named punctuation.definition.entity.html",
         "text.html.markdown meta.paragraph punctuation.definition.entity", // Fix for "&nbsp;".
         "text.html.markdown meta.paragraph constant.character.entity.named.lt", // Fix for "&lt;".
         "text.html.markdown meta.paragraph constant.character.entity.named.gt", // Fix for "&nbsp;".
@@ -5359,9 +5519,9 @@
     {
       "scope": [
         "text.html.markdown markup.underline.link", // [](https://example.com/)
-        "text.html.markdown heading markup.underline.link", // [](https://example.com/) // Fix for the link URL in a heading.
+        "text.html.markdown heading markup.underline.link", // [](https://example.com/) // Fix for link URL in a heading.
         "text.html.markdown constant.other.reference.link", // [][homepage]
-        "text.html.markdown heading constant.other.reference.link", // [][homepage] // Fix for the link URL in a heading.
+        "text.html.markdown heading constant.other.reference.link", // [][homepage] // Fix for link URL in a heading.
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -5528,8 +5688,6 @@
     // ====================================================
     // Properties (.ini, .editorconfig):
     //
-    //
-    //
     // general text color:
     {
       "scope": [
@@ -5573,9 +5731,35 @@
     //
     //
     // ====================================================
-    // Ignore (.gitignore, .*ignore):
+    // TOML (.toml):
+    //
+    {
+      "scope": [
+        "support.type.property-name.table.toml",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
     //
     //
+    //
+    // ====================================================
+    // Makefile (.makefile):
+    //
+    {
+      "scope": [
+        "keyword.control.@.makefile",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Ignore (.gitignore, .ignore):
     //
     {
       "scope": [

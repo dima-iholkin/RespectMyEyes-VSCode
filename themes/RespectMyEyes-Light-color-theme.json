@@ -894,13 +894,13 @@
       }
     },
     //
-    // "." property accessor:
+    // "." member accessor:
     {
       "scope": [
-        "punctuation.accessor",
+        "punctuation.accessor" // "."
       ],
       "settings": {
-        "foreground": "#000000",
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -1414,7 +1414,7 @@
         "meta.embedded.block.javascript meta.decorator punctuation.decorator",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0000CC80"
       }
     },
     //
@@ -1428,7 +1428,21 @@
         "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0000CC80"
+      }
+    },
+    //
+    // Fix for a function call inside of a decorator:
+    {
+      "scope": [
+        "source.ts meta.decorator meta.object.member meta.function-call entity.name.function",
+        "source.js meta.decorator meta.object.member meta.function-call entity.name.function",
+        "source.tsx meta.decorator meta.object.member meta.function-call entity.name.function",
+        "source.jsx meta.decorator meta.object.member meta.function-call entity.name.function",
+        "meta.embedded.block.javascript meta.decorator meta.object.member meta.function-call entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2510,55 +2524,6 @@
     //
     //
     //
-    // "." accessor:
-    {
-      "scope": [
-        "source.ts punctuation.accessor",
-        "source.js punctuation.accessor",
-        "source.tsx punctuation.accessor",
-        "source.jsx punctuation.accessor",
-        "meta.embedded.block.javascript punctuation.accessor"
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "." accessor in type annotation:
-    {
-      "scope": [
-        // "meta.type.annotation":
-        "source.ts meta.type.annotation punctuation.accessor",
-        "source.js meta.type.annotation punctuation.accessor",
-        "source.tsx meta.type.annotation punctuation.accessor",
-        "source.jsx meta.type.annotation punctuation.accessor",
-        "meta.embedded.block.javascript meta.type.annotation punctuation.accessor",
-        // "meta.return.type":
-        "source.ts meta.return.type punctuation.accessor",
-        "source.js meta.return.type punctuation.accessor",
-        "source.tsx meta.return.type punctuation.accessor",
-        "source.jsx meta.return.type punctuation.accessor",
-        "meta.embedded.block.javascript meta.return.type punctuation.accessor",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // . dot in ".then, .catch" (it doesn't work exactly, other dots also colored) :
-    {
-      "scope": [
-        "source.ts meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
-        "source.js meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
-        "source.tsx meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
-        "source.jsx meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
-        "meta.embedded.block.javascript meta.function meta.block meta.function-call punctuation.accessor", // . dot in ".then, .catch"
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
     // "[ ]" square braces:
     {
       "scope": [
@@ -3199,6 +3164,42 @@
     //
     //
     // ====================================================
+    // Angular:
+    //
+    // fix for ":" in JS/TS blocks embedded in HTML:
+    {
+      "scope": [
+        "text.html.derivative expression.ng",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "{{ }}" fix the embedded block:
+    {
+      "scope": [
+        "text.html.derivative punctuation.definition.block.js",
+        "text.html.derivative punctuation.definition.block.ts",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // fix "let" and "const" in HTML files:
+    {
+      "scope": [
+        "expression.ng storage.type",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
     // C# (.cs):
     //
     // Names in C#:
@@ -3606,16 +3607,6 @@
       "scope": [
         "source.cs punctuation.squarebracket", // [ ]
         "text.aspnetcorerazor punctuation.squarebracket", // [ ]
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // dot ".":
-    {
-      "scope": [
-        "source.cs punctuation.accessor" // "."
       ],
       "settings": {
         "foreground": "#A9A9A9"

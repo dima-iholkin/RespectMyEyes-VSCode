@@ -809,8 +809,9 @@
         "punctuation.definition.binding-pattern.object", // { }
         "punctuation.definition.section.case-statement", // :
         "punctuation.definition.dictionary", // dict[]
-        "punctuation.separator", // ,
-        "meta.embedded.block.css punctuation.separator", // ,
+        "punctuation.separator", // ","
+        "punctuation.separator.comma", // ","
+        "meta.embedded.block.css punctuation.separator", // ","
         "punctuation.section",
         "punctuation.terminator", // ;
         "punctuation.destructuring", // :
@@ -969,6 +970,36 @@
       "scope": [
         "meta.type.tuple meta.brace.square", // [ ] brackets for array definition
         "meta.array.literal meta.brace.square" // [ ]
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // "< >" angle brackets for HTML and similar tags:
+    {
+      "scope": [
+        "punctuation.definition.tag",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // "{ }", "{{ }}" string interpolation brackets:
+    {
+      "scope": [
+        "punctuation.definition.interpolation",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // characters like "&nbsp;":
+    {
+      "scope": [
+        "constant.character.entity.named",
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -2891,7 +2922,7 @@
       }
     },
     //
-    // <script> and <style> tags in svelte components:
+    // <script> and <style> tags in Svelte components:
     {
       "scope": [
         "meta.script.svelte entity.name.tag.svelte", // <script> tag
@@ -3099,26 +3130,15 @@
       }
     },
     //
-    // "<", ">" tag brackets:
-    {
-      "scope": [
-        "punctuation.definition.tag.begin.svelte",
-        "punctuation.definition.tag.end.svelte",
-      ],
-      "settings": {
-        "foreground": "#0000CC",
-      }
-    },
-    //
     //
     //
     // ====================================================
     // Vue (.vue):
     //
-    // fix the HTML tag end:
+    // fix the HTML end tag:
     {
       "scope": [
-        "text.html.vue meta.tag.other" // />
+        "text.html.vue meta.tag.other" // "/>"
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -3128,21 +3148,51 @@
     // fix the assignment sign:
     {
       "scope": [
-        "text.html.vue meta.tag.block.any" //
+        "text.html.vue meta.tag.block.any"
       ],
       "settings": {
         "foreground": "#000000"
       }
     },
     //
-    // fix the generic template {{ }}:
+    // "{{ }}" fix the generic template:
     {
       "scope": [
-        "text.html.vue punctuation.definition.generic.begin", // {{
-        "text.html.vue punctuation.definition.generic.end" // }}
+        "text.html.vue punctuation.definition.generic.begin", // "{{"
+        "text.html.vue punctuation.definition.generic.end" // "}}"
       ],
       "settings": {
         "foreground": "#F066FF"
+      }
+    },
+    //
+    // "@" in attribute directives:
+    {
+      "scope": [
+        "meta.attribute.directive.vue punctuation.attribute-shorthand.event.html.vue",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "." separator in attribute directives:
+    {
+      "scope": [
+        "meta.attribute.directive.vue",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // fix for ":" in JS/TS blocks embedded in HTML:
+    {
+      "scope": [
+        "meta.attribute.directive.vue meta.block",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3641,17 +3691,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "{ }" string interpolation:
-    {
-      "scope": [
-        "source.cs punctuation.definition.interpolation.begin", // "{"
-        "source.cs punctuation.definition.interpolation.end" // "}"
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
       }
     },
     //
@@ -4445,10 +4484,19 @@
       "scope": [
         "source.shell string.unquoted.argument",
         "string.unquoted.argument.shell",
-        "source.shell constant.other.option",
       ],
       "settings": {
-        "foreground": "#A31515"
+        "foreground": "#000000"
+      }
+    },
+    //
+    // command options:
+    {
+      "scope": [
+        "source.shell constant.other.option", // "-m", "-A"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -4772,7 +4820,7 @@
       }
     },
     //
-    // "@function", "@mixin", "@keyframes" keywords:
+    // "@function", "@mixin" keywords:
     {
       "scope": [
         // "@function":
@@ -4789,6 +4837,15 @@
         "source.css keyword.control.at-rule.mixin punctuation.definition.keyword",
         "meta.embedded.block.css keyword.control.at-rule.mixin punctuation.definition.keyword",
         "meta.embedded.block.scss keyword.control.at-rule.mixin punctuation.definition.keyword",
+      ],
+      "settings": {
+        "foreground": "#A31515",
+      }
+    },
+    //
+    // "@keyframes" keyword:
+    {
+      "scope": [
         // "@keyframes":
         "source.css keyword.control.at-rule.keyframes",
         "meta.embedded.block.css keyword.control.at-rule.keyframes",
@@ -4799,6 +4856,31 @@
       ],
       "settings": {
         "foreground": "#A31515",
+      }
+    },
+    //
+    // keyframe names:
+    {
+      "scope": [
+        "source.css meta.at-rule.keyframes.header variable.parameter.keyframe-list",
+        "meta.embedded.block.css meta.at-rule.keyframes.header variable.parameter.keyframe-list",
+        "meta.embedded.block.scss meta.at-rule.keyframes.header variable.parameter.keyframe-list",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // keyframe offsets:
+    {
+      "scope": [
+        "source.css meta.at-rule.keyframes.body entity.other.keyframe-offset",
+        "meta.embedded.block.css meta.at-rule.keyframes.body entity.other.keyframe-offset",
+        "meta.embedded.block.scss meta.at-rule.keyframes.body entity.other.keyframe-offset",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
       }
     },
     //
@@ -4921,7 +5003,8 @@
         "source.css entity.name.tag.reference",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //
@@ -5015,17 +5098,6 @@
       }
     },
     //
-    // "#" interpolation:
-    {
-      "scope": [
-        "source.css punctuation.definition.interpolation.begin.bracket.curly",
-        "source.css punctuation.definition.interpolation.end.bracket.curly",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
     // "@", at character:
     {
       "scope": [
@@ -5081,17 +5153,6 @@
         "source.js entity.name.tag support.class", // tag names
         "source.tsx entity.name.tag support.class", // tag names
         "source.jsx entity.name.tag support.class", // tag names
-        "text.html punctuation.definition.tag", // <, >
-        "text.html punctuation.definition.tag source.js-ignored-vscode", // <, > // "source.css-ignored-vscode" - for some weirdness in one JS file.
-        "text.html punctuation.definition.tag source.css-ignored-vscode", // <, > // "source.css-ignored-vscode" - for some weird thing I saw once in a php file.
-        "text.xml punctuation.definition.tag", // <, >
-        "text.aspnetcorerazor punctuation.definition.tag", // <, >
-        "text.aspnetcorerazor punctuation.definition.tag source.js-ignored-vscode", // <, >
-        "text.aspnetcorerazor punctuation.definition.tag source.css-ignored-vscode", // <, >
-        "source.ts punctuation.definition.tag", // <, >
-        "source.js punctuation.definition.tag", // <, >
-        "source.tsx punctuation.definition.tag", // <, >
-        "source.jsx punctuation.definition.tag", // <, >
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -5393,14 +5454,11 @@
       }
     },
     //
-    // lext like "&nbsp;" and "&lt;":
+    // text like "&nbsp;" and "&lt;":
     {
       "scope": [
-        "text.html.markdown meta.embedded.block.html constant.character.entity.named",
         "text.html.markdown meta.embedded.block.html constant.character.entity.named punctuation.definition.entity.html",
         "text.html.markdown meta.paragraph punctuation.definition.entity", // Fix for "&nbsp;".
-        "text.html.markdown meta.paragraph constant.character.entity.named.lt", // Fix for "&lt;".
-        "text.html.markdown meta.paragraph constant.character.entity.named.gt", // Fix for "&nbsp;".
       ],
       "settings": {
         "foreground": "#A9A9A9"

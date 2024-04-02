@@ -1414,7 +1414,7 @@
         "meta.embedded.block.javascript meta.decorator punctuation.decorator",
       ],
       "settings": {
-        "foreground": "#0000CC80"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1428,7 +1428,7 @@
         "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function",
       ],
       "settings": {
-        "foreground": "#0000CC80"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3222,6 +3222,60 @@
         "foreground": "#A9A9A9"
       }
     },
+    //
+    // template attributes like "*ngFor", "*ngIf":
+    {
+      "scope": [
+        "entity.other.ng-binding-name.template.html",
+        "entity.other.ng-binding-name.template.html punctuation.definition.ng-binding-name.begin.html",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "of" control flow keyword:
+    {
+      "scope": [
+        "expression.ng keyword.operator.expression.of", // *ngFor="let article of results"
+        "control.block.expression.ng keyword.operator.expression.of", // @for (comment of $comments(); track comment.id)
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "[ngSwitch]" control flow attribute:
+    {
+      "scope": [
+        "entity.other.ng-binding-name.property.html entity.other.ng-binding-name.ngSwitch.html",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // fix for ";" in Angular HTML expressions:
+    {
+      "scope": [
+        "control.block.expression.ng",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "|" pipe operator:
+    // {
+    //   "scope": [
+    //     "expression.ng keyword.operator.logical.js",
+    //     "expression.ng keyword.operator.logical.ts",
+    //   ],
+    //   "settings": {
+    //     "foreground": "#0BC5E3"
+    //   }
+    // },
+    // If would break the "!" logical NOT operator.
     //
     //
     //

@@ -2676,9 +2676,9 @@
     //
     //
     // Documentation:
+    // "comment.block.documentation ...":
     {
       "scope": [
-        // "comment.block.documentation ...":
         // "... storage.type":
         "source.ts comment.block.documentation storage.type",
         "source.js comment.block.documentation storage.type",
@@ -2709,7 +2709,33 @@
         "source.tsx comment.block.documentation variable",
         "source.jsx comment.block.documentation variable",
         "meta.embedded.block.javascript comment.block.documentation variable",
-        // "comment.line ...":
+        // "... keyword.operator.assignment":
+        "source.ts comment.block.documentation keyword.operator.assignment",
+        "source.js comment.block.documentation keyword.operator.assignment",
+        "source.tsx comment.block.documentation keyword.operator.assignment",
+        "source.jsx comment.block.documentation keyword.operator.assignment",
+        "meta.embedded.block.javascript comment.block.documentation keyword.operator.assignment",
+        // "... source":
+        "source.ts comment.block.documentation source",
+        "source.js comment.block.documentation source",
+        "source.tsx comment.block.documentation source",
+        "source.jsx comment.block.documentation source",
+        "meta.embedded.block.javascript comment.block.documentation source",
+        // "... meta.method.declaration meta.block storage.type":
+        "source.ts meta.method.declaration meta.block comment.block.documentation storage.type",
+        "source.js meta.method.declaration meta.block comment.block.documentation storage.type",
+        "source.tsx meta.method.declaration meta.block comment.block.documentation storage.type",
+        "source.jsx meta.method.declaration meta.block comment.block.documentation storage.type",
+        "meta.embedded.block.javascript meta.method.declaration meta.block comment.block.documentation storage.type",
+      ],
+      "settings": {
+        "foreground": "#50A750"
+      }
+    },
+    //
+    // "comment.line ...":
+    {
+      "scope": [
         // "... entity.name.tag":
         "source.ts comment.line entity.name.tag",
         "source.js comment.line entity.name.tag",

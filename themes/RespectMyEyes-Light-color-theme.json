@@ -2629,6 +2629,17 @@
       }
     },
     //
+    // "?" optional accessor:
+    {
+      "scope": [
+        "punctuation.accessor.optional.ts",
+        "punctuation.accessor.optional.js",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
     //
     //
     // React:
@@ -2794,6 +2805,17 @@
       ],
       "settings": {
         "foreground": "#000000"
+      }
+    },
+    //
+    // fix for ":" sometimes:
+    {
+      "scope": [
+        "meta.block.ts",
+        "meta.block.js",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3338,10 +3360,8 @@
     // type parameters:
     {
       "scope": [
-        "source.cs entity.name.type", // class, interface names when creating a class; class instance
-        "text.aspnetcorerazor entity.name.type", // type parameters
-        "source.cs storage.type", // type parameters
-        "text.aspnetcorerazor storage.type", // type parameters
+        "entity.name.type.cs", // class, interface names when creating a class; class instance
+        "storage.type.cs", // type parameters
         "source.cs keyword.type", // "void, int, string" keywords
         "text.aspnetcorerazor keyword.type", // "void, int, string" keywords
       ],
@@ -3811,7 +3831,7 @@
     //
     //
     //
-    // Razor Pages:
+    // Razor Pages (.razor, .cshtml):
     //
     // Directives like "@using", "@page", "@model":
     {
@@ -3964,16 +3984,27 @@
       }
     },
     //
+    // "@* comment *@" comment block in Razor Pages:
+    {
+      "scope": [
+        "meta.comment.razor keyword.control.razor.comment.star",
+        "meta.comment.razor keyword.control.cshtml.transition",
+        "text.aspnetcorerazor meta.comment.razor keyword.control.cshtml.transition",
+      ],
+      "settings": {
+        "foreground": "#50A750"
+      }
+    },
+    //
     //
     //
     // ====================================================
     // Java (.java):
     //
-    // "import", "package" keywords:
+    // "import" keywords:
     {
       "scope": [
         "keyword.other.import.java", // "import"
-        "keyword.other.package.java", // "package"
         "meta.import.java storage.modifier.java", // "static" in "import static"
       ],
       "settings": {
@@ -3981,10 +4012,11 @@
       }
     },
     //
-    // "export" keyword:
+    // "export", "package" keywords:
     {
       "scope": [
         "source.java keyword.module",
+        "keyword.other.package.java", // "package"
       ],
       "settings": {
         "foreground": "#A31515"
@@ -4047,22 +4079,21 @@
       }
     },
     //
-    // "@AllArgsConstructor" annotation syntax in Java:
-    //
-    // annotation name in annotation syntax:
+    // "@AllArgsConstructor" annotation syntax:
     {
       "scope": [
-        "storage.type.annotation.java",
+        "storage.type.annotation.java", // annotation name in annotation syntax
+        "punctuation.definition.annotation.java", // "@" in annotation syntax
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0BC5E3"
       }
     },
     //
-    // "@" in annotation syntax:
+    // parameter names in annotation syntax:
     {
       "scope": [
-        "punctuation.definition.annotation.java",
+        "meta.declaration.annotation.java constant.other.key.java",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -4086,16 +4117,6 @@
       ],
       "settings": {
         "foreground": "#A31515"
-      }
-    },
-    //
-    // enum members:
-    {
-      "scope": [
-        "meta.enum.java constant.other.enum.java",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
       }
     },
     //
@@ -4183,6 +4204,21 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Java Properties (.properties):
+    //
+    // key names:
+    {
+      "scope": [
+        "source.java-properties support.constant.java-properties",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //

@@ -3296,14 +3296,14 @@
       }
     },
     //
-    // namespace alias names:
+    // namespace alias names, "global" keyword in namespaces:
     {
       "scope": [
-        "source.cs entity.name.type.alias",
+        "entity.name.type.alias.cs",
         "text.aspnetcorerazor entity.name.type.alias",
       ],
       "settings": {
-        "foreground": "#8080E6" // #0000CC80
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3413,7 +3413,7 @@
         "text.aspnetcorerazor entity.name.variable.field", // field names
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -3487,21 +3487,23 @@
     {
       "scope": [
         "source.cs keyword.other.base", // "base"
+        "variable.language.base.cs", // "base"
         "source.cs keyword.other.this", // "this"
-        "source.cs variable.language.this", // "this" in constructor
+        "variable.language.this.cs", // "this" in constructor
       ],
       "settings": {
         "foreground": "#C344AB"
       }
     },
     //
-    // "using", "global" keywords:
+    // "using", "global", "static" keywords:
     {
       "scope": [
         "keyword.other.using.cs",
         "keyword.other.directive.using.cs",
         "keyword.other.global.cs",
         "keyword.other.directive.global.cs",
+        "keyword.other.directive.static.cs",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3731,7 +3733,8 @@
         "keyword.operator.null-coalescing.cs", // null-coalescing operator "??"
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
       }
     },
     //
@@ -3741,7 +3744,7 @@
         "keyword.operator.null-conditional.cs" // null-conditional operator {variable_name}"?"
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#0000CC",
       }
     },
     //
@@ -3758,7 +3761,7 @@
     // logical operators "||", "&&", null-forgiving operator "!":
     {
       "scope": [
-        "keyword.operator.logical.cs" // logical operators "||", "&&", null-forgiving operator {variable_name}"!"
+        "keyword.operator.logical.cs" // logical operators "||", "&&", null-forgiving operator variable_name"!"
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3768,8 +3771,19 @@
     // preprocessor directives "pragma warning disable ...":
     {
       "scope": [
+        "meta.preprocessor.cs punctuation.separator.hash.cs", // "#"
         "source.cs meta.preprocessor",
         "source.cs meta.preprocessor keyword"
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // numbers in preprocessor directives "pragma warning disable 612":
+    {
+      "scope": [
+        "meta.preprocessor.cs constant.numeric",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3788,6 +3802,7 @@
         "comment.block.documentation.cs punctuation.separator",
         "comment.block.documentation.cs entity.other.attribute-name",
         "comment.block.documentation.cs string",
+        "comment.block.documentation.cs punctuation.definition.tag",
       ],
       "settings": {
         "foreground": "#50A750"
@@ -3807,7 +3822,7 @@
         "text.aspnetcorerazor meta.directive keyword.control.cshtml.transition", // "@"
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#0BC5E3"
       }
     },
     //
@@ -3856,7 +3871,7 @@
       }
     },
     //
-    // "." dot in "@Model.RequestId" in Razor Pages:
+    // fix for "." dot in "@Model.RequestId":
     {
       "scope": [
         "text.aspnetcorerazor meta.expression.implicit source.cs",
@@ -3936,6 +3951,16 @@
       ],
       "settings": {
         "foreground": "#A31515"
+      }
+    },
+    //
+    // fix for "<" HTML begin tag in some places:
+    {
+      "scope": [
+        "punctuation.definition.tag.begin.html source.js-ignored-vscode",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //

@@ -668,10 +668,10 @@
     // CSS kinda:
     {
       "scope": [
-        "meta.selector", // class selector and others...
+        "meta.selector", // class selector and others... "::deep"... I'm not sure what it is.
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -999,7 +999,8 @@
     // characters like "&nbsp;":
     {
       "scope": [
-        "constant.character.entity.named",
+        "constant.character.entity", // "nbsp"
+        "constant.character.entity punctuation.definition.entity", // "&", ";"
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -1414,7 +1415,7 @@
         "meta.embedded.block.javascript meta.decorator punctuation.decorator",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1428,7 +1429,7 @@
         "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1817,13 +1818,17 @@
       }
     },
     //
-    // "delete" property keyword:
+    // "delete" property, "void" operator keywords:
     {
       "scope": [
         "keyword.operator.expression.delete.ts",
         "keyword.operator.expression.delete.js",
         "keyword.operator.expression.delete.tsx",
         "keyword.operator.expression.delete.jsx",
+        "keyword.operator.expression.void.ts",
+        "keyword.operator.expression.void.js",
+        "keyword.operator.expression.void.tsx",
+        "keyword.operator.expression.void.jsx",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -3143,6 +3148,16 @@
       }
     },
     //
+    // fix for "$" in a comment line:
+    {
+      "scope": [
+        "comment punctuation.definition.variable.svelte",
+      ],
+      "settings": {
+        "foreground": "#50A750",
+      }
+    },
+    //
     //
     //
     // ====================================================
@@ -3311,10 +3326,19 @@
       "scope": [
         "source.cs entity.name.type.namespace",
         "text.aspnetcorerazor entity.name.type.namespace",
-        "text.aspnetcorerazor meta.directive", // "." accessors in namespace names in Razor Pages.
       ],
       "settings": {
         "foreground": "#000000"
+      }
+    },
+    //
+    // "." accessors in namespace names in Razor Pages:
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.directive",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -3361,6 +3385,7 @@
     {
       "scope": [
         "entity.name.type.cs", // class, interface names when creating a class; class instance
+        "entity.name.type.type-parameter.cs", // type parameters
         "storage.type.cs", // type parameters
         "source.cs keyword.type", // "void, int, string" keywords
         "text.aspnetcorerazor keyword.type", // "void, int, string" keywords
@@ -3420,6 +3445,7 @@
       "scope": [
         "source.cs entity.name.variable.property",
         "source.cs entity.name.variable.field",
+        "entity.name.variable.event.cs",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -3764,7 +3790,7 @@
         "keyword.operator.null-conditional.cs" // null-conditional operator {variable_name}"?"
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#A9A9A9",
       }
     },
     //
@@ -3796,14 +3822,15 @@
         "source.cs meta.preprocessor keyword"
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#A9A9A9"
       }
     },
     //
-    // numbers in preprocessor directives "pragma warning disable 612":
+    // numbers and strings in preprocessor directives "pragma warning disable 612":
     {
       "scope": [
         "meta.preprocessor.cs constant.numeric",
+        "meta.preprocessor.cs string.unquoted",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -3874,6 +3901,7 @@
     {
       "scope": [
         "text.aspnetcorerazor meta.expression.implicit keyword.control.cshtml.transition", // "@"
+        "text.html.cshtml meta.expression.implicit keyword.control.cshtml.transition", // "@"
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -3884,7 +3912,10 @@
     {
       "scope": [
         "text.aspnetcorerazor meta.expression.implicit source.cs variable",
+        "text.html.cshtml meta.expression.implicit source.cs variable",
         "text.aspnetcorerazor meta.expression.implicit source.cs entity.name.function.cs",
+        "text.html.cshtml meta.expression.implicit source.cs entity.name.function.cs",
+        // It's a conscious decision to make function calls in Razor syntax light-blue, to separate them from HTML markup.
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -4310,7 +4341,7 @@
         "meta.function.decorator.python entity.name.function.decorator.python", // decorator names
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4987,7 +5018,7 @@
         "meta.embedded.block.scss keyword.control.at-rule.keyframes punctuation.definition.keyword",
       ],
       "settings": {
-        "foreground": "#A31515",
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -5972,7 +6003,7 @@
     // Preprocessor directives:
     {
       "scope": [
-        "source.ahk keyword.control.directives",
+        "source.ahk2 keyword.control.directives",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -5982,7 +6013,7 @@
     // Function names:
     {
       "scope": [
-        "source.ahk support.function",
+        "source.ahk2 support.function",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -5992,8 +6023,8 @@
     // Hotkey literals:
     {
       "scope": [
-        "source.ahk hotkeyline",
-        "source.ahk keyword.keys"
+        "source.ahk2 hotkeyline",
+        "source.ahk2 keyword.keys"
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -6003,7 +6034,7 @@
     // Labels:
     {
       "scope": [
-        "source.ahk hotkeyline entity.name.function.label",
+        "source.ahk2 hotkeyline entity.name.function.label",
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -6017,7 +6048,7 @@
     // "On", "Off" keywords:
     {
       "scope": [
-        "source.ahk keyword.other"
+        "source.ahk2 keyword.other"
       ],
       "settings": {
         "foreground": "#A31515"
@@ -6030,7 +6061,7 @@
     //
     // comment sign ";":
     {
-      "scope": "source.ahk punctuation.definition.comment", // ";"
+      "scope": "source.ahk2 punctuation.definition.comment", // ";"
       "settings": {
         "foreground": "#50A750",
       }
@@ -6039,8 +6070,8 @@
     // " " string quotes:
     {
       "scope": [
-        "source.ahk punctuation.definition.string.begin",
-        "source.ahk punctuation.definition.string.end"
+        "source.ahk2 punctuation.definition.string.begin",
+        "source.ahk2 punctuation.definition.string.end"
       ],
       "settings": {
         "foreground": "#A31515"
@@ -6050,12 +6081,22 @@
     // "{ }", "::", "," punctuation:
     {
       "scope": [
-        "source.ahk punctuation.bracket", // "{ }"
-        "source.ahk punctuation.definition.equals.colon", // "::"
-        "source.ahk punctuation" // ","
+        "source.ahk2 punctuation.bracket", // "{ }"
+        "source.ahk2 punctuation.definition.equals.colon", // "::"
+        "source.ahk2 punctuation" // ","
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // operators like "+":
+    {
+      "scope": [
+        "keyword.operator.ahk2", // "+"
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     //

@@ -89,13 +89,13 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
 
 
 
-## Core language support
+## Core supported languages
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required extension for syntax highlight</th>
+      <th align="center">Expected syntax highlight extension</th>
     </tr>
   </thead>
   <tbody>
@@ -107,6 +107,12 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
     </tr>
     <tr>
       <td align="center">C# / .NET / ASP.NET Core</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">C# Razor Pages / Blazor</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit</a>
       </td>
@@ -140,7 +146,7 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
 
 
 
-## Lazy language support
+## Lazily supported languages
 
 Maintainers for these and new languages are very welcome!
 
@@ -355,6 +361,12 @@ Information in this table may be outdated.
   }
   ```
 </details>
+
+
+
+## Development
+
+Validation repos are [listed here](./validation/validation_repos.md).
 
 
 

@@ -784,7 +784,8 @@
       "scope": [
         "keyword.operator.arithmetic", // +, -, *, /
         "keyword.operator.assignment", // =
-        "keyword.operator.comparison", // ===
+        "keyword.operator.increment", // ++
+        "keyword.operator.decrement", // --
       ],
       "settings": {
         "foreground": "#000000",
@@ -820,8 +821,6 @@
         "keyword.operator.logical", // ||, !
         "keyword.operator.comparison", // ===
         "keyword.operator.relational", // >, <
-        "keyword.operator.increment", // ++
-        "keyword.operator.decrement", // --
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -3218,6 +3217,17 @@
     {
       "scope": [
         "meta.attribute.directive.vue meta.block",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // fix for brackets "{ }" in " :to="{ name: 'home' }" "
+    {
+      "scope": [
+        "source.vue text.html.derivative punctuation.definition.block.js",
+        "source.vue text.html.derivative punctuation.definition.block.ts",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -5957,6 +5967,7 @@
     {
       "scope": [
         "support.type.property-name.table.toml",
+        "meta.array.table.toml support.type.property-name.array.toml",
       ],
       "settings": {
         "foreground": "#E8810C"

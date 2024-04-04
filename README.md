@@ -156,38 +156,20 @@ Information in this table may be outdated.
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required extension for syntax highlight</th>
+      <th align="center">Expected syntax highlight extension</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">SASS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">LESS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">PostCSS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">styled-components</td>
+      <td align="center">Vue</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components">vscode-styled-components</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=Vue.volar">Vue - Official</a>
       </td>
     </tr>
     <tr>
-      <td align="center">AutoHotKey</td>
+      <td align="center">Angular</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">PowerShell</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=Angular.ng-template">Angular Language Service</a>
       </td>
     </tr>
     <tr>
@@ -197,8 +179,40 @@ Information in this table may be outdated.
       </td>
     </tr>
     <tr>
-      <td align="center">T-SQL</td>
+      <td align="center">Python</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">SQL</td>
       <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">PowerShell</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Shell</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">AutoHotKey</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">SASS / LESS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">styled-components</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components">vscode-styled-components</a>
+      </td>
     </tr>
     <tr>
       <td align="center">YAML</td>
@@ -213,10 +227,6 @@ Information in this table may be outdated.
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotEnv</a>
       </td>
-    </tr>
-    <tr>
-      <td align="center">Shell</td>
-      <td align="center"> - </td>
     </tr>
   </tbody>
 </table>

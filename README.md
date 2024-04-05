@@ -199,6 +199,10 @@ Information in this table may be outdated.
       <td align="center"> - </td>
     </tr>
     <tr>
+      <td align="center">Batch / CMD</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
       <td align="center">AutoHotKey</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>

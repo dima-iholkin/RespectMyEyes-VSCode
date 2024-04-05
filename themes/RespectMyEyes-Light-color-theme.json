@@ -4127,7 +4127,7 @@
         "punctuation.definition.annotation.java", // "@" in annotation syntax
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4436,6 +4436,7 @@
     {
       "scope": [
         "source.powershell storage.type", // function
+        "source.powershell meta.attribute support.function.attribute", // function
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -4489,7 +4490,7 @@
         "source.powershell variable.parameter.attribute", // variable parameter name in attribute
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4500,7 +4501,6 @@
         "source.powershell variable.other",
         "source.powershell variable.other.readwrite",
         "source.powershell support.variable.automatic", // $_
-        "source.powershell interpolated.complex.source",
         "source.powershell punctuation.definition.variable",
         "source.powershell entity.name",
       ],
@@ -4541,9 +4541,11 @@
     },
     //
     // meta.scriptblock (???):
+    // parameter names like "-Message":
     {
       "scope": [
         "source.powershell meta.scriptblock", // ( ) round braces in a template string
+        "source.powershell interpolated.complex.source", // fix for some parameter names like "-Path"
         // text with no syntax tokens...
       ],
       "settings": {
@@ -4583,18 +4585,39 @@
       }
     },
     //
+    // operators like "&":
+    // "," comma for some reason also gets this token :(
+    {
+      "scope": [
+        "keyword.operator.other.powershell",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
     //
     //
     // ====================================================
     // Shell:
     //
-    // variable names:
+    // variable names during use:
     {
       "scope": [
         "source.shell variable.other",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // variable names during assignment:
+    {
+      "scope": [
+        "source.shell variable.other.assignment",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
       }
     },
     //
@@ -4603,6 +4626,16 @@
       "scope": [
         "source.shell variable.parameter.positional",
         "source.shell punctuation.definition.variable variable.parameter.positional", // "$" in shell variable names
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "$#" special variables:
+    {
+      "scope": [
+        "variable.language.special.shell",
       ],
       "settings": {
         "foreground": "#C344AB",
@@ -4676,6 +4709,21 @@
     //
     //
     // ====================================================
+    // Batch, CMD (.cmd, .bat):
+    //
+    // variable names:
+    {
+      "scope": [
+        "variable.other.readwrite.batchfile",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
     // CSS, SASS, SCSS, LESS, CSS-in-JS:
     //
     // Names in CSS:
@@ -4733,8 +4781,6 @@
     // type names in @extend:
     {
       "scope": [
-        // "source.css meta.at-rule.include entity.name.function",
-        // "meta.embedded.block.css meta.at-rule.include entity.name.function",
         "source.css meta.at-rule.extend entity.other.attribute-name.class",
         "meta.embedded.block.css meta.at-rule.extend entity.other.attribute-name.class",
       ],
@@ -4771,6 +4817,7 @@
         "source.css variable.argument",
         "source.css meta.property-list variable.other.less", // for LESS
         "source.css meta.property-list variable.other.less punctuation.definition.variable.less", // for LESS
+        "punctuation.definition.variable.less", // "@" for LESS
         "variable.parameter.postcss", // for PostCSS
       ],
       "settings": {
@@ -5072,12 +5119,9 @@
       }
     },
     //
-    // "@include", "@extend", "@supports" keywords:
+    // "@extend", "@supports" keywords:
     {
       "scope": [
-        // "@include":
-        // "source.css keyword.control.at-rule.include",
-        // "source.css keyword.control.at-rule.include punctuation.definition.keyword",
         // "@extend":
         "source.css keyword.control.at-rule.extend",
         "source.css keyword.control.at-rule.extend punctuation.definition.keyword",
@@ -5111,7 +5155,8 @@
         "meta.embedded.block.css meta.at-rule.include entity.name.function",
       ],
       "settings": {
-        "foreground": "#0000CC",
+        "foreground": "#C344AB",
+        "fontStyle": "bold",
       }
     },
     //
@@ -5222,7 +5267,7 @@
       }
     },
     //
-    // ( ) braces in @media rule:
+    // "( )" braces in @media rule:
     {
       "scope": [
         "source.css punctuation.definition.parameters.begin.bracket.round", // ( )
@@ -5237,7 +5282,7 @@
       }
     },
     //
-    // [ ] braces :
+    // "[ ]" braces:
     {
       "scope": [
         "source.css punctuation.definition.begin", // [
@@ -5247,6 +5292,29 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "[ ]", ":" fixes for LESS:
+    {
+      "scope": [
+        "meta.attribute-selector.less punctuation.definition.entity.less", // "[ ]"
+        "meta.attribute-selector.less keyword.operator.attribute-selector.less", // fix for "]" sometimes like "input[type="submit"]"
+        "meta.selector.less meta.function-call.less punctuation.definition.entity.less", // ":"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "&" parent selector fix for LESS:
+    {
+      "scope": [
+        "entity.other.attribute-name.parent.less punctuation.definition.entity.less",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
       }
     },
     //
@@ -5428,7 +5496,7 @@
         "source.sql storage.type",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -5490,7 +5558,7 @@
         "source.sql text.variable",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#E8810C"
       }
     },
     //

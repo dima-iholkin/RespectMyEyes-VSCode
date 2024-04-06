@@ -12,7 +12,7 @@
 <br />
 <br />
 
-Core language support: 
+Core supported languages: 
 * Svelte
 * C# / .NET / ASP.NET Core
 * TypeScript / JavaScript
@@ -46,10 +46,9 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPota
 
 ### TypeScript
 
-<img src="/screenshots/typescript.png" loading="lazy" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
+<img src="/screenshots/typescript.png" loading="lazy" width="700" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
 
-Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/database/v1/indexedDB.ts">PourOverPotato</a>
-
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/domain/helpers/sortRecipes.ts">PourOverPotato</a>
 
 ### JavaScript
 
@@ -149,8 +148,6 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
 ## Lazily supported languages
 
 Maintainers for these and new languages are very welcome!
-
-Information in this table may be outdated.
 
 <table>
   <thead>

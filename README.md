@@ -12,7 +12,7 @@
 <br />
 <br />
 
-Core language support: 
+Core supported languages: 
 * Svelte
 * C# / .NET / ASP.NET Core
 * TypeScript / JavaScript
@@ -46,10 +46,9 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPota
 
 ### TypeScript
 
-<img src="/screenshots/typescript.png" loading="lazy" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
+<img src="/screenshots/typescript.png" loading="lazy" width="700" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
 
-Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/database/v1/indexedDB.ts">PourOverPotato</a>
-
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/domain/helpers/sortRecipes.ts">PourOverPotato</a>
 
 ### JavaScript
 
@@ -89,13 +88,13 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
 
 
 
-## Core language support
+## Core supported languages
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required extension for syntax highlight</th>
+      <th align="center">Expected syntax highlight extension</th>
     </tr>
   </thead>
   <tbody>
@@ -107,6 +106,12 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
     </tr>
     <tr>
       <td align="center">C# / .NET / ASP.NET Core</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">C# Razor Pages / Blazor</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit</a>
       </td>
@@ -140,48 +145,28 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
 
 
 
-## Lazy language support
+## Lazily supported languages
 
 Maintainers for these and new languages are very welcome!
-
-Information in this table may be outdated.
 
 <table>
   <thead>
     <tr>
       <th align="center">Language</th>
-      <th align="center">Required extension for syntax highlight</th>
+      <th align="center">Expected syntax highlight extension</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">SASS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">LESS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">PostCSS</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">styled-components</td>
+      <td align="center">Vue</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components">vscode-styled-components</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=Vue.volar">Vue - Official</a>
       </td>
     </tr>
     <tr>
-      <td align="center">AutoHotKey</td>
+      <td align="center">Angular</td>
       <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">PowerShell</td>
-      <td align="center">
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=Angular.ng-template">Angular Language Service</a>
       </td>
     </tr>
     <tr>
@@ -191,8 +176,44 @@ Information in this table may be outdated.
       </td>
     </tr>
     <tr>
-      <td align="center">T-SQL</td>
+      <td align="center">Python</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">SQL</td>
       <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">PowerShell</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell">PowerShell</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Shell</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">Batch / CMD</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">AutoHotKey</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus">AutoHotKey Plus Plus</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">SASS / LESS</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">styled-components</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components">vscode-styled-components</a>
+      </td>
     </tr>
     <tr>
       <td align="center">YAML</td>
@@ -207,10 +228,6 @@ Information in this table may be outdated.
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotEnv</a>
       </td>
-    </tr>
-    <tr>
-      <td align="center">Shell</td>
-      <td align="center"> - </td>
     </tr>
   </tbody>
 </table>
@@ -358,7 +375,13 @@ Information in this table may be outdated.
 
 
 
-## License information
+## Development
+
+Validation repos are [listed here](./validation/validation_repos.md).
+
+
+
+## License
 
 * **[MIT License](http://opensource.org/licenses/mit-license.php)**
 * Copyright © 2020 - 2024 <a href="https://github.com/dima-iholkin" target="_blank">Dima Iholkin</a>.

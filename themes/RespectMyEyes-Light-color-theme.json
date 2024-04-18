@@ -2823,6 +2823,19 @@
       }
     },
     //
+    // fix for "Number.MAX_SAFE_INTEGER":
+    {
+      "scope": [
+        "meta.var.expr.ts",
+        "meta.var.expr.js",
+        "meta.var.expr.tsx",
+        "meta.var.expr.jsx",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
     //
     //
     // ====================================================
@@ -4803,6 +4816,7 @@
     {
       "scope": [
         "source.css meta.attribute-selector entity.other.attribute-name",
+        // "entity.other.attribute-selector.postcss", // fix for PostCSS, better to leave it broken actually
       ],
       "settings": {
         "foreground": "#000000"

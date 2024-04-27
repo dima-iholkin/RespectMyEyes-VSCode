@@ -2951,6 +2951,17 @@
       "settings": {}
     },
     //
+    // "@render" syntax:
+    {
+      "scope": [
+        "meta.special.render.svelte keyword.other.svelte", // "render"
+        "meta.special.render.svelte punctuation.definition.keyword.svelte", // "@"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
     // "svelte" tag keyword:
     {
       "scope": [

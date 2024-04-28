@@ -14,9 +14,9 @@
 
 Core supported languages: 
 * Svelte
-* C# / .NET / ASP.NET Core
-* TypeScript / JavaScript
+* JavaScript / TypeScript
 * React / JSX / TSX 
+* C# / .NET / ASP.NET Core
 * CSS
 * HTML / XML
 * JSON
@@ -38,11 +38,11 @@ Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/ro
 
 Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/UI/layout/components/MySidebar.svelte">PourOverPotato</a>
 
-### C#
+### JavaScript
 
-<img src="/screenshots/csharp.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
+<img src="/screenshots/javascript.png" loading="lazy" width="700" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
 
-Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPotato.WebAPI/StartupTests/StartupTester.cs">TogglPotato</a>
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/js/main.js">Brad Traversy's Modern Portfolio</a>
 
 ### TypeScript
 
@@ -50,17 +50,17 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPota
 
 Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/domain/helpers/sortRecipes.ts">PourOverPotato</a>
 
-### JavaScript
-
-<img src="/screenshots/javascript.png" loading="lazy" width="700" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/js/main.js">Brad Traversy's Modern Portfolio</a>
-
 ### React / JSX / TSX
 
 <img src="/screenshots/react.png" loading="lazy" title="screenshot of React TSX code styled by RespectMyEyes theme" />
 
 Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app/blob/master/src/components/Navbar.tsx">React TypeScript RealWorld Example App</a>
+
+### C#
+
+<img src="/screenshots/csharp.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
+
+Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPotato.WebAPI/StartupTests/StartupTester.cs">TogglPotato</a>
 
 ### CSS
 
@@ -105,6 +105,14 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
       </td>
     </tr>
     <tr>
+      <td align="center">JavaScript / TypeScript</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">React / JSX / TSX</td>
+      <td align="center"> - </td>
+    </tr>
+    <tr>
       <td align="center">C# / .NET / ASP.NET Core</td>
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit</a>
@@ -115,14 +123,6 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
       <td align="center">
         <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit</a>
       </td>
-    </tr>
-    <tr>
-      <td align="center">JavaScript / TypeScript</td>
-      <td align="center"> - </td>
-    </tr>
-    <tr>
-      <td align="center">React / JSX / TSX</td>
-      <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center">CSS</td>
@@ -182,6 +182,18 @@ Maintainers for these and new languages are very welcome!
       </td>
     </tr>
     <tr>
+      <td align="center">Go</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=golang.Go">Go</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Rust</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer">rust-analyzer</a>
+      </td>
+    </tr>
+    <tr>
       <td align="center">SQL</td>
       <td align="center"> - </td>
     </tr>
@@ -218,6 +230,12 @@ Maintainers for these and new languages are very welcome!
     <tr>
       <td align="center">YAML</td>
       <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center">TOML</td>
+      <td align="center">
+        <a href="https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml">Even Better TOML</a>
+      </td>
     </tr>
     <tr>
       <td align="center">Dockerfile</td>

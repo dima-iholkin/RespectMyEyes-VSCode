@@ -220,6 +220,14 @@
     //
     //
     //
+    // Inlay Hints:
+    // Type and parameter information like what the Rust extension shows:
+    "editorInlayHint.background": "#C0C0C030",
+    "editorInlayHint.foreground": "#50A750",
+    //
+    //
+    //
+    //
     // the background behind the selection text when in another window or pane,
     // should be different from the active one:
     "editor.inactiveSelectionBackground": "#00B00020", // #DFF5DF
@@ -439,6 +447,7 @@
     {
       "scope": [
         "constant.language.boolean", // "true", "false"
+        "constant.language.bool", // "true", "false" for Rust
       ],
       "settings": {
         "foreground": "#A31515",
@@ -562,7 +571,7 @@
       }
     },
     //
-    // new Expression:
+    // "new" keyword:
     {
       "scope": [
         "new.expr",
@@ -783,6 +792,7 @@
     {
       "scope": [
         "keyword.operator.arithmetic", // +, -, *, /
+        "keyword.operator.math", // +, -, *, / for Rust
         "keyword.operator.assignment", // =
         "keyword.operator.increment", // ++
         "keyword.operator.decrement", // --
@@ -2941,6 +2951,17 @@
       "settings": {}
     },
     //
+    // "@render" syntax:
+    {
+      "scope": [
+        "meta.special.render.svelte keyword.other.svelte", // "render"
+        "meta.special.render.svelte punctuation.definition.keyword.svelte", // "@"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
     // "svelte" tag keyword:
     {
       "scope": [
@@ -4234,7 +4255,8 @@
         "source.java meta.method-call punctuation.bracket.round",
       ],
       "settings": {
-        "foreground": "#0BC5E3",
+        // "foreground": "#0BC5E3", // disable because it's not working correctly
+        "foreground": "#A9A9A9",
       }
     },
     // The side-effect is that brackets in the "new" calls with generics are painted light-blue too,
@@ -4443,6 +4465,303 @@
     //
     //
     // ====================================================
+    // Rust (.rs):
+    //
+    // "mod", "use" import keywords:
+    // "const" variable keyword:
+    {
+      "scope": [
+        "storage.type.rust", // "mod", "const"
+        "meta.use.rust keyword.other.rust", // "use"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // keywords in Rust:
+    {
+      "scope": [
+        "source.rust keyword", // "crate" for example
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "fn", "pub" and similar keywords:
+    {
+      "scope": [
+        "keyword.other.fn.rust", // "fn"
+        "keyword.other.rust", // "pub"
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "struct", "enum", "type" keywords:
+    {
+      "scope": [
+        "keyword.declaration.struct.rust storage.type.rust", // "struct"
+        "keyword.declaration.enum.rust storage.type.rust", // "enum"
+        "keyword.declaration.type.rust storage.type.rust", // "type"
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "let" variable keyword:
+    {
+      "scope": [
+        "keyword.other.rust storage.type.rust", // "let"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // storage modifier "mut" keyword:
+    {
+      "scope": [
+        "storage.modifier.mut.rust", // "mut"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "self", "super" keywords:
+    {
+      "scope": [
+        "variable.language.self.rust",
+        "variable.language.super.rust",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // function definition name:
+    {
+      "scope": [
+        "meta.function.definition.rust entity.name.function.rust"
+      ],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // struct definition name:
+    {
+      "scope": [
+        "entity.name.type.struct.rust",
+        "entity.name.type.enum.rust"
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // namespace name:
+    {
+      "scope": [
+        "entity.name.namespace.rust"
+      ],
+      "settings": {
+        "foreground": "#E8810C80"
+      }
+    },
+    //
+    // type name:
+    {
+      "scope": [
+        "source.rust entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // function parameter name:
+    {
+      "scope": [
+        "meta.function.definition.rust variable.other.rust"
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "&" borrow and "*" dereference operators:
+    {
+      "scope": [
+        "keyword.operator.borrow.and.rust",
+        "keyword.operator.dereference.rust"
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "->" return type punctuation in function definition:
+    {
+      "scope": [
+        "meta.function.definition.rust keyword.operator.arrow.skinny.rust"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        "fontStyle": ""
+      }
+    },
+    //
+    // "=>" fat arrow in "match" block for example:
+    {
+      "scope": [
+        "keyword.operator.arrow.fat.rust"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        "fontStyle": ""
+      }
+    },
+    //
+    // characters inside string interpolation "{ }":
+    {
+      "scope": [
+        "meta.interpolation.rust"
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // Go (.go):
+    //
+    // "package", "func" keywords:
+    {
+      "scope": [
+        "keyword.package.go",
+        "keyword.function.go",
+        "keyword.type.go",
+        "keyword.struct.go",
+        "source.go keyword" // "interface" and some others
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "var" keyword:
+    {
+      "scope": [
+        "keyword.var.go",
+        "keyword.const.go"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "map" keyword:
+    {
+      "scope": [
+        "keyword.map.go",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // package name:
+    {
+      "scope": [
+        "entity.name.type.package.go",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // type name during declaration:
+    {
+      "scope": [
+        "entity.name.type.go",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // type name:
+    {
+      "scope": [
+        "source.go storage.type",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // function name during declaratino:
+    {
+      "scope": [
+        "entity.name.function.go",
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // property name in object syntax:
+    {
+      "scope": [
+        "variable.other.property.go",
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "true", "false" values:
+    {
+      "scope": [
+        "constant.language.go",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "%T", "%d" string placeholders:
+    {
+      "scope": [
+        "constant.other.placeholder.go",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "&" pointer:
+    {
+      "scope": [
+        "keyword.operator.address.go",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
     // PowerShell (.ps1):
     //
     // type keyword declaration:
@@ -4620,7 +4939,7 @@
         "source.shell variable.other",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -4630,7 +4949,7 @@
         "source.shell variable.other.assignment",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //

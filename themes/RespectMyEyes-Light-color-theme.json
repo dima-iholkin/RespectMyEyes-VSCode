@@ -410,7 +410,7 @@
         "string.regexp punctuation.definition.string",
       ],
       "settings": {
-        "foreground": "#0BC5E3",
+        "foreground": "#A9A9A9",
       }
     },
     //
@@ -2856,7 +2856,7 @@
     // control keywords:
     {
       "scope": [
-        "keyword.control.svelte",
+        "keyword.control.svelte", // "each"
         "meta.special.each.svelte keyword.control.as.svelte", // "as" in "{:each items as item}" block
       ],
       "settings": {
@@ -2951,7 +2951,39 @@
       "settings": {}
     },
     //
-    // "@render" syntax:
+    // "snippet" keyword in "#snippet" syntax:
+    {
+      "scope": [
+        "meta.special.snippet.svelte keyword.control.svelte",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // function name during declaration in "#snippet" syntax:
+    {
+      "scope": [
+        "meta.special.snippet.svelte source.js meta.function-call entity.name.function",
+        "meta.special.snippet.svelte source.ts meta.function-call entity.name.function",
+      ],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // parameter name in "#snippet" syntax:
+    {
+      "scope": [
+        "meta.special.snippet.svelte source.js variable.other.readwrite",
+        "meta.special.snippet.svelte source.ts variable.other.readwrite",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "@render" keyword in "@render" syntax:
     {
       "scope": [
         "meta.special.render.svelte keyword.other.svelte", // "render"
@@ -2959,6 +2991,28 @@
       ],
       "settings": {
         "foreground": "#C344AB",
+      }
+    },
+    //
+    // function name in "@render" syntax:
+    {
+      "scope": [
+        "meta.special.render.svelte source.js meta.function-call entity.name.function",
+        "meta.special.render.svelte source.ts meta.function-call entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // "{ }" brackets in "@render" syntax:
+    {
+      "scope": [
+        "meta.special.render.svelte punctuation.definition.block.begin.svelte", // "{"
+        "meta.special.render.svelte punctuation.definition.block.end.svelte", // "}"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
       }
     },
     //
@@ -3061,7 +3115,17 @@
       }
     },
     //
-    // "( )" key notation in #each blocks:
+    // variable declared in "#each" block, like it's a parameter:
+    {
+      "scope": [
+        // "meta.special.each.svelte meta.special.start.svelte variable.other.readwrite", // disabled because it also selects the array variable
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "( )" key notation in "#each" blocks:
     {
       "scope": [
         "meta.special.each.svelte meta.special.start.svelte meta.brace.round.svelte",

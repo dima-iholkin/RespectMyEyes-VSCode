@@ -228,20 +228,19 @@
     //
     //
     //
-    // the background behind the selection text when in another window or pane,
-    // should be different from the active one:
-    "editor.inactiveSelectionBackground": "#00B00020", // #DFF5DF
-    //
+    // Selected text highlight color:
     "editor.selectionBackground": "#00B00080",
-    //
-    // region with the same content as the selection,
-    // should be not too attractive to the eye:
+    // Selected text highlight color, when in another window or pane:
+    "editor.inactiveSelectionBackground": "#00B00020", // #DFF5DF
+    // Matched selection text highlight color:
     "editor.selectionHighlightBackground": "#00B00020",
     //
+    // Selected variable highlight color:
+    "editor.wordHighlightStrongBackground": "#00B00020",
+    // Other instances of the selected variable highlight color:
     "editor.wordHighlightBackground": "#00B00020",
     //
-    "editor.wordHighlightStrongBackground": "#00B00020",
-    //
+    // Hover over a variable highlight color:
     "editor.hoverHighlightBackground": "#00B00080",
     //
     //
@@ -5323,7 +5322,6 @@
     // property literals:
     {
       "scope": [
-        "source.css constant.numeric",
         "source.css keyword.other.unit",
         "meta.embedded.block.css keyword.other.unit" // fix fir Markdown CSS
       ],
@@ -5978,7 +5976,6 @@
     {
       "scope": [
         "source.json constant.language", // true, false - boolean literals
-        "source.json constant.numeric", // 1, 2 - numeric literals
       ],
       "settings": {
         "foreground": "#A31515"
@@ -6009,16 +6006,6 @@
       ],
       "settings": {
         "foreground": "#A31515"
-      }
-    },
-    //
-    // numeric literals:
-    {
-      "scope": [
-        "source.yaml constant.numeric", // 1, 2 - numeric literals
-      ],
-      "settings": {
-        "foreground": "#000000"
       }
     },
     //
@@ -6346,16 +6333,6 @@
       ],
       "settings": {
         "foreground": "#0000CC"
-      }
-    },
-    //
-    // numeric literal
-    {
-      "scope": [
-        "source.env constant.numeric",
-      ],
-      "settings": {
-        "foreground": "#000000"
       }
     },
     //

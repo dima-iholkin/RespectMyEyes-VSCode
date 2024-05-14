@@ -454,11 +454,10 @@
       }
     },
     //
-    // booleans:
+    // language constants:
     {
       "scope": [
-        "constant.language.boolean", // "true", "false"
-        "constant.language.bool", // "true", "false" for Rust
+        "constant.language", // booleans, "null" and others
       ],
       "settings": {
         "foreground": "#A31515",
@@ -1750,11 +1749,6 @@
     // "undefined", "any", "true", "false" constants:
     {
       "scope": [
-        "source.ts constant.language", // "undefined", "any", "true", "false"
-        "source.js constant.language", // "undefined", "any", "true", "false"
-        "source.tsx constant.language", // "undefined", "any", "true", "false"
-        "source.jsx constant.language", // "undefined", "any", "true", "false"
-        "meta.embedded.block.javascript constant.language", // "undefined", "any", "true", "false"
         "source.ts support.type",
         "source.js support.type",
         "source.tsx support.type",
@@ -2688,17 +2682,6 @@
       }
     },
     //
-    // null - literal values :
-    {
-      "scope": [
-        "source.cs constant.language", // null
-        "text.aspnetcorerazor constant.language", // null
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
     // label name:
     {
       "scope": [
@@ -3164,16 +3147,6 @@
       }
     },
     //
-    // constants:
-    {
-      "scope": [
-        "source.java constant.language",
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
     // "this", "super" keywords:
     {
       "scope": [
@@ -3302,16 +3275,6 @@
       ],
       "settings": {
         "foreground": "#000000",
-      }
-    },
-    //
-    // "True", "False" constant values:
-    {
-      "scope": [
-        "constant.language.python",
-      ],
-      "settings": {
-        "foreground": "#A31515",
       }
     },
     //
@@ -3651,16 +3614,6 @@
       }
     },
     //
-    // "true", "false" values:
-    {
-      "scope": [
-        "constant.language.go",
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
     // "%T", "%d" string placeholders:
     {
       "scope": [
@@ -3799,7 +3752,6 @@
     // constant values, "$false", "$null":
     {
       "scope": [
-        "source.powershell meta.scriptblock constant.language", // "false", "null"
         "source.powershell meta.scriptblock constant.language punctuation.definition.variable", // "$"
       ],
       "settings": {
@@ -4624,7 +4576,7 @@
     // ====================================================
     // SQL:
     //
-    // keywords:
+    // Keywords:
     {
       "scope": [
         "source.sql keyword",
@@ -4711,46 +4663,7 @@
     //
     //
     // ====================================================
-    // JSON:
-    //
-    // property names:
-    {
-      "scope": [
-        "source.json support.type.property-name",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // property literals:
-    {
-      "scope": [
-        "source.json constant.language", // true, false - boolean literals
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
-    //
-    //
-    // ====================================================
     // YAML (.yml, .yaml):
-    //
-    // Names in YAML:
-    //
-    // property literals:
-    {
-      "scope": [
-        "source.yaml constant.language", // true, false - boolean literals
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
-    //
     //
     // Punctuation in YAML:
     // "|" :

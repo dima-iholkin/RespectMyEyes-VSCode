@@ -871,10 +871,7 @@
         "punctuation.definition.binding-pattern.object", // { }
         "punctuation.definition.section.case-statement", // :
         "punctuation.definition.dictionary", // dict[]
-        "punctuation.separator", // ","
-        "punctuation.separator.comma", // ","
-        "meta.embedded.block.css punctuation.separator", // ","
-        "punctuation.separator.key-value", // "=" in .ini
+        "punctuation.separator", // ","  "=" in .ini
         "punctuation.section",
         "punctuation.terminator", // ;
         "punctuation.destructuring", // :
@@ -2819,16 +2816,6 @@
     //
     // Punctuation in C#:
     //
-    // nullable type "?":
-    {
-      "scope": [
-        "source.cs punctuation.separator.question-mark" // "?"
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
     // ternary operator "?", ":":
     {
       "scope": [
@@ -3199,17 +3186,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9",
-      }
-    },
-    //
-    // dot ".":
-    {
-      "scope": [
-        "source.java punctuation.separator.period",
-        "source.java storage.modifier.import punctuation.separator",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
       }
     },
     //
@@ -4563,7 +4539,6 @@
     {
       "scope": [
         "text.xml meta.tag", // = // it's actually a selector for almost all XML, but combined with the other theme rules, it's needed to just select the =
-        "text.html punctuation.separator", // =
         "text.aspnetcorerazor punctuation.separator", // =
       ],
       "settings": {

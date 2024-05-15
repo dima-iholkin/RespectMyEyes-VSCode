@@ -642,9 +642,10 @@
     {
       "scope": [
         "entity.name.type",
+        "entity.other.inherited-class",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -1225,27 +1226,6 @@
       "settings": {
         "foreground": "#0000CC",
         "fontStyle": "bold"
-      }
-    },
-    //
-    // type name during use:
-    {
-      "scope": [
-        // type name during use:
-        "source.ts entity.name.type",
-        "source.js entity.name.type",
-        "source.tsx entity.name.type",
-        "source.jsx entity.name.type",
-        "meta.embedded.block.javascript entity.name.type",
-        // inherited type name:
-        "source.ts entity.other.inherited-class",
-        "source.js entity.other.inherited-class",
-        "source.tsx entity.other.inherited-class",
-        "source.jsx entity.other.inherited-class",
-        "meta.embedded.block.javascript entity.other.inherited-class",
-      ],
-      "settings": {
-        "foreground": "#E8810C",
       }
     },
     //
@@ -2397,7 +2377,6 @@
     // type parameters:
     {
       "scope": [
-        "entity.name.type.cs", // class, interface names when creating a class; class instance
         "entity.name.type.type-parameter.cs", // type parameters
         "storage.type.cs", // type parameters
         // "void", "int", "string" keywords:
@@ -2788,6 +2767,7 @@
         "source.java entity.name.type",
       ],
       "settings": {
+        "foreground": "#0000CC",
         "fontStyle": "bold"
       }
     },
@@ -2796,7 +2776,6 @@
     {
       "scope": [
         "source.java storage.type",
-        "source.java entity.other.inherited-class",
       ],
       "settings": {
         "foreground": "#E8810C"
@@ -2911,7 +2890,6 @@
     // type names:
     {
       "scope": [
-        "entity.other.inherited-class.python",
         "meta.class.inheritance.python constant.other.caps.python",
         "support.type.python",
         "support.type.exception.python",
@@ -3146,16 +3124,6 @@
       }
     },
     //
-    // type name:
-    {
-      "scope": [
-        "source.rust entity.name.type"
-      ],
-      "settings": {
-        "foreground": "#E8810C"
-      }
-    },
-    //
     // function parameter name:
     {
       "scope": [
@@ -3242,16 +3210,6 @@
       ],
       "settings": {
         "foreground": "#000000"
-      }
-    },
-    //
-    // type name during declaration:
-    {
-      "scope": [
-        "entity.name.type.go",
-      ],
-      "settings": {
-        "foreground": "#E8810C"
       }
     },
     //

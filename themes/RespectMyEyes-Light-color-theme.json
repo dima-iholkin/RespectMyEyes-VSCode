@@ -362,7 +362,7 @@
     //
   },
   "tokenColors": [
-    // Baseline styles:
+    // The baseline rules:
     //
     // Baseline for all untokenized code:
     {
@@ -478,6 +478,7 @@
         "comment entity.name.tag",
         "comment entity.other.attribute-name",
         "comment storage.type",
+        "comment meta.tag",
         "comment punctuation",
         "comment punctuation.definition.block",
         "comment punctuation.definition.string",
@@ -508,6 +509,7 @@
     {
       "scope": [
         "keyword.control", // "if", "else", "return"
+        "keyword.control.conditional", // "if", "else" in C#
       ],
       "settings": {
         "foreground": "#0BC5E3",
@@ -871,30 +873,6 @@
       }
     },
     //
-    // inline CSS:
-    {
-      "scope": [
-        "text.html.derivative string.quoted.double source.css", // works for Svelte
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
-    //
-    //
-    // Styling languages like CSS baseline:
-    //
-    // selector names:
-    {
-      "scope": [
-        "meta.selector", // class selector and others... "::deep"... I'm not sure what it is.
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
     //
     //
     // Punctuation baseline:
@@ -1137,7 +1115,7 @@
       }
     },
     //
-    // "require" in import syntax, for example: import mongooseUniqueValidator = require("mongoose-unique-validator");
+    // "require" in import syntax:
     {
       "scope": [
         "source.js meta.import-equals.external keyword.control.require",
@@ -1644,8 +1622,7 @@
       }
     },
     //
-    // 1. Fix to the above constructor rule.
-    // 2. "var", "let", "const", "as".
+    // fix to the above constructor rule - "meta.method.declaration storage.type":
     {
       "scope": [
         "source.ts meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
@@ -1653,11 +1630,19 @@
         "source.tsx meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
         "source.jsx meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
         "meta.embedded.block.javascript meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
-        "source.ts meta.var.expr storage.type", // "var", "let", "const"
-        "source.js meta.var.expr storage.type", // "var", "let", "const"
-        "source.tsx meta.var.expr storage.type", // "var", "let", "const"
-        "source.jsx meta.var.expr storage.type", // "var", "let", "const"
-        "meta.embedded.block.javascript meta.var.expr storage.type", // "var", "let", "const"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "var", "let", "const" keywords:
+    {
+      "scope": [
+        "meta.var.expr.js storage.type.js",
+        "meta.var.expr.ts storage.type.ts",
+        "meta.var.expr.jsx storage.type.jsx",
+        "meta.var.expr.tsx storage.type.tsx",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -1693,20 +1678,6 @@
     },
     //
     // "new" syntax:
-    //
-    // class name in "new" syntax:
-    {
-      "scope": [
-        // "source.ts new.expr entity.name.type",
-        // "source.js new.expr entity.name.type",
-        // "source.tsx new.expr entity.name.type",
-        // "source.jsx new.expr entity.name.type",
-        // "meta.embedded.block.javascript new.expr entity.name.type",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
     //
     {
       "scope": [
@@ -2089,16 +2060,6 @@
       }
     },
     //
-    // "#if", ":else" blocks:
-    {
-      "scope": [
-        "keyword.control.conditional.svelte", // "if", "else"
-      ],
-      "settings": {
-        "foreground": "#0BC5E3",
-      }
-    },
-    //
     // "( )" key notation in "#each" blocks:
     {
       "scope": [
@@ -2394,8 +2355,7 @@
     // namespace names:
     {
       "scope": [
-        "source.cs entity.name.type.namespace",
-        "text.aspnetcorerazor entity.name.type.namespace",
+        "entity.name.type.namespace.cs",
       ],
       "settings": {
         "foreground": "#000000"
@@ -2416,23 +2376,17 @@
     {
       "scope": [
         // "class":
-        "source.cs entity.name.type.class",
-        "text.aspnetcorerazor entity.name.type.class",
+        "entity.name.type.class.cs",
         // "struct":
-        "source.cs entity.name.type.struct",
-        "text.aspnetcorerazor entity.name.type.struct",
+        "entity.name.type.struct.cs",
         // "record":
-        "source.cs entity.name.type.record",
-        "text.aspnetcorerazor entity.name.type.record",
+        "entity.name.type.record.cs",
         // "interface":
-        "source.cs entity.name.type.interface",
-        "text.aspnetcorerazor entity.name.type.interface",
+        "entity.name.type.interface.cs",
         // "enum":
-        "source.cs entity.name.type.enum",
-        "text.aspnetcorerazor entity.name.type.enum",
+        "entity.name.type.enum.cs",
         // "delegate":
-        "source.cs entity.name.type.delegate",
-        "text.aspnetcorerazor entity.name.type.delegate",
+        "entity.name.type.delegate.cs",
       ],
       "settings": {
         "foreground": "#0000CC",
@@ -2481,16 +2435,10 @@
     //
     // Keywords:
     //
-    // "base", "this" keywords:
+    // "base" keyword:
     {
       "scope": [
-        // "base":
-        "source.cs keyword.other.base",
-        "text.aspnetcorerazor keyword.other.base",
         "variable.language.base.cs",
-        // "this":
-        "source.cs keyword.other.this",
-        "text.aspnetcorerazor keyword.other.this",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -2500,9 +2448,7 @@
     // "using", "global", "static" keywords:
     {
       "scope": [
-        "keyword.other.using.cs",
         "keyword.other.directive.using.cs",
-        "keyword.other.global.cs",
         "keyword.other.directive.global.cs",
         "keyword.other.directive.static.cs",
       ],
@@ -2524,17 +2470,8 @@
     // "get", "set", "init" property keywords:
     {
       "scope": [
-        // "get":
-        "source.cs keyword.other.get",
-        "text.aspnetcorerazor keyword.other.get",
         "storage.type.accessor.get.cs",
-        // "set":
-        "source.cs keyword.other.set",
-        "text.aspnetcorerazor keyword.other.set",
         "storage.type.accessor.set.cs",
-        // "init":
-        "source.cs keyword.other.init",
-        "text.aspnetcorerazor keyword.other.init",
         "storage.type.accessor.init.cs",
       ],
       "settings": {
@@ -2556,13 +2493,7 @@
     // "typeof", "nameof" keywords:
     {
       "scope": [
-        // "typeof":
-        "source.cs keyword.other.typeof",
-        "text.aspnetcorerazor keyword.other.typeof",
         "keyword.operator.expression.typeof.cs",
-        // "nameof":
-        "source.cs keyword.other.nameof",
-        "text.aspnetcorerazor keyword.other.nameof",
         "keyword.operator.expression.nameof.cs",
       ],
       "settings": {
@@ -2570,12 +2501,11 @@
       }
     },
     //
-    // "is" keyword:
+    // "is", "not" keywords:
     {
       "scope": [
-        "source.cs keyword.other.is",
-        "text.aspnetcorerazor keyword.other.is",
-        "keyword.operator.expression.pattern.is.cs",
+        "source.cs keyword.operator.expression.pattern",
+        "text.aspnetcorerazor keyword.operator.expression.pattern",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -2585,8 +2515,6 @@
     // "default" keyword:
     {
       "scope": [
-        "source.cs keyword.other.default",
-        "text.aspnetcorerazor keyword.other.default",
         "keyword.operator.expression.default.cs"
       ],
       "settings": {
@@ -2597,8 +2525,6 @@
     // "await" keyword:
     {
       "scope": [
-        "source.cs keyword.other.await",
-        "text.aspnetcorerazor keyword.other.await",
         "keyword.operator.expression.await.cs",
       ],
       "settings": {
@@ -2625,7 +2551,7 @@
     //
     // Punctuation:
     //
-    // ternary operator "?", ":":
+    // "?", ":" ternary operator:
     {
       "scope": [
         "keyword.operator.conditional.question-mark.cs", // "?"
@@ -2637,7 +2563,7 @@
       }
     },
     //
-    // null-coalescing operator "??":
+    // "??" null-coalescing operator:
     {
       "scope": [
         "keyword.operator.null-coalescing.cs",
@@ -2648,10 +2574,20 @@
       }
     },
     //
-    // null-conditional operator "?":
+    // "?" null-conditional operator:
     {
       "scope": [
         "keyword.operator.null-conditional.cs"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // "?" optional parameter:
+    {
+      "scope": [
+        "punctuation.separator.question-mark.cs"
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -2681,13 +2617,32 @@
     // ====================================================
     // Razor Pages, Blazor (.razor, .cshtml):
     //
+    // "@" in Razor syntax:
+    {
+      "scope": [
+        "keyword.control.cshtml.transition", // "@"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
     // Directives like "@using", "@page", "@model":
     {
       "scope": [
-        "text.aspnetcorerazor meta.directive keyword.other.using", // "using"
         "meta.directive keyword.other.using.cs", // "using"
-        "text.aspnetcorerazor meta.directive keyword.control.razor.directive", // "page", "model"
-        "text.aspnetcorerazor meta.directive keyword.control.cshtml.transition", // "@"
+        "meta.directive keyword.control.razor.directive", // "page", "model", "inject"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "@code { }" directive code block syntax:
+    {
+      "scope": [
+        "meta.structure.razor.directive.codeblock keyword.control.razor.directive.codeblock.open", // "{"
+        "meta.structure.razor.directive.codeblock keyword.control.razor.directive.codeblock.close", // "}"
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2697,32 +2652,8 @@
     // "@{ }" code block syntax:
     {
       "scope": [
-        "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.cshtml.transition", // "@"
-        "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.razor.directive.codeblock.open", // "{"
-        "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.razor.directive.codeblock.close", // "}"
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // "@if { }" blocks:
-    {
-      "scope": [
-        "text.aspnetcorerazor keyword.control.conditional", // "if", "else" in "@if { }" block
-        "text.aspnetcorerazor keyword.control.cshtml.transition", // "@" in "@if { }" block
-        "text.aspnetcorerazor keyword.control", // "foreach"
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // "@" in transitions to a C# code:
-    {
-      "scope": [
-        "text.aspnetcorerazor meta.expression.implicit keyword.control.cshtml.transition", // "@"
-        "text.html.cshtml meta.expression.implicit keyword.control.cshtml.transition", // "@"
+        "meta.structure.razor.codeblock keyword.control.razor.directive.codeblock.open", // "{"
+        "meta.structure.razor.codeblock keyword.control.razor.directive.codeblock.close", // "}"
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2730,13 +2661,18 @@
     },
     //
     // All C# code after "@" implicit transition:
+    // It's a conscious decision to make function calls in Razor syntax light-blue, to separate them from HTML markup.
     {
       "scope": [
+        // "meta.expression.implicit source.cs variable"
         "text.aspnetcorerazor meta.expression.implicit source.cs variable",
         "text.html.cshtml meta.expression.implicit source.cs variable",
+        // "meta.expression.implicit source.cs variable.other"
+        "text.aspnetcorerazor meta.expression.implicit source.cs variable.other",
+        "text.html.cshtml meta.expression.implicit source.cs variable.other",
+        // "meta.expression.implicit source.cs entity.name.function.cs"
         "text.aspnetcorerazor meta.expression.implicit source.cs entity.name.function.cs",
         "text.html.cshtml meta.expression.implicit source.cs entity.name.function.cs",
-        // It's a conscious decision to make function calls in Razor syntax light-blue, to separate them from HTML markup.
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2747,17 +2683,6 @@
     {
       "scope": [
         "text.aspnetcorerazor entity.name.label"
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // object name during injection:
-    {
-      "scope": [
-        "text.aspnetcorerazor entity.name.variable.property", // property names
-        "text.aspnetcorerazor entity.name.variable.field", // field names
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2778,7 +2703,6 @@
     {
       "scope": [
         "text.aspnetcorerazor meta.expression.implicit source.cs",
-        "text.aspnetcorerazor meta.structure.razor.codeblock meta.expression.implicit source.cs",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -2799,30 +2723,10 @@
     {
       "scope": [
         "text.aspnetcorerazor punctuation.separator.colon",
-        "text.aspnetcorerazor keyword.control.razor.optionalSemicolon",
+        "keyword.control.razor.optionalSemicolon",
       ],
       "settings": {
         "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // text:
-    {
-      "scope": [
-        "text.aspnetcorerazor meta.structure.razor.codeblock source.cs",
-      ],
-      "settings": {
-        "foreground": "#FFA500"
-      }
-    },
-    //
-    // inline CSS:
-    {
-      "scope": [
-        "text.aspnetcorerazor string.quoted.double source.css",
-      ],
-      "settings": {
-        "foreground": "#A31515"
       }
     },
     //
@@ -2836,11 +2740,13 @@
       }
     },
     //
-    // "@* comment *@" comment block:
+    // "@* *@" comment block:
     {
       "scope": [
         "meta.comment.razor keyword.control.razor",
+        "meta.comment.razor keyword.control.razor.optionalSemicolon",
         "meta.comment.razor keyword.control.cshtml",
+        "meta.comment.razor keyword.control.cshtml.transition", // "@" inside comment block
       ],
       "settings": {
         "foreground": "#50A750"
@@ -3673,13 +3579,14 @@
         "text.html",
         "text.xml",
         "text.svelte",
-        "text.aspnetcorerazor",
         "source.ts",
         "source.js",
         "source.tsx",
         "source.jsx",
         "meta.jsx.children",
         "meta.jsx.children punctuation",
+        "text.aspnetcorerazor",
+        "text.aspnetcorerazor source.cs", // HTML text in Razor Pages
         "text.html.markdown meta.embedded.block.html", // HTML embedded into Markdown
       ],
       "settings": {
@@ -3690,11 +3597,11 @@
     // "=" assignment sign:
     {
       "scope": [
-        "text.xml meta.tag", // = // it's actually a selector for almost all XML, but combined with the other theme rules, it's needed to just select the =
-        "text.aspnetcorerazor punctuation.separator", // =
+        "text.xml meta.tag", // "=" it's actually a selector for almost all XML, but combined with the other theme rules, it's needed to just select the =
+        "punctuation.separator.key-value.html", // "="
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#A9A9A9"
       }
     },
     //
@@ -4722,6 +4629,26 @@
     //
     //
     // Misc:
+    //
+    // selector names like "::deep":
+    {
+      "scope": [
+        "meta.selector",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // inline CSS:
+    {
+      "scope": [
+        "meta.embedded.line.css string source.css", // works for Svelte
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
     //
     // Mixin name in LESS:
     {

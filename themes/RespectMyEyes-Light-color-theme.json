@@ -3037,8 +3037,7 @@
     // ====================================================
     // Rust (.rs):
     //
-    // "mod", "use" import keywords:
-    // "const" variable keyword:
+    // "mod", "use" import keywords, "const" variable keyword:
     {
       "scope": [
         "storage.type.rust", // "mod", "const"
@@ -3120,7 +3119,7 @@
         "entity.name.namespace.rust"
       ],
       "settings": {
-        "foreground": "#E8810C80"
+        "foreground": "#000000"
       }
     },
     //

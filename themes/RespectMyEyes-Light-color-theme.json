@@ -362,10 +362,9 @@
     //
   },
   "tokenColors": [
-    // ====================================================
     // Baseline styles:
     //
-    // Baseline for all code:
+    // Baseline for all untokenized code:
     {
       "scope": [
         "source",
@@ -383,27 +382,27 @@
     {
       "scope": [
         "string",
+        "support.constant", // "180deg" in CSS
         "string.template", // Text inside template strings
         "entity.name.operator.custom-literal.string",
         "meta.preprocessor.string",
-        "support.constant", // "180deg" in CSS
       ],
       "settings": {
         "foreground": "#A31515"
       }
     },
     //
-    // escape characters:
+    // escape characters like "\n":
     {
       "scope": [
-        "constant.character.escape", // "\n"
+        "constant.character.escape",
       ],
       "settings": {
         "foreground": "#A9A9A9",
       }
     },
     //
-    // characters like "&nbsp;":
+    // special characters like "&nbsp;":
     {
       "scope": [
         "constant.character.entity", // "nbsp"
@@ -468,6 +467,22 @@
     {
       "scope": [
         "comment",
+        "comment source",
+        "comment string",
+        "comment keyword",
+        "comment keyword.operator",
+        "comment keyword.operator.assignment",
+        "comment variable",
+        "comment variable.parameter",
+        "comment entity.name.type",
+        "comment entity.name.tag",
+        "comment entity.other.attribute-name",
+        "comment storage.type",
+        "comment punctuation",
+        "comment punctuation.definition.block",
+        "comment punctuation.definition.string",
+        "comment punctuation.definition.tag",
+        "comment punctuation.separator",
         "punctuation.definition.comment" // fix an edge case in Markdown -> code block -> comment
       ],
       "settings": {
@@ -588,6 +603,7 @@
     {
       "scope": [
         "meta.definition.function entity.name.function",
+        "meta.definition.method entity.name.function",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -685,13 +701,24 @@
     //
     // Objects:
     //
-    // object keys when defining a type (class, interface):
+    // property names when defining a type (class, interface):
     {
       "scope": [
         "variable.object.property",
       ],
       "settings": {
         "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // property name in declaration:
+    {
+      "scope": [
+        "meta.definition.property variable.object.property",
+        "meta.definition.property entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
       }
     },
     //
@@ -841,6 +868,16 @@
       "scope": "strong",
       "settings": {
         "fontStyle": "bold"
+      }
+    },
+    //
+    // inline CSS:
+    {
+      "scope": [
+        "text.html.derivative string.quoted.double source.css", // works for Svelte
+      ],
+      "settings": {
+        "foreground": "#A31515"
       }
     },
     //
@@ -1082,58 +1119,32 @@
     //
     // Import syntax:
     //
-    // "from" keyword in the import syntax:
+    // "from", "type" keywords in import syntax:
     {
       "scope": [
-        "source.ts keyword.control.from",
-        "source.js keyword.control.from",
-        "source.tsx keyword.control.from",
-        "source.jsx keyword.control.from",
-        "meta.embedded.block.javascript keyword.control.from",
+        "meta.import.js keyword.control",
+        "meta.import.ts keyword.control",
+        "meta.import.jsx keyword.control",
+        "meta.import.tsx keyword.control",
+        // "from":
+        "meta.import.js keyword.control.from.js",
+        "meta.import.ts keyword.control.from.ts",
+        "meta.import.jsx keyword.control.from.jsx",
+        "meta.import.tsx keyword.control.from.tsx",
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // "require" in the import syntax, for example:
-    // import mongooseUniqueValidator = require("mongoose-unique-validator");
+    // "require" in import syntax, for example: import mongooseUniqueValidator = require("mongoose-unique-validator");
     {
       "scope": [
-        "source.ts meta.import-equals.external keyword.control.require",
         "source.js meta.import-equals.external keyword.control.require",
-        "source.tsx meta.import-equals.external keyword.control.require",
+        "source.ts meta.import-equals.external keyword.control.require",
         "source.jsx meta.import-equals.external keyword.control.require",
+        "source.tsx meta.import-equals.external keyword.control.require",
         "meta.embedded.block.javascript meta.import-equals.external keyword.control.require",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "as" in the import syntax:
-    {
-      "scope": [
-        "source.ts meta.import keyword.control.as", // "as"
-        "source.js meta.import keyword.control.as", // "as"
-        "source.tsx meta.import keyword.control.as", // "as"
-        "source.jsx meta.import keyword.control.as", // "as"
-        "meta.embedded.block.javascript meta.import keyword.control.as", // "as"
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "type" keyword in the import syntax:
-    {
-      "scope": [
-        // "keyword.control.type":
-        "source.ts meta.import keyword.control.type",
-        "source.js meta.import keyword.control.type",
-        "source.tsx meta.import keyword.control.type",
-        "source.jsx meta.import keyword.control.type",
-        "meta.embedded.block.javascript meta.import keyword.control.type",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -1144,32 +1155,62 @@
     //
     // Export syntax:
     //
-    // "as" keyword in the export syntax:
+    // "as" keyword in export syntax:
     {
       "scope": [
-        "source.ts meta.export keyword.control.as",
-        "source.js meta.export keyword.control.as",
-        "source.tsx meta.export keyword.control.as",
-        "source.jsx meta.export keyword.control.as",
-        "meta.embedded.block.javascript meta.export keyword.control.as",
+        // "as":
+        "meta.export.js keyword.control.as.js",
+        "meta.export.ts keyword.control.as.ts",
+        "meta.export.jsx keyword.control.as.jsx",
+        "meta.export.tsx keyword.control.as.tsx",
+        // "from":
+        "meta.export.js keyword.control.from.js",
+        "meta.export.ts keyword.control.from.ts",
+        "meta.export.jsx keyword.control.from.jsx",
+        "meta.export.tsx keyword.control.from.tsx",
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // "type" keyword in the export syntax:
+    // "type" keyword in export syntax:
     {
       "scope": [
-        // "keyword.control.type":
-        "source.ts meta.export keyword.control.type",
-        "source.js meta.export keyword.control.type",
-        "source.tsx meta.export keyword.control.type",
-        "source.jsx meta.export keyword.control.type",
-        "meta.embedded.block.javascript meta.export keyword.control.type",
+        "meta.export.js keyword.control.type.js",
+        "meta.export.ts keyword.control.type.ts",
+        "meta.export.jsx keyword.control.type.jsx",
+        "meta.export.tsx keyword.control.type.tsx",
       ],
       "settings": {
         "foreground": "#A31515"
+      }
+    },
+    //
+    // "module.exports" :
+    {
+      "scope": [
+        "source.ts support.type.object.module", // "module.exports"
+        "source.js support.type.object.module", // "module.exports"
+        "source.tsx support.type.object.module", // "module.exports"
+        "source.jsx support.type.object.module", // "module.exports"
+        "meta.embedded.block.javascript support.type.object.module", // "module.exports"
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    {
+      "scope": [
+        "source.ts constant.language.import-export-all", // export *
+        "source.js constant.language.import-export-all", // export *
+        "source.tsx constant.language.import-export-all", // export *
+        "source.jsx constant.language.import-export-all", // export *
+        "meta.embedded.block.javascript constant.language.import-export-all", // export *
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     //
@@ -1179,33 +1220,29 @@
     //
     // Types:
     //
-    // type name during declaration:
+    // type names during declaration:
     {
       "scope": [
-        // class:
-        "source.ts entity.name.type.class", // class name during declaration
-        "source.js entity.name.type.class", // class name during declaration
-        "source.tsx entity.name.type.class", // class name during declaration
-        "source.jsx entity.name.type.class", // class name during declaration
-        "meta.embedded.block.javascript entity.name.type.class", // class name during declaration
-        // interface:
-        "source.ts entity.name.type.interface", // interface name during declaration
-        "source.js entity.name.type.interface", // interface name during declaration
-        "source.tsx entity.name.type.interface", // interface name during declaration
-        "source.jsx entity.name.type.interface", // interface name during declaration
-        "meta.embedded.block.javascript entity.name.type.interface", // interface name during declaration
-        // enum:
-        "source.ts entity.name.type.enum", // enum name during declaration
-        "source.js entity.name.type.enum", // enum name during declaration
-        "source.tsx entity.name.type.enum", // enum name during declaration
-        "source.jsx entity.name.type.enum", // enum name during declaration
-        "meta.embedded.block.javascript entity.name.type.enum", // enum name during declaration
-        // alias:
-        "source.ts entity.name.type.alias", // alias name during declaration
-        "source.js entity.name.type.alias", // alias name during declaration
-        "source.tsx entity.name.type.alias", // alias name during declaration
-        "source.jsx entity.name.type.alias", // alias name during declaration
-        "meta.embedded.block.javascript entity.name.type.alias", // alias name during declaration
+        // class name:
+        "entity.name.type.class.js",
+        "entity.name.type.class.ts",
+        "entity.name.type.class.jsx",
+        "entity.name.type.class.tsx",
+        // interface name:
+        "entity.name.type.interface.js",
+        "entity.name.type.interface.ts",
+        "entity.name.type.interface.jsx",
+        "entity.name.type.interface.tsx",
+        // enum name:
+        "entity.name.type.enum.js",
+        "entity.name.type.enum.ts",
+        "entity.name.type.enum.jsx",
+        "entity.name.type.enum.tsx",
+        // alias name:
+        "entity.name.type.alias.js",
+        "entity.name.type.alias.ts",
+        "entity.name.type.alias.jsx",
+        "entity.name.type.alias.tsx",
       ],
       "settings": {
         "foreground": "#0000CC",
@@ -1216,38 +1253,42 @@
     // type name during use:
     {
       "scope": [
+        // type name during use:
         "source.ts entity.name.type",
         "source.js entity.name.type",
         "source.tsx entity.name.type",
         "source.jsx entity.name.type",
         "meta.embedded.block.javascript entity.name.type",
+        // inherited type name:
+        "source.ts entity.other.inherited-class",
+        "source.js entity.other.inherited-class",
+        "source.tsx entity.other.inherited-class",
+        "source.jsx entity.other.inherited-class",
+        "meta.embedded.block.javascript entity.other.inherited-class",
       ],
       "settings": {
         "foreground": "#E8810C",
       }
     },
     //
-    // namespace name during declaration, "namespace JSX":
+    // namespace name during declaration:
     {
       "scope": [
         // top-level namespace declaration:
-        "source.ts meta.namespace.declaration entity.name.type.module",
-        "source.js meta.namespace.declaration entity.name.type.module",
-        "source.tsx meta.namespace.declaration entity.name.type.module",
-        "source.jsx meta.namespace.declaration entity.name.type.module",
-        "meta.embedded.block.javascript meta.namespace.declaration entity.name.type.module",
-        // nested inside one-level deep namespace declaration:
-        "source.ts meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
-        "source.js meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
-        "source.tsx meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
-        "source.jsx meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
-        "meta.embedded.block.javascript meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
-        // nested inside two-levels deep namespace declaration:
-        "source.ts meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
-        "source.js meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
-        "source.tsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
-        "source.jsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
-        "meta.embedded.block.javascript meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module",
+        "meta.namespace.declaration entity.name.type.module.js",
+        "meta.namespace.declaration entity.name.type.module.ts",
+        "meta.namespace.declaration entity.name.type.module.jsx",
+        "meta.namespace.declaration entity.name.type.module.tsx",
+        // nested inside one-level-deep namespace declaration:
+        "meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module.js",
+        "meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module.ts",
+        "meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module.jsx",
+        "meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module.tsx",
+        // nested inside two-levels-deep namespace declaration:
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module.js",
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module.ts",
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module.jsx",
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration entity.name.type.module.tsx",
       ],
       "settings": {
         "foreground": "#0000CC",
@@ -1255,47 +1296,29 @@
       }
     },
     //
-    // module name during use, "React".Component, "JSX".whatever:
+    // module name during use:
     {
       "scope": [
         // normal case:
-        "source.ts entity.name.type.module",
-        "source.js entity.name.type.module",
-        "source.tsx entity.name.type.module",
-        "source.jsx entity.name.type.module",
-        "meta.embedded.block.javascript entity.name.type.module",
+        "entity.name.type.module.js",
+        "entity.name.type.module.ts",
+        "entity.name.type.module.jsx",
+        "entity.name.type.module.tsx",
         // nested inside top-level namespace declaration:
-        "source.ts meta.namespace.declaration meta.block entity.name.type.module",
-        "source.js meta.namespace.declaration meta.block entity.name.type.module",
-        "source.tsx meta.namespace.declaration meta.block entity.name.type.module",
-        "source.jsx meta.namespace.declaration meta.block entity.name.type.module",
-        "meta.embedded.block.javascript meta.namespace.declaration meta.block entity.name.type.module",
-        // nested inside one-level deep namespace declaration:
-        "source.ts meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-        "source.js meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-        "source.tsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-        "source.jsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-        "meta.embedded.block.javascript meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-        // nested inside two-levels deep namespace declaration:
-        "source.ts meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-        "source.js meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-        "source.tsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-        "source.jsx meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-        "meta.embedded.block.javascript meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module",
-      ],
-      "settings": {
-        "foreground": "#E8810C",
-      }
-    },
-    //
-    // inherited type name:
-    {
-      "scope": [
-        "source.ts entity.other.inherited-class", // inherited type names
-        "source.js entity.other.inherited-class", // inherited type names
-        "source.tsx entity.other.inherited-class", // inherited type names
-        "source.jsx entity.other.inherited-class", // inherited type names
-        "meta.embedded.block.javascript entity.other.inherited-class", // inherited type names
+        "meta.namespace.declaration meta.block entity.name.type.module.js",
+        "meta.namespace.declaration meta.block entity.name.type.module.ts",
+        "meta.namespace.declaration meta.block entity.name.type.module.jsx",
+        "meta.namespace.declaration meta.block entity.name.type.module.tsx",
+        // nested inside one-level-deep namespace declaration:
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module.js",
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module.ts",
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module.jsx",
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module.tsx",
+        // nested inside two-levels-deep namespace declaration:
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module.js",
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module.ts",
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module.jsx",
+        "meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module.tsx",
       ],
       "settings": {
         "foreground": "#E8810C",
@@ -1309,11 +1332,11 @@
     // function name in the declaration:
     {
       "scope": [
-        "source.ts meta.definition.function entity.name.function", // function name in the declaration
-        "source.js meta.definition.function entity.name.function", // function name in the declaration
-        "source.tsx meta.definition.function entity.name.function", // function name in the declaration
-        "source.jsx meta.definition.function entity.name.function", // function name in the declaration
-        "meta.embedded.block.javascript meta.definition.function entity.name.function", // function name in the declaration
+        "source.ts meta.definition.function entity.name.function",
+        "source.js meta.definition.function entity.name.function",
+        "source.tsx meta.definition.function entity.name.function",
+        "source.jsx meta.definition.function entity.name.function",
+        "meta.embedded.block.javascript meta.definition.function entity.name.function",
       ],
       "settings": {
         "fontStyle": "bold"
@@ -1321,9 +1344,9 @@
     },
     //
     // function arguments in declaration:
+    // for when the argument is a callback function:
     {
       "scope": [
-        // for when the argument is a callback function:
         "source.ts meta.parameters entity.name.function",
         "source.js meta.parameters entity.name.function",
         "source.tsx meta.parameters entity.name.function",
@@ -1335,14 +1358,13 @@
       }
     },
     //
-    // function variable name:
+    // variable name after "var, let, const" if it's a function:
     {
       "scope": [
-        "source.ts entity.name.function", // function calls
-        "source.js entity.name.function", // function calls
-        "source.tsx entity.name.function", // function calls
-        "source.jsx entity.name.function", // function calls
-        "meta.embedded.block.javascript entity.name.function", // function calls
+        "meta.definition.variable.js entity.name.function.js", // variable name after "var, let, const"
+        "meta.definition.variable.ts entity.name.function.ts", // variable name after "var, let, const"
+        "meta.definition.variable.jsx entity.name.function.jsx", // variable name after "var, let, const"
+        "meta.definition.variable.tsx entity.name.function.tsx", // variable name after "var, let, const"
       ],
       "settings": {
         "foreground": "#000000"
@@ -1450,35 +1472,7 @@
       }
     },
     //
-    // property name in declaration:
-    {
-      "scope": [
-        "source.ts meta.definition.property variable.object.property",
-        "source.js meta.definition.property variable.object.property",
-        "source.tsx meta.definition.property variable.object.property",
-        "source.jsx meta.definition.property variable.object.property",
-        "meta.embedded.block.javascript meta.definition.property variable.object.property",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // variable name in declaration:
-    {
-      "scope": [
-        "source.ts meta.definition entity.name.function",
-        "source.js meta.definition entity.name.function",
-        "source.tsx meta.definition entity.name.function",
-        "source.jsx meta.definition entity.name.function",
-        "meta.embedded.block.javascript meta.definition entity.name.function",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // key name in an object:
+    // property name in an object:
     {
       "scope": [
         "source.ts meta.object-literal.key",
@@ -1492,7 +1486,7 @@
       }
     },
     //
-    // key name in an object, if it's a function:
+    // property name, if it's a function:
     {
       "scope": [
         "source.ts meta.object-literal.key entity.name.function",
@@ -1506,8 +1500,7 @@
       }
     },
     //
-    // Configuration in JS file, like in JSON,
-    // object keys when instantiating an object:
+    // property names when instantiating an object:
     {
       "scope": [
         "source.ts meta.object-literal.key string.quoted",
@@ -1521,78 +1514,30 @@
       }
     },
     //
-    // function name in declaration after "var, let, const":
+    // property name inside object binding syntax like: "prop" in "const { prop: { subProp } }"
     {
       "scope": [
-        "source.ts meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.js meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.tsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.jsx meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "meta.embedded.block.javascript meta.definition variable.other entity.name.function", // variable name after "var, let, const"
-        "source.ts meta.definition.variable entity.name.function", // variable name after "var, let, const"
-        "source.js meta.definition.variable entity.name.function", // variable name after "var, let, const"
-        "source.tsx meta.definition.variable entity.name.function", // variable name after "var, let, const"
-        "source.jsx meta.definition.variable entity.name.function", // variable name after "var, let, const"
-        "meta.embedded.block.javascript meta.definition.variable entity.name.function", // variable name after "var, let, const"
+        "meta.object-binding-pattern-variable.js variable.object.property.js",
+        "meta.object-binding-pattern-variable.ts variable.object.property.ts",
+        "meta.object-binding-pattern-variable.jsx variable.object.property.jsx",
+        "meta.object-binding-pattern-variable.tsx variable.object.property.tsx",
       ],
       "settings": {
-        "foreground": "#000000"
-      }
-    },
-    //
-    // property name inside syntax like: "const { prop: { subProp } }"
-    {
-      "scope": [
-        "source.ts meta.object-binding-pattern-variable variable.object.property",
-        "source.js meta.object-binding-pattern-variable variable.object.property",
-        "source.tsx meta.object-binding-pattern-variable variable.object.property",
-        "source.jsx meta.object-binding-pattern-variable variable.object.property",
-        "meta.embedded.block.javascript meta.object-binding-pattern-variable variable.object.property",
-      ],
-      "settings": {
-        "foreground": "#000000"
-      }
-    },
-    //
-    // "module.exports" :
-    {
-      "scope": [
-        "source.ts support.type.object.module", // "module.exports"
-        "source.js support.type.object.module", // "module.exports"
-        "source.tsx support.type.object.module", // "module.exports"
-        "source.jsx support.type.object.module", // "module.exports"
-        "meta.embedded.block.javascript support.type.object.module", // "module.exports"
-      ],
-      "settings": {
-        "foreground": "#000000"
-      }
-    },
-    //
-    {
-      "scope": [
-        "source.ts constant.language.import-export-all", // export *
-        "source.js constant.language.import-export-all", // export *
-        "source.tsx constant.language.import-export-all", // export *
-        "source.jsx constant.language.import-export-all", // export *
-        "meta.embedded.block.javascript constant.language.import-export-all", // export *
-      ],
-      "settings": {
-        "foreground": "#000000"
+        "foreground": "#C344AB"
       }
     },
     //
     //
     //
-    // Keywords in TypeScript:
+    // Keywords:
     //
-    // control flow keywords:
+    // "of" keyword, like in "for of" loop:
     {
       "scope": [
-        "source.ts keyword.operator.expression.of", // for (const a "of" b)
-        "source.js keyword.operator.expression.of", // for (const a "of" b)
-        "source.tsx keyword.operator.expression.of", // for (const a "of" b)
-        "source.jsx keyword.operator.expression.of", // for (const a "of" b)
-        "meta.embedded.block.javascript keyword.operator.expression.of", // for (const a "of" b)
+        "keyword.operator.expression.of.js",
+        "keyword.operator.expression.of.ts",
+        "keyword.operator.expression.of.jsx",
+        "keyword.operator.expression.of.tsx",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -1602,14 +1547,14 @@
     // "delete" property, "void" operator keywords:
     {
       "scope": [
-        "keyword.operator.expression.delete.ts",
         "keyword.operator.expression.delete.js",
-        "keyword.operator.expression.delete.tsx",
+        "keyword.operator.expression.delete.ts",
         "keyword.operator.expression.delete.jsx",
-        "keyword.operator.expression.void.ts",
+        "keyword.operator.expression.delete.tsx",
         "keyword.operator.expression.void.js",
-        "keyword.operator.expression.void.tsx",
+        "keyword.operator.expression.void.ts",
         "keyword.operator.expression.void.jsx",
+        "keyword.operator.expression.void.tsx",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -1619,10 +1564,65 @@
     // "debugger" keyword:
     {
       "scope": [
-        "keyword.other.debugger.ts",
         "keyword.other.debugger.js",
-        "keyword.other.debugger.tsx",
+        "keyword.other.debugger.ts",
         "keyword.other.debugger.jsx",
+        "keyword.other.debugger.tsx",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "default" keyword:
+    {
+      "scope": [
+        "keyword.control.default.js",
+        "keyword.control.default.ts",
+        "keyword.control.default.jsx",
+        "keyword.control.default.tsx",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "super" keyword:
+    {
+      "scope": [
+        "variable.language.super.js",
+        "variable.language.super.ts",
+        "variable.language.super.jsx",
+        "variable.language.super.tsx",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "typeof", "instanceof", "keyof", "in" keywords:
+    {
+      "scope": [
+        // "typeof":
+        "keyword.operator.expression.typeof.js",
+        "keyword.operator.expression.typeof.ts",
+        "keyword.operator.expression.typeof.jsx",
+        "keyword.operator.expression.typeof.tsx",
+        // "instanceof":
+        "keyword.operator.expression.instanceof.js",
+        "keyword.operator.expression.instanceof.ts",
+        "keyword.operator.expression.instanceof.jsx",
+        "keyword.operator.expression.instanceof.tsx",
+        // "keyof":
+        "keyword.operator.expression.keyof.js",
+        "keyword.operator.expression.keyof.ts",
+        "keyword.operator.expression.keyof.jsx",
+        "keyword.operator.expression.keyof.tsx",
+        // "in":
+        "keyword.operator.expression.in.js",
+        "keyword.operator.expression.in.ts",
+        "keyword.operator.expression.in.jsx",
+        "keyword.operator.expression.in.tsx",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -1664,20 +1664,6 @@
       }
     },
     //
-    // "default" keyword:
-    {
-      "scope": [
-        "source.ts keyword.control.default",
-        "source.js keyword.control.default",
-        "source.tsx keyword.control.default",
-        "source.jsx keyword.control.default",
-        "meta.embedded.block.javascript keyword.control.default",
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
     // variable.language:
     {
       "scope": [
@@ -1689,53 +1675,6 @@
       ],
       "settings": {
         "foreground": "#000000"
-      }
-    },
-    //
-    // "super" keyword:
-    {
-      "scope": [
-        "source.ts variable.language.super",
-        "source.js variable.language.super",
-        "source.tsx variable.language.super",
-        "source.jsx variable.language.super",
-        "meta.embedded.block.javascript variable.language.super",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // "typeof", "instanceof", "keyof", "in" keywords:
-    {
-      "scope": [
-        // "typeof":
-        "source.ts keyword.operator.expression.typeof",
-        "source.js keyword.operator.expression.typeof",
-        "source.tsx keyword.operator.expression.typeof",
-        "source.jsx keyword.operator.expression.typeof",
-        "meta.embedded.block.javascript keyword.operator.expression.typeof",
-        // "instanceof":
-        "source.ts keyword.operator.expression.instanceof",
-        "source.js keyword.operator.expression.instanceof",
-        "source.tsx keyword.operator.expression.instanceof",
-        "source.jsx keyword.operator.expression.instanceof",
-        "meta.embedded.block.javascript keyword.operator.expression.instanceof",
-        // "keyof":
-        "source.ts keyword.operator.expression.keyof",
-        "source.js keyword.operator.expression.keyof",
-        "source.tsx keyword.operator.expression.keyof",
-        "source.jsx keyword.operator.expression.keyof",
-        "meta.embedded.block.javascript keyword.operator.expression.keyof",
-        // "in":
-        "source.ts keyword.operator.expression.in",
-        "source.js keyword.operator.expression.in",
-        "source.tsx keyword.operator.expression.in",
-        "source.jsx keyword.operator.expression.in",
-        "meta.embedded.block.javascript keyword.operator.expression.in",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
       }
     },
     //
@@ -1755,14 +1694,14 @@
     //
     // "new" syntax:
     //
-    // new "MyClass"():
+    // class name in "new" syntax:
     {
       "scope": [
-        "source.ts new.expr entity.name.type",
-        "source.js new.expr entity.name.type",
-        "source.tsx new.expr entity.name.type",
-        "source.jsx new.expr entity.name.type",
-        "meta.embedded.block.javascript new.expr entity.name.type",
+        // "source.ts new.expr entity.name.type",
+        // "source.js new.expr entity.name.type",
+        // "source.tsx new.expr entity.name.type",
+        // "source.jsx new.expr entity.name.type",
+        // "meta.embedded.block.javascript new.expr entity.name.type",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -1784,7 +1723,7 @@
     //
     //
     //
-    // Punctuation in TypeScript:
+    // Punctuation:
     //
     // "( )" round braces in a type annotation of arrow function:
     {
@@ -1861,112 +1800,7 @@
     //
     //
     //
-    // Documentation:
-    // "comment.block.documentation ...":
-    {
-      "scope": [
-        // "... storage.type":
-        "source.ts comment.block.documentation storage.type",
-        "source.js comment.block.documentation storage.type",
-        "source.tsx comment.block.documentation storage.type",
-        "source.jsx comment.block.documentation storage.type",
-        "meta.embedded.block.javascript comment.block.documentation storage.type",
-        // "... punctuation":
-        "source.ts comment.block.documentation punctuation",
-        "source.js comment.block.documentation punctuation",
-        "source.tsx comment.block.documentation punctuation",
-        "source.jsx comment.block.documentation punctuation",
-        "meta.embedded.block.javascript comment.block.documentation punctuation",
-        // "... punctuation.definition.block":
-        "source.ts comment.block.documentation punctuation.definition.block",
-        "source.js comment.block.documentation punctuation.definition.block",
-        "source.tsx comment.block.documentation punctuation.definition.block",
-        "source.jsx comment.block.documentation punctuation.definition.block",
-        "meta.embedded.block.javascript comment.block.documentation punctuation.definition.block",
-        // "... entity.name.type":
-        "source.ts comment.block.documentation entity.name.type",
-        "source.js comment.block.documentation entity.name.type",
-        "source.tsx comment.block.documentation entity.name.type",
-        "source.jsx comment.block.documentation entity.name.type",
-        "meta.embedded.block.javascript comment.block.documentation entity.name.type",
-        // "... variable":
-        "source.ts comment.block.documentation variable",
-        "source.js comment.block.documentation variable",
-        "source.tsx comment.block.documentation variable",
-        "source.jsx comment.block.documentation variable",
-        "meta.embedded.block.javascript comment.block.documentation variable",
-        // "... keyword.operator.assignment":
-        "source.ts comment.block.documentation keyword.operator.assignment",
-        "source.js comment.block.documentation keyword.operator.assignment",
-        "source.tsx comment.block.documentation keyword.operator.assignment",
-        "source.jsx comment.block.documentation keyword.operator.assignment",
-        "meta.embedded.block.javascript comment.block.documentation keyword.operator.assignment",
-        // "... source":
-        "source.ts comment.block.documentation source",
-        "source.js comment.block.documentation source",
-        "source.tsx comment.block.documentation source",
-        "source.jsx comment.block.documentation source",
-        "meta.embedded.block.javascript comment.block.documentation source",
-        // "... meta.method.declaration meta.block storage.type":
-        "source.ts meta.method.declaration meta.block comment.block.documentation storage.type",
-        "source.js meta.method.declaration meta.block comment.block.documentation storage.type",
-        "source.tsx meta.method.declaration meta.block comment.block.documentation storage.type",
-        "source.jsx meta.method.declaration meta.block comment.block.documentation storage.type",
-        "meta.embedded.block.javascript meta.method.declaration meta.block comment.block.documentation storage.type",
-      ],
-      "settings": {
-        "foreground": "#50A750"
-      }
-    },
-    //
-    // "comment.line ...":
-    {
-      "scope": [
-        // "... entity.name.tag":
-        "source.ts comment.line entity.name.tag",
-        "source.js comment.line entity.name.tag",
-        "source.tsx comment.line entity.name.tag",
-        "source.jsx comment.line entity.name.tag",
-        "meta.embedded.block.javascript comment.line entity.name.tag",
-        // "... punctuation.definition.tag":
-        "source.ts comment.line punctuation.definition.tag",
-        "source.js comment.line punctuation.definition.tag",
-        "source.tsx comment.line punctuation.definition.tag",
-        "source.jsx comment.line punctuation.definition.tag",
-        "meta.embedded.block.javascript comment.line punctuation.definition.tag",
-        // "... entity.other.attribute-name":
-        "source.ts comment.line entity.other.attribute-name",
-        "source.js comment.line entity.other.attribute-name",
-        "source.tsx comment.line entity.other.attribute-name",
-        "source.jsx comment.line entity.other.attribute-name",
-        "meta.embedded.block.javascript comment.line entity.other.attribute-name",
-        // "... string":
-        "source.ts comment.line string",
-        "source.js comment.line string",
-        "source.tsx comment.line string",
-        "source.jsx comment.line string",
-        "meta.embedded.block.javascript comment.line string",
-        // "... punctuation.definition.string":
-        "source.ts comment.line punctuation.definition.string",
-        "source.js comment.line punctuation.definition.string",
-        "source.tsx comment.line punctuation.definition.string",
-        "source.jsx comment.line punctuation.definition.string",
-        "meta.embedded.block.javascript comment.line punctuation.definition.string",
-        // "... keyword.operator.assignment":
-        "source.ts comment.line keyword.operator.assignment",
-        "source.js comment.line keyword.operator.assignment",
-        "source.tsx comment.line keyword.operator.assignment",
-        "source.jsx comment.line keyword.operator.assignment",
-        "meta.embedded.block.javascript comment.line keyword.operator.assignment",
-      ],
-      "settings": {
-        "foreground": "#50A750"
-      }
-    },
-    //
-    //
-    //
-    // Misc in TypeScript:
+    // Misc:
     //
     // For the syntax like:
     // const Button = styled.button<{ $primary?: boolean; }>`
@@ -2375,10 +2209,10 @@
       }
     },
     //
-    // "$" in store syntax:
+    // "$" store syntax:
     {
       "scope": [
-        "punctuation.definition.variable.svelte", // "$" in "$page"
+        "punctuation.definition.variable.svelte", // "$" in $page
       ],
       "settings": {
         "foreground": "#C344AB",
@@ -2568,28 +2402,17 @@
       }
     },
     //
-    // "." accessors in namespace names in Razor Pages:
-    {
-      "scope": [
-        "text.aspnetcorerazor meta.directive",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
     // namespace alias names, "global" keyword in namespaces:
     {
       "scope": [
-        "entity.name.type.alias.cs",
-        "text.aspnetcorerazor entity.name.type.alias",
+        "entity.name.type.alias.cs"
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // type names in definition:
+    // type names during definition:
     {
       "scope": [
         // "class":
@@ -2623,52 +2446,21 @@
         "entity.name.type.cs", // class, interface names when creating a class; class instance
         "entity.name.type.type-parameter.cs", // type parameters
         "storage.type.cs", // type parameters
-        "source.cs keyword.type", // "void", "int", "string" keywords
-        "text.aspnetcorerazor keyword.type", // "void", "int", "string" keywords
+        // "void", "int", "string" keywords:
+        "source.cs keyword.type",
+        "text.aspnetcorerazor keyword.type",
       ],
       "settings": {
         "foreground": "#E8810C"
       }
     },
     //
-    // function name in definition:
-    {
-      "scope": [
-        "source.cs meta.definition.method entity.name.function",
-        "text.aspnetcorerazor meta.definition.method entity.name.function",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // function named parameter in function call in Razor Pages:
-    {
-      "scope": [
-        "text.aspnetcorerazor entity.name.label"
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
     // property and field names definitions in a class:
     {
       "scope": [
-        "source.cs entity.name.variable.property",
-        "source.cs entity.name.variable.field",
+        "entity.name.variable.property.cs",
+        "entity.name.variable.field.cs",
         "entity.name.variable.event.cs",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // object name during injection in Razor Pages:
-    {
-      "scope": [
-        "text.aspnetcorerazor entity.name.variable.property", // property names
-        "text.aspnetcorerazor entity.name.variable.field", // field names
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -2692,9 +2484,13 @@
     // "base", "this" keywords:
     {
       "scope": [
-        "source.cs keyword.other.base", // "base"
-        "variable.language.base.cs", // "base"
-        "source.cs keyword.other.this", // "this"
+        // "base":
+        "source.cs keyword.other.base",
+        "text.aspnetcorerazor keyword.other.base",
+        "variable.language.base.cs",
+        // "this":
+        "source.cs keyword.other.this",
+        "text.aspnetcorerazor keyword.other.this",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -2725,14 +2521,20 @@
       }
     },
     //
-    // "get", "set", "init" keywords:
+    // "get", "set", "init" property keywords:
     {
       "scope": [
+        // "get":
         "source.cs keyword.other.get",
+        "text.aspnetcorerazor keyword.other.get",
         "storage.type.accessor.get.cs",
+        // "set":
         "source.cs keyword.other.set",
+        "text.aspnetcorerazor keyword.other.set",
         "storage.type.accessor.set.cs",
+        // "init":
         "source.cs keyword.other.init",
+        "text.aspnetcorerazor keyword.other.init",
         "storage.type.accessor.init.cs",
       ],
       "settings": {
@@ -2754,10 +2556,14 @@
     // "typeof", "nameof" keywords:
     {
       "scope": [
-        "source.cs keyword.other.typeof", // "typeof"
-        "keyword.operator.expression.typeof.cs", // "typeof"
-        "source.cs keyword.other.nameof", // "nameof"
-        "keyword.operator.expression.nameof.cs", // "nameof"
+        // "typeof":
+        "source.cs keyword.other.typeof",
+        "text.aspnetcorerazor keyword.other.typeof",
+        "keyword.operator.expression.typeof.cs",
+        // "nameof":
+        "source.cs keyword.other.nameof",
+        "text.aspnetcorerazor keyword.other.nameof",
+        "keyword.operator.expression.nameof.cs",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2768,6 +2574,7 @@
     {
       "scope": [
         "source.cs keyword.other.is",
+        "text.aspnetcorerazor keyword.other.is",
         "keyword.operator.expression.pattern.is.cs",
       ],
       "settings": {
@@ -2778,8 +2585,9 @@
     // "default" keyword:
     {
       "scope": [
-        "source.cs keyword.other.default", // "default"
-        "keyword.operator.expression.default.cs" // "default"
+        "source.cs keyword.other.default",
+        "text.aspnetcorerazor keyword.other.default",
+        "keyword.operator.expression.default.cs"
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -2789,8 +2597,9 @@
     // "await" keyword:
     {
       "scope": [
-        "source.cs keyword.other.await", // await
-        "keyword.operator.expression.await.cs", // await
+        "source.cs keyword.other.await",
+        "text.aspnetcorerazor keyword.other.await",
+        "keyword.operator.expression.await.cs",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2800,8 +2609,12 @@
     // "checked", "unchecked" keywords:
     {
       "scope": [
+        // "checked":
         "source.cs keyword.other.checked",
+        "text.aspnetcorerazor keyword.other.checked",
+        // "unchecked":
         "source.cs keyword.other.unchecked",
+        "text.aspnetcorerazor keyword.other.unchecked",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2827,7 +2640,7 @@
     // null-coalescing operator "??":
     {
       "scope": [
-        "keyword.operator.null-coalescing.cs", // null-coalescing operator "??"
+        "keyword.operator.null-coalescing.cs",
       ],
       "settings": {
         "foreground": "#0BC5E3",
@@ -2838,50 +2651,28 @@
     // null-conditional operator "?":
     {
       "scope": [
-        "keyword.operator.null-conditional.cs" // null-conditional operator {variable_name}"?"
+        "keyword.operator.null-conditional.cs"
       ],
       "settings": {
         "foreground": "#A9A9A9",
       }
     },
     //
-    // preprocessor directives "pragma warning disable ...":
+    //
+    //
+    // Misc:
+    //
+    // preprocessor directive syntax "pragma warning disable 612":
     {
       "scope": [
         "meta.preprocessor.cs punctuation.separator.hash.cs", // "#"
-        "source.cs meta.preprocessor",
-        "source.cs meta.preprocessor keyword"
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // numbers and strings in preprocessor directives "pragma warning disable 612":
-    {
-      "scope": [
+        "meta.preprocessor.cs",
+        "meta.preprocessor.cs keyword",
         "meta.preprocessor.cs constant.numeric",
         "meta.preprocessor.cs string.unquoted",
       ],
       "settings": {
         "foreground": "#A9A9A9"
-      }
-    },
-    //
-    //
-    //
-    // Documentation:
-    {
-      "scope": [
-        "comment.block.documentation.cs entity.name.tag",
-        "comment.block.documentation.cs punctuation",
-        "comment.block.documentation.cs punctuation.separator",
-        "comment.block.documentation.cs entity.other.attribute-name",
-        "comment.block.documentation.cs string",
-        "comment.block.documentation.cs punctuation.definition.tag",
-      ],
-      "settings": {
-        "foreground": "#50A750"
       }
     },
     //
@@ -2903,7 +2694,7 @@
       }
     },
     //
-    // "@{ }" code block syntax in Razor Pages:
+    // "@{ }" code block syntax:
     {
       "scope": [
         "text.aspnetcorerazor meta.structure.razor.codeblock keyword.control.cshtml.transition", // "@"
@@ -2915,7 +2706,7 @@
       }
     },
     //
-    // "@if { }" blocks in Razor Pages:
+    // "@if { }" blocks:
     {
       "scope": [
         "text.aspnetcorerazor keyword.control.conditional", // "if", "else" in "@if { }" block
@@ -2952,6 +2743,37 @@
       }
     },
     //
+    // function named parameter in function call:
+    {
+      "scope": [
+        "text.aspnetcorerazor entity.name.label"
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // object name during injection:
+    {
+      "scope": [
+        "text.aspnetcorerazor entity.name.variable.property", // property names
+        "text.aspnetcorerazor entity.name.variable.field", // field names
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // "." accessors in namespace names:
+    {
+      "scope": [
+        "text.aspnetcorerazor meta.directive",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
     // fix for "." dot in "@Model.RequestId":
     {
       "scope": [
@@ -2973,7 +2795,7 @@
       }
     },
     //
-    // ":" and ";" in Razor Pages:
+    // ":" and ";":
     {
       "scope": [
         "text.aspnetcorerazor punctuation.separator.colon",
@@ -2984,7 +2806,7 @@
       }
     },
     //
-    // text in Razor Pages:
+    // text:
     {
       "scope": [
         "text.aspnetcorerazor meta.structure.razor.codeblock source.cs",
@@ -2994,11 +2816,10 @@
       }
     },
     //
-    // inline CSS in Razor Pages:
+    // inline CSS:
     {
       "scope": [
-        "text.aspnetcorerazor string.quoted.double source.css", // Razor Pages
-        "text.html.derivative string.quoted.double source.css", // Svelte
+        "text.aspnetcorerazor string.quoted.double source.css",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -3015,12 +2836,11 @@
       }
     },
     //
-    // "@* comment *@" comment block in Razor Pages:
+    // "@* comment *@" comment block:
     {
       "scope": [
-        "meta.comment.razor keyword.control.razor.comment.star",
-        "meta.comment.razor keyword.control.cshtml.transition",
-        "text.aspnetcorerazor meta.comment.razor keyword.control.cshtml.transition",
+        "meta.comment.razor keyword.control.razor",
+        "meta.comment.razor keyword.control.cshtml",
       ],
       "settings": {
         "foreground": "#50A750"
@@ -3139,18 +2959,6 @@
       }
     },
     //
-    // JavaDoc highlighting keywords:
-    {
-      "scope": [
-        "source.java comment.block.javadoc keyword",
-        "source.java comment.block.javadoc variable.parameter",
-        "source.java comment.block.javadoc entity.name.type",
-      ],
-      "settings": {
-        "foreground": "#50A750"
-      }
-    },
-    //
     // ternary operator "?", ":" and double colon operator "::":
     {
       "scope": [
@@ -3207,7 +3015,7 @@
       }
     },
     //
-    // function name in a call:
+    // function name during function call:
     {
       "scope": [
         "meta.function-call.generic.python",
@@ -3217,7 +3025,7 @@
       }
     },
     //
-    // function name in definition:
+    // function name during definition:
     {
       "scope": [
         "meta.function.python entity.name.function.python",
@@ -3301,29 +3109,26 @@
       }
     },
     //
-    // docs:
+    //
+    //
+    // Documentation syntax:
+    //
+    // documentation:
     {
       "scope": [
         "string.quoted.docstring punctuation.definition.string", // "'''"
-        "string.quoted.docstring", // comment text
+        "string.quoted.docstring", // text
       ],
       "settings": {
         "foreground": "#50A750"
       }
     },
     //
-    // comments:
-    {
-      "scope": [
-        "comment.line.number-sign.python",
-        "comment.line.number-sign.python keyword",
-      ],
-      "settings": {
-        "foreground": "#50A750"
-      }
-    },
     //
-    // "requirements.txt" key name:
+    //
+    // "requirements.txt" syntax:
+    //
+    // "requirements.txt" key names:
     {
       "scope": [
         "source.pip-requirements entity.name.class",
@@ -3333,7 +3138,7 @@
       }
     },
     //
-    // "requirements.txt" value:
+    // "requirements.txt" values:
     {
       "scope": [
         "source.pip-requirements constant.numeric",
@@ -3697,16 +3502,6 @@
       ],
       "settings": {
         "foreground": "#A31515"
-      }
-    },
-    //
-    // comments:
-    {
-      "scope": [
-        "source.powershell comment.block keyword.operator",
-      ],
-      "settings": {
-        "foreground": "#50A750"
       }
     },
     //
@@ -4662,10 +4457,6 @@
         "source.css constant.other.rgb-value",
         "meta.embedded.block.css constant.other.rgb-value",
         "meta.embedded.block.scss constant.other.rgb-value",
-        // "support.constant.property-value"
-        "source.css support.constant.property-value",
-        "meta.embedded.block.css support.constant.property-value",
-        "meta.embedded.block.scss support.constant.property-value",
         // "meta.attribute-selector"
         "source.css meta.attribute-selector",
         "meta.embedded.block.css meta.attribute-selector",
@@ -4674,10 +4465,6 @@
         "source.css meta.property-value support.type.property-name",
         "meta.embedded.block.css meta.property-value support.type.property-name",
         "meta.embedded.block.scss meta.property-value support.type.property-name",
-        // "support.constant.font-name"
-        "source.css support.constant.font-name",
-        "meta.embedded.block.css support.constant.font-name",
-        "meta.embedded.block.scss support.constant.font-name",
       ],
       "settings": {
         "foreground": "#A31515"

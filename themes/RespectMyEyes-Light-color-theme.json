@@ -1217,7 +1217,7 @@
     },
     //
     // "var", "let", "const" keywords:
-    // fixes the rule about "constructor" keyword too:
+    // fixes the "constructor" keyword rule too:
     {
       "scope": [
         "meta.var.expr.js storage.type.js",
@@ -1230,13 +1230,19 @@
       }
     },
     //
-    // "default" keyword:
+    // some keywords:
     {
       "scope": [
+        // "default":
         "keyword.control.default.js",
         "keyword.control.default.ts",
         "keyword.control.default.jsx",
         "keyword.control.default.tsx",
+        // "get", "set":
+        "meta.method.declaration.js storage.type.property.js",
+        "meta.method.declaration.ts storage.type.property.ts",
+        "meta.method.declaration.jsx storage.type.property.jsx",
+        "meta.method.declaration.tsx storage.type.property.tsx",
       ],
       "settings": {
         "foreground": "#A31515"
@@ -1494,11 +1500,10 @@
     // "@" in decorator syntax:
     {
       "scope": [
-        "source.js meta.decorator punctuation.decorator",
-        "source.ts meta.decorator punctuation.decorator",
-        "source.jsx meta.decorator punctuation.decorator",
-        "source.tsx meta.decorator punctuation.decorator",
-        "meta.embedded.block.javascript meta.decorator punctuation.decorator",
+        "meta.decorator.js punctuation.decorator.js",
+        "meta.decorator.ts punctuation.decorator.ts",
+        "meta.decorator.jsx punctuation.decorator.jsx",
+        "meta.decorator.tsx punctuation.decorator.tsx",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -1508,11 +1513,10 @@
     // name or identifier in decorator syntax:
     {
       "scope": [
-        "source.js meta.decorator meta.function-call entity.name.function",
-        "source.ts meta.decorator meta.function-call entity.name.function",
-        "source.jsx meta.decorator meta.function-call entity.name.function",
-        "source.tsx meta.decorator meta.function-call entity.name.function",
-        "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function",
+        "meta.decorator.js meta.function-call entity.name.function.js",
+        "meta.decorator.ts meta.function-call entity.name.function.ts",
+        "meta.decorator.jsx meta.function-call entity.name.function.jsx",
+        "meta.decorator.tsx meta.function-call entity.name.function.tsx",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -1522,11 +1526,10 @@
     // fix for a function call inside of a decorator:
     {
       "scope": [
-        "source.js meta.decorator meta.object.member meta.function-call entity.name.function",
-        "source.ts meta.decorator meta.object.member meta.function-call entity.name.function",
-        "source.jsx meta.decorator meta.object.member meta.function-call entity.name.function",
-        "source.tsx meta.decorator meta.object.member meta.function-call entity.name.function",
-        "meta.embedded.block.javascript meta.decorator meta.object.member meta.function-call entity.name.function",
+        "meta.decorator.js meta.object.member meta.function-call entity.name.function.js",
+        "meta.decorator.ts meta.object.member meta.function-call entity.name.function.ts",
+        "meta.decorator.jsx meta.object.member meta.function-call entity.name.function.jsx",
+        "meta.decorator.tsx meta.object.member meta.function-call entity.name.function.tsx",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -1702,7 +1705,7 @@
     // ====================================================
     // Svelte (.svelte):
     //
-    // Keywords in Svelte:
+    // Keywords:
     //
     // control keywords:
     {
@@ -2009,7 +2012,7 @@
       }
     },
     //
-    // Punctuation in Svelte:
+    // Punctuation:
     //
     // "{ }" string interpolation:
     {
@@ -2080,16 +2083,6 @@
     // ====================================================
     // Vue (.vue):
     //
-    // fix the HTML end tag:
-    {
-      "scope": [
-        "text.html.vue meta.tag.other" // "/>"
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
     // fix the assignment sign:
     {
       "scope": [
@@ -2111,7 +2104,7 @@
       }
     },
     //
-    // "@" in attribute directives:
+    // "@" in attribute directives syntax:
     {
       "scope": [
         "meta.attribute.directive.vue punctuation.attribute-shorthand.event.html.vue",
@@ -2121,27 +2114,18 @@
       }
     },
     //
-    // "." separator in attribute directives:
+    // fix for ".", ":" in attribute directive syntax:
     {
       "scope": [
-        "meta.attribute.directive.vue",
+        "meta.attribute.directive.vue", // "." separator in attribute directives:
+        "meta.attribute.directive.vue meta.block", // fix for ":" in JS/TS blocks embedded in Vue HTML
       ],
       "settings": {
         "foreground": "#A9A9A9"
       }
     },
     //
-    // fix for ":" in JS/TS blocks embedded in HTML:
-    {
-      "scope": [
-        "meta.attribute.directive.vue meta.block",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // fix for brackets "{ }" in " :to="{ name: 'home' }" "
+    // fix for brackets "{ }" in " :to="{ name: 'home' }" ":
     {
       "scope": [
         "source.vue text.html.derivative punctuation.definition.block.js",
@@ -2152,81 +2136,48 @@
       }
     },
     //
+    // fix for property name "name" in " :to="{ name: 'home' }" ":
+    {
+      "scope": [
+        "source.vue text.html.derivative meta.block entity.name.label",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
     //
     //
     // ====================================================
     // Angular (.ng):
     //
-    // fix for ":" in JS/TS blocks embedded in HTML:
     {
       "scope": [
+        // fix for ":" in JS/TS blocks embedded in Angular HTML:
         "text.html.derivative expression.ng",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "{{ }}" fix the embedded block:
-    {
-      "scope": [
-        "text.html.derivative punctuation.definition.block.js",
-        "text.html.derivative punctuation.definition.block.ts",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // fix "let" and "const" in HTML files:
-    {
-      "scope": [
+        // fix "let", "const" in Angular HTML:
         "expression.ng storage.type",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // template attributes like "*ngFor", "*ngIf":
-    {
-      "scope": [
-        "entity.other.ng-binding-name.template.html",
-        "entity.other.ng-binding-name.template.html punctuation.definition.ng-binding-name.begin.html",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // "of" control flow keyword:
-    {
-      "scope": [
-        "expression.ng keyword.operator.expression.of", // *ngFor="let article of results"
-        "control.block.expression.ng keyword.operator.expression.of", // @for (comment of $comments(); track comment.id)
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // "[ngSwitch]" control flow attribute:
-    {
-      "scope": [
-        "entity.other.ng-binding-name.property.html entity.other.ng-binding-name.ngSwitch.html",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // fix for ";" in Angular HTML expressions:
-    {
-      "scope": [
+        // fix for ";" in Angular HTML expressions:
         "control.block.expression.ng",
       ],
       "settings": {
         "foreground": "#A9A9A9"
+      }
+    },
+    //
+    {
+      "scope": [
+        // "{{ }}" fix the embedded block in Angular HTML:
+        "text.html.derivative punctuation.definition.block.js",
+        "text.html.derivative punctuation.definition.block.ts",
+        // template attributes like "*ngFor", "*ngIf":
+        "entity.other.ng-binding-name.template.html", // "ngFor", "ngIf"
+        "entity.other.ng-binding-name.template.html punctuation.definition.ng-binding-name.begin.html", // "*"
+        // "[ngSwitch]" control flow attribute:
+        "entity.other.ng-binding-name.property.html entity.other.ng-binding-name.ngSwitch.html",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
       }
     },
     //

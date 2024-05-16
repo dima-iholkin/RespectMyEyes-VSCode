@@ -1710,13 +1710,154 @@
     // control keywords:
     {
       "scope": [
-        "keyword.control.svelte", // "each"
         "meta.special.each.svelte keyword.control.as.svelte", // "as" in "{:each items as item}" block
       ],
       "settings": {
         "foreground": "#0BC5E3",
       }
     },
+    //
+    // "export" keyword for props:
+    {
+      "scope": [
+        "meta.embedded.block.svelte keyword.control.export"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "@debug" keyword:
+    {
+      "scope": [
+        "keyword.other.debugger.svelte", // "debug"
+        "meta.special.debug.svelte punctuation.definition.keyword", // "@"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "@component" documentation keyword:
+    {
+      "scope": [
+        "keyword.declaration.class.component.svelte", // "component"
+        "comment.block.svelte punctuation.definition.keyword.svelte", // "@"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    // "@const" keyword:
+    {
+      "scope": [
+        "meta.special.const.svelte storage.type.svelte",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "@html" keyword:
+    {
+      "scope": [
+        "meta.special.html.svelte punctuation.definition.keyword.svelte",
+        "meta.special.html.svelte keyword.other.svelte",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    //
+    //
+    // Tag rules:
+    //
+    // "svelte" tag keyword:
+    {
+      "scope": [
+        "meta.tag.start.svelte keyword.control.svelte", // "svelte" in "svelte:head"
+        "meta.tag.end.svelte keyword.control.svelte", // "svelte" in "svelte:head"
+      ],
+      "settings": {
+        "foreground": "#0000CC",
+      }
+    },
+    //
+    // <script> and <style> tags in Svelte components:
+    {
+      "scope": [
+        // <script> tag:
+        "meta.script.svelte entity.name.tag.svelte",
+        "meta.script.svelte punctuation.definition.tag.begin.svelte",
+        "meta.script.svelte punctuation.definition.tag.end.svelte",
+        // <style> tag:
+        "meta.style.svelte entity.name.tag.svelte",
+        "meta.style.svelte punctuation.definition.tag.begin.svelte",
+        "meta.style.svelte punctuation.definition.tag.end.svelte",
+      ],
+      "settings": {
+        "foreground": "#8080E6" // #0000CC80
+      }
+    },
+    //
+    // <svelte:head>, <svelte:body>, <svelte:document> and similar tags in svelte components:
+    {
+      "scope": [
+        // <svelte:head>:
+        "meta.scope.tag.svelte:head.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:head.svelte meta.tag entity.name.tag.svelte", // "head"
+        "meta.scope.tag.svelte:head.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:head.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+        // <svelte:body>:
+        "meta.scope.tag.svelte:body.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:body.svelte meta.tag entity.name.tag.svelte", // "body"
+        "meta.scope.tag.svelte:body.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:body.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+        // <svelte:document>:
+        "meta.scope.tag.svelte:document.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:document.svelte meta.tag entity.name.tag.svelte", // "document"
+        "meta.scope.tag.svelte:document.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:document.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+        // <svelte:window>:
+        "meta.scope.tag.svelte:window.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:window.svelte meta.tag entity.name.tag.svelte", // "window"
+        "meta.scope.tag.svelte:window.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:window.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+        // <svelte:options>:
+        "meta.scope.tag.svelte:options.svelte meta.tag keyword.control.svelte", // "svelte"
+        "meta.scope.tag.svelte:options.svelte meta.tag entity.name.tag.svelte", // "options"
+        "meta.scope.tag.svelte:options.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
+        "meta.scope.tag.svelte:options.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
+      ],
+      "settings": {
+        "foreground": "#8080E6" // #0000CC80
+      }
+    },
+    //
+    // fix the directives like "on:" after the previous rule applied:
+    {
+      "scope": [
+        // <svelte:head>:
+        "meta.scope.tag.svelte:head.svelte meta.tag meta.directive keyword.control.svelte",
+        // <svelte:body>:
+        "meta.scope.tag.svelte:body.svelte meta.tag meta.directive keyword.control.svelte",
+        // <svelte:document>:
+        "meta.scope.tag.svelte:document.svelte meta.tag meta.directive keyword.control.svelte",
+        // <svelte:window>:
+        "meta.scope.tag.svelte:window.svelte meta.tag meta.directive keyword.control.svelte",
+        // <svelte:options>:
+        "meta.scope.tag.svelte:options.svelte meta.tag meta.directive keyword.control.svelte",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    //
+    //
+    // Attribute rules:
     //
     // "class:playing", "bind:value", "transition:fly" and similar attributes:
     {
@@ -1740,20 +1881,12 @@
       }
     },
     //
-    // "style:transform" and similar CSS properties in attributes:
     {
       "scope": [
-        "meta.directive.style.svelte support.type.property-name.svelte", // "transform" and similar
-      ],
-      "settings": {
-        "foreground": "#A9A9A9",
-      }
-    },
-    //
-    // "--color" and similar custom CSS variables in attributes:
-    {
-      "scope": [
-        "meta.tag.start.svelte meta.attribute support.type.property-name.svelte", // "--color" and similar
+        // "style:transform" and similar CSS properties in attributes:
+        "meta.directive.style.svelte support.type.property-name.svelte",
+        // "--color" and similar custom CSS variables in attributes:
+        "meta.tag.start.svelte meta.attribute support.type.property-name.svelte",
       ],
       "settings": {
         "foreground": "#A9A9A9",
@@ -1772,7 +1905,21 @@
       }
     },
     //
+    // "use:enhance" and similar:
+    {
+      "scope": [
+        "meta.directive.use.svelte keyword.control.svelte", // "use" in "use:enhance"
+        "meta.directive.use.svelte variable.function.svelte", // "enhance" in "use:enhance"
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    //
+    //
     // "slot" syntax:
+    //
     {
       "scope": [
         "meta.scope.tag.slot.svelte keyword.control.svelte", // "<slot />" tag
@@ -1783,7 +1930,6 @@
       }
     },
     //
-    // "slot" syntax:
     {
       "scope": [
         "meta.attribute.slot.svelte string.quoted.svelte", // slot="name" attribute in children tags
@@ -1793,6 +1939,24 @@
         "foreground": "#E8810C",
       }
     },
+    //
+    //
+    //
+    // "#each" block syntax:
+    //
+    // "( )" key notation in "#each" blocks:
+    {
+      "scope": [
+        "meta.special.each.svelte meta.special.start.svelte meta.brace.round.svelte",
+      ],
+      "settings": {
+        "foreground": "#C344AB",
+      }
+    },
+    //
+    //
+    //
+    // "#snippet" syntax:
     //
     // "snippet" keyword in "#snippet" syntax:
     {
@@ -1825,6 +1989,10 @@
         "foreground": "#C344AB"
       }
     },
+    //
+    //
+    //
+    // "@render" syntax:
     //
     // "@render" keyword in "@render" syntax:
     {
@@ -1859,158 +2027,7 @@
       }
     },
     //
-    // "svelte" tag keyword:
-    {
-      "scope": [
-        "meta.tag.start.svelte keyword.control.svelte", // "svelte" in "svelte:head"
-        "meta.tag.end.svelte keyword.control.svelte", // "svelte" in "svelte:head"
-      ],
-      "settings": {
-        "foreground": "#0000CC",
-      }
-    },
     //
-    // <script> and <style> tags in Svelte components:
-    {
-      "scope": [
-        "meta.script.svelte entity.name.tag.svelte", // <script> tag
-        "meta.script.svelte punctuation.definition.tag.begin.svelte", // <script> tag
-        "meta.script.svelte punctuation.definition.tag.end.svelte", // <script> tag
-        "meta.style.svelte entity.name.tag.svelte", // <style> tag
-        "meta.style.svelte punctuation.definition.tag.begin.svelte", // <style> tag
-        "meta.style.svelte punctuation.definition.tag.end.svelte", // <style> tag
-      ],
-      "settings": {
-        "foreground": "#8080E6" // #0000CC80
-      }
-    },
-    //
-    // <svelte:head>, <svelte:body>, <svelte:document> and similar tags in svelte components:
-    {
-      "scope": [
-        // <svelte:head>:
-        "meta.scope.tag.svelte:head.svelte meta.tag keyword.control.svelte", // "svelte"
-        "meta.scope.tag.svelte:head.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
-        "meta.scope.tag.svelte:head.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
-        "meta.scope.tag.svelte:head.svelte meta.tag entity.name.tag.svelte", // "head"
-        // <svelte:body>:
-        "meta.scope.tag.svelte:body.svelte meta.tag keyword.control.svelte", // "svelte"
-        "meta.scope.tag.svelte:body.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
-        "meta.scope.tag.svelte:body.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
-        "meta.scope.tag.svelte:body.svelte meta.tag entity.name.tag.svelte", // "body"
-        // <svelte:document>:
-        "meta.scope.tag.svelte:document.svelte meta.tag keyword.control.svelte", // "svelte"
-        "meta.scope.tag.svelte:document.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
-        "meta.scope.tag.svelte:document.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
-        "meta.scope.tag.svelte:document.svelte meta.tag entity.name.tag.svelte", // "document"
-        // <svelte:window>:
-        "meta.scope.tag.svelte:window.svelte meta.tag keyword.control.svelte", // "svelte"
-        "meta.scope.tag.svelte:window.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
-        "meta.scope.tag.svelte:window.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
-        "meta.scope.tag.svelte:window.svelte meta.tag entity.name.tag.svelte", // "window"
-        // <svelte:options>:
-        "meta.scope.tag.svelte:options.svelte meta.tag keyword.control.svelte", // "svelte"
-        "meta.scope.tag.svelte:options.svelte meta.tag punctuation.definition.tag.begin.svelte", // "<"
-        "meta.scope.tag.svelte:options.svelte meta.tag punctuation.definition.tag.end.svelte", // ">"
-        "meta.scope.tag.svelte:options.svelte meta.tag entity.name.tag.svelte", // "options"
-      ],
-      "settings": {
-        "foreground": "#8080E6" // #0000CC80
-      }
-    },
-    //
-    // fix the directives like "on:" after the previous rule applied:
-    {
-      "scope": [
-        // <svelte:head>:
-        "meta.scope.tag.svelte:head.svelte meta.tag meta.directive keyword.control.svelte",
-        // <svelte:body>:
-        "meta.scope.tag.svelte:body.svelte meta.tag meta.directive keyword.control.svelte",
-        // <svelte:document>:
-        "meta.scope.tag.svelte:document.svelte meta.tag meta.directive keyword.control.svelte",
-        // <svelte:window>:
-        "meta.scope.tag.svelte:window.svelte meta.tag meta.directive keyword.control.svelte",
-        // <svelte:options>:
-        "meta.scope.tag.svelte:options.svelte meta.tag meta.directive keyword.control.svelte",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // "export" keyword for props:
-    {
-      "scope": [
-        "meta.embedded.block.svelte keyword.control.export"
-      ],
-      "settings": {
-        "foreground": "#C344AB",
-      }
-    },
-    //
-    // "( )" key notation in "#each" blocks:
-    {
-      "scope": [
-        "meta.special.each.svelte meta.special.start.svelte meta.brace.round.svelte",
-      ],
-      "settings": {
-        "foreground": "#C344AB",
-      }
-    },
-    //
-    // "@debug" keyword:
-    {
-      "scope": [
-        "keyword.other.debugger.svelte", // "debug"
-        "meta.special.debug.svelte punctuation.definition.keyword", // "@"
-      ],
-      "settings": {
-        "foreground": "#C344AB",
-      }
-    },
-    //
-    // "@component" documentation keyword:
-    {
-      "scope": [
-        "keyword.declaration.class.component.svelte", // "component"
-        "comment.block.svelte punctuation.definition.keyword.svelte", // "@"
-      ],
-      "settings": {
-        "foreground": "#C344AB",
-      }
-    },
-    //
-    // "use:enhance" and similar:
-    {
-      "scope": [
-        "meta.directive.use.svelte keyword.control.svelte", // "enhance" in "use:enhance"
-        "meta.directive.use.svelte variable.function.svelte", // "enhance" in "use:enhance"
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // "@const":
-    {
-      "scope": [
-        "meta.special.const.svelte storage.type.svelte",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "@html":
-    {
-      "scope": [
-        "meta.special.html.svelte punctuation.definition.keyword.svelte",
-        "meta.special.html.svelte keyword.other.svelte",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
     //
     // Punctuation:
     //

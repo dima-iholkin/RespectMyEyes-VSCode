@@ -378,7 +378,7 @@
     //
     // Literals baseline:
     //
-    // strings:
+    // string literals:
     {
       "scope": [
         "string",
@@ -414,7 +414,9 @@
       }
     },
     //
-    // numbers, numeric literals:
+    //
+    //
+    // Numeric literals:
     {
       "scope": [
         "constant.numeric", // "0", "1", "36.08M"
@@ -453,41 +455,15 @@
       }
     },
     //
-    // language constants:
+    //
+    //
+    // Language constants:
     {
       "scope": [
         "constant.language", // booleans, "null" and others
       ],
       "settings": {
         "foreground": "#A31515",
-      }
-    },
-    //
-    // comments:
-    {
-      "scope": [
-        "comment",
-        "comment source",
-        "comment string",
-        "comment keyword",
-        "comment keyword.operator",
-        "comment keyword.operator.assignment",
-        "comment variable",
-        "comment variable.parameter",
-        "comment entity.name.type",
-        "comment entity.name.tag",
-        "comment entity.other.attribute-name",
-        "comment storage.type",
-        "comment meta.tag",
-        "comment punctuation",
-        "comment punctuation.definition.block",
-        "comment punctuation.definition.string",
-        "comment punctuation.definition.tag",
-        "comment punctuation.separator",
-        "punctuation.definition.comment" // fix an edge case in Markdown -> code block -> comment
-      ],
-      "settings": {
-        "foreground": "#50A750",
       }
     },
     //
@@ -586,57 +562,7 @@
     //
     //
     //
-    // Names baseline:
-    //
-    // Functions:
-    //
-    // function name in general:
-    {
-      "scope": [
-        "entity.name.function",
-        "support.function",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // function name during definition:
-    {
-      "scope": [
-        "meta.definition.function entity.name.function",
-        "meta.definition.method entity.name.function",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // function name during call:
-    {
-      "scope": [
-        "meta.function-call entity.name.function",
-        "meta.function-call support.function",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // argument names for function definition:
-    {
-      "scope": [
-        "variable.parameter",
-        "entity.name.variable.parameter"
-      ],
-      "settings": {
-        "foreground": "#C344AB",
-      }
-    },
-    //
-    //
-    //
-    // Types:
+    // Types baseline:
     //
     // type name in general:
     {
@@ -685,38 +611,60 @@
     //
     //
     //
-    // Variables:
+    // Functions baseline:
     //
-    // variable and object's property names in general:
+    // function name in general:
     {
       "scope": [
-        "variable", // variable name
-        "variable.other", // variable name
-        "support.variable", // variable name
-        "entity.name.variable", // variable name
+        "entity.name.function",
+        "support.function",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // function name during definition:
+    {
+      "scope": [
+        "meta.definition.function entity.name.function",
+        "meta.definition.method entity.name.function",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // function name during call:
+    {
+      "scope": [
+        "meta.function-call entity.name.function",
+        "meta.function-call support.function",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // argument names for function definition:
+    {
+      "scope": [
+        "variable.parameter",
+        "entity.name.variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#C344AB",
       }
     },
     //
     //
     //
-    // Objects:
+    // Objects baseline:
     //
-    // property names when defining a type (class, interface):
+    // property names during type declaration:
     {
       "scope": [
         "variable.object.property",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // property name in declaration:
-    {
-      "scope": [
         "meta.definition.property variable.object.property",
         "meta.definition.property entity.name.function",
       ],
@@ -725,40 +673,267 @@
       }
     },
     //
-    // object keys when instantiating an object:
+    // object property names during object instantiation:
     {
       "scope": [
-        "meta.object-literal.key",
-        "meta.object-literal.key entity.name.function",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    //
-    //
-    // Enums:
-    //
-    // enum member names:
-    {
-      "scope": [
-        "variable.other.enummember", // enum member names
-        "entity.name.variable.enum-member", // enum member names in C#
-        "constant.other.enum" // enum member names in Java
+        "meta.object-literal.key", // normal property name
+        "meta.object-literal.key entity.name.function", // property name, if it's a function
       ],
       "settings": {
         "foreground": "#C344AB"
       }
     },
     //
-    // label name, for example in a goto statement:
+    // variable and object property names during access:
+    {
+      "scope": [
+        "variable",
+        "variable.other",
+        "support.variable",
+        "entity.name.variable",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    //
+    //
+    // Enums baseline:
+    //
+    // enum member names:
+    {
+      "scope": [
+        "variable.other.enummember",
+        "entity.name.variable.enum-member", // used in C#
+        "constant.other.enum" // used in Java
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    //
+    //
+    // Labels baseline:
+    //
+    // label names:
     {
       "scope": [
         "entity.name.label",
       ],
       "settings": {
         "foreground": "#0000CC"
+      }
+    },
+    //
+    //
+    //
+    // Punctuation baseline:
+    //
+    // common punctuation:
+    {
+      "scope": [
+        "punctuation",
+        "punctuation.accessor", // "." member accessor
+        "punctuation.definition",
+        "punctuation.definition.string", // fix for Markdown, "/ /" RegEx begin and end characters:
+        "punctuation.definition.section.case-statement", // :
+        "punctuation.definition.dictionary", // dict[]
+        "punctuation.separator", // "," "=" in .ini
+        "punctuation.section",
+        "punctuation.terminator", // ;
+        "punctuation.destructuring", // :
+        "keyword.operator", // :
+        "keyword.operator.type", // "|" between types in TS
+        "keyword.operator.type.annotation", // :
+        "keyword.operator.logical", // ||, !
+        "keyword.operator.comparison", // ===
+        "keyword.operator.relational", // >, <
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+      }
+    },
+    //
+    // "( )", "[ ]", "< >", "{ }" braces:
+    {
+      "scope": [
+        "meta.brace.round", // "( )"
+        "punctuation.definition.parameters", // "( )" in function/method definition
+        "meta.parameters punctuation.definition.parameters", // "( )" in function/method definition
+        "punctuation.parenthesis", // "( )" in C#
+        "meta.brace.square", // "[ ]"
+        "punctuation.definition.array", // "arr[]"
+        "punctuation.squarebracket", // "[ ]" in C#
+        "punctuation.definition.binding-pattern.array", // "[ ]"
+        "punctuation.definition.block", // "{ }"
+        "punctuation.bracket", // "{ }"
+        "punctuation.curlybrace", // "{ }" in C#
+        "punctuation.definition.binding-pattern.object", // "{ }"
+        "punctuation.definition.typeparameters", // "< >" angle brackets for generic type parameters
+        "meta.brace.angle", // "< >"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // Operators baseline:
+    //
+    // arithmetic operators:
+    {
+      "scope": [
+        "keyword.operator.arithmetic", // +, -, *, /
+        "keyword.operator.assignment", // =
+        "keyword.operator.increment", // ++
+        "keyword.operator.decrement", // --
+        "keyword.operator.math", // +, -, *, / for Rust
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // bitwise operators:
+    {
+      "scope": [
+        "keyword.operator.bitwise", // ~, &, |, ^, <<, >>
+        "keyword.operator.assignment.compound.bitwise" // "<<=", "|=", ">>=" compound bitwise operators in C#
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // "...", "?", "!" operators:
+    {
+      "scope": [
+        "keyword.operator.rest", // "..." rest operator
+        "keyword.operator.spread", // "..." spread operator
+        "punctuation.accessor.optional", // "?" optional accessor
+        "keyword.operator.optional", // "?" optional assignment, used in JS/TS
+        "keyword.operator.definiteassignment" // "!" definite assignment, used in JS/TS
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "?", ":" ternary operator:
+    {
+      "scope": [
+        "keyword.operator.ternary",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    //
+    //
+    // Arrow function syntax:
+    //
+    // "( )" round braces in an arrow function definition:
+    {
+      "scope": [
+        "meta.arrow meta.parameters punctuation.definition.parameters",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // arrow operator "=>":
+    {
+      "scope": [
+        "storage.type.function.arrow", // used in JS/TS
+        "keyword.operator.arrow", // used in C#
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // "=>" operator in arrow function syntax as type parameter:
+    {
+      "scope": [
+        "meta.type.annotation storage.type.function.arrow",
+        "meta.type.declaration storage.type.function.arrow",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    //
+    //
+    // Template string syntax:
+    //
+    // "` `" backticks in template string - not sure where it works:
+    {
+      "scope": [
+        "punctuation.definition.string.template string.template",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // "` `" template string begin and end characters:
+    {
+      "scope": [
+        "string.template punctuation.definition.string.template", // "` `" in TypeScript
+      ],
+      "settings": {
+        "foreground": "#A9A9A9",
+        "fontStyle": "bold"
+      }
+    },
+    //
+    // string interpolation brackets:
+    {
+      "scope": [
+        "punctuation.definition.template-expression", // "${ }"
+        "punctuation.definition.interpolation", // "{ }", "{{ }}"
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    //
+    //
+    // Comments baseline:
+    {
+      "scope": [
+        "comment",
+        "comment source",
+        "comment string",
+        "comment keyword",
+        "comment keyword.operator",
+        "comment keyword.operator.assignment",
+        "comment variable",
+        "comment variable.parameter",
+        "comment entity.name.type",
+        "comment entity.name.tag",
+        "comment entity.other.attribute-name",
+        "comment storage.type",
+        "comment meta.tag",
+        "comment punctuation",
+        "comment punctuation.definition.block",
+        "comment punctuation.definition.string",
+        "comment punctuation.definition.tag",
+        "comment punctuation.separator",
+        "punctuation.definition.comment" // fix an edge case in Markdown -> code block -> comment
+      ],
+      "settings": {
+        "foreground": "#50A750",
       }
     },
     //
@@ -876,225 +1051,8 @@
     //
     //
     //
-    // Punctuation baseline:
-    //
-    // common punctuation:
-    {
-      "scope": [
-        "punctuation",
-        "punctuation.definition",
-        "punctuation.definition.string", // fix for Markdown, "/ /" RegEx begin and end characters:
-        "punctuation.definition.section.case-statement", // :
-        "punctuation.definition.dictionary", // dict[]
-        "punctuation.separator", // ","  "=" in .ini
-        "punctuation.section",
-        "punctuation.terminator", // ;
-        "punctuation.destructuring", // :
-        "keyword.operator", // :
-        "keyword.operator.type", // "|" between types in TS
-        "keyword.operator.type.annotation", // :
-        "keyword.operator.logical", // ||, !
-        "keyword.operator.comparison", // ===
-        "keyword.operator.relational", // >, <
-      ],
-      "settings": {
-        "foreground": "#A9A9A9",
-      }
-    },
-    //
-    // "." member accessor:
-    {
-      "scope": [
-        "punctuation.accessor"
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "( )", "[ ]", "< >", "{ }" braces:
-    {
-      "scope": [
-        "meta.brace.round", // "( )"
-        "punctuation.definition.parameters", // "( )" in function/method definition
-        "meta.parameters punctuation.definition.parameters", // "( )" in function/method definition
-        "punctuation.parenthesis", // "( )" in C#
-        "meta.brace.square", // "[ ]"
-        "punctuation.definition.array", // "arr[]"
-        "punctuation.squarebracket", // "[ ]" in C#
-        "punctuation.definition.binding-pattern.array", // "[ ]"
-        "punctuation.definition.block", // "{ }"
-        "punctuation.bracket", // "{ }"
-        "punctuation.curlybrace", // "{ }" in C#
-        "punctuation.definition.binding-pattern.object", // "{ }"
-        "punctuation.definition.typeparameters", // "< >" angle brackets for generic type parameters:
-        "meta.brace.angle", // "< >"
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    //
-    //
-    // Operators baseline:
-    //
-    // arithmetic operators:
-    {
-      "scope": [
-        "keyword.operator.arithmetic", // +, -, *, /
-        "keyword.operator.assignment", // =
-        "keyword.operator.increment", // ++
-        "keyword.operator.decrement", // --
-        "keyword.operator.math", // +, -, *, / for Rust
-      ],
-      "settings": {
-        "foreground": "#000000",
-      }
-    },
-    //
-    // bitwise operators:
-    {
-      "scope": [
-        "keyword.operator.bitwise", // ~, &, |, ^, <<, >>
-        "keyword.operator.assignment.compound.bitwise" // compound bitwise operators "<<=", "|=", ">>=" in C#
-      ],
-      "settings": {
-        "foreground": "#0BC5E3",
-      }
-    },
-    //
-    // "..." spread and rest operators:
-    {
-      "scope": [
-        "keyword.operator.rest",
-        "keyword.operator.spread",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9",
-      }
-    },
-    //
-    // "?" optional accessor:
-    {
-      "scope": [
-        "punctuation.accessor.optional",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "?" optional assignment:
-    //
-    {
-      "scope": [
-        "keyword.operator.optional", // used in JS/TS
-      ],
-      "settings": {
-        "foreground": "#A9A9A9",
-      }
-    },
-    //
-    // "!" definite assignment:
-    {
-      "scope": [
-        "keyword.operator.definiteassignment" // used in JS/TS
-      ],
-      "settings": {
-        "foreground": "#A9A9A9",
-      }
-    },
-    //
-    // ternary operator "?", ":":
-    {
-      "scope": [
-        "keyword.operator.ternary",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3",
-        "fontStyle": "bold"
-      }
-    },
-    //
-    //
-    //
-    // Arrow function syntax:
-    //
-    // "( )" round braces in an arrow function definition:
-    {
-      "scope": [
-        "meta.arrow meta.parameters punctuation.definition.parameters",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3",
-      }
-    },
-    //
-    // arrow operator "=>":
-    {
-      "scope": [
-        "storage.type.function.arrow", // "=>" in JS/TS
-        "keyword.operator.arrow", // "=>" in C#
-      ],
-      "settings": {
-        "foreground": "#0BC5E3",
-        "fontStyle": "bold"
-      }
-    },
-    //
-    // "=>" arrow function operator as type parameter:
-    {
-      "scope": [
-        "meta.type.annotation storage.type.function.arrow", //
-        "meta.type.declaration storage.type.function.arrow", // "=>"
-      ],
-      "settings": {
-        "foreground": "#E8810C"
-      }
-    },
-    //
-    //
-    //
-    // Template string syntax:
-    //
-    // "` `" backticks in template string:
-    {
-      "scope": [
-        "punctuation.definition.string.template string.template",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3",
-        "fontStyle": "bold"
-      }
-    },
-    //
-    // "` `" template string begin and end characters:
-    {
-      "scope": [
-        "string.template punctuation.definition.string.template", // "` `" in TypeScript
-      ],
-      "settings": {
-        "foreground": "#A9A9A9",
-        "fontStyle": "bold"
-      }
-    },
-    //
-    // string interpolation brackets:
-    {
-      "scope": [
-        "punctuation.definition.template-expression", // "${ }"
-        "punctuation.definition.interpolation", // "{ }", "{{ }}"
-      ],
-      "settings": {
-        "foreground": "#0BC5E3",
-      }
-    },
-    //
-    //
-    //
     // ====================================================
-    // TypeScript, JavaScript, React (.ts, .js, .tsx, .jsx):
+    // JavaScript, TypeScript, React (.js, .ts, .jsx, .tsx):
     //
     // Import syntax:
     //
@@ -1166,27 +1124,26 @@
       }
     },
     //
-    // "module.exports" :
+    // "module.exports" export syntax:
     {
       "scope": [
-        "source.ts support.type.object.module", // "module.exports"
-        "source.js support.type.object.module", // "module.exports"
-        "source.tsx support.type.object.module", // "module.exports"
-        "source.jsx support.type.object.module", // "module.exports"
-        "meta.embedded.block.javascript support.type.object.module", // "module.exports"
+        "support.type.object.module.js",
+        "support.type.object.module.ts",
+        "support.type.object.module.jsx",
+        "support.type.object.module.tsx",
       ],
       "settings": {
         "foreground": "#000000"
       }
     },
     //
+    // "*" in import and export syntax, like "import * from":
     {
       "scope": [
-        "source.ts constant.language.import-export-all", // export *
-        "source.js constant.language.import-export-all", // export *
-        "source.tsx constant.language.import-export-all", // export *
-        "source.jsx constant.language.import-export-all", // export *
-        "meta.embedded.block.javascript constant.language.import-export-all", // export *
+        "constant.language.import-export-all.js",
+        "constant.language.import-export-all.ts",
+        "constant.language.import-export-all.jsx",
+        "constant.language.import-export-all.tsx",
       ],
       "settings": {
         "foreground": "#000000"
@@ -1195,29 +1152,177 @@
     //
     //
     //
-    // Names:
+    // Keywords:
     //
-    // Types:
-    //
-    // type names during declaration:
+    // control and important keywords:
     {
       "scope": [
-        // class name:
+        // "typeof":
+        "keyword.operator.expression.typeof.js",
+        "keyword.operator.expression.typeof.ts",
+        "keyword.operator.expression.typeof.jsx",
+        "keyword.operator.expression.typeof.tsx",
+        // "instanceof":
+        "keyword.operator.expression.instanceof.js",
+        "keyword.operator.expression.instanceof.ts",
+        "keyword.operator.expression.instanceof.jsx",
+        "keyword.operator.expression.instanceof.tsx",
+        // "keyof":
+        "keyword.operator.expression.keyof.js",
+        "keyword.operator.expression.keyof.ts",
+        "keyword.operator.expression.keyof.jsx",
+        "keyword.operator.expression.keyof.tsx",
+        // "in":
+        "keyword.operator.expression.in.js",
+        "keyword.operator.expression.in.ts",
+        "keyword.operator.expression.in.jsx",
+        "keyword.operator.expression.in.tsx",
+        // "of", like in "for of" loop:
+        "keyword.operator.expression.of.js",
+        "keyword.operator.expression.of.ts",
+        "keyword.operator.expression.of.jsx",
+        "keyword.operator.expression.of.tsx",
+        // "delete" property keyword:
+        "keyword.operator.expression.delete.js",
+        "keyword.operator.expression.delete.ts",
+        "keyword.operator.expression.delete.jsx",
+        "keyword.operator.expression.delete.tsx",
+        // "void" operator keyword:
+        "keyword.operator.expression.void.js",
+        "keyword.operator.expression.void.ts",
+        "keyword.operator.expression.void.jsx",
+        "keyword.operator.expression.void.tsx",
+        // "debugger":
+        "keyword.other.debugger.js",
+        "keyword.other.debugger.ts",
+        "keyword.other.debugger.jsx",
+        "keyword.other.debugger.tsx",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3"
+      }
+    },
+    //
+    // "super" keyword:
+    {
+      "scope": [
+        "variable.language.super.js",
+        "variable.language.super.ts",
+        "variable.language.super.jsx",
+        "variable.language.super.tsx",
+      ],
+      "settings": {
+        "foreground": "#C344AB"
+      }
+    },
+    //
+    // "var", "let", "const" keywords:
+    // fixes the rule about "constructor" keyword too:
+    {
+      "scope": [
+        "meta.var.expr.js storage.type.js",
+        "meta.var.expr.ts storage.type.ts",
+        "meta.var.expr.jsx storage.type.jsx",
+        "meta.var.expr.tsx storage.type.tsx",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    // "default" keyword:
+    {
+      "scope": [
+        "keyword.control.default.js",
+        "keyword.control.default.ts",
+        "keyword.control.default.jsx",
+        "keyword.control.default.tsx",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "undefined", "any", "true", "false" language constants:
+    {
+      "scope": [
+        "source.js support.type",
+        "source.ts support.type",
+        "source.jsx support.type",
+        "source.tsx support.type",
+        "meta.embedded.block.javascript support.type",
+      ],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    },
+    //
+    // "variable.language" token - not sure where it's used:
+    {
+      "scope": [
+        "source.js variable.language",
+        "source.ts variable.language",
+        "source.jsx variable.language",
+        "source.tsx variable.language",
+        "meta.embedded.block.javascript variable.language",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    //
+    // 1. "constructor" keyword inside class:
+    // 2. sometimes it can select "let, const, var" too - this needs to be fixed below this rule:
+    {
+      "scope": [
+        "source.js meta.method.declaration storage.type",
+        "source.ts meta.method.declaration storage.type",
+        "source.jsx meta.method.declaration storage.type",
+        "source.tsx meta.method.declaration storage.type",
+        "meta.embedded.block.javascript meta.method.declaration storage.type",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // fix to the above constructor rule - "meta.method.declaration storage.type":
+    {
+      "scope": [
+        "source.js meta.method.declaration meta.block storage.type",
+        "source.ts meta.method.declaration meta.block storage.type",
+        "source.jsx meta.method.declaration meta.block storage.type",
+        "source.tsx meta.method.declaration meta.block storage.type",
+        "meta.embedded.block.javascript meta.method.declaration meta.block storage.type",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
+    //
+    //
+    // Type name:
+    //
+    // type name during declaration:
+    {
+      "scope": [
+        // class:
         "entity.name.type.class.js",
         "entity.name.type.class.ts",
         "entity.name.type.class.jsx",
         "entity.name.type.class.tsx",
-        // interface name:
+        // interface:
         "entity.name.type.interface.js",
         "entity.name.type.interface.ts",
         "entity.name.type.interface.jsx",
         "entity.name.type.interface.tsx",
-        // enum name:
+        // enum:
         "entity.name.type.enum.js",
         "entity.name.type.enum.ts",
         "entity.name.type.enum.jsx",
         "entity.name.type.enum.tsx",
-        // alias name:
+        // alias:
         "entity.name.type.alias.js",
         "entity.name.type.alias.ts",
         "entity.name.type.alias.jsx",
@@ -1228,6 +1333,8 @@
         "fontStyle": "bold"
       }
     },
+    //
+    // Namespace name:
     //
     // namespace name during declaration:
     {
@@ -1253,6 +1360,8 @@
         "fontStyle": "bold"
       }
     },
+    //
+    // Module name:
     //
     // module name during use:
     {
@@ -1285,15 +1394,15 @@
     //
     //
     //
-    // Functions:
+    // Functions syntax:
     //
-    // function name in the declaration:
+    // function name during declaration:
     {
       "scope": [
-        "source.ts meta.definition.function entity.name.function",
         "source.js meta.definition.function entity.name.function",
-        "source.tsx meta.definition.function entity.name.function",
+        "source.ts meta.definition.function entity.name.function",
         "source.jsx meta.definition.function entity.name.function",
+        "source.tsx meta.definition.function entity.name.function",
         "meta.embedded.block.javascript meta.definition.function entity.name.function",
       ],
       "settings": {
@@ -1301,14 +1410,14 @@
       }
     },
     //
-    // function arguments in declaration:
+    // function arguments during declaration:
     // for when the argument is a callback function:
     {
       "scope": [
-        "source.ts meta.parameters entity.name.function",
         "source.js meta.parameters entity.name.function",
-        "source.tsx meta.parameters entity.name.function",
+        "source.ts meta.parameters entity.name.function",
         "source.jsx meta.parameters entity.name.function",
+        "source.tsx meta.parameters entity.name.function",
         "meta.embedded.block.javascript meta.parameters entity.name.function",
       ],
       "settings": {
@@ -1319,10 +1428,10 @@
     // variable name after "var, let, const" if it's a function:
     {
       "scope": [
-        "meta.definition.variable.js entity.name.function.js", // variable name after "var, let, const"
-        "meta.definition.variable.ts entity.name.function.ts", // variable name after "var, let, const"
-        "meta.definition.variable.jsx entity.name.function.jsx", // variable name after "var, let, const"
-        "meta.definition.variable.tsx entity.name.function.tsx", // variable name after "var, let, const"
+        "meta.definition.variable.js entity.name.function.js",
+        "meta.definition.variable.ts entity.name.function.ts",
+        "meta.definition.variable.jsx entity.name.function.jsx",
+        "meta.definition.variable.tsx entity.name.function.tsx",
       ],
       "settings": {
         "foreground": "#000000"
@@ -1332,22 +1441,23 @@
     // function variable name during its call:
     {
       "scope": [
-        "source.ts meta.function-call keyword.operator.expression.import", // "import" as function call
-        "source.js meta.function-call keyword.operator.expression.import", // "import" as function call
-        "source.tsx meta.function-call keyword.operator.expression.import", // "import" as function call
-        "source.jsx meta.function-call keyword.operator.expression.import", // "import" as function call
-        "meta.embedded.block.javascript meta.function-call keyword.operator.expression.import", // "import" as function call
+        // "import" as function call:
+        "source.js meta.function-call keyword.operator.expression.import",
+        "source.ts meta.function-call keyword.operator.expression.import",
+        "source.jsx meta.function-call keyword.operator.expression.import",
+        "source.tsx meta.function-call keyword.operator.expression.import",
+        "meta.embedded.block.javascript meta.function-call keyword.operator.expression.import",
         // Fix for the TypeScript code embedded in the styled-components syntax:
-        "source.ts source.css meta.embedded.line entity.name.function",
         "source.js source.css meta.embedded.line entity.name.function",
-        "source.tsx source.css meta.embedded.line entity.name.function",
+        "source.ts source.css meta.embedded.line entity.name.function",
         "source.jsx source.css meta.embedded.line entity.name.function",
+        "source.tsx source.css meta.embedded.line entity.name.function",
         "meta.embedded.block.javascript source.css meta.embedded.line entity.name.function",
         // Fix for the TypeScript template literal call like in the styled-components syntax:
-        "source.ts entity.name.function.tagged-template variable.other.property",
         "source.js entity.name.function.tagged-template variable.other.property",
-        "source.tsx entity.name.function.tagged-template variable.other.property",
+        "source.ts entity.name.function.tagged-template variable.other.property",
         "source.jsx entity.name.function.tagged-template variable.other.property",
+        "source.tsx entity.name.function.tagged-template variable.other.property",
         "meta.embedded.block.javascript entity.name.function.tagged-template variable.other.property",
       ],
       "settings": {
@@ -1355,126 +1465,18 @@
       }
     },
     //
+    //
+    //
+    // Object property name syntax:
     {
       "scope": [
-        "source.ts meta.function-call support.class", // function call
-        "source.js meta.function-call support.class", // function call
-        "source.tsx meta.function-call support.class", // function call
-        "source.jsx meta.function-call support.class", // function call
-        "meta.embedded.block.javascript meta.function-call support.class", // function call
-      ],
-      "settings": {
-        "foreground": "#E8810C"
-      }
-    },
-    //
-    //
-    //
-    // Decorator syntax like "@Length":
-    //
-    // "@" in decorator syntax:
-    {
-      "scope": [
-        "source.ts meta.decorator punctuation.decorator",
-        "source.js meta.decorator punctuation.decorator",
-        "source.tsx meta.decorator punctuation.decorator",
-        "source.jsx meta.decorator punctuation.decorator",
-        "meta.embedded.block.javascript meta.decorator punctuation.decorator",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // Name or identifier in decorator syntax:
-    {
-      "scope": [
-        "source.ts meta.decorator meta.function-call entity.name.function",
-        "source.js meta.decorator meta.function-call entity.name.function",
-        "source.tsx meta.decorator meta.function-call entity.name.function",
-        "source.jsx meta.decorator meta.function-call entity.name.function",
-        "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // Fix for a function call inside of a decorator:
-    {
-      "scope": [
-        "source.ts meta.decorator meta.object.member meta.function-call entity.name.function",
-        "source.js meta.decorator meta.object.member meta.function-call entity.name.function",
-        "source.tsx meta.decorator meta.object.member meta.function-call entity.name.function",
-        "source.jsx meta.decorator meta.object.member meta.function-call entity.name.function",
-        "meta.embedded.block.javascript meta.decorator meta.object.member meta.function-call entity.name.function",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    //
-    //
-    // Variable and property names in use:
-    {
-      "scope": [
-        "source.ts support.class",
-        "source.js support.class",
-        "source.tsx support.class",
-        "source.jsx support.class",
-        "meta.embedded.block.javascript support.class",
-      ],
-      "settings": {
-        "foreground": "#000000",
-      }
-    },
-    //
-    // property name in an object:
-    {
-      "scope": [
-        "source.ts meta.object-literal.key",
-        "source.js meta.object-literal.key",
-        "source.tsx meta.object-literal.key",
-        "source.jsx meta.object-literal.key",
-        "meta.embedded.block.javascript meta.object-literal.key",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // property name, if it's a function:
-    {
-      "scope": [
-        "source.ts meta.object-literal.key entity.name.function",
-        "source.js meta.object-literal.key entity.name.function",
-        "source.tsx meta.object-literal.key entity.name.function",
-        "source.jsx meta.object-literal.key entity.name.function",
-        "meta.embedded.block.javascript meta.object-literal.key entity.name.function",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // property names when instantiating an object:
-    {
-      "scope": [
-        "source.ts meta.object-literal.key string.quoted",
+        // property names when instantiating an object:
         "source.js meta.object-literal.key string.quoted",
-        "source.tsx meta.object-literal.key string.quoted",
+        "source.ts meta.object-literal.key string.quoted",
         "source.jsx meta.object-literal.key string.quoted",
+        "source.tsx meta.object-literal.key string.quoted",
         "meta.embedded.block.javascript meta.object-literal.key string.quoted",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
-    // property name inside object binding syntax like: "prop" in "const { prop: { subProp } }"
-    {
-      "scope": [
+        // property name inside object binding syntax like: "prop" in "const { prop: { subProp } }":
         "meta.object-binding-pattern-variable.js variable.object.property.js",
         "meta.object-binding-pattern-variable.ts variable.object.property.ts",
         "meta.object-binding-pattern-variable.jsx variable.object.property.jsx",
@@ -1487,185 +1489,44 @@
     //
     //
     //
-    // Keywords:
+    // Decorator syntax like "@Length":
     //
-    // "of" keyword, like in "for of" loop:
+    // "@" in decorator syntax:
     {
       "scope": [
-        "keyword.operator.expression.of.js",
-        "keyword.operator.expression.of.ts",
-        "keyword.operator.expression.of.jsx",
-        "keyword.operator.expression.of.tsx",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // "delete" property, "void" operator keywords:
-    {
-      "scope": [
-        "keyword.operator.expression.delete.js",
-        "keyword.operator.expression.delete.ts",
-        "keyword.operator.expression.delete.jsx",
-        "keyword.operator.expression.delete.tsx",
-        "keyword.operator.expression.void.js",
-        "keyword.operator.expression.void.ts",
-        "keyword.operator.expression.void.jsx",
-        "keyword.operator.expression.void.tsx",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // "debugger" keyword:
-    {
-      "scope": [
-        "keyword.other.debugger.js",
-        "keyword.other.debugger.ts",
-        "keyword.other.debugger.jsx",
-        "keyword.other.debugger.tsx",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
-      }
-    },
-    //
-    // "default" keyword:
-    {
-      "scope": [
-        "keyword.control.default.js",
-        "keyword.control.default.ts",
-        "keyword.control.default.jsx",
-        "keyword.control.default.tsx",
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
-    // "super" keyword:
-    {
-      "scope": [
-        "variable.language.super.js",
-        "variable.language.super.ts",
-        "variable.language.super.jsx",
-        "variable.language.super.tsx",
+        "source.js meta.decorator punctuation.decorator",
+        "source.ts meta.decorator punctuation.decorator",
+        "source.jsx meta.decorator punctuation.decorator",
+        "source.tsx meta.decorator punctuation.decorator",
+        "meta.embedded.block.javascript meta.decorator punctuation.decorator",
       ],
       "settings": {
         "foreground": "#C344AB"
       }
     },
     //
-    // "typeof", "instanceof", "keyof", "in" keywords:
+    // name or identifier in decorator syntax:
     {
       "scope": [
-        // "typeof":
-        "keyword.operator.expression.typeof.js",
-        "keyword.operator.expression.typeof.ts",
-        "keyword.operator.expression.typeof.jsx",
-        "keyword.operator.expression.typeof.tsx",
-        // "instanceof":
-        "keyword.operator.expression.instanceof.js",
-        "keyword.operator.expression.instanceof.ts",
-        "keyword.operator.expression.instanceof.jsx",
-        "keyword.operator.expression.instanceof.tsx",
-        // "keyof":
-        "keyword.operator.expression.keyof.js",
-        "keyword.operator.expression.keyof.ts",
-        "keyword.operator.expression.keyof.jsx",
-        "keyword.operator.expression.keyof.tsx",
-        // "in":
-        "keyword.operator.expression.in.js",
-        "keyword.operator.expression.in.ts",
-        "keyword.operator.expression.in.jsx",
-        "keyword.operator.expression.in.tsx",
+        "source.js meta.decorator meta.function-call entity.name.function",
+        "source.ts meta.decorator meta.function-call entity.name.function",
+        "source.jsx meta.decorator meta.function-call entity.name.function",
+        "source.tsx meta.decorator meta.function-call entity.name.function",
+        "meta.embedded.block.javascript meta.decorator meta.function-call entity.name.function",
       ],
       "settings": {
-        "foreground": "#0BC5E3"
+        "foreground": "#C344AB"
       }
     },
     //
-    // 1. "constructor" in a class,
-    // 2. sometimes it can also select "let, const, var" - this needs to be fixed below this rule.
+    // fix for a function call inside of a decorator:
     {
       "scope": [
-        "source.ts meta.method.declaration storage.type", // constructor
-        "source.js meta.method.declaration storage.type", // constructor
-        "source.tsx meta.method.declaration storage.type", // constructor
-        "source.jsx meta.method.declaration storage.type", // constructor
-        "meta.embedded.block.javascript meta.method.declaration storage.type", // constructor
-      ],
-      "settings": {
-        "foreground": "#0000CC"
-      }
-    },
-    //
-    // fix to the above constructor rule - "meta.method.declaration storage.type":
-    {
-      "scope": [
-        "source.ts meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
-        "source.js meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
-        "source.tsx meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
-        "source.jsx meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
-        "meta.embedded.block.javascript meta.method.declaration meta.block storage.type", // Fix to the above constructor rule.
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "var", "let", "const" keywords:
-    {
-      "scope": [
-        "meta.var.expr.js storage.type.js",
-        "meta.var.expr.ts storage.type.ts",
-        "meta.var.expr.jsx storage.type.jsx",
-        "meta.var.expr.tsx storage.type.tsx",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // variable.language:
-    {
-      "scope": [
-        "source.ts variable.language",
-        "source.js variable.language",
-        "source.tsx variable.language",
-        "source.jsx variable.language",
-        "meta.embedded.block.javascript variable.language",
-      ],
-      "settings": {
-        "foreground": "#000000"
-      }
-    },
-    //
-    // "undefined", "any", "true", "false" constants:
-    {
-      "scope": [
-        "source.ts support.type",
-        "source.js support.type",
-        "source.tsx support.type",
-        "source.jsx support.type",
-        "meta.embedded.block.javascript support.type",
-      ],
-      "settings": {
-        "foreground": "#A31515"
-      }
-    },
-    //
-    // "new" syntax:
-    //
-    {
-      "scope": [
-        "source.ts new.expr meta.function-call support.class", // function call
-        "source.js new.expr meta.function-call support.class", // function call
-        "source.tsx new.expr meta.function-call support.class", // function call
-        "source.jsx new.expr meta.function-call support.class", // function call
-        "meta.embedded.block.javascript new.expr meta.function-call support.class", // function call
+        "source.js meta.decorator meta.object.member meta.function-call entity.name.function",
+        "source.ts meta.decorator meta.object.member meta.function-call entity.name.function",
+        "source.jsx meta.decorator meta.object.member meta.function-call entity.name.function",
+        "source.tsx meta.decorator meta.object.member meta.function-call entity.name.function",
+        "meta.embedded.block.javascript meta.decorator meta.object.member meta.function-call entity.name.function",
       ],
       "settings": {
         "foreground": "#0000CC"
@@ -1674,28 +1535,28 @@
     //
     //
     //
-    // Punctuation:
+    // Arrow function syntax as type parameter:
     //
     // "( )" round braces in a type annotation of arrow function:
     {
       "scope": [
         // general case:
-        "source.ts meta.type.annotation meta.parameters punctuation.definition.parameters",
         "source.js meta.type.annotation meta.parameters punctuation.definition.parameters",
-        "source.tsx meta.type.annotation meta.parameters punctuation.definition.parameters",
+        "source.ts meta.type.annotation meta.parameters punctuation.definition.parameters",
         "source.jsx meta.type.annotation meta.parameters punctuation.definition.parameters",
+        "source.tsx meta.type.annotation meta.parameters punctuation.definition.parameters",
         "meta.embedded.block.javascript meta.type.annotation meta.parameters punctuation.definition.parameters",
         //
-        "source.ts meta.type.declaration meta.parameters punctuation.definition.parameters",
         "source.js meta.type.declaration meta.parameters punctuation.definition.parameters",
-        "source.tsx meta.type.declaration meta.parameters punctuation.definition.parameters",
+        "source.ts meta.type.declaration meta.parameters punctuation.definition.parameters",
         "source.jsx meta.type.declaration meta.parameters punctuation.definition.parameters",
+        "source.tsx meta.type.declaration meta.parameters punctuation.definition.parameters",
         "meta.embedded.block.javascript meta.type.declaration meta.parameters punctuation.definition.parameters",
         // fix for a nested case:
-        "source.ts meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
         "source.js meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
-        "source.tsx meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
+        "source.ts meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
         "source.jsx meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
+        "source.tsx meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
         "meta.embedded.block.javascript meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
       ],
       "settings": {
@@ -1707,42 +1568,17 @@
     {
       "scope": [
         // general case:
-        "source.ts meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
         "source.js meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
-        "source.tsx meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.ts meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
         "source.jsx meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.tsx meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
         "meta.embedded.block.javascript meta.type.annotation meta.method.declaration meta.parameters punctuation.definition.parameters",
         //
-        "source.ts meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
         "source.js meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
-        "source.tsx meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.ts meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
         "source.jsx meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
+        "source.tsx meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
         "meta.embedded.block.javascript meta.type.declaration meta.method.declaration meta.parameters punctuation.definition.parameters",
-      ],
-      "settings": {
-        "foreground": "#A9A9A9"
-      }
-    },
-    //
-    //
-    //
-    // ====================================================
-    // React:
-    //
-    // "{ }" embedded children in TSX:
-    {
-      "scope": [
-        "meta.jsx.children punctuation.section.embedded",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3",
-      }
-    },
-    //
-    // a hack for the previous rule "meta.jsx.children punctuation.section.embedded":
-    {
-      "scope": [
-        "meta.jsx.children meta.tag.attributes punctuation.section.embedded",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -1753,14 +1589,13 @@
     //
     // Misc:
     //
-    // For the syntax like:
-    // const Button = styled.button<{ $primary?: boolean; }>`
+    // fix for syntax like "const Button = styled.button<{ $primary?: boolean; }>` `":
     {
       "scope": [
-        "source.ts meta.objectliteral",
         "source.js meta.objectliteral",
-        "source.tsx meta.objectliteral",
+        "source.ts meta.objectliteral",
         "source.jsx meta.objectliteral",
+        "source.tsx meta.objectliteral",
         "meta.embedded.block.javascript meta.objectliteral",
       ],
       "settings": {
@@ -1771,8 +1606,10 @@
     // fix for ":" sometimes:
     {
       "scope": [
-        "meta.block.ts",
         "meta.block.js",
+        "meta.block.ts",
+        "meta.block.jsx",
+        "meta.block.tsx",
       ],
       "settings": {
         "foreground": "#A9A9A9"
@@ -1782,13 +1619,81 @@
     // fix for "Number.MAX_SAFE_INTEGER":
     {
       "scope": [
-        "meta.var.expr.ts",
         "meta.var.expr.js",
-        "meta.var.expr.tsx",
+        "meta.var.expr.ts",
         "meta.var.expr.jsx",
+        "meta.var.expr.tsx",
       ],
       "settings": {
         "foreground": "#000000"
+      }
+    },
+    //
+    // some rules for "support.class" - not sure what this token even covers:
+    {
+      "scope": [
+        "source.js support.class",
+        "source.ts support.class",
+        "source.jsx support.class",
+        "source.tsx support.class",
+        "meta.embedded.block.javascript support.class",
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // looks like "support.class" is used for type parameters in function call:
+    {
+      "scope": [
+        "source.js meta.function-call support.class",
+        "source.ts meta.function-call support.class",
+        "source.jsx meta.function-call support.class",
+        "source.tsx meta.function-call support.class",
+        "meta.embedded.block.javascript meta.function-call support.class",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // "new" syntax for "support.class" token:
+    //
+    {
+      "scope": [
+        "source.js new.expr meta.function-call support.class",
+        "source.ts new.expr meta.function-call support.class",
+        "source.jsx new.expr meta.function-call support.class",
+        "source.tsx new.expr meta.function-call support.class",
+        "meta.embedded.block.javascript new.expr meta.function-call support.class",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    //
+    //
+    // ====================================================
+    // React:
+    //
+    // "{ }" block embedded children in TSX:
+    {
+      "scope": [
+        "meta.jsx.children punctuation.section.embedded",
+      ],
+      "settings": {
+        "foreground": "#0BC5E3",
+      }
+    },
+    //
+    // fix for the previous "meta.jsx.children punctuation.section.embedded" rule:
+    {
+      "scope": [
+        "meta.jsx.children meta.tag.attributes punctuation.section.embedded",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //

@@ -1620,6 +1620,49 @@
       }
     },
     //
+    // some rules for "support.class" like "Promise" in "Promise.all()":
+    {
+      "scope": [
+        "source.js support.class",
+        "source.ts support.class",
+        "source.jsx support.class",
+        "source.tsx support.class",
+        "meta.embedded.block.javascript support.class",
+      ],
+      "settings": {
+        "foreground": "#000000",
+      }
+    },
+    //
+    // looks like "support.class" is used for type parameters in function call:
+    {
+      "scope": [
+        "source.js meta.function-call support.class",
+        "source.ts meta.function-call support.class",
+        "source.jsx meta.function-call support.class",
+        "source.tsx meta.function-call support.class",
+        "meta.embedded.block.javascript meta.function-call support.class",
+      ],
+      "settings": {
+        "foreground": "#E8810C"
+      }
+    },
+    //
+    // "new" syntax for "support.class" token:
+    //
+    {
+      "scope": [
+        "source.js new.expr meta.function-call support.class",
+        "source.ts new.expr meta.function-call support.class",
+        "source.jsx new.expr meta.function-call support.class",
+        "source.tsx new.expr meta.function-call support.class",
+        "meta.embedded.block.javascript new.expr meta.function-call support.class",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
     //
     //
     // ====================================================
@@ -2610,7 +2653,7 @@
         "meta.declaration.annotation.java constant.other.key.java",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#0000CC"
       }
     },
     //
@@ -2895,8 +2938,9 @@
     // "&" borrow and "*" dereference operators:
     {
       "scope": [
-        "keyword.operator.borrow.and.rust",
-        "keyword.operator.dereference.rust"
+        "keyword.operator.borrow.and.rust", // "&"
+        "keyword.operator.dereference.rust", // "*"
+        "punctuation.definition.lifetime.rust", // "'"
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -3316,6 +3360,16 @@
     // ====================================================
     // SQL:
     //
+    // untokenized code:
+    {
+      "scope": [
+        "source.sql",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+    //
     // keywords:
     {
       "scope": [
@@ -3334,7 +3388,7 @@
         "source.sql storage.type",
       ],
       "settings": {
-        "foreground": "#C344AB"
+        "foreground": "#E8810C"
       }
     },
     //
@@ -3396,7 +3450,7 @@
         "source.sql text.variable",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -3977,15 +4031,12 @@
       "scope": [
         // "variable"
         "source.css variable",
-        // EXPERIMENTAL
-        "source.css variable.parameter", // for PostCSS
         "meta.embedded.block.css variable",
         "meta.embedded.block.scss variable",
         // fixes:
         "variable.other.less", // for LESS
         "support.other.variable.less", // for LESS
-        // EXPERIMENTAL
-        // "variable.parameter.postcss", // for PostCSS
+        "variable.parameter.postcss", // for PostCSS
         "punctuation.definition.variable.less", // "@" variable punctuation for LESS
       ],
       "settings": {
@@ -3993,15 +4044,13 @@
       }
     },
     //
-    // variable name, not sure where:
+    // variable name, like "prefers-color-scheme" in "@media (prefers-color-scheme: dark)" in SCSS:
     {
       "scope": [
         "source.css meta.property-name.media-query",
       ],
       "settings": {
-        // EXPERIMENTAL
-        // "foreground": "#000000",
-        "foreground": "#FF0000",
+        "foreground": "#C344AB",
       }
     },
     //
@@ -4276,7 +4325,7 @@
         "entity.other.attribute-name.parent.less punctuation.definition.entity.less", // fix for LESS
       ],
       "settings": {
-        "foreground": "#A9A9A9",
+        "foreground": "#A31515",
       }
     },
     //
@@ -4334,6 +4383,18 @@
       ],
       "settings": {
         "foreground": "#000000"
+      }
+    },
+    //
+    // "and" logic keyword in LESS:
+    {
+      "scope": [
+        "source.css keyword.operator.logic",
+        "meta.embedded.block.css keyword.operator.logic",
+        "meta.embedded.block.scss keyword.operator.logic",
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
       }
     },
     //

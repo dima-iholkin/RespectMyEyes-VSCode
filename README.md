@@ -147,7 +147,7 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
 
 ## Lazily supported languages
 
-Maintainers for these and new languages are very welcome!
+Maintainers for these and additional languages are very welcome!
 
 <table>
   <thead>

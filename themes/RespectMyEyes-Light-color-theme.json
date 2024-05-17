@@ -550,10 +550,10 @@
       }
     },
     //
-    // "this" keyword:
+    // "this", "super", "base" keyword in JS/TS, C#, Java:
     {
       "scope": [
-        "variable.language.this",
+        "variable.language",
       ],
       "settings": {
         "foreground": "#C344AB"
@@ -723,7 +723,7 @@
         "entity.name.label",
       ],
       "settings": {
-        "foreground": "#0000CC"
+        "foreground": "#C344AB"
       }
     },
     //
@@ -1203,19 +1203,6 @@
       }
     },
     //
-    // "super" keyword:
-    {
-      "scope": [
-        "variable.language.super.js",
-        "variable.language.super.ts",
-        "variable.language.super.jsx",
-        "variable.language.super.tsx",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
     // "var", "let", "const" keywords:
     // fixes the "constructor" keyword rule too:
     {
@@ -1260,20 +1247,6 @@
       ],
       "settings": {
         "foreground": "#A31515"
-      }
-    },
-    //
-    // "variable.language" token - not sure where it's used:
-    {
-      "scope": [
-        "source.js variable.language",
-        "source.ts variable.language",
-        "source.jsx variable.language",
-        "source.tsx variable.language",
-        "meta.embedded.block.javascript variable.language",
-      ],
-      "settings": {
-        "foreground": "#000000"
       }
     },
     //
@@ -1493,6 +1466,21 @@
       }
     },
     //
+    // fix when during type declaration property name is of function type:
+    // it shouldn't be necessary, but for whatever reason "source.tsx meta.parameters entity.name.function" rule overrides it:
+    {
+      "scope": [
+        // property names when instantiating an object:
+        "meta.definition.property.js entity.name.function.js",
+        "meta.definition.property.ts entity.name.function.ts",
+        "meta.definition.property.jsx entity.name.function.jsx",
+        "meta.definition.property.tsx entity.name.function.tsx",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
     //
     //
     // Decorator syntax like "@Length":
@@ -1629,49 +1617,6 @@
       ],
       "settings": {
         "foreground": "#000000"
-      }
-    },
-    //
-    // some rules for "support.class" - not sure what this token even covers:
-    {
-      "scope": [
-        "source.js support.class",
-        "source.ts support.class",
-        "source.jsx support.class",
-        "source.tsx support.class",
-        "meta.embedded.block.javascript support.class",
-      ],
-      "settings": {
-        "foreground": "#000000",
-      }
-    },
-    //
-    // looks like "support.class" is used for type parameters in function call:
-    {
-      "scope": [
-        "source.js meta.function-call support.class",
-        "source.ts meta.function-call support.class",
-        "source.jsx meta.function-call support.class",
-        "source.tsx meta.function-call support.class",
-        "meta.embedded.block.javascript meta.function-call support.class",
-      ],
-      "settings": {
-        "foreground": "#E8810C"
-      }
-    },
-    //
-    // "new" syntax for "support.class" token:
-    //
-    {
-      "scope": [
-        "source.js new.expr meta.function-call support.class",
-        "source.ts new.expr meta.function-call support.class",
-        "source.jsx new.expr meta.function-call support.class",
-        "source.tsx new.expr meta.function-call support.class",
-        "meta.embedded.block.javascript new.expr meta.function-call support.class",
-      ],
-      "settings": {
-        "foreground": "#0000CC"
       }
     },
     //
@@ -2067,7 +2012,7 @@
     // "$:" reactive declarations:
     {
       "scope": [
-        "meta.embedded.block.svelte entity.name.label", // "&"
+        "meta.embedded.block.svelte entity.name.label", // "$"
         "meta.embedded.block.svelte punctuation.separator.label", // ":"
       ],
       "settings": {
@@ -2153,7 +2098,7 @@
       }
     },
     //
-    // fix for property name "name" in " :to="{ name: 'home' }" ":
+    // fix for property names like "name" in ":to="{ name: 'home' }"" syntax:
     {
       "scope": [
         "source.vue text.html.derivative meta.block entity.name.label",
@@ -2273,29 +2218,9 @@
       }
     },
     //
-    // label name:
-    {
-      "scope": [
-        "entity.name.label.cs",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
     //
     //
     // Keywords:
-    //
-    // "base" keyword:
-    {
-      "scope": [
-        "variable.language.base.cs",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
     //
     // "using", "global", "static" keywords:
     {
@@ -2342,11 +2267,13 @@
       }
     },
     //
-    // "typeof", "nameof" keywords:
+    // "typeof", "nameof", "as", "await" keywords:
     {
       "scope": [
         "keyword.operator.expression.typeof.cs",
         "keyword.operator.expression.nameof.cs",
+        "keyword.operator.expression.as.cs",
+        "keyword.operator.expression.await.cs",
       ],
       "settings": {
         "foreground": "#0BC5E3"
@@ -2371,16 +2298,6 @@
       ],
       "settings": {
         "foreground": "#C344AB"
-      }
-    },
-    //
-    // "await" keyword:
-    {
-      "scope": [
-        "keyword.operator.expression.await.cs",
-      ],
-      "settings": {
-        "foreground": "#0BC5E3"
       }
     },
     //
@@ -2697,16 +2614,6 @@
       }
     },
     //
-    // "this", "super" keywords:
-    {
-      "scope": [
-        "source.java variable.language",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
     // "instanceof" keyword:
     {
       "scope": [
@@ -2801,16 +2708,6 @@
       ],
       "settings": {
         "foreground": "#000000",
-      }
-    },
-    //
-    // "self" keyword:
-    {
-      "scope": [
-        "variable.language.special.self.python",
-      ],
-      "settings": {
-        "foreground": "#C344AB",
       }
     },
     //
@@ -2950,17 +2847,6 @@
       ],
       "settings": {
         "foreground": "#A9A9A9"
-      }
-    },
-    //
-    // "self", "super" keywords:
-    {
-      "scope": [
-        "variable.language.self.rust",
-        "variable.language.super.rust",
-      ],
-      "settings": {
-        "foreground": "#C344AB"
       }
     },
     //
@@ -3173,22 +3059,12 @@
       }
     },
     //
-    // variable parameter name in attribute:
-    {
-      "scope": [
-        "source.powershell variable.parameter.attribute", // variable parameter name in attribute
-      ],
-      "settings": {
-        "foreground": "#C344AB"
-      }
-    },
-    //
     // variable names:
     {
       "scope": [
-        "source.powershell variable.language",
         "source.powershell variable.other",
         "source.powershell variable.other.readwrite",
+        "source.powershell variable.parameter.attribute", // variable parameter name in attribute
         "source.powershell support.variable.automatic", // $_
         "source.powershell punctuation.definition.variable",
         "source.powershell entity.name",
@@ -3299,16 +3175,6 @@
       }
     },
     //
-    // "$#" special variables:
-    {
-      "scope": [
-        "variable.language.special.shell",
-      ],
-      "settings": {
-        "foreground": "#C344AB",
-      }
-    },
-    //
     // variable names during call:
     {
       "scope": [
@@ -3378,7 +3244,17 @@
     // ====================================================
     // Batch, CMD (.cmd, .bat):
     //
-    // variable names:
+    // command name:
+    {
+      "scope": [
+        "keyword.command.batchfile",
+      ],
+      "settings": {
+        "foreground": "#0000CC"
+      }
+    },
+    //
+    // variable name:
     {
       "scope": [
         "variable.other.readwrite.batchfile",
@@ -4101,12 +3977,15 @@
       "scope": [
         // "variable"
         "source.css variable",
+        // EXPERIMENTAL
+        "source.css variable.parameter", // for PostCSS
         "meta.embedded.block.css variable",
         "meta.embedded.block.scss variable",
         // fixes:
         "variable.other.less", // for LESS
         "support.other.variable.less", // for LESS
-        "variable.parameter.postcss", // for PostCSS
+        // EXPERIMENTAL
+        // "variable.parameter.postcss", // for PostCSS
         "punctuation.definition.variable.less", // "@" variable punctuation for LESS
       ],
       "settings": {
@@ -4120,7 +3999,9 @@
         "source.css meta.property-name.media-query",
       ],
       "settings": {
-        "foreground": "#000000",
+        // EXPERIMENTAL
+        // "foreground": "#000000",
+        "foreground": "#FF0000",
       }
     },
     //
@@ -4463,10 +4344,10 @@
     // selector names like "::deep":
     {
       "scope": [
-        "meta.selector",
+        "meta.selector", // "app", "::deep" in CSS
       ],
       "settings": {
-        "foreground": "#A9A9A9"
+        "foreground": "#8080E6"
       }
     },
     //

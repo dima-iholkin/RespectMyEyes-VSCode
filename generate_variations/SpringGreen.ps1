@@ -22,7 +22,7 @@ function Generate-ThemeVariation {
     ) | Set-Content $newThemeFile
     # Inform user the theme file was generated:
     # Write-Output "SpringGreen variation generated."
-    Write-Output ($newThemeFile + " generated.").TrimStart(".")
+    Write-Output ($newThemeFile + " variation generated.`n").TrimStart(".")
 }
 
 Generate-ThemeVariation

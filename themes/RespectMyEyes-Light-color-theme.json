@@ -223,7 +223,7 @@
     // Inlay Hints:
     // Type and parameter information like what the Rust extension shows:
     "editorInlayHint.background": "#C0C0C030",
-    "editorInlayHint.foreground": "#50A750",
+    "editorInlayHint.foreground": "#50A750", // comment color
     //
     //
     //
@@ -432,7 +432,7 @@
         "constant.numeric.other.preffix", // "0x", "0b"
       ],
       "settings": {
-        "foreground": "#E8810C",
+        "foreground": "#E8810C", // type color
       }
     },
     // number suffix for float, double and so on:
@@ -441,7 +441,7 @@
         "constant.numeric.other.suffix" // "f"
       ],
       "settings": {
-        "foreground": "#E8810C",
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -571,7 +571,7 @@
         "entity.other.inherited-class",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -582,7 +582,7 @@
         "meta.type.parameters",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -594,7 +594,7 @@
         "meta.type.annotation entity.name.type",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -605,7 +605,7 @@
         "support.type.builtin", // "undefined", "null" in JS/TS
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -866,7 +866,7 @@
         "meta.type.declaration storage.type.function.arrow",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -933,7 +933,7 @@
         "punctuation.definition.comment" // fix an edge case in Markdown -> code block -> comment
       ],
       "settings": {
-        "foreground": "#50A750",
+        "foreground": "#50A750", // comment color
       }
     },
     //
@@ -1367,7 +1367,7 @@
         "meta.namespace.declaration meta.block meta.namespace.declaration meta.block meta.namespace.declaration meta.block entity.name.type.module.tsx",
       ],
       "settings": {
-        "foreground": "#E8810C",
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -1551,7 +1551,7 @@
         "meta.embedded.block.javascript meta.type.annotation meta.parameters meta.type.annotation punctuation.definition.parameters",
       ],
       "settings": {
-        "foreground": "#E8810C",
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -1644,7 +1644,7 @@
         "meta.embedded.block.javascript meta.function-call support.class",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -2079,7 +2079,7 @@
         "comment punctuation.definition.variable.svelte",
       ],
       "settings": {
-        "foreground": "#50A750",
+        "foreground": "#50A750", // comment color
       }
     },
     //
@@ -2245,7 +2245,7 @@
         "text.aspnetcorerazor keyword.type",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -2561,7 +2561,7 @@
         "meta.comment.razor keyword.control.cshtml.transition", // "@" inside comment block
       ],
       "settings": {
-        "foreground": "#50A750"
+        "foreground": "#50A750", // comment color
       }
     },
     //
@@ -2611,7 +2611,7 @@
         "source.java storage.type",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -2718,7 +2718,7 @@
         "support.type.exception.python",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -2802,7 +2802,7 @@
         "constant.numeric.hex.python storage.type.number.python",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -2817,7 +2817,7 @@
         "string.quoted.docstring", // text
       ],
       "settings": {
-        "foreground": "#50A750"
+        "foreground": "#50A750", // comment color
       }
     },
     //
@@ -3001,7 +3001,7 @@
         "keyword.map.go",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -3021,7 +3021,7 @@
         "source.go storage.type",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -3078,7 +3078,7 @@
         "source.powershell meta.attribute support.function.attribute", // function
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -3388,7 +3388,7 @@
         "source.sql storage.type",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //

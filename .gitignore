@@ -1,2 +1,5 @@
+# initial rules:
 *.vsix
 **/.git-old
+# ignore the generated theme variations:
+build/

@@ -15,10 +15,10 @@ function Generate-ThemeVariation {
         '"#00CC7E" // type color'
     ).Replace(
         '"#50A750", // comment color',
-        '"#B3B332", // comment color'
+        '"#9F9F2D", // comment color'
     ).Replace(
         '"#50A750" // comment color',
-        '"#B3B332" // comment color'
+        '"#9F9F2D" // comment color'
     ) | Set-Content $newThemeFile
     # Inform user the theme file was generated:
     # Write-Output "SpringGreen variation generated."

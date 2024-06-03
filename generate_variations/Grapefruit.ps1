@@ -5,14 +5,14 @@ function Generate-ThemeVariation {
     If ((Test-Path -PathType Container $buildFolder) -eq $false) {
         New-Item -ItemType Directory -Path $buildFolder | Out-Null # "Out-Null" to not print to the console.
     }
-    $newThemeFile = $buildFolder + "\RespectMyEyes_Light_GreenHell-color-theme.json"
+    $newThemeFile = $buildFolder + "\RespectMyEyes_Light_Grapefruit-color-theme.json"
     # Replace the colors for variation and save the new file:
     (Get-Content $originalThemeFile).Replace(
         '"#E8810C", // type color',
-        '"#00E88F", // type color'
+        '"#F08080", // type color'
     ).Replace(
         '"#E8810C" // type color',
-        '"#00E88F" // type color'
+        '"#F08080" // type color'
     ).Replace(
         '"#50A750", // comment color',
         '"#50A750", // comment color'

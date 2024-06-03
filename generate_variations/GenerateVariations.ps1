@@ -4,7 +4,6 @@
 #     Remove-Item $buildFolder -Recurse -Force
 # }
 # Generate theme variations:
-& $PSScriptRoot/GreenHell.ps1
-& $PSScriptRoot/Pink.ps1
+& $PSScriptRoot/Grapefruit.ps1
 # Add a new line after the output:
 Write-Output `n

@@ -229,11 +229,11 @@
     //
     //
     // Selected text highlight color:
-    "editor.selectionBackground": "#00B00080",
+    "editor.selectionBackground": "#00E88F",
     // Selected text highlight color, when in another window or pane:
-    "editor.inactiveSelectionBackground": "#00B00020", // #DFF5DF
+    "editor.inactiveSelectionBackground": "#00E88F40",
     // Matched selection text highlight color:
-    "editor.selectionHighlightBackground": "#00B00020",
+    "editor.selectionHighlightBackground": "#00E88F20",
     //
     // Selected variable highlight color:
     "editor.wordHighlightStrongBackground": "#00B00020",
@@ -281,7 +281,7 @@
     //
     //
     //
-    "editorCursor.foreground": "#00B000",
+    "editorCursor.foreground": "#00CC7E",
     //
     //
     //
@@ -1924,7 +1924,7 @@
         "meta.scope.tag.slot.svelte meta.attribute.name.svelte string.quoted.svelte", // name="slot_name" attribute in slot tag
       ],
       "settings": {
-        "foreground": "#E8810C",
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -2000,7 +2000,7 @@
         "meta.special.render.svelte source.ts meta.function-call entity.name.function",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -3304,7 +3304,7 @@
         "variable.other.readwrite.batchfile",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -4040,7 +4040,7 @@
         "punctuation.definition.variable.less", // "@" variable punctuation for LESS
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //

@@ -3340,7 +3340,7 @@
         "text.html.markdown meta.embedded.block.html", // HTML embedded into Markdown
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -3515,7 +3515,7 @@
         "text.html.markdown",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -3805,7 +3805,7 @@
         "source.ini entity.name.section.group-title",
       ],
       "settings": {
-        "foreground": "#E8810C",
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -3821,7 +3821,7 @@
         "meta.array.table.toml support.type.property-name.array.toml",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -3887,7 +3887,7 @@
         "source.ahk2 keyword.keys"
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //
@@ -3897,7 +3897,7 @@
         "source.ahk2 hotkeyline entity.name.function.label",
       ],
       "settings": {
-        "foreground": "#E8810C"
+        "foreground": "#E8810C", // type color
       }
     },
     //

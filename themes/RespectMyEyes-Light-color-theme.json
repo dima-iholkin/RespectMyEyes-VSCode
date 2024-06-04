@@ -214,6 +214,8 @@
     //
     // Background of folded lines:
     "editor.foldBackground": "#A9A9A920",
+    // Fold control color:
+    "editorGutter.foldingControlForeground": "#A9A9A9",
     //
     //
     //

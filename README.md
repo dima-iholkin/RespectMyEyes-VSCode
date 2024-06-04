@@ -384,7 +384,7 @@ Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md
 
 
 
-## Azure Data Studio compatibility
+## Azure Data Studio compatibility customization
 
 <details>
   <p>This is outdated and I'm going to improve it eventually.</p>

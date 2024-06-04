@@ -1,9 +1,9 @@
 {
   "files.exclude": {
-    "**/.git": true,
-    "**/.git-old": true,
-    "*ignore": true,
-    "LICENSE": true,
-    ".vscode": true
+    // "**/.git": true,
+    // "**/.git-old": true,
+    // "*ignore": true,
+    // "LICENSE": true,
+    // ".vscode": true
   }
 }

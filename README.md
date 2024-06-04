@@ -22,70 +22,10 @@ Core supported languages:
 * JSON
 * Markdown
 
-
-
-## Screenshots
-
-### User Interface
+### UI
 
 <img src="/screenshots/UI.png" title="screenshot of the user interface styled by RespectMyEyes theme" />
-
 Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/routes/%2Bpage.svelte">PourOverPotato</a>
-
-### Svelte
-
-<img src="/screenshots/svelte.png" loading="lazy" title="screenshot of Svelte code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/UI/layout/components/MySidebar.svelte">PourOverPotato</a>
-
-### JavaScript
-
-<img src="/screenshots/javascript.png" loading="lazy" width="700" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/js/main.js">Brad Traversy's Modern Portfolio</a>
-
-### TypeScript
-
-<img src="/screenshots/typescript.png" loading="lazy" width="700" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/domain/helpers/sortRecipes.ts">PourOverPotato</a>
-
-### React / JSX / TSX
-
-<img src="/screenshots/react.png" loading="lazy" title="screenshot of React TSX code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app/blob/master/src/components/Navbar.tsx">React TypeScript RealWorld Example App</a>
-
-### C#
-
-<img src="/screenshots/csharp.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPotato.WebAPI/StartupTests/StartupTester.cs">TogglPotato</a>
-
-### CSS
-
-<img src="/screenshots/css.png" loading="lazy" width="500" title="screenshot of CSS code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/css/main.css">Brad Traversy's Modern Portfolio</a>
-
-### HTML
-
-<img src="/screenshots/html.png" loading="lazy" width="600" title="screenshot of HTML code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/index.html">Brad Traversy's Modern Portfolio</a>
-
-### JSON
-
-<img src="/screenshots/json.png" loading="lazy" width="700" title="screenshot of JSON code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/package.json">Brad Traversy's Modern Portfolio</a>
-
-### Markdown
-
-<img src="/screenshots/markdown.png" loading="lazy" title="screenshot of Markdown code styled by RespectMyEyes theme" />
-
-Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md">TogglPotato</a>
-
 
 
 ## Core supported languages
@@ -249,6 +189,55 @@ Maintainers for these and additional languages are very welcome!
     </tr>
   </tbody>
 </table>
+
+
+
+## Code screenshots
+
+### Svelte
+
+<img src="/screenshots/svelte.png" loading="lazy" title="screenshot of Svelte code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/UI/layout/components/MySidebar.svelte">PourOverPotato</a>
+
+### JavaScript
+
+<img src="/screenshots/javascript.png" loading="lazy" width="700" title="screenshot of JavaScript code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/js/main.js">Brad Traversy's Modern Portfolio</a>
+
+### TypeScript
+
+<img src="/screenshots/typescript.png" loading="lazy" width="700" title="screenshot of TypeScript code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/lib/domain/helpers/sortRecipes.ts">PourOverPotato</a>
+
+### React / JSX / TSX
+
+<img src="/screenshots/react.png" loading="lazy" title="screenshot of React TSX code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/unlight/react-typescript-realworld-example-app/blob/master/src/components/Navbar.tsx">React TypeScript RealWorld Example App</a>
+
+### C#
+
+<img src="/screenshots/csharp.png" loading="lazy" title="screenshot of C# code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/TogglPotato.WebAPI/StartupTests/StartupTester.cs">TogglPotato</a>
+
+### CSS
+
+<img src="/screenshots/css.png" loading="lazy" width="500" title="screenshot of CSS code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/css/main.css">Brad Traversy's Modern Portfolio</a>
+
+### HTML
+
+<img src="/screenshots/html.png" loading="lazy" width="600" title="screenshot of HTML code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/dist/index.html">Brad Traversy's Modern Portfolio</a>
+
+### JSON
+
+<img src="/screenshots/json.png" loading="lazy" width="700" title="screenshot of JSON code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/bradtraversy/modern_portfolio/blob/master/package.json">Brad Traversy's Modern Portfolio</a>
+
+### Markdown
+
+<img src="/screenshots/markdown.png" loading="lazy" title="screenshot of Markdown code styled by RespectMyEyes theme" />
+Source: <a href="https://github.com/dima-iholkin/TogglPotato/blob/main/README.md">TogglPotato</a>
 
 
 

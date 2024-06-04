@@ -78,7 +78,7 @@ Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/ro
 
 
 
-## Lazily supported languages
+## Somewhat supported languages
 
 Maintainers for these and additional languages are very welcome!
 

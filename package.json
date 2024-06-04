@@ -1,6 +1,6 @@
 {
   "name": "respectmyeyes",
-  "version": "7.0.0-beta.1",
+  "version": "6.0.1-beta.1",
   "displayName": "RespectMyEyes theme",
   "description": "A light theme that respects your eyes.",
   "publisher": "dima-iholkin",
@@ -14,9 +14,9 @@
     "vscode": "^1.40.0"
   },
   "scripts": {
-    "build": "npm run generate-variations && vsce package",
-    "build-and-install": "npm run generate-variations && vsce package --out ./latest.vsix && code --install-extension latest.vsix && del /f latest.vsix",
-    "generate-variations": "pwsh ./generate_variations/GenerateVariations.ps1"
+    "build": "vsce package",
+    "build-and-install": "vsce package --out ./latest.vsix && code --install-extension latest.vsix && del /f latest.vsix",
+    "generate-variations": "pwsh ./variations/GenerateVariations.ps1"
   },
   "categories": [
     "Themes"
@@ -28,12 +28,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "RespectMyEyes Light Grapefruit",
-        "uiTheme": "vs",
-        "path": "./build/RespectMyEyes_Light_Grapefruit-color-theme.json"
-      },
-      {
-        "label": "RespectMyEyes Light Orange",
+        "label": "RespectMyEyes Light",
         "uiTheme": "vs",
         "path": "./themes/RespectMyEyes-Light-color-theme.json"
       }

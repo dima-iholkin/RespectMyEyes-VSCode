@@ -12,20 +12,13 @@
 <br />
 <br />
 
-Core supported languages: 
-* Svelte
-* JavaScript / TypeScript
-* React / JSX / TSX 
-* C# / .NET / ASP.NET Core
-* CSS
-* HTML / XML
-* JSON
-* Markdown
+This is a light theme focused on support for Svelte, React, JS / TS, C# / .NET, Razor Pages / Blazor, HTML, CSS and Markdown. It supports many other languages too.
 
 ### UI screenshot
 
 <img src="/screenshots/UI.png" title="screenshot of the user interface styled by RespectMyEyes theme" />
 Source: <a href="https://github.com/dima-iholkin/PourOverPotato/blob/main/src/routes/%2Bpage.svelte">PourOverPotato</a>
+
 
 
 ## Core supported languages

@@ -231,7 +231,7 @@
     // Selected text highlight color:
     "editor.selectionBackground": "#00E88F",
     // Selected text highlight color, when in another window or pane:
-    "editor.inactiveSelectionBackground": "#00E88F40",
+    "editor.inactiveSelectionBackground": "#00B00020",
     // Matched selection text highlight color:
     "editor.selectionHighlightBackground": "#00E88F20",
     //

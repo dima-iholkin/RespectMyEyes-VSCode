@@ -20,6 +20,11 @@
 //
 // full green: #00B000
 // comments green: #50A750
+// darker comments green: #4B9D4B
+// lighter comments green, DarkSeaGreen 65%: #8FBC8F
+//
+// MediumSpringGreen 40%: #00CC7E
+// lighter than MediumSpringGreen 40%: #00E88F
 //
 // strings: #A31515
 // light strings: #D18A8A
@@ -27,11 +32,5 @@
 // purple: #C344AB
 // old purple: #F066FF
 //
-// additional greens:
-// type color: #00E88F
-// type color, MediumSpringGreen 40%: #00CC7E
-// comments green: #4B9D4B
-// comments green, DarkSeaGreen 65%: #8FBC8F
-//
 // Grapefruit variation:
-// type color: #F08080
+// type color instead of Orange: #F08080

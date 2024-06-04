@@ -212,6 +212,9 @@
     // the whitespace dots:
     "editorWhitespace.foreground": "#C0C0C080",
     //
+    // Background of folded lines:
+    "editor.foldBackground": "#A9A9A920",
+    //
     //
     //
     // line numbers:
